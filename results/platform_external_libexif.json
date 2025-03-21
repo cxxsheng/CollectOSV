@@ -1,0 +1,1844 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-159625731",
+      "details": "In exif_entry_get_value of exif-entry.c, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution if a third party app used this library to process remote image data with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-159625731",
+        "CVE-2020-0452"
+      ],
+      "modified": "2024-10-02T23:29:45Z",
+      "published": "2020-11-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2020-11-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/libexif/+/8e7345f3bc0bad06ac369d6cbc1124c8ceaf7d4b"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11-next:0"
+                },
+                {
+                  "fixed": "11-next:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_entry_get_value",
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-29557f15",
+                "digest": {
+                  "function_hash": "263220040067256262802011496473458430110",
+                  "length": 17208
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-58e1fa82",
+                "digest": {
+                  "line_hashes": [
+                    "284322438145339945043720915456140922165",
+                    "93281639976837326739273976352982873884",
+                    "18325982235928269788913677721160134997",
+                    "288125191916546280087425276079803197919",
+                    "61811470730497895629839865950923936795",
+                    "85008742746889107741124549964262222027",
+                    "320703541205510993089784264294519513012",
+                    "174698835426192614860996725383857514855"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-159625731.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/79b5fcdc0a58dd62094f09697fcc8033148c80df"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/79b5fcdc0a58dd62094f09697fcc8033148c80df",
+                "id": "ASB-A-159625731-8a485f31",
+                "digest": {
+                  "line_hashes": [
+                    "284322438145339945043720915456140922165",
+                    "93281639976837326739273976352982873884",
+                    "18325982235928269788913677721160134997",
+                    "288125191916546280087425276079803197919",
+                    "61811470730497895629839865950923936795",
+                    "85008742746889107741124549964262222027",
+                    "320703541205510993089784264294519513012",
+                    "174698835426192614860996725383857514855"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_entry_get_value",
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/79b5fcdc0a58dd62094f09697fcc8033148c80df",
+                "id": "ASB-A-159625731-ecc8f716",
+                "digest": {
+                  "function_hash": "263220040067256262802011496473458430110",
+                  "length": 17208
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-159625731.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_entry_get_value",
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-0f86e893",
+                "digest": {
+                  "function_hash": "263220040067256262802011496473458430110",
+                  "length": 17208
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-610e5dce",
+                "digest": {
+                  "line_hashes": [
+                    "284322438145339945043720915456140922165",
+                    "93281639976837326739273976352982873884",
+                    "18325982235928269788913677721160134997",
+                    "288125191916546280087425276079803197919",
+                    "61811470730497895629839865950923936795",
+                    "85008742746889107741124549964262222027",
+                    "320703541205510993089784264294519513012",
+                    "174698835426192614860996725383857514855"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-159625731.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_entry_get_value",
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-83fc9f95",
+                "digest": {
+                  "function_hash": "263220040067256262802011496473458430110",
+                  "length": 17208
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-ca9f79df",
+                "digest": {
+                  "line_hashes": [
+                    "284322438145339945043720915456140922165",
+                    "93281639976837326739273976352982873884",
+                    "18325982235928269788913677721160134997",
+                    "288125191916546280087425276079803197919",
+                    "61811470730497895629839865950923936795",
+                    "85008742746889107741124549964262222027",
+                    "320703541205510993089784264294519513012",
+                    "174698835426192614860996725383857514855"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-159625731.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_entry_get_value",
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-9c1db66a",
+                "digest": {
+                  "function_hash": "263220040067256262802011496473458430110",
+                  "length": 17208
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-c0534477",
+                "digest": {
+                  "line_hashes": [
+                    "284322438145339945043720915456140922165",
+                    "93281639976837326739273976352982873884",
+                    "18325982235928269788913677721160134997",
+                    "288125191916546280087425276079803197919",
+                    "61811470730497895629839865950923936795",
+                    "85008742746889107741124549964262222027",
+                    "320703541205510993089784264294519513012",
+                    "174698835426192614860996725383857514855"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-159625731.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_entry_get_value",
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-36a8ca9e",
+                "digest": {
+                  "function_hash": "263220040067256262802011496473458430110",
+                  "length": 17208
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/exif-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4c18b0fabf48fe4460b679805b0442d76a78bde7",
+                "id": "ASB-A-159625731-ec8d54ab",
+                "digest": {
+                  "line_hashes": [
+                    "284322438145339945043720915456140922165",
+                    "93281639976837326739273976352982873884",
+                    "18325982235928269788913677721160134997",
+                    "288125191916546280087425276079803197919",
+                    "61811470730497895629839865950923936795",
+                    "85008742746889107741124549964262222027",
+                    "320703541205510993089784264294519513012",
+                    "174698835426192614860996725383857514855"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-159625731.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-162602132",
+      "details": "In mnote_pentax_entry_get_value of mnote-pentax-entry.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-162602132",
+        "CVE-2016-6328"
+      ],
+      "modified": "2024-08-07T19:30:19.478779Z",
+      "published": "2021-01-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-01-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-9677eb7e",
+                "digest": {
+                  "line_hashes": [
+                    "175146752836763685198622688674874678005",
+                    "124515746665859951039052757801996161937",
+                    "242091409878844891826406494947120978630",
+                    "332980423940081593133496076834367599114",
+                    "147151961774177677147307403192757190746",
+                    "107102314077479670502440547082948736745",
+                    "299838149444107731085690623239299079061",
+                    "97608187683932755821905740725855936683",
+                    "251065701080778825318184657676772403215",
+                    "160497430726689769436068467344103967458",
+                    "151944488118324381420298966296707490222",
+                    "63036128348707188642445148568239797699",
+                    "91530260563412488639123315353058175586",
+                    "124515746665859951039052757801996161937",
+                    "109658686874682054444219770144142193259",
+                    "54829267476730749594108310317601883343",
+                    "104841365962673223275803932660853236840",
+                    "271367678765346262758687057528012221562",
+                    "312534407531948240350447043101551225186",
+                    "1804124221827002298327430074211046193",
+                    "64511922163632315931762397240604236798",
+                    "45934783660383152751790118201899587804",
+                    "293343631378824165777765967414552575016"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "mnote_pentax_entry_get_value",
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-b9b445d7",
+                "digest": {
+                  "function_hash": "192389887455940997054824939208430642402",
+                  "length": 5072
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-162602132.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-3d730fdd",
+                "digest": {
+                  "line_hashes": [
+                    "175146752836763685198622688674874678005",
+                    "124515746665859951039052757801996161937",
+                    "242091409878844891826406494947120978630",
+                    "332980423940081593133496076834367599114",
+                    "147151961774177677147307403192757190746",
+                    "107102314077479670502440547082948736745",
+                    "299838149444107731085690623239299079061",
+                    "97608187683932755821905740725855936683",
+                    "251065701080778825318184657676772403215",
+                    "160497430726689769436068467344103967458",
+                    "151944488118324381420298966296707490222",
+                    "63036128348707188642445148568239797699",
+                    "91530260563412488639123315353058175586",
+                    "124515746665859951039052757801996161937",
+                    "109658686874682054444219770144142193259",
+                    "54829267476730749594108310317601883343",
+                    "104841365962673223275803932660853236840",
+                    "271367678765346262758687057528012221562",
+                    "312534407531948240350447043101551225186",
+                    "1804124221827002298327430074211046193",
+                    "64511922163632315931762397240604236798",
+                    "45934783660383152751790118201899587804",
+                    "293343631378824165777765967414552575016"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "mnote_pentax_entry_get_value",
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-eb1ad7b5",
+                "digest": {
+                  "function_hash": "192389887455940997054824939208430642402",
+                  "length": 5072
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-162602132.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-02863832",
+                "digest": {
+                  "line_hashes": [
+                    "175146752836763685198622688674874678005",
+                    "124515746665859951039052757801996161937",
+                    "242091409878844891826406494947120978630",
+                    "332980423940081593133496076834367599114",
+                    "147151961774177677147307403192757190746",
+                    "107102314077479670502440547082948736745",
+                    "299838149444107731085690623239299079061",
+                    "97608187683932755821905740725855936683",
+                    "251065701080778825318184657676772403215",
+                    "160497430726689769436068467344103967458",
+                    "151944488118324381420298966296707490222",
+                    "63036128348707188642445148568239797699",
+                    "91530260563412488639123315353058175586",
+                    "124515746665859951039052757801996161937",
+                    "109658686874682054444219770144142193259",
+                    "54829267476730749594108310317601883343",
+                    "104841365962673223275803932660853236840",
+                    "271367678765346262758687057528012221562",
+                    "312534407531948240350447043101551225186",
+                    "1804124221827002298327430074211046193",
+                    "64511922163632315931762397240604236798",
+                    "45934783660383152751790118201899587804",
+                    "293343631378824165777765967414552575016"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "mnote_pentax_entry_get_value",
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-29a4aea1",
+                "digest": {
+                  "function_hash": "192389887455940997054824939208430642402",
+                  "length": 5072
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-162602132.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "mnote_pentax_entry_get_value",
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-4ae04b29",
+                "digest": {
+                  "function_hash": "192389887455940997054824939208430642402",
+                  "length": 5072
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-6b33ba7f",
+                "digest": {
+                  "line_hashes": [
+                    "175146752836763685198622688674874678005",
+                    "124515746665859951039052757801996161937",
+                    "242091409878844891826406494947120978630",
+                    "332980423940081593133496076834367599114",
+                    "147151961774177677147307403192757190746",
+                    "107102314077479670502440547082948736745",
+                    "299838149444107731085690623239299079061",
+                    "97608187683932755821905740725855936683",
+                    "251065701080778825318184657676772403215",
+                    "160497430726689769436068467344103967458",
+                    "151944488118324381420298966296707490222",
+                    "63036128348707188642445148568239797699",
+                    "91530260563412488639123315353058175586",
+                    "124515746665859951039052757801996161937",
+                    "109658686874682054444219770144142193259",
+                    "54829267476730749594108310317601883343",
+                    "104841365962673223275803932660853236840",
+                    "271367678765346262758687057528012221562",
+                    "312534407531948240350447043101551225186",
+                    "1804124221827002298327430074211046193",
+                    "64511922163632315931762397240604236798",
+                    "45934783660383152751790118201899587804",
+                    "293343631378824165777765967414552575016"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-162602132.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-ccc6a39c",
+                "digest": {
+                  "line_hashes": [
+                    "175146752836763685198622688674874678005",
+                    "124515746665859951039052757801996161937",
+                    "242091409878844891826406494947120978630",
+                    "332980423940081593133496076834367599114",
+                    "147151961774177677147307403192757190746",
+                    "107102314077479670502440547082948736745",
+                    "299838149444107731085690623239299079061",
+                    "97608187683932755821905740725855936683",
+                    "251065701080778825318184657676772403215",
+                    "160497430726689769436068467344103967458",
+                    "151944488118324381420298966296707490222",
+                    "63036128348707188642445148568239797699",
+                    "91530260563412488639123315353058175586",
+                    "124515746665859951039052757801996161937",
+                    "109658686874682054444219770144142193259",
+                    "54829267476730749594108310317601883343",
+                    "104841365962673223275803932660853236840",
+                    "271367678765346262758687057528012221562",
+                    "312534407531948240350447043101551225186",
+                    "1804124221827002298327430074211046193",
+                    "64511922163632315931762397240604236798",
+                    "45934783660383152751790118201899587804",
+                    "293343631378824165777765967414552575016"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "mnote_pentax_entry_get_value",
+                  "file": "libexif/pentax/mnote-pentax-entry.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/8b37da24f362ac660917ae5415e1e4063724093c",
+                "id": "ASB-A-162602132-d28c138d",
+                "digest": {
+                  "function_hash": "192389887455940997054824939208430642402",
+                  "length": 5072
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-162602132.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-194342672",
+      "details": "In exif_entry_get_value  of  exif-entry.c, there is a possible out of bounds write  due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-194342672",
+        "CVE-2020-13112"
+      ],
+      "modified": "2024-08-07T19:30:20.858103Z",
+      "published": "2022-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-02-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/c9da78d8d9f302c767b366ef256e24fa32f8784f",
+              "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_olympus_load",
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-20bd46a2",
+                "digest": {
+                  "function_hash": "208402699961437767102961146573691940995",
+                  "length": 6116
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-2109340c",
+                "digest": {
+                  "line_hashes": [
+                    "67992316777328202553980430044272331270",
+                    "232550279310151884703013089340447102658",
+                    "262436377453016637111844930069636124266",
+                    "330076833017829254660096767153562663059",
+                    "228662460307024714608934979598524022781",
+                    "233676342583969049750620450728947013967",
+                    "160686445356664800807236764665764019330",
+                    "154921360113025583163959014935285786330",
+                    "229994903253438464991697503678377727877",
+                    "275315361253278129193099917602521068866",
+                    "304848201401731473370420849461607645697",
+                    "69681233052220359974246983910946828230",
+                    "329721097948751380813217950720224206016",
+                    "249747458773296643272793894562528613180",
+                    "16243798146026572846220843309356160713",
+                    "164072094161247012763677138634413304489",
+                    "105483538392136473165128370458666347432",
+                    "309934484426480763336454860572763384368",
+                    "183082392600355293043774931062045147506"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-49bf7d3c",
+                "digest": {
+                  "line_hashes": [
+                    "91768807785251968606655776771787404175",
+                    "34128777807662979432063334523332355086",
+                    "122684923369204591401773385474411219437",
+                    "306501088345474863721586112929833381110",
+                    "138851954609533570359062211287425004272",
+                    "1936258232986127287851615607716904335",
+                    "53254384811274092521536811663461829923",
+                    "247226864292509684740302401359787767559",
+                    "287947585148421249845200903856289510669",
+                    "104253677331884237553937680473303634630",
+                    "131253004424668098972405393941221762040",
+                    "332928245879175964489794819146672288298",
+                    "154921360113025583163959014935285786330",
+                    "229994903253438464991697503678377727877",
+                    "106720485668533517217715668095921258485",
+                    "131450083276499232150020930332149982750",
+                    "163570383433052667235952779228527056161",
+                    "44006543196768161952519086084373760910",
+                    "15994231627680740085484671932692890255",
+                    "197911634203420330037577726332330554142",
+                    "194890962513460607422706959778358943056",
+                    "313155748930828196394430449175341864996",
+                    "155133720598942189245718972478170672303",
+                    "222809935566415879642717990068393848638"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-65fa0c4b",
+                "digest": {
+                  "line_hashes": [
+                    "183661055639346139562865211106879471593",
+                    "102180397425500091626994875092804653997",
+                    "306305871760784389225367867808059433294",
+                    "303255437467966467341393093297170437848",
+                    "100948656951186216070801422017812816676",
+                    "73432668262711205432098364026531541312",
+                    "267961534160633078526824789703397165948",
+                    "154921360113025583163959014935285786330",
+                    "103248917384609285893761502457655296973",
+                    "22227807076449600468076546494790266074",
+                    "193000294359280234636191826172030860032",
+                    "176117644035555751522229401211926605647",
+                    "263132597833869344788571920226587275969",
+                    "42658674550384883182946853197281633468",
+                    "33198140988457916349558889987929538988",
+                    "112671455866612657294225999046785040953",
+                    "75308504808077224835780035377193872907",
+                    "196607724232554454389644985523791773223"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_pentax_load",
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-7fb72153",
+                "digest": {
+                  "function_hash": "313756787892045291838585509807872701394",
+                  "length": 3246
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_canon_load",
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-82fcafab",
+                "digest": {
+                  "function_hash": "327868807100784019661132185299592104085",
+                  "length": 2374
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-89e34450",
+                "digest": {
+                  "line_hashes": [
+                    "258535496758549796525577034021958697522",
+                    "59736004700112239815348148878440973207",
+                    "156015236527021583219511368386532566842",
+                    "208925529009590714242737344820623926710",
+                    "48666843725151391636436753403927499968",
+                    "240018877582134170072901602787940449497",
+                    "213651751248844444609361278218619392192",
+                    "152302461492781522310162171822127815345",
+                    "62182544705571316333036728162786637476",
+                    "242390438284685401923947976273825853729",
+                    "284553104731774990022674155994110483697",
+                    "23214577493705472685592134892419422943",
+                    "217382026755880070287099181453515892637",
+                    "232535131140631515703129315698992429648",
+                    "326481239605051460902876578302081753576",
+                    "338367017957438403399591092303558428499",
+                    "21616384379039474647905404541779968469",
+                    "240983110241008204587683960473455952697",
+                    "300382965223174925975307352434426334743",
+                    "188422837286098323284111960324460508945",
+                    "144254756210762447390137419065902126524",
+                    "43833660071409727621081211170277356266",
+                    "129968889050604978613839631187151974605",
+                    "116747509092517018688199909938715976133",
+                    "288949564732672714059697529825343483626",
+                    "314788910212899863640686260426888679038",
+                    "157532589449493052524821219631199914886",
+                    "45393122599490990728121242797044305316",
+                    "39540614766808889591457708870210383263",
+                    "21089699327839949456483140375456845158",
+                    "301458848095656617000108631530238790419",
+                    "323453559867362649834545384425527187279",
+                    "75772798565266786018311198559361232120",
+                    "186253402370051844648021984182755247832",
+                    "87775394838865803204933070860362431916"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_fuji_load",
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-8a7af194",
+                "digest": {
+                  "function_hash": "252294463346496877372292661889805869063",
+                  "length": 2590
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-194342672.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/c9da78d8d9f302c767b366ef256e24fa32f8784f",
+              "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_pentax_load",
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-1cdedd0f",
+                "digest": {
+                  "function_hash": "313756787892045291838585509807872701394",
+                  "length": 3246
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_olympus_load",
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-2393334a",
+                "digest": {
+                  "function_hash": "208402699961437767102961146573691940995",
+                  "length": 6116
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_fuji_load",
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-39eb0f4a",
+                "digest": {
+                  "function_hash": "252294463346496877372292661889805869063",
+                  "length": 2590
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-8ade174f",
+                "digest": {
+                  "line_hashes": [
+                    "258535496758549796525577034021958697522",
+                    "59736004700112239815348148878440973207",
+                    "156015236527021583219511368386532566842",
+                    "208925529009590714242737344820623926710",
+                    "48666843725151391636436753403927499968",
+                    "240018877582134170072901602787940449497",
+                    "213651751248844444609361278218619392192",
+                    "152302461492781522310162171822127815345",
+                    "62182544705571316333036728162786637476",
+                    "242390438284685401923947976273825853729",
+                    "284553104731774990022674155994110483697",
+                    "23214577493705472685592134892419422943",
+                    "217382026755880070287099181453515892637",
+                    "232535131140631515703129315698992429648",
+                    "326481239605051460902876578302081753576",
+                    "338367017957438403399591092303558428499",
+                    "21616384379039474647905404541779968469",
+                    "240983110241008204587683960473455952697",
+                    "300382965223174925975307352434426334743",
+                    "188422837286098323284111960324460508945",
+                    "144254756210762447390137419065902126524",
+                    "43833660071409727621081211170277356266",
+                    "129968889050604978613839631187151974605",
+                    "116747509092517018688199909938715976133",
+                    "288949564732672714059697529825343483626",
+                    "314788910212899863640686260426888679038",
+                    "157532589449493052524821219631199914886",
+                    "45393122599490990728121242797044305316",
+                    "39540614766808889591457708870210383263",
+                    "21089699327839949456483140375456845158",
+                    "301458848095656617000108631530238790419",
+                    "323453559867362649834545384425527187279",
+                    "75772798565266786018311198559361232120",
+                    "186253402370051844648021984182755247832",
+                    "87775394838865803204933070860362431916"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-b0829901",
+                "digest": {
+                  "line_hashes": [
+                    "91768807785251968606655776771787404175",
+                    "34128777807662979432063334523332355086",
+                    "122684923369204591401773385474411219437",
+                    "306501088345474863721586112929833381110",
+                    "138851954609533570359062211287425004272",
+                    "1936258232986127287851615607716904335",
+                    "53254384811274092521536811663461829923",
+                    "247226864292509684740302401359787767559",
+                    "287947585148421249845200903856289510669",
+                    "104253677331884237553937680473303634630",
+                    "131253004424668098972405393941221762040",
+                    "332928245879175964489794819146672288298",
+                    "154921360113025583163959014935285786330",
+                    "229994903253438464991697503678377727877",
+                    "106720485668533517217715668095921258485",
+                    "131450083276499232150020930332149982750",
+                    "163570383433052667235952779228527056161",
+                    "44006543196768161952519086084373760910",
+                    "15994231627680740085484671932692890255",
+                    "197911634203420330037577726332330554142",
+                    "194890962513460607422706959778358943056",
+                    "313155748930828196394430449175341864996",
+                    "155133720598942189245718972478170672303",
+                    "222809935566415879642717990068393848638"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-b39e92d6",
+                "digest": {
+                  "line_hashes": [
+                    "67992316777328202553980430044272331270",
+                    "232550279310151884703013089340447102658",
+                    "262436377453016637111844930069636124266",
+                    "330076833017829254660096767153562663059",
+                    "228662460307024714608934979598524022781",
+                    "233676342583969049750620450728947013967",
+                    "160686445356664800807236764665764019330",
+                    "154921360113025583163959014935285786330",
+                    "229994903253438464991697503678377727877",
+                    "275315361253278129193099917602521068866",
+                    "304848201401731473370420849461607645697",
+                    "69681233052220359974246983910946828230",
+                    "329721097948751380813217950720224206016",
+                    "249747458773296643272793894562528613180",
+                    "16243798146026572846220843309356160713",
+                    "164072094161247012763677138634413304489",
+                    "105483538392136473165128370458666347432",
+                    "309934484426480763336454860572763384368",
+                    "183082392600355293043774931062045147506"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_canon_load",
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-c147af7c",
+                "digest": {
+                  "function_hash": "327868807100784019661132185299592104085",
+                  "length": 2374
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/fd5f7bab830858e57a2baf9d4dd47e5820337b56",
+                "id": "ASB-A-194342672-ec3c715d",
+                "digest": {
+                  "line_hashes": [
+                    "183661055639346139562865211106879471593",
+                    "102180397425500091626994875092804653997",
+                    "306305871760784389225367867808059433294",
+                    "303255437467966467341393093297170437848",
+                    "100948656951186216070801422017812816676",
+                    "73432668262711205432098364026531541312",
+                    "267961534160633078526824789703397165948",
+                    "154921360113025583163959014935285786330",
+                    "103248917384609285893761502457655296973",
+                    "22227807076449600468076546494790266074",
+                    "193000294359280234636191826172030860032",
+                    "176117644035555751522229401211926605647",
+                    "263132597833869344788571920226587275969",
+                    "42658674550384883182946853197281633468",
+                    "33198140988457916349558889987929538988",
+                    "112671455866612657294225999046785040953",
+                    "75308504808077224835780035377193872907",
+                    "196607724232554454389644985523791773223"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-194342672.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-196085005",
+      "details": "An issue was discovered in libexif before 0.6.22. Use of uninitialized memory in EXIF Makernote handling could lead to crashes and potential use-after-free conditions.",
+      "aliases": [
+        "A-196085005",
+        "CVE-2020-13113"
+      ],
+      "modified": "2024-08-07T19:29:45.508339Z",
+      "published": "2022-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-02-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/c9da78d8d9f302c767b366ef256e24fa32f8784f",
+              "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-45cb83fc",
+                "digest": {
+                  "line_hashes": [
+                    "171665474353090061899021564791197257152",
+                    "116301063513059510679027604740839939787",
+                    "33983948157538593294138539723360334410",
+                    "231840623465655071498280023479608178034"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_pentax_load",
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-500e6a39",
+                "digest": {
+                  "function_hash": "183404549225358201605541302295976617143",
+                  "length": 3510
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_canon_load",
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-52cf7f82",
+                "digest": {
+                  "function_hash": "230472758768611256226825674298003938134",
+                  "length": 2636
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-5d4bce62",
+                "digest": {
+                  "line_hashes": [
+                    "182556739721751607620424315492830018068",
+                    "63090266439464873986942635232246469126",
+                    "133352749772712821961584651055235107129",
+                    "59814921405938895402439206079570764350"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_fuji_load",
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-66798d65",
+                "digest": {
+                  "function_hash": "113168632477656210553710536030160313989",
+                  "length": 2820
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_olympus_load",
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-adb7db80",
+                "digest": {
+                  "function_hash": "189747278139490779873991802493815478765",
+                  "length": 6441
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-dd189b4f",
+                "digest": {
+                  "line_hashes": [
+                    "182556739721751607620424315492830018068",
+                    "63090266439464873986942635232246469126",
+                    "133352749772712821961584651055235107129",
+                    "87180012295696138925344357238405859904"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-e339df47",
+                "digest": {
+                  "line_hashes": [
+                    "182556739721751607620424315492830018068",
+                    "63090266439464873986942635232246469126",
+                    "225602874433340598213515522161546468010",
+                    "215464518781960057437098919856189329355"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-196085005.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/libexif",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libexif/+/c9da78d8d9f302c767b366ef256e24fa32f8784f",
+              "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-130a0623",
+                "digest": {
+                  "line_hashes": [
+                    "182556739721751607620424315492830018068",
+                    "63090266439464873986942635232246469126",
+                    "225602874433340598213515522161546468010",
+                    "215464518781960057437098919856189329355"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_pentax_load",
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-20c7c86e",
+                "digest": {
+                  "function_hash": "183404549225358201605541302295976617143",
+                  "length": 3510
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_fuji_load",
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-3144475c",
+                "digest": {
+                  "function_hash": "113168632477656210553710536030160313989",
+                  "length": 2820
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/fuji/exif-mnote-data-fuji.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-6aaef996",
+                "digest": {
+                  "line_hashes": [
+                    "182556739721751607620424315492830018068",
+                    "63090266439464873986942635232246469126",
+                    "133352749772712821961584651055235107129",
+                    "59814921405938895402439206079570764350"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-901b89c8",
+                "digest": {
+                  "line_hashes": [
+                    "171665474353090061899021564791197257152",
+                    "116301063513059510679027604740839939787",
+                    "33983948157538593294138539723360334410",
+                    "231840623465655071498280023479608178034"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_canon_load",
+                  "file": "libexif/canon/exif-mnote-data-canon.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-a972d32c",
+                "digest": {
+                  "function_hash": "230472758768611256226825674298003938134",
+                  "length": 2636
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "exif_mnote_data_olympus_load",
+                  "file": "libexif/olympus/exif-mnote-data-olympus.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-ad14afa8",
+                "digest": {
+                  "function_hash": "189747278139490779873991802493815478765",
+                  "length": 6441
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libexif/pentax/exif-mnote-data-pentax.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/libexif/+/4ceb535b530fd8d0504c9df65c99045a71e12232",
+                "id": "ASB-A-196085005-c70dca5d",
+                "digest": {
+                  "line_hashes": [
+                    "182556739721751607620424315492830018068",
+                    "63090266439464873986942635232246469126",
+                    "133352749772712821961584651055235107129",
+                    "87180012295696138925344357238405859904"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-196085005.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

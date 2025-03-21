@@ -1,0 +1,1612 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-171980069",
+      "details": "In verifyHostName of OkHostnameVerifier.java, there is a possible way to accept a certificate for the wrong domain due to improperly used crypto. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-171980069",
+        "CVE-2021-0341"
+      ],
+      "modified": "2024-08-07T19:30:13.867546Z",
+      "published": "2021-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-02-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/libcore/+/4076be9a99bad5ff7651540df976c57462c3b8ce"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/okhttp",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-4e0a0c07",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-519b8473",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-77b35de2",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-9e08ce53",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-b85ee56f",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-dd878d61",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/4076be9a99bad5ff7651540df976c57462c3b8ce"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/okhttp",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-18c5bc20",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-2745e397",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-3c6995ef",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-6d59cb11",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-85ac6663",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-a90c38c9",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/4076be9a99bad5ff7651540df976c57462c3b8ce"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/okhttp",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-22805d13",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-393297a3",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-7165c09f",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-c5910a7b",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-d6b58535",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-f53ce736",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/4076be9a99bad5ff7651540df976c57462c3b8ce"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/okhttp",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-6eb640d2",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-813f9277",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-a78101d6",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-a923aa93",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-bfdf11a1",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-d00ee06c",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/4076be9a99bad5ff7651540df976c57462c3b8ce"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/okhttp",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-5ff67caa",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-a32e75c0",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-b911c268",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-d96fdd6a",
+                "digest": {
+                  "function_hash": "61535180085388431010717666557718059177",
+                  "length": 340
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-f467dd0f",
+                "digest": {
+                  "line_hashes": [
+                    "133244152640812713275770336114416831433",
+                    "67592987695279721687733199410590096876",
+                    "25291247337675201734748419012761023160",
+                    "207802613743572584816161990863362891210",
+                    "113237312858454232655678767831191925576",
+                    "289357571628723008831098994338509046514",
+                    "44963732600006155219942966911031120165",
+                    "105135349804760838859480469610730392589",
+                    "102715412356406950219770955940244365114"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "verifyHostName",
+                  "file": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/okhttp/+/ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+                "id": "ASB-A-171980069-f9864994",
+                "digest": {
+                  "function_hash": "205612780247887574406662095825899160911",
+                  "length": 1172
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/4076be9a99bad5ff7651540df976c57462c3b8ce"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-171980069.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-309938635",
+      "details": "In Source of ZipFile.java, there is a possible way for an attacker to execute arbitrary code by manipulating Dynamic Code Loading due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-309938635",
+        "CVE-2024-40673"
+      ],
+      "modified": "2024-12-17T18:46:21Z",
+      "published": "2024-10-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2024-10-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/libcore/+/b17fd2f8fe468e7d32e713b442f610cd33e4e7a9"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2024-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2024-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/549d249b9a83c9d82837799584afb6381e54254e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Source",
+                  "file": "ojluni/src/main/java/java/util/zip/ZipFile.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/549d249b9a83c9d82837799584afb6381e54254e",
+                "id": "ASB-A-309938635-a31db784",
+                "digest": {
+                  "function_hash": "265186814605290407737839737874302637873",
+                  "length": 551
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "ojluni/src/main/java/java/util/zip/ZipFile.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/549d249b9a83c9d82837799584afb6381e54254e",
+                "id": "ASB-A-309938635-cc607abd",
+                "digest": {
+                  "line_hashes": [
+                    "23495861995601514141316889146593097753",
+                    "274889676424387549901000487365782440055",
+                    "155143491846463834813941840149343434367",
+                    "334430171867360418573880791188934951730"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-309938635.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2024-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2024-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2",
+                "id": "ASB-A-309938635-993c004d",
+                "digest": {
+                  "line_hashes": [
+                    "213319749181021306436953120105197013029",
+                    "144619168489362094828755847561613061452",
+                    "1585668565002214516594897173974723034",
+                    "112031080139449826729726846171368003665"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "ZIP_Put_In_Cache0",
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2",
+                "id": "ASB-A-309938635-c59e9a70",
+                "digest": {
+                  "function_hash": "18739163088761162184710738729650148048",
+                  "length": 1172
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-309938635.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2024-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2024-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "ZIP_Put_In_Cache0",
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2",
+                "id": "ASB-A-309938635-27f10772",
+                "digest": {
+                  "function_hash": "18739163088761162184710738729650148048",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2",
+                "id": "ASB-A-309938635-a7a5df74",
+                "digest": {
+                  "line_hashes": [
+                    "213319749181021306436953120105197013029",
+                    "144619168489362094828755847561613061452",
+                    "1585668565002214516594897173974723034",
+                    "112031080139449826729726846171368003665"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-309938635.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2024-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2024-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "ZIP_Put_In_Cache0",
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2",
+                "id": "ASB-A-309938635-2415e591",
+                "digest": {
+                  "function_hash": "18739163088761162184710738729650148048",
+                  "length": 1172
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/288a44a1817707110cdf5a3a6ef8377c6e10cce2",
+                "id": "ASB-A-309938635-d2d19dbe",
+                "digest": {
+                  "line_hashes": [
+                    "213319749181021306436953120105197013029",
+                    "144619168489362094828755847561613061452",
+                    "1585668565002214516594897173974723034",
+                    "112031080139449826729726846171368003665"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-309938635.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2024-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2024-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/c7b495dc8c466de602cd7b78468864acd6b2f9b3"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/c7b495dc8c466de602cd7b78468864acd6b2f9b3",
+                "id": "ASB-A-309938635-91d10b1e",
+                "digest": {
+                  "line_hashes": [
+                    "274617653392482763089091782524942958146",
+                    "150109526257354231252204590097711161397",
+                    "77919708741881686680554719635739124285",
+                    "339737767369318751335278101939590377696"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "14"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "ZIP_Put_In_Cache0",
+                  "file": "ojluni/src/main/native/zip_util.c"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/c7b495dc8c466de602cd7b78468864acd6b2f9b3",
+                "id": "ASB-A-309938635-b9eae7c8",
+                "digest": {
+                  "function_hash": "195916573689836405427437824188754930252",
+                  "length": 1182
+                },
+                "match_only_versions": [
+                  "14"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-309938635.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-357870429",
+      "details": "In static of NativeCrypto.java, there is a possible way to obtain clear-text data due to improperly used crypto. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-357870429",
+        "CVE-2024-49723"
+      ],
+      "modified": "2025-02-07T16:12:50.444436Z",
+      "published": "2025-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-02-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/conscrypt/+/79117043c54eb2fc91ece695c90938d60904d59f"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/libcore/+/c9d01a45928e0cdd2e6102c1c0ecf23a9de3601f"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/conscrypt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/common/src/main/java/com/android/org/conscrypt/NativeCrypto.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-18c98147",
+                "digest": {
+                  "line_hashes": [
+                    "299535632622317973775762261295033757321",
+                    "298919683211628180965787637771525901670",
+                    "72286295733434330215461289303693648091",
+                    "180531072601765687022348721715007173985"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "common/src/main/java/org/conscrypt/NativeCrypto.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-854fa719",
+                "digest": {
+                  "line_hashes": [
+                    "299535632622317973775762261295033757321",
+                    "298919683211628180965787637771525901670",
+                    "72286295733434330215461289303693648091",
+                    "180531072601765687022348721715007173985"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "testing/src/main/java/org/conscrypt/java/security/StandardNames.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-f05ea173",
+                "digest": {
+                  "line_hashes": [
+                    "76345460774534919623046018758863211779",
+                    "146974738303162855661303116537699460170",
+                    "108662939524375085941082573143147275161",
+                    "106410137962524325474991806287730020401"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/testing/src/main/java/com/android/org/conscrypt/java/security/StandardNames.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-f8b24a46",
+                "digest": {
+                  "line_hashes": [
+                    "76345460774534919623046018758863211779",
+                    "146974738303162855661303116537699460170",
+                    "108662939524375085941082573143147275161",
+                    "106410137962524325474991806287730020401"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/7f433dcc4e483fdf93c556b2f5a1455932b9790e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "support/src/test/java/libcore/java/security/StandardNames.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/7f433dcc4e483fdf93c556b2f5a1455932b9790e",
+                "id": "ASB-A-357870429-c382955e",
+                "digest": {
+                  "line_hashes": [
+                    "66535016980524361043403149777297544018",
+                    "208012504548989863176943934591374168083",
+                    "169957629234222689884011151957709531530",
+                    "149609068575646289901741320586169740841",
+                    "17748157196980919623413425613948538200",
+                    "237027060307776030073850333107935000425",
+                    "260255072171673061633479995635217806784",
+                    "185643812290469475858371970327481550919",
+                    "136143440982469030459544041091062516959",
+                    "66844011190315616230151133429621183345",
+                    "148352931765224521536133833510480020653",
+                    "156574747336136866153122351383737362338",
+                    "43013417459654549848672957616778280628",
+                    "173886808004223641137489881139146528192",
+                    "187136071471501562839529036576399172460",
+                    "164325365152946361337993087955725799003",
+                    "245232122391884598577497400550867472484",
+                    "54905948103801531835746623288164919107",
+                    "110198207713622112801120385307461659394",
+                    "26847733142662621468381641653628558401",
+                    "127981282037734968740388963834057168007",
+                    "292479159237603865445158800558546130494",
+                    "257622853064060194934352056970888229902",
+                    "66827743788910402863664397634699581426",
+                    "29882031764466338251726601023402714436",
+                    "211830598287674033212184393986568012810"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/conscrypt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/conscrypt/+/7ffe97a8034fc98d4f91e0a24793d5f99200523f"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/fe9c4721a54e3ce054da584ddca26cd3a0f34750"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

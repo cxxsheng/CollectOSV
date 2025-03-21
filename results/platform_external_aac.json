@@ -1,0 +1,1184 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-158762825",
+      "details": "In sbrDecoder_AssignQmfChannels2SbrChannels of sbrdecoder.cpp, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-158762825",
+        "CVE-2020-0451"
+      ],
+      "modified": "2024-10-01T21:54:45Z",
+      "published": "2020-11-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2020-11-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/aac/+/ffff95538e9994d312ffdfbba94d88ed226ef7bf"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11-next:0"
+                },
+                {
+                  "fixed": "11-next:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/b5dfe8f92dd94e91f8391a9dc3d1fa7b0415ece2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/b5dfe8f92dd94e91f8391a9dc3d1fa7b0415ece2",
+                "id": "ASB-A-158762825-1ff635f7",
+                "digest": {
+                  "line_hashes": [
+                    "142422467020648822547703441017879885274",
+                    "228812615875260181430145982279368256482",
+                    "176307174465814800197113886399607820925",
+                    "69107727275503488440861565140721362218",
+                    "255157361079938928212995141838126577939",
+                    "160047525827657626340987409945053069165",
+                    "187671612728043577690739855739978551429",
+                    "330514005037872735567875913459891428879",
+                    "220632705698356879282925434135269423181",
+                    "140419493687440592138380646523291207659",
+                    "33384198807420518707870173108725082983",
+                    "270914430008454977006144661128034355017",
+                    "24948692722044566004490151449656924695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sbrDecoder_InitElement",
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/b5dfe8f92dd94e91f8391a9dc3d1fa7b0415ece2",
+                "id": "ASB-A-158762825-5bea0e10",
+                "digest": {
+                  "function_hash": "146558201018791035422978077567348319939",
+                  "length": 4310
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-158762825.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/50aa5be38870319395ce2ef6f91543e6475e4b97"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/50aa5be38870319395ce2ef6f91543e6475e4b97",
+                "id": "ASB-A-158762825-00398924",
+                "digest": {
+                  "line_hashes": [
+                    "228812615875260181430145982279368256482",
+                    "176307174465814800197113886399607820925",
+                    "69107727275503488440861565140721362218",
+                    "79144432237833794385995381888037130233",
+                    "151815700922097067393703470540359404549",
+                    "278065597791376900532215424183280781167",
+                    "140608842562946831557655018490924436497"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sbrDecoder_InitElement",
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/50aa5be38870319395ce2ef6f91543e6475e4b97",
+                "id": "ASB-A-158762825-2f1e9a86",
+                "digest": {
+                  "function_hash": "236513874519966155411576035832073081180",
+                  "length": 3180
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-158762825.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/50aa5be38870319395ce2ef6f91543e6475e4b97"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/50aa5be38870319395ce2ef6f91543e6475e4b97",
+                "id": "ASB-A-158762825-4ee4b0a6",
+                "digest": {
+                  "line_hashes": [
+                    "228812615875260181430145982279368256482",
+                    "176307174465814800197113886399607820925",
+                    "69107727275503488440861565140721362218",
+                    "79144432237833794385995381888037130233",
+                    "151815700922097067393703470540359404549",
+                    "278065597791376900532215424183280781167",
+                    "140608842562946831557655018490924436497"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sbrDecoder_InitElement",
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/50aa5be38870319395ce2ef6f91543e6475e4b97",
+                "id": "ASB-A-158762825-933ebaa5",
+                "digest": {
+                  "function_hash": "236513874519966155411576035832073081180",
+                  "length": 3180
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-158762825.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/c516539a202b08cda8569a9e58c9dc6097450cbe"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/c516539a202b08cda8569a9e58c9dc6097450cbe",
+                "id": "ASB-A-158762825-1b2eed57",
+                "digest": {
+                  "line_hashes": [
+                    "228812615875260181430145982279368256482",
+                    "176307174465814800197113886399607820925",
+                    "69107727275503488440861565140721362218",
+                    "255157361079938928212995141838126577939",
+                    "160047525827657626340987409945053069165",
+                    "187671612728043577690739855739978551429",
+                    "330514005037872735567875913459891428879",
+                    "220632705698356879282925434135269423181",
+                    "140419493687440592138380646523291207659",
+                    "33384198807420518707870173108725082983",
+                    "270914430008454977006144661128034355017",
+                    "24948692722044566004490151449656924695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sbrDecoder_InitElement",
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/c516539a202b08cda8569a9e58c9dc6097450cbe",
+                "id": "ASB-A-158762825-ac20c550",
+                "digest": {
+                  "function_hash": "146558201018791035422978077567348319939",
+                  "length": 4310
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-158762825.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/c516539a202b08cda8569a9e58c9dc6097450cbe"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/c516539a202b08cda8569a9e58c9dc6097450cbe",
+                "id": "ASB-A-158762825-039bdc40",
+                "digest": {
+                  "line_hashes": [
+                    "228812615875260181430145982279368256482",
+                    "176307174465814800197113886399607820925",
+                    "69107727275503488440861565140721362218",
+                    "255157361079938928212995141838126577939",
+                    "160047525827657626340987409945053069165",
+                    "187671612728043577690739855739978551429",
+                    "330514005037872735567875913459891428879",
+                    "220632705698356879282925434135269423181",
+                    "140419493687440592138380646523291207659",
+                    "33384198807420518707870173108725082983",
+                    "270914430008454977006144661128034355017",
+                    "24948692722044566004490151449656924695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sbrDecoder_InitElement",
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/c516539a202b08cda8569a9e58c9dc6097450cbe",
+                "id": "ASB-A-158762825-d403db16",
+                "digest": {
+                  "function_hash": "146558201018791035422978077567348319939",
+                  "length": 4310
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-158762825.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2020-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/bb8f983bf36ee2ad8af6acebf4823a58060004ab"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/bb8f983bf36ee2ad8af6acebf4823a58060004ab",
+                "id": "ASB-A-158762825-2b030bdd",
+                "digest": {
+                  "line_hashes": [
+                    "142422467020648822547703441017879885274",
+                    "228812615875260181430145982279368256482",
+                    "176307174465814800197113886399607820925",
+                    "69107727275503488440861565140721362218",
+                    "255157361079938928212995141838126577939",
+                    "160047525827657626340987409945053069165",
+                    "187671612728043577690739855739978551429",
+                    "330514005037872735567875913459891428879",
+                    "220632705698356879282925434135269423181",
+                    "140419493687440592138380646523291207659",
+                    "33384198807420518707870173108725082983",
+                    "270914430008454977006144661128034355017",
+                    "24948692722044566004490151449656924695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sbrDecoder_InitElement",
+                  "file": "libSBRdec/src/sbrdecoder.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/bb8f983bf36ee2ad8af6acebf4823a58060004ab",
+                "id": "ASB-A-158762825-90aa67b9",
+                "digest": {
+                  "function_hash": "146558201018791035422978077567348319939",
+                  "length": 4310
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-158762825.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-224314979",
+      "details": "In transportDec_OutOfBandConfig of  tpdec_lib.cpp, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-224314979",
+        "CVE-2022-20130"
+      ],
+      "modified": "2024-09-20T22:25:04Z",
+      "published": "2022-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/aac/+/eb07c22519d94e573f2a02947094acd2219dc07a"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L-next:0"
+                },
+                {
+                  "fixed": "12L-next:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/067929dcd3467fd8e1383303efaff2cfc37224e9"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "transportDec_OutOfBandConfig",
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/067929dcd3467fd8e1383303efaff2cfc37224e9",
+                "id": "ASB-A-224314979-45959e09",
+                "digest": {
+                  "function_hash": "14688623539237930573622344493800917118",
+                  "length": 2284
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/067929dcd3467fd8e1383303efaff2cfc37224e9",
+                "id": "ASB-A-224314979-885abf8a",
+                "digest": {
+                  "line_hashes": [
+                    "41834245073546748005348337198116649443",
+                    "296567283181987654677179610525862122783",
+                    "108587633537507210242609878158511307392",
+                    "263040339922716737265934089119049662491",
+                    "13461143593537092071846640702810093743"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224314979.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/eb07c22519d94e573f2a02947094acd2219dc07a"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "transportDec_OutOfBandConfig",
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/eb07c22519d94e573f2a02947094acd2219dc07a",
+                "id": "ASB-A-224314979-15504185",
+                "digest": {
+                  "function_hash": "14688623539237930573622344493800917118",
+                  "length": 2284
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/eb07c22519d94e573f2a02947094acd2219dc07a",
+                "id": "ASB-A-224314979-faefdf1e",
+                "digest": {
+                  "line_hashes": [
+                    "41834245073546748005348337198116649443",
+                    "296567283181987654677179610525862122783",
+                    "108587633537507210242609878158511307392",
+                    "263040339922716737265934089119049662491",
+                    "13461143593537092071846640702810093743"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224314979.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/6a3817573b089f01b13f4f3a195dda8a345d8fe0"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/6a3817573b089f01b13f4f3a195dda8a345d8fe0",
+                "id": "ASB-A-224314979-096f7809",
+                "digest": {
+                  "line_hashes": [
+                    "41834245073546748005348337198116649443",
+                    "296567283181987654677179610525862122783",
+                    "108587633537507210242609878158511307392",
+                    "263040339922716737265934089119049662491",
+                    "13461143593537092071846640702810093743"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "transportDec_OutOfBandConfig",
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/6a3817573b089f01b13f4f3a195dda8a345d8fe0",
+                "id": "ASB-A-224314979-4a17c1c2",
+                "digest": {
+                  "function_hash": "14688623539237930573622344493800917118",
+                  "length": 2284
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224314979.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/23ef1ac38c2dae4cd755880fc8f98491efd26027"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "transportDec_OutOfBandConfig",
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/23ef1ac38c2dae4cd755880fc8f98491efd26027",
+                "id": "ASB-A-224314979-22721a4c",
+                "digest": {
+                  "function_hash": "14688623539237930573622344493800917118",
+                  "length": 2284
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/23ef1ac38c2dae4cd755880fc8f98491efd26027",
+                "id": "ASB-A-224314979-fb38480f",
+                "digest": {
+                  "line_hashes": [
+                    "41834245073546748005348337198116649443",
+                    "296567283181987654677179610525862122783",
+                    "108587633537507210242609878158511307392",
+                    "263040339922716737265934089119049662491",
+                    "13461143593537092071846640702810093743"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224314979.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/2768a078f34a4d6cdb05916ad0e1f02d4c73fb6b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/2768a078f34a4d6cdb05916ad0e1f02d4c73fb6b",
+                "id": "ASB-A-224314979-12997a9a",
+                "digest": {
+                  "line_hashes": [
+                    "41834245073546748005348337198116649443",
+                    "296567283181987654677179610525862122783",
+                    "108587633537507210242609878158511307392",
+                    "263040339922716737265934089119049662491",
+                    "13461143593537092071846640702810093743"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "transportDec_OutOfBandConfig",
+                  "file": "libMpegTPDec/src/tpdec_lib.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/2768a078f34a4d6cdb05916ad0e1f02d4c73fb6b",
+                "id": "ASB-A-224314979-9cdb4d92",
+                "digest": {
+                  "function_hash": "14688623539237930573622344493800917118",
+                  "length": 2284
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224314979.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-279766766",
+      "details": "In TRANSPOSER_SETTINGS of lpp_tran.h, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-279766766",
+        "CVE-2023-21282"
+      ],
+      "modified": "2024-08-07T19:29:09.739469Z",
+      "published": "2023-08-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2023-08-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/aac/+/4242f97d149b0bf0cd96f00cd1e9d30d5922cd46"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13-next:0"
+                },
+                {
+                  "fixed": "13-next:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/f682b8787eb312b9f8997dac4c2c18bb779cf0df"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/lpp_tran.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/f682b8787eb312b9f8997dac4c2c18bb779cf0df",
+                "id": "ASB-A-279766766-06db2c77",
+                "digest": {
+                  "line_hashes": [
+                    "137485364397329512956617123630598953062",
+                    "319734127269816074276009054291440914706",
+                    "142184391661538065296615672940683793507",
+                    "205803596976412131032451772469158635915",
+                    "95337811043235553146515398896013463588"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279766766.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/451762ca48e7fb30a0ce77a8962813a3419ec420"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/lpp_tran.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/451762ca48e7fb30a0ce77a8962813a3419ec420",
+                "id": "ASB-A-279766766-c31ce1f6",
+                "digest": {
+                  "line_hashes": [
+                    "137485364397329512956617123630598953062",
+                    "319734127269816074276009054291440914706",
+                    "142184391661538065296615672940683793507",
+                    "205803596976412131032451772469158635915",
+                    "95337811043235553146515398896013463588"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279766766.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/173576b2b39083c425f0ca37382a047b6ca3b524"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/lpp_tran.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/173576b2b39083c425f0ca37382a047b6ca3b524",
+                "id": "ASB-A-279766766-e6b2c014",
+                "digest": {
+                  "line_hashes": [
+                    "137485364397329512956617123630598953062",
+                    "319734127269816074276009054291440914706",
+                    "142184391661538065296615672940683793507",
+                    "205803596976412131032451772469158635915",
+                    "95337811043235553146515398896013463588"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279766766.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/cd6f2198617dcfbdeeb08e2cb2d36046659291c7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/lpp_tran.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/cd6f2198617dcfbdeeb08e2cb2d36046659291c7",
+                "id": "ASB-A-279766766-d57aac14",
+                "digest": {
+                  "line_hashes": [
+                    "137485364397329512956617123630598953062",
+                    "319734127269816074276009054291440914706",
+                    "142184391661538065296615672940683793507",
+                    "205803596976412131032451772469158635915",
+                    "95337811043235553146515398896013463588"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279766766.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/aac",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/aac/+/2f8c08a4e7b228a55e4c89f0931069de8eda2df6"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libSBRdec/src/lpp_tran.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/aac/+/2f8c08a4e7b228a55e4c89f0931069de8eda2df6",
+                "id": "ASB-A-279766766-48ed2978",
+                "digest": {
+                  "line_hashes": [
+                    "137485364397329512956617123630598953062",
+                    "319734127269816074276009054291440914706",
+                    "142184391661538065296615672940683793507",
+                    "205803596976412131032451772469158635915",
+                    "95337811043235553146515398896013463588"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279766766.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

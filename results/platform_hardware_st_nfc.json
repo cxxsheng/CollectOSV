@@ -1,0 +1,329 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-356630194",
+      "details": "In handlePollingLoopData of hal_fwlog.cc, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-356630194",
+        "CVE-2025-0096"
+      ],
+      "modified": "2025-02-26T22:26:57Z",
+      "published": "2025-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-02-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/st/nfc/+/58728fc8363b3b073f1561b253da4a42998fed11"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/st/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "st21nfc/hal/hal_fwlog.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0",
+                "id": "ASB-A-356630194-07346c89",
+                "digest": {
+                  "line_hashes": [
+                    "184901186016634046180835950952564806967",
+                    "186216076513178507879449714996662973261",
+                    "126698021011107253298906417944068204446",
+                    "259331588106946646897741373686426685891"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handlePollingLoopData",
+                  "file": "st21nfc/hal/hal_fwlog.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0",
+                "id": "ASB-A-356630194-1c755619",
+                "digest": {
+                  "function_hash": "165987197722151145039007725392439655065",
+                  "length": 2175
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-356630194.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/st/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/2c6225e82a0d3d721fb84a3828a9916bc9b7aa89"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-356630194.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-169328517",
+      "details": "In halWrapperDataCallback of hal_wrapper.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-169328517",
+        "CVE-2021-0540"
+      ],
+      "modified": "2024-08-29T07:12:50.869758Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/st/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "halWrapperDataCallback",
+                  "file": "st21nfc/hal_wrapper.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd",
+                "id": "PUB-A-169328517-8182fa26",
+                "digest": {
+                  "function_hash": "156402217938034955657566084179418192503",
+                  "length": 8252
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "st21nfc/hal_wrapper.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd",
+                "id": "PUB-A-169328517-d1632530",
+                "digest": {
+                  "line_hashes": [
+                    "3601903727802988883985426624848021982",
+                    "228303039871677846233797537348230522257",
+                    "284277893623836906015780173768263114448",
+                    "92758868853395512953116271879982549087",
+                    "2235125378971121113614138669053295544",
+                    "12055157359709916415574761842356571803"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-169328517.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-229994861",
+      "details": "In HalCoreCallback of halcore.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure from the NFC firmware with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-229994861",
+        "CVE-2022-20527"
+      ],
+      "modified": "2024-08-29T06:57:58.806223Z",
+      "published": "2022-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/st/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2022-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "st21nfc/hal/halcore.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6",
+                "id": "PUB-A-229994861-33818c24",
+                "digest": {
+                  "line_hashes": [
+                    "165744123791803713704763289471465043099",
+                    "27783976174390821137820152893181231296",
+                    "76791411373196050948003848164575001558",
+                    "301341817714026765422772554170160352996"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "HalCoreCallback",
+                  "file": "st21nfc/hal/halcore.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6",
+                "id": "PUB-A-229994861-ddaf01cb",
+                "digest": {
+                  "function_hash": "90138370701600535322812863812506258764",
+                  "length": 1926
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-229994861.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

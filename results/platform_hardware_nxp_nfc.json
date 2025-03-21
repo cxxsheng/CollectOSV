@@ -1,0 +1,4221 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-181660091",
+      "details": "In phNxpNciHal_process_ext_rsp of phNxpNciHal_ext.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution over NFC with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-181660091",
+        "CVE-2021-0930"
+      ],
+      "modified": "2024-08-07T19:29:19.069625Z",
+      "published": "2021-11-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-11-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/95e1dd94c3794bd175c3784fb5accfeac18a1787"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722",
+                "id": "ASB-A-181660091-18d558ed",
+                "digest": {
+                  "line_hashes": [
+                    "99860553623581235138285079328231545367",
+                    "311109860135954883653537398728919786717",
+                    "41132790401433254210318606601304368783",
+                    "38742958951678416004525463072651252691",
+                    "327045068271184269054905105808831680035",
+                    "247327466993503976893419637353824382758",
+                    "87593289755700552119713026055312392844",
+                    "234271969641130123654654137111502201760",
+                    "56196240256472743204171193358399311908"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_process_ext_rsp",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722",
+                "id": "ASB-A-181660091-c0c91fc4",
+                "digest": {
+                  "function_hash": "42354174637122065909857040280248619789",
+                  "length": 7337
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-181660091.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722",
+                "id": "ASB-A-181660091-3b51cc58",
+                "digest": {
+                  "line_hashes": [
+                    "99860553623581235138285079328231545367",
+                    "311109860135954883653537398728919786717",
+                    "41132790401433254210318606601304368783",
+                    "38742958951678416004525463072651252691",
+                    "327045068271184269054905105808831680035",
+                    "247327466993503976893419637353824382758",
+                    "87593289755700552119713026055312392844",
+                    "234271969641130123654654137111502201760",
+                    "56196240256472743204171193358399311908"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_process_ext_rsp",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722",
+                "id": "ASB-A-181660091-ec72232b",
+                "digest": {
+                  "function_hash": "42354174637122065909857040280248619789",
+                  "length": 7337
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-181660091.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722",
+                "id": "ASB-A-181660091-33041a05",
+                "digest": {
+                  "line_hashes": [
+                    "99860553623581235138285079328231545367",
+                    "311109860135954883653537398728919786717",
+                    "41132790401433254210318606601304368783",
+                    "38742958951678416004525463072651252691",
+                    "327045068271184269054905105808831680035",
+                    "247327466993503976893419637353824382758",
+                    "87593289755700552119713026055312392844",
+                    "234271969641130123654654137111502201760",
+                    "56196240256472743204171193358399311908"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_process_ext_rsp",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/528b21d3443efd763313a446624ea985f3d46722",
+                "id": "ASB-A-181660091-63450e29",
+                "digest": {
+                  "function_hash": "42354174637122065909857040280248619789",
+                  "length": 7337
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-181660091.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/1f58061034c8dbf14843d94a2ee8f70f4692d158"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_process_ext_rsp",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/1f58061034c8dbf14843d94a2ee8f70f4692d158",
+                "id": "ASB-A-181660091-2eecf33f",
+                "digest": {
+                  "function_hash": "71352292464839372914490855974666762429",
+                  "length": 7876
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/1f58061034c8dbf14843d94a2ee8f70f4692d158",
+                "id": "ASB-A-181660091-94fac09a",
+                "digest": {
+                  "line_hashes": [
+                    "99860553623581235138285079328231545367",
+                    "311109860135954883653537398728919786717",
+                    "41132790401433254210318606601304368783",
+                    "38742958951678416004525463072651252691",
+                    "327045068271184269054905105808831680035",
+                    "247327466993503976893419637353824382758",
+                    "87593289755700552119713026055312392844",
+                    "234271969641130123654654137111502201760",
+                    "56196240256472743204171193358399311908"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-181660091.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-197353344",
+      "details": "In phTmlNfc_Init and phTmlNfc_CleanUp of phTmlNfc.cc, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-197353344",
+        "CVE-2021-39629"
+      ],
+      "modified": "2024-08-07T19:29:12.857589Z",
+      "published": "2022-01-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-01-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/63162916491d3ad034e0288fb2e254cf2b66db92"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2022-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/cf72695ce1825007b8705338fd5baa583b50bd81"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/tml/phTmlNfc.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/cf72695ce1825007b8705338fd5baa583b50bd81",
+                "id": "ASB-A-197353344-41c80c61",
+                "digest": {
+                  "line_hashes": [
+                    "79977752736498591055745919943296483020",
+                    "280191281260799491227299689449532060734",
+                    "338573141868888499314709268095003018284",
+                    "202975929060145663993056057647499796875"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-197353344.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/647f3fcc75511c6f05e1670d2457b0d93c13abdf"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/tml/phTmlNfc.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/647f3fcc75511c6f05e1670d2457b0d93c13abdf",
+                "id": "ASB-A-197353344-c154712b",
+                "digest": {
+                  "line_hashes": [
+                    "79977752736498591055745919943296483020",
+                    "280191281260799491227299689449532060734",
+                    "338573141868888499314709268095003018284",
+                    "202975929060145663993056057647499796875"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-197353344.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/647f3fcc75511c6f05e1670d2457b0d93c13abdf"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/tml/phTmlNfc.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/647f3fcc75511c6f05e1670d2457b0d93c13abdf",
+                "id": "ASB-A-197353344-11ad9091",
+                "digest": {
+                  "line_hashes": [
+                    "79977752736498591055745919943296483020",
+                    "280191281260799491227299689449532060734",
+                    "338573141868888499314709268095003018284",
+                    "202975929060145663993056057647499796875"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-197353344.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/e777cc1902b4f063886035857ac9d396453ecb36"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/tml/phTmlNfc.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/e777cc1902b4f063886035857ac9d396453ecb36",
+                "id": "ASB-A-197353344-16165492",
+                "digest": {
+                  "line_hashes": [
+                    "79977752736498591055745919943296483020",
+                    "280191281260799491227299689449532060734",
+                    "338573141868888499314709268095003018284",
+                    "202975929060145663993056057647499796875"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-197353344.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-230356196",
+      "details": "In phNxpNciHal_write_unlocked of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-230356196",
+        "CVE-2022-20462"
+      ],
+      "modified": "2024-08-07T19:29:32.098779Z",
+      "published": "2022-11-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-11-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/4ef6287d7b4d2f9857ca3faa1c79f070cbd80e06"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a0c461b91a67f6ee0e86f856bcea2bdac2318491"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a0c461b91a67f6ee0e86f856bcea2bdac2318491",
+                "id": "ASB-A-230356196-2b426fc1",
+                "digest": {
+                  "function_hash": "95941805404000749890334167924536138770",
+                  "length": 7162
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a0c461b91a67f6ee0e86f856bcea2bdac2318491",
+                "id": "ASB-A-230356196-a07b1aa5",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-230356196.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a0c461b91a67f6ee0e86f856bcea2bdac2318491"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a0c461b91a67f6ee0e86f856bcea2bdac2318491",
+                "id": "ASB-A-230356196-11865510",
+                "digest": {
+                  "function_hash": "95941805404000749890334167924536138770",
+                  "length": 7162
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a0c461b91a67f6ee0e86f856bcea2bdac2318491",
+                "id": "ASB-A-230356196-25735f29",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-230356196.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-486fd4fb",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-b5c90b9d",
+                "digest": {
+                  "function_hash": "70202436915826428778370366148075471606",
+                  "length": 7169
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "snxxx/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-b5fed546",
+                "digest": {
+                  "function_hash": "105225332814135071589178724913404180392",
+                  "length": 7356
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-f404a935",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-230356196.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-0587a633",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "snxxx/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-7015178c",
+                "digest": {
+                  "function_hash": "105225332814135071589178724913404180392",
+                  "length": 7356
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-77485ea1",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-e88d2d93",
+                "digest": {
+                  "function_hash": "70202436915826428778370366148075471606",
+                  "length": 7169
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-230356196.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2022-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-5b3c07de",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "snxxx/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-6c0dec57",
+                "digest": {
+                  "function_hash": "105225332814135071589178724913404180392",
+                  "length": 7356
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_write_ext",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-cb6360f1",
+                "digest": {
+                  "function_hash": "70202436915826428778370366148075471606",
+                  "length": 7169
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/9b103dd005ba3b4a33d54518e879010254d897ae",
+                "id": "ASB-A-230356196-f63627da",
+                "digest": {
+                  "line_hashes": [
+                    "219055300527710120337293274866049803551",
+                    "336381885887554992179558876792283641179",
+                    "57139778833048232178722579575282040841",
+                    "191085082137101845790661836300778798488"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-230356196.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-238177877",
+      "details": "In SendIncDecRestoreCmdPart2 of NxpMfcReader.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-238177877",
+        "CVE-2022-20471"
+      ],
+      "modified": "2024-08-07T19:29:45.374592Z",
+      "published": "2023-04-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2023-04-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/1164ee536ecf6504e73dcaac0ccb1ee887f3a19c"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/50779bfee26842816f0c241f5dc5a8b8b5f12f37"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/334645060efe1ef0889385512f74513ea1bb29a2"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13-next:0"
+                },
+                {
+                  "fixed": "13-next:2023-04-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d149359fadcf341fc3003d93b35122dbfa14ff65",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-1a5d3216",
+                "digest": {
+                  "function_hash": "28843801571999006300317650354881026770",
+                  "length": 797
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-1bfd157e",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-1ddb968c",
+                "digest": {
+                  "line_hashes": [
+                    "201893246621099521074465634169813075898",
+                    "279902204761236358480008599292757309732",
+                    "56054547616542337796362662365373634671",
+                    "167641003957214733394181929754460247285",
+                    "105012794093569296783728763612510148072",
+                    "235376272311028090652388114058981016970",
+                    "289533344656951812975084893704198591405",
+                    "142482732693610735221530492315348017571",
+                    "295040899985559040229378633751560394193",
+                    "150402260819950198401812481224503171378",
+                    "252605034614232171848817461581133862689",
+                    "100543689571258288061748141070471201390",
+                    "200161464529102806696996102413162160953",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-280e9c52",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-2e1675d6",
+                "digest": {
+                  "line_hashes": [
+                    "150402260819950198401812481224503171378",
+                    "252605034614232171848817461581133862689",
+                    "100543689571258288061748141070471201390",
+                    "200161464529102806696996102413162160953",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-4bbadb7c",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d149359fadcf341fc3003d93b35122dbfa14ff65",
+                "id": "ASB-A-238177877-4e1677c7",
+                "digest": {
+                  "function_hash": "332967507541512115420341785265940524818",
+                  "length": 576
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-52adfb05",
+                "digest": {
+                  "line_hashes": [
+                    "201893246621099521074465634169813075898",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-76be2a82",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d149359fadcf341fc3003d93b35122dbfa14ff65",
+                "id": "ASB-A-238177877-8dcf1913",
+                "digest": {
+                  "function_hash": "308071766184816898683832381969832016030",
+                  "length": 805
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-9acbd6bf",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-9ea87216",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-a4fdcf0f",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-aea7e645",
+                "digest": {
+                  "function_hash": "28843801571999006300317650354881026770",
+                  "length": 797
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-b4f887aa",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-b668d0aa",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/253cda9827d63aab0c537f6cc095f507e646116a",
+                "id": "ASB-A-238177877-ed692c93",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a83beb0b215147a80f6ecf44674b7c8d415a923c",
+                "id": "ASB-A-238177877-f4e9d1a7",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-238177877.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2023-04-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/4d23eb81604ceea12d2929fe1f78873d6d604d1c",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/117beb07e435ff84c74bf4e8dcb03ba8241e9a62",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/8cfb70d74d36551bf0b05416fa0e6ba066009774"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/4d23eb81604ceea12d2929fe1f78873d6d604d1c",
+                "id": "ASB-A-238177877-122708f1",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/4d23eb81604ceea12d2929fe1f78873d6d604d1c",
+                "id": "ASB-A-238177877-13eadd82",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/117beb07e435ff84c74bf4e8dcb03ba8241e9a62",
+                "id": "ASB-A-238177877-605e882b",
+                "digest": {
+                  "function_hash": "189236382124427370451913326229920443345",
+                  "length": 471
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/8cfb70d74d36551bf0b05416fa0e6ba066009774",
+                "id": "ASB-A-238177877-88f0dd7c",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/4d23eb81604ceea12d2929fe1f78873d6d604d1c",
+                "id": "ASB-A-238177877-cafaf128",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/8cfb70d74d36551bf0b05416fa0e6ba066009774",
+                "id": "ASB-A-238177877-dab90719",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/4d23eb81604ceea12d2929fe1f78873d6d604d1c",
+                "id": "ASB-A-238177877-eb47858c",
+                "digest": {
+                  "function_hash": "145252763078588153031775599008019421957",
+                  "length": 463
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/8cfb70d74d36551bf0b05416fa0e6ba066009774",
+                "id": "ASB-A-238177877-f65d339e",
+                "digest": {
+                  "line_hashes": [
+                    "190739624825328963752296922721909099361",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/8cfb70d74d36551bf0b05416fa0e6ba066009774",
+                "id": "ASB-A-238177877-fad66c93",
+                "digest": {
+                  "function_hash": "145252763078588153031775599008019421957",
+                  "length": 463
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-238177877.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2023-04-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/415918b18760ad3caa32e67e5ed35dddadadb7d3",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-13849c13",
+                "digest": {
+                  "function_hash": "145252763078588153031775599008019421957",
+                  "length": 463
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/415918b18760ad3caa32e67e5ed35dddadadb7d3",
+                "id": "ASB-A-238177877-1a404479",
+                "digest": {
+                  "function_hash": "189236382124427370451913326229920443345",
+                  "length": 471
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-2b309603",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-304cac84",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-3bca0ca7",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-4496f290",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-59aab59e",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/415918b18760ad3caa32e67e5ed35dddadadb7d3",
+                "id": "ASB-A-238177877-669fb343",
+                "digest": {
+                  "function_hash": "332967507541512115420341785265940524818",
+                  "length": 576
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-7252a24a",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-76e67a43",
+                "digest": {
+                  "function_hash": "145252763078588153031775599008019421957",
+                  "length": 463
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-a724ff91",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-b048b7c4",
+                "digest": {
+                  "line_hashes": [
+                    "201893246621099521074465634169813075898",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-b4550294",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-d6ab7f9d",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-e2c2a757",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-f701e8b1",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-fb124791",
+                "digest": {
+                  "line_hashes": [
+                    "302233115139882604904267253285573465543",
+                    "135375136302977116081734182424560783853",
+                    "76235250254899872457529800054544205721",
+                    "45419823834184331795114174726471639966",
+                    "201893246621099521074465634169813075898",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-fbadad14",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-238177877.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-04-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/415918b18760ad3caa32e67e5ed35dddadadb7d3",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-063fc074",
+                "digest": {
+                  "line_hashes": [
+                    "201893246621099521074465634169813075898",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-2181ac9a",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-352d2f38",
+                "digest": {
+                  "function_hash": "145252763078588153031775599008019421957",
+                  "length": 463
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-399fa50c",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-43ea61d4",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-44bc1a72",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-4fc63ed8",
+                "digest": {
+                  "line_hashes": [
+                    "302233115139882604904267253285573465543",
+                    "135375136302977116081734182424560783853",
+                    "76235250254899872457529800054544205721",
+                    "45419823834184331795114174726471639966",
+                    "201893246621099521074465634169813075898",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-6d078276",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/415918b18760ad3caa32e67e5ed35dddadadb7d3",
+                "id": "ASB-A-238177877-78693767",
+                "digest": {
+                  "function_hash": "189236382124427370451913326229920443345",
+                  "length": 471
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-7f013e1b",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-8db33242",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-912781ae",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/415918b18760ad3caa32e67e5ed35dddadadb7d3",
+                "id": "ASB-A-238177877-9a18c31f",
+                "digest": {
+                  "function_hash": "332967507541512115420341785265940524818",
+                  "length": 576
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-b9ab3511",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-d408ebea",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-d5831be7",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/385141739f4209ef6dd3968dd841a7e3a25b50af",
+                "id": "ASB-A-238177877-edc19a39",
+                "digest": {
+                  "function_hash": "145252763078588153031775599008019421957",
+                  "length": 463
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a77b3b8ceacfd75cac672ded4301fadebb3811e4",
+                "id": "ASB-A-238177877-f86c91d1",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-238177877.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2023-04-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f61bd379e89790af74414ef49061da67e1910497",
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-024fbce5",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-336323bf",
+                "digest": {
+                  "line_hashes": [
+                    "201893246621099521074465634169813075898",
+                    "279902204761236358480008599292757309732",
+                    "56054547616542337796362662365373634671",
+                    "167641003957214733394181929754460247285",
+                    "105012794093569296783728763612510148072",
+                    "235376272311028090652388114058981016970",
+                    "289533344656951812975084893704198591405",
+                    "142482732693610735221530492315348017571",
+                    "295040899985559040229378633751560394193",
+                    "150402260819950198401812481224503171378",
+                    "252605034614232171848817461581133862689",
+                    "100543689571258288061748141070471201390",
+                    "200161464529102806696996102413162160953",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-38634e37",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f61bd379e89790af74414ef49061da67e1910497",
+                "id": "ASB-A-238177877-53482849",
+                "digest": {
+                  "function_hash": "332967507541512115420341785265940524818",
+                  "length": 576
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-6a099049",
+                "digest": {
+                  "function_hash": "28843801571999006300317650354881026770",
+                  "length": 797
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-74205d2a",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-7ce8e100",
+                "digest": {
+                  "function_hash": "28843801571999006300317650354881026770",
+                  "length": 797
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-7f331661",
+                "digest": {
+                  "line_hashes": [
+                    "150402260819950198401812481224503171378",
+                    "252605034614232171848817461581133862689",
+                    "100543689571258288061748141070471201390",
+                    "200161464529102806696996102413162160953",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-93a6cfe4",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-b9cb593f",
+                "digest": {
+                  "function_hash": "107710804702745222663926650081327746329",
+                  "length": 568
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-ba42fca9",
+                "digest": {
+                  "line_hashes": [
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "330838211833367660780344008192697827770",
+                    "299391466228128059073886252458655244973",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::Write",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f61bd379e89790af74414ef49061da67e1910497",
+                "id": "ASB-A-238177877-c0227b22",
+                "digest": {
+                  "function_hash": "308071766184816898683832381969832016030",
+                  "length": 805
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-c1c885db",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-c899cd57",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/6dfdec6cfa0f858a25b35beed6a928d5838c11af",
+                "id": "ASB-A-238177877-cb975733",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-ce963b58",
+                "digest": {
+                  "line_hashes": [
+                    "111195075896483255892578245978754313161",
+                    "93279364457072040212412741099248856635",
+                    "25005185110089734682382121257885203252",
+                    "81605975940868466517567365060728674291",
+                    "142372902899132564966623332240332936648"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::SendIncDecRestoreCmdPart2",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-f2671ba5",
+                "digest": {
+                  "function_hash": "331720964129074385274146253589624122603",
+                  "length": 577
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/f93afd496162ec9da2ebd023b8222572d73495a3",
+                "id": "ASB-A-238177877-f8555e30",
+                "digest": {
+                  "line_hashes": [
+                    "201893246621099521074465634169813075898",
+                    "137691883550963117306506387972710583434",
+                    "339488470467235927761077839901081604068",
+                    "153782194528661102482619679997423989930",
+                    "248335793847058506506466437332095974312",
+                    "211905594914182825664123707115463272520",
+                    "136582553052826679485493005457549561973",
+                    "329520085713395072910265636007004706728",
+                    "23094711134459607857710831797019573743",
+                    "67819955780570890476285731266079333561",
+                    "230211277467659263188675966651423580679",
+                    "11160593662653815432051969066165637138",
+                    "249536579415265993261281921488837033435",
+                    "303137434063079450987335784616381604203",
+                    "9442067993683741335919381934876200219",
+                    "287732786590561783980111003942666556164"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-238177877.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-252763983",
+      "details": "In AnalyzeMfcResp of NxpMfcReader.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-252763983",
+        "CVE-2023-21112"
+      ],
+      "modified": "2024-08-07T19:29:11.010606Z",
+      "published": "2023-05-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2023-05-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/a20d5962d9350409204535b145826a41a7a3262d"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13-next:0"
+                },
+                {
+                  "fixed": "13-next:2023-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-08628712",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-6c8b5605",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-76b70cae",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-bb9dd33f",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-252763983.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2023-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/67e1db04f568cf50c90758272ceca93426aba932"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/67e1db04f568cf50c90758272ceca93426aba932",
+                "id": "ASB-A-252763983-9b45cb74",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/67e1db04f568cf50c90758272ceca93426aba932",
+                "id": "ASB-A-252763983-efd04272",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-252763983.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2023-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-16f7f721",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-1c88b988",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-e1952f90",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-ec0f6685",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-252763983.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-3d6c4ce5",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-732c92c7",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-9e5854c9",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-f13d3baf",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-252763983.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2023-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-4dd0fded",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-67c3d35a",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NxpMfcReader::AnalyzeMfcResp",
+                  "file": "snxxx/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-eaccfcca",
+                "digest": {
+                  "function_hash": "217768603380171297613270030606270843987",
+                  "length": 1390
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/mifare/NxpMfcReader.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/69c53a6f1bca6d450e5100c1044114ffad615e5c",
+                "id": "ASB-A-252763983-f164f37f",
+                "digest": {
+                  "line_hashes": [
+                    "64284978509830298798730183538658890155",
+                    "161084689393964153539491505797652199006",
+                    "252132195742022893447742066666725943805",
+                    "126108868847444204655071566216860054307"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-252763983.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-169257710",
+      "details": "In phNxpNciHal_print_res_status of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-169257710",
+        "CVE-2021-0544"
+      ],
+      "modified": "2024-08-29T06:57:50.735906Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_print_res_status",
+                  "file": "halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f",
+                "id": "PUB-A-169257710-a221365b",
+                "digest": {
+                  "function_hash": "145899811643926726504841734127427203008",
+                  "length": 1843
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f",
+                "id": "PUB-A-169257710-c1664c84",
+                "digest": {
+                  "line_hashes": [
+                    "186546649332595719760709967096220487122",
+                    "276028843360022147028961953549648120767",
+                    "3958563350645446514168737349641104704",
+                    "16342225463242291491226269122076074642",
+                    "328374640030903947394618088068986507424",
+                    "124409135069973804548425575301613334775",
+                    "240771331944478748917531059421592021275",
+                    "113714460987669737769620916473529989177",
+                    "253859249321806032581105689844917368384",
+                    "273986881014520327244882059344370763798",
+                    "306981536673503638525659796381680761795",
+                    "165192048633730649762790374355893509999",
+                    "237079044174739157119155643684671891257",
+                    "43779054585709293988804823572701059293",
+                    "81010849652033626298022046608117070624",
+                    "312844301519515496988965759614666486132",
+                    "27529100634285236431217361127093045996",
+                    "307587466860720780286910192283717646597",
+                    "140672343804490970650717429586128574318",
+                    "144190714571291946187433173811701333324"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-169257710.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-169258455",
+      "details": "In phNxpNciHal_ext_process_nfc_init_rsp of phNxpNciHal_ext.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure in the NFC server with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-169258455",
+        "CVE-2021-0541"
+      ],
+      "modified": "2024-08-29T06:57:50.800432Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/7f746d6db0f8c53b355654431ea1f14e0827ec33"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/7f746d6db0f8c53b355654431ea1f14e0827ec33"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/7f746d6db0f8c53b355654431ea1f14e0827ec33",
+                "id": "PUB-A-169258455-346b95af",
+                "digest": {
+                  "line_hashes": [
+                    "97290956096428615455124664942432763928",
+                    "58925395539975537022167760098420146502",
+                    "217583250833768725158184477603674360682",
+                    "127825631077929086567548143998236003561",
+                    "220672813519931724593764497294769538058",
+                    "112096256538547024133258105471664200734",
+                    "84379258600712013503822715300061827613",
+                    "278464234373023644909479713990605903011",
+                    "177157822817952035721270490361264598341",
+                    "179169349734393028293033443383814638062",
+                    "56415080639281669016773120064919336679",
+                    "166898878524366280083477498272247023520",
+                    "88772628477503973346895239460125659704",
+                    "173907730989922706277814702897535049542",
+                    "283041784459485193608790042938176950786",
+                    "214966906178459763941626098100549438539",
+                    "61879373756102009254619678861584058161",
+                    "59549954960698264314087081383249120756",
+                    "316881036539601123462451115603377295530",
+                    "27317740026021532576142766162395261092",
+                    "36376231538664447278548353305523013972",
+                    "186468173379173732794241072027639446378",
+                    "21197266393008656982546645723707180106",
+                    "86004207588887082352540522015556611726",
+                    "6909042434942189174563220950203407049"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_ext_process_nfc_init_rsp",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/7f746d6db0f8c53b355654431ea1f14e0827ec33",
+                "id": "PUB-A-169258455-b5ccd602",
+                "digest": {
+                  "function_hash": "155973090357894353401946914640411702981",
+                  "length": 2837
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-169258455.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-169258733",
+      "details": "In phNxpNciHal_print_res_status of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-169258733",
+        "CVE-2021-0546"
+      ],
+      "modified": "2024-08-29T07:12:50.807004Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_print_res_status",
+                  "file": "halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f",
+                "id": "PUB-A-169258733-a221365b",
+                "digest": {
+                  "function_hash": "145899811643926726504841734127427203008",
+                  "length": 1843
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f",
+                "id": "PUB-A-169258733-c1664c84",
+                "digest": {
+                  "line_hashes": [
+                    "186546649332595719760709967096220487122",
+                    "276028843360022147028961953549648120767",
+                    "3958563350645446514168737349641104704",
+                    "16342225463242291491226269122076074642",
+                    "328374640030903947394618088068986507424",
+                    "124409135069973804548425575301613334775",
+                    "240771331944478748917531059421592021275",
+                    "113714460987669737769620916473529989177",
+                    "253859249321806032581105689844917368384",
+                    "273986881014520327244882059344370763798",
+                    "306981536673503638525659796381680761795",
+                    "165192048633730649762790374355893509999",
+                    "237079044174739157119155643684671891257",
+                    "43779054585709293988804823572701059293",
+                    "81010849652033626298022046608117070624",
+                    "312844301519515496988965759614666486132",
+                    "27529100634285236431217361127093045996",
+                    "307587466860720780286910192283717646597",
+                    "140672343804490970650717429586128574318",
+                    "144190714571291946187433173811701333324"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-169258733.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-169258743",
+      "details": "In phNxpNciHal_process_ext_rsp of phNxpNciHal_ext.cc, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-169258743",
+        "CVE-2021-0543"
+      ],
+      "modified": "2024-08-29T06:57:50.863719Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/fc44434f7728cdf6cd6e29729dfdb79d2f1809e4"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/fc44434f7728cdf6cd6e29729dfdb79d2f1809e4"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_process_ext_rsp",
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/fc44434f7728cdf6cd6e29729dfdb79d2f1809e4",
+                "id": "PUB-A-169258743-be804e2e",
+                "digest": {
+                  "function_hash": "144957320661705057696024866343318128348",
+                  "length": 7773
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal_ext.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/fc44434f7728cdf6cd6e29729dfdb79d2f1809e4",
+                "id": "PUB-A-169258743-cdf3fa2f",
+                "digest": {
+                  "line_hashes": [
+                    "110608516626049271395258159091629464579",
+                    "199172325690527993752378671901326361324",
+                    "19184127120336552583878525553097528016",
+                    "178353908166092922115802535596088121917"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-169258743.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-169258884",
+      "details": "In phNxpNciHal_print_res_status of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege in the NFC server with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-169258884",
+        "CVE-2021-0545"
+      ],
+      "modified": "2024-08-29T06:57:50.928005Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_print_res_status",
+                  "file": "halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f",
+                "id": "PUB-A-169258884-a221365b",
+                "digest": {
+                  "function_hash": "145899811643926726504841734127427203008",
+                  "length": 1843
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/491a4f0f42f1a922e0096df592ea4e19f1dfb24f",
+                "id": "PUB-A-169258884-c1664c84",
+                "digest": {
+                  "line_hashes": [
+                    "186546649332595719760709967096220487122",
+                    "276028843360022147028961953549648120767",
+                    "3958563350645446514168737349641104704",
+                    "16342225463242291491226269122076074642",
+                    "328374640030903947394618088068986507424",
+                    "124409135069973804548425575301613334775",
+                    "240771331944478748917531059421592021275",
+                    "113714460987669737769620916473529989177",
+                    "253859249321806032581105689844917368384",
+                    "273986881014520327244882059344370763798",
+                    "306981536673503638525659796381680761795",
+                    "165192048633730649762790374355893509999",
+                    "237079044174739157119155643684671891257",
+                    "43779054585709293988804823572701059293",
+                    "81010849652033626298022046608117070624",
+                    "312844301519515496988965759614666486132",
+                    "27529100634285236431217361127093045996",
+                    "307587466860720780286910192283717646597",
+                    "140672343804490970650717429586128574318",
+                    "144190714571291946187433173811701333324"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-169258884.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-183487770",
+      "details": "In phNxpNHal_DtaUpdate of phNxpNciHal_dta.cc, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-183487770",
+        "CVE-2021-0977"
+      ],
+      "modified": "2024-08-29T06:57:52.135846Z",
+      "published": "2021-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/82b39ec5d6dfe805e77492c635b3e828590a540e"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2021-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/82b39ec5d6dfe805e77492c635b3e828590a540e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_dta.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/82b39ec5d6dfe805e77492c635b3e828590a540e",
+                "id": "PUB-A-183487770-5c0544bf",
+                "digest": {
+                  "line_hashes": [
+                    "211208418293539315504808820857055244645",
+                    "290830467546640492314579449715965332737",
+                    "277665763302214989761539683667255187753",
+                    "245460935958973703046714035494548125824",
+                    "307717633353731221387081085162754796117",
+                    "25137881491137699797308561684098619624",
+                    "335697155051621295764287830406757226825"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNHal_DtaUpdate",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal_dta.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/82b39ec5d6dfe805e77492c635b3e828590a540e",
+                "id": "PUB-A-183487770-97b3633f",
+                "digest": {
+                  "function_hash": "229050555932055057077333091934718221065",
+                  "length": 3725
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-183487770.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-231445184",
+      "details": "In phNxpNciHal_core_initialized of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-231445184",
+        "CVE-2022-42542"
+      ],
+      "modified": "2024-08-29T07:13:04.742510Z",
+      "published": "2022-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d0f860e0ce444b90dd771a098e27d21c94a05625"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2022-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d0f860e0ce444b90dd771a098e27d21c94a05625"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_core_initialized",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d0f860e0ce444b90dd771a098e27d21c94a05625",
+                "id": "PUB-A-231445184-2c5f8ae4",
+                "digest": {
+                  "function_hash": "51253881135862347428239957564780186079",
+                  "length": 14692
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/d0f860e0ce444b90dd771a098e27d21c94a05625",
+                "id": "PUB-A-231445184-2fe40e62",
+                "digest": {
+                  "line_hashes": [
+                    "290237279516744424820959506356429186476",
+                    "58054509618899671025145325802600266123",
+                    "16350532519576600318529709610994724560",
+                    "3672917913846760715927117833065794724"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-231445184.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-238083126",
+      "details": "In phNxpNciHal_ioctl of phNxpNciHal.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-238083126",
+        "CVE-2022-20541"
+      ],
+      "modified": "2024-08-29T06:58:00.079151Z",
+      "published": "2022-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/567c0496a8e80e96c15c02cb8f063e65008943cd"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/nxp/nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2022-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/nxp/nfc/+/567c0496a8e80e96c15c02cb8f063e65008943cd"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "pn8x/halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/567c0496a8e80e96c15c02cb8f063e65008943cd",
+                "id": "PUB-A-238083126-01fa3771",
+                "digest": {
+                  "line_hashes": [
+                    "77204802751211500839040285979978555725",
+                    "300919541896282715494546212023969125797",
+                    "5360319990706156878907516925622561494",
+                    "114586680526472280958446184655492075570"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "phNxpNciHal_ioctl",
+                  "file": "pn8x/halimpl/hal/phNxpNciHal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/hardware/nxp/nfc/+/567c0496a8e80e96c15c02cb8f063e65008943cd",
+                "id": "PUB-A-238083126-23791c7d",
+                "digest": {
+                  "function_hash": "72885685740246479488067452998063208502",
+                  "length": 3237
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-238083126.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

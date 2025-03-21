@@ -1,0 +1,864 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-163413737",
+      "details": "In createNameCredentialDialog of CertInstaller.java, there exists the possibility of improperly installed certificates due to a logic error. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-163413737",
+        "CVE-2020-0460"
+      ],
+      "modified": "2024-08-07T19:29:03.010920Z",
+      "published": "2020-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2020-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/ed1888ebc3888399ec5144491e43bf7d871028e5"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2020-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/ed1888ebc3888399ec5144491e43bf7d871028e5"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "installCaCertificate",
+                  "file": "src/com/android/keychain/KeyChainService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/ed1888ebc3888399ec5144491e43bf7d871028e5",
+                "id": "ASB-A-163413737-31f96deb",
+                "digest": {
+                  "function_hash": "221997742398354181207481934790901095770",
+                  "length": 1045
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/ed1888ebc3888399ec5144491e43bf7d871028e5",
+                "id": "ASB-A-163413737-c8d23889",
+                "digest": {
+                  "line_hashes": [
+                    "44590560098687051760168766726897459091",
+                    "272424851853488853262343996302208554374",
+                    "130889324646657065622862272637386545914",
+                    "290567645436964943703096202905960930",
+                    "240482688258204559067914748869522342846",
+                    "263034695685770265284760814741924588978",
+                    "175518438383135783705918946918443988984",
+                    "320955727718221376347404492174626792990",
+                    "152261998460928508289423043269525154414",
+                    "319043089001067699808345123436641813118",
+                    "271842744685860722142879054964127496890",
+                    "321759900182794192351112284774773075301",
+                    "27853003001317916211939846333620006878",
+                    "58337750089998859649511597057431554782",
+                    "59800681080357190351118842945544364719",
+                    "339487220467953845062908945966528696842",
+                    "295414141764990312668811447617814130499",
+                    "99876064620677970989223775600999398844",
+                    "260616571612097801813334480653209132502",
+                    "72578530763724199313861424884341659829",
+                    "270787940875248736092364541702780182875",
+                    "119598650777023731799056825091187137308",
+                    "163053674754217655828756819909126409276",
+                    "159477423419947727588768358965481848253",
+                    "69023563505592321534800051618716962352",
+                    "175205717342241858386659660195215797648",
+                    "331032745837855707749837144680938930483",
+                    "229043925049216458461060767564442255720",
+                    "311663205444793950467123119264056190974",
+                    "8189326827006974136768102706812934349",
+                    "189766111840823701127500381774134708125",
+                    "320717695250080302830299965206304452888",
+                    "19699155043006281039223332758034701272",
+                    "340178411266279287843615373706448455700",
+                    "3304655070590251331394007048333712415",
+                    "60441235247035267594595986851864646366"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-163413737.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-199754277",
+      "details": "In onCreate of KeyChainActivity.java, there is a possible way to use an app certificate stored in keychain due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-199754277",
+        "CVE-2021-0963"
+      ],
+      "modified": "2024-08-07T19:30:18.458629Z",
+      "published": "2021-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-12-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/cdca35442c767d64f6d0db4af438a3856263857a",
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/42d5b5ec58893e5f7f7d3bcc4a1e069aab3481b6"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/cdca35442c767d64f6d0db4af438a3856263857a",
+                "id": "ASB-A-199754277-01442b80",
+                "digest": {
+                  "function_hash": "150779138925376225849993218317483860163",
+                  "length": 229
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/cdca35442c767d64f6d0db4af438a3856263857a",
+                "id": "ASB-A-199754277-2f71314e",
+                "digest": {
+                  "line_hashes": [
+                    "303597175863065157596178365770904233588",
+                    "48256645860803694307132140820223977274",
+                    "217809699249745623648040710182897893395",
+                    "125037849551146727792591082922861769984",
+                    "326674869829824742598621061880651146141",
+                    "74405704416687296925880408315642770338",
+                    "153275313607274137358411093416341818351"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/42d5b5ec58893e5f7f7d3bcc4a1e069aab3481b6",
+                "id": "ASB-A-199754277-38371cc6",
+                "digest": {
+                  "function_hash": "136996276653729503400298582803212933472",
+                  "length": 3204
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/42d5b5ec58893e5f7f7d3bcc4a1e069aab3481b6",
+                "id": "ASB-A-199754277-f933ea8f",
+                "digest": {
+                  "line_hashes": [
+                    "135855190934219119756034388740564437399",
+                    "235540904095868242127131780153901629847",
+                    "259238752188879198495785490080792033447",
+                    "142819830997902240228446618298227373261"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-199754277.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/7771b58966715ef430f5cb6d81344192ab6d258f",
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/2b7ea9710d2069f9768cc3c2350df74b60f9ecbf"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/7771b58966715ef430f5cb6d81344192ab6d258f",
+                "id": "ASB-A-199754277-0f35481e",
+                "digest": {
+                  "line_hashes": [
+                    "303597175863065157596178365770904233588",
+                    "48256645860803694307132140820223977274",
+                    "217809699249745623648040710182897893395",
+                    "149797091561683545734968523231355275794",
+                    "59096776248267728189978126642021086297",
+                    "223171761866261416097529983750924596398"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/2b7ea9710d2069f9768cc3c2350df74b60f9ecbf",
+                "id": "ASB-A-199754277-a0ed1fb2",
+                "digest": {
+                  "line_hashes": [
+                    "135855190934219119756034388740564437399",
+                    "235540904095868242127131780153901629847",
+                    "259238752188879198495785490080792033447",
+                    "142819830997902240228446618298227373261"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/2b7ea9710d2069f9768cc3c2350df74b60f9ecbf",
+                "id": "ASB-A-199754277-c5fb9d5c",
+                "digest": {
+                  "function_hash": "73505772937041119365331112705127743616",
+                  "length": 2980
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-199754277.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/3de513868e45f022fce83d738032fc69b8c6b0f5",
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/90c6182ef5933ec69383115e2703a177a0c5929b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/90c6182ef5933ec69383115e2703a177a0c5929b",
+                "id": "ASB-A-199754277-1019e4a8",
+                "digest": {
+                  "function_hash": "203824814824031038019991900579206230944",
+                  "length": 3011
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/90c6182ef5933ec69383115e2703a177a0c5929b",
+                "id": "ASB-A-199754277-1024affc",
+                "digest": {
+                  "line_hashes": [
+                    "135855190934219119756034388740564437399",
+                    "235540904095868242127131780153901629847",
+                    "259238752188879198495785490080792033447",
+                    "142819830997902240228446618298227373261"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/3de513868e45f022fce83d738032fc69b8c6b0f5",
+                "id": "ASB-A-199754277-184c19c6",
+                "digest": {
+                  "line_hashes": [
+                    "128691875263131775220820109058442280430",
+                    "168206557357049122735330899459189004701",
+                    "41045489127893675357598209381160343343",
+                    "59364463441045711836603236181276549075",
+                    "273197236036770507062995719670167860476",
+                    "48256645860803694307132140820223977274",
+                    "219824241320010701138802366041289464563",
+                    "24326035824782186584841896781093620413",
+                    "180873309683049572042491718958890115237",
+                    "244121184130991112938393343813406232222"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-199754277.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2021-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/d2c543f9670ce4c6abc27fdc47d730b0c532d9fb",
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/0b90da9e52f53d089d34a895256f048729b36661"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/d2c543f9670ce4c6abc27fdc47d730b0c532d9fb",
+                "id": "ASB-A-199754277-231b5806",
+                "digest": {
+                  "line_hashes": [
+                    "208145163328167472748897027555711714882",
+                    "30674088855709114898709890290627615336",
+                    "254801975279325279560290300634665894950",
+                    "196498049348011577982911759103546494316",
+                    "56162162265642485860413942937486547499",
+                    "100392728771381320547015046049976835169",
+                    "106258610578275625944997385992487392222"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/0b90da9e52f53d089d34a895256f048729b36661",
+                "id": "ASB-A-199754277-b9e6c704",
+                "digest": {
+                  "function_hash": "118549816647082231951580483889162385421",
+                  "length": 2776
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/0b90da9e52f53d089d34a895256f048729b36661",
+                "id": "ASB-A-199754277-c2ca4d46",
+                "digest": {
+                  "line_hashes": [
+                    "135855190934219119756034388740564437399",
+                    "235540904095868242127131780153901629847",
+                    "259238752188879198495785490080792033447",
+                    "111842385937988146741835959770460073843"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/d2c543f9670ce4c6abc27fdc47d730b0c532d9fb",
+                "id": "ASB-A-199754277-dca04a64",
+                "digest": {
+                  "function_hash": "71065350424441331116573748980346557509",
+                  "length": 109
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-199754277.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-221859869",
+      "details": "In choosePrivateKeyAlias of KeyChain.java, there is a possible access to the user's certificate due to improper input validation. This could lead to local information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-221859869",
+        "CVE-2022-20230"
+      ],
+      "modified": "2024-08-07T19:30:13.607568Z",
+      "published": "2022-07-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-07-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/2184df9eef9ad67630d3540cb97e70ec61e8f65c"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-72401f2b",
+                "digest": {
+                  "function_hash": "217097974442006814018562164758440435565",
+                  "length": 3074
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-d4cb2a48",
+                "digest": {
+                  "line_hashes": [
+                    "99130679458070978976267941306104831263",
+                    "63623956792992716364492851979458897828",
+                    "249735570373909973786809012441181035085",
+                    "229317488880240282701798776191960606988"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-221859869.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-14baa12e",
+                "digest": {
+                  "function_hash": "217097974442006814018562164758440435565",
+                  "length": 3074
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-e68ff6cc",
+                "digest": {
+                  "line_hashes": [
+                    "99130679458070978976267941306104831263",
+                    "63623956792992716364492851979458897828",
+                    "249735570373909973786809012441181035085",
+                    "229317488880240282701798776191960606988"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-221859869.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-893e3ce2",
+                "digest": {
+                  "line_hashes": [
+                    "99130679458070978976267941306104831263",
+                    "63623956792992716364492851979458897828",
+                    "249735570373909973786809012441181035085",
+                    "229317488880240282701798776191960606988"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-d39a2c0d",
+                "digest": {
+                  "function_hash": "217097974442006814018562164758440435565",
+                  "length": 3074
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-221859869.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/KeyChain",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "displayCertChooserDialog",
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-ad7ad185",
+                "digest": {
+                  "function_hash": "217097974442006814018562164758440435565",
+                  "length": 3074
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/keychain/KeyChainActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/KeyChain/+/8550c37c186099926ce364b65b61ffbf6ed7958d",
+                "id": "ASB-A-221859869-e7a11022",
+                "digest": {
+                  "line_hashes": [
+                    "99130679458070978976267941306104831263",
+                    "63623956792992716364492851979458897828",
+                    "249735570373909973786809012441181035085",
+                    "229317488880240282701798776191960606988"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-221859869.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

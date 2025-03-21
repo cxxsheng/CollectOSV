@@ -1,0 +1,560 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-156261521",
+      "details": "In DecodeImage of dng_lossless_jpeg.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-156261521",
+        "CVE-2020-9589"
+      ],
+      "modified": "2024-08-07T19:30:19.727317Z",
+      "published": "2020-07-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2020-07-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::DecodeImage",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-62f69bff",
+                "digest": {
+                  "function_hash": "180510715832732769607719343413710777778",
+                  "length": 6181
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-ebfa2999",
+                "digest": {
+                  "line_hashes": [
+                    "338554970343322564839010616178851819475",
+                    "272801659105549350411196054700854906472",
+                    "303090388783411386435420216672599638637",
+                    "294107852618224583307778245909416294284",
+                    "125410299025336720060653319086340062376",
+                    "336086589352344085007594008884552648507",
+                    "270397854735675837248995337445782121898",
+                    "118923780271866762159005859156406164515"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-156261521.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::DecodeImage",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-13caca87",
+                "digest": {
+                  "function_hash": "180510715832732769607719343413710777778",
+                  "length": 6181
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-349cc174",
+                "digest": {
+                  "line_hashes": [
+                    "338554970343322564839010616178851819475",
+                    "272801659105549350411196054700854906472",
+                    "303090388783411386435420216672599638637",
+                    "294107852618224583307778245909416294284",
+                    "125410299025336720060653319086340062376",
+                    "336086589352344085007594008884552648507",
+                    "270397854735675837248995337445782121898",
+                    "118923780271866762159005859156406164515"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-156261521.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-64f966aa",
+                "digest": {
+                  "line_hashes": [
+                    "338554970343322564839010616178851819475",
+                    "272801659105549350411196054700854906472",
+                    "303090388783411386435420216672599638637",
+                    "294107852618224583307778245909416294284",
+                    "125410299025336720060653319086340062376",
+                    "336086589352344085007594008884552648507",
+                    "270397854735675837248995337445782121898",
+                    "118923780271866762159005859156406164515"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::DecodeImage",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-fa771a0e",
+                "digest": {
+                  "function_hash": "180510715832732769607719343413710777778",
+                  "length": 6181
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-156261521.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-3d0dd9b4",
+                "digest": {
+                  "line_hashes": [
+                    "338554970343322564839010616178851819475",
+                    "272801659105549350411196054700854906472",
+                    "303090388783411386435420216672599638637",
+                    "294107852618224583307778245909416294284",
+                    "125410299025336720060653319086340062376",
+                    "336086589352344085007594008884552648507",
+                    "270397854735675837248995337445782121898",
+                    "118923780271866762159005859156406164515"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::DecodeImage",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+                "id": "ASB-A-156261521-efa79fb8",
+                "digest": {
+                  "function_hash": "180510715832732769607719343413710777778",
+                  "length": 6181
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-156261521.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-347735428",
+      "details": "In dng_lossless_decoder::HuffDecode of dng_lossless_jpeg.cpp, there is a possible way to cause a crash due to uninitialized data. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-347735428",
+        "CVE-2025-0081"
+      ],
+      "modified": "2025-03-03T16:12:20.491182Z",
+      "published": "2025-03-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-03-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/dng_sdk/+/7fc02c8d5af37c97b325dc2956f4a6117c145c2f"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "DoS"
+            ],
+            "spl": "2025-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/a22d1f0f07d998a53dd49a941d3a588f55b36399"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-347735428.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2025-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "DoS"
+            ],
+            "spl": "2025-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/ef6549c8eb3b202e8b47c41ba39d7957274aa12b"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-347735428.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2025-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "DoS"
+            ],
+            "spl": "2025-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/97cbb86f575c92ccd097407bb1fe5ad9bb532944"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-347735428.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "DoS"
+            ],
+            "spl": "2025-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/6fd49d6ecdf53aa96b290ee5b3e30a7d73c71679"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-347735428.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "DoS"
+            ],
+            "spl": "2025-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/d125388473163ed70452c6e615b3c788805e0168"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-347735428.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/dng_sdk",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2025-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "DoS"
+            ],
+            "spl": "2025-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dng_sdk/+/89f7028f91aa2979fa88f51cdd37b6444b5cd9d9"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-347735428.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

@@ -1,0 +1,2023 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-172322502",
+      "details": "In start of WelcomeActivity.java, there is a possible residual profile due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-172322502",
+        "CVE-2021-0445"
+      ],
+      "modified": "2024-08-07T19:30:13.540503Z",
+      "published": "2021-04-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-04-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-04-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-04-05",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e2e7db03f6629a049d7f9a255b1238182b104435"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/finalization/FinalizationController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e2e7db03f6629a049d7f9a255b1238182b104435",
+                "id": "ASB-A-172322502-6da0f4ec",
+                "digest": {
+                  "line_hashes": [
+                    "267192170493229523696223573646670273399",
+                    "338038645278955396091962215389328351175",
+                    "222592965601268419775985950103889431668",
+                    "101324354763547935278631398959791876538",
+                    "109139238108337384528376725384688091678",
+                    "157370780375504858674881480152622921994",
+                    "317330206669925724325579129324567481825",
+                    "63426012201672372493438705069252786800",
+                    "249171790815410219612734183124320482265",
+                    "180404932187257232605504121047543543358",
+                    "288690388350496034889718794049660130460"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/finalization/FinalizationActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e2e7db03f6629a049d7f9a255b1238182b104435",
+                "id": "ASB-A-172322502-f770adf0",
+                "digest": {
+                  "line_hashes": [
+                    "228725422874890500404722894961141832503",
+                    "141934198722136723954338757764907351491",
+                    "218227820810902030954871776798730062028",
+                    "225565816507896717753283047892474050207",
+                    "112738795450441930932611522079018513168",
+                    "114071533140300265248204588839640086702",
+                    "20589838921031885125274903363280850225",
+                    "261988694032451924320424717076509552746",
+                    "244178575112175948922872806110849256185"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/managedprovisioning/finalization/FinalizationActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e2e7db03f6629a049d7f9a255b1238182b104435",
+                "id": "ASB-A-172322502-fac1a50b",
+                "digest": {
+                  "function_hash": "113269246220345807028762452177490341681",
+                  "length": 117
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172322502.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-195630721",
+      "details": "In enforceCrossUserOrProfilePermission of PackageManagerService.java, there is a possible bypass of INTERACT_ACROSS_PROFILES permission due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-195630721",
+        "CVE-2021-0922"
+      ],
+      "modified": "2024-08-07T19:30:13.934735Z",
+      "published": "2021-11-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-11-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/4670d1d855a853852980148d99b190171db4ec79"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/robolectric-shadows",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/robolectric-shadows/+/35fd431402a9506a0dfc0ff6eb98cfc44cf0d005"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "shadows/framework/src/main/java/org/robolectric/shadows/ShadowUserManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/robolectric-shadows/+/35fd431402a9506a0dfc0ff6eb98cfc44cf0d005",
+                "id": "ASB-A-195630721-31444b7e",
+                "digest": {
+                  "line_hashes": [
+                    "214021334590066474496824465320029488018",
+                    "309336616964255325581366393534202365825",
+                    "218333329684848256719210833091252961184"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-195630721.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/be1752c13f694de4d637870214e0124d43087302"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/CrossProfileAppsServiceImpl.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/be1752c13f694de4d637870214e0124d43087302",
+                "id": "ASB-A-195630721-4f89865c",
+                "digest": {
+                  "line_hashes": [
+                    "36440763643325087480298598606293624342",
+                    "78646175382410085160817668818514440905",
+                    "235607508670757907218867539703409031148",
+                    "283380243976296285749083634646080816561",
+                    "272601194905720528706441519394509945216",
+                    "148068607651191350719224651179563632194",
+                    "81377823625941608618686273478787482095",
+                    "281903242336386226517528698656415167515",
+                    "40009769075193760380369938814394409695",
+                    "323473453907297942964183741209418660046",
+                    "236660585723886523345678390114302348905",
+                    "254451119805343564028933895977390827574",
+                    "251857102603463444737090880801210839258",
+                    "127159839787866092011543240506455800516",
+                    "286751197653580262393456552016190519530",
+                    "114423963501467031325089116850493097874",
+                    "31994915925146021468290948491711738817",
+                    "271323692190888647119274243943029107251",
+                    "216214254815745083059225198969938336884",
+                    "326662269531774520907531269443715729883",
+                    "162399504348032358504313214641011786999",
+                    "80660688282474858409408107575960131674",
+                    "172597663243983133768617860617640030055",
+                    "179374689263116747570172275321245957486",
+                    "302887788176794412926806109320253202498",
+                    "193445072868321469678327441235802235510",
+                    "236383336076514265538879525176051810607",
+                    "237564831378471029267682587567440184575",
+                    "268791223609598792150412487565424528314",
+                    "201891198106383073362640243425161002229",
+                    "4241457864200304409377960898032746144",
+                    "152466423921533568375119328796207373355",
+                    "290490411124407951379733706484703129335",
+                    "155122048248351996057683755138843582297",
+                    "290075757119411105122214201375927285450"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "maybeLogSetInteractAcrossProfilesAppOp",
+                  "file": "services/core/java/com/android/server/pm/CrossProfileAppsServiceImpl.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/be1752c13f694de4d637870214e0124d43087302",
+                "id": "ASB-A-195630721-706ca402",
+                "digest": {
+                  "function_hash": "217154528592214342561438573420167394610",
+                  "length": 379
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendCanInteractAcrossProfilesChangedBroadcast",
+                  "file": "services/core/java/com/android/server/pm/CrossProfileAppsServiceImpl.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/be1752c13f694de4d637870214e0124d43087302",
+                "id": "ASB-A-195630721-cbc13dc1",
+                "digest": {
+                  "function_hash": "230191903940525289883466150449923591345",
+                  "length": 501
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "setInteractAcrossProfilesAppOpForUserOrThrow",
+                  "file": "services/core/java/com/android/server/pm/CrossProfileAppsServiceImpl.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/be1752c13f694de4d637870214e0124d43087302",
+                "id": "ASB-A-195630721-f421a73a",
+                "digest": {
+                  "function_hash": "335696647735241454399446868439174072597",
+                  "length": 978
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-195630721.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a356e46bcee7be220e6f0d946dee61986c0ed178",
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/0dd1b6508bb4a6ba350fedb8ea95df9ab4ed3d9c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "appOpIsChangedFromDefault",
+                  "file": "src/com/android/managedprovisioning/task/UpdateInteractAcrossProfilesAppOpTask.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a356e46bcee7be220e6f0d946dee61986c0ed178",
+                "id": "ASB-A-195630721-08f0f59f",
+                "digest": {
+                  "function_hash": "31360376185732910915859343132468117286",
+                  "length": 278
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "updateAfterOtaChanges",
+                  "file": "src/com/android/managedprovisioning/task/UpdateInteractAcrossProfilesAppOpTask.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a356e46bcee7be220e6f0d946dee61986c0ed178",
+                "id": "ASB-A-195630721-2dd241cd",
+                "digest": {
+                  "function_hash": "198608002809830810643517678199986151617",
+                  "length": 183
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "grantNewConfigurableDefaultCrossProfilePackages",
+                  "file": "src/com/android/managedprovisioning/task/UpdateInteractAcrossProfilesAppOpTask.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a356e46bcee7be220e6f0d946dee61986c0ed178",
+                "id": "ASB-A-195630721-e089d0bf",
+                "digest": {
+                  "function_hash": "62563792173665600381352342271179639531",
+                  "length": 418
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/task/UpdateInteractAcrossProfilesAppOpTask.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a356e46bcee7be220e6f0d946dee61986c0ed178",
+                "id": "ASB-A-195630721-f29b90e8",
+                "digest": {
+                  "line_hashes": [
+                    "115401877956807721271473992195793090813",
+                    "179331988837941024569409114167190761879",
+                    "16088433780555473181584891538926530457",
+                    "218009912418503671940160426401491804018",
+                    "287282509207486409845023027285420657077",
+                    "60690539419849708968456274968461487979",
+                    "122538000252583299514687750420744064265",
+                    "18663525714527528274117164698436208722",
+                    "202479120569784572966934893084986593118",
+                    "156715334077897945571971377847277916231",
+                    "137127234154086374740546258955175176886",
+                    "217870117801283358241326015088896536583",
+                    "130349601687311682181277804554021500976",
+                    "176729859293257270339372119502224302050",
+                    "179575897479343405427285765437441540859",
+                    "305820052545428065016040445145279725472",
+                    "193370507704134731490362701280148149265",
+                    "11599929572358354186009072428915720136",
+                    "38923417280291753318338635147936954115",
+                    "2494129082059629057733334358359433687",
+                    "252985389150814096497888632191905880659",
+                    "267411571091836686416160794405077344585",
+                    "18367669789577395102201838220794274424",
+                    "111014968170476510442027934986226916959",
+                    "277850929566400537212888117763457709811",
+                    "54876256156630208787339162093961841358",
+                    "165991904104123668155332380512289380122",
+                    "260185972171578686780968566903331702442",
+                    "166714544838933888056589877313408967286",
+                    "84925411292309658385490234979782116278",
+                    "312062478012729280326991076921334391470",
+                    "191238579001067522705096865401762407680",
+                    "209540420578694369937829668346363955767",
+                    "227474661934597852750095825195371151435"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-195630721.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-209611539",
+      "details": "In onCreate of SetupLayoutActivity.java, there is a possible way to setup a work profile bypassing user consent due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-209611539",
+        "CVE-2021-39692"
+      ],
+      "modified": "2024-08-07T19:29:24.207126Z",
+      "published": "2022-03-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-03-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/f0908ba3ccf4b294be011cb3cb3441b34144f06e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/f0908ba3ccf4b294be011cb3cb3441b34144f06e",
+                "id": "ASB-A-209611539-2d7408e3",
+                "digest": {
+                  "function_hash": "279812341486862715102499333121300560131",
+                  "length": 270
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/f0908ba3ccf4b294be011cb3cb3441b34144f06e",
+                "id": "ASB-A-209611539-739108de",
+                "digest": {
+                  "line_hashes": [
+                    "220332388498290215213726294612743642964",
+                    "335942912665976225110949355242464214081",
+                    "286508034715687416815902777443473931615",
+                    "195276513162238704053113346935851779543",
+                    "53727082822104917753235367368246502408",
+                    "310872518984056668347119424478769359078"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-209611539.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/4b04bf81f88385d9a364a6a6ef88e0025fd0f84a"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/4b04bf81f88385d9a364a6a6ef88e0025fd0f84a",
+                "id": "ASB-A-209611539-3830400c",
+                "digest": {
+                  "function_hash": "279812341486862715102499333121300560131",
+                  "length": 270
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/4b04bf81f88385d9a364a6a6ef88e0025fd0f84a",
+                "id": "ASB-A-209611539-e2979154",
+                "digest": {
+                  "line_hashes": [
+                    "220332388498290215213726294612743642964",
+                    "335942912665976225110949355242464214081",
+                    "286508034715687416815902777443473931615",
+                    "195276513162238704053113346935851779543",
+                    "53727082822104917753235367368246502408",
+                    "310872518984056668347119424478769359078"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-209611539.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535",
+                "id": "ASB-A-209611539-1749addc",
+                "digest": {
+                  "line_hashes": [
+                    "314336311971156495770716358307085283278",
+                    "57288772857243715499003298683184410612",
+                    "167039254005696276617368158317989525581",
+                    "194597702290193553871435272377110277713",
+                    "62972918542328533708134472281361535958"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535",
+                "id": "ASB-A-209611539-be270d63",
+                "digest": {
+                  "function_hash": "138985004227445478747826064386264047309",
+                  "length": 513
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-209611539.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535",
+                "id": "ASB-A-209611539-373c73e1",
+                "digest": {
+                  "line_hashes": [
+                    "314336311971156495770716358307085283278",
+                    "57288772857243715499003298683184410612",
+                    "167039254005696276617368158317989525581",
+                    "194597702290193553871435272377110277713",
+                    "62972918542328533708134472281361535958"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/managedprovisioning/common/SetupLayoutActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/a07188111567974bc8a2c817825c28169c589535",
+                "id": "ASB-A-209611539-fc94c1ba",
+                "digest": {
+                  "function_hash": "138985004227445478747826064386264047309",
+                  "length": 513
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-209611539.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-210469972",
+      "details": "In ACTION_MANAGED_PROFILE_PROVISIONED of DevicePolicyManagerService.java, there is a possible way for unprivileged app to send MANAGED_PROFILE_PROVISIONED intent due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-210469972",
+        "CVE-2022-20138"
+      ],
+      "modified": "2024-09-20T22:25:04Z",
+      "published": "2022-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/b519b549fdb029dcdb6a51de944897e04e114e5f"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/1a7ef6ddd4c267323cd017c752d4da5392de0390"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/c5037ec63cdc72846082a66e72b34cf5067a6046"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "core/java/android/app/admin/DevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/c5037ec63cdc72846082a66e72b34cf5067a6046",
+                "id": "ASB-A-210469972-aaf36ee9",
+                "digest": {
+                  "line_hashes": [
+                    "165196328349436582360030923817994187530",
+                    "142323484016314999817245832024741395750",
+                    "45882653241144612024616399050563532720",
+                    "151980662705061229486609346240039935145",
+                    "190768989054067055310579774474829269827",
+                    "201832238199760288917697888941600799034"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/c5037ec63cdc72846082a66e72b34cf5067a6046",
+                "id": "ASB-A-210469972-accadbc8",
+                "digest": {
+                  "line_hashes": [
+                    "1178195614567482945739198061955508915",
+                    "31806522884155386625637369499141236753",
+                    "285954395801152725255873430966962490431",
+                    "227897398799914715393077234313247382682",
+                    "165104480169788341239788276980274365975",
+                    "177292188181655036985363615814302517162",
+                    "244342151540401799358430309197160692676",
+                    "181203390073414563703186549984229578303",
+                    "295747577431459138783214723720080232905",
+                    "88171394716906819191900992967790721244",
+                    "171330181921549713615954239077365153555",
+                    "18548988099176996864057278395653106571"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/BaseIDevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/c5037ec63cdc72846082a66e72b34cf5067a6046",
+                "id": "ASB-A-210469972-ade0edfd",
+                "digest": {
+                  "line_hashes": [
+                    "203289808691371278058937258328814614100",
+                    "121434881783647386077644657305102048621",
+                    "86876281138923748596174675199745902677",
+                    "282109936267780210420752900017556587400"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/643d474ae7a92fdd81649993e8d54652db4d99f7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "finishAccountMigration",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/643d474ae7a92fdd81649993e8d54652db4d99f7",
+                "id": "ASB-A-210469972-2e0d610c",
+                "digest": {
+                  "function_hash": "250093873334471829850819371941542205638",
+                  "length": 253
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/643d474ae7a92fdd81649993e8d54652db4d99f7",
+                "id": "ASB-A-210469972-54000d2a",
+                "digest": {
+                  "line_hashes": [
+                    "126770901287113181092994384759021439471",
+                    "226949713720262975961857640617629134375",
+                    "12750777737141886692112672794337740245",
+                    "86786463719480147744044891942931028954",
+                    "296931474696659612531751697753888668171",
+                    "57888958134714656376978583733553612137",
+                    "105048981573371348992613639911483961212",
+                    "45645736765208385356595142875357394763",
+                    "154411006352317980768647745974569241111",
+                    "158476285602889413066203666655793104733",
+                    "271805084136454864222455791023592820723",
+                    "188300002174531764168902090990566839171",
+                    "82210351836690846443513195538615440903",
+                    "91888786414128127650247881244066864016",
+                    "64020364376254899850364389227633984882",
+                    "68728240398024612962387659027617384079",
+                    "279724400294053524067234604311829065751",
+                    "150619217421208424828847354377840103947",
+                    "279861004617409870801295119533372596512",
+                    "307603694352794879111688577822745804218",
+                    "6907606922138334484371299075565236871",
+                    "304910121156801056019843047824674174489",
+                    "53584654036499175838198704377668676859",
+                    "140429496537081717390233239429312066527",
+                    "42801350699708305997946404542389117198",
+                    "338276855435276441639946988279696297693",
+                    "257596055235690513255623590287923532857",
+                    "34792215023414834700817897323367957571",
+                    "170153138462704580384084360720422733138",
+                    "311741425933348699866359731845700924976",
+                    "252687884198281453502597102940985632430",
+                    "97037669992202532229136247253287127390",
+                    "299431057903114398517986558811871730173",
+                    "211966202988192482010646975831976079221",
+                    "1261119691966196946321401272554284073",
+                    "27486905656518721481345653258135179211",
+                    "89390164303826736914226791737670002728",
+                    "307603694352794879111688577822745804218",
+                    "169153240682437419861430951779245499511"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleFinalization",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/643d474ae7a92fdd81649993e8d54652db4d99f7",
+                "id": "ASB-A-210469972-96779e8b",
+                "digest": {
+                  "function_hash": "52020135773200354949955668133061458870",
+                  "length": 139
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "finalizeProvisioningInPrimaryProfile",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/643d474ae7a92fdd81649993e8d54652db4d99f7",
+                "id": "ASB-A-210469972-a0690004",
+                "digest": {
+                  "function_hash": "186000692122720881770078323657871377901",
+                  "length": 502
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/bde28d286e28b551dc9b11d882ad89120ac83107"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/bde28d286e28b551dc9b11d882ad89120ac83107",
+                "id": "ASB-A-210469972-3543bd7a",
+                "digest": {
+                  "line_hashes": [
+                    "105824338701402452381177047086707705489",
+                    "94810083659911177981434380572743116134",
+                    "293752882539457751734743719610255167666",
+                    "65669243572844457802638869826327546513",
+                    "223973514222838089371219471462234527473",
+                    "22332860073895290205979785039757149095",
+                    "8637858284468504886779232296271611056",
+                    "24443583605833590446008898529147896667",
+                    "295747577431459138783214723720080232905",
+                    "88171394716906819191900992967790721244",
+                    "171330181921549713615954239077365153555",
+                    "155566312994499404241716463745966562182"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/BaseIDevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/bde28d286e28b551dc9b11d882ad89120ac83107",
+                "id": "ASB-A-210469972-56870412",
+                "digest": {
+                  "line_hashes": [
+                    "138739927341858883135842305936694119996",
+                    "148930798991672411555636361756158803493",
+                    "56382636779656000685882344945188903705",
+                    "175429779357791540357375360199795194414",
+                    "65851841627463601732535770960670114535"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "core/java/android/app/admin/DevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/bde28d286e28b551dc9b11d882ad89120ac83107",
+                "id": "ASB-A-210469972-a71b7d9e",
+                "digest": {
+                  "line_hashes": [
+                    "165196328349436582360030923817994187530",
+                    "142323484016314999817245832024741395750",
+                    "45882653241144612024616399050563532720",
+                    "151980662705061229486609346240039935145",
+                    "190768989054067055310579774474829269827",
+                    "201832238199760288917697888941600799034"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/bd381d5a725a8b1a4c25035deadce7e0e6c10a63"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "finishAccountMigration",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/bd381d5a725a8b1a4c25035deadce7e0e6c10a63",
+                "id": "ASB-A-210469972-326fe95e",
+                "digest": {
+                  "function_hash": "250093873334471829850819371941542205638",
+                  "length": 253
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "finalizeProvisioningInPrimaryProfile",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/bd381d5a725a8b1a4c25035deadce7e0e6c10a63",
+                "id": "ASB-A-210469972-400b8583",
+                "digest": {
+                  "function_hash": "186000692122720881770078323657871377901",
+                  "length": 502
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleFinalization",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/bd381d5a725a8b1a4c25035deadce7e0e6c10a63",
+                "id": "ASB-A-210469972-8adfbf99",
+                "digest": {
+                  "function_hash": "52020135773200354949955668133061458870",
+                  "length": 139
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/bd381d5a725a8b1a4c25035deadce7e0e6c10a63",
+                "id": "ASB-A-210469972-a0835da8",
+                "digest": {
+                  "line_hashes": [
+                    "126770901287113181092994384759021439471",
+                    "226949713720262975961857640617629134375",
+                    "12750777737141886692112672794337740245",
+                    "86786463719480147744044891942931028954",
+                    "296931474696659612531751697753888668171",
+                    "57888958134714656376978583733553612137",
+                    "105048981573371348992613639911483961212",
+                    "45645736765208385356595142875357394763",
+                    "154411006352317980768647745974569241111",
+                    "158476285602889413066203666655793104733",
+                    "271805084136454864222455791023592820723",
+                    "188300002174531764168902090990566839171",
+                    "82210351836690846443513195538615440903",
+                    "91888786414128127650247881244066864016",
+                    "64020364376254899850364389227633984882",
+                    "68728240398024612962387659027617384079",
+                    "279724400294053524067234604311829065751",
+                    "150619217421208424828847354377840103947",
+                    "279861004617409870801295119533372596512",
+                    "307603694352794879111688577822745804218",
+                    "6907606922138334484371299075565236871",
+                    "304910121156801056019843047824674174489",
+                    "53584654036499175838198704377668676859",
+                    "140429496537081717390233239429312066527",
+                    "42801350699708305997946404542389117198",
+                    "338276855435276441639946988279696297693",
+                    "257596055235690513255623590287923532857",
+                    "34792215023414834700817897323367957571",
+                    "170153138462704580384084360720422733138",
+                    "311741425933348699866359731845700924976",
+                    "252687884198281453502597102940985632430",
+                    "97037669992202532229136247253287127390",
+                    "299431057903114398517986558811871730173",
+                    "211966202988192482010646975831976079221",
+                    "1261119691966196946321401272554284073",
+                    "27486905656518721481345653258135179211",
+                    "89390164303826736914226791737670002728",
+                    "307603694352794879111688577822745804218",
+                    "169153240682437419861430951779245499511"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/b519b549fdb029dcdb6a51de944897e04e114e5f"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b519b549fdb029dcdb6a51de944897e04e114e5f",
+                "id": "ASB-A-210469972-1521a737",
+                "digest": {
+                  "line_hashes": [
+                    "197890176130068902168067949037586548062",
+                    "122699350965718965828571693357092858722",
+                    "227204031875631927716967632590549745449",
+                    "303497557041867154565069030362778323697",
+                    "265440105236949901336631518345328609616",
+                    "99153929003800529138819970572723873931",
+                    "143201294867337278147875745487189655819",
+                    "24443583605833590446008898529147896667",
+                    "295747577431459138783214723720080232905",
+                    "88171394716906819191900992967790721244",
+                    "171330181921549713615954239077365153555",
+                    "155566312994499404241716463745966562182"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/BaseIDevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b519b549fdb029dcdb6a51de944897e04e114e5f",
+                "id": "ASB-A-210469972-71ce4958",
+                "digest": {
+                  "line_hashes": [
+                    "176407345849482405224415113194502243251",
+                    "80071093704165683181514205277162091730",
+                    "130994207302516951127750300488159806100",
+                    "265232164714520933154194555899870579667",
+                    "77117659094043297473309897701643809649",
+                    "306035216305799936985304480941400105538",
+                    "250437971981451879089138580497689960133",
+                    "60576818353731408722352150586936227483"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "core/java/android/app/admin/DevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b519b549fdb029dcdb6a51de944897e04e114e5f",
+                "id": "ASB-A-210469972-a8d72d72",
+                "digest": {
+                  "line_hashes": [
+                    "165196328349436582360030923817994187530",
+                    "142323484016314999817245832024741395750",
+                    "45882653241144612024616399050563532720",
+                    "151980662705061229486609346240039935145",
+                    "190768989054067055310579774474829269827",
+                    "201832238199760288917697888941600799034"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/ae394d011d4cf575855a0cc3b5b65a3d8a6fe3ab"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "finalizeProvisioningInPrimaryProfile",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/ae394d011d4cf575855a0cc3b5b65a3d8a6fe3ab",
+                "id": "ASB-A-210469972-87d74a36",
+                "digest": {
+                  "function_hash": "37987703896448476434850992545770213883",
+                  "length": 458
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleFinalization",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/ae394d011d4cf575855a0cc3b5b65a3d8a6fe3ab",
+                "id": "ASB-A-210469972-a38623f8",
+                "digest": {
+                  "function_hash": "52020135773200354949955668133061458870",
+                  "length": 139
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/ae394d011d4cf575855a0cc3b5b65a3d8a6fe3ab",
+                "id": "ASB-A-210469972-bb2d7b02",
+                "digest": {
+                  "line_hashes": [
+                    "126770901287113181092994384759021439471",
+                    "226949713720262975961857640617629134375",
+                    "12750777737141886692112672794337740245",
+                    "86786463719480147744044891942931028954",
+                    "296931474696659612531751697753888668171",
+                    "113840524066641097930110694512559626646",
+                    "112974836930506796948169364416962663896",
+                    "45645736765208385356595142875357394763",
+                    "154411006352317980768647745974569241111",
+                    "158476285602889413066203666655793104733",
+                    "271805084136454864222455791023592820723",
+                    "188300002174531764168902090990566839171",
+                    "82210351836690846443513195538615440903",
+                    "91888786414128127650247881244066864016",
+                    "64020364376254899850364389227633984882",
+                    "292511345032977434575265302305307313978",
+                    "63364995101298375681430728124509883127",
+                    "47726825992477006317929426726651698680",
+                    "226502505189910148585409411286300231489",
+                    "174622453199694226040593868429632318321",
+                    "53584654036499175838198704377668676859",
+                    "140429496537081717390233239429312066527",
+                    "42801350699708305997946404542389117198",
+                    "338276855435276441639946988279696297693"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/b157e658a78d68c1f4d2a72d4a7b0aa39b1362ed"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b157e658a78d68c1f4d2a72d4a7b0aa39b1362ed",
+                "id": "ASB-A-210469972-4373fc85",
+                "digest": {
+                  "line_hashes": [
+                    "197890176130068902168067949037586548062",
+                    "122699350965718965828571693357092858722",
+                    "227204031875631927716967632590549745449",
+                    "303497557041867154565069030362778323697",
+                    "265440105236949901336631518345328609616",
+                    "99153929003800529138819970572723873931",
+                    "143201294867337278147875745487189655819",
+                    "24443583605833590446008898529147896667",
+                    "295747577431459138783214723720080232905",
+                    "88171394716906819191900992967790721244",
+                    "171330181921549713615954239077365153555",
+                    "155566312994499404241716463745966562182"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/devicepolicy/java/com/android/server/devicepolicy/BaseIDevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b157e658a78d68c1f4d2a72d4a7b0aa39b1362ed",
+                "id": "ASB-A-210469972-4700d5d8",
+                "digest": {
+                  "line_hashes": [
+                    "176407345849482405224415113194502243251",
+                    "80071093704165683181514205277162091730",
+                    "130994207302516951127750300488159806100",
+                    "265232164714520933154194555899870579667",
+                    "77117659094043297473309897701643809649",
+                    "306035216305799936985304480941400105538",
+                    "250437971981451879089138580497689960133",
+                    "60576818353731408722352150586936227483"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "core/java/android/app/admin/DevicePolicyManager.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b157e658a78d68c1f4d2a72d4a7b0aa39b1362ed",
+                "id": "ASB-A-210469972-a5855873",
+                "digest": {
+                  "line_hashes": [
+                    "165196328349436582360030923817994187530",
+                    "142323484016314999817245832024741395750",
+                    "45882653241144612024616399050563532720",
+                    "151980662705061229486609346240039935145",
+                    "190768989054067055310579774474829269827",
+                    "201832238199760288917697888941600799034"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/1a7ef6ddd4c267323cd017c752d4da5392de0390"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "finalizeProvisioningInPrimaryProfile",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/1a7ef6ddd4c267323cd017c752d4da5392de0390",
+                "id": "ASB-A-210469972-505797d1",
+                "digest": {
+                  "function_hash": "37987703896448476434850992545770213883",
+                  "length": 458
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/1a7ef6ddd4c267323cd017c752d4da5392de0390",
+                "id": "ASB-A-210469972-72ba5fdb",
+                "digest": {
+                  "line_hashes": [
+                    "126770901287113181092994384759021439471",
+                    "226949713720262975961857640617629134375",
+                    "12750777737141886692112672794337740245",
+                    "86786463719480147744044891942931028954",
+                    "296931474696659612531751697753888668171",
+                    "113840524066641097930110694512559626646",
+                    "112974836930506796948169364416962663896",
+                    "45645736765208385356595142875357394763",
+                    "154411006352317980768647745974569241111",
+                    "158476285602889413066203666655793104733",
+                    "271805084136454864222455791023592820723",
+                    "188300002174531764168902090990566839171",
+                    "82210351836690846443513195538615440903",
+                    "91888786414128127650247881244066864016",
+                    "64020364376254899850364389227633984882",
+                    "292511345032977434575265302305307313978",
+                    "63364995101298375681430728124509883127",
+                    "47726825992477006317929426726651698680",
+                    "226502505189910148585409411286300231489",
+                    "174622453199694226040593868429632318321",
+                    "53584654036499175838198704377668676859",
+                    "140429496537081717390233239429312066527",
+                    "42801350699708305997946404542389117198",
+                    "338276855435276441639946988279696297693"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleFinalization",
+                  "file": "src/com/android/managedprovisioning/finalization/PrimaryProfileFinalizationHelper.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/1a7ef6ddd4c267323cd017c752d4da5392de0390",
+                "id": "ASB-A-210469972-eb8b2039",
+                "digest": {
+                  "function_hash": "52020135773200354949955668133061458870",
+                  "length": 139
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-210469972.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-278691965",
+      "details": "In decideCancelProvisioningDialog of AdminIntegratedFlowPrepareActivity.java, there is a possible way to bypass factory reset protections due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-278691965",
+        "CVE-2023-21275"
+      ],
+      "modified": "2024-08-07T19:29:19.005665Z",
+      "published": "2023-08-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2023-08-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/8277a2a946e617a7ea65056e4cedeb1fecf3a5f5"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13-next:0"
+                },
+                {
+                  "fixed": "13-next:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/b16f50a817da9e48d0f3c572de832093362b46e2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "decideCancelProvisioningDialog",
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/b16f50a817da9e48d0f3c572de832093362b46e2",
+                "id": "ASB-A-278691965-b98772da",
+                "digest": {
+                  "function_hash": "265799051525319605250605342911493974450",
+                  "length": 42
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/b16f50a817da9e48d0f3c572de832093362b46e2",
+                "id": "ASB-A-278691965-ce197048",
+                "digest": {
+                  "line_hashes": [
+                    "314525346280709999804649432606412190810",
+                    "201799806429730938122527968097292238525",
+                    "60046243031710299475647537977901620968",
+                    "334789243184198270934761634162435415219"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-278691965.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/82f578a7f8f0c52e79d60f10bffc8db19f5e7f79"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "decideCancelProvisioningDialog",
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/82f578a7f8f0c52e79d60f10bffc8db19f5e7f79",
+                "id": "ASB-A-278691965-cce12313",
+                "digest": {
+                  "function_hash": "265799051525319605250605342911493974450",
+                  "length": 42
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/82f578a7f8f0c52e79d60f10bffc8db19f5e7f79",
+                "id": "ASB-A-278691965-d34c6048",
+                "digest": {
+                  "line_hashes": [
+                    "314525346280709999804649432606412190810",
+                    "201799806429730938122527968097292238525",
+                    "196364303841870699621405508081794450229",
+                    "8343664426226696949466496511726964666"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-278691965.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/6d51ea62287e8c6c55bf54c9913bb6d982f7e64e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "decideCancelProvisioningDialog",
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/6d51ea62287e8c6c55bf54c9913bb6d982f7e64e",
+                "id": "ASB-A-278691965-517af277",
+                "digest": {
+                  "function_hash": "265799051525319605250605342911493974450",
+                  "length": 42
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/6d51ea62287e8c6c55bf54c9913bb6d982f7e64e",
+                "id": "ASB-A-278691965-854e3135",
+                "digest": {
+                  "line_hashes": [
+                    "314525346280709999804649432606412190810",
+                    "201799806429730938122527968097292238525",
+                    "196364303841870699621405508081794450229",
+                    "8343664426226696949466496511726964666"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-278691965.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/ManagedProvisioning",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2023-08-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2023-08-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/729cdfd06d942af93953f1bbcfe74a4bf380bbf2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/729cdfd06d942af93953f1bbcfe74a4bf380bbf2",
+                "id": "ASB-A-278691965-0b66d9c9",
+                "digest": {
+                  "line_hashes": [
+                    "314525346280709999804649432606412190810",
+                    "201799806429730938122527968097292238525",
+                    "60046243031710299475647537977901620968",
+                    "334789243184198270934761634162435415219"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "decideCancelProvisioningDialog",
+                  "file": "src/com/android/managedprovisioning/provisioning/AdminIntegratedFlowPrepareActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/729cdfd06d942af93953f1bbcfe74a4bf380bbf2",
+                "id": "ASB-A-278691965-d5b41cfe",
+                "digest": {
+                  "function_hash": "265799051525319605250605342911493974450",
+                  "length": 42
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-278691965.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

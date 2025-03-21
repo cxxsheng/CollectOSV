@@ -1,0 +1,534 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-284262845",
+      "details": "In ca-certificates, there is a possible way to read encrypted TLS data due to untrusted cryptographic certificates. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-284262845",
+        "CVE-2023-40104"
+      ],
+      "modified": "2024-08-07T19:29:58.065217Z",
+      "published": "2023-11-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2023-11-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/system/ca-certificates/+/91204b9fdbd77b3f27f94b73868607b2dccbfdad"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/conscrypt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14-next:0"
+                },
+                {
+                  "fixed": "14-next:2023-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/conscrypt/+/0bbed55a8a537217828a4a7031d9dc638d9ae9c2"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-284262845.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/ca-certificates",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14-next:0"
+                },
+                {
+                  "fixed": "14-next:2023-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/ca-certificates/+/cfe61c3ca788218b24753229ccacc3d59fab7eea"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-284262845.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/ca-certificates",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2023-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-284262845.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/ca-certificates",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2023-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-284262845.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/ca-certificates",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-284262845.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/ca-certificates",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2023-11-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-284262845.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-357870429",
+      "details": "In static of NativeCrypto.java, there is a possible way to obtain clear-text data due to improperly used crypto. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-357870429",
+        "CVE-2024-49723"
+      ],
+      "modified": "2025-02-07T16:12:50.444436Z",
+      "published": "2025-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-02-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/conscrypt/+/79117043c54eb2fc91ece695c90938d60904d59f"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/libcore/+/c9d01a45928e0cdd2e6102c1c0ecf23a9de3601f"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/external/conscrypt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/common/src/main/java/com/android/org/conscrypt/NativeCrypto.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-18c98147",
+                "digest": {
+                  "line_hashes": [
+                    "299535632622317973775762261295033757321",
+                    "298919683211628180965787637771525901670",
+                    "72286295733434330215461289303693648091",
+                    "180531072601765687022348721715007173985"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "common/src/main/java/org/conscrypt/NativeCrypto.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-854fa719",
+                "digest": {
+                  "line_hashes": [
+                    "299535632622317973775762261295033757321",
+                    "298919683211628180965787637771525901670",
+                    "72286295733434330215461289303693648091",
+                    "180531072601765687022348721715007173985"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "testing/src/main/java/org/conscrypt/java/security/StandardNames.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-f05ea173",
+                "digest": {
+                  "line_hashes": [
+                    "76345460774534919623046018758863211779",
+                    "146974738303162855661303116537699460170",
+                    "108662939524375085941082573143147275161",
+                    "106410137962524325474991806287730020401"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "repackaged/testing/src/main/java/com/android/org/conscrypt/java/security/StandardNames.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/conscrypt/+/0c47caf05209b8adadb6c71689b29b6608680329",
+                "id": "ASB-A-357870429-f8b24a46",
+                "digest": {
+                  "line_hashes": [
+                    "76345460774534919623046018758863211779",
+                    "146974738303162855661303116537699460170",
+                    "108662939524375085941082573143147275161",
+                    "106410137962524325474991806287730020401"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/7f433dcc4e483fdf93c556b2f5a1455932b9790e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "support/src/test/java/libcore/java/security/StandardNames.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/libcore/+/7f433dcc4e483fdf93c556b2f5a1455932b9790e",
+                "id": "ASB-A-357870429-c382955e",
+                "digest": {
+                  "line_hashes": [
+                    "66535016980524361043403149777297544018",
+                    "208012504548989863176943934591374168083",
+                    "169957629234222689884011151957709531530",
+                    "149609068575646289901741320586169740841",
+                    "17748157196980919623413425613948538200",
+                    "237027060307776030073850333107935000425",
+                    "260255072171673061633479995635217806784",
+                    "185643812290469475858371970327481550919",
+                    "136143440982469030459544041091062516959",
+                    "66844011190315616230151133429621183345",
+                    "148352931765224521536133833510480020653",
+                    "156574747336136866153122351383737362338",
+                    "43013417459654549848672957616778280628",
+                    "173886808004223641137489881139146528192",
+                    "187136071471501562839529036576399172460",
+                    "164325365152946361337993087955725799003",
+                    "245232122391884598577497400550867472484",
+                    "54905948103801531835746623288164919107",
+                    "110198207713622112801120385307461659394",
+                    "26847733142662621468381641653628558401",
+                    "127981282037734968740388963834057168007",
+                    "292479159237603865445158800558546130494",
+                    "257622853064060194934352056970888229902",
+                    "66827743788910402863664397634699581426",
+                    "29882031764466338251726601023402714436",
+                    "211830598287674033212184393986568012810"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/conscrypt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/conscrypt/+/7ffe97a8034fc98d4f91e0a24793d5f99200523f"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/libcore",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/libcore/+/fe9c4721a54e3ce054da584ddca26cd3a0f34750"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-357870429.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

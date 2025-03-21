@@ -1,0 +1,1755 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-143230980",
+      "details": "In queryInternal of CallLogProvider.java, there is a possible permission bypass due to improper input validation. This could lead to local information disclosure of voicemail metadata with User execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-143230980",
+        "CVE-2020-0368"
+      ],
+      "modified": "2024-08-07T19:29:27.484171Z",
+      "published": "2021-07-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-07-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-07-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-07-05",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/02b4a387aa85f3a084b22716c1221bc2b2ad9133",
+              "https://android.googlesource.com/platform/frameworks/base/+/6e1dc4f73597467f0895b9abe186dafd7ea23f2e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "getLastOutgoingCall",
+                  "file": "core/java/android/provider/CallLog.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/6e1dc4f73597467f0895b9abe186dafd7ea23f2e",
+                "id": "ASB-A-143230980-13fe7e03",
+                "digest": {
+                  "function_hash": "243577943529210183658225489362143767496",
+                  "length": 381
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "core/java/android/database/sqlite/SQLiteQueryBuilder.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/02b4a387aa85f3a084b22716c1221bc2b2ad9133",
+                "id": "ASB-A-143230980-cc2e03b7",
+                "digest": {
+                  "line_hashes": [
+                    "167943536484440368284640684903005144419",
+                    "88975112140562803490622136464619689594",
+                    "177052677309344726792500136065671562789",
+                    "181562959741234650330855493112216272006"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "core/java/android/provider/CallLog.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/6e1dc4f73597467f0895b9abe186dafd7ea23f2e",
+                "id": "ASB-A-143230980-d3f1d392",
+                "digest": {
+                  "line_hashes": [
+                    "50428772908630929488001246425327088739",
+                    "55150776784164778373540527941906524255",
+                    "293736895579162532924440257144895041804",
+                    "84329363243419339319955492616616171406",
+                    "274663662291183179225696621580873416242",
+                    "164944255278781854580662433622137323883",
+                    "228014237971832009562656199285204868344",
+                    "201173472687214082052071698990996339145",
+                    "78342307389441675659700421772270178081",
+                    "52152552155839912661368790527001164213",
+                    "156281475283858460274769409993363619664"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "enforceStrictToken",
+                  "file": "core/java/android/database/sqlite/SQLiteQueryBuilder.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/02b4a387aa85f3a084b22716c1221bc2b2ad9133",
+                "id": "ASB-A-143230980-e697a17c",
+                "digest": {
+                  "function_hash": "190931567886367991920293425054198084670",
+                  "length": 511
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-143230980.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-07-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-07-05",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/1b5f99d14234bd92ce3a40d1e267f8b8a1bbe3dd"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "deleteInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/1b5f99d14234bd92ce3a40d1e267f8b8a1bbe3dd",
+                "id": "ASB-A-143230980-17f93940",
+                "digest": {
+                  "function_hash": "264576237726595650887705223528953321897",
+                  "length": 715
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "queryInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/1b5f99d14234bd92ce3a40d1e267f8b8a1bbe3dd",
+                "id": "ASB-A-143230980-a1236a8f",
+                "digest": {
+                  "function_hash": "293099696361844818597976039091575017108",
+                  "length": 1897
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "updateInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/1b5f99d14234bd92ce3a40d1e267f8b8a1bbe3dd",
+                "id": "ASB-A-143230980-d9cd1907",
+                "digest": {
+                  "function_hash": "125439238430240601382931982922531287603",
+                  "length": 957
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/1b5f99d14234bd92ce3a40d1e267f8b8a1bbe3dd",
+                "id": "ASB-A-143230980-e3d84135",
+                "digest": {
+                  "line_hashes": [
+                    "106644019312073845655984668024151909291",
+                    "64800742481851107802405913854460607400",
+                    "239963095560727400973340794405138837632",
+                    "85576252990887061447484782348234904663",
+                    "255991450326838143900334801343293146354",
+                    "126707294435488434288156590852769369805",
+                    "36948501330905214543762762802327015750",
+                    "152221335107425749313179684226736345887",
+                    "12558825698757157313814857132518525610",
+                    "266227819577318429353890695815731274413",
+                    "288766343364638629640793730780990964811",
+                    "287559143745587618305399838269606648732",
+                    "81774158029451417419069484757056864807",
+                    "180612124011276798595241076826134972616",
+                    "167192138794513326793851295566243698357",
+                    "232530658847801189356996578936233394988",
+                    "41744940072694375250216716975833257854",
+                    "266227819577318429353890695815731274413",
+                    "288766343364638629640793730780990964811",
+                    "284813807822875896483681818980955783203",
+                    "280172972529112716794192147385117664446",
+                    "318486439967898191561339324149599709590",
+                    "10615750858419314198680381901961654544",
+                    "174094468482269905173280371592327981547",
+                    "148203312493574468672471217258430693232"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-143230980.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-173421434",
+      "details": "In getSimSerialNumber of TelephonyManager.java, there is a possible way to read a trackable identifier due to a missing permission check. This could lead to local information disclosure with User execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-173421434",
+        "CVE-2021-0428"
+      ],
+      "modified": "2024-08-07T19:30:14.491155Z",
+      "published": "2021-09-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-09-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/1c1bc30ce345f770de44b4348420e860d0958534"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/5aba70130d3539fc77cfdfb4b550d8e86acd8a60"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/a13fc7f314ac56e75eca09c94db8090f928023ff"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/640387d310ce6fdfa71f606744eb903bedba57ce"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/7dfee2e7c3f762d069b8c606f8591498f109ff3e"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/93d5117cf5f528ec7ed74b4fe2df7ae7e2d207ff"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/f587f04d306f2faa9e102d9e2de87a403a48638e"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/129cc56868dfc198de41909ff9d6c542a84a4c21"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/5aba70130d3539fc77cfdfb4b550d8e86acd8a60",
+              "https://android.googlesource.com/platform/frameworks/base/+/1c1bc30ce345f770de44b4348420e860d0958534",
+              "https://android.googlesource.com/platform/frameworks/base/+/a13fc7f314ac56e75eca09c94db8090f928023ff"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "telephony/java/android/telephony/SubscriptionInfo.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a13fc7f314ac56e75eca09c94db8090f928023ff",
+                "id": "ASB-A-173421434-5d6f198f",
+                "digest": {
+                  "line_hashes": [
+                    "279891211905248705000188750057662442874",
+                    "100251516085861831059546898052103060700",
+                    "10657935485380477635054957026563389601",
+                    "325564871196705452930030679078772031035",
+                    "142725465768313781420799644565204446905",
+                    "244113471113369384426378111550902593284",
+                    "295454372251728279950152373203569687289",
+                    "50232096202857179049884937724085430335",
+                    "32489657364804635552629863396098654524",
+                    "154488838053866465501963706431423535298",
+                    "33640964512298271504754649044654048332",
+                    "332028568397215828142796330354839730014"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-173421434.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/opt/telephony",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/opt/telephony/+/93d5117cf5f528ec7ed74b4fe2df7ae7e2d207ff",
+              "https://android.googlesource.com/platform/frameworks/opt/telephony/+/f587f04d306f2faa9e102d9e2de87a403a48638e",
+              "https://android.googlesource.com/platform/frameworks/opt/telephony/+/640387d310ce6fdfa71f606744eb903bedba57ce",
+              "https://android.googlesource.com/platform/frameworks/opt/telephony/+/7dfee2e7c3f762d069b8c606f8591498f109ff3e",
+              "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173",
+                "id": "ASB-A-173421434-0a7b89c9",
+                "digest": {
+                  "line_hashes": [
+                    "73271320479689853384020250808514898536",
+                    "175787085652733294794043095659085123698",
+                    "67982921254483870507642281109402768204",
+                    "315568438870669136591369092324040736513",
+                    "248199077134062676251498125742683059126",
+                    "218148968020054942308553548099221169822",
+                    "165739547165381776752209104974691322062",
+                    "300662938926454843267847812611081103773",
+                    "246889847219043522624183391919145578152",
+                    "137510143084916363362680958018806561563",
+                    "16835035947434875406831018487916772589",
+                    "274303705999419766595372770870333918665",
+                    "228650038250189149717389391226035411539",
+                    "203875218875667817585528210620992169685",
+                    "143538902479667268199642620701316923975",
+                    "37834714910165965342489292506547138259",
+                    "204403033463547674522094165065068657383",
+                    "16950011880908463429075036878240796867",
+                    "41777599622806452903422585703796554082",
+                    "249874091143085082948636995037363009283",
+                    "98478380025337807038134164640197847867",
+                    "103967969692119938010360621919557267358",
+                    "128098064016103406587689090904910706358",
+                    "253293339938871538364059937050665039785",
+                    "94996945124155868386950122897626763687",
+                    "67837049382483700744729932776370363659",
+                    "300393795810134724540572914185150203620",
+                    "86375971926365400961037929333542529990",
+                    "248199077134062676251498125742683059126",
+                    "218148968020054942308553548099221169822",
+                    "165739547165381776752209104974691322062",
+                    "300662938926454843267847812611081103773",
+                    "246889847219043522624183391919145578152",
+                    "164849385314085923633845786035148191814",
+                    "117763355247094591913180398591635496460",
+                    "334196501212923171745132508872048115493",
+                    "11833935888448519728719357971431914941",
+                    "97946602838355177235543272333411795481",
+                    "274983647912101315245217825986212407218",
+                    "239209062339167307774644764823534030294",
+                    "37834714910165965342489292506547138259",
+                    "10975772097726458264512771145019100068",
+                    "180253413135416209496609527867358259607",
+                    "124651528491726343931596846559743898022",
+                    "325873334375708185265565019531932008757",
+                    "248368852189985331554463250368386946458",
+                    "26066588096344914085947085966428084522",
+                    "73131983218123357155151052743217513711",
+                    "200909306953394193782702618957114166228",
+                    "211200362000307231920759527080166068531",
+                    "36413841089977536595491773018229861131",
+                    "24328648988827950222839968996649701698",
+                    "253293339938871538364059937050665039785",
+                    "94996945124155868386950122897626763687",
+                    "67837049382483700744729932776370363659",
+                    "221098333954084600835782838181252955025",
+                    "55333656169581628743730232640161612259",
+                    "331290153949591651623036447596595178406",
+                    "197116699074963706275357406545985272341",
+                    "180691082372324568819711879137138673361",
+                    "236205834711826370679520291836532827469",
+                    "28203633654915582289553145665529874311",
+                    "113046850701511380578177405189928177916",
+                    "334501601190860754277091993463373154358",
+                    "327351520236771581893306224682751669520",
+                    "312552819336735905078294581706309919698",
+                    "151513512856374956721770194181695875415",
+                    "21427506597643827257553841599628650087",
+                    "175001954157719550656499020746921043125",
+                    "167279740871829938036416925979600203146",
+                    "70011128062482938836116569504971252633"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onSubscriptionsChanged",
+                  "file": "src/java/com/android/internal/telephony/MultiSimSettingController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/f587f04d306f2faa9e102d9e2de87a403a48638e",
+                "id": "ASB-A-173421434-0a9f62fe",
+                "digest": {
+                  "function_hash": "126643220583821949590310279423045567193",
+                  "length": 147
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "getSubscriptionInfoListFromCacheHelper",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/93d5117cf5f528ec7ed74b4fe2df7ae7e2d207ff",
+                "id": "ASB-A-173421434-182b1c52",
+                "digest": {
+                  "function_hash": "309731795387608772756580169004621906271",
+                  "length": 892
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onAllSubscriptionsLoaded",
+                  "file": "src/java/com/android/internal/telephony/MultiSimSettingController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/f587f04d306f2faa9e102d9e2de87a403a48638e",
+                "id": "ASB-A-173421434-1a831322",
+                "digest": {
+                  "function_hash": "190479599179302551772659796314580291167",
+                  "length": 139
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "refreshCachedOpportunisticSubscriptionInfoList",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/93d5117cf5f528ec7ed74b4fe2df7ae7e2d207ff",
+                "id": "ASB-A-173421434-1a936166",
+                "digest": {
+                  "function_hash": "295542230449820321700987337457344736675",
+                  "length": 980
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "refreshCachedActiveSubscriptionInfoList",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/93d5117cf5f528ec7ed74b4fe2df7ae7e2d207ff",
+                "id": "ASB-A-173421434-2fd1ac80",
+                "digest": {
+                  "function_hash": "52716821551309549174055644195890135908",
+                  "length": 1005
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "conditionallyRemoveIdentifiers",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/640387d310ce6fdfa71f606744eb903bedba57ce",
+                "id": "ASB-A-173421434-3abbb0b3",
+                "digest": {
+                  "function_hash": "115111502823109378455000834551849468490",
+                  "length": 228
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/93d5117cf5f528ec7ed74b4fe2df7ae7e2d207ff",
+                "id": "ASB-A-173421434-9151d70c",
+                "digest": {
+                  "line_hashes": [
+                    "332207181272535266765054703888140350086",
+                    "204616039021468111799581771418639482743",
+                    "18494499343717385598631220991929195543",
+                    "48357414873069698865384848190726312470",
+                    "165257245421950194433281463476462408600",
+                    "334547528246382158881014142630734941704",
+                    "251816249981324229546334957472799376561",
+                    "301500707940331872715878760919396858377",
+                    "245131399701842030958101636739256720129",
+                    "89577110774155736140891374342908278658",
+                    "240553803243606666702031523030296778269",
+                    "281864973538878578587995349986393143616",
+                    "14047431468686558572265725325717805371",
+                    "126971868211183223365784180784971214224",
+                    "113598235983893129004938512363760911147",
+                    "289181913746767822105911751189654809610",
+                    "70476983084688695158339000851207211969",
+                    "4335509256039612010068177770490591704",
+                    "328423812484863549378992457440787977831",
+                    "131430076114900908778330596346323458048",
+                    "220121008952662251713513697582756213732",
+                    "108587633537507210242609878158511307392",
+                    "223301227139763297513577257228494276951",
+                    "204616039021468111799581771418639482743",
+                    "61895094682757125977270297329867943688",
+                    "108524702858012074876981192010474428107",
+                    "178251931898223871901296544838140751839",
+                    "319308783313375693820838256487098717939",
+                    "122400061465333209057977201008905581832",
+                    "97565774358790140327795322877415659015",
+                    "181951518584040096468462104511112146179",
+                    "198631130592849971795237661491979401233",
+                    "301063557735120950250074690916372947337",
+                    "68787212017993703930521363247194311370",
+                    "219057870342307217396378060247155851989",
+                    "26296955719322993442857432079228183014",
+                    "198280210753322231701385649049526261340",
+                    "11976588153085162037590796673558897175",
+                    "201149293675270705267390093979970538339",
+                    "143311611871853946761803421136847292857",
+                    "272337603234917968950985219293028106756",
+                    "215188371355222747436257533936866207742",
+                    "198590809961733720013383837394543480094",
+                    "213801815103618585583716380376337753885",
+                    "39927146165340248215025000694119613841",
+                    "133916474999912376850595442652032532002",
+                    "328241345341451062107330657320754916241",
+                    "3502441696699683772051182957527934487",
+                    "105875448958741139790105984877214863122",
+                    "262094944130003232371313913761872523680",
+                    "227047001510843328179866015920656547090",
+                    "325507781138640812942393636107286501111",
+                    "152073960806558844135137575645662574469",
+                    "105200199484982371688746584367954863585",
+                    "332421127601400676815948225774400433030",
+                    "50155104764168218737472079076866576198",
+                    "160696242279341343390429258663333393865",
+                    "248238605614299783183629142541777986904",
+                    "156630781654088528196023203669619481420",
+                    "103540965704654865664095800082845282773",
+                    "196355641388764804194497361776958016464",
+                    "164795235692720536352404592246169558712",
+                    "239964523583061207204583822402527883865"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/java/com/android/internal/telephony/MultiSimSettingController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/f587f04d306f2faa9e102d9e2de87a403a48638e",
+                "id": "ASB-A-173421434-918bcdbb",
+                "digest": {
+                  "line_hashes": [
+                    "321090431127340004990671278192074797963",
+                    "46225779129580699927749136639950002012",
+                    "60019122233057231394463674412463453797",
+                    "216631224128738116404641397217260597847",
+                    "294710520453535791353510840633526235339",
+                    "264168491459372532987784367660727173796",
+                    "214874892743754442154171900363694655676",
+                    "699414931290159516128303284382318106",
+                    "160803317814406586736429625279033200529",
+                    "225161148072616918182033693359322495986",
+                    "187364324057142489227597349839182918656",
+                    "149583713709563962048565424340452335257",
+                    "118313151484137727736198654439618093957",
+                    "245761290185636267608743517699104515751",
+                    "225289580136915222065860615950796129422",
+                    "155875229024061619331458113260141407498",
+                    "157910019293770333103487168397563302097",
+                    "107204163690473226264824837225166107372",
+                    "312955214957783794918648735006294819222"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "getSubscriptionsInGroup",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173",
+                "id": "ASB-A-173421434-a1878697",
+                "digest": {
+                  "function_hash": "55254967924537371728098459033840448912",
+                  "length": 640
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "getActiveSubscriptionInfo",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173",
+                "id": "ASB-A-173421434-acc471de",
+                "digest": {
+                  "function_hash": "191343706809052747583263701389269632885",
+                  "length": 630
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "getSubscriptionInfoListFromCacheHelper",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173",
+                "id": "ASB-A-173421434-c8e36ecd",
+                "digest": {
+                  "function_hash": "93525269666656978262328563222757040009",
+                  "length": 682
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "getActiveSubscriptionInfoForSimSlotIndex",
+                  "file": "src/java/com/android/internal/telephony/SubscriptionController.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/opt/telephony/+/9c392805dc4c5d5c9a95a5dec9c7f65130cd8173",
+                "id": "ASB-A-173421434-d38c07ba",
+                "digest": {
+                  "function_hash": "41681991742516796743634072472263864210",
+                  "length": 959
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-173421434.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/129cc56868dfc198de41909ff9d6c542a84a4c21"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-173421434.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-219015884",
+      "details": "In openFile of CallLogProvider.java, there is a possible permission bypass due to a path traversal error. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-219015884",
+        "CVE-2022-20220"
+      ],
+      "modified": "2024-08-07T19:29:02.496106Z",
+      "published": "2022-07-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-07-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/0aba93d7d0a92a277f540fec7d5b04b2850fa184"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-07-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-07-05",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/74cf86e9b493220c5b3ecc0817eeb7e7188199c8"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/74cf86e9b493220c5b3ecc0817eeb7e7188199c8",
+                "id": "ASB-A-219015884-0507dcee",
+                "digest": {
+                  "line_hashes": [
+                    "80556162895880792831603875551434641542",
+                    "261713554497495016265945414111035963751",
+                    "223484236778549619715047498372853515431",
+                    "212727300813294272073991136558766830669",
+                    "145291450032720118371994974066181749592",
+                    "83206619313910695128548435682764265229",
+                    "84957994418400661474662027988111971266",
+                    "160199517177949618493828767468458340714",
+                    "306667458784816265871724482886101199225",
+                    "165472891104289477114417372168957371229",
+                    "148501115818883676817113523476465475572",
+                    "279890213913258310656874654355957680438",
+                    "258179191018602781453434504890871419424",
+                    "261990686389993149118546137426451388807",
+                    "157793474918727384552935276709041265292",
+                    "303394727368492633530529340784274426657",
+                    "18965481648146670354266081386648002232",
+                    "251697982678667641201019146966373741689",
+                    "39973034611118046241533072751258587783",
+                    "264085753851315626503573994444377012027",
+                    "98091311131399214891666419273000917671",
+                    "216220454372179139125795804482220632779",
+                    "47401923675628117697947464933786772299",
+                    "84548400442674366318118914823687679270",
+                    "287859958430371281590258505168553971026",
+                    "159810972737882846981070977960741004821",
+                    "102462974237692409826427485140294425528",
+                    "2281476316063599756271812216418645963",
+                    "302497987735875217573044640396691592319",
+                    "123583553300097912274155540290893791864",
+                    "109127505205732677383334803609398725149"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "syncCallComposerPics",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/74cf86e9b493220c5b3ecc0817eeb7e7188199c8",
+                "id": "ASB-A-219015884-3065edf8",
+                "digest": {
+                  "function_hash": "309386010514092342042245267834131134851",
+                  "length": 1646
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "deleteCallComposerPicture",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/74cf86e9b493220c5b3ecc0817eeb7e7188199c8",
+                "id": "ASB-A-219015884-445b4252",
+                "digest": {
+                  "function_hash": "192327671234739927967485161192599275251",
+                  "length": 351
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "allocateNewCallComposerPicture",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/74cf86e9b493220c5b3ecc0817eeb7e7188199c8",
+                "id": "ASB-A-219015884-6a160514",
+                "digest": {
+                  "function_hash": "59884867351264151132995485155170850686",
+                  "length": 774
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "openFile",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/74cf86e9b493220c5b3ecc0817eeb7e7188199c8",
+                "id": "ASB-A-219015884-e0539cbd",
+                "digest": {
+                  "function_hash": "231545673366050250262952693884714281968",
+                  "length": 983
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-219015884.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-07-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-07-05",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/5fd7ebb59d6c2b64255a4aad484d5f2217d4f4af"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/5fd7ebb59d6c2b64255a4aad484d5f2217d4f4af",
+                "id": "ASB-A-219015884-08c99980",
+                "digest": {
+                  "line_hashes": [
+                    "80556162895880792831603875551434641542",
+                    "261713554497495016265945414111035963751",
+                    "223484236778549619715047498372853515431",
+                    "212727300813294272073991136558766830669",
+                    "145291450032720118371994974066181749592",
+                    "83206619313910695128548435682764265229",
+                    "84957994418400661474662027988111971266",
+                    "160199517177949618493828767468458340714",
+                    "306667458784816265871724482886101199225",
+                    "165472891104289477114417372168957371229",
+                    "148501115818883676817113523476465475572",
+                    "279890213913258310656874654355957680438",
+                    "258179191018602781453434504890871419424",
+                    "261990686389993149118546137426451388807",
+                    "157793474918727384552935276709041265292",
+                    "303394727368492633530529340784274426657",
+                    "18965481648146670354266081386648002232",
+                    "251697982678667641201019146966373741689",
+                    "39973034611118046241533072751258587783",
+                    "264085753851315626503573994444377012027",
+                    "98091311131399214891666419273000917671",
+                    "216220454372179139125795804482220632779",
+                    "47401923675628117697947464933786772299",
+                    "84548400442674366318118914823687679270",
+                    "287859958430371281590258505168553971026",
+                    "159810972737882846981070977960741004821",
+                    "102462974237692409826427485140294425528",
+                    "2281476316063599756271812216418645963",
+                    "302497987735875217573044640396691592319",
+                    "123583553300097912274155540290893791864",
+                    "109127505205732677383334803609398725149"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "deleteCallComposerPicture",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/5fd7ebb59d6c2b64255a4aad484d5f2217d4f4af",
+                "id": "ASB-A-219015884-2f846196",
+                "digest": {
+                  "function_hash": "192327671234739927967485161192599275251",
+                  "length": 351
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "syncCallComposerPics",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/5fd7ebb59d6c2b64255a4aad484d5f2217d4f4af",
+                "id": "ASB-A-219015884-8d1df9d1",
+                "digest": {
+                  "function_hash": "309386010514092342042245267834131134851",
+                  "length": 1646
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "allocateNewCallComposerPicture",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/5fd7ebb59d6c2b64255a4aad484d5f2217d4f4af",
+                "id": "ASB-A-219015884-a1f8b29a",
+                "digest": {
+                  "function_hash": "59884867351264151132995485155170850686",
+                  "length": 774
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "openFile",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/5fd7ebb59d6c2b64255a4aad484d5f2217d4f4af",
+                "id": "ASB-A-219015884-e47050ac",
+                "digest": {
+                  "function_hash": "231545673366050250262952693884714281968",
+                  "length": 983
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-219015884.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-224771921",
+      "details": "In queryInternal of CallLogProvider.java, there is a possible access to voicemail information due to SQL injection. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-224771921",
+        "CVE-2022-20351"
+      ],
+      "modified": "2024-08-07T19:30:08.374249Z",
+      "published": "2022-10-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-10-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/571be94b55445553a86825d95a63afe05cfba6bd"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2022-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c8b6397d364c2741baf5d850bfdd1693782af940"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c8b6397d364c2741baf5d850bfdd1693782af940",
+                "id": "ASB-A-224771921-a2e16aca",
+                "digest": {
+                  "line_hashes": [
+                    "53919801425180326925880022299954910965",
+                    "41084984652913352252235059110035953599",
+                    "117198694445126225419768552499591519059",
+                    "310841440182783761631491462035056872936",
+                    "275969169184207519965447917923689487896",
+                    "148228664040594949976405220840456254062",
+                    "223484236778549619715047498372853515431",
+                    "212727300813294272073991136558766830669",
+                    "106734020722319132713276943636652145003",
+                    "12563010034041730063214558214832130977",
+                    "158605298921130373656085401856903635610",
+                    "304712495889103399796824084100047173705",
+                    "232661825159461533547739478446004062156",
+                    "29379320168401253849145444707556282372",
+                    "147652856935526935264223359555761245980",
+                    "216730683260515120472503840612373724727",
+                    "108129233034129259535863135705579550246",
+                    "148840682578805143956728380523294794062",
+                    "290277608450103359517056288740042075516",
+                    "49418042042563296236884803562436853101",
+                    "100709172581173274939906130023865666346",
+                    "117884230121521632714536214549292952937",
+                    "288895626335556090024917407302880897532",
+                    "130641697390818383245837180855469061023",
+                    "240544318486812662390108120855747929969",
+                    "176829741161037337402185425588070488858",
+                    "17423679981754078804450044061002657106"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "queryInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c8b6397d364c2741baf5d850bfdd1693782af940",
+                "id": "ASB-A-224771921-d280050a",
+                "digest": {
+                  "function_hash": "93133705529729769360229456639272130222",
+                  "length": 1843
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224771921.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2022-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/a3bdf569acd6cd39a5650019bb32ed8019e210b7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/a3bdf569acd6cd39a5650019bb32ed8019e210b7",
+                "id": "ASB-A-224771921-45922613",
+                "digest": {
+                  "line_hashes": [
+                    "53919801425180326925880022299954910965",
+                    "41084984652913352252235059110035953599",
+                    "117198694445126225419768552499591519059",
+                    "310841440182783761631491462035056872936",
+                    "148228664040594949976405220840456254062",
+                    "223484236778549619715047498372853515431",
+                    "212727300813294272073991136558766830669",
+                    "145291450032720118371994974066181749592",
+                    "106734020722319132713276943636652145003",
+                    "12563010034041730063214558214832130977",
+                    "158605298921130373656085401856903635610",
+                    "304712495889103399796824084100047173705",
+                    "232661825159461533547739478446004062156",
+                    "29379320168401253849145444707556282372",
+                    "318319657510725048878027519722401654232",
+                    "85594869355850975769571123571438072701",
+                    "181292463892748974626392882459449319571",
+                    "245451439533552774764489455306344259418",
+                    "221510784858669172849117074820395549837",
+                    "290277608450103359517056288740042075516",
+                    "49418042042563296236884803562436853101",
+                    "100709172581173274939906130023865666346",
+                    "117884230121521632714536214549292952937",
+                    "288895626335556090024917407302880897532",
+                    "130641697390818383245837180855469061023",
+                    "240544318486812662390108120855747929969",
+                    "176829741161037337402185425588070488858",
+                    "17423679981754078804450044061002657106"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "queryInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/a3bdf569acd6cd39a5650019bb32ed8019e210b7",
+                "id": "ASB-A-224771921-588f7663",
+                "digest": {
+                  "function_hash": "50892577625933467961732409895582941822",
+                  "length": 1986
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224771921.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/a3bdf569acd6cd39a5650019bb32ed8019e210b7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/a3bdf569acd6cd39a5650019bb32ed8019e210b7",
+                "id": "ASB-A-224771921-085152ec",
+                "digest": {
+                  "line_hashes": [
+                    "53919801425180326925880022299954910965",
+                    "41084984652913352252235059110035953599",
+                    "117198694445126225419768552499591519059",
+                    "310841440182783761631491462035056872936",
+                    "148228664040594949976405220840456254062",
+                    "223484236778549619715047498372853515431",
+                    "212727300813294272073991136558766830669",
+                    "145291450032720118371994974066181749592",
+                    "106734020722319132713276943636652145003",
+                    "12563010034041730063214558214832130977",
+                    "158605298921130373656085401856903635610",
+                    "304712495889103399796824084100047173705",
+                    "232661825159461533547739478446004062156",
+                    "29379320168401253849145444707556282372",
+                    "318319657510725048878027519722401654232",
+                    "85594869355850975769571123571438072701",
+                    "181292463892748974626392882459449319571",
+                    "245451439533552774764489455306344259418",
+                    "221510784858669172849117074820395549837",
+                    "290277608450103359517056288740042075516",
+                    "49418042042563296236884803562436853101",
+                    "100709172581173274939906130023865666346",
+                    "117884230121521632714536214549292952937",
+                    "288895626335556090024917407302880897532",
+                    "130641697390818383245837180855469061023",
+                    "240544318486812662390108120855747929969",
+                    "176829741161037337402185425588070488858",
+                    "17423679981754078804450044061002657106"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "queryInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/a3bdf569acd6cd39a5650019bb32ed8019e210b7",
+                "id": "ASB-A-224771921-5cacaa1d",
+                "digest": {
+                  "function_hash": "50892577625933467961732409895582941822",
+                  "length": 1986
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224771921.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2022-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/890af6a4b1afa60be528abebc79cf61021f4ff75"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/890af6a4b1afa60be528abebc79cf61021f4ff75",
+                "id": "ASB-A-224771921-8c7ea7bc",
+                "digest": {
+                  "line_hashes": [
+                    "53919801425180326925880022299954910965",
+                    "41084984652913352252235059110035953599",
+                    "117198694445126225419768552499591519059",
+                    "157382823789119982665661079507840082676",
+                    "294041959579873537322225011829003035562",
+                    "44578029903154154491527394630474716531",
+                    "125460805014347687669288926647455137264",
+                    "215545335778065760900991917796475181766",
+                    "232661825159461533547739478446004062156",
+                    "29379320168401253849145444707556282372",
+                    "318319657510725048878027519722401654232",
+                    "85594869355850975769571123571438072701",
+                    "181292463892748974626392882459449319571",
+                    "245451439533552774764489455306344259418",
+                    "221510784858669172849117074820395549837",
+                    "290277608450103359517056288740042075516",
+                    "49418042042563296236884803562436853101",
+                    "100709172581173274939906130023865666346",
+                    "117884230121521632714536214549292952937",
+                    "288895626335556090024917407302880897532",
+                    "130641697390818383245837180855469061023",
+                    "240544318486812662390108120855747929969",
+                    "176829741161037337402185425588070488858",
+                    "17423679981754078804450044061002657106"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "queryInternal",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/890af6a4b1afa60be528abebc79cf61021f4ff75",
+                "id": "ASB-A-224771921-f0bf1be6",
+                "digest": {
+                  "function_hash": "50892577625933467961732409895582941822",
+                  "length": 1986
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-224771921.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-174045870",
+      "details": "In onStart of ContactsDumpActivity.java, there is possible access to contacts due to a tapjacking/overlay attack. This could lead to local information disclosure with User execution privileges needed. User interaction is needed for exploitation.",
+      "aliases": [
+        "A-174045870",
+        "CVE-2021-0569"
+      ],
+      "modified": "2024-08-29T07:12:51.717919Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/d74717f0319b8282f76bc88d999fca87138c2f48"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/d74717f0319b8282f76bc88d999fca87138c2f48"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/debug/ContactsDumpActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/d74717f0319b8282f76bc88d999fca87138c2f48",
+                "id": "PUB-A-174045870-01ce398d",
+                "digest": {
+                  "line_hashes": [
+                    "165131647857970145395558277153544971045",
+                    "18341653870661499813850026366524925571",
+                    "107210192711485329355576990158459785477",
+                    "312429896352256447699331898729695596336"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-174045870.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "PUB-A-225981754",
+      "details": "In openFile of CallLogProvider.java, there is a possible permission bypass due to a path traversal error. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation",
+      "aliases": [
+        "A-225981754",
+        "CVE-2022-20505"
+      ],
+      "modified": "2024-08-29T07:13:03.533530Z",
+      "published": "2022-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/providers/ContactsProvider",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2022-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "openFile",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799",
+                "id": "PUB-A-225981754-3d976d42",
+                "digest": {
+                  "function_hash": "231545673366050250262952693884714281968",
+                  "length": 983
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "allocateNewCallComposerPicture",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799",
+                "id": "PUB-A-225981754-68f2dffb",
+                "digest": {
+                  "function_hash": "59884867351264151132995485155170850686",
+                  "length": 774
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "deleteCallComposerPicture",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799",
+                "id": "PUB-A-225981754-8c59c626",
+                "digest": {
+                  "function_hash": "192327671234739927967485161192599275251",
+                  "length": 351
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "syncCallComposerPics",
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799",
+                "id": "PUB-A-225981754-e1785b78",
+                "digest": {
+                  "function_hash": "309386010514092342042245267834131134851",
+                  "length": 1646
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/providers/contacts/CallLogProvider.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/c5da1394740292b036fa0d0b7ad9b96f0851b799",
+                "id": "PUB-A-225981754-e81a86e5",
+                "digest": {
+                  "line_hashes": [
+                    "90411726906254443426730435841338685706",
+                    "261713554497495016265945414111035963751",
+                    "223484236778549619715047498372853515431",
+                    "212727300813294272073991136558766830669",
+                    "145291450032720118371994974066181749592",
+                    "83206619313910695128548435682764265229",
+                    "280624185982056141154666206410484568009",
+                    "248111705161388651356813266075245029722",
+                    "114304497285397900491032554899316901320",
+                    "165472891104289477114417372168957371229",
+                    "148501115818883676817113523476465475572",
+                    "279890213913258310656874654355957680438",
+                    "258179191018602781453434504890871419424",
+                    "261990686389993149118546137426451388807",
+                    "157793474918727384552935276709041265292",
+                    "303394727368492633530529340784274426657",
+                    "18965481648146670354266081386648002232",
+                    "251697982678667641201019146966373741689",
+                    "39973034611118046241533072751258587783",
+                    "264085753851315626503573994444377012027",
+                    "98091311131399214891666419273000917671",
+                    "216220454372179139125795804482220632779",
+                    "47401923675628117697947464933786772299",
+                    "84548400442674366318118914823687679270",
+                    "287859958430371281590258505168553971026",
+                    "159810972737882846981070977960741004821",
+                    "102462974237692409826427485140294425528",
+                    "2281476316063599756271812216418645963",
+                    "302497987735875217573044640396691592319",
+                    "123583553300097912274155540290893791864",
+                    "109127505205732677383334803609398725149"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-225981754.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

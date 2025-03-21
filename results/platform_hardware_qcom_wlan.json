@@ -1,0 +1,98 @@
+{
+  "vulns": [
+    {
+      "id": "PUB-A-184564368",
+      "aliases": [
+        "2836431",
+        "A-184564368",
+        "CVE-2021-1967"
+      ],
+      "modified": "2024-10-02T20:28:27Z",
+      "published": "2021-10-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-10-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://source.codeaurora.org/quic/le/platform/hardware/qcom/wlan/commit/?id=3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/hardware/qcom/wlan",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "SoCVersion:0"
+                },
+                {
+                  "fixed": "SoCVersion:2021-10-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "SoCVersion"
+          ],
+          "ecosystem_specific": {
+            "severity": "Moderate",
+            "types": [
+              "Unknown"
+            ],
+            "spl": "2021-10-05",
+            "fixes": [
+              "https://source.codeaurora.org/quic/le/platform/hardware/qcom/wlan/commit/?id=3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "NanCommand::getNanMatch",
+                  "file": "qcwcn/wifi_hal/nan_ind.cpp"
+                },
+                "deprecated": false,
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/commit/3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a",
+                "id": "PUB-A-184564368-28761e50",
+                "digest": {
+                  "function_hash": "190477274968498936228892042472815934114",
+                  "length": 4731
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "qcwcn/wifi_hal/nan_ind.cpp"
+                },
+                "deprecated": false,
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/commit/3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a",
+                "id": "PUB-A-184564368-87706477",
+                "digest": {
+                  "line_hashes": [
+                    "338425997839764367895403344546369164272",
+                    "193914297778785760985776216088552860293",
+                    "11298366178367397691047712906320592917",
+                    "117472073205632112732400898690857591435"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/PUB-A-184564368.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

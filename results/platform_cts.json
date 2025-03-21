@@ -1,0 +1,1253 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-129476618",
+      "details": "In onCommand of CompanionDeviceManagerService.java, there is a possible permissions bypass due to a missing permission check. This could lead to local escalation of privilege allowing background data usage or launching from the background, with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-129476618",
+        "CVE-2020-0227"
+      ],
+      "modified": "2024-08-07T19:29:40.012546Z",
+      "published": "2020-07-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2020-07-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
+              "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
+              "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.0:0"
+                },
+                {
+                  "fixed": "8.0:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.0"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "id": "ASB-A-129476618-217c27d0",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "id": "ASB-A-129476618-3443ebf8",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "id": "ASB-A-129476618-ea2fd65d",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
+              "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
+              "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "id": "ASB-A-129476618-1e92855e",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "id": "ASB-A-129476618-5f20fe37",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "id": "ASB-A-129476618-f0b72546",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
+              "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
+              "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "id": "ASB-A-129476618-1e421d4f",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "id": "ASB-A-129476618-56eeb89b",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "id": "ASB-A-129476618-89c32a17",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
+              "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
+              "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2020-07-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2020-07-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "id": "ASB-A-129476618-1433fec6",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "id": "ASB-A-129476618-bedcce21",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "id": "ASB-A-129476618-c6c55255",
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-155648771",
+      "details": "In updatePermissionSourcePackage of PermissionManagerService.java, there is a possible automatic runtime permission grant due to a confused deputy. This could lead to local escalation of privilege allowing a malicious app to silently gain access to a dangerous permission with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-155648771",
+        "CVE-2021-0307"
+      ],
+      "modified": "2024-08-07T19:29:54.773987Z",
+      "published": "2021-01-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-01-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/cts/+/a8a90255d43845e307b6d133c710b802dbece622"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/a8a90255d43845e307b6d133c710b802dbece622"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
+                "id": "ASB-A-155648771-4acbd12e",
+                "digest": {
+                  "line_hashes": [
+                    "42944500549505635161036987220393129218",
+                    "32374468865149567811517005251175270874",
+                    "182416145722170882610837408393988471387",
+                    "73133442436564090363183519967048906082"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "updatePermissionSourcePackage",
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
+                "id": "ASB-A-155648771-ea459bf9",
+                "digest": {
+                  "function_hash": "260801340390853921484827258252259891230",
+                  "length": 1646
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/a8a90255d43845e307b6d133c710b802dbece622"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-01-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "updatePermissionSourcePackage",
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
+                "id": "ASB-A-155648771-9979c947",
+                "digest": {
+                  "function_hash": "260801340390853921484827258252259891230",
+                  "length": 1646
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
+                "id": "ASB-A-155648771-dcfd25c1",
+                "digest": {
+                  "line_hashes": [
+                    "42944500549505635161036987220393129218",
+                    "32374468865149567811517005251175270874",
+                    "182416145722170882610837408393988471387",
+                    "73133442436564090363183519967048906082"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-279055389",
+      "details": "In multiple files, there is a possible way that trimmed content could be included in PDF output due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-279055389",
+        "CVE-2023-40093"
+      ],
+      "modified": "2025-01-08T23:50:04Z",
+      "published": "2024-02-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2024-02-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/external/pdfium/+/03925281cf25fec70318bf2225356d022b12b566"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/cts/+/a952c93009cc81c41a086d73a4030a83b7683a04"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14-next:0"
+                },
+                {
+                  "fixed": "14-next:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/2da6166a42950cb9a94289472da846e2d6842c64"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/pdfium",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14-next:0"
+                },
+                {
+                  "fixed": "14-next:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/pdfium/+/0712eae5bb0bce5ae0027c680373a412fcbfeac1"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/ba1ada191974e23642562437a167160f4baa2e94"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/pdfium",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/pdfium/+/3e2fb7d98efb4ba7b51fd84e9a0ae04f8c0f7805"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/75bd8508b7040f33aed77945d5dfe2dfed4a071c"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/pdfium",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/pdfium/+/9be8c8c38972f6dbca94e38e0ce1e8a816639126"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/61972504f83e3ffe089082cfe323bdd67c48d346"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/pdfium",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/pdfium/+/00a8f89dd8fd35348675de637a841db43fb807e1"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/4a4e992e9f3af9ea5dc71d725abb599dadbdd5e1"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/pdfium",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/pdfium/+/6edbc4e74a73f9cd4256ceb47b77a34ba87df890"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/cts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/cts/+/382f9d1045692f7bc6949d029827f070c21cf53c"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/external/pdfium",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2024-02-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2024-02-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/pdfium/+/bd17c0b8cf8436f15500ecf027db133b666141d6"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}

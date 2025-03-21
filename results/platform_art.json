@@ -1,0 +1,2045 @@
+{
+  "vulns": [
+    {
+      "id": "ASB-A-172655291",
+      "details": "In android_os_Parcel_readString8 of android_os_Parcel.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-172655291",
+        "CVE-2021-0394"
+      ],
+      "modified": "2024-08-07T19:29:34.088274Z",
+      "published": "2021-03-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-03-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/1358c9faa9766fd470ab2ba002a73479ccf54154"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/4b56bb8ce224408acfef7f2b2c2cee2abd938c9a"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/6444277041f41294d98adac4bb585183e56587f6"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/69fc841b8460943c2b2224f61585942cbc9f3f40"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/7dd48b90bd0968375cba8dffa2141cc9973329f9"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/8c6653177204bfd6ccf03e1b4b3b72d96e362628"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/d0b940349294a363e6d578adf58db8222c425669"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/ed4b3e0958d3de6a92d82abb9f81e49e84d5c673"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/native/+/58f5cfa56d5282e69a7580dc4bb97603c409f003"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/native/+/61d0f84881cfc1bbac513ccd156c56603a48cc90"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/system/tools/hidl/+/e8544d4fae9e8b7f1b31068c1bbd817c792315c7"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/system/tools/hidl/+/f9a784013d8b6d519e66c2bee6384ad8a713ac25"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "8.1:0"
+                },
+                {
+                  "fixed": "8.1:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "8.1"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/8c6653177204bfd6ccf03e1b4b3b72d96e362628",
+              "https://android.googlesource.com/platform/art/+/4b56bb8ce224408acfef7f2b2c2cee2abd938c9a"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/mirror/string.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/8c6653177204bfd6ccf03e1b4b3b72d96e362628",
+                "id": "ASB-A-172655291-2cc4af9c",
+                "digest": {
+                  "line_hashes": [
+                    "742922100236702367568882198496653128",
+                    "180405028384217921452000999040661503123",
+                    "9977381646763468625560674896791244814",
+                    "139805360047875458615494518910909825755",
+                    "32225368823611614938255998433514355264",
+                    "188479341204455873783548129250054611175",
+                    "212208487837375745877653722482654110695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/8c6653177204bfd6ccf03e1b4b3b72d96e362628",
+                "id": "ASB-A-172655291-47dde868",
+                "digest": {
+                  "line_hashes": [
+                    "180607149440948939479164550161214279693",
+                    "134978023560574985810306324205789284474",
+                    "298540098038011932319106653609065000051",
+                    "206987900709816488317088732902174720532",
+                    "280705728406661810475241199250680431554",
+                    "12133602861741274292886291901812429956",
+                    "68848050743189154801183728100053764074",
+                    "319927085103449064030604113046133413287",
+                    "334178265828066161336305025452291604460",
+                    "206846713485717635990573066771692525881",
+                    "273608509962210116374849023732172436388",
+                    "33188954137486141825564234592003770192",
+                    "170849378573825031730603322871863097566",
+                    "49438342910050339764534238449718559295",
+                    "158538186038025435029861607507494891298",
+                    "133450046799623417154420577689232844282"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/4b56bb8ce224408acfef7f2b2c2cee2abd938c9a",
+                "id": "ASB-A-172655291-5a0dffa7",
+                "digest": {
+                  "line_hashes": [
+                    "68088544746606398025744615250163038987",
+                    "28226944271011134750561644001012576494",
+                    "209825031574744540524313120239507470003",
+                    "265404860031320913435295735891844695476",
+                    "168548116553547179047575912123703621696",
+                    "286216963556853261487468743636343924010"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni_internal_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/8c6653177204bfd6ccf03e1b4b3b72d96e362628",
+                "id": "ASB-A-172655291-7f76b238",
+                "digest": {
+                  "line_hashes": [
+                    "168570116374635237039885631115068384155",
+                    "159384961094558840978144327322108126448",
+                    "224934053267818022264765479624697028862",
+                    "62803872603171606213774527710327255445",
+                    "195137674342404032480568352269670145071",
+                    "223805834319586582126071666499972447476",
+                    "176402132414195368955111043106638311181"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/1358c9faa9766fd470ab2ba002a73479ccf54154",
+              "https://android.googlesource.com/platform/art/+/6444277041f41294d98adac4bb585183e56587f6"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/6444277041f41294d98adac4bb585183e56587f6",
+                "id": "ASB-A-172655291-0329c448",
+                "digest": {
+                  "line_hashes": [
+                    "68088544746606398025744615250163038987",
+                    "28226944271011134750561644001012576494",
+                    "209825031574744540524313120239507470003",
+                    "265404860031320913435295735891844695476",
+                    "168548116553547179047575912123703621696",
+                    "286216963556853261487468743636343924010"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/mirror/string.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1358c9faa9766fd470ab2ba002a73479ccf54154",
+                "id": "ASB-A-172655291-4127d141",
+                "digest": {
+                  "line_hashes": [
+                    "742922100236702367568882198496653128",
+                    "180405028384217921452000999040661503123",
+                    "9977381646763468625560674896791244814",
+                    "139805360047875458615494518910909825755",
+                    "32225368823611614938255998433514355264",
+                    "188479341204455873783548129250054611175",
+                    "212208487837375745877653722482654110695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni_internal_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1358c9faa9766fd470ab2ba002a73479ccf54154",
+                "id": "ASB-A-172655291-d24b2f36",
+                "digest": {
+                  "line_hashes": [
+                    "168570116374635237039885631115068384155",
+                    "159384961094558840978144327322108126448",
+                    "293783139733515551778671335902691661129",
+                    "169790146168576440691793624400849170644",
+                    "195137674342404032480568352269670145071",
+                    "223805834319586582126071666499972447476",
+                    "176402132414195368955111043106638311181"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1358c9faa9766fd470ab2ba002a73479ccf54154",
+                "id": "ASB-A-172655291-fd126c5c",
+                "digest": {
+                  "line_hashes": [
+                    "10922246531782043043009867382087974160",
+                    "164403077957362323978761702893074781059",
+                    "44087293466022103470689832079521502467",
+                    "157225773696640404769848357326090479048",
+                    "203871501564387793397677125721693307224",
+                    "203720691118153694198873009189563465043",
+                    "62753520621921836267285483520983140164",
+                    "18546899358844276652681103966829155931",
+                    "218441269308950311698317751412169794716",
+                    "55376328090569281986088435089769874933",
+                    "15922383822712056605962251220168976960",
+                    "136849160778608781247625656793641514303",
+                    "221630291797742702191801366258041296601",
+                    "175821458329387563646515368478874490014",
+                    "201618387684450034921466871247760114794",
+                    "196938724543593333345892212026014218256",
+                    "168113358010914873610794459960435156414",
+                    "273608509962210116374849023732172436388",
+                    "33188954137486141825564234592003770192",
+                    "170849378573825031730603322871863097566",
+                    "49438342910050339764534238449718559295",
+                    "158538186038025435029861607507494891298",
+                    "133450046799623417154420577689232844282"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/d0b940349294a363e6d578adf58db8222c425669",
+              "https://android.googlesource.com/platform/art/+/69fc841b8460943c2b2224f61585942cbc9f3f40"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/d0b940349294a363e6d578adf58db8222c425669",
+                "id": "ASB-A-172655291-15448911",
+                "digest": {
+                  "line_hashes": [
+                    "202511204484819295834833588177254942058",
+                    "284607758542496867262757403818099768173",
+                    "159912965984065222335951816084103006448",
+                    "149643867330452241866180792490870522262",
+                    "166042761445857038149469283982398574506",
+                    "60167212461236581442404364580624804435",
+                    "62753520621921836267285483520983140164",
+                    "18546899358844276652681103966829155931",
+                    "218441269308950311698317751412169794716",
+                    "55376328090569281986088435089769874933",
+                    "15922383822712056605962251220168976960",
+                    "136849160778608781247625656793641514303",
+                    "212725987451952485918615213657292046580",
+                    "300837665512679662821417521987713394369",
+                    "103257478912899464517635254725280675461",
+                    "64308445431293430279938645659736159532",
+                    "288368831909976602537046313117519377445",
+                    "29356859129765398053659836935353935528",
+                    "109450099008681295984032263742970683784",
+                    "273608509962210116374849023732172436388",
+                    "33188954137486141825564234592003770192",
+                    "45279761540336446372455926813899844858",
+                    "270322338951455366252111101919387386637",
+                    "300321571165803176846928656283304827478",
+                    "106505562176510559482163858132223790216"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/69fc841b8460943c2b2224f61585942cbc9f3f40",
+                "id": "ASB-A-172655291-43ca4441",
+                "digest": {
+                  "line_hashes": [
+                    "3031350208254016169423660349419128913",
+                    "10819473316697691356524977026334605640",
+                    "265404860031320913435295735891844695476",
+                    "168548116553547179047575912123703621696",
+                    "286216963556853261487468743636343924010"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/mirror/string.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/d0b940349294a363e6d578adf58db8222c425669",
+                "id": "ASB-A-172655291-8e341bb4",
+                "digest": {
+                  "line_hashes": [
+                    "742922100236702367568882198496653128",
+                    "180405028384217921452000999040661503123",
+                    "9977381646763468625560674896791244814",
+                    "139805360047875458615494518910909825755",
+                    "32225368823611614938255998433514355264",
+                    "188479341204455873783548129250054611175",
+                    "212208487837375745877653722482654110695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni/jni_internal_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/d0b940349294a363e6d578adf58db8222c425669",
+                "id": "ASB-A-172655291-e136c83f",
+                "digest": {
+                  "line_hashes": [
+                    "241526942436925564757606126723635427092",
+                    "301505621793435453749660706775392497276",
+                    "5301427927047796577660440299561261712",
+                    "195137674342404032480568352269670145071",
+                    "223805834319586582126071666499972447476",
+                    "176402132414195368955111043106638311181"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/tools/hidl",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/tools/hidl/+/e8544d4fae9e8b7f1b31068c1bbd817c792315c7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "test/java_test/hidl_test_java_native.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/tools/hidl/+/e8544d4fae9e8b7f1b31068c1bbd817c792315c7",
+                "id": "ASB-A-172655291-5128778c",
+                "digest": {
+                  "function_hash": "129126988677395042074777166965345639604",
+                  "length": 275
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "test/java_test/hidl_test_java_native.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/tools/hidl/+/e8544d4fae9e8b7f1b31068c1bbd817c792315c7",
+                "id": "ASB-A-172655291-e22fcf1a",
+                "digest": {
+                  "line_hashes": [
+                    "65377231514670430681092134733789602433",
+                    "16554559094624643674299291549605159249",
+                    "16180241113869774546390725953518373524",
+                    "209143510232628260802169552209636584561",
+                    "91778596322299643257831351822103764986",
+                    "334540214220134854590336077835016533783",
+                    "154174223077795945264101533024329688070",
+                    "292624923856552263949758150199859703067"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/7dd48b90bd0968375cba8dffa2141cc9973329f9",
+              "https://android.googlesource.com/platform/art/+/ed4b3e0958d3de6a92d82abb9f81e49e84d5c673"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/mirror/string.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/7dd48b90bd0968375cba8dffa2141cc9973329f9",
+                "id": "ASB-A-172655291-15931497",
+                "digest": {
+                  "line_hashes": [
+                    "742922100236702367568882198496653128",
+                    "180405028384217921452000999040661503123",
+                    "9977381646763468625560674896791244814",
+                    "139805360047875458615494518910909825755",
+                    "32225368823611614938255998433514355264",
+                    "188479341204455873783548129250054611175",
+                    "212208487837375745877653722482654110695"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni/jni_internal_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/7dd48b90bd0968375cba8dffa2141cc9973329f9",
+                "id": "ASB-A-172655291-2b382d2f",
+                "digest": {
+                  "line_hashes": [
+                    "241526942436925564757606126723635427092",
+                    "301505621793435453749660706775392497276",
+                    "5301427927047796577660440299561261712",
+                    "195137674342404032480568352269670145071",
+                    "223805834319586582126071666499972447476",
+                    "176402132414195368955111043106638311181"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/ed4b3e0958d3de6a92d82abb9f81e49e84d5c673",
+                "id": "ASB-A-172655291-3d73c0b2",
+                "digest": {
+                  "line_hashes": [
+                    "187306675662027505938536120528254655308",
+                    "48900365538159706719260823727434531628",
+                    "265404860031320913435295735891844695476",
+                    "168548116553547179047575912123703621696",
+                    "286216963556853261487468743636343924010"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jni/jni_internal.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/7dd48b90bd0968375cba8dffa2141cc9973329f9",
+                "id": "ASB-A-172655291-d3cbe203",
+                "digest": {
+                  "line_hashes": [
+                    "10922246531782043043009867382087974160",
+                    "164403077957362323978761702893074781059",
+                    "65204051227524025816545073897197777507",
+                    "34963759301342839050197936324729709749",
+                    "166042761445857038149469283982398574506",
+                    "60167212461236581442404364580624804435",
+                    "62753520621921836267285483520983140164",
+                    "18546899358844276652681103966829155931",
+                    "218441269308950311698317751412169794716",
+                    "55376328090569281986088435089769874933",
+                    "15922383822712056605962251220168976960",
+                    "136849160778608781247625656793641514303",
+                    "221630291797742702191801366258041296601",
+                    "175821458329387563646515368478874490014",
+                    "201618387684450034921466871247760114794",
+                    "29356859129765398053659836935353935528",
+                    "109450099008681295984032263742970683784",
+                    "273608509962210116374849023732172436388",
+                    "33188954137486141825564234592003770192",
+                    "45279761540336446372455926813899844858",
+                    "270322338951455366252111101919387386637",
+                    "300321571165803176846928656283304827478",
+                    "106505562176510559482163858132223790216"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/native",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/native/+/58f5cfa56d5282e69a7580dc4bb97603c409f003",
+              "https://android.googlesource.com/platform/frameworks/native/+/61d0f84881cfc1bbac513ccd156c56603a48cc90"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Parcel::readString16Inplace",
+                  "file": "libs/binder/Parcel.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/58f5cfa56d5282e69a7580dc4bb97603c409f003",
+                "id": "ASB-A-172655291-1f335712",
+                "digest": {
+                  "function_hash": "14323495333125928201094408655064891336",
+                  "length": 310
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libs/binder/Parcel.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/61d0f84881cfc1bbac513ccd156c56603a48cc90",
+                "id": "ASB-A-172655291-3810a8f5",
+                "digest": {
+                  "line_hashes": [
+                    "117272116432469212887383918508486695146",
+                    "234796714616440052647254139842786030213",
+                    "308383320134710531814854476103164906946",
+                    "114385395538681324247627216657205244201",
+                    "194662331768927561943067146530608335365",
+                    "111470376325268668543310118546180649522",
+                    "70246565873847886514876344222188128607",
+                    "294661870248710535343693010227814313452",
+                    "252184798244344895437753169099460757295",
+                    "194662331768927561943067146530608335365"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "libs/binder/Parcel.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/58f5cfa56d5282e69a7580dc4bb97603c409f003",
+                "id": "ASB-A-172655291-5b850741",
+                "digest": {
+                  "line_hashes": [
+                    "322865476313340777091915096653650377060",
+                    "276091546283325773004617093670692284652",
+                    "251903058652865870957361320860499984858",
+                    "171657341153430890903988388282077402813",
+                    "19909563082220809183199822883322131293",
+                    "83766156286888667104454507970843522805",
+                    "26000267576433181097436669554255726371",
+                    "171657341153430890903988388282077402813"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Parcel::readString16Inplace",
+                  "file": "libs/binder/Parcel.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/61d0f84881cfc1bbac513ccd156c56603a48cc90",
+                "id": "ASB-A-172655291-7f8312db",
+                "digest": {
+                  "function_hash": "162717353080736272093174326081513843161",
+                  "length": 335
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Parcel::readString8Inplace",
+                  "file": "libs/binder/Parcel.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/58f5cfa56d5282e69a7580dc4bb97603c409f003",
+                "id": "ASB-A-172655291-90ddec26",
+                "digest": {
+                  "function_hash": "318975103396641318631900755869162983559",
+                  "length": 283
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Parcel::readString8Inplace",
+                  "file": "libs/binder/Parcel.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/61d0f84881cfc1bbac513ccd156c56603a48cc90",
+                "id": "ASB-A-172655291-b2d4a1ea",
+                "digest": {
+                  "function_hash": "155199087332238212672582879650942206396",
+                  "length": 306
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/tools/hidl",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-03-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-03-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/tools/hidl/+/f9a784013d8b6d519e66c2bee6384ad8a713ac25"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "test/java_test/hidl_test_java_native.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/tools/hidl/+/f9a784013d8b6d519e66c2bee6384ad8a713ac25",
+                "id": "ASB-A-172655291-3cecc26b",
+                "digest": {
+                  "function_hash": "129126988677395042074777166965345639604",
+                  "length": 275
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "test/java_test/hidl_test_java_native.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/tools/hidl/+/f9a784013d8b6d519e66c2bee6384ad8a713ac25",
+                "id": "ASB-A-172655291-db0bfd5b",
+                "digest": {
+                  "line_hashes": [
+                    "65377231514670430681092134733789602433",
+                    "16554559094624643674299291549605159249",
+                    "16180241113869774546390725953518373524",
+                    "209143510232628260802169552209636584561",
+                    "91778596322299643257831351822103764986",
+                    "334540214220134854590336077835016533783",
+                    "154174223077795945264101533024329688070",
+                    "292624923856552263949758150199859703067"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-172655291.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-178055795",
+      "details": "In Dex2oat of dex2oat.cc, there is a possible way to inject bytecode into an app due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-178055795",
+        "CVE-2021-0511"
+      ],
+      "modified": "2024-08-07T19:29:39.560337Z",
+      "published": "2021-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2021-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/7c7cae75a80eece7cf009ea12da644ea7c893c1d"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/c802c3713270b363240dc48409a66c5c35601281"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "9:0"
+                },
+                {
+                  "fixed": "9:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "9"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/dex2oat_environment_test.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762",
+                "id": "ASB-A-178055795-032e4a54",
+                "digest": {
+                  "line_hashes": [
+                    "95178260811580609073631174584030749292",
+                    "114600207394863519324993044620855137787",
+                    "277903182790040223191656352022758274783",
+                    "202609011106672864266867157709272170220",
+                    "19534557538293043854725970006280641560",
+                    "178852320204322548237681267715798083518"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762",
+                "id": "ASB-A-178055795-3b413850",
+                "digest": {
+                  "line_hashes": [
+                    "13421431304951089023866300946747598148",
+                    "170538225290461789114814540671153742138",
+                    "25644904483345650728522169153337499525",
+                    "300964585422484968720977966793961979483",
+                    "40237016133221692470691450795652738063",
+                    "63783888020605062934176388597438731521",
+                    "65064634222046571851297683076730984164",
+                    "336127746910105019364329731299533353694"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "dex2oat/dex2oat_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762",
+                "id": "ASB-A-178055795-44998a5d",
+                "digest": {
+                  "function_hash": "269771033704227106190286187026286807618",
+                  "length": 2524
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Dex2oat",
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762",
+                "id": "ASB-A-178055795-5dd45e60",
+                "digest": {
+                  "function_hash": "111268461435774808039873791191293832241",
+                  "length": 996
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "OpenFile",
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762",
+                "id": "ASB-A-178055795-8d8ba876",
+                "digest": {
+                  "function_hash": "251690474302535193911022098914431308098",
+                  "length": 5099
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "dex2oat/dex2oat_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/faf5aa5271657003fe5371ad1b02e2051821d762",
+                "id": "ASB-A-178055795-e3364dba",
+                "digest": {
+                  "line_hashes": [
+                    "241286721636719056680329883137299460795",
+                    "95922851498800621865998824612599228342",
+                    "131289175080625295645317613855019417605",
+                    "233131238673522682363740205787539410297",
+                    "215123201303509973297212733983334997016",
+                    "214246228550114490415284451143614549963",
+                    "155813314193338694936795656010137477060",
+                    "220464426866859664994732973642781990067",
+                    "49859956880049523169551180709132493392",
+                    "19912453441451090608768462787758417670",
+                    "24800410847746180077653343538957049085",
+                    "53683203978007644359616991748592485951",
+                    "110886893262740750325365652761489584523",
+                    "303572301446645135641701706306706757294",
+                    "135078260820846357487115246853150074193",
+                    "167146826138721216897892995971899904919",
+                    "338085588267880863298731767346561050536",
+                    "258653292215448112131863407674360215106",
+                    "289618888058954882197440463335534913405",
+                    "333080654061789867460061268818582314149",
+                    "264824648557519826436590576999514942736",
+                    "33360838250258221513665767308650125900",
+                    "236072596348453360912916595959473472351",
+                    "215253116165594250965274614700593192772",
+                    "265471406050575704471807959500449525036",
+                    "195651291240424695019473398767449083716",
+                    "321690660942107553548390205806292650140",
+                    "59329883643395782176326084629205154984",
+                    "259551909560435145511386412540306455655",
+                    "828590095754306426240298919980726063",
+                    "11070357672006919021769413224244422734",
+                    "168467799113469901684680421458000008187",
+                    "24938324430543821367385214251221345301",
+                    "125739512192469733962436014317221970493",
+                    "100834153242700124386538369265782652401",
+                    "140807688876820335682671782190748883560",
+                    "181715895649808295298090619290508599353",
+                    "328286899160246085482488988839819956553",
+                    "275478872189542895389866177803960534750",
+                    "175367958082637642356580328379148961855",
+                    "238093499440902616868506698199289582096",
+                    "332077336292529470119064202619469971398",
+                    "229907257169013604783747396756755504461",
+                    "225655330594593556877322268277665040343",
+                    "219833057603661926258643355688196884909",
+                    "260621943452910264822971367636157959967",
+                    "33519107243222588263768280475785339665",
+                    "251427426925563644780043896027923719687",
+                    "158928993025494706758950097548077691173",
+                    "290770714051058992840217687822608793799",
+                    "27773482328801345363267301887808024604",
+                    "89446892191366145987736028657729953888",
+                    "334071936498317917948182193601410679087",
+                    "192600551664224368166809618493153164179",
+                    "287568194398246352477665632720071233067",
+                    "123576839788399968364016908508666903951",
+                    "97854678595753135790996102260713180577",
+                    "220548529417126904318878049767652911705",
+                    "173204845580869072105801702404918835737",
+                    "190991970016933822963822727305792730845",
+                    "330317253928933234065421519869008392720",
+                    "50458765384721148810891958970258345757",
+                    "320519354074037272473868795264395518117",
+                    "173917164255915894242161100620417172102",
+                    "158054828432769014096557577684756489352",
+                    "190482437122325676368899049954203372973",
+                    "115185519586874616461207427528247495411",
+                    "171333284149661703785860320030040806726",
+                    "68076637193055184237797008673605659522",
+                    "70590809433598218870619388862962746039",
+                    "283354950265681196701882618257230633077",
+                    "153480840486109462067683546883871648130",
+                    "58910627411786145365432272621599100962",
+                    "61540827382189234320877166696054813605",
+                    "252325283960592902624466481737884893442",
+                    "336351845885852367422487714977737894259",
+                    "29951909294014565090499493678910793888",
+                    "252522281713638812493818168577673457385",
+                    "171472696337666042231804760606380616914",
+                    "228879818349312776357144829556469726081",
+                    "86028416662312877644968299259355792782",
+                    "175367337775747353380657116501039904817",
+                    "32305340874095010419349951845656396530",
+                    "46444485668287275244552145697270959636",
+                    "15270248377540136999368717328143997760",
+                    "204070579518966253537973334176054396665",
+                    "141469501076485116015580219957154579449",
+                    "69662153684074460059897875533750769937",
+                    "289815111081418606549417184210508693796",
+                    "275639873648868012619339340454804174524",
+                    "58494975484443663623447151996032049150",
+                    "30615281071621278945868670541974162231",
+                    "266969273534074074753860021340680236509",
+                    "35174142623659375526412762619714251091",
+                    "79365821425906659814489620348478193544",
+                    "210960680159690980008918180397846008506",
+                    "81067094942303035997871850519723683795",
+                    "330769091842968277632573967402617101979",
+                    "92805139362562953680994400987078662449",
+                    "228209783620751855530221699421872311151",
+                    "269070402074663115133988725964275825321",
+                    "145895131126886921634995709070395607582",
+                    "339028832195604926046107794781767083851",
+                    "292075169782248552775848865728068428617",
+                    "152828083520906126797390710087319021828",
+                    "280929291093965179268326007479682887837",
+                    "290163740101812671085503034234722491385",
+                    "131614746437259905723728696654704868939",
+                    "236873504350605653655106674577593136316",
+                    "111644451646261603917356319172918821436",
+                    "214850124387002008725125646378538275901",
+                    "34658033575839369463278848560447742387",
+                    "203810072723317040626102704873855527160",
+                    "97296277634830827498144685137884597107",
+                    "162762761838633302144235235551482864064",
+                    "26706356462518470837728454631496619994",
+                    "273270161195023116109491915760069729140",
+                    "273013450710838482879656070017941678433",
+                    "290930787932500629905699837281160061076",
+                    "43783942879283924035461389710956633664",
+                    "227324162817698080483591150863329792239",
+                    "137408422425357112291643995698705400943",
+                    "192680415649003525850358061263478353267",
+                    "14559341045267280723339926130751162788",
+                    "249732711425737243940441802801579659767",
+                    "329125070667075150985987058337662536989",
+                    "193946489466779481038902192717004732193",
+                    "197733745601167790243108441607287559987",
+                    "119457255384837341084352026659954508946"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-178055795.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "10:0"
+                },
+                {
+                  "fixed": "10:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "10"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "dex2oat/dex2oat_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e",
+                "id": "ASB-A-178055795-0d393975",
+                "digest": {
+                  "line_hashes": [
+                    "241286721636719056680329883137299460795",
+                    "95922851498800621865998824612599228342",
+                    "131289175080625295645317613855019417605",
+                    "233131238673522682363740205787539410297",
+                    "215123201303509973297212733983334997016",
+                    "214246228550114490415284451143614549963",
+                    "155813314193338694936795656010137477060",
+                    "220464426866859664994732973642781990067",
+                    "54403679478622495411176872075541034170",
+                    "106243288889661246940100007619694217636",
+                    "24800410847746180077653343538957049085",
+                    "53683203978007644359616991748592485951",
+                    "110886893262740750325365652761489584523",
+                    "250650240618691573195718880994914835009",
+                    "53149384719185535307547590097937220361",
+                    "200345846037553751382580194833602303933",
+                    "38395940111813261592814197849349928258",
+                    "162171542595304188155909591853042641435",
+                    "114041120491684464205893674887586718341",
+                    "214091128382813096729853142065235074309",
+                    "33459582674539120979957540057408573506",
+                    "11070357672006919021769413224244422734",
+                    "168467799113469901684680421458000008187",
+                    "24938324430543821367385214251221345301",
+                    "125739512192469733962436014317221970493",
+                    "100834153242700124386538369265782652401",
+                    "140807688876820335682671782190748883560",
+                    "181715895649808295298090619290508599353",
+                    "328286899160246085482488988839819956553",
+                    "275478872189542895389866177803960534750",
+                    "175367958082637642356580328379148961855",
+                    "108821872421532289648901581695157936204",
+                    "134185577214864638797054647873820115256",
+                    "226868166401171224498129114705875850595",
+                    "33519107243222588263768280475785339665",
+                    "251427426925563644780043896027923719687",
+                    "158928993025494706758950097548077691173",
+                    "290770714051058992840217687822608793799",
+                    "27773482328801345363267301887808024604",
+                    "89446892191366145987736028657729953888",
+                    "334071936498317917948182193601410679087",
+                    "192600551664224368166809618493153164179",
+                    "269427461619365111905786224341725110281",
+                    "178933303014671742376503141814530002354",
+                    "60210430655458514195387303147320413581",
+                    "41796050904966264419912029249127372624",
+                    "124930506771621973879457648077306307128",
+                    "333879170451463130466506873450459554661",
+                    "165809548465220319837330657936770400980",
+                    "305546972987171297929585555202773116300",
+                    "113957048177257640106735801773883051581",
+                    "33801753546257533555364457782825777113",
+                    "309793651632613242675223726419779435144",
+                    "35174142623659375526412762619714251091",
+                    "79365821425906659814489620348478193544",
+                    "210960680159690980008918180397846008506",
+                    "81067094942303035997871850519723683795",
+                    "43287484063134838038407849938913875277",
+                    "150959391562886204900429384332465560562",
+                    "228209783620751855530221699421872311151",
+                    "269070402074663115133988725964275825321",
+                    "311605392715001603363234747594094438802",
+                    "215771659736443716300542363171796245719",
+                    "292075169782248552775848865728068428617",
+                    "152828083520906126797390710087319021828",
+                    "280929291093965179268326007479682887837",
+                    "290163740101812671085503034234722491385",
+                    "131614746437259905723728696654704868939",
+                    "236873504350605653655106674577593136316",
+                    "111644451646261603917356319172918821436",
+                    "214850124387002008725125646378538275901",
+                    "34658033575839369463278848560447742387",
+                    "203810072723317040626102704873855527160",
+                    "97296277634830827498144685137884597107",
+                    "162762761838633302144235235551482864064",
+                    "26706356462518470837728454631496619994",
+                    "273270161195023116109491915760069729140",
+                    "273013450710838482879656070017941678433",
+                    "290930787932500629905699837281160061076",
+                    "43783942879283924035461389710956633664",
+                    "227324162817698080483591150863329792239",
+                    "137408422425357112291643995698705400943",
+                    "192680415649003525850358061263478353267",
+                    "14559341045267280723339926130751162788",
+                    "249732711425737243940441802801579659767",
+                    "252599295341313653838186063092063854471",
+                    "193946489466779481038902192717004732193",
+                    "197733745601167790243108441607287559987",
+                    "119457255384837341084352026659954508946"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/dex2oat_environment_test.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e",
+                "id": "ASB-A-178055795-252bdaeb",
+                "digest": {
+                  "line_hashes": [
+                    "95178260811580609073631174584030749292",
+                    "114600207394863519324993044620855137787",
+                    "309906101344126570320371769001926941611",
+                    "202609011106672864266867157709272170220",
+                    "19534557538293043854725970006280641560",
+                    "178852320204322548237681267715798083518"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "OpenFile",
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e",
+                "id": "ASB-A-178055795-283e6e28",
+                "digest": {
+                  "function_hash": "113793550145453704886928549541901689692",
+                  "length": 5072
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e",
+                "id": "ASB-A-178055795-50c2b213",
+                "digest": {
+                  "line_hashes": [
+                    "63791521462298871218716355066132641985",
+                    "283451119868728416362457941946908194180",
+                    "230287094903759335384273636438314574092",
+                    "107083079455176910900163064795428886118",
+                    "40237016133221692470691450795652738063",
+                    "63783888020605062934176388597438731521",
+                    "65064634222046571851297683076730984164",
+                    "336127746910105019364329731299533353694"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Dex2oat",
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e",
+                "id": "ASB-A-178055795-c1880476",
+                "digest": {
+                  "function_hash": "111268461435774808039873791191293832241",
+                  "length": 996
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "dex2oat/dex2oat_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/e28d339a00d679392456d8c316cf19048985b21e",
+                "id": "ASB-A-178055795-efc93730",
+                "digest": {
+                  "function_hash": "201029698443268787998097621954013546739",
+                  "length": 2302
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-178055795.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "11:0"
+                },
+                {
+                  "fixed": "11:2021-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "11"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+              "https://android.googlesource.com/platform/art/+/c60638a44e3d0b78b704665650d58044cf0195e3",
+              "https://android.googlesource.com/platform/art/+/6c9431c02e739de83c7c804d64e4a4656d24d55f"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/dex2oat_environment_test.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+                "id": "ASB-A-178055795-03452728",
+                "digest": {
+                  "line_hashes": [
+                    "95178260811580609073631174584030749292",
+                    "114600207394863519324993044620855137787",
+                    "309906101344126570320371769001926941611",
+                    "202609011106672864266867157709272170220",
+                    "19534557538293043854725970006280641560",
+                    "178852320204322548237681267715798083518"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "dex2oat/dex2oat_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+                "id": "ASB-A-178055795-1bc7bd04",
+                "digest": {
+                  "function_hash": "201029698443268787998097621954013546739",
+                  "length": 2302
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+                "id": "ASB-A-178055795-460b1b16",
+                "digest": {
+                  "line_hashes": [
+                    "63791521462298871218716355066132641985",
+                    "283451119868728416362457941946908194180",
+                    "230287094903759335384273636438314574092",
+                    "107083079455176910900163064795428886118",
+                    "41798760986870106326714781778789459782",
+                    "316900152785000680303222227295387678285",
+                    "219758474527698782836775740917049366633",
+                    "190883670727912493155151589763780272977"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "dex2oat/dex2oat_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+                "id": "ASB-A-178055795-a0a7e69c",
+                "digest": {
+                  "line_hashes": [
+                    "122557147804758949026365042730388211398",
+                    "216237382923716249639185728242620380347",
+                    "242882242356845109876547908773863163266",
+                    "233131238673522682363740205787539410297",
+                    "215123201303509973297212733983334997016",
+                    "214246228550114490415284451143614549963",
+                    "155813314193338694936795656010137477060",
+                    "220464426866859664994732973642781990067",
+                    "54403679478622495411176872075541034170",
+                    "106243288889661246940100007619694217636",
+                    "24800410847746180077653343538957049085",
+                    "53683203978007644359616991748592485951",
+                    "110886893262740750325365652761489584523",
+                    "250650240618691573195718880994914835009",
+                    "53149384719185535307547590097937220361",
+                    "200345846037553751382580194833602303933",
+                    "38395940111813261592814197849349928258",
+                    "162171542595304188155909591853042641435",
+                    "114041120491684464205893674887586718341",
+                    "214091128382813096729853142065235074309",
+                    "33459582674539120979957540057408573506",
+                    "11070357672006919021769413224244422734",
+                    "168467799113469901684680421458000008187",
+                    "24938324430543821367385214251221345301",
+                    "125739512192469733962436014317221970493",
+                    "100834153242700124386538369265782652401",
+                    "140807688876820335682671782190748883560",
+                    "181715895649808295298090619290508599353",
+                    "328286899160246085482488988839819956553",
+                    "275478872189542895389866177803960534750",
+                    "175367958082637642356580328379148961855",
+                    "108821872421532289648901581695157936204",
+                    "134185577214864638797054647873820115256",
+                    "226868166401171224498129114705875850595",
+                    "33519107243222588263768280475785339665",
+                    "251427426925563644780043896027923719687",
+                    "158928993025494706758950097548077691173",
+                    "290770714051058992840217687822608793799",
+                    "27773482328801345363267301887808024604",
+                    "89446892191366145987736028657729953888",
+                    "334071936498317917948182193601410679087",
+                    "192600551664224368166809618493153164179",
+                    "269427461619365111905786224341725110281",
+                    "178933303014671742376503141814530002354",
+                    "60210430655458514195387303147320413581",
+                    "41796050904966264419912029249127372624",
+                    "124930506771621973879457648077306307128",
+                    "333879170451463130466506873450459554661",
+                    "165809548465220319837330657936770400980",
+                    "305546972987171297929585555202773116300",
+                    "113957048177257640106735801773883051581",
+                    "33801753546257533555364457782825777113",
+                    "309793651632613242675223726419779435144",
+                    "35174142623659375526412762619714251091",
+                    "79365821425906659814489620348478193544",
+                    "210960680159690980008918180397846008506",
+                    "81067094942303035997871850519723683795",
+                    "43287484063134838038407849938913875277",
+                    "150959391562886204900429384332465560562",
+                    "228209783620751855530221699421872311151",
+                    "269070402074663115133988725964275825321",
+                    "311605392715001603363234747594094438802",
+                    "215771659736443716300542363171796245719",
+                    "292075169782248552775848865728068428617",
+                    "152828083520906126797390710087319021828",
+                    "280929291093965179268326007479682887837",
+                    "290163740101812671085503034234722491385",
+                    "131614746437259905723728696654704868939",
+                    "236873504350605653655106674577593136316",
+                    "111644451646261603917356319172918821436",
+                    "214850124387002008725125646378538275901",
+                    "34658033575839369463278848560447742387",
+                    "203810072723317040626102704873855527160",
+                    "97296277634830827498144685137884597107",
+                    "162762761838633302144235235551482864064",
+                    "26706356462518470837728454631496619994",
+                    "273270161195023116109491915760069729140",
+                    "281285099319338814265582478544066656163",
+                    "194096902353752751381449370817760825565",
+                    "156912793131947193578418572112907473363",
+                    "227324162817698080483591150863329792239",
+                    "137408422425357112291643995698705400943",
+                    "192680415649003525850358061263478353267",
+                    "14559341045267280723339926130751162788",
+                    "249732711425737243940441802801579659767",
+                    "252599295341313653838186063092063854471",
+                    "193946489466779481038902192717004732193",
+                    "197733745601167790243108441607287559987",
+                    "119457255384837341084352026659954508946"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "Dex2oat",
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+                "id": "ASB-A-178055795-d68dd7e0",
+                "digest": {
+                  "function_hash": "26200461490374016820165323400110241682",
+                  "length": 1031
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "OpenFile",
+                  "file": "dex2oat/dex2oat.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+                "id": "ASB-A-178055795-f1cedd03",
+                "digest": {
+                  "function_hash": "57756586504269003420386906167296589353",
+                  "length": 4963
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-178055795.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-200284993",
+      "details": "In jit_memory_region.cc, there is a possible bypass of memory restrictions due to a logic error in the code. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-200284993",
+        "CVE-2021-0959"
+      ],
+      "modified": "2024-08-07T19:29:14.710143Z",
+      "published": "2022-01-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-01-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/c95b63042306aba985bb2902663c759b38b0ac81"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2022-01-05"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-01-05",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/c95b63042306aba985bb2902663c759b38b0ac81",
+              "https://android.googlesource.com/platform/art/+/94e2fc9465e9a2c9d62902b09ed9a18d9250ccd8"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jit/jit_memory_region_test.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/c95b63042306aba985bb2902663c759b38b0ac81",
+                "id": "ASB-A-200284993-27046eaf",
+                "digest": {
+                  "line_hashes": [
+                    "313769786165012970247156840556998380759",
+                    "7192541558220260550692670078882643956",
+                    "244433072460863252127122317462668729704",
+                    "167667077681278366514001627240110016015",
+                    "69220992446764526161623880950664055704",
+                    "335234744081955465784295949672820317414",
+                    "87537805710947837879638876880624454026"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jit/jit_memory_region.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/c95b63042306aba985bb2902663c759b38b0ac81",
+                "id": "ASB-A-200284993-331cf4cb",
+                "digest": {
+                  "line_hashes": [
+                    "101377583804034911880488950387349915873",
+                    "43875174431002387215738951208057090463",
+                    "175251801755861065420416482148409636720",
+                    "86633728713538026547507609825826114792",
+                    "207068821523675007144379974753971034298",
+                    "35021973928557180532539380573928673447",
+                    "6794208807716292950186278047549614208",
+                    "330010683594744387873274044319693495230",
+                    "192898501692735086360044587678499929005",
+                    "184156343029145021748620069695704801932",
+                    "45031671449925048445162341957255603807",
+                    "95994658093808982894755901305787495412",
+                    "282892341157278775927413378335781482326",
+                    "285619687401312303863088458775907994753",
+                    "59139534156782179110752698502236697478",
+                    "331738762768307958879932921061538186422",
+                    "141649008207310288829301062985547366507",
+                    "118523608036293860221782104786572737108",
+                    "173920210838750147787995927561804846869",
+                    "75764839701857998307063787395082285238",
+                    "152201916079643461930706149911318149789",
+                    "108456151300731104224816049391156232837",
+                    "337190121913758761737083790646717381770",
+                    "119785630824365573678675763674687158254",
+                    "233404607451833809519147780652795129701",
+                    "277488276929954111307371396931586127817",
+                    "237535871146545282329230357786748653767",
+                    "329441499969120034622488479117347882327",
+                    "188669342751850398703229680856335352424",
+                    "58803724340493218045146532251010677581",
+                    "291337417358617683860950401336313021099",
+                    "214230581991960476657970152800460621135",
+                    "322141697056241378719538067427028633414",
+                    "21783396700307626522631610895513158251",
+                    "36104381141494180881967891485691420783",
+                    "148612979417717238573823925089252325870",
+                    "211831002776604513402586575923649519105",
+                    "253047768186737000907699252175661814395",
+                    "245936102494528117537097647049704366207",
+                    "238645938560705105460746178381928012692",
+                    "191768592574326122081253966970287464436",
+                    "241554115812486573747221800468539970088",
+                    "106415165940029188961588463773956761789",
+                    "84699519894760764275327731167098884290",
+                    "113693003631622683736544087907078253246",
+                    "223255390266092224168217370230466678189",
+                    "260977815016174492787949847736705767055",
+                    "94340211496772676298937537860602159311",
+                    "167250201513287636719875257953586418002",
+                    "338647641078601532088138890711984633280",
+                    "65588672902329879375339475759391741614",
+                    "177774880308112041877561964229032280938",
+                    "236600324531751331732500971460370286103",
+                    "220165640666603722746425156561418703813",
+                    "160600590713002124079669420295938393954",
+                    "30167801730396928213087548133024720666",
+                    "301668974248296136295347392875971812139",
+                    "318226008465312355361730718382088750509",
+                    "129499282297447504415662047450670851274",
+                    "148597100294127026233419198304487886404",
+                    "151049568205606155848920974716457650611",
+                    "174415122682603001274285732883504625616",
+                    "145956696072236800160531700959534659964",
+                    "300527579214245709405838685739902121075",
+                    "23399723171852013904542918825137194415",
+                    "15235030818515826617170166630971336195",
+                    "242196971313882578858962184372537437639",
+                    "96371592385782310024067783704164055236",
+                    "330840053272376455533137807072429634830",
+                    "19667442798071618042460190559913295169",
+                    "218898444773122912477353476860122325387",
+                    "229762052393173162944474752875540427303",
+                    "178781537382420709307941266672148082030"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/jit/jit_memory_region.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/94e2fc9465e9a2c9d62902b09ed9a18d9250ccd8",
+                "id": "ASB-A-200284993-51776817",
+                "digest": {
+                  "line_hashes": [
+                    "113164951984197949154163442678874269062",
+                    "157649382146645842443481417001422842274",
+                    "281632205697975650041395507703987138485",
+                    "76410359553733138422615188894422947472"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "JitMemoryRegion::Initialize",
+                  "file": "runtime/jit/jit_memory_region.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/c95b63042306aba985bb2902663c759b38b0ac81",
+                "id": "ASB-A-200284993-84b9483b",
+                "digest": {
+                  "function_hash": "312266886202539856587997002351029081721",
+                  "length": 4464
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "JitMemoryRegion::ProtectZygoteMemory",
+                  "file": "runtime/jit/jit_memory_region.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/94e2fc9465e9a2c9d62902b09ed9a18d9250ccd8",
+                "id": "ASB-A-200284993-fb58f711",
+                "digest": {
+                  "function_hash": "16372073891541434953868861536757561508",
+                  "length": 640
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-200284993.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
+      "id": "ASB-A-222166527",
+      "details": "In GetResolvedMethod of entrypoint_utils-inl.h, there is a possible use after free due to a stale cache. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-222166527",
+        "CVE-2022-20502"
+      ],
+      "modified": "2024-08-07T19:29:54.643818Z",
+      "published": "2022-12-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2022-12-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/art/+/1ee0290eed24868826ad99678cc58eee425ecba8"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/art",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2022-12-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/art/+/1ee0290eed24868826ad99678cc58eee425ecba8"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/class_linker.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1ee0290eed24868826ad99678cc58eee425ecba8",
+                "id": "ASB-A-222166527-0c3d0612",
+                "digest": {
+                  "line_hashes": [
+                    "235881377265982734315241633510260354216",
+                    "270239985225514015884504015035684228793",
+                    "10059235942065569592591306243256186506"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/class_linker.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1ee0290eed24868826ad99678cc58eee425ecba8",
+                "id": "ASB-A-222166527-35e81c35",
+                "digest": {
+                  "line_hashes": [
+                    "71407768609025779943647605851062947084",
+                    "231448601979646057492220449142490098289",
+                    "101004473502411423060817344107809267897",
+                    "4666280352048265623534093757599548744"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "runtime/native/dalvik_system_DexFile.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1ee0290eed24868826ad99678cc58eee425ecba8",
+                "id": "ASB-A-222166527-3b5aba53",
+                "digest": {
+                  "line_hashes": [
+                    "224633646189388580329569994623457295844",
+                    "180255055740417429932114057942854935580",
+                    "153984034873157555044294756773927580993",
+                    "218043941733532718263172998565117627125"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "DexFile_closeDexFile",
+                  "file": "runtime/native/dalvik_system_DexFile.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/art/+/1ee0290eed24868826ad99678cc58eee425ecba8",
+                "id": "ASB-A-222166527-e2dc99f3",
+                "digest": {
+                  "function_hash": "310321501238726500791910867729928366774",
+                  "length": 1123
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-222166527.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    }
+  ]
+}
