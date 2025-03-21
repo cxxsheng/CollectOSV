@@ -26,14 +26,17 @@ def generate_markdown_report():
                             for affected in vuln['affected']:
                                 if 'package' in affected and 'name' in affected['package']:
                                     packages.append(affected['package']['name'])
+                        
+                        # 去重 package 列表
                         packages = list(set(packages))  
                         package_str = ', '.join(packages) if packages else 'N/A'
+                        
                         osv_id = vuln.get('id', 'N/A')
                         cve_ids = [alias for alias in vuln.get('aliases', []) if alias.startswith('CVE-')]
                         cve_str = ', '.join(cve_ids) if cve_ids else 'N/A'
-                        description = vuln.get('details', vuln.get('summary', 'N/A')).replace('\n', ' ').replace('|', r'\|')
+                        description = vuln.get('details', vuln.get('summary', 'N/A')).replace('\n', ' ').replace('|', '\|')
                         
-                        # 获取参考链接并转为索引格式
+                        # 获取参考链接并用空格隔开
                         references = vuln.get('references', [])
                         ref_links = []
                         for idx, ref in enumerate(references, start=1):
@@ -41,7 +44,7 @@ def generate_markdown_report():
                                 ref_links.append(f'[{idx}]({ref["url"]})')
                             elif isinstance(ref, str):
                                 ref_links.append(f'[{idx}]({ref})')
-                        ref_str = '<br>'.join(ref_links) if ref_links else 'N/A'
+                        ref_str = ' '.join(ref_links) if ref_links else 'N/A'
                         
                         entry = (package_str, osv_id, cve_str, description, ref_str)
                         
