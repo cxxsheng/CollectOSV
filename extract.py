@@ -7,8 +7,8 @@ def generate_markdown_report():
     with open('vulnerability_report.md', 'w', encoding='utf-8') as md_file:
         # 写入表头
         md_file.write("# Android Vulnerability Report\n\n")
-        md_file.write("| Package | OSV-ID | CVE | Description | References |\n")
-        md_file.write("|---------|---------|-----|-------------|------------|\n")
+        md_file.write("| Package | OSV-ID | CVE | Severity | Description | References |\n")
+        md_file.write("|---------|---------|-----|----------|-------------|------------|\n")
 
         # 读取 results 目录下所有 json 文件
         results_files = glob.glob('results/*.json')
@@ -22,11 +22,16 @@ def generate_markdown_report():
                 if 'vulns' in data:
                     for vuln in data['vulns']:
                         packages = []
+                        severity = 'N/A'
+                        
                         if 'affected' in vuln:
                             for affected in vuln['affected']:
                                 if 'package' in affected and 'name' in affected['package']:
                                     packages.append(affected['package']['name'])
-                        
+                                # 从 ecosystem_specific 中获取 severity
+                                if 'ecosystem_specific' in affected and 'severity' in affected['ecosystem_specific']:
+                                    severity = affected['ecosystem_specific']['severity']
+                            
                         # 去重 package 列表
                         packages = list(set(packages))  
                         package_str = ', '.join(packages) if packages else 'N/A'
@@ -46,11 +51,22 @@ def generate_markdown_report():
                                 ref_links.append(f'[{idx}]({ref})')
                         ref_str = ' '.join(ref_links) if ref_links else 'N/A'
                         
-                        entry = (package_str, osv_id, cve_str, description, ref_str)
+                        # 根据严重程度添加颜色标记
+                        severity_formatted = severity
+                        if severity.lower() == 'critical':
+                            severity_formatted = '**Critical** 🔴'
+                        elif severity.lower() == 'high':
+                            severity_formatted = '**High** 🟠'
+                        elif severity.lower() == 'moderate':
+                            severity_formatted = '**Moderate** 🟡'
+                        elif severity.lower() == 'low':
+                            severity_formatted = '**Low** 🟢'
+                        
+                        entry = (package_str, osv_id, cve_str, severity_formatted, description, ref_str)
                         
                         if entry not in unique_entries:
                             unique_entries.add(entry)
-                            md_file.write(f"| {package_str} | {osv_id} | {cve_str} | {description} | {ref_str} |\n")
+                            md_file.write(f"| {package_str} | {osv_id} | {cve_str} | {severity_formatted} | {description} | {ref_str} |\n")
             
             except Exception as e:
                 print(f"Error processing {result_file}: {str(e)}")
