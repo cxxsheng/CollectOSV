@@ -13104,6 +13104,369 @@
       "schema_version": "1.6.0"
     },
     {
+      "id": "ASB-A-349550024",
+      "details": "In validateIpConfiguration of WifiConfigurationUtil.java, there is a possible way to trigger a permanent DoS due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-349550024",
+        "CVE-2025-26423"
+      ],
+      "modified": "2025-05-05T15:35:30Z",
+      "published": "2025-05-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-05-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/modules/Wifi/+/01e708a7a9af970b3aa40cdca2cbde71d07a859b"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/modules/Wifi",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15-next:0"
+                },
+                {
+                  "fixed": "15-next:2025-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Wifi/+/57e446cfdc95fce61be986d98ffc81e8bb70504a"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateIpConfiguration",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/57e446cfdc95fce61be986d98ffc81e8bb70504a",
+                "id": "ASB-A-349550024-02dbdc45",
+                "digest": {
+                  "function_hash": "268970976256462892695824881419809576680",
+                  "length": 533
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/57e446cfdc95fce61be986d98ffc81e8bb70504a",
+                "id": "ASB-A-349550024-896a4aa3",
+                "digest": {
+                  "line_hashes": [
+                    "157729514090136750614922102444868695211",
+                    "153223806101060587384917427341007894121",
+                    "6169354125247250972893225869952520317",
+                    "149175955344299535851433614057880762320",
+                    "283644712432518933007983254855582186844",
+                    "292297759700568290400317367960813353772",
+                    "215930143921313685355631054354498779599",
+                    "236446643928738427244331876479116847229",
+                    "62678524712933812997686960367221923736",
+                    "127112364178185815869358305186094565305",
+                    "240522512309630831697827857464120036961",
+                    "63023319149774050960125992398873200987"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15-next"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-349550024.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Wifi",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Wifi/+/68e46661e2deb32b41527a02030cd928bee07409"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/68e46661e2deb32b41527a02030cd928bee07409",
+                "id": "ASB-A-349550024-97a91f59",
+                "digest": {
+                  "line_hashes": [
+                    "157729514090136750614922102444868695211",
+                    "153223806101060587384917427341007894121",
+                    "6169354125247250972893225869952520317",
+                    "149175955344299535851433614057880762320",
+                    "283644712432518933007983254855582186844",
+                    "292297759700568290400317367960813353772",
+                    "215930143921313685355631054354498779599",
+                    "236446643928738427244331876479116847229",
+                    "62678524712933812997686960367221923736",
+                    "127112364178185815869358305186094565305",
+                    "240522512309630831697827857464120036961",
+                    "63023319149774050960125992398873200987"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "15"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateIpConfiguration",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/68e46661e2deb32b41527a02030cd928bee07409",
+                "id": "ASB-A-349550024-bfe3642f",
+                "digest": {
+                  "function_hash": "268970976256462892695824881419809576680",
+                  "length": 533
+                },
+                "match_only_versions": [
+                  "15"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-349550024.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Wifi",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Wifi/+/28f7312aaed8fe503a7b929832712889d0f36e91"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/28f7312aaed8fe503a7b929832712889d0f36e91",
+                "id": "ASB-A-349550024-f56ab511",
+                "digest": {
+                  "line_hashes": [
+                    "157729514090136750614922102444868695211",
+                    "153223806101060587384917427341007894121",
+                    "6169354125247250972893225869952520317",
+                    "149175955344299535851433614057880762320",
+                    "283644712432518933007983254855582186844",
+                    "292297759700568290400317367960813353772",
+                    "215930143921313685355631054354498779599",
+                    "236446643928738427244331876479116847229",
+                    "62678524712933812997686960367221923736",
+                    "127112364178185815869358305186094565305",
+                    "240522512309630831697827857464120036961",
+                    "63023319149774050960125992398873200987"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateIpConfiguration",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/28f7312aaed8fe503a7b929832712889d0f36e91",
+                "id": "ASB-A-349550024-fd5b13c3",
+                "digest": {
+                  "function_hash": "268970976256462892695824881419809576680",
+                  "length": 533
+                },
+                "match_only_versions": [
+                  "13"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-349550024.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Wifi",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2025-05-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Wifi/+/a7b08b4051be9b2e986a8f5686528b31e9c31723"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateIpConfiguration",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/a7b08b4051be9b2e986a8f5686528b31e9c31723",
+                "id": "ASB-A-349550024-ea71a7bc",
+                "digest": {
+                  "function_hash": "268970976256462892695824881419809576680",
+                  "length": 533
+                },
+                "match_only_versions": [
+                  "14"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Wifi/+/a7b08b4051be9b2e986a8f5686528b31e9c31723",
+                "id": "ASB-A-349550024-ff5e515d",
+                "digest": {
+                  "line_hashes": [
+                    "157729514090136750614922102444868695211",
+                    "153223806101060587384917427341007894121",
+                    "6169354125247250972893225869952520317",
+                    "149175955344299535851433614057880762320",
+                    "283644712432518933007983254855582186844",
+                    "292297759700568290400317367960813353772",
+                    "215930143921313685355631054354498779599",
+                    "236446643928738427244331876479116847229",
+                    "62678524712933812997686960367221923736",
+                    "127112364178185815869358305186094565305",
+                    "240522512309630831697827857464120036961",
+                    "63023319149774050960125992398873200987"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "14"
+                ]
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-349550024.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
       "id": "PUB-A-194798757",
       "details": "In startRanging of RttServiceImpl.java, there is a possible way to determine whether an app is installed, without query permissions, due to side channel information disclosure. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
       "aliases": [
