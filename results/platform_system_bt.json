@@ -7,7 +7,7 @@
         "A-142546668",
         "CVE-2020-0225"
       ],
-      "modified": "2024-08-07T19:29:35.137990Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-07-01T00:00:00Z",
       "references": [
         {
@@ -105,7 +105,7 @@
         "A-146398979",
         "CVE-2020-0380"
       ],
-      "modified": "2024-08-07T19:29:05.438194Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-09-01T00:00:00Z",
       "references": [
         {
@@ -428,7 +428,7 @@
         "A-150156492",
         "CVE-2020-0379"
       ],
-      "modified": "2024-08-07T19:29:03.491017Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-09-01T00:00:00Z",
       "references": [
         {
@@ -743,7 +743,7 @@
         "A-157038281",
         "CVE-2020-12856"
       ],
-      "modified": "2024-10-02T23:29:45Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-11-01T00:00:00Z",
       "references": [
         {
@@ -4568,7 +4568,7 @@
         "A-158778659",
         "CVE-2020-0413"
       ],
-      "modified": "2024-08-07T19:29:35.738584Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -4966,7 +4966,7 @@
         "A-158833854",
         "CVE-2020-0377"
       ],
-      "modified": "2024-08-07T19:29:16.902110Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -5364,7 +5364,7 @@
         "A-158854097",
         "CVE-2020-15802"
       ],
-      "modified": "2024-08-07T19:29:40.470311Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -5742,7 +5742,7 @@
         "A-162497143",
         "CVE-2020-0449"
       ],
-      "modified": "2024-10-01T21:54:45Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-11-01T00:00:00Z",
       "references": [
         {
@@ -6191,7 +6191,7 @@
         "A-168049959",
         "CVE-2020-11167"
       ],
-      "modified": "2024-08-13T23:59:25.731948Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -6324,7 +6324,7 @@
         "A-168802990",
         "CVE-2021-0316"
       ],
-      "modified": "2024-08-07T19:29:34.373886Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -6702,7 +6702,7 @@
         "A-169252501",
         "CVE-2021-0476"
       ],
-      "modified": "2024-08-07T19:30:21.466201Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -7283,7 +7283,7 @@
         "A-169327567",
         "CVE-2020-0471"
       ],
-      "modified": "2024-08-07T19:30:08.075421Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -7681,7 +7681,7 @@
         "A-169342531",
         "CVE-2020-0463"
       ],
-      "modified": "2024-08-07T19:29:46.611883Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -8104,7 +8104,7 @@
         "A-174052148",
         "CVE-2021-0397"
       ],
-      "modified": "2024-08-07T19:29:14.781638Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-03-01T00:00:00Z",
       "references": [
         {
@@ -8423,7 +8423,7 @@
         "A-174149901",
         "CVE-2021-0431"
       ],
-      "modified": "2024-08-07T19:29:55.101383Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -8670,7 +8670,7 @@
         "A-174150451",
         "CVE-2021-0435"
       ],
-      "modified": "2024-08-07T19:30:06.672355Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -9352,7 +9352,7 @@
         "A-174182139",
         "CVE-2021-0522"
       ],
-      "modified": "2024-08-07T19:29:05.795815Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -9645,7 +9645,7 @@
         "A-174626251",
         "CVE-2020-26555"
       ],
-      "modified": "2024-08-07T19:30:11.427579Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -9948,7 +9948,7 @@
         "A-174886838",
         "CVE-2020-26558"
       ],
-      "modified": "2024-08-07T19:30:16.948711Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -10332,7 +10332,7 @@
         "A-175686168",
         "CVE-2021-0475"
       ],
-      "modified": "2024-08-07T19:29:31.901096Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -10505,7 +10505,7 @@
         "A-177611958",
         "CVE-2021-0474"
       ],
-      "modified": "2024-08-07T19:29:37.509067Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -10816,7 +10816,7 @@
         "A-179162665",
         "CVE-2021-0504"
       ],
-      "modified": "2024-08-07T19:29:17.329462Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -10916,7 +10916,7 @@
         "A-180939982",
         "CVE-2021-0589"
       ],
-      "modified": "2024-08-07T19:29:54.520277Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -11299,7 +11299,7 @@
         "A-181860042",
         "CVE-2021-0507"
       ],
-      "modified": "2024-08-07T19:29:41.289559Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -11606,7 +11606,7 @@
         "A-186803518",
         "CVE-2023-20952"
       ],
-      "modified": "2024-08-07T19:29:44.794467Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -11925,7 +11925,7 @@
         "A-197536150",
         "CVE-2021-0918"
       ],
-      "modified": "2024-08-07T19:29:28.400785Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-11-01T00:00:00Z",
       "references": [
         {
@@ -12078,7 +12078,7 @@
         "A-197868577",
         "CVE-2021-0968"
       ],
-      "modified": "2024-08-07T19:29:55.459415Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -12457,7 +12457,7 @@
         "A-201083442",
         "CVE-2021-39674"
       ],
-      "modified": "2024-08-07T19:29:35.949311Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-02-01T00:00:00Z",
       "references": [
         {
@@ -12746,7 +12746,7 @@
         "A-205570663",
         "CVE-2022-20410"
       ],
-      "modified": "2024-08-07T19:30:16.081945Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-10-01T00:00:00Z",
       "references": [
         {
@@ -13279,7 +13279,7 @@
         "A-205571133",
         "CVE-2022-20221"
       ],
-      "modified": "2024-08-07T19:29:30.366216Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-07-01T00:00:00Z",
       "references": [
         {
@@ -13582,7 +13582,7 @@
         "A-205837191",
         "CVE-2021-39809"
       ],
-      "modified": "2024-08-07T19:30:02.571532Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-04-01T00:00:00Z",
       "references": [
         {
@@ -13905,7 +13905,7 @@
         "A-206128341",
         "CVE-2021-39708"
       ],
-      "modified": "2024-08-07T19:30:01.431928Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-03-01T00:00:00Z",
       "references": [
         {
@@ -14066,7 +14066,7 @@
         "A-212694559",
         "CVE-2021-39805"
       ],
-      "modified": "2024-08-07T19:29:04.652983Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-04-01T00:00:00Z",
       "references": [
         {
@@ -14231,7 +14231,7 @@
         "A-213519176",
         "CVE-2022-20010"
       ],
-      "modified": "2024-08-07T19:30:11.686371Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-05-01T00:00:00Z",
       "references": [
         {
@@ -14396,7 +14396,7 @@
         "A-220732646",
         "CVE-2022-20224"
       ],
-      "modified": "2024-08-07T19:29:47.493974Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-07-01T00:00:00Z",
       "references": [
         {
@@ -14590,7 +14590,7 @@
         "A-224536184",
         "CVE-2022-20229"
       ],
-      "modified": "2024-08-07T19:29:28.880195Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-07-01T00:00:00Z",
       "references": [
         {
@@ -14823,7 +14823,7 @@
         "A-225876506",
         "CVE-2022-20445"
       ],
-      "modified": "2024-08-07T19:29:15.405924Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-11-01T00:00:00Z",
       "references": [
         {
@@ -15130,7 +15130,7 @@
         "A-225879503",
         "CVE-2023-20967"
       ],
-      "modified": "2024-08-07T19:29:37.947287Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-04-01T00:00:00Z",
       "references": [
         {
@@ -15541,7 +15541,7 @@
         "A-227618988",
         "CVE-2022-20140"
       ],
-      "modified": "2024-09-20T22:25:04Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -15777,7 +15777,7 @@
         "A-228078096",
         "CVE-2022-20222"
       ],
-      "modified": "2024-08-07T19:29:48.535505Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-07-01T00:00:00Z",
       "references": [
         {
@@ -15948,7 +15948,7 @@
         "A-228450451",
         "CVE-2022-20468"
       ],
-      "modified": "2024-08-07T19:29:26.728598Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -16255,7 +16255,7 @@
         "A-228602963",
         "CVE-2022-20461"
       ],
-      "modified": "2024-08-07T19:29:24.486674Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-01-01T00:00:00Z",
       "references": [
         {
@@ -16534,7 +16534,7 @@
         "A-228837201",
         "CVE-2023-21125"
       ],
-      "modified": "2025-03-03T15:57:18.336271Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-03-01T00:00:00Z",
       "references": [
         {
@@ -16586,7 +16586,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/bt/+/874c495c886cd8722625756dc5fd0634b16b4f42",
-                "id": "ASB-A-228837201-cdfa8211",
+                "id": "ASB-A-228837201-0bae4678",
                 "digest": {
                   "line_hashes": [
                     "166896847760837545122083693526854150029",
@@ -16609,7 +16609,10 @@
                     "299447631580608012848490678381188837192"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "match_only_versions": [
+                  "12"
+                ]
               },
               {
                 "signature_type": "Function",
@@ -16620,11 +16623,14 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/bt/+/874c495c886cd8722625756dc5fd0634b16b4f42",
-                "id": "ASB-A-228837201-d37c88a4",
+                "id": "ASB-A-228837201-cdfd3829",
                 "digest": {
                   "function_hash": "190515704886691705469581433983987404405",
                   "length": 1115
-                }
+                },
+                "match_only_versions": [
+                  "12"
+                ]
               }
             ]
           },
@@ -16664,6 +16670,24 @@
             ],
             "vanir_signatures": [
               {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "bte_hh_evt",
+                  "file": "btif/src/btif_hh.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/874c495c886cd8722625756dc5fd0634b16b4f42",
+                "id": "ASB-A-228837201-e2858f35",
+                "digest": {
+                  "function_hash": "190515704886691705469581433983987404405",
+                  "length": 1115
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -16671,7 +16695,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/bt/+/874c495c886cd8722625756dc5fd0634b16b4f42",
-                "id": "ASB-A-228837201-0596a177",
+                "id": "ASB-A-228837201-e4c25c11",
                 "digest": {
                   "line_hashes": [
                     "166896847760837545122083693526854150029",
@@ -16694,22 +16718,10 @@
                     "299447631580608012848490678381188837192"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "bte_hh_evt",
-                  "file": "btif/src/btif_hh.cc"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/bt/+/874c495c886cd8722625756dc5fd0634b16b4f42",
-                "id": "ASB-A-228837201-efa6cf1f",
-                "digest": {
-                  "function_hash": "190515704886691705469581433983987404405",
-                  "length": 1115
-                }
+                "match_only_versions": [
+                  "12L"
+                ]
               }
             ]
           },
@@ -16727,7 +16739,7 @@
         "A-230494481",
         "CVE-2022-20345"
       ],
-      "modified": "2024-08-07T19:30:14.563942Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-08-01T00:00:00Z",
       "references": [
         {
@@ -16900,7 +16912,7 @@
         "A-230867224",
         "CVE-2022-20469"
       ],
-      "modified": "2024-08-07T19:30:05.315593Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -17286,7 +17298,7 @@
         "A-231156521",
         "CVE-2022-22088"
       ],
-      "modified": "2024-09-24T18:07:15Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-01-01T00:00:00Z",
       "references": [
         {
@@ -17381,7 +17393,7 @@
         "A-231161832",
         "CVE-2022-20361"
       ],
-      "modified": "2024-08-07T19:29:30.841623Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-08-01T00:00:00Z",
       "references": [
         {
@@ -17662,7 +17674,7 @@
         "A-232023771",
         "CVE-2022-20411"
       ],
-      "modified": "2024-08-07T19:29:05.723343Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -18273,7 +18285,7 @@
         "A-242459126",
         "CVE-2022-20483"
       ],
-      "modified": "2024-08-07T19:29:50.222972Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -18983,7 +18995,7 @@
         "A-242535997",
         "CVE-2023-20931"
       ],
-      "modified": "2024-08-07T19:30:05.716117Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -19219,7 +19231,7 @@
         "A-245992426",
         "CVE-2022-33268"
       ],
-      "modified": "2024-08-13T23:59:31.385650Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -19517,7 +19529,7 @@
         "A-251514170",
         "CVE-2024-34722"
       ],
-      "modified": "2025-02-06T03:12:25Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -19885,7 +19897,7 @@
         "A-258057241",
         "CVE-2022-40503"
       ],
-      "modified": "2024-08-13T23:59:31.545115Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-04-01T00:00:00Z",
       "references": [
         {
@@ -20065,7 +20077,7 @@
         "A-258652631",
         "CVE-2023-20951"
       ],
-      "modified": "2024-08-07T19:29:22.257947Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -20463,7 +20475,7 @@
         "A-258834033",
         "CVE-2023-21115"
       ],
-      "modified": "2024-08-07T19:29:51.805511Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -20578,7 +20590,7 @@
         "A-261068592",
         "CVE-2023-21250"
       ],
-      "modified": "2024-08-07T19:29:42.888147Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {
@@ -20951,7 +20963,7 @@
         "A-261468700",
         "CVE-2022-40537"
       ],
-      "modified": "2024-08-13T23:59:31.608938Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -21479,7 +21491,7 @@
         "A-261867748",
         "CVE-2023-20954"
       ],
-      "modified": "2024-08-07T19:29:24.421117Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -21927,7 +21939,7 @@
         "A-269253349",
         "CVE-2023-35666"
       ],
-      "modified": "2024-08-07T19:30:08.990409Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-09-01T00:00:00Z",
       "references": [
         {
@@ -22305,7 +22317,7 @@
         "A-272783039",
         "CVE-2023-21273"
       ],
-      "modified": "2024-08-07T19:29:23.934380Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -22747,13 +22759,315 @@
       "schema_version": "1.6.0"
     },
     {
+      "id": "ASB-A-273874525",
+      "details": "In build_read_multi_rsp of gatt_sr.cc, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-273874525",
+        "CVE-2023-40129"
+      ],
+      "modified": "2025-06-26T14:51:18.212593Z",
+      "published": "2023-10-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2023-10-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/c0151aa3ba76c785b32c7f9d16c98febe53017b1"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/system/bt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12:0"
+                },
+                {
+                  "fixed": "12:2023-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/bt/+/d5f27984f4ca265f28a4adf5835b0198a3e19aed"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "build_read_multi_rsp",
+                  "file": "stack/gatt/gatt_sr.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/d5f27984f4ca265f28a4adf5835b0198a3e19aed",
+                "id": "ASB-A-273874525-84daf640",
+                "digest": {
+                  "function_hash": "36167147116348345863936788657702224124",
+                  "length": 1957
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/gatt/gatt_sr.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/d5f27984f4ca265f28a4adf5835b0198a3e19aed",
+                "id": "ASB-A-273874525-850b3746",
+                "digest": {
+                  "line_hashes": [
+                    "320180208113292607896087960140748321710",
+                    "185620860055585878484986184931846809734",
+                    "319420841029342921839194282503417907253",
+                    "250978578845779696356386414138024276852",
+                    "318872592807275993100937040753514395656",
+                    "141269574546360549306461848829328979810",
+                    "204714876695755523928580335686404439046",
+                    "183905982059378682327217227057606426163",
+                    "311954045522797841068282195162869825882",
+                    "263232450369799039219493308252416876531",
+                    "400206405204418213502213550468525364",
+                    "314770545184342246476502425255109428247",
+                    "307362275633226171916038256427833315124",
+                    "308895341643965181959918133811250227217",
+                    "122757879597053200394180763992077422796",
+                    "67834856507516609453221547184769402811",
+                    "129943154435575809610568843399508029933",
+                    "237475983115649658632985560846409519343",
+                    "13227297075605735205156259313947404717",
+                    "85253462756822884360816865997710830720",
+                    "24526966502570633969055920681276582168",
+                    "325969589060144690288502607002477657459",
+                    "89081833886852685892140623503777474500",
+                    "99804003701978462269687672967659361085"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-273874525.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/bt",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/bt/+/d5f27984f4ca265f28a4adf5835b0198a3e19aed"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "build_read_multi_rsp",
+                  "file": "stack/gatt/gatt_sr.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/d5f27984f4ca265f28a4adf5835b0198a3e19aed",
+                "id": "ASB-A-273874525-11fb76c3",
+                "digest": {
+                  "function_hash": "36167147116348345863936788657702224124",
+                  "length": 1957
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/gatt/gatt_sr.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/d5f27984f4ca265f28a4adf5835b0198a3e19aed",
+                "id": "ASB-A-273874525-a3859905",
+                "digest": {
+                  "line_hashes": [
+                    "320180208113292607896087960140748321710",
+                    "185620860055585878484986184931846809734",
+                    "319420841029342921839194282503417907253",
+                    "250978578845779696356386414138024276852",
+                    "318872592807275993100937040753514395656",
+                    "141269574546360549306461848829328979810",
+                    "204714876695755523928580335686404439046",
+                    "183905982059378682327217227057606426163",
+                    "311954045522797841068282195162869825882",
+                    "263232450369799039219493308252416876531",
+                    "400206405204418213502213550468525364",
+                    "314770545184342246476502425255109428247",
+                    "307362275633226171916038256427833315124",
+                    "308895341643965181959918133811250227217",
+                    "122757879597053200394180763992077422796",
+                    "67834856507516609453221547184769402811",
+                    "129943154435575809610568843399508029933",
+                    "237475983115649658632985560846409519343",
+                    "13227297075605735205156259313947404717",
+                    "85253462756822884360816865997710830720",
+                    "24526966502570633969055920681276582168",
+                    "325969589060144690288502607002477657459",
+                    "89081833886852685892140623503777474500",
+                    "99804003701978462269687672967659361085"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-273874525.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Bluetooth",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2023-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "Critical",
+            "types": [
+              "RCE"
+            ],
+            "spl": "2023-10-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/85f4d53c7bf90b806639a3a302f0007ffb3b9f23"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/gatt/gatt_sr.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/85f4d53c7bf90b806639a3a302f0007ffb3b9f23",
+                "id": "ASB-A-273874525-0522e5b7",
+                "digest": {
+                  "line_hashes": [
+                    "301476335257368158159457184534817724226",
+                    "185620860055585878484986184931846809734",
+                    "319420841029342921839194282503417907253",
+                    "250978578845779696356386414138024276852",
+                    "318872592807275993100937040753514395656",
+                    "141269574546360549306461848829328979810",
+                    "204714876695755523928580335686404439046",
+                    "183905982059378682327217227057606426163",
+                    "311954045522797841068282195162869825882",
+                    "80778354735684940648400822243020094520",
+                    "298240068789696469338359820937952988798",
+                    "254072070548644218687734592118588744547",
+                    "290108680486195309810329624003139389789",
+                    "246147197161009651927417574757144612761",
+                    "71153663538600734989617062507828621121",
+                    "263232450369799039219493308252416876531",
+                    "400206405204418213502213550468525364",
+                    "314770545184342246476502425255109428247",
+                    "307362275633226171916038256427833315124",
+                    "308895341643965181959918133811250227217",
+                    "122757879597053200394180763992077422796",
+                    "67834856507516609453221547184769402811",
+                    "129943154435575809610568843399508029933",
+                    "237475983115649658632985560846409519343",
+                    "13227297075605735205156259313947404717",
+                    "85253462756822884360816865997710830720",
+                    "24526966502570633969055920681276582168",
+                    "325969589060144690288502607002477657459",
+                    "89081833886852685892140623503777474500",
+                    "99804003701978462269687672967659361085"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "build_read_multi_rsp",
+                  "file": "system/stack/gatt/gatt_sr.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/85f4d53c7bf90b806639a3a302f0007ffb3b9f23",
+                "id": "ASB-A-273874525-16bcc80c",
+                "digest": {
+                  "function_hash": "36167147116348345863936788657702224124",
+                  "length": 1957
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-273874525.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
       "id": "ASB-A-308429049",
       "details": "In multiple locations, there is a possible bypass of user consent to enabling new Bluetooth HIDs due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
       "aliases": [
         "A-308429049",
         "CVE-2024-34730"
       ],
-      "modified": "2025-02-06T19:02:37Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -23703,7 +24017,7 @@
         "A-323850943",
         "CVE-2024-43096"
       ],
-      "modified": "2025-02-06T03:16:57Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -24098,7 +24412,7 @@
         "A-345258562",
         "CVE-2025-0079"
       ],
-      "modified": "2025-03-03T15:57:18.572838Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-03-01T00:00:00Z",
       "references": [
         {
@@ -24140,6 +24454,219 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-42ad8c22",
+                "digest": {
+                  "line_hashes": [
+                    "334284623377604830545995698832128341658",
+                    "268554446520860238231441710879957757717",
+                    "29442058351548368209820916399392773425",
+                    "261403495350620860497503837850318241791",
+                    "131671756352888159856985926090941285863",
+                    "296898848447146870832216620754619758769",
+                    "241768375719269496961343037484750368851",
+                    "301184812384282503705354409397731639273",
+                    "321023281503171433192696281943258052163",
+                    "80840191027969958334589475378137027676"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-5858adb5",
+                "digest": {
+                  "line_hashes": [
+                    "157698628208589383411177033369418040762",
+                    "75146913267037004927020259752754429833",
+                    "154607044117503703696980495856381814374",
+                    "122585612314123560396879163921595360699",
+                    "193833671074545016548918568012694509793"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_lcb_chnl_open",
+                  "file": "stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-5a6f5124",
+                "digest": {
+                  "function_hash": "41300468738876197996863538830385906930",
+                  "length": 321
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_bcb_chnl_open",
+                  "file": "stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-60ec8dc6",
+                "digest": {
+                  "function_hash": "338641378587263788978753513717936035138",
+                  "length": 414
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVDT_Register",
+                  "file": "stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-7a139cc4",
+                "digest": {
+                  "function_hash": "13005211549195714551932969581959252067",
+                  "length": 254
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVCT_Register",
+                  "file": "stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-92033568",
+                "digest": {
+                  "function_hash": "183170137682311770206878048659662490274",
+                  "length": 526
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-9a4307c1",
+                "digest": {
+                  "line_hashes": [
+                    "139903368850832361188823847290460320089",
+                    "197210234159917791524634334845815761696",
+                    "238945299995618178754300586038568675015",
+                    "272745210268657423165795596131047859671",
+                    "281475703164345983273165878058160747012"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-b5370855",
+                "digest": {
+                  "line_hashes": [
+                    "255546310832448036563161994731701308527",
+                    "271837590389038134180083582394448363613",
+                    "219791634114048447782981710697373592690",
+                    "81407891099711548014457718844697825142",
+                    "160632310488842990426451522119482813392"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-e64072dd",
+                "digest": {
+                  "line_hashes": [
+                    "61788799138030876711356534992424630133",
+                    "16062379127533112761535945064726530769",
+                    "8290884431467516637092903235788238892",
+                    "89351398192238229597529550984243072653",
+                    "64634010913069133441785453802914093117",
+                    "284966138668193074040116779444838088117"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avdt_ad_open_req",
+                  "file": "stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-ec8d3486",
+                "digest": {
+                  "function_hash": "195606971697466110345910543815678757339",
+                  "length": 1197
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              }
             ]
           },
           "database_specific": {
@@ -24175,6 +24702,219 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-19f832b8",
+                "digest": {
+                  "line_hashes": [
+                    "139903368850832361188823847290460320089",
+                    "197210234159917791524634334845815761696",
+                    "238945299995618178754300586038568675015",
+                    "272745210268657423165795596131047859671",
+                    "281475703164345983273165878058160747012"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avdt_ad_open_req",
+                  "file": "stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-5913c06d",
+                "digest": {
+                  "function_hash": "195606971697466110345910543815678757339",
+                  "length": 1197
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-66a452ae",
+                "digest": {
+                  "line_hashes": [
+                    "334284623377604830545995698832128341658",
+                    "268554446520860238231441710879957757717",
+                    "29442058351548368209820916399392773425",
+                    "261403495350620860497503837850318241791",
+                    "131671756352888159856985926090941285863",
+                    "296898848447146870832216620754619758769",
+                    "241768375719269496961343037484750368851",
+                    "301184812384282503705354409397731639273",
+                    "321023281503171433192696281943258052163",
+                    "80840191027969958334589475378137027676"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVDT_Register",
+                  "file": "stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-7060b05b",
+                "digest": {
+                  "function_hash": "13005211549195714551932969581959252067",
+                  "length": 254
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-7c8ba980",
+                "digest": {
+                  "line_hashes": [
+                    "157698628208589383411177033369418040762",
+                    "75146913267037004927020259752754429833",
+                    "154607044117503703696980495856381814374",
+                    "122585612314123560396879163921595360699",
+                    "193833671074545016548918568012694509793"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-7d106c09",
+                "digest": {
+                  "line_hashes": [
+                    "255546310832448036563161994731701308527",
+                    "271837590389038134180083582394448363613",
+                    "219791634114048447782981710697373592690",
+                    "81407891099711548014457718844697825142",
+                    "160632310488842990426451522119482813392"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_bcb_chnl_open",
+                  "file": "stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-7d10a384",
+                "digest": {
+                  "function_hash": "338641378587263788978753513717936035138",
+                  "length": 414
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-bc9222a7",
+                "digest": {
+                  "line_hashes": [
+                    "61788799138030876711356534992424630133",
+                    "16062379127533112761535945064726530769",
+                    "8290884431467516637092903235788238892",
+                    "89351398192238229597529550984243072653",
+                    "64634010913069133441785453802914093117",
+                    "284966138668193074040116779444838088117"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_lcb_chnl_open",
+                  "file": "stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-d3195e4f",
+                "digest": {
+                  "function_hash": "41300468738876197996863538830385906930",
+                  "length": 321
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVCT_Register",
+                  "file": "stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/system/bt/+/434d99ad4dfdefd0cbc347b0fb33cbb3c4d62e3d",
+                "id": "ASB-A-345258562-ffde43ef",
+                "digest": {
+                  "function_hash": "183170137682311770206878048659662490274",
+                  "length": 526
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              }
             ]
           },
           "database_specific": {
@@ -24210,6 +24950,187 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVDT_Register",
+                  "file": "system/stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-14937421",
+                "digest": {
+                  "function_hash": "70323364932370204085185977924433849236",
+                  "length": 350
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVCT_Register",
+                  "file": "system/stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-32c9b067",
+                "digest": {
+                  "function_hash": "138944419217666935854627215262168651052",
+                  "length": 590
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avdt_ad_open_req",
+                  "file": "system/stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-37c921bf",
+                "digest": {
+                  "function_hash": "225590919978565827334869853214217629216",
+                  "length": 1223
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-40f961cc",
+                "digest": {
+                  "line_hashes": [
+                    "332736654001666666614623658689842499504",
+                    "65615420995247841064385436710290851752",
+                    "49467285913161074522372154209166459299",
+                    "197274624226795020004772958062674868360"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_bcb_chnl_open",
+                  "file": "system/stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-662ef4c8",
+                "digest": {
+                  "function_hash": "335263949465079479316910783583644757614",
+                  "length": 408
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-734b180b",
+                "digest": {
+                  "line_hashes": [
+                    "61788799138030876711356534992424630133",
+                    "168966001464471784241067764958537703197",
+                    "174037819162551777828283825947606653472",
+                    "41452291355217992753717760931990784536",
+                    "202426510155412288946439670109032251558",
+                    "236913875929561382723844792605752498541",
+                    "19322506674845328892578083113953032709"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-793382f8",
+                "digest": {
+                  "line_hashes": [
+                    "62068010325097936699511773621903331560",
+                    "179812944225947480305483269296175718125",
+                    "211070308509537099875747600260462987595",
+                    "51841336575981439388692596283784401525"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_lcb_chnl_open",
+                  "file": "system/stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-9295c8c5",
+                "digest": {
+                  "function_hash": "122379140418014819243790856380352662915",
+                  "length": 315
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-d3225aff",
+                "digest": {
+                  "line_hashes": [
+                    "273582966645999640175236671737040086440",
+                    "120596209209844762343156672098284153083",
+                    "297405116906797811251036311697657821768",
+                    "312183751812751375874273301842630847464"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d5ff4150cb9e97eafaac7a8e32176bd5048a5fd2",
+                "id": "ASB-A-345258562-dd00725a",
+                "digest": {
+                  "line_hashes": [
+                    "59936903816436452229341492893265963902",
+                    "303409268871284519851599107518168269965",
+                    "339943162526734463493700689022260298450",
+                    "320008295623864315851363378456484348853",
+                    "190173971244416650715681295065645999412",
+                    "315376983355068479283896275683121652221",
+                    "189212756145824550139513012014193108715",
+                    "240878628932863532930882437028408051883",
+                    "133673689445960107332470894523517350083",
+                    "326703986102503760109785309802919590296"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -24245,6 +25166,186 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-0ecf4824",
+                "digest": {
+                  "line_hashes": [
+                    "255546310832448036563161994731701308527",
+                    "271837590389038134180083582394448363613",
+                    "219791634114048447782981710697373592690",
+                    "81407891099711548014457718844697825142",
+                    "160632310488842990426451522119482813392"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-1fb4bae8",
+                "digest": {
+                  "line_hashes": [
+                    "75146913267037004927020259752754429833",
+                    "154607044117503703696980495856381814374",
+                    "122585612314123560396879163921595360699",
+                    "193833671074545016548918568012694509793"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-2fa9d445",
+                "digest": {
+                  "line_hashes": [
+                    "334284623377604830545995698832128341658",
+                    "268554446520860238231441710879957757717",
+                    "29442058351548368209820916399392773425",
+                    "261403495350620860497503837850318241791",
+                    "131671756352888159856985926090941285863",
+                    "241768375719269496961343037484750368851",
+                    "7761111120060724980923810704865009169",
+                    "130445163923313978323643456697102902257",
+                    "206441605950527144321298884100001060373"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_bcb_chnl_open",
+                  "file": "system/stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-3d9d0c6f",
+                "digest": {
+                  "function_hash": "338641378587263788978753513717936035138",
+                  "length": 414
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVDT_Register",
+                  "file": "system/stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-873616f5",
+                "digest": {
+                  "function_hash": "13005211549195714551932969581959252067",
+                  "length": 254
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_lcb_chnl_open",
+                  "file": "system/stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-955a45e2",
+                "digest": {
+                  "function_hash": "41300468738876197996863538830385906930",
+                  "length": 321
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avdt_ad_open_req",
+                  "file": "system/stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-b9c9482c",
+                "digest": {
+                  "function_hash": "195606971697466110345910543815678757339",
+                  "length": 1197
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVCT_Register",
+                  "file": "system/stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-c6bdd259",
+                "digest": {
+                  "function_hash": "331750452895729473431578185309900925234",
+                  "length": 418
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-e7df36a8",
+                "digest": {
+                  "line_hashes": [
+                    "197210234159917791524634334845815761696",
+                    "238945299995618178754300586038568675015",
+                    "272745210268657423165795596131047859671",
+                    "281475703164345983273165878058160747012"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-f37cf12d",
+                "digest": {
+                  "line_hashes": [
+                    "61788799138030876711356534992424630133",
+                    "16062379127533112761535945064726530769",
+                    "8290884431467516637092903235788238892",
+                    "89351398192238229597529550984243072653",
+                    "64634010913069133441785453802914093117",
+                    "284966138668193074040116779444838088117"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -24280,6 +25381,186 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVDT_Register",
+                  "file": "system/stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-106068cc",
+                "digest": {
+                  "function_hash": "13005211549195714551932969581959252067",
+                  "length": 254
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_bcb_chnl_open",
+                  "file": "system/stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-39a1c1ae",
+                "digest": {
+                  "function_hash": "338641378587263788978753513717936035138",
+                  "length": 414
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avdt/avdt_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-63e286be",
+                "digest": {
+                  "line_hashes": [
+                    "61788799138030876711356534992424630133",
+                    "16062379127533112761535945064726530769",
+                    "8290884431467516637092903235788238892",
+                    "89351398192238229597529550984243072653",
+                    "64634010913069133441785453802914093117",
+                    "284966138668193074040116779444838088117"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_bcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-75112098",
+                "digest": {
+                  "line_hashes": [
+                    "255546310832448036563161994731701308527",
+                    "271837590389038134180083582394448363613",
+                    "219791634114048447782981710697373592690",
+                    "81407891099711548014457718844697825142",
+                    "160632310488842990426451522119482813392"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avdt_ad_open_req",
+                  "file": "system/stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-9b1e9af1",
+                "digest": {
+                  "function_hash": "195606971697466110345910543815678757339",
+                  "length": 1197
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AVCT_Register",
+                  "file": "system/stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-aed0dd70",
+                "digest": {
+                  "function_hash": "331750452895729473431578185309900925234",
+                  "length": 418
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avdt/avdt_ad.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-b7cb2e64",
+                "digest": {
+                  "line_hashes": [
+                    "75146913267037004927020259752754429833",
+                    "154607044117503703696980495856381814374",
+                    "122585612314123560396879163921595360699",
+                    "193833671074545016548918568012694509793"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-d17d7b17",
+                "digest": {
+                  "line_hashes": [
+                    "197210234159917791524634334845815761696",
+                    "238945299995618178754300586038568675015",
+                    "272745210268657423165795596131047859671",
+                    "281475703164345983273165878058160747012"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "system/stack/avct/avct_api.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-dc609244",
+                "digest": {
+                  "line_hashes": [
+                    "334284623377604830545995698832128341658",
+                    "268554446520860238231441710879957757717",
+                    "29442058351548368209820916399392773425",
+                    "261403495350620860497503837850318241791",
+                    "131671756352888159856985926090941285863",
+                    "241768375719269496961343037484750368851",
+                    "7761111120060724980923810704865009169",
+                    "130445163923313978323643456697102902257",
+                    "206441605950527144321298884100001060373"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "avct_lcb_chnl_open",
+                  "file": "system/stack/avct/avct_lcb_act.cc"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5f93c29ea93320e5c2f30adf6674790dcf1626a1",
+                "id": "ASB-A-345258562-f0717559",
+                "digest": {
+                  "function_hash": "41300468738876197996863538830385906930",
+                  "length": 321
+                }
+              }
             ]
           },
           "database_specific": {
@@ -24296,7 +25577,7 @@
         "A-356886209",
         "CVE-2024-43763"
       ],
-      "modified": "2025-02-06T03:24:14Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -24601,7 +25882,7 @@
         "A-364025411",
         "CVE-2024-49748"
       ],
-      "modified": "2025-02-06T03:33:09Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -25104,7 +26385,7 @@
         "A-364026473",
         "CVE-2024-43770"
       ],
-      "modified": "2025-02-06T03:34:06Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -25607,7 +26888,7 @@
         "A-364027038",
         "CVE-2024-49747"
       ],
-      "modified": "2025-02-06T03:34:49Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -26110,7 +27391,7 @@
         "A-364027949",
         "CVE-2024-43771"
       ],
-      "modified": "2025-02-06T03:35:59Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -26613,7 +27894,7 @@
         "A-167759047",
         "CVE-2021-1007"
       ],
-      "modified": "2024-08-29T06:57:50.365558Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -26692,7 +27973,7 @@
         "A-180420059",
         "CVE-2021-1022"
       ],
-      "modified": "2024-08-29T07:12:52.870180Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -26786,7 +28067,7 @@
         "A-181677124",
         "CVE-2021-1957"
       ],
-      "modified": "2024-08-29T07:12:45.946377Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-09-01T00:00:00Z",
       "references": [
         {

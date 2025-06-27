@@ -7,7 +7,7 @@
         "A-157929241",
         "CVE-2021-39691"
       ],
-      "modified": "2024-10-02T23:18:48Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -945,7 +945,7 @@
         "A-175190844",
         "CVE-2021-39617"
       ],
-      "modified": "2024-08-07T19:29:47.009496Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-05-01T00:00:00Z",
       "references": [
         {
@@ -3581,7 +3581,7 @@
         "A-176094367",
         "CVE-2022-20442"
       ],
-      "modified": "2024-08-07T19:29:01.660121Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -3822,7 +3822,7 @@
         "A-189942529",
         "CVE-2023-20914"
       ],
-      "modified": "2024-08-07T19:29:44.995639Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-05-01T00:00:00Z",
       "references": [
         {
@@ -4081,7 +4081,7 @@
         "A-202312327",
         "CVE-2021-39694"
       ],
-      "modified": "2024-08-07T19:29:06.664130Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-03-01T00:00:00Z",
       "references": [
         {
@@ -4244,7 +4244,7 @@
         "A-223907044",
         "CVE-2022-20218"
       ],
-      "modified": "2024-10-07T20:32:36Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-09-01T00:00:00Z",
       "references": [
         {
@@ -4372,7 +4372,7 @@
         "A-237405974",
         "CVE-2023-20947"
       ],
-      "modified": "2024-08-07T19:29:25.965792Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -4535,7 +4535,7 @@
         "A-253043218",
         "CVE-2023-21132"
       ],
-      "modified": "2024-08-07T19:29:17.812079Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -4854,7 +4854,7 @@
         "A-253043490",
         "CVE-2023-21140"
       ],
-      "modified": "2024-08-07T19:29:23.008621Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -5173,7 +5173,7 @@
         "A-253043495",
         "CVE-2023-21134"
       ],
-      "modified": "2024-08-07T19:29:50.291516Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -5492,7 +5492,7 @@
         "A-253043502",
         "CVE-2023-21133"
       ],
-      "modified": "2024-08-07T19:30:05.990968Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -5811,7 +5811,7 @@
         "A-295549388",
         "CVE-2024-0043"
       ],
-      "modified": "2024-08-07T19:29:39.949900Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-05-01T00:00:00Z",
       "references": [
         {
@@ -6815,7 +6815,7 @@
         "A-308138085",
         "CVE-2024-40661"
       ],
-      "modified": "2025-01-08T21:52:14Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-11-01T00:00:00Z",
       "references": [
         {
@@ -7404,12 +7404,16 @@
         "A-313909156",
         "CVE-2025-26420"
       ],
-      "modified": "2025-05-05T15:12:06.003211Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-05-01T00:00:00Z",
       "references": [
         {
           "type": "ADVISORY",
           "url": "https://source.android.com/security/bulletin/2025-05-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/modules/Permission/+/6bed47f63ec0600b3c57388449db37405c68dc58"
         }
       ],
       "affected": [
@@ -7453,40 +7457,10 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
-                "id": "ASB-A-313909156-28e5c896",
+                "id": "ASB-A-313909156-1484b1ce",
                 "digest": {
                   "function_hash": "129748535921948931016636929286576884070",
                   "length": 660
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onNewFollowerActivity",
-                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
-                "id": "ASB-A-313909156-5e3743d7",
-                "digest": {
-                  "function_hash": "83460400433071553615773067354470702856",
-                  "length": 1155
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "showNextRequest",
-                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
-                "id": "ASB-A-313909156-79a5d7e5",
-                "digest": {
-                  "function_hash": "206204665237318696419502987127570188075",
-                  "length": 3188
                 }
               },
               {
@@ -7498,10 +7472,25 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
-                "id": "ASB-A-313909156-a6c55f16",
+                "id": "ASB-A-313909156-1635c9c3",
                 "digest": {
                   "function_hash": "237257450632212944378772553299579119159",
                   "length": 974
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "showNextRequest",
+                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
+                "id": "ASB-A-313909156-7d8a4bff",
+                "digest": {
+                  "function_hash": "206204665237318696419502987127570188075",
+                  "length": 3188
                 }
               },
               {
@@ -7512,7 +7501,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
-                "id": "ASB-A-313909156-ac43d080",
+                "id": "ASB-A-313909156-cbb9235f",
                 "digest": {
                   "line_hashes": [
                     "186467399167775900187323183962978158017",
@@ -7612,12 +7601,27 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
+                  "function": "onNewFollowerActivity",
+                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
+                "id": "ASB-A-313909156-f048cc05",
+                "digest": {
+                  "function_hash": "83460400433071553615773067354470702856",
+                  "length": 1155
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
                   "function": "onCreate",
                   "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/4695447d05449dc66412a16bc643556443a344e3",
-                "id": "ASB-A-313909156-e0168706",
+                "id": "ASB-A-313909156-fb709239",
                 "digest": {
                   "function_hash": "101284071973521971571371948875634833276",
                   "length": 5315
@@ -7668,7 +7672,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/3221a7d15d9a04e77286c5ec7c4a0704b046eb6f",
-                "id": "ASB-A-313909156-21a290ab",
+                "id": "ASB-A-313909156-12e11f95",
                 "digest": {
                   "line_hashes": [
                     "297689206181598069331002922395358437011",
@@ -7752,25 +7756,10 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/3221a7d15d9a04e77286c5ec7c4a0704b046eb6f",
-                "id": "ASB-A-313909156-2987ef3b",
+                "id": "ASB-A-313909156-135f77f4",
                 "digest": {
                   "function_hash": "107455685653883416543601653703477760979",
                   "length": 1042
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "setResultIfNeeded",
-                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/3221a7d15d9a04e77286c5ec7c4a0704b046eb6f",
-                "id": "ASB-A-313909156-2d8eaabb",
-                "digest": {
-                  "function_hash": "25361191611248642495133093634276748683",
-                  "length": 1034
                 }
               },
               {
@@ -7782,7 +7771,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/3221a7d15d9a04e77286c5ec7c4a0704b046eb6f",
-                "id": "ASB-A-313909156-d5b4c85d",
+                "id": "ASB-A-313909156-2f836a6d",
                 "digest": {
                   "function_hash": "43415802790324639296660759328168713527",
                   "length": 3598
@@ -7797,10 +7786,25 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/3221a7d15d9a04e77286c5ec7c4a0704b046eb6f",
-                "id": "ASB-A-313909156-fa78893e",
+                "id": "ASB-A-313909156-b39ffa25",
                 "digest": {
                   "function_hash": "75188701020156754185154146360564094075",
                   "length": 3404
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "setResultIfNeeded",
+                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/3221a7d15d9a04e77286c5ec7c4a0704b046eb6f",
+                "id": "ASB-A-313909156-dfeb111a",
+                "digest": {
+                  "function_hash": "25361191611248642495133093634276748683",
+                  "length": 1034
                 }
               }
             ]
@@ -7844,60 +7848,15 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "onNewFollowerActivity",
-                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
-                "id": "ASB-A-313909156-03781541",
-                "digest": {
-                  "function_hash": "106696359717779765718922639010542398770",
-                  "length": 1107
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "showNextRequest",
-                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
-                "id": "ASB-A-313909156-1842cb5b",
-                "digest": {
-                  "function_hash": "262115217165135187817753145753767328264",
-                  "length": 3927
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
                   "function": "setResultIfNeeded",
                   "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
-                "id": "ASB-A-313909156-5e0aae40",
+                "id": "ASB-A-313909156-14d48b76",
                 "digest": {
                   "function_hash": "237257450632212944378772553299579119159",
                   "length": 974
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
-                "id": "ASB-A-313909156-bee2be14",
-                "digest": {
-                  "function_hash": "25469503402566239287213414969245609240",
-                  "length": 4183
                 }
               },
               {
@@ -7909,10 +7868,40 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
-                "id": "ASB-A-313909156-d5646dd4",
+                "id": "ASB-A-313909156-ae4d2d2a",
                 "digest": {
                   "function_hash": "227238115004879789209026603632572205352",
                   "length": 713
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onNewFollowerActivity",
+                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
+                "id": "ASB-A-313909156-b62ecbb3",
+                "digest": {
+                  "function_hash": "106696359717779765718922639010542398770",
+                  "length": 1107
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "onCreate",
+                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
+                "id": "ASB-A-313909156-d960f34f",
+                "digest": {
+                  "function_hash": "25469503402566239287213414969245609240",
+                  "length": 4183
                 }
               },
               {
@@ -7923,7 +7912,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
-                "id": "ASB-A-313909156-f4af0df9",
+                "id": "ASB-A-313909156-e41433a4",
                 "digest": {
                   "line_hashes": [
                     "263357382819893312579834810970487788204",
@@ -8007,6 +7996,21 @@
                   ],
                   "threshold": 0.9
                 }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "showNextRequest",
+                  "file": "PermissionController/src/com/android/permissioncontroller/permission/ui/GrantPermissionsActivity.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/614473242f9e05a3f6e5e09ae8f18851c5061a15",
+                "id": "ASB-A-313909156-f4cb10e3",
+                "digest": {
+                  "function_hash": "262115217165135187817753145753767328264",
+                  "length": 3927
+                }
               }
             ]
           },
@@ -8024,7 +8028,7 @@
         "A-336976105",
         "CVE-2024-40659"
       ],
-      "modified": "2024-09-05T15:27:10.690028Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-09-01T00:00:00Z",
       "references": [
         {
@@ -8267,7 +8271,7 @@
         "A-340480881",
         "CVE-2024-43095"
       ],
-      "modified": "2025-02-06T03:52:38Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -8619,7 +8623,7 @@
         "A-355411348",
         "CVE-2024-49720"
       ],
-      "modified": "2025-04-08T15:57:29Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-04-01T00:00:00Z",
       "references": [
         {
@@ -8667,30 +8671,30 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "isPermissionFixedAsUser",
+                  "function": "grantSingleAsUser",
                   "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/7e1f7097f4a6895358bf1472e6d26c5198d00c11",
-                "id": "ASB-A-355411348-19171c90",
+                "id": "ASB-A-355411348-029260a1",
                 "digest": {
-                  "function_hash": "76255136349812465480493960808170142056",
-                  "length": 479
+                  "function_hash": "141619514520788998866018257770516533168",
+                  "length": 1623
                 }
               },
               {
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "grantSingleAsUser",
+                  "function": "isPermissionFixedAsUser",
                   "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/7e1f7097f4a6895358bf1472e6d26c5198d00c11",
-                "id": "ASB-A-355411348-d3235adf",
+                "id": "ASB-A-355411348-0400a4c9",
                 "digest": {
-                  "function_hash": "141619514520788998866018257770516533168",
-                  "length": 1623
+                  "function_hash": "76255136349812465480493960808170142056",
+                  "length": 479
                 }
               },
               {
@@ -8701,7 +8705,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/7e1f7097f4a6895358bf1472e6d26c5198d00c11",
-                "id": "ASB-A-355411348-ff7f9b38",
+                "id": "ASB-A-355411348-4adc72b4",
                 "digest": {
                   "line_hashes": [
                     "276735937301336299084427692564300228595",
@@ -8751,6 +8755,61 @@
             "spl": "2025-04-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Permission/+/15b296865950d19076a065d8b293d28eae4a3af2"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "isPermissionFixedAsUser",
+                  "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/15b296865950d19076a065d8b293d28eae4a3af2",
+                "id": "ASB-A-355411348-48684712",
+                "digest": {
+                  "function_hash": "76255136349812465480493960808170142056",
+                  "length": 479
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "grantSingleAsUser",
+                  "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/15b296865950d19076a065d8b293d28eae4a3af2",
+                "id": "ASB-A-355411348-c1f1bf73",
+                "digest": {
+                  "function_hash": "141619514520788998866018257770516533168",
+                  "length": 1623
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/15b296865950d19076a065d8b293d28eae4a3af2",
+                "id": "ASB-A-355411348-c7359ae3",
+                "digest": {
+                  "line_hashes": [
+                    "276735937301336299084427692564300228595",
+                    "322989708559293431295789412320417604874",
+                    "213152137624597320215320511324637273908",
+                    "25564878861477671112121177766071587689",
+                    "262738313968617711989477123477272251866",
+                    "230377411451346628928423402557176974417",
+                    "29739341363408189168750249940983237131",
+                    "61610753031451740195870485119474286831"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8789,26 +8848,18 @@
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
+                  "function": "isPermissionFixed",
                   "file": "PermissionController/src/com/android/permissioncontroller/role/model/Permissions.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/71e09e5ad12d02b3129c7a5ce16f6de734fdd0da",
-                "id": "ASB-A-355411348-00736bd0",
+                "id": "ASB-A-355411348-0dd3617f",
                 "digest": {
-                  "line_hashes": [
-                    "276735937301336299084427692564300228595",
-                    "322989708559293431295789412320417604874",
-                    "213152137624597320215320511324637273908",
-                    "71428023426661599606021655487902426771",
-                    "262738313968617711989477123477272251866",
-                    "230377411451346628928423402557176974417",
-                    "29739341363408189168750249940983237131",
-                    "61610753031451740195870485119474286831"
-                  ],
-                  "threshold": 0.9
+                  "function_hash": "157246517829887779856954165638462687008",
+                  "length": 447
                 },
                 "match_only_versions": [
                   "13"
@@ -8823,7 +8874,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/71e09e5ad12d02b3129c7a5ce16f6de734fdd0da",
-                "id": "ASB-A-355411348-3f8e0626",
+                "id": "ASB-A-355411348-4218609b",
                 "digest": {
                   "function_hash": "326735615273034153298670880778922269486",
                   "length": 1551
@@ -8833,18 +8884,26 @@
                 ]
               },
               {
-                "signature_type": "Function",
+                "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
-                  "function": "isPermissionFixed",
                   "file": "PermissionController/src/com/android/permissioncontroller/role/model/Permissions.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/71e09e5ad12d02b3129c7a5ce16f6de734fdd0da",
-                "id": "ASB-A-355411348-668759fa",
+                "id": "ASB-A-355411348-581cb514",
                 "digest": {
-                  "function_hash": "157246517829887779856954165638462687008",
-                  "length": 447
+                  "line_hashes": [
+                    "276735937301336299084427692564300228595",
+                    "322989708559293431295789412320417604874",
+                    "213152137624597320215320511324637273908",
+                    "71428023426661599606021655487902426771",
+                    "262738313968617711989477123477272251866",
+                    "230377411451346628928423402557176974417",
+                    "29739341363408189168750249940983237131",
+                    "61610753031451740195870485119474286831"
+                  ],
+                  "threshold": 0.9
                 },
                 "match_only_versions": [
                   "13"
@@ -8888,24 +8947,6 @@
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "grantSingle",
-                  "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/04e3f30193b80d0fdb7f68cbe0161dc985aa7557",
-                "id": "ASB-A-355411348-36671567",
-                "digest": {
-                  "function_hash": "326735615273034153298670880778922269486",
-                  "length": 1551
-                },
-                "match_only_versions": [
-                  "14"
-                ]
-              },
-              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -8913,7 +8954,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/04e3f30193b80d0fdb7f68cbe0161dc985aa7557",
-                "id": "ASB-A-355411348-d5003a82",
+                "id": "ASB-A-355411348-1c006cfe",
                 "digest": {
                   "line_hashes": [
                     "276735937301336299084427692564300228595",
@@ -8935,12 +8976,30 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
+                  "function": "grantSingle",
+                  "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/04e3f30193b80d0fdb7f68cbe0161dc985aa7557",
+                "id": "ASB-A-355411348-82db1744",
+                "digest": {
+                  "function_hash": "326735615273034153298670880778922269486",
+                  "length": 1551
+                },
+                "match_only_versions": [
+                  "14"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
                   "function": "isPermissionFixed",
                   "file": "PermissionController/role-controller/java/com/android/role/controller/model/Permissions.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/04e3f30193b80d0fdb7f68cbe0161dc985aa7557",
-                "id": "ASB-A-355411348-e9cc9c4d",
+                "id": "ASB-A-355411348-9278377f",
                 "digest": {
                   "function_hash": "157246517829887779856954165638462687008",
                   "length": 447
@@ -8965,7 +9024,7 @@
         "A-379362792",
         "CVE-2025-26425"
       ],
-      "modified": "2025-05-05T15:40:17Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-05-01T00:00:00Z",
       "references": [
         {
@@ -9017,7 +9076,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/59675001a55932c51c97d61e303ed2233d5fcb33",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/59675001a55932c51c97d61e303ed2233d5fcb33",
                 "id": "ASB-A-379362792-09721951",
                 "digest": {
                   "function_hash": "172422290243571136857020070158254145359",
@@ -9031,7 +9090,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/59675001a55932c51c97d61e303ed2233d5fcb33",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/59675001a55932c51c97d61e303ed2233d5fcb33",
                 "id": "ASB-A-379362792-24cc9bff",
                 "digest": {
                   "line_hashes": [
@@ -9055,7 +9114,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/59675001a55932c51c97d61e303ed2233d5fcb33",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/59675001a55932c51c97d61e303ed2233d5fcb33",
                 "id": "ASB-A-379362792-b3e0c311",
                 "digest": {
                   "function_hash": "179922840428870233836870556501484424694",
@@ -9107,7 +9166,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/f21634af468653cce28dfd329998f0eaa85608d4",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/f21634af468653cce28dfd329998f0eaa85608d4",
                 "id": "ASB-A-379362792-34aa57b5",
                 "digest": {
                   "function_hash": "151844552131008059303012353384865945247",
@@ -9122,7 +9181,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/f21634af468653cce28dfd329998f0eaa85608d4",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/f21634af468653cce28dfd329998f0eaa85608d4",
                 "id": "ASB-A-379362792-393fb076",
                 "digest": {
                   "function_hash": "314794437242829043153628501643302551789",
@@ -9136,7 +9195,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/f21634af468653cce28dfd329998f0eaa85608d4",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/f21634af468653cce28dfd329998f0eaa85608d4",
                 "id": "ASB-A-379362792-cbccd347",
                 "digest": {
                   "line_hashes": [
@@ -9196,7 +9255,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/2145a560fc739a4413c4d578e68675195284151a",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/2145a560fc739a4413c4d578e68675195284151a",
                 "id": "ASB-A-379362792-56d770d9",
                 "digest": {
                   "line_hashes": [
@@ -9224,7 +9283,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/2145a560fc739a4413c4d578e68675195284151a",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/2145a560fc739a4413c4d578e68675195284151a",
                 "id": "ASB-A-379362792-722ef512",
                 "digest": {
                   "function_hash": "314794437242829043153628501643302551789",
@@ -9239,7 +9298,7 @@
                   "file": "service/java/com/android/role/RoleService.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/packages/modules/Permission/+/2145a560fc739a4413c4d578e68675195284151a",
+                "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/2145a560fc739a4413c4d578e68675195284151a",
                 "id": "ASB-A-379362792-e5c5c325",
                 "digest": {
                   "function_hash": "151844552131008059303012353384865945247",
@@ -9262,7 +9321,7 @@
         "A-184847040",
         "CVE-2023-21035"
       ],
-      "modified": "2024-08-29T06:57:52.328287Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -9596,7 +9655,7 @@
         "A-235601770",
         "CVE-2022-20538"
       ],
-      "modified": "2024-08-29T07:13:06.001046Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {

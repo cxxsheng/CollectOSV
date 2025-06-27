@@ -7,7 +7,7 @@
         "A-193031925",
         "CVE-2024-49734"
       ],
-      "modified": "2025-02-06T19:20:36Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -531,7 +531,7 @@
         "A-201660636",
         "CVE-2022-20145"
       ],
-      "modified": "2024-09-20T22:25:04Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -733,7 +733,7 @@
         "A-234442700",
         "CVE-2023-20929"
       ],
-      "modified": "2024-08-07T19:29:25.767146Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -930,13 +930,320 @@
       "schema_version": "1.6.0"
     },
     {
+      "id": "ASB-A-388828859",
+      "details": "In offerNetwork of ConnectivityService.java, there is a possible leak of sensitive data due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-388828859",
+        "CVE-2025-26445"
+      ],
+      "modified": "2025-06-26T14:51:18.212593Z",
+      "published": "2025-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/0eccf35b6b1b123996ee41e4cc078cf79c35be89"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/modules/Connectivity",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16-next:0"
+                },
+                {
+                  "fixed": "16-next:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/2bde2fe348a9861786ff4cbda8e46e9ffca26bf7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/2bde2fe348a9861786ff4cbda8e46e9ffca26bf7",
+                "id": "ASB-A-388828859-71d4d8a8",
+                "digest": {
+                  "line_hashes": [
+                    "262396038357104497907984848060117163787",
+                    "54130136488940096754733008694694426325",
+                    "9852743213078760651811842745914440046",
+                    "61620647746723102817967400451463051865"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "offerNetwork",
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/2bde2fe348a9861786ff4cbda8e46e9ffca26bf7",
+                "id": "ASB-A-388828859-a3910417",
+                "digest": {
+                  "function_hash": "126951957245545320111530138522786059857",
+                  "length": 489
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388828859.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Connectivity",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/2bde2fe348a9861786ff4cbda8e46e9ffca26bf7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/2bde2fe348a9861786ff4cbda8e46e9ffca26bf7",
+                "id": "ASB-A-388828859-1a0e4e98",
+                "digest": {
+                  "line_hashes": [
+                    "262396038357104497907984848060117163787",
+                    "54130136488940096754733008694694426325",
+                    "9852743213078760651811842745914440046",
+                    "61620647746723102817967400451463051865"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "offerNetwork",
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/2bde2fe348a9861786ff4cbda8e46e9ffca26bf7",
+                "id": "ASB-A-388828859-48eec298",
+                "digest": {
+                  "function_hash": "126951957245545320111530138522786059857",
+                  "length": 489
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388828859.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Connectivity",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/f27bca2d7d236008f46e8c67154d7c2118a9fbf5"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "offerNetwork",
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/f27bca2d7d236008f46e8c67154d7c2118a9fbf5",
+                "id": "ASB-A-388828859-15e2a349",
+                "digest": {
+                  "function_hash": "126951957245545320111530138522786059857",
+                  "length": 489
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/f27bca2d7d236008f46e8c67154d7c2118a9fbf5",
+                "id": "ASB-A-388828859-eb5f997e",
+                "digest": {
+                  "line_hashes": [
+                    "262396038357104497907984848060117163787",
+                    "54130136488940096754733008694694426325",
+                    "9852743213078760651811842745914440046",
+                    "61620647746723102817967400451463051865"
+                  ],
+                  "threshold": 0.9
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388828859.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/modules/Connectivity",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/27b011caf2edb02e550e1f8aa2eae3e2066d27b3"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/27b011caf2edb02e550e1f8aa2eae3e2066d27b3",
+                "id": "ASB-A-388828859-17003266",
+                "digest": {
+                  "line_hashes": [
+                    "262396038357104497907984848060117163787",
+                    "54130136488940096754733008694694426325",
+                    "9852743213078760651811842745914440046",
+                    "61620647746723102817967400451463051865"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "offerNetwork",
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/27b011caf2edb02e550e1f8aa2eae3e2066d27b3",
+                "id": "ASB-A-388828859-9713238c",
+                "digest": {
+                  "function_hash": "126951957245545320111530138522786059857",
+                  "length": 489
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388828859.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
       "id": "PUB-A-193801134",
       "details": "In requestRouteToHostAddress  of ConnectivityService.java, there is a possible way to determine whether an app is installed, without query permissions, due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
       "aliases": [
         "A-193801134",
         "CVE-2021-0994"
       ],
-      "modified": "2024-08-29T07:12:55.533474Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {

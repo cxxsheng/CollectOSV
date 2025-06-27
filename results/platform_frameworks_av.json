@@ -7,7 +7,7 @@
         "A-142641801",
         "CVE-2020-0411"
       ],
-      "modified": "2024-08-07T19:29:14.372622Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -120,7 +120,7 @@
         "A-151456667",
         "CVE-2020-0241"
       ],
-      "modified": "2024-08-07T19:30:13.804612Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-08-01T00:00:00Z",
       "references": [
         {
@@ -563,7 +563,7 @@
         "A-151643722",
         "CVE-2020-0242"
       ],
-      "modified": "2024-08-07T19:30:20.788960Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-08-01T00:00:00Z",
       "references": [
         {
@@ -1406,7 +1406,7 @@
         "A-151644303",
         "CVE-2020-0243"
       ],
-      "modified": "2024-08-07T19:29:56.835622Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-08-01T00:00:00Z",
       "references": [
         {
@@ -2257,7 +2257,7 @@
         "A-152496149",
         "CVE-2020-0245"
       ],
-      "modified": "2024-08-07T19:29:31.344926Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-09-01T00:00:00Z",
       "references": [
         {
@@ -2576,7 +2576,7 @@
         "A-153358911",
         "CVE-2021-0483"
       ],
-      "modified": "2024-10-02T23:34:40Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-10-01T00:00:00Z",
       "references": [
         {
@@ -4219,7 +4219,7 @@
         "A-154123412",
         "CVE-2020-0393"
       ],
-      "modified": "2024-08-07T19:29:52.081133Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-09-01T00:00:00Z",
       "references": [
         {
@@ -4408,7 +4408,7 @@
         "A-157708122",
         "CVE-2020-0414"
       ],
-      "modified": "2024-08-07T19:30:11.493523Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -4640,7 +4640,7 @@
         "A-160346309",
         "CVE-2021-0335"
       ],
-      "modified": "2024-08-07T19:30:09.575357Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-02-01T00:00:00Z",
       "references": [
         {
@@ -4821,7 +4821,7 @@
         "A-170240631",
         "CVE-2021-0311"
       ],
-      "modified": "2024-08-07T19:29:24.549745Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -5194,7 +5194,7 @@
         "A-170583712",
         "CVE-2021-0312"
       ],
-      "modified": "2024-08-07T19:29:13.727287Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -5707,7 +5707,7 @@
         "A-173720767",
         "CVE-2021-0484"
       ],
-      "modified": "2024-08-07T19:30:10.885779Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -6115,7 +6115,7 @@
         "A-173791720",
         "CVE-2021-0482"
       ],
-      "modified": "2024-08-07T19:29:35.206702Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -6255,7 +6255,7 @@
         "A-176168330",
         "CVE-2021-0437"
       ],
-      "modified": "2024-08-07T19:29:29.684181Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -6793,7 +6793,7 @@
         "A-176237595",
         "CVE-2021-0520"
       ],
-      "modified": "2024-08-07T19:30:00.541752Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -7663,7 +7663,7 @@
         "A-176444154",
         "CVE-2021-0508"
       ],
-      "modified": "2024-08-07T19:30:03.821673Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -8172,7 +8172,7 @@
         "A-176444161",
         "CVE-2021-0509"
       ],
-      "modified": "2024-08-07T19:30:09.770417Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -9006,7 +9006,7 @@
         "A-176444622",
         "CVE-2021-0510"
       ],
-      "modified": "2024-08-07T19:30:20.141024Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -9506,7 +9506,7 @@
         "A-176444786",
         "CVE-2021-0471"
       ],
-      "modified": "2024-08-07T19:29:49.527239Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -9970,7 +9970,7 @@
         "A-176496160",
         "CVE-2021-0436"
       ],
-      "modified": "2024-08-07T19:29:44.199174Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -10434,7 +10434,7 @@
         "A-176533109",
         "CVE-2021-0519"
       ],
-      "modified": "2024-08-07T19:29:06.950376Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-08-01T00:00:00Z",
       "references": [
         {
@@ -11933,7 +11933,7 @@
         "A-184963385",
         "CVE-2021-0585"
       ],
-      "modified": "2024-08-07T19:29:07.143026Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -12542,7 +12542,7 @@
         "A-188893559",
         "CVE-2021-0971"
       ],
-      "modified": "2024-08-07T19:29:31.186626Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -12899,7 +12899,7 @@
         "A-193363621",
         "CVE-2021-0964"
       ],
-      "modified": "2024-08-07T19:29:58.257162Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -13202,7 +13202,7 @@
         "A-193790350",
         "CVE-2021-39803"
       ],
-      "modified": "2024-08-07T19:29:37.221145Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-04-01T00:00:00Z",
       "references": [
         {
@@ -13557,7 +13557,7 @@
         "A-194105348",
         "CVE-2021-39623"
       ],
-      "modified": "2024-08-07T19:30:17.450211Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-01-01T00:00:00Z",
       "references": [
         {
@@ -13900,7 +13900,7 @@
         "A-204077881",
         "CVE-2021-39665"
       ],
-      "modified": "2024-08-07T19:29:59.842450Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-02-01T00:00:00Z",
       "references": [
         {
@@ -13994,7 +13994,7 @@
         "A-204445255",
         "CVE-2021-39666"
       ],
-      "modified": "2024-08-07T19:29:11.999365Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-02-01T00:00:00Z",
       "references": [
         {
@@ -14199,7 +14199,7 @@
         "A-213850092",
         "CVE-2022-20228"
       ],
-      "modified": "2024-08-07T19:30:09.186752Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-07-01T00:00:00Z",
       "references": [
         {
@@ -14626,7 +14626,7 @@
         "A-215002587",
         "CVE-2021-39804"
       ],
-      "modified": "2024-08-07T19:30:14.633592Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-04-01T00:00:00Z",
       "references": [
         {
@@ -14874,7 +14874,7 @@
         "A-230493653",
         "CVE-2022-20346"
       ],
-      "modified": "2024-08-07T19:29:58.885634Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-08-01T00:00:00Z",
       "references": [
         {
@@ -15185,7 +15185,7 @@
         "A-230630526",
         "CVE-2023-20948"
       ],
-      "modified": "2024-08-07T19:29:36.537217Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -15607,7 +15607,7 @@
         "A-231986464",
         "CVE-2022-20418"
       ],
-      "modified": "2024-08-07T19:29:53.112747Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-10-01T00:00:00Z",
       "references": [
         {
@@ -15867,7 +15867,7 @@
         "A-233735886",
         "CVE-2022-20393"
       ],
-      "modified": "2024-10-07T20:32:36Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-09-01T00:00:00Z",
       "references": [
         {
@@ -16174,7 +16174,7 @@
         "A-235601882",
         "CVE-2022-2209"
       ],
-      "modified": "2024-08-07T19:29:13.320418Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-11-01T00:00:00Z",
       "references": [
         {
@@ -16752,7 +16752,7 @@
         "A-235850634",
         "CVE-2022-20413"
       ],
-      "modified": "2024-08-07T19:29:10.537899Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-10-01T00:00:00Z",
       "references": [
         {
@@ -17470,7 +17470,7 @@
         "A-240140929",
         "CVE-2023-20956"
       ],
-      "modified": "2024-08-07T19:30:06.250529Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -17777,7 +17777,7 @@
         "A-243376549",
         "CVE-2022-20551"
       ],
-      "modified": "2024-08-07T19:29:24.972111Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -18959,7 +18959,7 @@
         "A-243381410",
         "CVE-2023-40114"
       ],
-      "modified": "2024-09-25T01:07:22Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-11-01T00:00:00Z",
       "references": [
         {
@@ -19855,7 +19855,7 @@
         "A-243463593",
         "CVE-2023-40110"
       ],
-      "modified": "2024-08-07T19:30:11.556627Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-11-01T00:00:00Z",
       "references": [
         {
@@ -20528,7 +20528,7 @@
         "A-245135112",
         "CVE-2023-35687"
       ],
-      "modified": "2024-08-07T19:29:52.613495Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-09-01T00:00:00Z",
       "references": [
         {
@@ -20831,7 +20831,7 @@
         "A-245137718",
         "CVE-2023-35679"
       ],
-      "modified": "2024-08-07T19:29:12.407891Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-09-01T00:00:00Z",
       "references": [
         {
@@ -21134,7 +21134,7 @@
         "A-245242273",
         "CVE-2022-20496"
       ],
-      "modified": "2024-08-07T19:29:34.999779Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -21766,7 +21766,7 @@
         "A-245860753",
         "CVE-2023-20933"
       ],
-      "modified": "2024-08-07T19:29:19.139134Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -23404,7 +23404,7 @@
         "A-258021433",
         "CVE-2023-20942"
       ],
-      "modified": "2024-08-07T19:29:22.872523Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {
@@ -25050,7 +25050,7 @@
         "A-258672042",
         "CVE-2023-20934"
       ],
-      "modified": "2024-08-07T19:30:02.946951Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -27480,7 +27480,7 @@
         "A-268724205",
         "CVE-2023-40096"
       ],
-      "modified": "2024-08-07T19:30:10.185313Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-12-01T00:00:00Z",
       "references": [
         {
@@ -28820,7 +28820,7 @@
         "A-273935108",
         "CVE-2024-0050"
       ],
-      "modified": "2024-08-07T19:29:58.003865Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-03-01T00:00:00Z",
       "references": [
         {
@@ -29283,7 +29283,7 @@
         "A-273936274",
         "CVE-2024-0049"
       ],
-      "modified": "2024-08-07T19:29:38.281044Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-03-01T00:00:00Z",
       "references": [
         {
@@ -30286,7 +30286,7 @@
         "A-275418191",
         "CVE-2023-21127"
       ],
-      "modified": "2024-08-07T19:29:24.004273Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -30849,7 +30849,7 @@
         "A-276442130",
         "CVE-2024-0051"
       ],
-      "modified": "2024-08-07T19:29:23.462957Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-03-01T00:00:00Z",
       "references": [
         {
@@ -31232,7 +31232,7 @@
         "A-279905816",
         "CVE-2023-21262"
       ],
-      "modified": "2024-08-07T19:29:53.394626Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {
@@ -31543,7 +31543,7 @@
         "A-283099444",
         "CVE-2024-0023"
       ],
-      "modified": "2024-08-07T19:29:40.892064Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-01-01T00:00:00Z",
       "references": [
         {
@@ -31998,7 +31998,7 @@
         "A-287298721",
         "CVE-2023-40107"
       ],
-      "modified": "2024-08-07T19:29:41.892195Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-11-01T00:00:00Z",
       "references": [
         {
@@ -32301,7 +32301,7 @@
         "A-288549440",
         "CVE-2024-34736"
       ],
-      "modified": "2024-08-13T15:06:00Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-08-01T00:00:00Z",
       "references": [
         {
@@ -32679,7 +32679,7 @@
         "A-290086710",
         "CVE-2025-26440"
       ],
-      "modified": "2025-05-05T15:31:23Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-05-01T00:00:00Z",
       "references": [
         {
@@ -32735,7 +32735,7 @@
                   "file": "services/camera/libcameraservice/CameraService.cpp"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/av/+/ca1e0064d9dcb824e6c8eda8472e4623cea4c3db",
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/ca1e0064d9dcb824e6c8eda8472e4623cea4c3db",
                 "id": "ASB-A-290086710-51dbb89d",
                 "digest": {
                   "function_hash": "254202837061846832544589291245355270633",
@@ -32750,7 +32750,7 @@
                   "file": "services/camera/libcameraservice/CameraService.cpp"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/av/+/ca1e0064d9dcb824e6c8eda8472e4623cea4c3db",
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/ca1e0064d9dcb824e6c8eda8472e4623cea4c3db",
                 "id": "ASB-A-290086710-b21498a0",
                 "digest": {
                   "function_hash": "302322008522747557019494382704664026732",
@@ -32764,7 +32764,7 @@
                   "file": "services/camera/libcameraservice/CameraService.cpp"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/av/+/ca1e0064d9dcb824e6c8eda8472e4623cea4c3db",
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/ca1e0064d9dcb824e6c8eda8472e4623cea4c3db",
                 "id": "ASB-A-290086710-f55f1c71",
                 "digest": {
                   "line_hashes": [
@@ -32836,7 +32836,7 @@
                   "file": "services/core/java/com/android/server/appop/AppOpsUidStateTrackerImpl.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/base/+/356db3272814f8c7dd12ca2ddf27e812892e330d",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/356db3272814f8c7dd12ca2ddf27e812892e330d",
                 "id": "ASB-A-290086710-640d978f",
                 "digest": {
                   "function_hash": "180314858765852087668419592107383397938",
@@ -32853,7 +32853,7 @@
                   "file": "services/core/java/com/android/server/appop/AppOpsUidStateTrackerImpl.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/base/+/356db3272814f8c7dd12ca2ddf27e812892e330d",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/356db3272814f8c7dd12ca2ddf27e812892e330d",
                 "id": "ASB-A-290086710-b91fe771",
                 "digest": {
                   "line_hashes": [
@@ -32926,7 +32926,7 @@
                   "file": "services/camera/libcameraservice/CameraService.cpp"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/av/+/ecc539d95651d7a922c10f034f7ae3d30da67266",
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/ecc539d95651d7a922c10f034f7ae3d30da67266",
                 "id": "ASB-A-290086710-30739c9a",
                 "digest": {
                   "function_hash": "97766512600221642319392882677523302637",
@@ -32941,7 +32941,7 @@
                   "file": "services/camera/libcameraservice/CameraService.cpp"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/av/+/ecc539d95651d7a922c10f034f7ae3d30da67266",
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/ecc539d95651d7a922c10f034f7ae3d30da67266",
                 "id": "ASB-A-290086710-3a0191e3",
                 "digest": {
                   "function_hash": "167571658472021730968142249955636370346",
@@ -32958,7 +32958,7 @@
                   "file": "services/camera/libcameraservice/CameraService.cpp"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/av/+/ecc539d95651d7a922c10f034f7ae3d30da67266",
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/ecc539d95651d7a922c10f034f7ae3d30da67266",
                 "id": "ASB-A-290086710-7792771f",
                 "digest": {
                   "line_hashes": [
@@ -33028,7 +33028,7 @@
                   "file": "services/core/java/com/android/server/appop/AppOpsUidStateTrackerImpl.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/base/+/c1b8ec5b8b79251289599f0bcd8fce9f355a3649",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/c1b8ec5b8b79251289599f0bcd8fce9f355a3649",
                 "id": "ASB-A-290086710-23dd136f",
                 "digest": {
                   "line_hashes": [
@@ -33060,7 +33060,7 @@
                   "file": "services/core/java/com/android/server/appop/AppOpsUidStateTrackerImpl.java"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/frameworks/base/+/c1b8ec5b8b79251289599f0bcd8fce9f355a3649",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/c1b8ec5b8b79251289599f0bcd8fce9f355a3649",
                 "id": "ASB-A-290086710-3a162573",
                 "digest": {
                   "function_hash": "180314858765852087668419592107383397938",
@@ -33086,7 +33086,7 @@
         "A-298057702",
         "CVE-2023-40077"
       ],
-      "modified": "2024-08-07T19:29:38.016761Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-12-01T00:00:00Z",
       "references": [
         {
@@ -34363,7 +34363,7 @@
         "A-300007708",
         "CVE-2024-0040"
       ],
-      "modified": "2024-08-07T19:29:45.851134Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-02-01T00:00:00Z",
       "references": [
         {
@@ -34818,7 +34818,7 @@
         "A-300476626",
         "CVE-2024-0018"
       ],
-      "modified": "2024-08-07T19:29:50.011452Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-01-01T00:00:00Z",
       "references": [
         {
@@ -35261,13 +35261,508 @@
       "schema_version": "1.6.0"
     },
     {
+      "id": "ASB-A-301470262",
+      "details": "In multiple functions of NdkMediaCodec.cpp, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-301470262",
+        "CVE-2025-26455"
+      ],
+      "modified": "2025-06-26T14:51:18.212593Z",
+      "published": "2025-06-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-06-01"
+        },
+        {
+          "type": "FIX",
+          "url": "https://android.googlesource.com/platform/frameworks/av/+/e28ca0c3d70c67cda2a09dc2d663a3395b13c779"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/frameworks/av",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16-next:0"
+                },
+                {
+                  "fixed": "16-next:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/av/+/d69fe7b73a0ed14c2b5bc237f1a42314140c9458"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/d69fe7b73a0ed14c2b5bc237f1a42314140c9458",
+                "id": "ASB-A-301470262-2661c3b9",
+                "digest": {
+                  "function_hash": "98694987338145071947296608874201862107",
+                  "length": 715
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getInputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/d69fe7b73a0ed14c2b5bc237f1a42314140c9458",
+                "id": "ASB-A-301470262-4b7c555d",
+                "digest": {
+                  "function_hash": "305793044022599432944075141835477326463",
+                  "length": 811
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/d69fe7b73a0ed14c2b5bc237f1a42314140c9458",
+                "id": "ASB-A-301470262-e02d2d57",
+                "digest": {
+                  "line_hashes": [
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "226404815339819498657362227062984340364",
+                    "327188650271913730232397723474300298690",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "44838245825590593655464951426693163600",
+                    "88608768875686165973028908612579388024",
+                    "155203362141733110879560540315643344056",
+                    "7124372441177190717609079404781532088",
+                    "270757280497983356755606498210015147891",
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "36960143002159883296876170264643606198",
+                    "254656710729864865729537234410561843857",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "169953714638657631881455144958345453661",
+                    "284481401333772062076841903110157569174",
+                    "44113216220255611064517012692770715403",
+                    "315864493507467516835953944719729196448"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_dequeueOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/d69fe7b73a0ed14c2b5bc237f1a42314140c9458",
+                "id": "ASB-A-301470262-e443f23f",
+                "digest": {
+                  "function_hash": "131535608617307715521765791811359423310",
+                  "length": 648
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-301470262.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/av",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/av/+/20cca3672f4fbcef3e8dd0cc1a46f585a576ab3c"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/20cca3672f4fbcef3e8dd0cc1a46f585a576ab3c",
+                "id": "ASB-A-301470262-3851dc88",
+                "digest": {
+                  "function_hash": "98694987338145071947296608874201862107",
+                  "length": 715
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/20cca3672f4fbcef3e8dd0cc1a46f585a576ab3c",
+                "id": "ASB-A-301470262-45208d75",
+                "digest": {
+                  "line_hashes": [
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "226404815339819498657362227062984340364",
+                    "327188650271913730232397723474300298690",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "44838245825590593655464951426693163600",
+                    "88608768875686165973028908612579388024",
+                    "155203362141733110879560540315643344056",
+                    "7124372441177190717609079404781532088",
+                    "270757280497983356755606498210015147891",
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "36960143002159883296876170264643606198",
+                    "254656710729864865729537234410561843857",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "169953714638657631881455144958345453661",
+                    "284481401333772062076841903110157569174",
+                    "44113216220255611064517012692770715403",
+                    "315864493507467516835953944719729196448"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_dequeueOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/20cca3672f4fbcef3e8dd0cc1a46f585a576ab3c",
+                "id": "ASB-A-301470262-a7c284dc",
+                "digest": {
+                  "function_hash": "131535608617307715521765791811359423310",
+                  "length": 648
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getInputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/20cca3672f4fbcef3e8dd0cc1a46f585a576ab3c",
+                "id": "ASB-A-301470262-ca694dc4",
+                "digest": {
+                  "function_hash": "305793044022599432944075141835477326463",
+                  "length": 811
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-301470262.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/av",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_dequeueOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-845a6f5b",
+                "digest": {
+                  "function_hash": "131535608617307715521765791811359423310",
+                  "length": 648
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-a3cb1e90",
+                "digest": {
+                  "line_hashes": [
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "226404815339819498657362227062984340364",
+                    "327188650271913730232397723474300298690",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "44838245825590593655464951426693163600",
+                    "88608768875686165973028908612579388024",
+                    "155203362141733110879560540315643344056",
+                    "7124372441177190717609079404781532088",
+                    "270757280497983356755606498210015147891",
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "36960143002159883296876170264643606198",
+                    "254656710729864865729537234410561843857",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "169953714638657631881455144958345453661",
+                    "284481401333772062076841903110157569174",
+                    "44113216220255611064517012692770715403",
+                    "315864493507467516835953944719729196448"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getInputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-f5b983f6",
+                "digest": {
+                  "function_hash": "305793044022599432944075141835477326463",
+                  "length": 811
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-f6b2a105",
+                "digest": {
+                  "function_hash": "98694987338145071947296608874201862107",
+                  "length": 715
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-301470262.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/av",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2025-06-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-06-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_dequeueOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-1d4029ca",
+                "digest": {
+                  "function_hash": "131535608617307715521765791811359423310",
+                  "length": 648
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-32b6241c",
+                "digest": {
+                  "line_hashes": [
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "226404815339819498657362227062984340364",
+                    "327188650271913730232397723474300298690",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "44838245825590593655464951426693163600",
+                    "88608768875686165973028908612579388024",
+                    "155203362141733110879560540315643344056",
+                    "7124372441177190717609079404781532088",
+                    "270757280497983356755606498210015147891",
+                    "71600360415418129174559212431824992477",
+                    "76563954033470350988805698783571700052",
+                    "36960143002159883296876170264643606198",
+                    "254656710729864865729537234410561843857",
+                    "94965926434051169257640214182215033121",
+                    "337426919657139814683692752285689876091",
+                    "169953714638657631881455144958345453661",
+                    "284481401333772062076841903110157569174",
+                    "44113216220255611064517012692770715403",
+                    "315864493507467516835953944719729196448"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getOutputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-6306815a",
+                "digest": {
+                  "function_hash": "98694987338145071947296608874201862107",
+                  "length": 715
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "AMediaCodec_getInputBuffer",
+                  "file": "media/ndk/NdkMediaCodec.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/av/+/c9c3b9448503136ba1f562ff24047cdbe14e852b",
+                "id": "ASB-A-301470262-636948db",
+                "digest": {
+                  "function_hash": "305793044022599432944075141835477326463",
+                  "length": 811
+                }
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-301470262.json"
+          }
+        }
+      ],
+      "schema_version": "1.6.0"
+    },
+    {
       "id": "ASB-A-319210610",
       "details": "In multiple functions of TranscodingResourcePolicy.cpp, there is a possible memory corruption due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
       "aliases": [
         "A-319210610",
         "CVE-2024-34731"
       ],
-      "modified": "2024-08-13T15:06:00Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-08-01T00:00:00Z",
       "references": [
         {
@@ -38360,7 +38855,7 @@
         "A-329641908",
         "CVE-2024-40658"
       ],
-      "modified": "2024-09-05T15:27:10.294346Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-09-01T00:00:00Z",
       "references": [
         {
@@ -38738,7 +39233,7 @@
         "A-172312730",
         "CVE-2021-0559"
       ],
-      "modified": "2024-08-29T07:12:51.458583Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -38889,7 +39384,7 @@
         "A-172716941",
         "CVE-2021-0556"
       ],
-      "modified": "2024-08-29T07:12:51.524627Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -38983,7 +39478,7 @@
         "A-172908358",
         "CVE-2021-0563"
       ],
-      "modified": "2024-08-29T06:57:50.990872Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -39175,7 +39670,7 @@
         "A-173473906",
         "CVE-2021-0558"
       ],
-      "modified": "2024-08-29T07:12:51.589214Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -39290,7 +39785,7 @@
         "A-174801970",
         "CVE-2021-0565"
       ],
-      "modified": "2024-08-29T07:12:51.781879Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -39700,7 +40195,7 @@
         "A-175894436",
         "CVE-2021-0566"
       ],
-      "modified": "2024-08-29T07:12:52.103221Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -39797,7 +40292,7 @@
         "A-176084648",
         "CVE-2021-0562"
       ],
-      "modified": "2024-08-29T06:57:51.448830Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -39891,7 +40386,7 @@
         "A-176495665",
         "CVE-2021-0564"
       ],
-      "modified": "2024-08-29T06:57:51.517810Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -40158,7 +40653,7 @@
         "A-179046129",
         "CVE-2021-0557"
       ],
-      "modified": "2024-08-29T06:57:51.725663Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -40252,7 +40747,7 @@
         "A-190435883",
         "CVE-2021-1001"
       ],
-      "modified": "2024-08-29T07:12:54.518845Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -40356,7 +40851,7 @@
         "A-194783918",
         "CVE-2023-21000"
       ],
-      "modified": "2024-08-29T06:57:54.153615Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -40436,7 +40931,7 @@
         "A-230172711",
         "CVE-2022-20528"
       ],
-      "modified": "2024-08-29T06:57:58.870123Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -40539,7 +41034,7 @@
         "A-232242894",
         "CVE-2022-20532"
       ],
-      "modified": "2024-08-29T07:13:05.122879Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -40647,7 +41142,7 @@
         "A-233006499",
         "CVE-2023-21193"
       ],
-      "modified": "2024-08-29T07:13:05.248849Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -40782,7 +41277,7 @@
         "A-238083570",
         "CVE-2022-20542"
       ],
-      "modified": "2024-08-29T06:58:00.144012Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -40888,7 +41383,7 @@
         "A-244569759",
         "CVE-2022-20513"
       ],
-      "modified": "2024-08-29T06:58:02.763370Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -41022,7 +41517,7 @@
         "A-253270285",
         "CVE-2023-21168"
       ],
-      "modified": "2024-08-29T07:13:11.541727Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {

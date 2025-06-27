@@ -8,7 +8,7 @@
         "CVE-2020-15999",
         "GHSA-pv36-h7jh-qm62"
       ],
-      "modified": "2024-08-07T19:29:57.655551Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -426,7 +426,7 @@
         "A-254803162",
         "CVE-2023-20958"
       ],
-      "modified": "2024-08-07T19:29:23.201750Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -667,7 +667,7 @@
         "A-271680254",
         "CVE-2022-27405"
       ],
-      "modified": "2024-08-07T19:29:38.954017Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {
@@ -1042,7 +1042,7 @@
         "A-278221085",
         "CVE-2023-21287"
       ],
-      "modified": "2024-08-07T19:30:16.566475Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -3360,7 +3360,7 @@
         "A-399065987",
         "CVE-2025-27363"
       ],
-      "modified": "2025-05-05T15:41:21Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-05-01T00:00:00Z",
       "references": [
         {
@@ -3412,7 +3412,7 @@
                   "file": "src/truetype/ttgload.c"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/external/freetype/+/40b754307a3bda35de3f57d1564bdd08f023e996",
+                "source": "https://android.googlesource.com/platform/external/freetype/+/40b754307a3bda35de3f57d1564bdd08f023e996",
                 "id": "ASB-A-399065987-7b8cf838",
                 "digest": {
                   "function_hash": "225190713166141230578321329351953741461",
@@ -3426,7 +3426,7 @@
                   "file": "src/truetype/ttgload.c"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/external/freetype/+/40b754307a3bda35de3f57d1564bdd08f023e996",
+                "source": "https://android.googlesource.com/platform/external/freetype/+/40b754307a3bda35de3f57d1564bdd08f023e996",
                 "id": "ASB-A-399065987-e4196305",
                 "digest": {
                   "line_hashes": [
@@ -3435,10 +3435,7 @@
                     "60518446496987002611507789322922328315"
                   ],
                   "threshold": 0.9
-                },
-                "match_only_versions": [
-                  "13"
-                ]
+                }
               }
             ]
           },
@@ -3485,7 +3482,7 @@
                   "file": "src/truetype/ttgload.c"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/external/freetype/+/ceced76be559da8ae785486d886640a8d4512570",
+                "source": "https://android.googlesource.com/platform/external/freetype/+/ceced76be559da8ae785486d886640a8d4512570",
                 "id": "ASB-A-399065987-ad7021eb",
                 "digest": {
                   "function_hash": "61957178567273213693116448186191381440",
@@ -3499,7 +3496,7 @@
                   "file": "src/truetype/ttgload.c"
                 },
                 "deprecated": false,
-                "source": "https://googleplex-android.googlesource.com/platform/external/freetype/+/ceced76be559da8ae785486d886640a8d4512570",
+                "source": "https://android.googlesource.com/platform/external/freetype/+/ceced76be559da8ae785486d886640a8d4512570",
                 "id": "ASB-A-399065987-bfba10b6",
                 "digest": {
                   "line_hashes": [

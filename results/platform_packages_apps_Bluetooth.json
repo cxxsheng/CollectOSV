@@ -7,7 +7,7 @@
         "A-156021269",
         "CVE-2020-0410"
       ],
-      "modified": "2024-08-07T19:30:11.219802Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -385,7 +385,7 @@
         "A-157038281",
         "CVE-2020-12856"
       ],
-      "modified": "2024-10-02T23:29:45Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-11-01T00:00:00Z",
       "references": [
         {
@@ -4210,7 +4210,7 @@
         "A-171400004",
         "CVE-2021-0329"
       ],
-      "modified": "2024-08-07T19:30:10.253150Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-02-01T00:00:00Z",
       "references": [
         {
@@ -5278,7 +5278,7 @@
         "A-172670415",
         "CVE-2021-0328"
       ],
-      "modified": "2024-08-07T19:30:18.149420Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-02-01T00:00:00Z",
       "references": [
         {
@@ -5816,7 +5816,7 @@
         "A-177238342",
         "CVE-2021-0588"
       ],
-      "modified": "2024-08-07T19:29:59.905132Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -5989,7 +5989,7 @@
         "A-179910660",
         "CVE-2021-0604"
       ],
-      "modified": "2024-08-07T19:30:17.772409Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -6368,7 +6368,7 @@
         "A-203431023",
         "CVE-2022-20126"
       ],
-      "modified": "2024-09-20T22:25:04Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -6799,7 +6799,7 @@
         "A-206807679",
         "CVE-2022-20133"
       ],
-      "modified": "2024-09-20T22:25:04Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -7215,7 +7215,7 @@
         "A-225880741",
         "CVE-2022-20467"
       ],
-      "modified": "2024-08-07T19:29:46.818086Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -7622,7 +7622,7 @@
         "A-242996380",
         "CVE-2024-34719"
       ],
-      "modified": "2025-01-09T21:16:13Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-11-01T00:00:00Z",
       "references": [
         {
@@ -8169,7 +8169,7 @@
         "A-289375038",
         "CVE-2025-0092"
       ],
-      "modified": "2025-03-03T15:57:18.404251Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-03-01T00:00:00Z",
       "references": [
         {
@@ -8214,21 +8214,6 @@
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "handleBondStateChanged",
-                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/771aed3ea225d9ca2ef91e88f45f330ced952772",
-                "id": "ASB-A-289375038-0b045be5",
-                "digest": {
-                  "function_hash": "328496924968262364522595459580258101092",
-                  "length": 1415
-                }
-              },
-              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -8236,7 +8221,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/771aed3ea225d9ca2ef91e88f45f330ced952772",
-                "id": "ASB-A-289375038-5bca2364",
+                "id": "ASB-A-289375038-a27e880f",
                 "digest": {
                   "line_hashes": [
                     "90511511724719131925215018654458747684",
@@ -8249,6 +8234,21 @@
                     "76703245458864547879356985980065665792"
                   ],
                   "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleBondStateChanged",
+                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/771aed3ea225d9ca2ef91e88f45f330ced952772",
+                "id": "ASB-A-289375038-b05e424f",
+                "digest": {
+                  "function_hash": "328496924968262364522595459580258101092",
+                  "length": 1415
                 }
               }
             ]
@@ -8286,6 +8286,44 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289375038-11d4c083",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289375038-740bad96",
+                "digest": {
+                  "function_hash": "50333320920943183786165038602097210095",
+                  "length": 2252
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8321,6 +8359,44 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289375038-0e4abff9",
+                "digest": {
+                  "function_hash": "50333320920943183786165038602097210095",
+                  "length": 2252
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289375038-d7b6b80c",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              }
             ]
           },
           "database_specific": {
@@ -8356,6 +8432,44 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8ef714b803127ca193773c6d032457c01c1963d6"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleBondStateChanged",
+                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8ef714b803127ca193773c6d032457c01c1963d6",
+                "id": "ASB-A-289375038-45957354",
+                "digest": {
+                  "function_hash": "328496924968262364522595459580258101092",
+                  "length": 1415
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8ef714b803127ca193773c6d032457c01c1963d6",
+                "id": "ASB-A-289375038-c4cfdac6",
+                "digest": {
+                  "line_hashes": [
+                    "244649723409037415636836064401038811231",
+                    "166923582262716703749327566635834012439",
+                    "277246100430995070286525218009120002004",
+                    "85684725380886847157996831565449166682",
+                    "114127719858713300539102811389487493189",
+                    "76703245458864547879356985980065665792"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8391,6 +8505,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289375038-a5616fb1",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289375038-eee81fec",
+                "digest": {
+                  "function_hash": "139816909304504134873004530762090686032",
+                  "length": 2646
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8426,6 +8575,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289375038-3b85e605",
+                "digest": {
+                  "function_hash": "139816909304504134873004530762090686032",
+                  "length": 2646
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289375038-bd1cfe37",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8442,7 +8626,7 @@
         "A-289811388",
         "CVE-2025-0093"
       ],
-      "modified": "2025-03-03T16:12:19.795179Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-03-01T00:00:00Z",
       "references": [
         {
@@ -8487,21 +8671,6 @@
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "handleBondStateChanged",
-                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/771aed3ea225d9ca2ef91e88f45f330ced952772",
-                "id": "ASB-A-289811388-0b045be5",
-                "digest": {
-                  "function_hash": "328496924968262364522595459580258101092",
-                  "length": 1415
-                }
-              },
-              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -8509,7 +8678,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/771aed3ea225d9ca2ef91e88f45f330ced952772",
-                "id": "ASB-A-289811388-5bca2364",
+                "id": "ASB-A-289811388-a27e880f",
                 "digest": {
                   "line_hashes": [
                     "90511511724719131925215018654458747684",
@@ -8522,6 +8691,21 @@
                     "76703245458864547879356985980065665792"
                   ],
                   "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleBondStateChanged",
+                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/771aed3ea225d9ca2ef91e88f45f330ced952772",
+                "id": "ASB-A-289811388-b05e424f",
+                "digest": {
+                  "function_hash": "328496924968262364522595459580258101092",
+                  "length": 1415
                 }
               }
             ]
@@ -8559,6 +8743,44 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289811388-11d4c083",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12"
+                ]
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289811388-740bad96",
+                "digest": {
+                  "function_hash": "50333320920943183786165038602097210095",
+                  "length": 2252
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8594,6 +8816,44 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289811388-0e4abff9",
+                "digest": {
+                  "function_hash": "50333320920943183786165038602097210095",
+                  "length": 2252
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Bluetooth/+/e3be5a26db30094f034a543ac60e6ff5da497bd7",
+                "id": "ASB-A-289811388-d7b6b80c",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                },
+                "match_only_versions": [
+                  "12L"
+                ]
+              }
             ]
           },
           "database_specific": {
@@ -8629,6 +8889,44 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8ef714b803127ca193773c6d032457c01c1963d6"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "handleBondStateChanged",
+                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8ef714b803127ca193773c6d032457c01c1963d6",
+                "id": "ASB-A-289811388-45957354",
+                "digest": {
+                  "function_hash": "328496924968262364522595459580258101092",
+                  "length": 1415
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "android/app/src/com/android/bluetooth/btservice/AdapterService.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8ef714b803127ca193773c6d032457c01c1963d6",
+                "id": "ASB-A-289811388-c4cfdac6",
+                "digest": {
+                  "line_hashes": [
+                    "244649723409037415636836064401038811231",
+                    "166923582262716703749327566635834012439",
+                    "277246100430995070286525218009120002004",
+                    "85684725380886847157996831565449166682",
+                    "114127719858713300539102811389487493189",
+                    "76703245458864547879356985980065665792"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8664,6 +8962,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289811388-a5616fb1",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289811388-eee81fec",
+                "digest": {
+                  "function_hash": "139816909304504134873004530762090686032",
+                  "length": 2646
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8699,6 +9032,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "sendIntent",
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289811388-3b85e605",
+                "digest": {
+                  "function_hash": "139816909304504134873004530762090686032",
+                  "length": 2646
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "android/app/src/com/android/bluetooth/btservice/BondStateMachine.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/038b1e8626399ff3f374d5af987e3efd64a19321",
+                "id": "ASB-A-289811388-bd1cfe37",
+                "digest": {
+                  "line_hashes": [
+                    "184853889957896222110898875606798877732",
+                    "218761626405373525651807859948576675241",
+                    "336443943488219447604565784262223601508"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -8715,7 +9083,7 @@
         "A-308429049",
         "CVE-2024-34730"
       ],
-      "modified": "2025-02-06T19:02:37Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -9665,7 +10033,7 @@
         "A-182583850",
         "CVE-2021-1017"
       ],
-      "modified": "2024-08-29T07:12:53.122030Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -9723,7 +10091,7 @@
         "A-183961896",
         "CVE-2021-0549"
       ],
-      "modified": "2024-08-29T07:12:53.376289Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -9821,7 +10189,7 @@
         "A-183961974",
         "CVE-2021-1006"
       ],
-      "modified": "2024-08-29T07:12:53.440984Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -10022,7 +10390,7 @@
         "A-185513714",
         "CVE-2022-20207"
       ],
-      "modified": "2024-10-02T20:05:18Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {

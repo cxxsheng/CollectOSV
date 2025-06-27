@@ -7,7 +7,7 @@
         "A-137284057",
         "CVE-2019-2194"
       ],
-      "modified": "2024-08-07T19:30:11.965845Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -101,7 +101,7 @@
         "A-150226608",
         "CVE-2020-0392"
       ],
-      "modified": "2024-08-07T19:29:37.441715Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-09-01T00:00:00Z",
       "references": [
         {
@@ -484,7 +484,7 @@
         "A-150226994",
         "CVE-2020-0226"
       ],
-      "modified": "2024-08-07T19:29:05.501728Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-07-01T00:00:00Z",
       "references": [
         {
@@ -580,7 +580,7 @@
         "A-150371903",
         "CVE-2020-0464"
       ],
-      "modified": "2024-08-07T19:29:33.145615Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -746,7 +746,7 @@
         "A-152944488",
         "CVE-2020-0382"
       ],
-      "modified": "2024-08-07T19:30:12.370293Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-09-01T00:00:00Z",
       "references": [
         {
@@ -904,7 +904,7 @@
         "A-157929241",
         "CVE-2021-39691"
       ],
-      "modified": "2024-10-02T23:18:48Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -1842,7 +1842,7 @@
         "A-161812320",
         "CVE-2020-0438"
       ],
-      "modified": "2024-10-01T21:54:45Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-11-01T00:00:00Z",
       "references": [
         {
@@ -2337,7 +2337,7 @@
         "A-162383705",
         "CVE-2020-0420"
       ],
-      "modified": "2024-08-07T19:30:18.521360Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -2468,7 +2468,7 @@
         "A-168211968",
         "CVE-2021-0318"
       ],
-      "modified": "2024-08-07T19:29:35.613007Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -3183,7 +3183,7 @@
         "A-169256435",
         "CVE-2021-0332"
       ],
-      "modified": "2024-08-07T19:29:49.013363Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-02-01T00:00:00Z",
       "references": [
         {
@@ -3368,7 +3368,7 @@
         "A-170212632",
         "CVE-2021-0310"
       ],
-      "modified": "2024-08-07T19:30:10.584590Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -3533,7 +3533,7 @@
         "A-172655291",
         "CVE-2021-0394"
       ],
-      "modified": "2024-08-07T19:29:34.088274Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-03-01T00:00:00Z",
       "references": [
         {
@@ -4451,7 +4451,7 @@
         "A-175190844",
         "CVE-2021-39617"
       ],
-      "modified": "2024-08-07T19:29:47.009496Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-05-01T00:00:00Z",
       "references": [
         {
@@ -7087,7 +7087,7 @@
         "A-179839665",
         "CVE-2021-0684"
       ],
-      "modified": "2024-08-07T19:29:16.768624Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-09-01T00:00:00Z",
       "references": [
         {
@@ -7783,7 +7783,7 @@
         "A-197296414",
         "CVE-2022-20444"
       ],
-      "modified": "2024-08-07T19:29:23.269337Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-05-01T00:00:00Z",
       "references": [
         {
@@ -9546,7 +9546,7 @@
         "A-197336441",
         "CVE-2021-0919"
       ],
-      "modified": "2024-08-07T19:29:21.993569Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-11-01T00:00:00Z",
       "references": [
         {
@@ -9664,7 +9664,7 @@
         "A-203847542",
         "CVE-2021-39620"
       ],
-      "modified": "2024-08-07T19:30:01.872365Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-01-01T00:00:00Z",
       "references": [
         {
@@ -9835,7 +9835,7 @@
         "A-204316511",
         "CVE-2021-39690"
       ],
-      "modified": "2024-08-07T19:29:27.866403Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-03-01T00:00:00Z",
       "references": [
         {
@@ -10404,7 +10404,7 @@
         "A-213644870",
         "CVE-2022-20226"
       ],
-      "modified": "2024-08-16T00:42:06.869034Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-07-01T00:00:00Z",
       "references": [
         {
@@ -10897,7 +10897,7 @@
         "A-214999987",
         "CVE-2022-20357"
       ],
-      "modified": "2024-08-07T19:29:26.241198Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-08-01T00:00:00Z",
       "references": [
         {
@@ -11114,7 +11114,7 @@
         "A-232541124",
         "CVE-2022-20344"
       ],
-      "modified": "2024-08-07T19:29:16.643978Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-08-01T00:00:00Z",
       "references": [
         {
@@ -11501,7 +11501,7 @@
         "A-248031255",
         "CVE-2023-21094"
       ],
-      "modified": "2024-08-07T19:29:59.967825Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-04-01T00:00:00Z",
       "references": [
         {
@@ -12989,7 +12989,7 @@
         "A-268724205",
         "CVE-2023-40096"
       ],
-      "modified": "2024-08-07T19:30:10.185313Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-12-01T00:00:00Z",
       "references": [
         {
@@ -14329,7 +14329,7 @@
         "A-269014004",
         "CVE-2023-21118"
       ],
-      "modified": "2025-02-26T23:01:26Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-05-01T00:00:00Z",
       "references": [
         {
@@ -15355,7 +15355,7 @@
         "A-282919145",
         "CVE-2023-40131"
       ],
-      "modified": "2025-02-26T22:43:30Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-10-01T00:00:00Z",
       "references": [
         {
@@ -15518,7 +15518,7 @@
         "A-294609150",
         "CVE-2024-0033"
       ],
-      "modified": "2024-08-07T19:29:20.430249Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-02-01T00:00:00Z",
       "references": [
         {
@@ -16325,7 +16325,7 @@
         "A-336648613",
         "CVE-2024-34743"
       ],
-      "modified": "2024-08-12T22:44:48Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-08-01T00:00:00Z",
       "references": [
         {
@@ -16663,7 +16663,7 @@
         "A-343129193",
         "CVE-2025-22438"
       ],
-      "modified": "2025-04-08T16:00:23Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-04-01T00:00:00Z",
       "references": [
         {
@@ -16715,7 +16715,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/f50323a1538fc8da33a14c8ab2ee2fb02d45123d",
-                "id": "ASB-A-343129193-144dc17c",
+                "id": "ASB-A-343129193-5e1f7d80",
                 "digest": {
                   "line_hashes": [
                     "159950434618348112404932011639717993461",
@@ -16728,21 +16728,6 @@
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "InputDispatcher::afterKeyEventLockedInterruptable",
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/f50323a1538fc8da33a14c8ab2ee2fb02d45123d",
-                "id": "ASB-A-343129193-1e1fd219",
-                "digest": {
-                  "function_hash": "7225614367579260001138295715854138188",
-                  "length": 5181
-                }
-              },
-              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -16750,7 +16735,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/f50323a1538fc8da33a14c8ab2ee2fb02d45123d",
-                "id": "ASB-A-343129193-95fcb596",
+                "id": "ASB-A-343129193-84955ea6",
                 "digest": {
                   "line_hashes": [
                     "61502333314370103843416371831218019802",
@@ -16781,10 +16766,25 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/f50323a1538fc8da33a14c8ab2ee2fb02d45123d",
-                "id": "ASB-A-343129193-a98e686a",
+                "id": "ASB-A-343129193-973f9c64",
                 "digest": {
                   "function_hash": "157793954941330305983208832721457139567",
                   "length": 2015
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "InputDispatcher::afterKeyEventLockedInterruptable",
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/f50323a1538fc8da33a14c8ab2ee2fb02d45123d",
+                "id": "ASB-A-343129193-ffa60070",
+                "digest": {
+                  "function_hash": "7225614367579260001138295715854138188",
+                  "length": 5181
                 }
               }
             ]
@@ -16825,6 +16825,40 @@
             ],
             "vanir_signatures": [
               {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.h"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/7d7ac480ba006cff1f64eef416bb53f29ef9a146",
+                "id": "ASB-A-343129193-790e1982",
+                "digest": {
+                  "line_hashes": [
+                    "149557283037914210267265552861268837594",
+                    "275561151031896725076089099864207847282",
+                    "189049331956307362867007562768652933814",
+                    "190614335634123759904063618450949681247"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "InputDispatcher::doDispatchCycleFinishedCommand",
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/7d7ac480ba006cff1f64eef416bb53f29ef9a146",
+                "id": "ASB-A-343129193-8d5df45c",
+                "digest": {
+                  "function_hash": "183201712386919302288253379804327848145",
+                  "length": 1761
+                }
+              },
+              {
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
@@ -16833,7 +16867,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/7d7ac480ba006cff1f64eef416bb53f29ef9a146",
-                "id": "ASB-A-343129193-3a181490",
+                "id": "ASB-A-343129193-a4290a92",
                 "digest": {
                   "function_hash": "77924214385883978679576738862022832706",
                   "length": 4910
@@ -16847,7 +16881,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/7d7ac480ba006cff1f64eef416bb53f29ef9a146",
-                "id": "ASB-A-343129193-6040e001",
+                "id": "ASB-A-343129193-f94eeb81",
                 "digest": {
                   "line_hashes": [
                     "272916813047980256495446035476821482710",
@@ -16864,40 +16898,6 @@
                     "145459749775824226004547072647237692224",
                     "180736064032880293857127638477990782434",
                     "319360596727576648455008791876136892903"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "InputDispatcher::doDispatchCycleFinishedCommand",
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/7d7ac480ba006cff1f64eef416bb53f29ef9a146",
-                "id": "ASB-A-343129193-b904c7c8",
-                "digest": {
-                  "function_hash": "183201712386919302288253379804327848145",
-                  "length": 1761
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/7d7ac480ba006cff1f64eef416bb53f29ef9a146",
-                "id": "ASB-A-343129193-baf951d2",
-                "digest": {
-                  "line_hashes": [
-                    "149557283037914210267265552861268837594",
-                    "275561151031896725076089099864207847282",
-                    "189049331956307362867007562768652933814",
-                    "190614335634123759904063618450949681247"
                   ],
                   "threshold": 0.9
                 }
@@ -16940,18 +16940,23 @@
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
-                  "function": "InputDispatcher::doDispatchCycleFinishedCommand",
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/f68fc4c5751d08fdd29488e6c0394efce579cc54",
-                "id": "ASB-A-343129193-2a4bc77b",
+                "id": "ASB-A-343129193-1dd1aaa4",
                 "digest": {
-                  "function_hash": "183201712386919302288253379804327848145",
-                  "length": 1761
+                  "line_hashes": [
+                    "311380928505758434940509306963907185276",
+                    "157809458925321809625484371393788931803",
+                    "273994770666812008232124080381606098536",
+                    "141686357255351520892512436530105755427",
+                    "193700556358493602684515138268684311286"
+                  ],
+                  "threshold": 0.9
                 }
               },
               {
@@ -16962,7 +16967,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/f68fc4c5751d08fdd29488e6c0394efce579cc54",
-                "id": "ASB-A-343129193-8a2caf10",
+                "id": "ASB-A-343129193-855c4e00",
                 "digest": {
                   "line_hashes": [
                     "272916813047980256495446035476821482710",
@@ -16985,26 +16990,6 @@
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/f68fc4c5751d08fdd29488e6c0394efce579cc54",
-                "id": "ASB-A-343129193-92d01bf7",
-                "digest": {
-                  "line_hashes": [
-                    "311380928505758434940509306963907185276",
-                    "157809458925321809625484371393788931803",
-                    "273994770666812008232124080381606098536",
-                    "141686357255351520892512436530105755427",
-                    "193700556358493602684515138268684311286"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
@@ -17013,10 +16998,25 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/native/+/f68fc4c5751d08fdd29488e6c0394efce579cc54",
-                "id": "ASB-A-343129193-ab8c1050",
+                "id": "ASB-A-343129193-ba4e8e97",
                 "digest": {
                   "function_hash": "95720688057429602834626482160242287409",
                   "length": 4980
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "InputDispatcher::doDispatchCycleFinishedCommand",
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/f68fc4c5751d08fdd29488e6c0394efce579cc54",
+                "id": "ASB-A-343129193-e9b2535c",
+                "digest": {
+                  "function_hash": "183201712386919302288253379804327848145",
+                  "length": 1761
                 }
               }
             ]
@@ -17035,7 +17035,7 @@
         "A-347307756",
         "CVE-2024-40660"
       ],
-      "modified": "2025-01-09T21:16:13Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2024-11-01T00:00:00Z",
       "references": [
         {
@@ -18196,7 +18196,7 @@
         "A-359179312",
         "CVE-2024-49746"
       ],
-      "modified": "2025-02-07T16:12:50.570185Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-02-01T00:00:00Z",
       "references": [
         {
@@ -19135,7 +19135,7 @@
         "A-370831157",
         "CVE-2024-49745"
       ],
-      "modified": "2025-02-06T03:42:52Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -19543,7 +19543,7 @@
         "A-370840874",
         "CVE-2024-49738"
       ],
-      "modified": "2025-02-06T03:43:19Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -20141,7 +20141,7 @@
         "A-382775095",
         "CVE-2025-0078"
       ],
-      "modified": "2025-03-03T16:12:21.533514Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-03-01T00:00:00Z",
       "references": [
         {
@@ -20183,6 +20183,42 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/90b14eab96ef0de6f91375a2d55768798ce11059"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "main",
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/90b14eab96ef0de6f91375a2d55768798ce11059",
+                "id": "ASB-A-382775095-820644a0",
+                "digest": {
+                  "function_hash": "103054758997303530909674299488431052806",
+                  "length": 1631
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/90b14eab96ef0de6f91375a2d55768798ce11059",
+                "id": "ASB-A-382775095-e7c70f69",
+                "digest": {
+                  "line_hashes": [
+                    "337286965434251483831955774888882175871",
+                    "313999500694981596962968914895666274670",
+                    "41442552728851546643087969104938208301",
+                    "239001468851271657634345280584581928601"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -20218,6 +20254,42 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-b4c8b016",
+                "digest": {
+                  "line_hashes": [
+                    "5021685984790554028578586044454569582",
+                    "158063599821068648845358961348018589092",
+                    "1644809115128101204043221543353588375",
+                    "239001468851271657634345280584581928601"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "main",
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-ba47c4f3",
+                "digest": {
+                  "function_hash": "255594495738122695466899620609061562274",
+                  "length": 979
+                }
+              }
             ]
           },
           "database_specific": {
@@ -20253,6 +20325,42 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "main",
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-5d35d6a0",
+                "digest": {
+                  "function_hash": "255594495738122695466899620609061562274",
+                  "length": 979
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-b31eb96f",
+                "digest": {
+                  "line_hashes": [
+                    "5021685984790554028578586044454569582",
+                    "158063599821068648845358961348018589092",
+                    "1644809115128101204043221543353588375",
+                    "239001468851271657634345280584581928601"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -20288,6 +20396,42 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/f7e88ce3ad00852c92ec23997bb78b0a9b358d65"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/f7e88ce3ad00852c92ec23997bb78b0a9b358d65",
+                "id": "ASB-A-382775095-708244dd",
+                "digest": {
+                  "line_hashes": [
+                    "337286965434251483831955774888882175871",
+                    "313999500694981596962968914895666274670",
+                    "41442552728851546643087969104938208301",
+                    "239001468851271657634345280584581928601"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "main",
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/f7e88ce3ad00852c92ec23997bb78b0a9b358d65",
+                "id": "ASB-A-382775095-ccbbbdd8",
+                "digest": {
+                  "function_hash": "331552110268812508616993286843637271200",
+                  "length": 1436
+                }
+              }
             ]
           },
           "database_specific": {
@@ -20323,6 +20467,42 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "main",
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-447a6095",
+                "digest": {
+                  "function_hash": "255594495738122695466899620609061562274",
+                  "length": 979
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-6a9977f9",
+                "digest": {
+                  "line_hashes": [
+                    "5021685984790554028578586044454569582",
+                    "158063599821068648845358961348018589092",
+                    "1644809115128101204043221543353588375",
+                    "239001468851271657634345280584581928601"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -20358,6 +20538,42 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "main",
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-1abf1cc4",
+                "digest": {
+                  "function_hash": "255594495738122695466899620609061562274",
+                  "length": 979
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "cmds/servicemanager/main.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6c86b6c926ab527eb88804711beb4bd09e348e06",
+                "id": "ASB-A-382775095-c74797f7",
+                "digest": {
+                  "line_hashes": [
+                    "5021685984790554028578586044454569582",
+                    "158063599821068648845358961348018589092",
+                    "1644809115128101204043221543353588375",
+                    "239001468851271657634345280584581928601"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -20374,7 +20590,7 @@
         "A-193033243",
         "CVE-2021-1027"
       ],
-      "modified": "2024-08-29T06:57:53.578837Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -20833,7 +21049,7 @@
         "A-193034677",
         "CVE-2021-1029"
       ],
-      "modified": "2024-08-29T06:57:53.641596Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -21292,7 +21508,7 @@
         "A-193034683",
         "CVE-2021-1028"
       ],
-      "modified": "2024-08-29T06:57:53.703888Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -21751,7 +21967,7 @@
         "A-220733817",
         "CVE-2022-20201"
       ],
-      "modified": "2024-10-02T20:05:18Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -21848,7 +22064,7 @@
         "A-230358834",
         "CVE-2023-21034"
       ],
-      "modified": "2024-08-29T07:13:04.615039Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -22038,7 +22254,7 @@
         "A-237291506",
         "CVE-2022-20540"
       ],
-      "modified": "2024-08-29T07:13:06.315615Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -22190,7 +22406,7 @@
         "A-242688355",
         "CVE-2023-21031"
       ],
-      "modified": "2024-08-29T06:58:01.748656Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -22635,7 +22851,7 @@
         "A-245770596",
         "CVE-2022-20554"
       ],
-      "modified": "2024-08-29T07:13:10.512953Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -22825,7 +23041,7 @@
         "A-261085213",
         "CVE-2023-21171"
       ],
-      "modified": "2024-08-29T07:13:13.899245Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -23000,7 +23216,7 @@
         "A-264422251",
         "CVE-2023-21641"
       ],
-      "modified": "2024-08-29T06:57:49.014116Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {

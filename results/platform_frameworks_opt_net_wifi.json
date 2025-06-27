@@ -7,7 +7,7 @@
         "A-154114734",
         "CVE-2021-0466"
       ],
-      "modified": "2024-08-07T19:29:33.686626Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -130,7 +130,7 @@
         "A-157748906",
         "CVE-2020-0378"
       ],
-      "modified": "2024-08-07T19:30:15.750413Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -427,7 +427,7 @@
         "A-159373687",
         "CVE-2020-0459"
       ],
-      "modified": "2024-08-07T19:29:35.550778Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -2382,7 +2382,7 @@
         "A-174749461",
         "CVE-2021-0390"
       ],
-      "modified": "2024-08-07T19:29:16.966450Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2021-03-01T00:00:00Z",
       "references": [
         {
@@ -4322,7 +4322,7 @@
         "A-231985227",
         "CVE-2022-20463"
       ],
-      "modified": "2024-08-07T19:29:51.390690Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-04-01T00:00:00Z",
       "references": [
         {
@@ -5346,7 +5346,7 @@
         "A-241927115",
         "CVE-2022-20481"
       ],
-      "modified": "2024-08-07T19:29:02.863807Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -5857,7 +5857,7 @@
         "A-245299920",
         "CVE-2023-20910"
       ],
-      "modified": "2024-08-07T19:29:20.231220Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {
@@ -7345,7 +7345,7 @@
         "A-274445194",
         "CVE-2023-21243"
       ],
-      "modified": "2024-08-07T19:29:51.320046Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-07-01T00:00:00Z",
       "references": [
         {
@@ -8311,7 +8311,7 @@
         "A-275339978",
         "CVE-2023-21252"
       ],
-      "modified": "2024-08-07T19:29:44.412010Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2023-10-01T00:00:00Z",
       "references": [
         {
@@ -8361,22 +8361,33 @@
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
+                  "function": "validatePassword",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/8f1ed4e94a6cb5392700fb8da4b564b7a548ed94",
-                "id": "ASB-A-275339978-5fc32189",
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
+                "id": "ASB-A-275339978-528cad75",
                 "digest": {
-                  "line_hashes": [
-                    "280625633156176909124279285935907555955",
-                    "52497664229250534763402127255906375127",
-                    "41573046369124035958448883129677742483",
-                    "114301692649405901437296768948787992145"
-                  ],
-                  "threshold": 0.9
+                  "function_hash": "113585915251600050840737985464826152653",
+                  "length": 1288
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateNetworkSpecifier",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
+                "id": "ASB-A-275339978-5ce7de18",
+                "digest": {
+                  "function_hash": "99345704220338475296555321776542753168",
+                  "length": 1603
                 }
               },
               {
@@ -8388,10 +8399,25 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/8f1ed4e94a6cb5392700fb8da4b564b7a548ed94",
-                "id": "ASB-A-275339978-68d62da8",
+                "id": "ASB-A-275339978-614ca38b",
                 "digest": {
                   "function_hash": "55002330786991901368189826932549673368",
                   "length": 1245
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validate",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
+                "id": "ASB-A-275339978-82573a6c",
+                "digest": {
+                  "function_hash": "236784019672658518815624879445234750931",
+                  "length": 1378
                 }
               },
               {
@@ -8402,7 +8428,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
-                "id": "ASB-A-275339978-8caae672",
+                "id": "ASB-A-275339978-ba1bf904",
                 "digest": {
                   "line_hashes": [
                     "277607735639084051351437504779192166773",
@@ -8438,48 +8464,22 @@
                 }
               },
               {
-                "signature_type": "Function",
+                "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validate",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
-                "id": "ASB-A-275339978-ada518e9",
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/8f1ed4e94a6cb5392700fb8da4b564b7a548ed94",
+                "id": "ASB-A-275339978-dbe45dd6",
                 "digest": {
-                  "function_hash": "236784019672658518815624879445234750931",
-                  "length": 1378
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validatePassword",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
-                "id": "ASB-A-275339978-d02b8080",
-                "digest": {
-                  "function_hash": "113585915251600050840737985464826152653",
-                  "length": 1288
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validateNetworkSpecifier",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/61ba0e1b72469dbf4b4b196341b8d95cd2d3a4d4",
-                "id": "ASB-A-275339978-f5bd0ee4",
-                "digest": {
-                  "function_hash": "99345704220338475296555321776542753168",
-                  "length": 1603
+                  "line_hashes": [
+                    "280625633156176909124279285935907555955",
+                    "52497664229250534763402127255906375127",
+                    "41573046369124035958448883129677742483",
+                    "114301692649405901437296768948787992145"
+                  ],
+                  "threshold": 0.9
                 }
               }
             ]
@@ -8524,30 +8524,30 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validateNetworkSpecifier",
+                  "function": "validate",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/2cfaee8ef94211cdef61f407d953017e091c21d3",
-                "id": "ASB-A-275339978-293100aa",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/07d112fb45449e06233b71e877e835084c76f220",
+                "id": "ASB-A-275339978-3135cdbd",
                 "digest": {
-                  "function_hash": "133501368348594951495572141339538919549",
-                  "length": 1800
+                  "function_hash": "312489270930895446294466225407114677400",
+                  "length": 1460
                 }
               },
               {
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validate",
+                  "function": "validatePassword",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/07d112fb45449e06233b71e877e835084c76f220",
-                "id": "ASB-A-275339978-631cb735",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/2cfaee8ef94211cdef61f407d953017e091c21d3",
+                "id": "ASB-A-275339978-5b461a28",
                 "digest": {
-                  "function_hash": "312489270930895446294466225407114677400",
-                  "length": 1460
+                  "function_hash": "113585915251600050840737985464826152653",
+                  "length": 1288
                 }
               },
               {
@@ -8558,7 +8558,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/2cfaee8ef94211cdef61f407d953017e091c21d3",
-                "id": "ASB-A-275339978-802e4d83",
+                "id": "ASB-A-275339978-82a12d4d",
                 "digest": {
                   "line_hashes": [
                     "277607735639084051351437504779192166773",
@@ -8597,30 +8597,30 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validatePassword",
+                  "function": "validate",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/2cfaee8ef94211cdef61f407d953017e091c21d3",
-                "id": "ASB-A-275339978-bcbb8f85",
+                "id": "ASB-A-275339978-a7266584",
                 "digest": {
-                  "function_hash": "113585915251600050840737985464826152653",
-                  "length": 1288
+                  "function_hash": "56052002192152578299254926677868344896",
+                  "length": 1612
                 }
               },
               {
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validate",
+                  "function": "validateNetworkSpecifier",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/2cfaee8ef94211cdef61f407d953017e091c21d3",
-                "id": "ASB-A-275339978-bf2f53c2",
+                "id": "ASB-A-275339978-c0747f62",
                 "digest": {
-                  "function_hash": "56052002192152578299254926677868344896",
-                  "length": 1612
+                  "function_hash": "133501368348594951495572141339538919549",
+                  "length": 1800
                 }
               }
             ]
@@ -8665,15 +8665,15 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validate",
+                  "function": "validateNetworkSpecifier",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/9c914b0be9b553164b343ca981b5d57e163a4574",
-                "id": "ASB-A-275339978-70b1c82b",
+                "id": "ASB-A-275339978-8a19f951",
                 "digest": {
-                  "function_hash": "291374930995326476730066646699346418450",
-                  "length": 1182
+                  "function_hash": "237310761690405457136832680786250504635",
+                  "length": 1525
                 }
               },
               {
@@ -8685,7 +8685,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/9c914b0be9b553164b343ca981b5d57e163a4574",
-                "id": "ASB-A-275339978-7e40527d",
+                "id": "ASB-A-275339978-b9c37793",
                 "digest": {
                   "function_hash": "113585915251600050840737985464826152653",
                   "length": 1288
@@ -8695,15 +8695,48 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validateNetworkSpecifier",
+                  "function": "validate",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/9c914b0be9b553164b343ca981b5d57e163a4574",
-                "id": "ASB-A-275339978-8476b595",
+                "id": "ASB-A-275339978-bc5ce57d",
                 "digest": {
-                  "function_hash": "237310761690405457136832680786250504635",
-                  "length": 1525
+                  "function_hash": "291374930995326476730066646699346418450",
+                  "length": 1182
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/96aaf7f7b27f709b3cb06d054cb7e3fd92e890a1",
+                "id": "ASB-A-275339978-bd29d56a",
+                "digest": {
+                  "line_hashes": [
+                    "7110031840407855398778834953959674632",
+                    "47435890087330794492572950125588576685",
+                    "339116388075063873109332456679256793706"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validate",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/96aaf7f7b27f709b3cb06d054cb7e3fd92e890a1",
+                "id": "ASB-A-275339978-efdb6343",
+                "digest": {
+                  "function_hash": "9151149505174826244639553215005358504",
+                  "length": 1049
                 }
               },
               {
@@ -8714,7 +8747,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/9c914b0be9b553164b343ca981b5d57e163a4574",
-                "id": "ASB-A-275339978-972e4e73",
+                "id": "ASB-A-275339978-fd243616",
                 "digest": {
                   "line_hashes": [
                     "277607735639084051351437504779192166773",
@@ -8747,39 +8780,6 @@
                     "50513248689474124203453429516156951922"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/96aaf7f7b27f709b3cb06d054cb7e3fd92e890a1",
-                "id": "ASB-A-275339978-ac52e766",
-                "digest": {
-                  "line_hashes": [
-                    "7110031840407855398778834953959674632",
-                    "47435890087330794492572950125588576685",
-                    "339116388075063873109332456679256793706"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validate",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/96aaf7f7b27f709b3cb06d054cb7e3fd92e890a1",
-                "id": "ASB-A-275339978-f74fc6c1",
-                "digest": {
-                  "function_hash": "9151149505174826244639553215005358504",
-                  "length": 1049
                 }
               }
             ]
@@ -8821,6 +8821,51 @@
             ],
             "vanir_signatures": [
               {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateNetworkSpecifier",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/a4450ec66cea1efac9b6ff2133e0cec5f6faad91",
+                "id": "ASB-A-275339978-14e7d40e",
+                "digest": {
+                  "function_hash": "237310761690405457136832680786250504635",
+                  "length": 1525
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validate",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/a4450ec66cea1efac9b6ff2133e0cec5f6faad91",
+                "id": "ASB-A-275339978-3e47a40f",
+                "digest": {
+                  "function_hash": "291374930995326476730066646699346418450",
+                  "length": 1182
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validate",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/ea89795defa507bb7f0897e97d126eb4e76b6597",
+                "id": "ASB-A-275339978-42055fc8",
+                "digest": {
+                  "function_hash": "9151149505174826244639553215005358504",
+                  "length": 1049
+                }
+              },
+              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -8828,7 +8873,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/a4450ec66cea1efac9b6ff2133e0cec5f6faad91",
-                "id": "ASB-A-275339978-0783c9ab",
+                "id": "ASB-A-275339978-81929496",
                 "digest": {
                   "line_hashes": [
                     "277607735639084051351437504779192166773",
@@ -8867,42 +8912,12 @@
                 "signature_type": "Function",
                 "signature_version": "v1",
                 "target": {
-                  "function": "validate",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/a4450ec66cea1efac9b6ff2133e0cec5f6faad91",
-                "id": "ASB-A-275339978-217ee728",
-                "digest": {
-                  "function_hash": "291374930995326476730066646699346418450",
-                  "length": 1182
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validate",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/ea89795defa507bb7f0897e97d126eb4e76b6597",
-                "id": "ASB-A-275339978-35be000e",
-                "digest": {
-                  "function_hash": "9151149505174826244639553215005358504",
-                  "length": 1049
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
                   "function": "validatePassword",
                   "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/a4450ec66cea1efac9b6ff2133e0cec5f6faad91",
-                "id": "ASB-A-275339978-7fd700c2",
+                "id": "ASB-A-275339978-ce369c32",
                 "digest": {
                   "function_hash": "113585915251600050840737985464826152653",
                   "length": 1288
@@ -8916,7 +8931,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/ea89795defa507bb7f0897e97d126eb4e76b6597",
-                "id": "ASB-A-275339978-e2276aec",
+                "id": "ASB-A-275339978-f2c12f1f",
                 "digest": {
                   "line_hashes": [
                     "7110031840407855398778834953959674632",
@@ -8924,21 +8939,6 @@
                     "339116388075063873109332456679256793706"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validateNetworkSpecifier",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/a4450ec66cea1efac9b6ff2133e0cec5f6faad91",
-                "id": "ASB-A-275339978-f4c82960",
-                "digest": {
-                  "function_hash": "237310761690405457136832680786250504635",
-                  "length": 1525
                 }
               }
             ]
@@ -8980,6 +8980,85 @@
             ],
             "vanir_signatures": [
               {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validateNetworkSpecifier",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
+                "id": "ASB-A-275339978-0b87678c",
+                "digest": {
+                  "function_hash": "237310761690405457136832680786250504635",
+                  "length": 1525
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/c4142aedf5a09294cd4f2b184a1564b1c4e203ba",
+                "id": "ASB-A-275339978-0bffde25",
+                "digest": {
+                  "line_hashes": [
+                    "280625633156176909124279285935907555955",
+                    "52497664229250534763402127255906375127",
+                    "41573046369124035958448883129677742483",
+                    "114301692649405901437296768948787992145"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validatePassword",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
+                "id": "ASB-A-275339978-1f3f38d0",
+                "digest": {
+                  "function_hash": "113585915251600050840737985464826152653",
+                  "length": 1288
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validate",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/c4142aedf5a09294cd4f2b184a1564b1c4e203ba",
+                "id": "ASB-A-275339978-5d1072a1",
+                "digest": {
+                  "function_hash": "55002330786991901368189826932549673368",
+                  "length": 1245
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "validate",
+                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
+                "id": "ASB-A-275339978-7b0fea98",
+                "digest": {
+                  "function_hash": "236784019672658518815624879445234750931",
+                  "length": 1378
+                }
+              },
+              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -8987,7 +9066,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
-                "id": "ASB-A-275339978-00662757",
+                "id": "ASB-A-275339978-8869932b",
                 "digest": {
                   "line_hashes": [
                     "277607735639084051351437504779192166773",
@@ -9020,85 +9099,6 @@
                     "50513248689474124203453429516156951922"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validatePassword",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
-                "id": "ASB-A-275339978-0b6ccfa3",
-                "digest": {
-                  "function_hash": "113585915251600050840737985464826152653",
-                  "length": 1288
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validate",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
-                "id": "ASB-A-275339978-36660337",
-                "digest": {
-                  "function_hash": "236784019672658518815624879445234750931",
-                  "length": 1378
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/c4142aedf5a09294cd4f2b184a1564b1c4e203ba",
-                "id": "ASB-A-275339978-3f52a843",
-                "digest": {
-                  "line_hashes": [
-                    "280625633156176909124279285935907555955",
-                    "52497664229250534763402127255906375127",
-                    "41573046369124035958448883129677742483",
-                    "114301692649405901437296768948787992145"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validate",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/c4142aedf5a09294cd4f2b184a1564b1c4e203ba",
-                "id": "ASB-A-275339978-e283181f",
-                "digest": {
-                  "function_hash": "55002330786991901368189826932549673368",
-                  "length": 1245
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "validateNetworkSpecifier",
-                  "file": "service/java/com/android/server/wifi/WifiConfigurationUtil.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Wifi/+/36deae20de1a8905e6cc72764e449b2d6e469f9e",
-                "id": "ASB-A-275339978-e8c7576a",
-                "digest": {
-                  "function_hash": "237310761690405457136832680786250504635",
-                  "length": 1525
                 }
               }
             ]

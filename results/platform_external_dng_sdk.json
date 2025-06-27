@@ -7,7 +7,7 @@
         "A-156261521",
         "CVE-2020-9589"
       ],
-      "modified": "2024-08-07T19:30:19.727317Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2020-07-01T00:00:00Z",
       "references": [
         {
@@ -330,7 +330,7 @@
         "A-346797131",
         "CVE-2025-22423"
       ],
-      "modified": "2025-04-08T15:58:55Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-04-01T00:00:00Z",
       "references": [
         {
@@ -375,6 +375,21 @@
             ],
             "vanir_signatures": [
               {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_ifd::ParseTag",
+                  "file": "source/dng_ifd.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/c3a37d2bb97c78bac71b0293866a2397df00f8b0",
+                "id": "ASB-A-346797131-211cbe7e",
+                "digest": {
+                  "function_hash": "292124514316656757492031028141477568026",
+                  "length": 29200
+                }
+              },
+              {
                 "signature_type": "Line",
                 "signature_version": "v1",
                 "target": {
@@ -382,7 +397,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/dng_sdk/+/c3a37d2bb97c78bac71b0293866a2397df00f8b0",
-                "id": "ASB-A-346797131-6c9c5d59",
+                "id": "ASB-A-346797131-77874c80",
                 "digest": {
                   "line_hashes": [
                     "208672506713105172373739116911822014320",
@@ -399,28 +414,7 @@
                     "176557504863404244437421911285817601820"
                   ],
                   "threshold": 0.9
-                },
-                "match_only_versions": [
-                  "15-next"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "dng_ifd::ParseTag",
-                  "file": "source/dng_ifd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/c3a37d2bb97c78bac71b0293866a2397df00f8b0",
-                "id": "ASB-A-346797131-be088fbe",
-                "digest": {
-                  "function_hash": "292124514316656757492031028141477568026",
-                  "length": 29200
-                },
-                "match_only_versions": [
-                  "15-next"
-                ]
+                }
               }
             ]
           },
@@ -457,6 +451,50 @@
             "spl": "2025-04-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/445d85031ac9c1cffd06bf8b3356d9391170a319"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_ifd.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/445d85031ac9c1cffd06bf8b3356d9391170a319",
+                "id": "ASB-A-346797131-2f698fe3",
+                "digest": {
+                  "line_hashes": [
+                    "208672506713105172373739116911822014320",
+                    "77350146005984752882779486110317666313",
+                    "18756321286853293097438210661910775849",
+                    "226512580180044837456102984910510736498",
+                    "15565942549344657871018324394238324927",
+                    "290985152654726591463878210707806025492",
+                    "299218795221087280037852351353464286798",
+                    "285675980618954361851160847246471495360",
+                    "59096683325698961708889591378635956025",
+                    "130231004659496891579079062090514800854",
+                    "8702532287776864963441243655434442831",
+                    "176557504863404244437421911285817601820"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_ifd::ParseTag",
+                  "file": "source/dng_ifd.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/445d85031ac9c1cffd06bf8b3356d9391170a319",
+                "id": "ASB-A-346797131-e0a5e56d",
+                "digest": {
+                  "function_hash": "292124514316656757492031028141477568026",
+                  "length": 29200
+                }
+              }
             ]
           },
           "database_specific": {
@@ -502,7 +540,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/dng_sdk/+/f2e6d5540ca1eda4d313bf4071a29ef8bffea7f7",
-                "id": "ASB-A-346797131-326c37a8",
+                "id": "ASB-A-346797131-8c1f4713",
                 "digest": {
                   "line_hashes": [
                     "208672506713105172373739116911822014320",
@@ -519,10 +557,7 @@
                     "176557504863404244437421911285817601820"
                   ],
                   "threshold": 0.9
-                },
-                "match_only_versions": [
-                  "13"
-                ]
+                }
               },
               {
                 "signature_type": "Function",
@@ -533,14 +568,11 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/dng_sdk/+/f2e6d5540ca1eda4d313bf4071a29ef8bffea7f7",
-                "id": "ASB-A-346797131-aa39fe2c",
+                "id": "ASB-A-346797131-e6a30110",
                 "digest": {
                   "function_hash": "292124514316656757492031028141477568026",
                   "length": 29200
-                },
-                "match_only_versions": [
-                  "13"
-                ]
+                }
               }
             ]
           },
@@ -588,14 +620,11 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/dng_sdk/+/d11e3fa5130e1cd249e94ba3575a1b6e7903d056",
-                "id": "ASB-A-346797131-2ca5ead5",
+                "id": "ASB-A-346797131-bc146332",
                 "digest": {
                   "function_hash": "292124514316656757492031028141477568026",
                   "length": 29200
-                },
-                "match_only_versions": [
-                  "14"
-                ]
+                }
               },
               {
                 "signature_type": "Line",
@@ -605,7 +634,7 @@
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/dng_sdk/+/d11e3fa5130e1cd249e94ba3575a1b6e7903d056",
-                "id": "ASB-A-346797131-6cfd36de",
+                "id": "ASB-A-346797131-e71c86e8",
                 "digest": {
                   "line_hashes": [
                     "208672506713105172373739116911822014320",
@@ -622,10 +651,7 @@
                     "176557504863404244437421911285817601820"
                   ],
                   "threshold": 0.9
-                },
-                "match_only_versions": [
-                  "14"
-                ]
+                }
               }
             ]
           },
@@ -643,7 +669,7 @@
         "A-347735428",
         "CVE-2025-0081"
       ],
-      "modified": "2025-03-03T16:12:20.491182Z",
+      "modified": "2025-06-26T14:51:18.212593Z",
       "published": "2025-03-01T00:00:00Z",
       "references": [
         {
@@ -685,6 +711,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/a22d1f0f07d998a53dd49a941d3a588f55b36399"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::HuffDecode",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/a22d1f0f07d998a53dd49a941d3a588f55b36399",
+                "id": "ASB-A-347735428-07f2a8c3",
+                "digest": {
+                  "function_hash": "44118990782442989971520362830657759096",
+                  "length": 481
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/a22d1f0f07d998a53dd49a941d3a588f55b36399",
+                "id": "ASB-A-347735428-75f7b436",
+                "digest": {
+                  "line_hashes": [
+                    "202547611177054701034872398982999876811",
+                    "159620168567637667498119843984396843211",
+                    "44069793425545066664780021469054570000"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -720,6 +781,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/ef6549c8eb3b202e8b47c41ba39d7957274aa12b"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::HuffDecode",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/ef6549c8eb3b202e8b47c41ba39d7957274aa12b",
+                "id": "ASB-A-347735428-6f7c4138",
+                "digest": {
+                  "function_hash": "44118990782442989971520362830657759096",
+                  "length": 481
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/ef6549c8eb3b202e8b47c41ba39d7957274aa12b",
+                "id": "ASB-A-347735428-b6d59679",
+                "digest": {
+                  "line_hashes": [
+                    "202547611177054701034872398982999876811",
+                    "159620168567637667498119843984396843211",
+                    "44069793425545066664780021469054570000"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -755,6 +851,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/97cbb86f575c92ccd097407bb1fe5ad9bb532944"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/97cbb86f575c92ccd097407bb1fe5ad9bb532944",
+                "id": "ASB-A-347735428-88cce0b2",
+                "digest": {
+                  "line_hashes": [
+                    "202547611177054701034872398982999876811",
+                    "159620168567637667498119843984396843211",
+                    "44069793425545066664780021469054570000"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::HuffDecode",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/97cbb86f575c92ccd097407bb1fe5ad9bb532944",
+                "id": "ASB-A-347735428-ace64fae",
+                "digest": {
+                  "function_hash": "44118990782442989971520362830657759096",
+                  "length": 481
+                }
+              }
             ]
           },
           "database_specific": {
@@ -790,6 +921,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/6fd49d6ecdf53aa96b290ee5b3e30a7d73c71679"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::HuffDecode",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/6fd49d6ecdf53aa96b290ee5b3e30a7d73c71679",
+                "id": "ASB-A-347735428-6111fb64",
+                "digest": {
+                  "function_hash": "44118990782442989971520362830657759096",
+                  "length": 481
+                }
+              },
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/6fd49d6ecdf53aa96b290ee5b3e30a7d73c71679",
+                "id": "ASB-A-347735428-df2e0ae7",
+                "digest": {
+                  "line_hashes": [
+                    "202547611177054701034872398982999876811",
+                    "159620168567637667498119843984396843211",
+                    "44069793425545066664780021469054570000"
+                  ],
+                  "threshold": 0.9
+                }
+              }
             ]
           },
           "database_specific": {
@@ -825,6 +991,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/d125388473163ed70452c6e615b3c788805e0168"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/d125388473163ed70452c6e615b3c788805e0168",
+                "id": "ASB-A-347735428-36c60252",
+                "digest": {
+                  "line_hashes": [
+                    "202547611177054701034872398982999876811",
+                    "159620168567637667498119843984396843211",
+                    "44069793425545066664780021469054570000"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::HuffDecode",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/d125388473163ed70452c6e615b3c788805e0168",
+                "id": "ASB-A-347735428-921f5dfc",
+                "digest": {
+                  "function_hash": "44118990782442989971520362830657759096",
+                  "length": 481
+                }
+              }
             ]
           },
           "database_specific": {
@@ -860,6 +1061,41 @@
             "spl": "2025-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dng_sdk/+/89f7028f91aa2979fa88f51cdd37b6444b5cd9d9"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "target": {
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/89f7028f91aa2979fa88f51cdd37b6444b5cd9d9",
+                "id": "ASB-A-347735428-774e0d05",
+                "digest": {
+                  "line_hashes": [
+                    "202547611177054701034872398982999876811",
+                    "159620168567637667498119843984396843211",
+                    "44069793425545066664780021469054570000"
+                  ],
+                  "threshold": 0.9
+                }
+              },
+              {
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "target": {
+                  "function": "dng_lossless_decoder::HuffDecode",
+                  "file": "source/dng_lossless_jpeg.cpp"
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/external/dng_sdk/+/89f7028f91aa2979fa88f51cdd37b6444b5cd9d9",
+                "id": "ASB-A-347735428-b647a1b8",
+                "digest": {
+                  "function_hash": "44118990782442989971520362830657759096",
+                  "length": 481
+                }
+              }
             ]
           },
           "database_specific": {
