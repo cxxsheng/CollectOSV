@@ -1,6 +1,7 @@
 import glob
 import os
 import json
+import csv
 from datetime import datetime
 
 def generate_markdown_report():
@@ -40,7 +41,7 @@ def generate_markdown_report():
                         osv_id = vuln.get('id', 'N/A')
                         cve_ids = [alias for alias in vuln.get('aliases', []) if alias.startswith('CVE-')]
                         cve_str = ', '.join(cve_ids) if cve_ids else 'N/A'
-                        description = vuln.get('details', vuln.get('summary', 'N/A')).replace('\n', ' ').replace('|', '\|')
+                        description = vuln.get('details', vuln.get('summary', 'N/A')).replace('\n', ' ').replace('|', r'\|')
                         
                         # 提取日期信息
                         # 优先使用 'published' 日期，其次是 'modified' 日期
@@ -107,6 +108,96 @@ def generate_markdown_report():
 
     print("Markdown report generated: vulnerability_report.md")
 
+def generate_csv_report():
+    # 创建或清空 CSV 文件
+    with open('vulnerability_report.csv', 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file)
+        
+        # 写入表头
+        writer.writerow(['Package', 'OSV-ID', 'CVE', 'Severity', 'Description', 'Date', 'References'])
+
+        # 读取 results 目录下所有 json 文件
+        results_files = glob.glob('results/*.json')
+        unique_entries = set()  # 用于去重
+        
+        for result_file in results_files:
+            try:
+                with open(result_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                if 'vulns' in data:
+                    for vuln in data['vulns']:
+                        packages = []
+                        severity = 'N/A'
+                        
+                        if 'affected' in vuln:
+                            for affected in vuln['affected']:
+                                if 'package' in affected and 'name' in affected['package']:
+                                    packages.append(affected['package']['name'])
+                                # 从 ecosystem_specific 中获取 severity
+                                if 'ecosystem_specific' in affected and 'severity' in affected['ecosystem_specific']:
+                                    severity = affected['ecosystem_specific']['severity']
+                            
+                        # 去重 package 列表
+                        packages = list(set(packages))  
+                        package_str = ', '.join(packages) if packages else 'N/A'
+                        
+                        osv_id = vuln.get('id', 'N/A')
+                        cve_ids = [alias for alias in vuln.get('aliases', []) if alias.startswith('CVE-')]
+                        cve_str = ', '.join(cve_ids) if cve_ids else 'N/A'
+                        # CSV格式不需要转义管道符，保留原始描述
+                        description = vuln.get('details', vuln.get('summary', 'N/A')).replace('\n', ' ')
+                        
+                        # 提取日期信息
+                        date_str = 'N/A'
+                        published_date = vuln.get('published')
+                        modified_date = vuln.get('modified')
+                        
+                        if published_date:
+                            try:
+                                date_obj = datetime.fromisoformat(published_date.replace('Z', '+00:00'))
+                                date_str = date_obj.strftime('%Y-%m-%d')
+                            except ValueError:
+                                if len(published_date) >= 10:
+                                    date_str = published_date[:10]
+                                else:
+                                    date_str = published_date
+                        elif modified_date:
+                            try:
+                                date_obj = datetime.fromisoformat(modified_date.replace('Z', '+00:00'))
+                                date_str = date_obj.strftime('%Y-%m-%d')
+                            except ValueError:
+                                if len(modified_date) >= 10:
+                                    date_str = modified_date[:10]
+                                else:
+                                    date_str = modified_date
+                        
+                        # 获取参考链接（CSV格式使用纯文本URL，用分号分隔）
+                        references = vuln.get('references', [])
+                        ref_urls = []
+                        for ref in references:
+                            if isinstance(ref, dict) and 'url' in ref:
+                                ref_urls.append(ref['url'])
+                            elif isinstance(ref, str):
+                                ref_urls.append(ref)
+                        ref_str = '; '.join(ref_urls) if ref_urls else 'N/A'
+                        
+                        # CSV格式使用纯文本严重程度（无emoji和markdown格式）
+                        severity_clean = severity
+                        
+                        entry = (package_str, osv_id, cve_str, severity_clean, description, date_str, ref_str)
+                        
+                        if entry not in unique_entries:
+                            unique_entries.add(entry)
+                            writer.writerow(entry)
+            
+            except json.JSONDecodeError as e:
+                print(f"Error decoding JSON from {result_file}: {str(e)}")
+            except Exception as e:
+                print(f"Error processing {result_file}: {str(e)}")
+
+    print("CSV report generated: vulnerability_report.csv")
+
 def main():
     try:
         # 确保 results 目录存在
@@ -116,6 +207,8 @@ def main():
             return # 如果目录是新创建的，可能没有文件可处理，直接返回
 
         generate_markdown_report()
+        generate_csv_report()
+
     except FileNotFoundError: # 这个异常在 glob 没有匹配到文件时不会触发，glob 会返回空列表
         print("Error: No JSON files found in the 'results' directory or the directory itself is missing.")
     except Exception as e:
