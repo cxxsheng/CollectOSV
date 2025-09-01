@@ -7,7 +7,7 @@
         "A-230794395",
         "CVE-2022-20412"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-10-01T00:00:00Z",
       "references": [
         {
@@ -42,39 +42,36 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_offset_ptr",
-                  "file": "libfdt/fdt.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
                 "id": "ASB-A-230794395-5fcba0ce",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
+                "target": {
+                  "file": "libfdt/fdt.c",
+                  "function": "fdt_offset_ptr"
+                },
                 "digest": {
                   "function_hash": "312355044490999311680138983836808689671",
                   "length": 410
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-230794395-7bb40bcd",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
                 "target": {
                   "file": "libfdt/fdt.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
-                "id": "ASB-A-230794395-7bb40bcd",
                 "digest": {
                   "line_hashes": [
                     "266984877797973412143116920294650544922",
@@ -91,6 +88,9 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66"
             ]
           },
           "database_specific": {
@@ -119,39 +119,36 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_offset_ptr",
-                  "file": "libfdt/fdt.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
                 "id": "ASB-A-230794395-cb5a3d9b",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
+                "target": {
+                  "file": "libfdt/fdt.c",
+                  "function": "fdt_offset_ptr"
+                },
                 "digest": {
                   "function_hash": "312355044490999311680138983836808689671",
                   "length": 410
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-230794395-ea253a77",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
                 "target": {
                   "file": "libfdt/fdt.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66",
-                "id": "ASB-A-230794395-ea253a77",
                 "digest": {
                   "line_hashes": [
                     "266984877797973412143116920294650544922",
@@ -168,6 +165,9 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/35c4c2b27acf66c217865451eeecf09bc82dae66"
             ]
           },
           "database_specific": {
@@ -196,39 +196,36 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/6f0fef2b2adce7f643c0c05b3df0c24840b29b54"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_offset_ptr",
-                  "file": "libfdt/fdt.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/6f0fef2b2adce7f643c0c05b3df0c24840b29b54",
                 "id": "ASB-A-230794395-0a825b35",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/6f0fef2b2adce7f643c0c05b3df0c24840b29b54",
+                "target": {
+                  "file": "libfdt/fdt.c",
+                  "function": "fdt_offset_ptr"
+                },
                 "digest": {
                   "function_hash": "102411366170663226074525800423424698319",
                   "length": 467
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-230794395-0d0b9b94",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/6f0fef2b2adce7f643c0c05b3df0c24840b29b54",
                 "target": {
                   "file": "libfdt/fdt.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/6f0fef2b2adce7f643c0c05b3df0c24840b29b54",
-                "id": "ASB-A-230794395-0d0b9b94",
                 "digest": {
                   "line_hashes": [
                     "266984877797973412143116920294650544922",
@@ -246,6 +243,9 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/6f0fef2b2adce7f643c0c05b3df0c24840b29b54"
             ]
           },
           "database_specific": {
@@ -274,10 +274,10 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-10-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/7d9d85931fc20d0f80b4b82aed1d99d5edd65cde"
@@ -309,10 +309,10 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-10-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/7992e4aeb93afc9d36f7b18fdfa688227d1a9c20"
@@ -323,7 +323,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-242096164",
@@ -332,7 +332,7 @@
         "A-242096164",
         "CVE-2022-20454"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-11-01T00:00:00Z",
       "references": [
         {
@@ -367,39 +367,36 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/61e10c9c53b170ff8a5612ba4ec79e51d58e5eb3"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_next_tag",
-                  "file": "libfdt/fdt.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/61e10c9c53b170ff8a5612ba4ec79e51d58e5eb3",
                 "id": "ASB-A-242096164-72981459",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/61e10c9c53b170ff8a5612ba4ec79e51d58e5eb3",
+                "target": {
+                  "file": "libfdt/fdt.c",
+                  "function": "fdt_next_tag"
+                },
                 "digest": {
-                  "function_hash": "48155499511233603468743082440558327132",
-                  "length": 868
+                  "length": 868,
+                  "function_hash": "48155499511233603468743082440558327132"
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-242096164-d60429c7",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/61e10c9c53b170ff8a5612ba4ec79e51d58e5eb3",
                 "target": {
                   "file": "libfdt/fdt.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/61e10c9c53b170ff8a5612ba4ec79e51d58e5eb3",
-                "id": "ASB-A-242096164-d60429c7",
                 "digest": {
                   "line_hashes": [
                     "309739067641002084097361440152695524008",
@@ -415,6 +412,9 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/61e10c9c53b170ff8a5612ba4ec79e51d58e5eb3"
             ]
           },
           "database_specific": {
@@ -443,10 +443,10 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/d3f1c0562390ea9153d86ded1158436741669b59"
@@ -478,24 +478,21 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/2b597691efba9251c47d14a6d9dfc5568abd98e7"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-242096164-48049d98",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/2b597691efba9251c47d14a6d9dfc5568abd98e7",
                 "target": {
                   "file": "libfdt/fdt.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/2b597691efba9251c47d14a6d9dfc5568abd98e7",
-                "id": "ASB-A-242096164-48049d98",
                 "digest": {
                   "line_hashes": [
                     "241084989191143711222821133113772133513",
@@ -515,20 +512,23 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_next_tag",
-                  "file": "libfdt/fdt.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/2b597691efba9251c47d14a6d9dfc5568abd98e7",
                 "id": "ASB-A-242096164-5e12775b",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/2b597691efba9251c47d14a6d9dfc5568abd98e7",
+                "target": {
+                  "file": "libfdt/fdt.c",
+                  "function": "fdt_next_tag"
+                },
                 "digest": {
-                  "function_hash": "7842000788661298478680035696604098379",
-                  "length": 1093
+                  "length": 1093,
+                  "function_hash": "7842000788661298478680035696604098379"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/2b597691efba9251c47d14a6d9dfc5568abd98e7"
             ]
           },
           "database_specific": {
@@ -557,10 +557,10 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/75c07bb2f68e0eddc1b37612a7de8b388e1a4181"
@@ -592,24 +592,21 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/8ef746c547044b107da65c054daedf33075027b6"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-242096164-0d76dbd5",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/8ef746c547044b107da65c054daedf33075027b6",
                 "target": {
                   "file": "libfdt/fdt.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/8ef746c547044b107da65c054daedf33075027b6",
-                "id": "ASB-A-242096164-0d76dbd5",
                 "digest": {
                   "line_hashes": [
                     "241084989191143711222821133113772133513",
@@ -629,20 +626,23 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_next_tag",
-                  "file": "libfdt/fdt.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/8ef746c547044b107da65c054daedf33075027b6",
                 "id": "ASB-A-242096164-b14eecf8",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/8ef746c547044b107da65c054daedf33075027b6",
+                "target": {
+                  "file": "libfdt/fdt.c",
+                  "function": "fdt_next_tag"
+                },
                 "digest": {
-                  "function_hash": "7842000788661298478680035696604098379",
-                  "length": 1093
+                  "length": 1093,
+                  "function_hash": "7842000788661298478680035696604098379"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/8ef746c547044b107da65c054daedf33075027b6"
             ]
           },
           "database_specific": {
@@ -650,7 +650,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-246465319",
@@ -659,7 +659,7 @@
         "A-246465319",
         "CVE-2022-20498"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -694,24 +694,21 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "ID"
             ],
+            "severity": "Critical",
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/d10c84c4bc78e8ebd8c6ebf70126ad3cb0ba1c46"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-246465319-f0f9363c",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/d10c84c4bc78e8ebd8c6ebf70126ad3cb0ba1c46",
                 "target": {
                   "file": "libfdt/fdt_ro.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/d10c84c4bc78e8ebd8c6ebf70126ad3cb0ba1c46",
-                "id": "ASB-A-246465319-f0f9363c",
                 "digest": {
                   "line_hashes": [
                     "313892047556989837974905003400441723125",
@@ -722,20 +719,23 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_path_offset_namelen",
-                  "file": "libfdt/fdt_ro.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/d10c84c4bc78e8ebd8c6ebf70126ad3cb0ba1c46",
                 "id": "ASB-A-246465319-fa1dc448",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/d10c84c4bc78e8ebd8c6ebf70126ad3cb0ba1c46",
+                "target": {
+                  "file": "libfdt/fdt_ro.c",
+                  "function": "fdt_path_offset_namelen"
+                },
                 "digest": {
-                  "function_hash": "221827069630181021746652605547895732436",
-                  "length": 702
+                  "length": 702,
+                  "function_hash": "221827069630181021746652605547895732436"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/d10c84c4bc78e8ebd8c6ebf70126ad3cb0ba1c46"
             ]
           },
           "database_specific": {
@@ -764,10 +764,10 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "ID"
             ],
+            "severity": "Critical",
             "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/e0440b09079afacb3101f5140560f719d438dadc"
@@ -799,39 +799,36 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "ID"
             ],
+            "severity": "Critical",
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/dtc/+/a6ac6d916df145366bcb34f5507d5da213b2ebaf"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "fdt_path_offset_namelen",
-                  "file": "libfdt/fdt_ro.c"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/a6ac6d916df145366bcb34f5507d5da213b2ebaf",
                 "id": "ASB-A-246465319-a7286fca",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/a6ac6d916df145366bcb34f5507d5da213b2ebaf",
+                "target": {
+                  "file": "libfdt/fdt_ro.c",
+                  "function": "fdt_path_offset_namelen"
+                },
                 "digest": {
-                  "function_hash": "221827069630181021746652605547895732436",
-                  "length": 702
+                  "length": 702,
+                  "function_hash": "221827069630181021746652605547895732436"
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-246465319-da88e7f1",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/dtc/+/a6ac6d916df145366bcb34f5507d5da213b2ebaf",
                 "target": {
                   "file": "libfdt/fdt_ro.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dtc/+/a6ac6d916df145366bcb34f5507d5da213b2ebaf",
-                "id": "ASB-A-246465319-da88e7f1",
                 "digest": {
                   "line_hashes": [
                     "281516969829063991719741721143573487947",
@@ -841,6 +838,9 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/dtc/+/a6ac6d916df145366bcb34f5507d5da213b2ebaf"
             ]
           },
           "database_specific": {
@@ -869,10 +869,10 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "ID"
             ],
+            "severity": "Critical",
             "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/952da991f42227e29d7257539d042386d3f4fa33"
@@ -904,10 +904,10 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "ID"
             ],
+            "severity": "Critical",
             "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/dtc/+/5b78ca841071fee81479036462e7e048fefacb26"
@@ -918,7 +918,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-242702451",
         "CVE-2022-20549"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -42,42 +42,34 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
             "types": [
               "EoP"
             ],
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/keymaster/+/d78ef2348cadeb9a707a1b87f98ef4d0b0aac7ab"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "PUB-A-242702451-01d75fad",
                 "target": {
                   "function": "authToken2AidlVec",
                   "file": "ng/KeyMintUtils.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/keymaster/+/d78ef2348cadeb9a707a1b87f98ef4d0b0aac7ab",
-                "id": "PUB-A-242702451-01d75fad",
                 "digest": {
                   "function_hash": "133749863688818654324205865620052008397",
                   "length": 959
                 },
+                "deprecated": false,
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/keymaster/+/d78ef2348cadeb9a707a1b87f98ef4d0b0aac7ab",
+                "signature_version": "v1",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "PUB-A-242702451-6df58f7c",
                 "target": {
                   "file": "ng/KeyMintUtils.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/keymaster/+/d78ef2348cadeb9a707a1b87f98ef4d0b0aac7ab",
-                "id": "PUB-A-242702451-6df58f7c",
                 "digest": {
                   "line_hashes": [
                     "272932665949612627104982675225818875393",
@@ -87,18 +79,26 @@
                   ],
                   "threshold": 0.9
                 },
+                "deprecated": false,
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/keymaster/+/d78ef2348cadeb9a707a1b87f98ef4d0b0aac7ab",
+                "signature_version": "v1",
                 "match_only_versions": [
                   "13"
                 ]
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/keymaster/+/d78ef2348cadeb9a707a1b87f98ef4d0b0aac7ab"
+            ],
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-242702451.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

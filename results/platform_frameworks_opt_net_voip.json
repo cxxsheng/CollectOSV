@@ -7,7 +7,7 @@
         "A-176496502",
         "CVE-2021-0597"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -43,24 +43,15 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51"
             ],
+            "spl": "2021-07-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-2fb819be",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "324165774425901303033260974682821836678",
                     "267816130074900962991056862858825009859",
@@ -70,40 +61,49 @@
                     "52252619083521041888357330750494047092",
                     "111264149223416382542478689493324998235",
                     "142531742533842872343024447002722554646"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-2fb819be",
                 "target": {
-                  "function": "notifyProfileAdded",
                   "file": "src/java/com/android/server/sip/SipService.java"
                 },
+                "signature_type": "Line",
+                "signature_version": "v1"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-a06e6262",
                 "digest": {
                   "function_hash": "324688000471698648112247954960202636470",
                   "length": 316
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-a06e6262",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileAdded"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "notifyProfileRemoved",
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-bb106c4b",
                 "digest": {
                   "function_hash": "203460942589421303264537071595245286161",
                   "length": 321
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-bb106c4b",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileRemoved"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -133,39 +133,30 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51"
             ],
+            "spl": "2021-07-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "notifyProfileAdded",
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-4580a100",
                 "digest": {
                   "function_hash": "324688000471698648112247954960202636470",
                   "length": 316
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-4580a100",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileAdded"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-838a4397",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "324165774425901303033260974682821836678",
                     "267816130074900962991056862858825009859",
@@ -175,25 +166,34 @@
                     "52252619083521041888357330750494047092",
                     "111264149223416382542478689493324998235",
                     "142531742533842872343024447002722554646"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-838a4397",
                 "target": {
-                  "function": "notifyProfileRemoved",
                   "file": "src/java/com/android/server/sip/SipService.java"
                 },
+                "signature_type": "Line",
+                "signature_version": "v1"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-fb668292",
                 "digest": {
                   "function_hash": "203460942589421303264537071595245286161",
                   "length": 321
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-fb668292",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileRemoved"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -223,24 +223,15 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51"
             ],
+            "spl": "2021-07-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-50642126",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "324165774425901303033260974682821836678",
                     "267816130074900962991056862858825009859",
@@ -250,40 +241,49 @@
                     "52252619083521041888357330750494047092",
                     "111264149223416382542478689493324998235",
                     "142531742533842872343024447002722554646"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-50642126",
                 "target": {
-                  "function": "notifyProfileAdded",
                   "file": "src/java/com/android/server/sip/SipService.java"
                 },
+                "signature_type": "Line",
+                "signature_version": "v1"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-8eb2bb33",
                 "digest": {
                   "function_hash": "324688000471698648112247954960202636470",
                   "length": 316
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-8eb2bb33",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileAdded"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "notifyProfileRemoved",
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-93d05835",
                 "digest": {
                   "function_hash": "203460942589421303264537071595245286161",
                   "length": 321
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-93d05835",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileRemoved"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -313,54 +313,45 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51"
             ],
+            "spl": "2021-07-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "notifyProfileAdded",
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-778e3fd7",
                 "digest": {
                   "function_hash": "324688000471698648112247954960202636470",
                   "length": 316
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-778e3fd7",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileAdded"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "notifyProfileRemoved",
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-a266f39b",
                 "digest": {
                   "function_hash": "203460942589421303264537071595245286161",
                   "length": 321
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-a266f39b",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java",
+                  "function": "notifyProfileRemoved"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/java/com/android/server/sip/SipService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
-                "id": "ASB-A-176496502-d02cede9",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "324165774425901303033260974682821836678",
                     "267816130074900962991056862858825009859",
@@ -370,10 +361,19 @@
                     "52252619083521041888357330750494047092",
                     "111264149223416382542478689493324998235",
                     "142531742533842872343024447002722554646"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/voip/+/0e459673aa944d65989181b659c820504117ab51",
+                "id": "ASB-A-176496502-d02cede9",
+                "target": {
+                  "file": "src/java/com/android/server/sip/SipService.java"
+                },
+                "signature_type": "Line",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -381,7 +381,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

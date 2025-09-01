@@ -9,7 +9,7 @@
         "BIT-node-min-2020-1971",
         "CVE-2020-1971"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -41,54 +41,48 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2021-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425"
             ],
+            "spl": "2021-06-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "GENERAL_NAME_get0_value",
                   "file": "src/crypto/x509v3/v3_genn.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
-                "id": "PUB-A-175147055-3bacd093",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "74587422632080737889926093288202631381",
-                  "length": 465
-                }
+                  "length": 465,
+                  "function_hash": "74587422632080737889926093288202631381"
+                },
+                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
+                "signature_version": "v1",
+                "id": "PUB-A-175147055-3bacd093",
+                "deprecated": false
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "GENERAL_NAME_set0_value",
                   "file": "src/crypto/x509v3/v3_genn.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
-                "id": "PUB-A-175147055-8641b995",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "242471709557477933555881258114296220686",
-                  "length": 485
-                }
+                  "length": 485,
+                  "function_hash": "242471709557477933555881258114296220686"
+                },
+                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
+                "signature_version": "v1",
+                "id": "PUB-A-175147055-8641b995",
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/crypto/x509v3/v3_genn.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
-                "id": "PUB-A-175147055-a200f367",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "155159385648801683048522595914904498798",
                     "88795800835274131565611837464652901189",
@@ -116,25 +110,31 @@
                     "97644319981832907160823349333291371680",
                     "123002030303253154622351391897540182648",
                     "242670177419909176224699518917108681820"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
+                "signature_version": "v1",
+                "id": "PUB-A-175147055-a200f367",
+                "deprecated": false
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "GENERAL_NAME_cmp",
                   "file": "src/crypto/x509v3/v3_genn.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
-                "id": "PUB-A-175147055-dd34dbb4",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "23736586777265084182782181527585542857",
-                  "length": 746
-                }
+                  "length": 746,
+                  "function_hash": "23736586777265084182782181527585542857"
+                },
+                "source": "https://android.googlesource.com/platform/external/boringssl/+/ac675a6d208e08a031d5bf262fdcdbb533da8425",
+                "signature_version": "v1",
+                "id": "PUB-A-175147055-dd34dbb4",
+                "deprecated": false
               }
+            ],
+            "types": [
+              "DoS"
             ]
           },
           "database_specific": {
@@ -142,7 +142,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

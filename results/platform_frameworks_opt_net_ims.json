@@ -7,7 +7,7 @@
         "A-236264289",
         "CVE-2022-20558"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -43,23 +43,16 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "deprecated": false,
                 "signature_version": "v1",
                 "target": {
                   "file": "src/java/com/android/ims/rcs/uce/presence/publish/DeviceCapabilityListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2",
-                "id": "PUB-A-236264289-12f945c0",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "line_hashes": [
                     "17360799293048442066505985161950929115",
@@ -69,19 +62,19 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2",
+                "id": "PUB-A-236264289-12f945c0"
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
                 "signature_version": "v1",
                 "target": {
                   "file": "tests/src/com/android/ims/ContextFixture.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2",
-                "id": "PUB-A-236264289-3e1953b5",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "line_hashes": [
                     "162282707822528203542231119936839344072",
@@ -95,28 +88,35 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2",
+                "id": "PUB-A-236264289-3e1953b5"
               },
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
                 "target": {
                   "function": "registerReceivers",
                   "file": "src/java/com/android/ims/rcs/uce/presence/publish/DeviceCapabilityListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2",
-                "id": "PUB-A-236264289-dbce3c83",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "function_hash": "229801768736183275224950774434043203122",
                   "length": 506
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2",
+                "id": "PUB-A-236264289-dbce3c83"
               }
+            ],
+            "spl": "2022-12-01",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/opt/net/ims/+/ed6a388e3f5a65065c11acd80f175b7e7169e9b2"
             ]
           },
           "database_specific": {
@@ -124,7 +124,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

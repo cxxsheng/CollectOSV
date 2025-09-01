@@ -7,7 +7,7 @@
         "A-251802307",
         "CVE-2022-4452"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -42,13 +42,13 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/crosvm/+/2cd328fdf17c1bf0f979bf4c728538f6edb0761e"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -56,7 +56,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

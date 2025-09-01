@@ -7,7 +7,7 @@
         "A-184963385",
         "CVE-2021-0585"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -42,24 +42,14 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/3f308c6acfcb65f393edbd6116b22b533ef326b2"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/3f308c6acfcb65f393edbd6116b22b533ef326b2",
-                "id": "ASB-A-184963385-0f71992c",
                 "digest": {
                   "line_hashes": [
                     "300022660320167551308862749013558626121",
@@ -86,47 +76,47 @@
                     "107310925987573623907065954361058072137"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-0f71992c",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginRead",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/3f308c6acfcb65f393edbd6116b22b533ef326b2",
-                "id": "ASB-A-184963385-287fbee7",
                 "digest": {
                   "function_hash": "25814852906500043335487120437247780942",
                   "length": 789
-                }
+                },
+                "id": "ASB-A-184963385-287fbee7",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginWrite",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/3f308c6acfcb65f393edbd6116b22b533ef326b2",
-                "id": "ASB-A-184963385-96422510",
                 "digest": {
                   "function_hash": "1132215189128848320662267450900731733",
                   "length": 647
-                }
+                },
+                "id": "ASB-A-184963385-96422510",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "tests/msgq_test_client.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/3f308c6acfcb65f393edbd6116b22b533ef326b2",
-                "id": "ASB-A-184963385-cb25342e",
                 "digest": {
                   "line_hashes": [
                     "86464080605561577303249332346361936345",
@@ -134,8 +124,18 @@
                     "331990379976521815974052574618971388267"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-cb25342e",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/3f308c6acfcb65f393edbd6116b22b533ef326b2"
             ]
           },
           "database_specific": {
@@ -164,39 +164,29 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/c7d5f09188ed79704bcf740ec22a5f762ae3d941"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginWrite",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/c7d5f09188ed79704bcf740ec22a5f762ae3d941",
-                "id": "ASB-A-184963385-1ce32c61",
                 "digest": {
                   "function_hash": "1132215189128848320662267450900731733",
                   "length": 647
-                }
+                },
+                "id": "ASB-A-184963385-1ce32c61",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/c7d5f09188ed79704bcf740ec22a5f762ae3d941",
-                "id": "ASB-A-184963385-3b8caeb0",
                 "digest": {
                   "line_hashes": [
                     "300022660320167551308862749013558626121",
@@ -223,32 +213,32 @@
                     "107310925987573623907065954361058072137"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-3b8caeb0",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginRead",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/c7d5f09188ed79704bcf740ec22a5f762ae3d941",
-                "id": "ASB-A-184963385-c77506cd",
                 "digest": {
                   "function_hash": "25814852906500043335487120437247780942",
                   "length": 789
-                }
+                },
+                "id": "ASB-A-184963385-c77506cd",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "tests/msgq_test_client.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/c7d5f09188ed79704bcf740ec22a5f762ae3d941",
-                "id": "ASB-A-184963385-cd3a437b",
                 "digest": {
                   "line_hashes": [
                     "86464080605561577303249332346361936345",
@@ -256,8 +246,18 @@
                     "331990379976521815974052574618971388267"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-cd3a437b",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/c7d5f09188ed79704bcf740ec22a5f762ae3d941"
             ]
           },
           "database_specific": {
@@ -286,24 +286,18 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/av/+/b0e09634903a73908b84361564215a79f1f6bdb1"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "media/bufferpool/2.0/BufferStatus.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/av/+/b0e09634903a73908b84361564215a79f1f6bdb1",
                 "id": "ASB-A-184963385-dd1f2afc",
+                "match_only_versions": [
+                  "10"
+                ],
                 "digest": {
                   "line_hashes": [
                     "320969485079306349290330415981021442138",
@@ -312,10 +306,16 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "10"
-                ]
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/av/+/b0e09634903a73908b84361564215a79f1f6bdb1"
             ]
           },
           "database_specific": {
@@ -344,24 +344,14 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94",
-                "id": "ASB-A-184963385-57eb5add",
                 "digest": {
                   "line_hashes": [
                     "227302126195856825414451364477443874828",
@@ -390,32 +380,32 @@
                     "107310925987573623907065954361058072137"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-57eb5add",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginRead",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94",
-                "id": "ASB-A-184963385-8e061e22",
                 "digest": {
                   "function_hash": "25814852906500043335487120437247780942",
                   "length": 789
-                }
+                },
+                "id": "ASB-A-184963385-8e061e22",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "tests/msgq_test_client.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94",
-                "id": "ASB-A-184963385-a79b1f2d",
                 "digest": {
                   "line_hashes": [
                     "304724205008051771174038391144772804717",
@@ -427,38 +417,48 @@
                     "331990379976521815974052574618971388267"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-a79b1f2d",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "SetUp",
                   "file": "tests/msgq_test_client.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94",
-                "id": "ASB-A-184963385-c98807db",
                 "digest": {
                   "function_hash": "213862884393298803354305101504209452764",
                   "length": 405
-                }
+                },
+                "id": "ASB-A-184963385-c98807db",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginWrite",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94",
-                "id": "ASB-A-184963385-d8febe24",
                 "digest": {
                   "function_hash": "1132215189128848320662267450900731733",
                   "length": 647
-                }
+                },
+                "id": "ASB-A-184963385-d8febe24",
+                "signature_version": "v1",
+                "signature_type": "Function"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/4dfdd1b76d0c3dc95bf0cbc7fb815e7216fa1f94"
             ]
           },
           "database_specific": {
@@ -487,24 +487,14 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27",
-                "id": "ASB-A-184963385-11190517",
                 "digest": {
                   "line_hashes": [
                     "300022660320167551308862749013558626121",
@@ -531,47 +521,47 @@
                     "107310925987573623907065954361058072137"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-11190517",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginRead",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27",
-                "id": "ASB-A-184963385-1183c25b",
                 "digest": {
                   "function_hash": "25814852906500043335487120437247780942",
                   "length": 789
-                }
+                },
+                "id": "ASB-A-184963385-1183c25b",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "SetUp",
                   "file": "tests/msgq_test_client.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27",
-                "id": "ASB-A-184963385-68b4fc85",
                 "digest": {
                   "function_hash": "213862884393298803354305101504209452764",
                   "length": 405
-                }
+                },
+                "id": "ASB-A-184963385-68b4fc85",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "tests/msgq_test_client.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27",
-                "id": "ASB-A-184963385-c013d075",
                 "digest": {
                   "line_hashes": [
                     "304724205008051771174038391144772804717",
@@ -583,23 +573,33 @@
                     "331990379976521815974052574618971388267"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184963385-c013d075",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "beginWrite",
                   "file": "include/fmq/MessageQueue.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27",
-                "id": "ASB-A-184963385-fe2e0e51",
                 "digest": {
                   "function_hash": "1132215189128848320662267450900731733",
                   "length": 647
-                }
+                },
+                "id": "ASB-A-184963385-fe2e0e51",
+                "signature_version": "v1",
+                "signature_type": "Function"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/4ed31d5a6c5c48a2f9fc3e812600093f81c33d27"
             ]
           },
           "database_specific": {
@@ -607,7 +607,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-321326147",
@@ -616,7 +616,7 @@
         "A-321326147",
         "CVE-2024-31327"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-06-01T00:00:00Z",
       "references": [
         {
@@ -651,53 +651,45 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-b6da29fd",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-d833764a",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-eecf1aa8",
                 "digest": {
                   "line_hashes": [
@@ -713,8 +705,16 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -743,53 +743,45 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-4c2650f1",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-c7b1ad30",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-eb5c74d7",
                 "digest": {
                   "line_hashes": [
@@ -805,8 +797,16 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -835,23 +835,15 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-71cda85e",
                 "digest": {
                   "line_hashes": [
@@ -867,38 +859,46 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-99698b61",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-f0af7d31",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -927,23 +927,15 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-54886f13",
                 "digest": {
                   "line_hashes": [
@@ -959,38 +951,46 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-588489ff",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-c0375658",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -1019,23 +1019,15 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-11822135",
                 "digest": {
                   "line_hashes": [
@@ -1051,38 +1043,46 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-6cb18cc9",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035",
+                "signature_version": "v1",
                 "id": "ASB-A-321326147-a76eed42",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -1090,7 +1090,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-321341508",
@@ -1099,7 +1099,7 @@
         "A-321341508",
         "CVE-2024-31313"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-06-01T00:00:00Z",
       "references": [
         {
@@ -1134,53 +1134,45 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-b6da29fd",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-d833764a",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-eecf1aa8",
                 "digest": {
                   "line_hashes": [
@@ -1196,8 +1188,16 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/db9028d6eead72c9cd45da48087ec6d5f1ac9c5a"
             ]
           },
           "database_specific": {
@@ -1226,53 +1226,45 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-4c2650f1",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-c7b1ad30",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-eb5c74d7",
                 "digest": {
                   "line_hashes": [
@@ -1288,8 +1280,16 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/af19e0ef034174afd794563552f91303fd9f1529"
             ]
           },
           "database_specific": {
@@ -1318,23 +1318,15 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-71cda85e",
                 "digest": {
                   "line_hashes": [
@@ -1350,38 +1342,46 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-99698b61",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-f0af7d31",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/b923a7c0d0d25de7b0c9ba7a7c2a3e917819d95a"
             ]
           },
           "database_specific": {
@@ -1410,23 +1410,15 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-54886f13",
                 "digest": {
                   "line_hashes": [
@@ -1442,38 +1434,46 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-588489ff",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-c0375658",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/050952bf5f9bd035e469ce005300115d563e524a"
             ]
           },
           "database_specific": {
@@ -1502,23 +1502,15 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2024-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-11822135",
                 "digest": {
                   "line_hashes": [
@@ -1534,38 +1526,46 @@
                     "109017410997082114250456964558342449531"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToReadBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-6cb18cc9",
                 "digest": {
                   "function_hash": "42176836157770431253731899450536067667",
                   "length": 132
-                }
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "availableToWriteBytes",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035",
+                "signature_version": "v1",
                 "id": "ASB-A-321341508-a76eed42",
                 "digest": {
                   "function_hash": "152908095466554525151767292445838411466",
                   "length": 67
-                }
+                },
+                "signature_type": "Function"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/da080aa565f0cd1158bde3b8100dc73604959035"
             ]
           },
           "database_specific": {
@@ -1573,7 +1573,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-244713317",
@@ -1582,7 +1582,7 @@
         "A-244713317",
         "CVE-2022-20509"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -1617,18 +1617,9 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "mapGrantorDescr",
                   "file": "include/fmq/MessageQueueBase.h"
@@ -1636,23 +1627,22 @@
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
                 "id": "PUB-A-244713317-21de4b3d",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "function_hash": "117994369638352159013783034520011204441",
                   "length": 879
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-244713317-2271c3ee",
                 "digest": {
                   "line_hashes": [
                     "67484995657003224955318954683180730890",
@@ -1691,32 +1681,32 @@
                     "210560327462933430521818671067756242952"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "PUB-A-244713317-2271c3ee",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "TEST_F",
                   "file": "tests/fmq_unit_tests.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-244713317-4c890400",
                 "digest": {
                   "function_hash": "335445632229354888712475954829175856665",
                   "length": 216
-                }
+                },
+                "id": "PUB-A-244713317-4c890400",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "tests/fmq_unit_tests.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-244713317-660aa7be",
                 "digest": {
                   "line_hashes": [
                     "88394673729518826306805389435331654255",
@@ -1733,23 +1723,33 @@
                     "109966967881248564745159406551377700562"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "PUB-A-244713317-660aa7be",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "initMemory",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-244713317-e60a228e",
                 "digest": {
                   "function_hash": "331745186214309042994454776427126214799",
                   "length": 1770
-                }
+                },
+                "id": "PUB-A-244713317-e60a228e",
+                "signature_version": "v1",
+                "signature_type": "Function"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750"
+            ],
+            "severity": "Moderate",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -1757,7 +1757,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-247092734",
@@ -1766,7 +1766,7 @@
         "A-247092734",
         "CVE-2022-20557"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -1801,18 +1801,9 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "mapGrantorDescr",
                   "file": "include/fmq/MessageQueueBase.h"
@@ -1820,23 +1811,22 @@
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
                 "id": "PUB-A-247092734-21de4b3d",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "function_hash": "117994369638352159013783034520011204441",
                   "length": 879
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-247092734-2271c3ee",
                 "digest": {
                   "line_hashes": [
                     "67484995657003224955318954683180730890",
@@ -1875,32 +1865,32 @@
                     "210560327462933430521818671067756242952"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "PUB-A-247092734-2271c3ee",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "TEST_F",
                   "file": "tests/fmq_unit_tests.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-247092734-4c890400",
                 "digest": {
                   "function_hash": "335445632229354888712475954829175856665",
                   "length": 216
-                }
+                },
+                "id": "PUB-A-247092734-4c890400",
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "tests/fmq_unit_tests.cpp"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-247092734-660aa7be",
                 "digest": {
                   "line_hashes": [
                     "88394673729518826306805389435331654255",
@@ -1917,23 +1907,33 @@
                     "109966967881248564745159406551377700562"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "PUB-A-247092734-660aa7be",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "initMemory",
                   "file": "include/fmq/MessageQueueBase.h"
                 },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750",
-                "id": "PUB-A-247092734-e60a228e",
                 "digest": {
                   "function_hash": "331745186214309042994454776427126214799",
                   "length": 1770
-                }
+                },
+                "id": "PUB-A-247092734-e60a228e",
+                "signature_version": "v1",
+                "signature_type": "Function"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libfmq/+/98f3a08b2fb44e7cff31c26007fbe9feaac11750"
+            ],
+            "severity": "Moderate",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -1941,7 +1941,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-201535148",
         "CVE-2022-20196"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -38,191 +38,187 @@
             "12L-next"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2022-06-01",
             "types": [
               "ID"
             ],
-            "spl": "2022-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateActionItemVisibilities",
-                  "file": "src/com/android/photos/MultiChoiceManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-0408e7fe",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/MultiChoiceManager.java",
+                  "function": "updateActionItemVisibilities"
+                },
                 "digest": {
                   "function_hash": "179681300963211884690056854096109177439",
                   "length": 883
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getSupportedOperations",
-                  "file": "src/com/android/photos/SelectionManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-07af6257",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/SelectionManager.java",
+                  "function": "getSupportedOperations"
+                },
                 "digest": {
                   "function_hash": "184387040173152115022342393261607881443",
                   "length": 683
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "singleItemAction",
-                  "file": "src/com/android/photos/MultiChoiceManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-2b1036c0",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/MultiChoiceManager.java",
+                  "function": "singleItemAction"
+                },
                 "digest": {
                   "function_hash": "335011826790043392630544543866283663031",
                   "length": 1097
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onMenuClicked",
-                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-3713441c",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java",
+                  "function": "onMenuClicked"
+                },
                 "digest": {
                   "function_hash": "41913397070175780202437061129792075600",
                   "length": 1306
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
+                "id": "PUB-A-201535148-3cdf8772",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/filtershow/crop/CropExtras.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
-                "id": "PUB-A-201535148-3cdf8772",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "272018259021943783205849101147608568733",
                     "137581051104587709188855779283222203108",
                     "338794538615841014784270552832882576755",
                     "80863795701381455483949491168699941711"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getSetAsWallpaper",
-                  "file": "src/com/android/gallery3d/filtershow/crop/CropExtras.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-5238fabc",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/filtershow/crop/CropExtras.java",
+                  "function": "getSetAsWallpaper"
+                },
                 "digest": {
                   "function_hash": "326614150324117000539187597533491653795",
                   "length": 47
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateMenuOperation",
-                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-5c9ed1fc",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java",
+                  "function": "updateMenuOperation"
+                },
                 "digest": {
                   "function_hash": "296747417119701921630196183976897207130",
                   "length": 1476
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onActionItemClicked",
-                  "file": "src/com/android/photos/MultiChoiceManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-9ea0b634",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/MultiChoiceManager.java",
+                  "function": "onActionItemClicked"
+                },
                 "digest": {
                   "function_hash": "88770189073130505689489628266389993757",
                   "length": 502
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onResume",
-                  "file": "src/com/android/gallery3d/app/Wallpaper.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-a5b34fc4",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/app/Wallpaper.java",
+                  "function": "onResume"
+                },
                 "digest": {
                   "function_hash": "31529863024041711136088590505432417332",
                   "length": 1539
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
+                "id": "PUB-A-201535148-baac45bd",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/photos/MultiChoiceManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
-                "id": "PUB-A-201535148-baac45bd",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287763971711858840098279022214630876988",
                     "187988274275283550147830497290301420441",
@@ -247,63 +243,63 @@
                     "292461756493065011169907122949177552354",
                     "248506109080575602118150501373756955912",
                     "214121499551973233281404391975184302607"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onItemSelected",
-                  "file": "src/com/android/gallery3d/app/PhotoPage.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-cabceaf2",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/app/PhotoPage.java",
+                  "function": "onItemSelected"
+                },
                 "digest": {
                   "function_hash": "66694820858705258142543906607286954067",
                   "length": 2387
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
+                "id": "PUB-A-201535148-d0b06bfa",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/app/Wallpaper.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
-                "id": "PUB-A-201535148-d0b06bfa",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "233679669455163180458030757234993939373",
                     "70056024488384320867007010422669630648",
                     "243746658011635173107285039142075651991",
                     "238244001096546311531779717624087118393"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
+                "id": "PUB-A-201535148-d286dad9",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/photos/SelectionManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
-                "id": "PUB-A-201535148-d286dad9",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "208673660295514683132692648017397944953",
                     "24713391475014316976081674721436852615",
@@ -317,23 +313,23 @@
                     "213097997382651313558684976144026383149",
                     "251182660361597744502577074312175136311",
                     "93090113854154495696553465909703588788"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
+                "id": "PUB-A-201535148-d9b2366b",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/ui/MenuExecutor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
-                "id": "PUB-A-201535148-d9b2366b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "279284354312107074129456476700958771317",
                     "16501995534669389089472062382269442370",
@@ -355,54 +351,58 @@
                     "283232841551118526899684000439227304286",
                     "75675672912105331042870912728446487883",
                     "220898095745319484895200771805050271496"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
+                "id": "PUB-A-201535148-df942440",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/app/PhotoPage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
-                "id": "PUB-A-201535148-df942440",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "124121812550960019558153676448282905593",
                     "304360074345030846887980361974022487906",
                     "130498359058527096788693341429213991671",
                     "293444533696919588124636516215613772621"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onItemSelectedStateChanged",
-                  "file": "src/com/android/photos/SelectionManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846",
                 "id": "PUB-A-201535148-f6df10b5",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/SelectionManager.java",
+                  "function": "onItemSelectedStateChanged"
+                },
                 "digest": {
                   "function_hash": "68048970771639542270417442158916044187",
                   "length": 2020
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L-next"
                 ]
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Gallery2/+/35ab9cd99173079886c3cd636b0606f55fefd846"
+            ],
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-201535148.json"
@@ -430,43 +430,39 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2022-06-01",
             "types": [
               "ID"
             ],
-            "spl": "2022-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onActionItemClicked",
-                  "file": "src/com/android/photos/MultiChoiceManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-074bb6e0",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/MultiChoiceManager.java",
+                  "function": "onActionItemClicked"
+                },
                 "digest": {
                   "function_hash": "88770189073130505689489628266389993757",
                   "length": 502
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
+                "id": "PUB-A-201535148-1830fa04",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/ui/MenuExecutor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
-                "id": "PUB-A-201535148-1830fa04",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "279284354312107074129456476700958771317",
                     "16501995534669389089472062382269442370",
@@ -488,41 +484,41 @@
                     "283232841551118526899684000439227304286",
                     "75675672912105331042870912728446487883",
                     "220898095745319484895200771805050271496"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onItemSelectedStateChanged",
-                  "file": "src/com/android/photos/SelectionManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-1aa19f18",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/SelectionManager.java",
+                  "function": "onItemSelectedStateChanged"
+                },
                 "digest": {
                   "function_hash": "68048970771639542270417442158916044187",
                   "length": 2020
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
+                "id": "PUB-A-201535148-2032651f",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/photos/MultiChoiceManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
-                "id": "PUB-A-201535148-2032651f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287763971711858840098279022214630876988",
                     "187988274275283550147830497290301420441",
@@ -547,143 +543,143 @@
                     "292461756493065011169907122949177552354",
                     "248506109080575602118150501373756955912",
                     "214121499551973233281404391975184302607"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
+                "id": "PUB-A-201535148-3091f466",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/app/Wallpaper.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
-                "id": "PUB-A-201535148-3091f466",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "233679669455163180458030757234993939373",
                     "70056024488384320867007010422669630648",
                     "243746658011635173107285039142075651991",
                     "238244001096546311531779717624087118393"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
+                "id": "PUB-A-201535148-4b141a98",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/filtershow/crop/CropExtras.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
-                "id": "PUB-A-201535148-4b141a98",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "272018259021943783205849101147608568733",
                     "137581051104587709188855779283222203108",
                     "338794538615841014784270552832882576755",
                     "80863795701381455483949491168699941711"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onMenuClicked",
-                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-6bd2bd8c",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java",
+                  "function": "onMenuClicked"
+                },
                 "digest": {
                   "function_hash": "41913397070175780202437061129792075600",
                   "length": 1306
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "singleItemAction",
-                  "file": "src/com/android/photos/MultiChoiceManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-74265526",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/MultiChoiceManager.java",
+                  "function": "singleItemAction"
+                },
                 "digest": {
                   "function_hash": "335011826790043392630544543866283663031",
                   "length": 1097
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateMenuOperation",
-                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-8d3e94d8",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/ui/MenuExecutor.java",
+                  "function": "updateMenuOperation"
+                },
                 "digest": {
                   "function_hash": "296747417119701921630196183976897207130",
                   "length": 1476
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
+                "id": "PUB-A-201535148-91897955",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/gallery3d/app/PhotoPage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
-                "id": "PUB-A-201535148-91897955",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "124121812550960019558153676448282905593",
                     "304360074345030846887980361974022487906",
                     "130498359058527096788693341429213991671",
                     "293444533696919588124636516215613772621"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
+                "id": "PUB-A-201535148-982bfcc7",
                 "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/photos/SelectionManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
-                "id": "PUB-A-201535148-982bfcc7",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "208673660295514683132692648017397944953",
                     "24713391475014316976081674721436852615",
@@ -697,111 +693,115 @@
                     "213097997382651313558684976144026383149",
                     "251182660361597744502577074312175136311",
                     "93090113854154495696553465909703588788"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateActionItemVisibilities",
-                  "file": "src/com/android/photos/MultiChoiceManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-bdb90633",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/MultiChoiceManager.java",
+                  "function": "updateActionItemVisibilities"
+                },
                 "digest": {
                   "function_hash": "179681300963211884690056854096109177439",
                   "length": 883
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onResume",
-                  "file": "src/com/android/gallery3d/app/Wallpaper.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-da218cc5",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/app/Wallpaper.java",
+                  "function": "onResume"
+                },
                 "digest": {
                   "function_hash": "31529863024041711136088590505432417332",
                   "length": 1539
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getSupportedOperations",
-                  "file": "src/com/android/photos/SelectionManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-f4822b42",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/photos/SelectionManager.java",
+                  "function": "getSupportedOperations"
+                },
                 "digest": {
                   "function_hash": "184387040173152115022342393261607881443",
                   "length": 683
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getSetAsWallpaper",
-                  "file": "src/com/android/gallery3d/filtershow/crop/CropExtras.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-f685ae1e",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/filtershow/crop/CropExtras.java",
+                  "function": "getSetAsWallpaper"
+                },
                 "digest": {
                   "function_hash": "326614150324117000539187597533491653795",
                   "length": 47
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onItemSelected",
-                  "file": "src/com/android/gallery3d/app/PhotoPage.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a",
                 "id": "PUB-A-201535148-f94382a5",
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/gallery3d/app/PhotoPage.java",
+                  "function": "onItemSelected"
+                },
                 "digest": {
                   "function_hash": "66694820858705258142543906607286954067",
                   "length": 2387
                 },
+                "signature_type": "Function",
                 "match_only_versions": [
                   "12L"
                 ]
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Gallery2/+/0bd4d095a726eb491c51aaa2d66021786c1d331a"
+            ],
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-201535148.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

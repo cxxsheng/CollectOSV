@@ -7,7 +7,7 @@
         "A-227203202",
         "CVE-2022-20520"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -42,42 +42,27 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
-            ],
             "vanir_signatures": [
               {
+                "digest": {
+                  "length": 617,
+                  "function_hash": "309734534497432772469917657419153149903"
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/stk/StkLauncherActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-11aa166a",
-                "digest": {
-                  "function_hash": "309734534497432772469917657419153149903",
-                  "length": 617
-                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-11aa166a",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/stk/StkMenuActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-2641679f",
                 "digest": {
                   "line_hashes": [
                     "16331319415692900664991263969000373563",
@@ -90,19 +75,19 @@
                   ],
                   "threshold": 0.9
                 },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/stk/StkMenuActivity.java"
+                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-2641679f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/stk/StkMain.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-448fb754",
                 "digest": {
                   "line_hashes": [
                     "241242705770390988074840894613341378826",
@@ -120,37 +105,37 @@
                   ],
                   "threshold": 0.9
                 },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/stk/StkMain.java"
+                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-448fb754",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
+                "digest": {
+                  "length": 508,
+                  "function_hash": "264175413917839377381362683111597863090"
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/stk/StkMain.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-58c31766",
-                "digest": {
-                  "function_hash": "264175413917839377381362683111597863090",
-                  "length": 508
-                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-58c31766",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/stk/StkInputActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-692a204a",
                 "digest": {
                   "line_hashes": [
                     "267134777182661031288311122685343365817",
@@ -162,37 +147,37 @@
                   ],
                   "threshold": 0.9
                 },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/stk/StkInputActivity.java"
+                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-692a204a",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
+                "digest": {
+                  "length": 922,
+                  "function_hash": "155833520515330337672182973973844465936"
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/stk/StkMenuActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-b7f012f6",
-                "digest": {
-                  "function_hash": "155833520515330337672182973973844465936",
-                  "length": 922
-                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-b7f012f6",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/stk/StkLauncherActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-c2707462",
                 "digest": {
                   "line_hashes": [
                     "243272355353562054059668005575964707016",
@@ -210,28 +195,43 @@
                   ],
                   "threshold": 0.9
                 },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/stk/StkLauncherActivity.java"
+                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-c2707462",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               },
               {
+                "digest": {
+                  "length": 1242,
+                  "function_hash": "10905916639519345456858877326694946625"
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/stk/StkInputActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9",
-                "id": "PUB-A-227203202-ee2909cb",
-                "digest": {
-                  "function_hash": "10905916639519345456858877326694946625",
-                  "length": 1242
-                },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-227203202-ee2909cb",
+                "source": "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
               }
+            ],
+            "severity": "Moderate",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Stk/+/aa8d8c37e1949286191649d9e9d97e750a948cf9"
             ]
           },
           "database_specific": {
@@ -239,7 +239,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-235100180",
         "CVE-2022-20536"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -42,55 +42,55 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
             "types": [
               "EoP"
             ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/ims/+/1a3d0d5bb846e8313bfe5219181afc8b1d1cfb21"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "rcs/rcsservice/src/com/android/service/ims/RcsService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/ims/+/1a3d0d5bb846e8313bfe5219181afc8b1d1cfb21",
-                "id": "PUB-A-235100180-03275d38",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "32667535482999251504552308217893029360",
                     "222843283158753581516402587015120573532",
                     "51443829663246950227140423887322028393",
                     "333655954522793867955443221285273009014"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/ims/+/1a3d0d5bb846e8313bfe5219181afc8b1d1cfb21",
+                "id": "PUB-A-235100180-03275d38",
                 "match_only_versions": [
                   "13"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                ],
                 "target": {
-                  "function": "registerBroadcastReceiver",
                   "file": "rcs/rcsservice/src/com/android/service/ims/RcsService.java"
                 },
+                "signature_version": "v1"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/ims/+/1a3d0d5bb846e8313bfe5219181afc8b1d1cfb21",
-                "id": "PUB-A-235100180-61be8729",
                 "digest": {
                   "function_hash": "268927680633614983422039189214861129576",
                   "length": 270
                 },
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/ims/+/1a3d0d5bb846e8313bfe5219181afc8b1d1cfb21",
+                "id": "PUB-A-235100180-61be8729",
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "target": {
+                  "file": "rcs/rcsservice/src/com/android/service/ims/RcsService.java",
+                  "function": "registerBroadcastReceiver"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "severity": "Moderate",
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/ims/+/1a3d0d5bb846e8313bfe5219181afc8b1d1cfb21"
             ]
           },
           "database_specific": {
@@ -98,7 +98,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

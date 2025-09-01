@@ -7,7 +7,7 @@
         "A-184046278",
         "CVE-2021-0953"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -38,24 +38,13 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-6b36b0dd",
                 "digest": {
                   "line_hashes": [
                     "166902988781562001802179094443786026920",
@@ -64,24 +53,35 @@
                     "13635714733259997166812580850938143114"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184046278-6b36b0dd",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "setOnClickActivityIntent",
-                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
+                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java",
+                  "function": "setOnClickActivityIntent"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-e0ac779c",
                 "digest": {
-                  "function_hash": "44459358454518948558358821354827334476",
-                  "length": 168
-                }
+                  "length": 168,
+                  "function_hash": "44459358454518948558358821354827334476"
+                },
+                "id": "ASB-A-184046278-e0ac779c",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
+            ],
+            "spl": "2021-12-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-184046278.json"
@@ -109,39 +109,28 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "setOnClickActivityIntent",
-                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
+                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java",
+                  "function": "setOnClickActivityIntent"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-1684cc44",
                 "digest": {
-                  "function_hash": "44459358454518948558358821354827334476",
-                  "length": 168
-                }
+                  "length": 168,
+                  "function_hash": "44459358454518948558358821354827334476"
+                },
+                "id": "ASB-A-184046278-1684cc44",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-72220f6f",
                 "digest": {
                   "line_hashes": [
                     "166902988781562001802179094443786026920",
@@ -150,9 +139,20 @@
                     "13635714733259997166812580850938143114"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184046278-72220f6f",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
+            ],
+            "spl": "2021-12-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-184046278.json"
@@ -180,39 +180,28 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "setOnClickActivityIntent",
-                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
+                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java",
+                  "function": "setOnClickActivityIntent"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-d92136b2",
                 "digest": {
-                  "function_hash": "44459358454518948558358821354827334476",
-                  "length": 168
-                }
+                  "length": 168,
+                  "function_hash": "44459358454518948558358821354827334476"
+                },
+                "id": "ASB-A-184046278-d92136b2",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-f639321d",
                 "digest": {
                   "line_hashes": [
                     "166902988781562001802179094443786026920",
@@ -221,9 +210,20 @@
                     "13635714733259997166812580850938143114"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184046278-f639321d",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
+            ],
+            "spl": "2021-12-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-184046278.json"
@@ -251,39 +251,28 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "setOnClickActivityIntent",
-                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
+                  "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java",
+                  "function": "setOnClickActivityIntent"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-966e5e0c",
                 "digest": {
-                  "function_hash": "44459358454518948558358821354827334476",
-                  "length": 168
-                }
+                  "length": 168,
+                  "function_hash": "44459358454518948558358821354827334476"
+                },
+                "id": "ASB-A-184046278-966e5e0c",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/quicksearchbox/SearchWidgetProvider.java"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188",
-                "id": "ASB-A-184046278-a3d4c3da",
                 "digest": {
                   "line_hashes": [
                     "166902988781562001802179094443786026920",
@@ -292,16 +281,27 @@
                     "13635714733259997166812580850938143114"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "ASB-A-184046278-a3d4c3da",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/ae2c873754cd8c54ce8a76aacbc0e1a0bf827188"
+            ],
+            "spl": "2021-12-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-184046278.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

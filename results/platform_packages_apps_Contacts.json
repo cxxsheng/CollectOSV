@@ -7,7 +7,7 @@
         "A-161718556",
         "CVE-2020-0422"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-10-01T00:00:00Z",
       "references": [
         {
@@ -43,39 +43,31 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2020-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-03a1623c",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "doFinishNotificationWithShareAction",
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-03a1623c",
                 "digest": {
-                  "function_hash": "143117533060433941490794635742367359210",
-                  "length": 630
-                }
+                  "length": 630,
+                  "function_hash": "143117533060433941490794635742367359210"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-0d09ce00",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-0d09ce00",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265459757555572881178699233291127079094",
                     "60812962559590082934523123749345645043",
@@ -111,50 +103,50 @@
                     "117264011293165352508352013612060795388",
                     "113319557767950227201667435929003031189",
                     "247196066635683647125738117585919706587"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-0e2bb4a3",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructProgressNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-0e2bb4a3",
                 "digest": {
-                  "function_hash": "75236388065158281181208974249965697022",
-                  "length": 1182
-                }
+                  "length": 1182,
+                  "function_hash": "75236388065158281181208974249965697022"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-29d51d63",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-29d51d63",
                 "digest": {
-                  "function_hash": "189230997803026271871907289416866835087",
-                  "length": 132
-                }
+                  "length": 132,
+                  "function_hash": "189230997803026271871907289416866835087"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-4b327ee3",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-4b327ee3",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202981978073905480718588767237739344621",
                     "32271363586515590834670012682067985969",
@@ -163,56 +155,64 @@
                     "308777615474344538863808261569543881799",
                     "156105878100784396055880831916350087355",
                     "37856883597302656577897057055390010687"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-d5cd1c1c",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotificationWithFlags",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-d5cd1c1c",
                 "digest": {
-                  "function_hash": "314744629540030522235289327547400741339",
-                  "length": 605
-                }
+                  "length": 605,
+                  "function_hash": "314744629540030522235289327547400741339"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-e666f021",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructImportFailureNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-e666f021",
                 "digest": {
-                  "function_hash": "145243305442392071760106055747053560846",
-                  "length": 582
-                }
+                  "length": 582,
+                  "function_hash": "145243305442392071760106055747053560846"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-eac84611",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructCancelNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-eac84611",
                 "digest": {
-                  "function_hash": "130297687207063583090026337891029240129",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "130297687207063583090026337891029240129"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2020-10-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-161718556.json"
@@ -241,39 +241,31 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2020-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-0de9582e",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructImportFailureNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-0de9582e",
                 "digest": {
-                  "function_hash": "145243305442392071760106055747053560846",
-                  "length": 582
-                }
+                  "length": 582,
+                  "function_hash": "145243305442392071760106055747053560846"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-2c70ff5f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-2c70ff5f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265459757555572881178699233291127079094",
                     "60812962559590082934523123749345645043",
@@ -309,35 +301,35 @@
                     "117264011293165352508352013612060795388",
                     "113319557767950227201667435929003031189",
                     "247196066635683647125738117585919706587"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-676da957",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotificationWithFlags",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-676da957",
                 "digest": {
-                  "function_hash": "314744629540030522235289327547400741339",
-                  "length": 605
-                }
+                  "length": 605,
+                  "function_hash": "314744629540030522235289327547400741339"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-71a3d145",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-71a3d145",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202981978073905480718588767237739344621",
                     "32271363586515590834670012682067985969",
@@ -346,71 +338,79 @@
                     "308777615474344538863808261569543881799",
                     "156105878100784396055880831916350087355",
                     "37856883597302656577897057055390010687"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-92cbd588",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-92cbd588",
                 "digest": {
-                  "function_hash": "189230997803026271871907289416866835087",
-                  "length": 132
-                }
+                  "length": 132,
+                  "function_hash": "189230997803026271871907289416866835087"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-946a4d4b",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructCancelNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-946a4d4b",
                 "digest": {
-                  "function_hash": "130297687207063583090026337891029240129",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "130297687207063583090026337891029240129"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-a8cc649f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "doFinishNotificationWithShareAction",
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-a8cc649f",
                 "digest": {
-                  "function_hash": "143117533060433941490794635742367359210",
-                  "length": 630
-                }
+                  "length": 630,
+                  "function_hash": "143117533060433941490794635742367359210"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-eb317ede",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructProgressNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-eb317ede",
                 "digest": {
-                  "function_hash": "75236388065158281181208974249965697022",
-                  "length": 1182
-                }
+                  "length": 1182,
+                  "function_hash": "75236388065158281181208974249965697022"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2020-10-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-161718556.json"
@@ -439,54 +439,46 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2020-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-2605c2fb",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-2605c2fb",
                 "digest": {
-                  "function_hash": "189230997803026271871907289416866835087",
-                  "length": 132
-                }
+                  "length": 132,
+                  "function_hash": "189230997803026271871907289416866835087"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-26971e9c",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructProgressNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-26971e9c",
                 "digest": {
-                  "function_hash": "75236388065158281181208974249965697022",
-                  "length": 1182
-                }
+                  "length": 1182,
+                  "function_hash": "75236388065158281181208974249965697022"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-38be3e29",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-38be3e29",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202981978073905480718588767237739344621",
                     "32271363586515590834670012682067985969",
@@ -495,35 +487,35 @@
                     "308777615474344538863808261569543881799",
                     "156105878100784396055880831916350087355",
                     "37856883597302656577897057055390010687"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-60723af8",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "doFinishNotificationWithShareAction",
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-60723af8",
                 "digest": {
-                  "function_hash": "143117533060433941490794635742367359210",
-                  "length": 630
-                }
+                  "length": 630,
+                  "function_hash": "143117533060433941490794635742367359210"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-a5fde98f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-a5fde98f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265459757555572881178699233291127079094",
                     "60812962559590082934523123749345645043",
@@ -559,56 +551,64 @@
                     "117264011293165352508352013612060795388",
                     "113319557767950227201667435929003031189",
                     "247196066635683647125738117585919706587"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-ad39ac50",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotificationWithFlags",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-ad39ac50",
                 "digest": {
-                  "function_hash": "314744629540030522235289327547400741339",
-                  "length": 605
-                }
+                  "length": 605,
+                  "function_hash": "314744629540030522235289327547400741339"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-ef018831",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructImportFailureNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-ef018831",
                 "digest": {
-                  "function_hash": "145243305442392071760106055747053560846",
-                  "length": 582
-                }
+                  "length": 582,
+                  "function_hash": "145243305442392071760106055747053560846"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-f85f3b9b",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructCancelNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-f85f3b9b",
                 "digest": {
-                  "function_hash": "130297687207063583090026337891029240129",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "130297687207063583090026337891029240129"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2020-10-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-161718556.json"
@@ -637,24 +637,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2020-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-2ba874bd",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-2ba874bd",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265459757555572881178699233291127079094",
                     "60812962559590082934523123749345645043",
@@ -690,20 +682,20 @@
                     "117264011293165352508352013612060795388",
                     "113319557767950227201667435929003031189",
                     "247196066635683647125738117585919706587"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-58084371",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-58084371",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202981978073905480718588767237739344621",
                     "32271363586515590834670012682067985969",
@@ -712,101 +704,109 @@
                     "308777615474344538863808261569543881799",
                     "156105878100784396055880831916350087355",
                     "37856883597302656577897057055390010687"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-59994b0b",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructImportFailureNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-59994b0b",
                 "digest": {
-                  "function_hash": "145243305442392071760106055747053560846",
-                  "length": 582
-                }
+                  "length": 582,
+                  "function_hash": "145243305442392071760106055747053560846"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-6becfc38",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-6becfc38",
                 "digest": {
-                  "function_hash": "189230997803026271871907289416866835087",
-                  "length": 132
-                }
+                  "length": 132,
+                  "function_hash": "189230997803026271871907289416866835087"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-6e7a645f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructProgressNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-6e7a645f",
                 "digest": {
-                  "function_hash": "75236388065158281181208974249965697022",
-                  "length": 1182
-                }
+                  "length": 1182,
+                  "function_hash": "75236388065158281181208974249965697022"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-7f727552",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructCancelNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-7f727552",
                 "digest": {
-                  "function_hash": "130297687207063583090026337891029240129",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "130297687207063583090026337891029240129"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-9fbaeca0",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "doFinishNotificationWithShareAction",
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-9fbaeca0",
                 "digest": {
-                  "function_hash": "143117533060433941490794635742367359210",
-                  "length": 630
-                }
+                  "length": 630,
+                  "function_hash": "143117533060433941490794635742367359210"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-f3dc8494",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotificationWithFlags",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-f3dc8494",
                 "digest": {
-                  "function_hash": "314744629540030522235289327547400741339",
-                  "length": 605
-                }
+                  "length": 605,
+                  "function_hash": "314744629540030522235289327547400741339"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2020-10-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-161718556.json"
@@ -835,24 +835,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2020-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-16c00b27",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-16c00b27",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265459757555572881178699233291127079094",
                     "60812962559590082934523123749345645043",
@@ -888,80 +880,80 @@
                     "117264011293165352508352013612060795388",
                     "113319557767950227201667435929003031189",
                     "247196066635683647125738117585919706587"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-4c77f06e",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructCancelNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-4c77f06e",
                 "digest": {
-                  "function_hash": "130297687207063583090026337891029240129",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "130297687207063583090026337891029240129"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-4de05112",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructImportFailureNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-4de05112",
                 "digest": {
-                  "function_hash": "145243305442392071760106055747053560846",
-                  "length": 582
-                }
+                  "length": 582,
+                  "function_hash": "145243305442392071760106055747053560846"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-75a6695e",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "doFinishNotificationWithShareAction",
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-75a6695e",
                 "digest": {
-                  "function_hash": "143117533060433941490794635742367359210",
-                  "length": 630
-                }
+                  "length": 630,
+                  "function_hash": "143117533060433941490794635742367359210"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-7adea742",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructProgressNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-7adea742",
                 "digest": {
-                  "function_hash": "75236388065158281181208974249965697022",
-                  "length": 1182
-                }
+                  "length": 1182,
+                  "function_hash": "75236388065158281181208974249965697022"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-889dbbc8",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "file": "src/com/android/contacts/vcard/ExportProcessor.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-889dbbc8",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202981978073905480718588767237739344621",
                     "32271363586515590834670012682067985969",
@@ -970,48 +962,56 @@
                     "308777615474344538863808261569543881799",
                     "156105878100784396055880831916350087355",
                     "37856883597302656577897057055390010687"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-a3c0588b",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotificationWithFlags",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-a3c0588b",
                 "digest": {
-                  "function_hash": "314744629540030522235289327547400741339",
-                  "length": 605
-                }
+                  "length": 605,
+                  "function_hash": "314744629540030522235289327547400741339"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-161718556-d9ade03b",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
                 "target": {
                   "function": "constructFinishNotification",
                   "file": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856",
-                "id": "ASB-A-161718556-d9ade03b",
                 "digest": {
-                  "function_hash": "189230997803026271871907289416866835087",
-                  "length": 132
-                }
+                  "length": 132,
+                  "function_hash": "189230997803026271871907289416866835087"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/c987095255ee953de27ea1de360c44aa99b1b856"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2020-10-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-161718556.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-172252122",
@@ -1020,7 +1020,7 @@
         "A-172252122",
         "CVE-2021-0446"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -1056,88 +1056,88 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-172252122-29de44d0",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
                 "target": {
                   "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
-                "id": "ASB-A-172252122-29de44d0",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "183985563741908556164829149660949894098",
                     "241248886362317539271647231456803582232",
                     "153458019161750203142924314518962119002"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-172252122-63f02065",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/contacts/vcard/ImportVCardActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
-                "id": "ASB-A-172252122-63f02065",
                 "digest": {
-                  "function_hash": "134876642430480815571771471292155310008",
-                  "length": 1795
-                }
+                  "length": 1795,
+                  "function_hash": "134876642430480815571771471292155310008"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-172252122-78681a50",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
-                "id": "ASB-A-172252122-78681a50",
                 "digest": {
-                  "function_hash": "26447514833447817493690386448352045215",
-                  "length": 1224
-                }
+                  "length": 1224,
+                  "function_hash": "26447514833447817493690386448352045215"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-172252122-ea104ea2",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
                 "target": {
                   "file": "src/com/android/contacts/vcard/ImportVCardActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e",
-                "id": "ASB-A-172252122-ea104ea2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "26162171377046155041902594664831628231",
                     "6146462039492205448327261203358343556",
                     "239296934362288178396037879008712021905"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/b423fdf941a10fc1498dcee0665e56fb1856bf4e"
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2021-04-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-172252122.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-178825358",
@@ -1146,7 +1146,7 @@
         "A-178825358",
         "CVE-2021-0444"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -1182,73 +1182,65 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-47f7dcdc",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-47f7dcdc",
                 "digest": {
-                  "function_hash": "159371420014942396403050186739044013318",
-                  "length": 288
-                }
+                  "length": 288,
+                  "function_hash": "159371420014942396403050186739044013318"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-6d3f25c9",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-6d3f25c9",
                 "digest": {
-                  "function_hash": "311755631475428335247053096977776939348",
-                  "length": 774
-                }
+                  "length": 774,
+                  "function_hash": "311755631475428335247053096977776939348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-94fe613f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-94fe613f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "29365743690095436116035910426004384681",
                     "248153419878083777489925353281781237821",
                     "338213729626767697559176296913147585825",
                     "81704783892045214501138446201965108387"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-af141001",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-af141001",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "22237428926174014830969948776489499039",
                     "222433763452713413645502744421477528484",
@@ -1269,41 +1261,49 @@
                     "166876672002561956685357027912500719161",
                     "118544635469916353755715886732733681967",
                     "283631128690369748727888147171261318861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-c7e07c3f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-c7e07c3f",
                 "digest": {
-                  "function_hash": "19995906043034311077628849478822950858",
-                  "length": 105
-                }
+                  "length": 105,
+                  "function_hash": "19995906043034311077628849478822950858"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-f9ac5539",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContactForResult",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-f9ac5539",
                 "digest": {
-                  "function_hash": "158389822995361825500072866711643727870",
-                  "length": 121
-                }
+                  "length": 121,
+                  "function_hash": "158389822995361825500072866711643727870"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-04-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-178825358.json"
@@ -1332,69 +1332,61 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-1591ebe5",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-1591ebe5",
                 "digest": {
-                  "function_hash": "159371420014942396403050186739044013318",
-                  "length": 288
-                }
+                  "length": 288,
+                  "function_hash": "159371420014942396403050186739044013318"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-1be17f5f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContactForResult",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-1be17f5f",
                 "digest": {
-                  "function_hash": "158389822995361825500072866711643727870",
-                  "length": 121
-                }
+                  "length": 121,
+                  "function_hash": "158389822995361825500072866711643727870"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-6053f2a6",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-6053f2a6",
                 "digest": {
-                  "function_hash": "19995906043034311077628849478822950858",
-                  "length": 105
-                }
+                  "length": 105,
+                  "function_hash": "19995906043034311077628849478822950858"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-7b6e5e08",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-7b6e5e08",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "22237428926174014830969948776489499039",
                     "222433763452713413645502744421477528484",
@@ -1415,45 +1407,53 @@
                     "166876672002561956685357027912500719161",
                     "118544635469916353755715886732733681967",
                     "283631128690369748727888147171261318861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-aca3a21e",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-aca3a21e",
                 "digest": {
-                  "function_hash": "311755631475428335247053096977776939348",
-                  "length": 774
-                }
+                  "length": 774,
+                  "function_hash": "311755631475428335247053096977776939348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-ce8cadec",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-ce8cadec",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "29365743690095436116035910426004384681",
                     "248153419878083777489925353281781237821",
                     "338213729626767697559176296913147585825",
                     "81704783892045214501138446201965108387"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-04-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-178825358.json"
@@ -1482,103 +1482,95 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-10ef852c",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContactForResult",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-10ef852c",
                 "digest": {
-                  "function_hash": "158389822995361825500072866711643727870",
-                  "length": 121
-                }
+                  "length": 121,
+                  "function_hash": "158389822995361825500072866711643727870"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-2345c80d",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-2345c80d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "29365743690095436116035910426004384681",
                     "248153419878083777489925353281781237821",
                     "338213729626767697559176296913147585825",
                     "81704783892045214501138446201965108387"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-36d334cf",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-36d334cf",
                 "digest": {
-                  "function_hash": "159371420014942396403050186739044013318",
-                  "length": 288
-                }
+                  "length": 288,
+                  "function_hash": "159371420014942396403050186739044013318"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-a5b3ee5e",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-a5b3ee5e",
                 "digest": {
-                  "function_hash": "311755631475428335247053096977776939348",
-                  "length": 774
-                }
+                  "length": 774,
+                  "function_hash": "311755631475428335247053096977776939348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-d60fd6ea",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-d60fd6ea",
                 "digest": {
-                  "function_hash": "19995906043034311077628849478822950858",
-                  "length": 105
-                }
+                  "length": 105,
+                  "function_hash": "19995906043034311077628849478822950858"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-f0d911ca",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-f0d911ca",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "22237428926174014830969948776489499039",
                     "222433763452713413645502744421477528484",
@@ -1599,11 +1591,19 @@
                     "166876672002561956685357027912500719161",
                     "118544635469916353755715886732733681967",
                     "283631128690369748727888147171261318861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-04-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-178825358.json"
@@ -1632,73 +1632,65 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-06811525",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-06811525",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "29365743690095436116035910426004384681",
                     "248153419878083777489925353281781237821",
                     "338213729626767697559176296913147585825",
                     "81704783892045214501138446201965108387"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-0e7a8935",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-0e7a8935",
                 "digest": {
-                  "function_hash": "19995906043034311077628849478822950858",
-                  "length": 105
-                }
+                  "length": 105,
+                  "function_hash": "19995906043034311077628849478822950858"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-2f052175",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-2f052175",
                 "digest": {
-                  "function_hash": "311755631475428335247053096977776939348",
-                  "length": 774
-                }
+                  "length": 774,
+                  "function_hash": "311755631475428335247053096977776939348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-42a4678e",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-42a4678e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "22237428926174014830969948776489499039",
                     "222433763452713413645502744421477528484",
@@ -1719,48 +1711,56 @@
                     "166876672002561956685357027912500719161",
                     "118544635469916353755715886732733681967",
                     "283631128690369748727888147171261318861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-4ed126dc",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContactForResult",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-4ed126dc",
                 "digest": {
-                  "function_hash": "158389822995361825500072866711643727870",
-                  "length": 121
-                }
+                  "length": 121,
+                  "function_hash": "158389822995361825500072866711643727870"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-178825358-eab9d541",
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
                 "target": {
                   "function": "startQuickContact",
                   "file": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00",
-                "id": "ASB-A-178825358-eab9d541",
                 "digest": {
-                  "function_hash": "159371420014942396403050186739044013318",
-                  "length": 288
-                }
+                  "length": 288,
+                  "function_hash": "159371420014942396403050186739044013318"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/cec9f9094baa5225ca2ce9a64c8fcd6af7000b00"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-04-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-178825358.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-182809425",
@@ -1769,7 +1769,7 @@
         "A-182809425",
         "CVE-2021-0603"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -1804,56 +1804,56 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
             "spl": "2021-07-05",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/ea3e6cdd4152b5878121698f3dde6542b897c191"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/ea3e6cdd4152b5878121698f3dde6542b897c191",
                 "target": {
                   "file": "src/com/android/contacts/activities/ContactSelectionActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/ea3e6cdd4152b5878121698f3dde6542b897c191",
-                "id": "ASB-A-182809425-110afd27",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "190312185624807943592970628589308963729",
                     "35882184424909055692196935657509236596",
                     "58213294088913198917405689667956433894"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-182809425-110afd27",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/ea3e6cdd4152b5878121698f3dde6542b897c191",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/contacts/activities/ContactSelectionActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/ea3e6cdd4152b5878121698f3dde6542b897c191",
-                "id": "ASB-A-182809425-57ca89de",
                 "digest": {
-                  "function_hash": "246741278986562264655030820617111442652",
-                  "length": 578
-                }
+                  "length": 578,
+                  "function_hash": "246741278986562264655030820617111442652"
+                },
+                "id": "ASB-A-182809425-57ca89de",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/ea3e6cdd4152b5878121698f3dde6542b897c191"
+            ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-182809425.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-191053931",
@@ -1862,7 +1862,7 @@
         "A-191053931",
         "CVE-2021-0926"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-11-01T00:00:00Z",
       "references": [
         {
@@ -1901,10 +1901,10 @@
             "types": [
               "EoP"
             ],
-            "spl": "2021-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Contacts/+/024c62fa49aa2090daf50657c2b509b9478d8b92"
-            ]
+            ],
+            "spl": "2021-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-191053931.json"
@@ -1936,10 +1936,10 @@
             "types": [
               "EoP"
             ],
-            "spl": "2021-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Contacts/+/024c62fa49aa2090daf50657c2b509b9478d8b92"
-            ]
+            ],
+            "spl": "2021-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-191053931.json"
@@ -1971,10 +1971,10 @@
             "types": [
               "EoP"
             ],
-            "spl": "2021-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Contacts/+/024c62fa49aa2090daf50657c2b509b9478d8b92"
-            ]
+            ],
+            "spl": "2021-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-191053931.json"
@@ -2006,17 +2006,17 @@
             "types": [
               "EoP"
             ],
-            "spl": "2021-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Contacts/+/024c62fa49aa2090daf50657c2b509b9478d8b92"
-            ]
+            ],
+            "spl": "2021-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-191053931.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-195748381",
@@ -2025,7 +2025,7 @@
         "A-195748381",
         "CVE-2021-0952"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -2057,54 +2057,46 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-130309fb",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "33710228034365950587107242472375266098",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "33710228034365950587107242472375266098"
+                },
+                "id": "ASB-A-195748381-130309fb",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "doCropPhoto",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-150a3476",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "314418117801851775801355691785811246598",
-                  "length": 658
-                }
+                  "length": 658,
+                  "function_hash": "314418117801851775801355691785811246598"
+                },
+                "id": "ASB-A-195748381-150a3476",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-747d2d82",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "297009647437187288351312534496057984541",
                     "38469369907873177461087543694196245761",
@@ -2121,50 +2113,50 @@
                     "35995487625435595485094658060379210616",
                     "75986618999617851885806937119284027442",
                     "261279452738273431249761987130227645760"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-747d2d82",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-9085cbd7",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "179677790373120952691248773781147594472",
-                  "length": 173
-                }
+                  "length": 173,
+                  "function_hash": "179677790373120952691248773781147594472"
+                },
+                "id": "ASB-A-195748381-9085cbd7",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-b947400e",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "297298836795236935448087114931872793637",
-                  "length": 184
-                }
+                  "length": 184,
+                  "function_hash": "297298836795236935448087114931872793637"
+                },
+                "id": "ASB-A-195748381-b947400e",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-f3f2b5de",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223278207680195898951512275945111873585",
                     "244089033526537708944594960841179992814",
@@ -2180,11 +2172,19 @@
                     "163652942217467545884249545905377635004",
                     "69691961966343907956262108305030078463",
                     "135297140287006104911559077189726871358"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-f3f2b5de",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-195748381.json"
@@ -2213,69 +2213,61 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-03e52fdb",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "297298836795236935448087114931872793637",
-                  "length": 184
-                }
+                  "length": 184,
+                  "function_hash": "297298836795236935448087114931872793637"
+                },
+                "id": "ASB-A-195748381-03e52fdb",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-15e7b106",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "179677790373120952691248773781147594472",
-                  "length": 173
-                }
+                  "length": 173,
+                  "function_hash": "179677790373120952691248773781147594472"
+                },
+                "id": "ASB-A-195748381-15e7b106",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "doCropPhoto",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-5a488543",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "314418117801851775801355691785811246598",
-                  "length": 658
-                }
+                  "length": 658,
+                  "function_hash": "314418117801851775801355691785811246598"
+                },
+                "id": "ASB-A-195748381-5a488543",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-7f7d8f3e",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "297009647437187288351312534496057984541",
                     "38469369907873177461087543694196245761",
@@ -2292,20 +2284,20 @@
                     "35995487625435595485094658060379210616",
                     "75986618999617851885806937119284027442",
                     "261279452738273431249761987130227645760"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-7f7d8f3e",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-a302240f",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223278207680195898951512275945111873585",
                     "244089033526537708944594960841179992814",
@@ -2321,26 +2313,34 @@
                     "163652942217467545884249545905377635004",
                     "69691961966343907956262108305030078463",
                     "135297140287006104911559077189726871358"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-a302240f",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-c9cf8f45",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "33710228034365950587107242472375266098",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "33710228034365950587107242472375266098"
+                },
+                "id": "ASB-A-195748381-c9cf8f45",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-195748381.json"
@@ -2369,54 +2369,46 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-14db33ff",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "179677790373120952691248773781147594472",
-                  "length": 173
-                }
+                  "length": 173,
+                  "function_hash": "179677790373120952691248773781147594472"
+                },
+                "id": "ASB-A-195748381-14db33ff",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "doCropPhoto",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-4c1b28c5",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "314418117801851775801355691785811246598",
-                  "length": 658
-                }
+                  "length": 658,
+                  "function_hash": "314418117801851775801355691785811246598"
+                },
+                "id": "ASB-A-195748381-4c1b28c5",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-a95bc6ca",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "297009647437187288351312534496057984541",
                     "38469369907873177461087543694196245761",
@@ -2433,20 +2425,20 @@
                     "35995487625435595485094658060379210616",
                     "75986618999617851885806937119284027442",
                     "261279452738273431249761987130227645760"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-a95bc6ca",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-ae3262a0",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223278207680195898951512275945111873585",
                     "244089033526537708944594960841179992814",
@@ -2462,41 +2454,49 @@
                     "163652942217467545884249545905377635004",
                     "69691961966343907956262108305030078463",
                     "135297140287006104911559077189726871358"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-ae3262a0",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-d67b2744",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "33710228034365950587107242472375266098",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "33710228034365950587107242472375266098"
+                },
+                "id": "ASB-A-195748381-d67b2744",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-fd26ac0e",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "297298836795236935448087114931872793637",
-                  "length": 184
-                }
+                  "length": 184,
+                  "function_hash": "297298836795236935448087114931872793637"
+                },
+                "id": "ASB-A-195748381-fd26ac0e",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-195748381.json"
@@ -2525,24 +2525,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-009d7708",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223278207680195898951512275945111873585",
                     "244089033526537708944594960841179992814",
@@ -2558,20 +2550,20 @@
                     "163652942217467545884249545905377635004",
                     "69691961966343907956262108305030078463",
                     "135297140287006104911559077189726871358"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-009d7708",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-3299212d",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "297009647437187288351312534496057984541",
                     "38469369907873177461087543694196245761",
@@ -2588,78 +2580,86 @@
                     "35995487625435595485094658060379210616",
                     "75986618999617851885806937119284027442",
                     "261279452738273431249761987130227645760"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-195748381-3299212d",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "onActivityResult",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-3dac08dd",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "33710228034365950587107242472375266098",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "33710228034365950587107242472375266098"
+                },
+                "id": "ASB-A-195748381-3dac08dd",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/activities/AttachPhotoActivity.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-80013b57",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "179677790373120952691248773781147594472",
-                  "length": 173
-                }
+                  "length": 173,
+                  "function_hash": "179677790373120952691248773781147594472"
+                },
+                "id": "ASB-A-195748381-80013b57",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "hasIntentHandler",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-bdd7ad26",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "297298836795236935448087114931872793637",
-                  "length": 184
-                }
+                  "length": 184,
+                  "function_hash": "297298836795236935448087114931872793637"
+                },
+                "id": "ASB-A-195748381-bdd7ad26",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "doCropPhoto",
                   "file": "src/com/android/contacts/detail/PhotoSelectionHandler.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389",
-                "id": "ASB-A-195748381-da0c6cae",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "314418117801851775801355691785811246598",
-                  "length": 658
-                }
+                  "length": 658,
+                  "function_hash": "314418117801851775801355691785811246598"
+                },
+                "id": "ASB-A-195748381-da0c6cae",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/8b19ca470847f5f77d5b2e5dd086aae9ad4ea389"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2021-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-195748381.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-218341397",
@@ -2668,7 +2668,7 @@
         "A-218341397",
         "CVE-2022-20134"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -2708,13 +2708,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Dialer/+/d96b98bbb21118356726588d0ff3707246369fdb"
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2743,13 +2743,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/1f6d68c79699a9790e6cf0ab82bdc15c64eb7f5a"
+            ],
             "types": [
               "EoP"
             ],
-            "spl": "2022-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/1f6d68c79699a9790e6cf0ab82bdc15c64eb7f5a"
-            ]
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2778,13 +2778,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Dialer/+/380a088b2d03f239e37b23c051beadd7d0280dbf"
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2813,13 +2813,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Contacts/+/1f6d68c79699a9790e6cf0ab82bdc15c64eb7f5a"
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2848,13 +2848,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Dialer/+/1ab4eeb65ed117745b9576769b069cf0b38eafb0"
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2883,13 +2883,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/af44f5ac3f3fb660c6646d62c6da9b988d767b36"
+            ],
             "types": [
               "EoP"
             ],
-            "spl": "2022-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/af44f5ac3f3fb660c6646d62c6da9b988d767b36"
-            ]
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2918,13 +2918,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Dialer/+/53fc675314c47c84c78c53c3cca3e55483c966ed"
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2953,13 +2953,13 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/af44f5ac3f3fb660c6646d62c6da9b988d767b36"
+            ],
             "types": [
               "EoP"
             ],
-            "spl": "2022-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Contacts/+/af44f5ac3f3fb660c6646d62c6da9b988d767b36"
-            ]
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
@@ -2988,20 +2988,434 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Dialer/+/0efea3126124e967b42a02b55d26c3130a806e6d"
+            ],
             "types": [
               "EoP"
             ],
-            "spl": "2022-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Dialer/+/0efea3126124e967b42a02b55d26c3130a806e6d"
-            ]
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-218341397.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
+    },
+    {
+      "id": "ASB-A-388032224",
+      "details": "In onCreate of SelectAccountActivity.java, there is a possible way to add contacts without permission due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-388032224",
+        "CVE-2025-48523"
+      ],
+      "modified": "2025-09-01T15:59:30.788422Z",
+      "published": "2025-09-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-09-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/Contacts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16-next:0"
+                },
+                {
+                  "fixed": "16-next:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16-next"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/615666035723ff1828ff24674209012f30082de9",
+                "id": "ASB-A-388032224-aec7a26d",
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "65564356607277534436150172475175231106",
+                    "191796700634440559241015077184278445963",
+                    "281892994203818550334254604165202245383",
+                    "71885609132205396485296181628700741512",
+                    "104651787164578371536224819112459189469",
+                    "88593202937956494888005293644799818268",
+                    "165985182180417028789387494041434686673",
+                    "188367486637554207908560857786780417262",
+                    "182717922506615682891525769218125091764",
+                    "284003076085646647452777762808954884469",
+                    "249092255942031513079484402441123828186",
+                    "95886303725863482321449110670345318829"
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/615666035723ff1828ff24674209012f30082de9",
+                "id": "ASB-A-388032224-cfaa3019",
+                "digest": {
+                  "length": 1259,
+                  "function_hash": "293335654519794056458021428979007449916"
+                },
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/615666035723ff1828ff24674209012f30082de9"
+            ],
+            "spl": "2025-09-01"
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388032224.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/Contacts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/5484a98b668d6106cd8c857b5122cafec82a6644",
+                "id": "ASB-A-388032224-a1654468",
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "65564356607277534436150172475175231106",
+                    "191796700634440559241015077184278445963",
+                    "281892994203818550334254604165202245383",
+                    "71885609132205396485296181628700741512",
+                    "104651787164578371536224819112459189469",
+                    "88593202937956494888005293644799818268",
+                    "165985182180417028789387494041434686673",
+                    "188367486637554207908560857786780417262",
+                    "182717922506615682891525769218125091764",
+                    "284003076085646647452777762808954884469",
+                    "249092255942031513079484402441123828186",
+                    "95886303725863482321449110670345318829"
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/5484a98b668d6106cd8c857b5122cafec82a6644",
+                "id": "ASB-A-388032224-a1de5820",
+                "digest": {
+                  "length": 1259,
+                  "function_hash": "293335654519794056458021428979007449916"
+                },
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/5484a98b668d6106cd8c857b5122cafec82a6644"
+            ],
+            "spl": "2025-09-01"
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388032224.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/Contacts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16:0"
+                },
+                {
+                  "fixed": "16:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/1dc140c0147d91384302dffcf072308855d69d21",
+                "id": "ASB-A-388032224-d0092f75",
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "65564356607277534436150172475175231106",
+                    "191796700634440559241015077184278445963",
+                    "281892994203818550334254604165202245383",
+                    "71885609132205396485296181628700741512",
+                    "104651787164578371536224819112459189469",
+                    "88593202937956494888005293644799818268",
+                    "165985182180417028789387494041434686673",
+                    "188367486637554207908560857786780417262",
+                    "182717922506615682891525769218125091764",
+                    "284003076085646647452777762808954884469",
+                    "249092255942031513079484402441123828186",
+                    "95886303725863482321449110670345318829"
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/1dc140c0147d91384302dffcf072308855d69d21",
+                "id": "ASB-A-388032224-f545174a",
+                "digest": {
+                  "length": 1259,
+                  "function_hash": "293335654519794056458021428979007449916"
+                },
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/1dc140c0147d91384302dffcf072308855d69d21"
+            ],
+            "spl": "2025-09-01"
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388032224.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/Contacts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/62aa0ca7cc36a6e79089b7f5b4409308c99359b5",
+                "id": "ASB-A-388032224-5720e4ca",
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "65564356607277534436150172475175231106",
+                    "191796700634440559241015077184278445963",
+                    "281892994203818550334254604165202245383",
+                    "71885609132205396485296181628700741512",
+                    "104651787164578371536224819112459189469",
+                    "88593202937956494888005293644799818268",
+                    "165985182180417028789387494041434686673",
+                    "188367486637554207908560857786780417262",
+                    "182717922506615682891525769218125091764",
+                    "284003076085646647452777762808954884469",
+                    "249092255942031513079484402441123828186",
+                    "95886303725863482321449110670345318829"
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/62aa0ca7cc36a6e79089b7f5b4409308c99359b5",
+                "id": "ASB-A-388032224-6f25cf39",
+                "digest": {
+                  "length": 1346,
+                  "function_hash": "121884802074557384806285207887510377590"
+                },
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/62aa0ca7cc36a6e79089b7f5b4409308c99359b5"
+            ],
+            "spl": "2025-09-01"
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388032224.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/Contacts",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/fd931e480d818d8decf2e8286293c5d62c484de1",
+                "id": "ASB-A-388032224-53c5feba",
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "65564356607277534436150172475175231106",
+                    "191796700634440559241015077184278445963",
+                    "281892994203818550334254604165202245383",
+                    "71885609132205396485296181628700741512",
+                    "104651787164578371536224819112459189469",
+                    "88593202937956494888005293644799818268",
+                    "165985182180417028789387494041434686673",
+                    "188367486637554207908560857786780417262",
+                    "182717922506615682891525769218125091764",
+                    "284003076085646647452777762808954884469",
+                    "249092255942031513079484402441123828186",
+                    "95886303725863482321449110670345318829"
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/apps/Contacts/+/fd931e480d818d8decf2e8286293c5d62c484de1",
+                "id": "ASB-A-388032224-6f2068a6",
+                "digest": {
+                  "length": 1259,
+                  "function_hash": "293335654519794056458021428979007449916"
+                },
+                "target": {
+                  "function": "onCreate",
+                  "file": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+                },
+                "signature_version": "v1"
+              }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Contacts/+/fd931e480d818d8decf2e8286293c5d62c484de1"
+            ],
+            "spl": "2025-09-01"
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-388032224.json"
+          }
+        }
+      ],
+      "schema_version": "1.7.3"
     }
   ]
 }

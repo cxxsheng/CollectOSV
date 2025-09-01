@@ -7,7 +7,7 @@
         "A-356630194",
         "CVE-2025-0096"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2025-02-01T00:00:00Z",
       "references": [
         {
@@ -42,49 +42,49 @@
             "15-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2025-02-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "st21nfc/hal/hal_fwlog.cc"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0",
-                "id": "ASB-A-356630194-07346c89",
+                "id": "ASB-A-356630194-1749863c",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "deprecated": false,
                 "digest": {
+                  "function_hash": "165987197722151145039007725392439655065",
+                  "length": 2175
+                },
+                "target": {
+                  "function": "handlePollingLoopData",
+                  "file": "st21nfc/hal/hal_fwlog.cc"
+                }
+              },
+              {
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0",
+                "id": "ASB-A-356630194-f240b6c5",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "184901186016634046180835950952564806967",
                     "186216076513178507879449714996662973261",
                     "126698021011107253298906417944068204446",
                     "259331588106946646897741373686426685891"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "handlePollingLoopData",
-                  "file": "st21nfc/hal/hal_fwlog.cc"
+                  ]
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0",
-                "id": "ASB-A-356630194-1c755619",
-                "digest": {
-                  "function_hash": "165987197722151145039007725392439655065",
-                  "length": 2175
+                "target": {
+                  "file": "st21nfc/hal/hal_fwlog.cc"
                 }
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-02-01",
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/b7056d70f2cdd1596a95048e4ee80b6d91bcb3e0"
             ]
           },
           "database_specific": {
@@ -113,11 +113,47 @@
             "15"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "vanir_signatures": [
+              {
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/2c6225e82a0d3d721fb84a3828a9916bc9b7aa89",
+                "id": "ASB-A-356630194-2a5c8d54",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "184901186016634046180835950952564806967",
+                    "186216076513178507879449714996662973261",
+                    "126698021011107253298906417944068204446",
+                    "259331588106946646897741373686426685891"
+                  ]
+                },
+                "target": {
+                  "file": "st21nfc/hal/hal_fwlog.cc"
+                }
+              },
+              {
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/2c6225e82a0d3d721fb84a3828a9916bc9b7aa89",
+                "id": "ASB-A-356630194-771909bc",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "165987197722151145039007725392439655065",
+                  "length": 2175
+                },
+                "target": {
+                  "function": "handlePollingLoopData",
+                  "file": "st21nfc/hal/hal_fwlog.cc"
+                }
+              }
+            ],
             "types": [
               "EoP"
             ],
             "spl": "2025-02-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/hardware/st/nfc/+/2c6225e82a0d3d721fb84a3828a9916bc9b7aa89"
             ]
@@ -127,7 +163,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-169328517",
@@ -136,7 +172,7 @@
         "A-169328517",
         "CVE-2021-0540"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -171,40 +207,30 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd"
-            ],
             "vanir_signatures": [
               {
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "halWrapperDataCallback",
-                  "file": "st21nfc/hal_wrapper.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd",
                 "id": "PUB-A-169328517-8182fa26",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "156402217938034955657566084179418192503",
                   "length": 8252
+                },
+                "target": {
+                  "function": "halWrapperDataCallback",
+                  "file": "st21nfc/hal_wrapper.cc"
                 }
               },
               {
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd",
                 "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "st21nfc/hal_wrapper.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd",
                 "id": "PUB-A-169328517-d1632530",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "3601903727802988883985426624848021982",
                     "228303039871677846233797537348230522257",
@@ -212,10 +238,20 @@
                     "92758868853395512953116271879982549087",
                     "2235125378971121113614138669053295544",
                     "12055157359709916415574761842356571803"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "st21nfc/hal_wrapper.cc"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/a009f4e3894f1be5e1786356753b4a51662e17dd"
+            ],
+            "severity": "Moderate",
+            "spl": "2021-06-01",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -223,7 +259,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-229994861",
@@ -232,7 +268,7 @@
         "A-229994861",
         "CVE-2022-20527"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -267,55 +303,55 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "st21nfc/hal/halcore.cc"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6",
-                "id": "PUB-A-229994861-33818c24",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "165744123791803713704763289471465043099",
                     "27783976174390821137820152893181231296",
                     "76791411373196050948003848164575001558",
                     "301341817714026765422772554170160352996"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "target": {
+                  "file": "st21nfc/hal/halcore.cc"
+                },
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6",
+                "id": "PUB-A-229994861-33818c24",
+                "signature_type": "Line",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "HalCoreCallback",
-                  "file": "st21nfc/hal/halcore.cc"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6",
-                "id": "PUB-A-229994861-ddaf01cb",
                 "digest": {
                   "function_hash": "90138370701600535322812863812506258764",
                   "length": 1926
                 },
+                "target": {
+                  "function": "HalCoreCallback",
+                  "file": "st21nfc/hal/halcore.cc"
+                },
+                "source": "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6",
+                "id": "PUB-A-229994861-ddaf01cb",
+                "signature_type": "Function",
                 "match_only_versions": [
                   "13"
                 ]
               }
+            ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate",
+            "spl": "2022-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/st/nfc/+/bf79f190c62886e457e13b030dd67d846958b3c6"
             ]
           },
           "database_specific": {
@@ -323,7 +359,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-174046397",
         "CVE-2021-0487"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-05-01T00:00:00Z",
       "references": [
         {
@@ -42,24 +42,19 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2021-05-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/CalendarProvider/+/11fe2048a5aa5d3d3db315194921130bf2407919"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-174046397-ecaf0a28",
+                "source": "https://android.googlesource.com/platform/packages/providers/CalendarProvider/+/11fe2048a5aa5d3d3db315194921130bf2407919",
                 "target": {
                   "file": "src/com/android/providers/calendar/CalendarDebugActivity.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/CalendarProvider/+/11fe2048a5aa5d3d3db315194921130bf2407919",
-                "id": "ASB-A-174046397-ecaf0a28",
                 "digest": {
                   "line_hashes": [
                     "60518912781230707920037808092477919804",
@@ -67,8 +62,13 @@
                     "322385714673689406118538491383202140376"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
+            ],
+            "spl": "2021-05-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/CalendarProvider/+/11fe2048a5aa5d3d3db315194921130bf2407919"
             ]
           },
           "database_specific": {
@@ -76,7 +76,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

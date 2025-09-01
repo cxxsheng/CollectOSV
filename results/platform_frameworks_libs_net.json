@@ -7,7 +7,7 @@
         "A-193031925",
         "CVE-2024-49734"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -70,15 +70,15 @@
             "15-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2025-01-01",
             "types": [
               "ID"
             ],
-            "spl": "2025-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Connectivity/+/9a0a647f50dde062bb0846a87961607b4ca1c4c8",
               "https://android.googlesource.com/platform/packages/modules/Connectivity/+/f0fa3a4554393018b0fcab937ff0013a1829a69b"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
@@ -106,15 +106,15 @@
             "15"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2025-01-01",
             "types": [
               "ID"
             ],
-            "spl": "2025-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Connectivity/+/9a0a647f50dde062bb0846a87961607b4ca1c4c8",
               "https://android.googlesource.com/platform/packages/modules/Connectivity/+/f0fa3a4554393018b0fcab937ff0013a1829a69b"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
@@ -142,15 +142,15 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2025-01-01",
             "types": [
               "ID"
             ],
-            "spl": "2025-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/libs/net/+/03eb6f09360de988687c06940b6f13be7e650b34",
               "https://android.googlesource.com/platform/frameworks/libs/net/+/80500a3de46b212c7ed0e9f9f9c87f698b101c17"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
@@ -178,59 +178,44 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
             "spl": "2025-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
-              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
-              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/df163f70fd3f456604019072b796eaeab71418ae",
-              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
-              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/9024892db8de73eea86967880b0cfa4470db079f",
-              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-208b4470",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "134416761624579409979375994150250792586",
+                  "length": 1026
+                },
                 "target": {
                   "function": "generateIngressDiscardRules",
                   "file": "service/src/com/android/server/ConnectivityService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/df163f70fd3f456604019072b796eaeab71418ae",
-                "id": "ASB-A-193031925-208b4470",
-                "digest": {
-                  "function_hash": "134416761624579409979375994150250792586",
-                  "length": 1026
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-213d388a",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "242675969598636284939712788575565974033",
+                  "length": 1212
+                },
                 "target": {
                   "function": "updateLinkProperties",
                   "file": "service/src/com/android/server/ConnectivityService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
-                "id": "ASB-A-193031925-213d388a",
-                "digest": {
-                  "function_hash": "242675969598636284939712788575565974033",
-                  "length": 1212
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "service/src/com/android/server/ConnectivityService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
                 "id": "ASB-A-193031925-28624652",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "211532913092856523640620818397465079528",
@@ -252,62 +237,62 @@
                     "37700120647745234211043257387586123654"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-4b83acad",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "104539973824635611611371240811375983660",
+                  "length": 7265
+                },
                 "target": {
                   "function": "ConnectivityService",
                   "file": "service/src/com/android/server/ConnectivityService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
-                "id": "ASB-A-193031925-4b83acad",
-                "digest": {
-                  "function_hash": "104539973824635611611371240811375983660",
-                  "length": 7265
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-612a840a",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "217746681310433547709601631738478874995",
+                  "length": 972
+                },
                 "target": {
                   "function": "generateIngressDiscardRules",
                   "file": "service/src/com/android/server/ConnectivityService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
-                "id": "ASB-A-193031925-612a840a",
-                "digest": {
-                  "function_hash": "217746681310433547709601631738478874995",
-                  "length": 972
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-62f25293",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "89607534420594928418680368598043702372",
+                  "length": 733
+                },
                 "target": {
                   "function": "destroyNativeNetwork",
                   "file": "service/src/com/android/server/ConnectivityService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
-                "id": "ASB-A-193031925-62f25293",
-                "digest": {
-                  "function_hash": "89607534420594928418680368598043702372",
-                  "length": 733
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/src/com/android/net/module/util/bpf/IngressDiscardKey.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4",
                 "id": "ASB-A-193031925-7b4bdfea",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "316118135044002203360338556178346030544",
@@ -317,17 +302,17 @@
                     "180533816498831328137046746721440216755"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "common/src/com/android/net/module/util/bpf/IngressDiscardKey.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "service/src/com/android/server/ConnectivityService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
                 "id": "ASB-A-193031925-8d6e9489",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "226134191383026538262969682519339757761",
@@ -339,32 +324,32 @@
                     "150708691523270231688440859440661052898"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-a590270d",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "119540092433770396759112919499201781610",
+                  "length": 884
+                },
                 "target": {
                   "function": "initBpfMaps",
                   "file": "service/src/com/android/server/BpfNetMaps.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4",
-                "id": "ASB-A-193031925-a590270d",
-                "digest": {
-                  "function_hash": "119540092433770396759112919499201781610",
-                  "length": 884
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "bpf_progs/netd.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
                 "id": "ASB-A-193031925-aa33da2a",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "239351541724200386760925483404433311616",
@@ -377,47 +362,47 @@
                     "48415736909822751741703898396146087828"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "bpf_progs/netd.h"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-b5c55932",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "173627206379675653583747960087071819862",
+                  "length": 1206
+                },
                 "target": {
                   "function": "dump",
                   "file": "service/src/com/android/server/BpfNetMaps.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4",
-                "id": "ASB-A-193031925-b5c55932",
-                "digest": {
-                  "function_hash": "173627206379675653583747960087071819862",
-                  "length": 1206
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-193031925-beed2eaa",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "269805055931110894272306853628336970479",
+                  "length": 655
+                },
                 "target": {
                   "function": "bpf_owner_match",
                   "file": "bpf_progs/netd.c"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
-                "id": "ASB-A-193031925-beed2eaa",
-                "digest": {
-                  "function_hash": "269805055931110894272306853628336970479",
-                  "length": 655
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "bpf_progs/netd.c"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
                 "id": "ASB-A-193031925-c2d2845a",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "267266255986084996418152716196166959853",
@@ -433,17 +418,17 @@
                     "303317792436256839526498859437399473835"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "bpf_progs/netd.c"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "service/src/com/android/server/ConnectivityService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/df163f70fd3f456604019072b796eaeab71418ae",
                 "id": "ASB-A-193031925-fd7adfac",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "226134191383026538262969682519339757761",
@@ -457,17 +442,17 @@
                     "217413774575641974751234671471159046892"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "service/src/com/android/server/ConnectivityService.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/df163f70fd3f456604019072b796eaeab71418ae",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "service/src/com/android/server/BpfNetMaps.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4",
                 "id": "ASB-A-193031925-ff0eda51",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "150473880920509290948070983272233813862",
@@ -513,16 +498,31 @@
                     "112139293503503909951776767753986367517"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "service/src/com/android/server/BpfNetMaps.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/d493a3aa7dcca3219b139616c9de3c6ee8181f86",
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/5441470a6a04f36369ec79c3eff3a72fc47ca9e3",
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/df163f70fd3f456604019072b796eaeab71418ae",
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/e1a82cc1cc04ed49f022825010316cde7758c2fb",
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/9024892db8de73eea86967880b0cfa4470db079f",
+              "https://android.googlesource.com/platform/packages/modules/Connectivity/+/b01647922d2b393fd705bf7fd68fbe10ccdffdc4"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193031925.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

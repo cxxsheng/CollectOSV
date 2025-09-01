@@ -7,7 +7,7 @@
         "A-228222508",
         "CVE-2022-20523"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -42,65 +42,64 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "deprecated": false,
+                "match_only_versions": [
+                  "13"
+                ],
+                "source": "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5",
+                "id": "PUB-A-228222508-07984fc6",
+                "digest": {
+                  "length": 1146,
+                  "function_hash": "322534710492198498728088746048309453296"
+                },
                 "target": {
                   "function": "getFilledRanges",
                   "file": "incfs/include/incfs_inline.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5",
-                "id": "PUB-A-228222508-07984fc6",
-                "digest": {
-                  "function_hash": "322534710492198498728088746048309453296",
-                  "length": 1146
-                },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "incfs/MountRegistry.cpp"
-                },
                 "deprecated": false,
+                "match_only_versions": [
+                  "13"
+                ],
                 "source": "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5",
                 "id": "PUB-A-228222508-18361eb2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "184364086387266558529663117564781717520",
                     "1708441484464638935869197195031073747",
                     "167739443198112843784811602581043168550",
                     "133655956200243983785996285177499922601"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "target": {
+                  "file": "incfs/MountRegistry.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "incfs/include/incfs_inline.h"
-                },
                 "deprecated": false,
+                "match_only_versions": [
+                  "13"
+                ],
                 "source": "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5",
                 "id": "PUB-A-228222508-27671ce0",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "189146588532364475518475748611899951557",
                     "318274370219494165893301932891080614561",
@@ -109,39 +108,40 @@
                     "125887374729500005821548624635044493481",
                     "253693479788318455550222078098532172605",
                     "265807105934826127264094243111029798418"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "target": {
+                  "file": "incfs/include/incfs_inline.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "deprecated": false,
+                "match_only_versions": [
+                  "13"
+                ],
+                "source": "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5",
+                "id": "PUB-A-228222508-81bb781c",
+                "digest": {
+                  "length": 3211,
+                  "function_hash": "29010597758195177999908771608877230602"
+                },
                 "target": {
                   "function": "MountRegistry::Mounts::loadFrom",
                   "file": "incfs/MountRegistry.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/incremental_delivery/+/c82569e37a745665549df5a77159a0584b45e7d5",
-                "id": "PUB-A-228222508-81bb781c",
-                "digest": {
-                  "function_hash": "29010597758195177999908771608877230602",
-                  "length": 3211
-                },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-228222508.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

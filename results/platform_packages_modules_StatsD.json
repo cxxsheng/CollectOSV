@@ -7,7 +7,7 @@
         "A-285645039",
         "CVE-2023-40115"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-11-01T00:00:00Z",
       "references": [
         {
@@ -42,54 +42,50 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::readLogs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
                 "id": "ASB-A-285645039-2321da57",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::readLogs"
+                },
                 "digest": {
                   "function_hash": "190139916014078794201190441593495255888",
                   "length": 222
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mInitEventDelaySecs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
                 "id": "ASB-A-285645039-9bfacc48",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "mInitEventDelaySecs"
+                },
                 "digest": {
                   "function_hash": "170025933828175594194721604275166181251",
                   "length": 2525
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-bfd554da",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
-                "id": "ASB-A-285645039-bfd554da",
                 "digest": {
                   "line_hashes": [
                     "24938293731554636473098398205316056354",
@@ -100,17 +96,17 @@
                     "52788991262695293056646716387794235053"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-d3caf925",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
-                "id": "ASB-A-285645039-d3caf925",
                 "digest": {
                   "line_hashes": [
                     "284175425589097230727147656800977346044",
@@ -130,24 +126,28 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
                 "id": "ASB-A-285645039-efd083d9",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
                 "digest": {
                   "function_hash": "290532900627309439606711308425738821162",
                   "length": 37
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/3937ea3cdcf531a14cdba4ef176d8aa89d9d6066",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2023-11-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285645039.json"
@@ -175,39 +175,35 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::readLogs",
-                  "file": "cmds/statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
                 "id": "ASB-A-285645039-5abb01b1",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "cmds/statsd/src/StatsService.cpp",
+                  "function": "StatsService::readLogs"
+                },
                 "digest": {
                   "function_hash": "190139916014078794201190441593495255888",
                   "length": 222
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-73a84601",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "cmds/statsd/src/StatsService.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
-                "id": "ASB-A-285645039-73a84601",
                 "digest": {
                   "line_hashes": [
                     "9560257399028977192882822136888446391",
@@ -219,17 +215,17 @@
                     "149102618012575246417676794546503739423"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-797889bb",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "cmds/statsd/src/StatsService.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
-                "id": "ASB-A-285645039-797889bb",
                 "digest": {
                   "line_hashes": [
                     "162094486690609551357265491806306373800",
@@ -249,39 +245,43 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "cmds/statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
                 "id": "ASB-A-285645039-8fa418a0",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "cmds/statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
                 "digest": {
                   "function_hash": "290532900627309439606711308425738821162",
                   "length": 37
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mStatsCompanionServiceDeathRecipient",
-                  "file": "cmds/statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
                 "id": "ASB-A-285645039-ad3d2575",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "cmds/statsd/src/StatsService.cpp",
+                  "function": "mStatsCompanionServiceDeathRecipient"
+                },
                 "digest": {
                   "function_hash": "74176117800312312752666027285333827045",
                   "length": 1584
-                }
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/03de4e4f1a0546fdd3b002651851bee9ffe0e11b",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2023-11-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285645039.json"
@@ -309,24 +309,20 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-09dc6373",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
-                "id": "ASB-A-285645039-09dc6373",
                 "digest": {
                   "line_hashes": [
                     "9560257399028977192882822136888446391",
@@ -337,17 +333,17 @@
                     "149102618012575246417676794546503739423"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-38a49bba",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
-                "id": "ASB-A-285645039-38a49bba",
                 "digest": {
                   "line_hashes": [
                     "162094486690609551357265491806306373800",
@@ -367,54 +363,58 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::readLogs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
                 "id": "ASB-A-285645039-a22d4b2a",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::readLogs"
+                },
                 "digest": {
                   "function_hash": "190139916014078794201190441593495255888",
                   "length": 222
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mStatsCompanionServiceDeathRecipient",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
                 "id": "ASB-A-285645039-c654231e",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "mStatsCompanionServiceDeathRecipient"
+                },
                 "digest": {
                   "function_hash": "74176117800312312752666027285333827045",
                   "length": 1584
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
                 "id": "ASB-A-285645039-e6cbc6f9",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
                 "digest": {
                   "function_hash": "290532900627309439606711308425738821162",
                   "length": 37
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e67695fae80d3164f5cd5237ebf1b7a0dbfed6f4",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2023-11-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285645039.json"
@@ -442,69 +442,65 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mStatsCompanionServiceDeathRecipient",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
                 "id": "ASB-A-285645039-3ae10a1a",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "mStatsCompanionServiceDeathRecipient"
+                },
                 "digest": {
                   "function_hash": "74176117800312312752666027285333827045",
                   "length": 1584
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
                 "id": "ASB-A-285645039-5cd93382",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
                 "digest": {
                   "function_hash": "290532900627309439606711308425738821162",
                   "length": 37
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::readLogs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
                 "id": "ASB-A-285645039-6335df16",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::readLogs"
+                },
                 "digest": {
                   "function_hash": "190139916014078794201190441593495255888",
                   "length": 222
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-b24378a7",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
-                "id": "ASB-A-285645039-b24378a7",
                 "digest": {
                   "line_hashes": [
                     "162094486690609551357265491806306373800",
@@ -524,17 +520,17 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-baaf2c19",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
-                "id": "ASB-A-285645039-baaf2c19",
                 "digest": {
                   "line_hashes": [
                     "9560257399028977192882822136888446391",
@@ -545,9 +541,13 @@
                     "149102618012575246417676794546503739423"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/d3bee21e053401c30a1a5cee5a7ddd2d9fa0463e",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2023-11-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285645039.json"
@@ -575,24 +575,20 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-24b1ceba",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
-                "id": "ASB-A-285645039-24b1ceba",
                 "digest": {
                   "line_hashes": [
                     "9560257399028977192882822136888446391",
@@ -603,62 +599,62 @@
                     "149102618012575246417676794546503739423"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mStatsCompanionServiceDeathRecipient",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
                 "id": "ASB-A-285645039-2a98aade",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "mStatsCompanionServiceDeathRecipient"
+                },
                 "digest": {
                   "function_hash": "150911719169882205645024166510874957982",
                   "length": 1932
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
                 "id": "ASB-A-285645039-a7518c2f",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
                 "digest": {
                   "function_hash": "290532900627309439606711308425738821162",
                   "length": 37
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::readLogs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
                 "id": "ASB-A-285645039-b4c7688d",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::readLogs"
+                },
                 "digest": {
                   "function_hash": "190139916014078794201190441593495255888",
                   "length": 222
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-d7c42036",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
-                "id": "ASB-A-285645039-d7c42036",
                 "digest": {
                   "line_hashes": [
                     "162094486690609551357265491806306373800",
@@ -678,9 +674,13 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/8dca7a8e0f241a041ac2e061c0070839aee560ff",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2023-11-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285645039.json"
@@ -708,24 +708,20 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-02c1fe38",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
-                "id": "ASB-A-285645039-02c1fe38",
                 "digest": {
                   "line_hashes": [
                     "162094486690609551357265491806306373800",
@@ -745,32 +741,32 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mInitEventDelaySecs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
                 "id": "ASB-A-285645039-225fa4c3",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "mInitEventDelaySecs"
+                },
                 "digest": {
                   "function_hash": "122149015475048257650068008049466191562",
                   "length": 2510
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-285645039-4a816df9",
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/StatsService.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
-                "id": "ASB-A-285645039-4a816df9",
                 "digest": {
                   "line_hashes": [
                     "24938293731554636473098398205316056354",
@@ -781,46 +777,50 @@
                     "52788991262695293056646716387794235053"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
                 "id": "ASB-A-285645039-537165a9",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
                 "digest": {
                   "function_hash": "290532900627309439606711308425738821162",
                   "length": 37
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::readLogs",
-                  "file": "statsd/src/StatsService.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
                 "id": "ASB-A-285645039-f8e3caeb",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::readLogs"
+                },
                 "digest": {
                   "function_hash": "190139916014078794201190441593495255888",
                   "length": 222
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/c578fa427fea745fd4555ee23d5642a1d2cd0ce3",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2023-11-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285645039.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-292160348",
@@ -829,7 +829,7 @@
         "A-292160348",
         "CVE-2024-31339"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-07-01T00:00:00Z",
       "references": [
         {
@@ -864,24 +864,18 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-0c45966c",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/StatsService.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-0c45966c",
                 "digest": {
                   "line_hashes": [
                     "305487835997243872826922695295350277909",
@@ -893,17 +887,17 @@
                     "294308249133488359078252475882938243161"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-1915970c",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-1915970c",
                 "digest": {
                   "line_hashes": [
                     "289896046876754297735978400289087878936",
@@ -922,17 +916,17 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-365546f7",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/StatsService.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-365546f7",
                 "digest": {
                   "line_hashes": [
                     "159925443773194175943371912967847035629",
@@ -960,17 +954,17 @@
                     "140655608690287586112729369329336190808"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-39bf677f",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-39bf677f",
                 "digest": {
                   "line_hashes": [
                     "306251545357371574023434965790051737081",
@@ -992,32 +986,32 @@
                     "74713951623025042020091488065003104149"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-6c9ebfa8",
                 "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::onStatsdInitCompleted",
-                  "file": "statsd/src/StatsService.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-6c9ebfa8",
                 "digest": {
                   "function_hash": "10284047340432497328132115226750950035",
                   "length": 228
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::onStatsdInitCompleted"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-aae2b9fa",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-aae2b9fa",
                 "digest": {
                   "line_hashes": [
                     "73862036861914092034679473374355102459",
@@ -1028,90 +1022,96 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
+                "id": "ASB-A-292160348-b2b0a8d5",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-b2b0a8d5",
+                "match_only_versions": [
+                  "14-next"
+                ],
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "86638119798572538148491513304768937648",
                   "length": 133
                 },
-                "match_only_versions": [
-                  "14-next"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::statsCompanionServiceDiedImpl",
-                  "file": "statsd/src/StatsService.cpp"
-                },
+                "id": "ASB-A-292160348-b820efcd",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-b820efcd",
+                "match_only_versions": [
+                  "14-next"
+                ],
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::statsCompanionServiceDiedImpl"
+                },
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "86803962377130505159674537128163871466",
                   "length": 1008
                 },
-                "match_only_versions": [
-                  "14-next"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-d57bf6f1",
                 "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::informDeviceShutdown",
-                  "file": "statsd/src/StatsService.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-d57bf6f1",
                 "digest": {
                   "function_hash": "191055256887806684700147544407693823312",
                   "length": 390
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::informDeviceShutdown"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-e02b9c5e",
                 "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::Terminate",
-                  "file": "statsd/src/StatsService.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-e02b9c5e",
                 "digest": {
                   "function_hash": "6794686234144775356853370133298012710",
                   "length": 364
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::Terminate"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-e2a86921",
                 "signature_version": "v1",
-                "target": {
-                  "function": "MultiConditionTrigger::markComplete",
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/f940b2a714b5d80439afd416b7a8b6b1ffd2c87a",
-                "id": "ASB-A-292160348-e2a86921",
                 "digest": {
                   "function_hash": "149470148119310862656588840484327334122",
                   "length": 407
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp",
+                  "function": "MultiConditionTrigger::markComplete"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-07-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-292160348.json"
@@ -1139,24 +1139,18 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-0c5e6485",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-0c5e6485",
                 "digest": {
                   "line_hashes": [
                     "178761141152275873231915412426033386163",
@@ -1175,47 +1169,47 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "MultiConditionTrigger::markComplete",
                   "file": "statsd/src/utils/MultiConditionTrigger.cpp"
                 },
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-292160348-0de18969",
+                "signature_version": "v1",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-0de18969",
                 "digest": {
                   "function_hash": "45863765917800652869151432262297088848",
                   "length": 373
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp",
+                  "function": "MultiConditionTrigger::markComplete"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-897f6dd1",
                 "signature_version": "v1",
-                "target": {
-                  "function": "TEST",
-                  "file": "statsd/tests/StatsLogProcessor_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-897f6dd1",
                 "digest": {
                   "function_hash": "298547584576030461853963346343869950990",
                   "length": 1298
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/StatsLogProcessor_test.cpp",
+                  "function": "TEST"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-9a6baae6",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-9a6baae6",
                 "digest": {
                   "line_hashes": [
                     "73862036861914092034679473374355102459",
@@ -1226,17 +1220,17 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-b047cf98",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-b047cf98",
                 "digest": {
                   "line_hashes": [
                     "306251545357371574023434965790051737081",
@@ -1260,17 +1254,17 @@
                     "176733231404006535559426681088872655380"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-c2870ab1",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/StatsLogProcessor_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-c2870ab1",
                 "digest": {
                   "line_hashes": [
                     "296045471364242561855645120018283175300",
@@ -1286,9 +1280,15 @@
                     "142007842165213601714831500775966172639"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/StatsLogProcessor_test.cpp"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-07-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-292160348.json"
@@ -1316,24 +1316,18 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-15c35e5f",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-15c35e5f",
                 "digest": {
                   "line_hashes": [
                     "306251545357371574023434965790051737081",
@@ -1357,17 +1351,17 @@
                     "176733231404006535559426681088872655380"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-3f085aa6",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/StatsLogProcessor_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-3f085aa6",
                 "digest": {
                   "line_hashes": [
                     "296045471364242561855645120018283175300",
@@ -1383,32 +1377,32 @@
                     "142007842165213601714831500775966172639"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "TEST",
                   "file": "statsd/tests/StatsLogProcessor_test.cpp"
                 },
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-292160348-49201d1d",
+                "signature_version": "v1",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-49201d1d",
                 "digest": {
                   "function_hash": "298547584576030461853963346343869950990",
                   "length": 1298
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/StatsLogProcessor_test.cpp",
+                  "function": "TEST"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-51a097f3",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-51a097f3",
                 "digest": {
                   "line_hashes": [
                     "73862036861914092034679473374355102459",
@@ -1419,32 +1413,32 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-d892307a",
                 "signature_version": "v1",
-                "target": {
-                  "function": "MultiConditionTrigger::markComplete",
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-d892307a",
                 "digest": {
                   "function_hash": "45863765917800652869151432262297088848",
                   "length": 373
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp",
+                  "function": "MultiConditionTrigger::markComplete"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-e5fd15a6",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/4196da2ec586a631fc9011c7615f80f4f197caf3",
-                "id": "ASB-A-292160348-e5fd15a6",
                 "digest": {
                   "line_hashes": [
                     "178761141152275873231915412426033386163",
@@ -1463,9 +1457,15 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-07-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-292160348.json"
@@ -1493,24 +1493,18 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/262e2c8a5293483c98be498e60e1e5d15c6a0145"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-52a57ab0",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/262e2c8a5293483c98be498e60e1e5d15c6a0145",
-                "id": "ASB-A-292160348-52a57ab0",
                 "digest": {
                   "line_hashes": [
                     "178761141152275873231915412426033386163",
@@ -1529,32 +1523,32 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "MultiConditionTrigger::markComplete",
                   "file": "statsd/src/utils/MultiConditionTrigger.cpp"
                 },
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-292160348-ced08cfb",
+                "signature_version": "v1",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/262e2c8a5293483c98be498e60e1e5d15c6a0145",
-                "id": "ASB-A-292160348-ced08cfb",
                 "digest": {
                   "function_hash": "45863765917800652869151432262297088848",
                   "length": 373
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp",
+                  "function": "MultiConditionTrigger::markComplete"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-e1007d50",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/262e2c8a5293483c98be498e60e1e5d15c6a0145",
-                "id": "ASB-A-292160348-e1007d50",
                 "digest": {
                   "line_hashes": [
                     "73862036861914092034679473374355102459",
@@ -1565,17 +1559,17 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-fde5df4b",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/262e2c8a5293483c98be498e60e1e5d15c6a0145",
-                "id": "ASB-A-292160348-fde5df4b",
                 "digest": {
                   "line_hashes": [
                     "306251545357371574023434965790051737081",
@@ -1599,9 +1593,15 @@
                     "176733231404006535559426681088872655380"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.h"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-07-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-292160348.json"
@@ -1629,42 +1629,36 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::~StatsService",
-                  "file": "statsd/src/StatsService.cpp"
-                },
+                "id": "ASB-A-292160348-28b6d65d",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-28b6d65d",
+                "match_only_versions": [
+                  "14"
+                ],
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::~StatsService"
+                },
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "245366661933625729391339019302136601707",
                   "length": 118
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-293a2fff",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-293a2fff",
                 "digest": {
                   "line_hashes": [
                     "178761141152275873231915412426033386163",
@@ -1683,32 +1677,32 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "MultiConditionTrigger::markComplete",
                   "file": "statsd/src/utils/MultiConditionTrigger.cpp"
                 },
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-292160348-3a6ed4cf",
+                "signature_version": "v1",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-3a6ed4cf",
                 "digest": {
                   "function_hash": "45863765917800652869151432262297088848",
                   "length": 373
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.cpp",
+                  "function": "MultiConditionTrigger::markComplete"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-3cd1a21e",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/StatsService.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-3cd1a21e",
                 "digest": {
                   "line_hashes": [
                     "305487835997243872826922695295350277909",
@@ -1720,17 +1714,17 @@
                     "294308249133488359078252475882938243161"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-3e73c7bc",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-3e73c7bc",
                 "digest": {
                   "line_hashes": [
                     "73862036861914092034679473374355102459",
@@ -1741,32 +1735,32 @@
                     "108587633537507210242609878158511307392"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/tests/utils/MultiConditionTrigger_test.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "id": "ASB-A-292160348-5c4f06f5",
                 "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::onStatsdInitCompleted",
-                  "file": "statsd/src/StatsService.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-5c4f06f5",
                 "digest": {
                   "function_hash": "10284047340432497328132115226750950035",
                   "length": 228
-                }
+                },
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::onStatsdInitCompleted"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-7652e9c5",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/StatsService.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-7652e9c5",
                 "digest": {
                   "line_hashes": [
                     "15215770393752643685644176245017265546",
@@ -1794,35 +1788,35 @@
                     "140655608690287586112729369329336190808"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "StatsService::informDeviceShutdown",
                   "file": "statsd/src/StatsService.cpp"
                 },
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-292160348-a76c793d",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-a76c793d",
+                "match_only_versions": [
+                  "14"
+                ],
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::informDeviceShutdown"
+                },
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "304888606427974430221963077571148488771",
                   "length": 375
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
+                "id": "ASB-A-292160348-c432595d",
                 "signature_version": "v1",
-                "target": {
-                  "file": "statsd/src/utils/MultiConditionTrigger.h"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-c432595d",
                 "digest": {
                   "line_hashes": [
                     "306251545357371574023434965790051737081",
@@ -1846,52 +1840,58 @@
                     "176733231404006535559426681088872655380"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "statsd/src/utils/MultiConditionTrigger.h"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::statsCompanionServiceDiedImpl",
-                  "file": "statsd/src/StatsService.cpp"
-                },
+                "id": "ASB-A-292160348-c57baa90",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-c57baa90",
+                "match_only_versions": [
+                  "14"
+                ],
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::statsCompanionServiceDiedImpl"
+                },
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "86803962377130505159674537128163871466",
                   "length": 1008
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "StatsService::Terminate",
-                  "file": "statsd/src/StatsService.cpp"
-                },
+                "id": "ASB-A-292160348-ea405867",
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/30775d2bb2e2070bc49def70f97af4724342c4c2",
-                "id": "ASB-A-292160348-ea405867",
+                "match_only_versions": [
+                  "14"
+                ],
+                "target": {
+                  "file": "statsd/src/StatsService.cpp",
+                  "function": "StatsService::Terminate"
+                },
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "320308684207433850398859138810149999828",
                   "length": 349
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "spl": "2024-07-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-292160348.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-330054251",
@@ -1900,7 +1900,7 @@
         "A-330054251",
         "CVE-2024-31311"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-06-01T00:00:00Z",
       "references": [
         {
@@ -1935,24 +1935,20 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/39d3f08cbea67468411d8becd03f31f3a1a1be9d"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-1b098996",
                 "target": {
                   "file": "lib/libstatssocket/stats_event.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/39d3f08cbea67468411d8becd03f31f3a1a1be9d",
-                "id": "ASB-A-330054251-1b098996",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "25608807365508790758592269875890469658",
@@ -1961,24 +1957,28 @@
                     "297955085587280879483905699524165595939"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/39d3f08cbea67468411d8becd03f31f3a1a1be9d",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-afd99fd0",
                 "target": {
-                  "function": "increment_annotation_count",
-                  "file": "lib/libstatssocket/stats_event.c"
+                  "file": "lib/libstatssocket/stats_event.c",
+                  "function": "increment_annotation_count"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/39d3f08cbea67468411d8becd03f31f3a1a1be9d",
-                "id": "ASB-A-330054251-afd99fd0",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "188177099814377904508818737966482960063",
                   "length": 372
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/39d3f08cbea67468411d8becd03f31f3a1a1be9d",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-06-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-330054251.json"
@@ -2006,24 +2006,20 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-302264be",
                 "target": {
                   "file": "lib/libstatssocket/stats_event.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-302264be",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "40818449407841122966676705733223152827",
@@ -2032,24 +2028,28 @@
                     "297955085587280879483905699524165595939"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-c744808b",
                 "target": {
-                  "function": "increment_annotation_count",
-                  "file": "lib/libstatssocket/stats_event.c"
+                  "file": "lib/libstatssocket/stats_event.c",
+                  "function": "increment_annotation_count"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-c744808b",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "188177099814377904508818737966482960063",
                   "length": 372
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-06-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-330054251.json"
@@ -2077,39 +2077,35 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-93232e0a",
                 "target": {
-                  "function": "increment_annotation_count",
-                  "file": "lib/libstatssocket/stats_event.c"
+                  "file": "lib/libstatssocket/stats_event.c",
+                  "function": "increment_annotation_count"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-93232e0a",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "188177099814377904508818737966482960063",
                   "length": 372
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-f9eee20e",
                 "target": {
                   "file": "lib/libstatssocket/stats_event.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-f9eee20e",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "40818449407841122966676705733223152827",
@@ -2118,9 +2114,13 @@
                     "297955085587280879483905699524165595939"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-06-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-330054251.json"
@@ -2148,39 +2148,35 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-08dfc1af",
                 "target": {
-                  "function": "increment_annotation_count",
-                  "file": "lib/libstatssocket/stats_event.c"
+                  "file": "lib/libstatssocket/stats_event.c",
+                  "function": "increment_annotation_count"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-08dfc1af",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "188177099814377904508818737966482960063",
                   "length": 372
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-32789bf8",
                 "target": {
                   "file": "lib/libstatssocket/stats_event.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-32789bf8",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "40818449407841122966676705733223152827",
@@ -2189,9 +2185,13 @@
                     "297955085587280879483905699524165595939"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-06-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-330054251.json"
@@ -2219,24 +2219,20 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-6fdf7709",
                 "target": {
                   "file": "lib/libstatssocket/stats_event.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-6fdf7709",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "40818449407841122966676705733223152827",
@@ -2245,31 +2241,35 @@
                     "297955085587280879483905699524165595939"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-330054251-b4122673",
                 "target": {
-                  "function": "increment_annotation_count",
-                  "file": "lib/libstatssocket/stats_event.c"
+                  "file": "lib/libstatssocket/stats_event.c",
+                  "function": "increment_annotation_count"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
-                "id": "ASB-A-330054251-b4122673",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "188177099814377904508818737966482960063",
                   "length": 372
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/e440696c4fd6d44d21451467294b3e31c6867e08",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-06-01",
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-330054251.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-256591441",
@@ -2278,7 +2278,7 @@
         "A-256591441",
         "CVE-2023-21020"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -2313,24 +2313,24 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
             "types": [
               "EoP"
             ],
-            "spl": "2023-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "PUB-A-256591441-2cccb8f5",
+                "deprecated": false,
                 "target": {
                   "file": "statsd/src/main.cpp"
                 },
-                "deprecated": false,
+                "match_only_versions": [
+                  "13"
+                ],
                 "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
-                "id": "PUB-A-256591441-2cccb8f5",
+                "signature_type": "Line",
                 "digest": {
                   "line_hashes": [
                     "314817827637828342880955890469328961627",
@@ -2364,69 +2364,69 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "signalHandler",
-                  "file": "statsd/src/main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
                 "id": "PUB-A-256591441-d536ed8c",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/main.cpp",
+                  "function": "signalHandler"
+                },
+                "match_only_versions": [
+                  "13"
+                ],
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "151766590558765629684275105768374584739",
                   "length": 351
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "registerSignalHandlers",
-                  "file": "statsd/src/main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
                 "id": "PUB-A-256591441-e177e40f",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/main.cpp",
+                  "function": "registerSignalHandlers"
+                },
+                "match_only_versions": [
+                  "13"
+                ],
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
+                "signature_type": "Function",
                 "digest": {
                   "function_hash": "201987785594624122716473348128341216944",
                   "length": 324
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "main",
-                  "file": "statsd/src/main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
                 "id": "PUB-A-256591441-e7c384e0",
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "statsd/src/main.cpp",
+                  "function": "main"
+                },
                 "digest": {
                   "function_hash": "151065701975192630090666588795524179466",
                   "length": 826
-                }
+                },
+                "source": "https://android.googlesource.com/platform/packages/modules/StatsD/+/992c86cfa9b615e8e62426a5014a0b10501a37b0",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2023-03-01",
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-256591441.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

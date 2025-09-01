@@ -7,7 +7,7 @@
         "A-174302683",
         "CVE-2021-0561"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -43,48 +43,48 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/flac/+/368eb3f5bec249a197c95a95583ff8153aa6a87f"
             ],
+            "spl": "2021-06-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "write_bitbuffer_",
-                  "file": "libFLAC/stream_encoder.c"
+                  "file": "libFLAC/stream_encoder.c",
+                  "function": "write_bitbuffer_"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/flac/+/368eb3f5bec249a197c95a95583ff8153aa6a87f",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-174302683-4d8ef586",
+                "source": "https://android.googlesource.com/platform/external/flac/+/368eb3f5bec249a197c95a95583ff8153aa6a87f",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "69340343083601748657416805148163666540",
-                  "length": 1636
+                  "length": 1636,
+                  "function_hash": "69340343083601748657416805148163666540"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "libFLAC/stream_encoder.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/flac/+/368eb3f5bec249a197c95a95583ff8153aa6a87f",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "PUB-A-174302683-cef0008b",
+                "source": "https://android.googlesource.com/platform/external/flac/+/368eb3f5bec249a197c95a95583ff8153aa6a87f",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "308515609129822083404769785577559681842",
                     "122343089576385096823581201290995179700",
                     "111761874591500673215426373446663132174",
                     "110080742025860690318431060099634259432"
-                  ],
-                  "threshold": 0.9
+                  ]
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -92,7 +92,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

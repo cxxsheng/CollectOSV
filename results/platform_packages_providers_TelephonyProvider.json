@@ -7,7 +7,7 @@
         "A-240685104",
         "CVE-2022-20453"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-11-01T00:00:00Z",
       "references": [
         {
@@ -43,24 +43,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/0c3e2ce2810e4f5988b342f96bdd600c293c3187"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/0c3e2ce2810e4f5988b342f96bdd600c293c3187",
-                "id": "ASB-A-240685104-395b77ec",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "310513978021391204864691454047482653081",
                     "245466022437851511216251951037504528254",
@@ -74,26 +66,34 @@
                     "215800759361354294309361721596629713950",
                     "195085557379179509690497780792579401090",
                     "218235235875239709080233228940351271634"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-240685104-395b77ec",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/0c3e2ce2810e4f5988b342f96bdd600c293c3187",
-                "id": "ASB-A-240685104-c0c9654b",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "217839939959143002105276044828606862960",
-                  "length": 2075
-                }
+                  "length": 2075,
+                  "function_hash": "217839939959143002105276044828606862960"
+                },
+                "id": "ASB-A-240685104-c0c9654b",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/0c3e2ce2810e4f5988b342f96bdd600c293c3187"
+            ],
+            "spl": "2022-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-240685104.json"
@@ -122,24 +122,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94",
-                "id": "ASB-A-240685104-0527549b",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "145152635052268266949179210808079967390",
                     "30844785361899233513667603320812922157",
@@ -154,26 +146,34 @@
                     "142836736004995824590427127114930962374",
                     "314680638951962557161692358949474693392",
                     "214663369452189225246104823419170263815"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-240685104-0527549b",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94",
-                "id": "ASB-A-240685104-c7f1c22a",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "50204684036967144196046525010419177592",
-                  "length": 2136
-                }
+                  "length": 2136,
+                  "function_hash": "50204684036967144196046525010419177592"
+                },
+                "id": "ASB-A-240685104-c7f1c22a",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94"
+            ],
+            "spl": "2022-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-240685104.json"
@@ -202,39 +202,31 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94",
-                "id": "ASB-A-240685104-32a2bff1",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "50204684036967144196046525010419177592",
-                  "length": 2136
-                }
+                  "length": 2136,
+                  "function_hash": "50204684036967144196046525010419177592"
+                },
+                "id": "ASB-A-240685104-32a2bff1",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94",
-                "id": "ASB-A-240685104-7cceee24",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "145152635052268266949179210808079967390",
                     "30844785361899233513667603320812922157",
@@ -249,11 +241,19 @@
                     "142836736004995824590427127114930962374",
                     "314680638951962557161692358949474693392",
                     "214663369452189225246104823419170263815"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-240685104-7cceee24",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/ff2cc0cede04445bf5ecbdaf3f0aa8dd0d48ac94"
+            ],
+            "spl": "2022-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-240685104.json"
@@ -282,39 +282,31 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/319f89db8cdfb5e95d86f3573dac8b4e4ed8790b"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/319f89db8cdfb5e95d86f3573dac8b4e4ed8790b",
-                "id": "ASB-A-240685104-23f67340",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "50204684036967144196046525010419177592",
-                  "length": 2136
-                }
+                  "length": 2136,
+                  "function_hash": "50204684036967144196046525010419177592"
+                },
+                "id": "ASB-A-240685104-23f67340",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/319f89db8cdfb5e95d86f3573dac8b4e4ed8790b",
-                "id": "ASB-A-240685104-a680d371",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "145152635052268266949179210808079967390",
                     "30844785361899233513667603320812922157",
@@ -329,11 +321,19 @@
                     "142836736004995824590427127114930962374",
                     "314680638951962557161692358949474693392",
                     "214663369452189225246104823419170263815"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-240685104-a680d371",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/319f89db8cdfb5e95d86f3573dac8b4e4ed8790b"
+            ],
+            "spl": "2022-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-240685104.json"
@@ -362,39 +362,31 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2022-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/166dbaf293d2bbee1a3bbdc238b4b7acbe010672"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/166dbaf293d2bbee1a3bbdc238b4b7acbe010672",
-                "id": "ASB-A-240685104-2445a422",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "50204684036967144196046525010419177592",
-                  "length": 2136
-                }
+                  "length": 2136,
+                  "function_hash": "50204684036967144196046525010419177592"
+                },
+                "id": "ASB-A-240685104-2445a422",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/166dbaf293d2bbee1a3bbdc238b4b7acbe010672",
-                "id": "ASB-A-240685104-c7f182e1",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "145152635052268266949179210808079967390",
                     "30844785361899233513667603320812922157",
@@ -409,18 +401,26 @@
                     "142836736004995824590427127114930962374",
                     "314680638951962557161692358949474693392",
                     "214663369452189225246104823419170263815"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-240685104-c7f182e1",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/166dbaf293d2bbee1a3bbdc238b4b7acbe010672"
+            ],
+            "spl": "2022-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-240685104.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-264880689",
@@ -429,7 +429,7 @@
         "A-264880689",
         "CVE-2023-21290"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -464,40 +464,32 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-684bfacc",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880689-684bfacc",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-dfbed74f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -511,11 +503,19 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880689-dfbed74f",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880689.json"
@@ -543,40 +543,32 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-0825b9fe",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880689-0825b9fe",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-8bbb028b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -590,11 +582,19 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880689-8bbb028b",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880689.json"
@@ -622,25 +622,17 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-65fd960f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -654,26 +646,34 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880689-65fd960f",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-8d4acadd",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880689-8d4acadd",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880689.json"
@@ -701,40 +701,32 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-bd1a1eaf",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880689-bd1a1eaf",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-c4fc9a17",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -748,11 +740,19 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880689-c4fc9a17",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880689.json"
@@ -780,25 +780,17 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-78ae990a",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -812,33 +804,41 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880689-78ae990a",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880689-fdc3403f",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880689-fdc3403f",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880689.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-264880895",
@@ -847,7 +847,7 @@
         "A-264880895",
         "CVE-2023-21268"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -882,40 +882,32 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-684bfacc",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880895-684bfacc",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-dfbed74f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -929,11 +921,19 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880895-dfbed74f",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880895.json"
@@ -961,40 +961,32 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-0825b9fe",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880895-0825b9fe",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-8bbb028b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -1008,11 +1000,19 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880895-8bbb028b",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880895.json"
@@ -1040,25 +1040,17 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-65fd960f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -1072,26 +1064,34 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880895-65fd960f",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-8d4acadd",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880895-8d4acadd",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880895.json"
@@ -1119,40 +1119,32 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-bd1a1eaf",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880895-bd1a1eaf",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-c4fc9a17",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -1166,11 +1158,19 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880895-c4fc9a17",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880895.json"
@@ -1198,25 +1198,17 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
             "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-78ae990a",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "281253907639525144025299373930782407033",
                     "132876137314617094737140570055861165390",
@@ -1230,33 +1222,41 @@
                     "9931110887952007559812108128041600154",
                     "214728215846428908470951434899761443372",
                     "278832171060732843206969616038814260467"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-264880895-78ae990a",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c",
-                "id": "ASB-A-264880895-fdc3403f",
                 "digest": {
-                  "function_hash": "157104286834053058667808334963109926916",
-                  "length": 2447
-                }
+                  "length": 2447,
+                  "function_hash": "157104286834053058667808334963109926916"
+                },
+                "id": "ASB-A-264880895-fdc3403f",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6743638a096c32627f398efd2ea78f08b8a2db8c"
+            ],
+            "types": [
+              "DoS"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-264880895.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-289242655",
@@ -1265,7 +1265,7 @@
         "A-289242655",
         "CVE-2023-40113"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-11-01T00:00:00Z",
       "references": [
         {
@@ -1301,24 +1301,16 @@
           ],
           "ecosystem_specific": {
             "severity": "Critical",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-0cb499cf",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "168851074383591715004637446937727746660",
                     "276091707606902570124283021536479956120",
@@ -1344,155 +1336,155 @@
                     "151632831781871739503200482303464626165",
                     "62744985553887971773006344497929741062",
                     "106708507282418176064543306640682713861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-156e4583",
                 "digest": {
-                  "function_hash": "80078473943509797346005856437500275389",
-                  "length": 1703
-                }
+                  "length": 1703,
+                  "function_hash": "80078473943509797346005856437500275389"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-21e93474",
                 "digest": {
-                  "function_hash": "12180530317429542227735408695122329409",
-                  "length": 1729
-                }
+                  "length": 1729,
+                  "function_hash": "12180530317429542227735408695122329409"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-225bc873",
                 "digest": {
-                  "function_hash": "168436817630739787424536090274018062954",
-                  "length": 3733
-                }
+                  "length": 3733,
+                  "function_hash": "168436817630739787424536090274018062954"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insertInner",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-4e056e98",
                 "digest": {
-                  "function_hash": "321560754776620137559786370603652285256",
-                  "length": 4950
-                }
+                  "length": 4950,
+                  "function_hash": "321560754776620137559786370603652285256"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-50d197d7",
                 "digest": {
-                  "function_hash": "272450866535547724192138075612066765309",
-                  "length": 4726
-                }
+                  "length": 4726,
+                  "function_hash": "272450866535547724192138075612066765309"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-50fb71a7",
                 "digest": {
-                  "function_hash": "32694772924533184153896091283600129788",
-                  "length": 586
-                }
+                  "length": 586,
+                  "function_hash": "32694772924533184153896091283600129788"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-5600e7f7",
                 "digest": {
-                  "function_hash": "151452584949294370040187866050588043333",
-                  "length": 1239
-                }
+                  "length": 1239,
+                  "function_hash": "151452584949294370040187866050588043333"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-56283af7",
                 "digest": {
-                  "function_hash": "138100374374962976283666438499956569650",
-                  "length": 6633
-                }
+                  "length": 6633,
+                  "function_hash": "138100374374962976283666438499956569650"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-5b90583a",
                 "digest": {
-                  "function_hash": "109700728012927972075196699222344779282",
-                  "length": 1141
-                }
+                  "length": 1141,
+                  "function_hash": "109700728012927972075196699222344779282"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-82db444d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "27948134868797724906955847511042255057",
                     "210241409091240576457420234609082871436",
@@ -1525,65 +1517,65 @@
                     "328552963765057763267663399926506401876",
                     "19874949104769981573245699428026193640",
                     "307550365844618781499083245603685677366"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-833e7e77",
                 "digest": {
-                  "function_hash": "24073405600031326241509208613221419142",
-                  "length": 5084
-                }
+                  "length": 5084,
+                  "function_hash": "24073405600031326241509208613221419142"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-851445b9",
                 "digest": {
-                  "function_hash": "209141182137731181748091367647926617828",
-                  "length": 2454
-                }
+                  "length": 2454,
+                  "function_hash": "209141182137731181748091367647926617828"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "createMmsTables",
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-8a1504b5",
                 "digest": {
-                  "function_hash": "209219235472831627363290157111409646302",
-                  "length": 2803
-                }
+                  "length": 2803,
+                  "function_hash": "209219235472831627363290157111409646302"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-b97155b9",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "310841440182783761631491462035056872936",
                     "104111710321281570590631005537819003032",
@@ -1605,35 +1597,35 @@
                     "259566640976781372108925511872993134284",
                     "196718364935893327787359376937518610079",
                     "33066967163308569040033726057506087462"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-cf87ca7a",
                 "digest": {
-                  "function_hash": "309980882185738062950048729161441463348",
-                  "length": 2498
-                }
+                  "length": 2498,
+                  "function_hash": "309980882185738062950048729161441463348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d",
                 "id": "ASB-A-289242655-d00898e2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "52675652017292497431594103361761191404",
                     "172409311227854207609434144321075172410",
@@ -1705,11 +1697,19 @@
                     "325597346898168492231093811445644835234",
                     "339104458615002563600875923983813142805",
                     "71232279494924476826956081496216677699"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/950a7e5a4bf1b38e846fe00642105479efded57d"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-289242655.json"
@@ -1738,69 +1738,61 @@
           ],
           "ecosystem_specific": {
             "severity": "Critical",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-19444b3e",
                 "digest": {
-                  "function_hash": "109700728012927972075196699222344779282",
-                  "length": 1141
-                }
+                  "length": 1141,
+                  "function_hash": "109700728012927972075196699222344779282"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-248a351d",
                 "digest": {
-                  "function_hash": "32694772924533184153896091283600129788",
-                  "length": 586
-                }
+                  "length": 586,
+                  "function_hash": "32694772924533184153896091283600129788"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "createMmsTables",
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-38bdad99",
                 "digest": {
-                  "function_hash": "209219235472831627363290157111409646302",
-                  "length": 2803
-                }
+                  "length": 2803,
+                  "function_hash": "209219235472831627363290157111409646302"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-4d953d7e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "310841440182783761631491462035056872936",
                     "104111710321281570590631005537819003032",
@@ -1822,20 +1814,20 @@
                     "259566640976781372108925511872993134284",
                     "196718364935893327787359376937518610079",
                     "33066967163308569040033726057506087462"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-55e231de",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "168851074383591715004637446937727746660",
                     "276091707606902570124283021536479956120",
@@ -1861,95 +1853,95 @@
                     "151632831781871739503200482303464626165",
                     "62744985553887971773006344497929741062",
                     "106708507282418176064543306640682713861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-61114877",
                 "digest": {
-                  "function_hash": "80078473943509797346005856437500275389",
-                  "length": 1703
-                }
+                  "length": 1703,
+                  "function_hash": "80078473943509797346005856437500275389"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-76f9a255",
                 "digest": {
-                  "function_hash": "24073405600031326241509208613221419142",
-                  "length": 5084
-                }
+                  "length": 5084,
+                  "function_hash": "24073405600031326241509208613221419142"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-7758d472",
                 "digest": {
-                  "function_hash": "272450866535547724192138075612066765309",
-                  "length": 4726
-                }
+                  "length": 4726,
+                  "function_hash": "272450866535547724192138075612066765309"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-787206d5",
                 "digest": {
-                  "function_hash": "324442489733767727319710993541868124957",
-                  "length": 2957
-                }
+                  "length": 2957,
+                  "function_hash": "324442489733767727319710993541868124957"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-91d4b10b",
                 "digest": {
-                  "function_hash": "168436817630739787424536090274018062954",
-                  "length": 3733
-                }
+                  "length": 3733,
+                  "function_hash": "168436817630739787424536090274018062954"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-91f257b2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "52675652017292497431594103361761191404",
                     "172409311227854207609434144321075172410",
@@ -2021,20 +2013,20 @@
                     "325597346898168492231093811445644835234",
                     "339104458615002563600875923983813142805",
                     "71232279494924476826956081496216677699"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-a9493c8e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "27948134868797724906955847511042255057",
                     "210241409091240576457420234609082871436",
@@ -2067,86 +2059,94 @@
                     "328552963765057763267663399926506401876",
                     "19874949104769981573245699428026193640",
                     "307550365844618781499083245603685677366"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-d9b81d70",
                 "digest": {
-                  "function_hash": "309980882185738062950048729161441463348",
-                  "length": 2498
-                }
+                  "length": 2498,
+                  "function_hash": "309980882185738062950048729161441463348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insertInner",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-e4ba145b",
                 "digest": {
-                  "function_hash": "321560754776620137559786370603652285256",
-                  "length": 4950
-                }
+                  "length": 4950,
+                  "function_hash": "321560754776620137559786370603652285256"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-e9653aac",
                 "digest": {
-                  "function_hash": "12180530317429542227735408695122329409",
-                  "length": 1729
-                }
+                  "length": 1729,
+                  "function_hash": "12180530317429542227735408695122329409"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-f70ee6b9",
                 "digest": {
-                  "function_hash": "151452584949294370040187866050588043333",
-                  "length": 1239
-                }
+                  "length": 1239,
+                  "function_hash": "151452584949294370040187866050588043333"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d",
                 "id": "ASB-A-289242655-fe888443",
                 "digest": {
-                  "function_hash": "138100374374962976283666438499956569650",
-                  "length": 6633
-                }
+                  "length": 6633,
+                  "function_hash": "138100374374962976283666438499956569650"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a6df5b5cae6280c23d63d89c5064b825a515597d"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-289242655.json"
@@ -2175,69 +2175,61 @@
           ],
           "ecosystem_specific": {
             "severity": "Critical",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-28f25d3a",
                 "digest": {
-                  "function_hash": "32694772924533184153896091283600129788",
-                  "length": 586
-                }
+                  "length": 586,
+                  "function_hash": "32694772924533184153896091283600129788"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-2908f542",
                 "digest": {
-                  "function_hash": "24073405600031326241509208613221419142",
-                  "length": 5084
-                }
+                  "length": 5084,
+                  "function_hash": "24073405600031326241509208613221419142"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "createMmsTables",
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-43bc0229",
                 "digest": {
-                  "function_hash": "209219235472831627363290157111409646302",
-                  "length": 2803
-                }
+                  "length": 2803,
+                  "function_hash": "209219235472831627363290157111409646302"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-52e2ee3f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "27948134868797724906955847511042255057",
                     "210241409091240576457420234609082871436",
@@ -2270,65 +2262,65 @@
                     "328552963765057763267663399926506401876",
                     "19874949104769981573245699428026193640",
                     "307550365844618781499083245603685677366"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-58e00ff1",
                 "digest": {
-                  "function_hash": "168436817630739787424536090274018062954",
-                  "length": 3733
-                }
+                  "length": 3733,
+                  "function_hash": "168436817630739787424536090274018062954"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-59d2ee1b",
                 "digest": {
-                  "function_hash": "309980882185738062950048729161441463348",
-                  "length": 2498
-                }
+                  "length": 2498,
+                  "function_hash": "309980882185738062950048729161441463348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-7bd9c8ab",
                 "digest": {
-                  "function_hash": "324442489733767727319710993541868124957",
-                  "length": 2957
-                }
+                  "length": 2957,
+                  "function_hash": "324442489733767727319710993541868124957"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-7cf8d644",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "168851074383591715004637446937727746660",
                     "276091707606902570124283021536479956120",
@@ -2354,35 +2346,35 @@
                     "151632831781871739503200482303464626165",
                     "62744985553887971773006344497929741062",
                     "106708507282418176064543306640682713861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-813e506d",
                 "digest": {
-                  "function_hash": "272450866535547724192138075612066765309",
-                  "length": 4726
-                }
+                  "length": 4726,
+                  "function_hash": "272450866535547724192138075612066765309"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-8fc68777",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "52675652017292497431594103361761191404",
                     "172409311227854207609434144321075172410",
@@ -2454,80 +2446,80 @@
                     "325597346898168492231093811445644835234",
                     "339104458615002563600875923983813142805",
                     "71232279494924476826956081496216677699"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-9811161b",
                 "digest": {
-                  "function_hash": "12180530317429542227735408695122329409",
-                  "length": 1729
-                }
+                  "length": 1729,
+                  "function_hash": "12180530317429542227735408695122329409"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-a102912c",
                 "digest": {
-                  "function_hash": "109700728012927972075196699222344779282",
-                  "length": 1141
-                }
+                  "length": 1141,
+                  "function_hash": "109700728012927972075196699222344779282"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insertInner",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-b68d1eb0",
                 "digest": {
-                  "function_hash": "321560754776620137559786370603652285256",
-                  "length": 4950
-                }
+                  "length": 4950,
+                  "function_hash": "321560754776620137559786370603652285256"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-b93f462a",
                 "digest": {
-                  "function_hash": "151452584949294370040187866050588043333",
-                  "length": 1239
-                }
+                  "length": 1239,
+                  "function_hash": "151452584949294370040187866050588043333"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-bc689f9b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "310841440182783761631491462035056872936",
                     "104111710321281570590631005537819003032",
@@ -2549,41 +2541,49 @@
                     "259566640976781372108925511872993134284",
                     "196718364935893327787359376937518610079",
                     "33066967163308569040033726057506087462"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-e2f09bf3",
                 "digest": {
-                  "function_hash": "138100374374962976283666438499956569650",
-                  "length": 6633
-                }
+                  "length": 6633,
+                  "function_hash": "138100374374962976283666438499956569650"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3",
                 "id": "ASB-A-289242655-f24fa0b2",
                 "digest": {
-                  "function_hash": "80078473943509797346005856437500275389",
-                  "length": 1703
-                }
+                  "length": 1703,
+                  "function_hash": "80078473943509797346005856437500275389"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/e6e4b215815a58b9ac67e501865c803bbd000ee3"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-289242655.json"
@@ -2612,159 +2612,151 @@
           ],
           "ecosystem_specific": {
             "severity": "Critical",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-11-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-038fe48a",
                 "digest": {
-                  "function_hash": "109700728012927972075196699222344779282",
-                  "length": 1141
-                }
+                  "length": 1141,
+                  "function_hash": "109700728012927972075196699222344779282"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-0b755eb6",
                 "digest": {
-                  "function_hash": "324442489733767727319710993541868124957",
-                  "length": 2957
-                }
+                  "length": 2957,
+                  "function_hash": "324442489733767727319710993541868124957"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-0e126b5a",
                 "digest": {
-                  "function_hash": "138100374374962976283666438499956569650",
-                  "length": 6633
-                }
+                  "length": 6633,
+                  "function_hash": "138100374374962976283666438499956569650"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-1d6e0e74",
                 "digest": {
-                  "function_hash": "12180530317429542227735408695122329409",
-                  "length": 1729
-                }
+                  "length": 1729,
+                  "function_hash": "12180530317429542227735408695122329409"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-5128ab0e",
                 "digest": {
-                  "function_hash": "151452584949294370040187866050588043333",
-                  "length": 1239
-                }
+                  "length": 1239,
+                  "function_hash": "151452584949294370040187866050588043333"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "createMmsTables",
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-5eae08f4",
                 "digest": {
-                  "function_hash": "209219235472831627363290157111409646302",
-                  "length": 2803
-                }
+                  "length": 2803,
+                  "function_hash": "209219235472831627363290157111409646302"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-6001fb9a",
                 "digest": {
-                  "function_hash": "81700526410036968577923402156282838212",
-                  "length": 3803
-                }
+                  "length": 3803,
+                  "function_hash": "81700526410036968577923402156282838212"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insertInner",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-74445b6d",
                 "digest": {
-                  "function_hash": "321560754776620137559786370603652285256",
-                  "length": 4950
-                }
+                  "length": 4950,
+                  "function_hash": "321560754776620137559786370603652285256"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "insert",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-84157166",
                 "digest": {
-                  "function_hash": "32694772924533184153896091283600129788",
-                  "length": 586
-                }
+                  "length": 586,
+                  "function_hash": "32694772924533184153896091283600129788"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-8cd89dcc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "27948134868797724906955847511042255057",
                     "210241409091240576457420234609082871436",
@@ -2797,20 +2789,20 @@
                     "328552963765057763267663399926506401876",
                     "19874949104769981573245699428026193640",
                     "307550365844618781499083245603685677366"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-90c4fe74",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "310841440182783761631491462035056872936",
                     "104111710321281570590631005537819003032",
@@ -2832,35 +2824,35 @@
                     "259566640976781372108925511872993134284",
                     "196718364935893327787359376937518610079",
                     "33066967163308569040033726057506087462"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/SmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-b482e14a",
                 "digest": {
-                  "function_hash": "272450866535547724192138075612066765309",
-                  "length": 4726
-                }
+                  "length": 4726,
+                  "function_hash": "272450866535547724192138075612066765309"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-bcdedcee",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "168851074383591715004637446937727746660",
                     "276091707606902570124283021536479956120",
@@ -2886,35 +2878,35 @@
                     "151632831781871739503200482303464626165",
                     "62744985553887971773006344497929741062",
                     "106708507282418176064543306640682713861"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-d4bd0637",
                 "digest": {
-                  "function_hash": "24073405600031326241509208613221419142",
-                  "length": 5084
-                }
+                  "length": 5084,
+                  "function_hash": "24073405600031326241509208613221419142"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsDatabaseHelper.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-dd0037ba",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "52675652017292497431594103361761191404",
                     "172409311227854207609434144321075172410",
@@ -2986,48 +2978,56 @@
                     "325597346898168492231093811445644835234",
                     "339104458615002563600875923983813142805",
                     "71232279494924476826956081496216677699"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "update",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-f1611f94",
                 "digest": {
-                  "function_hash": "309980882185738062950048729161441463348",
-                  "length": 2498
-                }
+                  "length": 2498,
+                  "function_hash": "309980882185738062950048729161441463348"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "delete",
                   "file": "src/com/android/providers/telephony/MmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4",
                 "id": "ASB-A-289242655-f8822ecc",
                 "digest": {
-                  "function_hash": "80078473943509797346005856437500275389",
-                  "length": 1703
-                }
+                  "length": 1703,
+                  "function_hash": "80078473943509797346005856437500275389"
+                },
+                "deprecated": false,
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/a1bb14ff6627fe26c57873c05ae8903ad7a3cdf4"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2023-11-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-289242655.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-224769956",
@@ -3036,7 +3036,7 @@
         "A-224769956",
         "CVE-2022-20517"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -3071,43 +3071,37 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6d3d099d902a3c258972e46e4bc033f46b73109f"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6d3d099d902a3c258972e46e4bc033f46b73109f",
+                "id": "PUB-A-224769956-33afdf62",
                 "signature_version": "v1",
+                "signature_type": "Function",
                 "target": {
                   "function": "getMessagesByPhoneNumber",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6d3d099d902a3c258972e46e4bc033f46b73109f",
-                "id": "PUB-A-224769956-33afdf62",
                 "digest": {
-                  "function_hash": "22422532387122491668667721950104656157",
-                  "length": 1407
+                  "length": 1407,
+                  "function_hash": "22422532387122491668667721950104656157"
                 },
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6d3d099d902a3c258972e46e4bc033f46b73109f",
                 "id": "PUB-A-224769956-63b4c4c4",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
+                },
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258934897897631415745520717000714098069",
                     "197014184272332667846658434605393915898",
@@ -3128,21 +3122,27 @@
                     "76444377936777127146241846239546812827",
                     "12758008060783028391415423680115144311",
                     "151384020286346887885906492235622483531"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
                 "match_only_versions": [
                   "13"
                 ]
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/6d3d099d902a3c258972e46e4bc033f46b73109f"
+            ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-224769956.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-224770183",
@@ -3151,7 +3151,7 @@
         "A-224770183",
         "CVE-2022-42535"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -3186,25 +3186,19 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
             "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "id": "PUB-A-224770183-4a67ded2",
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41",
+                "deprecated": false,
                 "signature_version": "v1",
+                "signature_type": "Line",
                 "target": {
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41",
-                "id": "PUB-A-224770183-4a67ded2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "175278434493877219041305268878872093326",
                     "27272561965854949146123458815165972263",
@@ -3216,8 +3210,7 @@
                     "243705358534627401397731811153310912311",
                     "190521588167200224755839801483910998614",
                     "38947201479845264073759646330827678555"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
                 "match_only_versions": [
                   "13"
@@ -3225,27 +3218,34 @@
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "PUB-A-224770183-a06dfb12",
+                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41",
+                "deprecated": false,
+                "digest": {
+                  "length": 5084,
+                  "function_hash": "24073405600031326241509208613221419142"
+                },
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41",
-                "id": "PUB-A-224770183-a06dfb12",
-                "digest": {
-                  "function_hash": "24073405600031326241509208613221419142",
-                  "length": 5084
-                }
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41"
+            ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-224770183.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-224770203",
@@ -3254,7 +3254,7 @@
         "A-224770203",
         "CVE-2022-20518"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -3290,24 +3290,18 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41",
                 "id": "PUB-A-224770203-4a67ded2",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
+                },
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "175278434493877219041305268878872093326",
                     "27272561965854949146123458815165972263",
@@ -3319,8 +3313,7 @@
                     "243705358534627401397731811153310912311",
                     "190521588167200224755839801483910998614",
                     "38947201479845264073759646330827678555"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
                 "match_only_versions": [
                   "13"
@@ -3328,27 +3321,34 @@
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "query",
                   "file": "src/com/android/providers/telephony/MmsSmsProvider.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41",
-                "id": "PUB-A-224770203-a06dfb12",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "24073405600031326241509208613221419142",
-                  "length": 5084
-                }
+                  "length": 5084,
+                  "function_hash": "24073405600031326241509208613221419142"
+                },
+                "id": "PUB-A-224770203-a06dfb12",
+                "signature_version": "v1"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/561e28af0c3baf6c25c42f7383411bee79139f41"
+            ],
+            "types": [
+              "ID"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-224770203.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

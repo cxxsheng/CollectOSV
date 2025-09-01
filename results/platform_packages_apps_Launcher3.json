@@ -7,7 +7,7 @@
         "A-157929241",
         "CVE-2021-39691"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -38,7 +38,6 @@
             "12L-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -48,30 +47,28 @@
               "https://android.googlesource.com/platform/frameworks/base/+/be3d14b5fccc5bccf12f3ec8af9fd3e43af7477b",
               "https://android.googlesource.com/platform/frameworks/base/+/c07d90ff207cef18e30cc35efb8a0b456b24ba01"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateInputChannel",
-                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
-                },
-                "deprecated": true,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
-                "id": "ASB-A-157929241-1c28704b",
                 "digest": {
-                  "function_hash": "153347065348297576086272620388138362993",
-                  "length": 1156
+                  "length": 1156,
+                  "function_hash": "153347065348297576086272620388138362993"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-1c28704b",
+                "deprecated": true,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java",
+                  "function": "updateInputChannel"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
-                },
                 "deprecated": true,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-157929241-2b8b83b5",
                 "digest": {
                   "line_hashes": [
@@ -89,18 +86,18 @@
                   ],
                   "threshold": 0.9
                 },
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
+                },
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/view/WindowManager.java"
-                },
                 "deprecated": true,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-157929241-4a182953",
                 "digest": {
                   "line_hashes": [
@@ -111,19 +108,14 @@
                   ],
                   "threshold": 0.9
                 },
+                "target": {
+                  "file": "core/java/android/view/WindowManager.java"
+                },
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
-                },
-                "deprecated": true,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
-                "id": "ASB-A-157929241-d7c0e089",
                 "digest": {
                   "line_hashes": [
                     "92301874802876879800300804264221710037",
@@ -137,21 +129,29 @@
                     "184624018484936216838273776084714878218"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-d7c0e089",
+                "deprecated": true,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "adjustWindowParamsLw",
-                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
-                },
-                "deprecated": true,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
-                "id": "ASB-A-157929241-fd576c99",
                 "digest": {
-                  "function_hash": "310382824889737597461733662198232335870",
-                  "length": 1655
+                  "length": 1655,
+                  "function_hash": "310382824889737597461733662198232335870"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/5972dfb7154f1550869e9ae39f02d61be99cc1c2",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-fd576c99",
+                "deprecated": true,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java",
+                  "function": "adjustWindowParamsLw"
                 }
               }
             ]
@@ -182,7 +182,6 @@
             "12L-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -190,15 +189,13 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Permission/+/1047d4e44b6f2422a7aed2311b2695df1e8a5f66"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "PermissionController/src/com/android/permissioncontroller/role/model/HomeRoleBehavior.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/1047d4e44b6f2422a7aed2311b2695df1e8a5f66",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-157929241-4a5f182b",
                 "digest": {
                   "line_hashes": [
@@ -219,41 +216,44 @@
                   ],
                   "threshold": 0.9
                 },
+                "target": {
+                  "file": "PermissionController/src/com/android/permissioncontroller/role/model/HomeRoleBehavior.java"
+                },
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "revoke",
-                  "file": "PermissionController/src/com/android/permissioncontroller/role/model/HomeRoleBehavior.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/1047d4e44b6f2422a7aed2311b2695df1e8a5f66",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-157929241-7fd13b71",
                 "digest": {
-                  "function_hash": "320654858666519986315252438776713473820",
-                  "length": 266
+                  "length": 266,
+                  "function_hash": "320654858666519986315252438776713473820"
+                },
+                "target": {
+                  "file": "PermissionController/src/com/android/permissioncontroller/role/model/HomeRoleBehavior.java",
+                  "function": "revoke"
                 },
                 "match_only_versions": [
                   "12L-next"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "grant",
-                  "file": "PermissionController/src/com/android/permissioncontroller/role/model/HomeRoleBehavior.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/modules/Permission/+/1047d4e44b6f2422a7aed2311b2695df1e8a5f66",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-157929241-ce8d6d51",
                 "digest": {
-                  "function_hash": "291770406326217863011581347223935487901",
-                  "length": 281
+                  "length": 281,
+                  "function_hash": "291770406326217863011581347223935487901"
+                },
+                "target": {
+                  "file": "PermissionController/src/com/android/permissioncontroller/role/model/HomeRoleBehavior.java",
+                  "function": "grant"
                 },
                 "match_only_versions": [
                   "12L-next"
@@ -287,7 +287,6 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -295,16 +294,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/6e689ffe3fad4b190629e11222936fb7cda041c2"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/inputflinger/InputDispatcher.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/6e689ffe3fad4b190629e11222936fb7cda041c2",
-                "id": "ASB-A-157929241-49670bc0",
                 "digest": {
                   "line_hashes": [
                     "83909744248771613920413884159268329451",
@@ -313,21 +305,29 @@
                     "293818353683518844837345193421986437986"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6e689ffe3fad4b190629e11222936fb7cda041c2",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-49670bc0",
+                "deprecated": false,
+                "target": {
+                  "file": "services/inputflinger/InputDispatcher.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "InputDispatcher::findTouchedWindowTargetsLocked",
-                  "file": "services/inputflinger/InputDispatcher.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/6e689ffe3fad4b190629e11222936fb7cda041c2",
-                "id": "ASB-A-157929241-7c973019",
                 "digest": {
-                  "function_hash": "38131015991642964551032929699778201765",
-                  "length": 10745
+                  "length": 10745,
+                  "function_hash": "38131015991642964551032929699778201765"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/6e689ffe3fad4b190629e11222936fb7cda041c2",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-7c973019",
+                "deprecated": false,
+                "target": {
+                  "file": "services/inputflinger/InputDispatcher.cpp",
+                  "function": "InputDispatcher::findTouchedWindowTargetsLocked"
                 }
               }
             ]
@@ -358,7 +358,6 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -367,31 +366,24 @@
               "https://android.googlesource.com/platform/frameworks/base/+/cccf19150f5247e101417b2a4f3748813dd7058a",
               "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateInputChannel",
-                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd",
-                "id": "ASB-A-157929241-35896653",
                 "digest": {
-                  "function_hash": "197668447375550088595462888993817787185",
-                  "length": 1109
+                  "length": 1109,
+                  "function_hash": "197668447375550088595462888993817787185"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-35896653",
+                "deprecated": false,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java",
+                  "function": "updateInputChannel"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd",
-                "id": "ASB-A-157929241-a0d4fcc7",
                 "digest": {
                   "line_hashes": [
                     "58563466410381007163839025469922812273",
@@ -407,32 +399,32 @@
                     "189885709426762610526399389761134554638"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "adjustWindowParamsLw",
-                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd",
-                "id": "ASB-A-157929241-bc5ef53e",
-                "digest": {
-                  "function_hash": "248878794927647396918728413038369413928",
-                  "length": 1802
-                }
-              },
-              {
+                "signature_version": "v1",
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
-                },
+                "id": "ASB-A-157929241-a0d4fcc7",
                 "deprecated": false,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
+                }
+              },
+              {
+                "digest": {
+                  "length": 1802,
+                  "function_hash": "248878794927647396918728413038369413928"
+                },
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd",
-                "id": "ASB-A-157929241-e9377f1e",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-bc5ef53e",
+                "deprecated": false,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java",
+                  "function": "adjustWindowParamsLw"
+                }
+              },
+              {
                 "digest": {
                   "line_hashes": [
                     "92301874802876879800300804264221710037",
@@ -446,6 +438,14 @@
                     "105267496751941668265139726099238228864"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/07e7aaff2957c103d1bcd51e6e9b1dbde29d87bd",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-e9377f1e",
+                "deprecated": false,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
                 }
               }
             ]
@@ -476,7 +476,6 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -484,31 +483,24 @@
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "InputDispatcher::findTouchedWindowTargetsLocked",
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38",
-                "id": "ASB-A-157929241-4f1fd6b4",
                 "digest": {
-                  "function_hash": "215636001148364275985609935948235791065",
-                  "length": 10129
+                  "length": 10129,
+                  "function_hash": "215636001148364275985609935948235791065"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-4f1fd6b4",
+                "deprecated": false,
+                "target": {
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp",
+                  "function": "InputDispatcher::findTouchedWindowTargetsLocked"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/inputflinger/tests/InputDispatcher_test.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38",
-                "id": "ASB-A-157929241-ca66a961",
                 "digest": {
                   "line_hashes": [
                     "36433552115218054786902081124042964491",
@@ -661,17 +653,17 @@
                     "98930382168000327033903736933177742211"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-ca66a961",
+                "deprecated": false,
+                "target": {
+                  "file": "services/inputflinger/tests/InputDispatcher_test.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38",
-                "id": "ASB-A-157929241-d7344250",
                 "digest": {
                   "line_hashes": [
                     "83909744248771613920413884159268329451",
@@ -680,6 +672,14 @@
                     "293818353683518844837345193421986437986"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/native/+/d8c6ef21387db53930d728272db24cca1cd38a38",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-d7344250",
+                "deprecated": false,
+                "target": {
+                  "file": "services/inputflinger/dispatcher/InputDispatcher.cpp"
                 }
               }
             ]
@@ -710,7 +710,6 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -718,16 +717,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/918776ee51c60a1156600bbbcf5da986ef882a91"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "quickstep/src/com/android/launcher3/uioverrides/touchcontrollers/StatusBarTouchController.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/918776ee51c60a1156600bbbcf5da986ef882a91",
-                "id": "ASB-A-157929241-bf0a7e57",
                 "digest": {
                   "line_hashes": [
                     "134819474328631603133796443972903733249",
@@ -743,6 +735,14 @@
                     "6330940361076397813707350478503492685"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/918776ee51c60a1156600bbbcf5da986ef882a91",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-bf0a7e57",
+                "deprecated": false,
+                "target": {
+                  "file": "quickstep/src/com/android/launcher3/uioverrides/touchcontrollers/StatusBarTouchController.java"
                 }
               }
             ]
@@ -773,7 +773,6 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -782,30 +781,28 @@
               "https://android.googlesource.com/platform/frameworks/base/+/d732692ba764857225760274c63cba8e758f08e6",
               "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "adjustWindowParamsLw",
-                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
-                },
-                "deprecated": true,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
-                "id": "ASB-A-157929241-390b83ff",
                 "digest": {
-                  "function_hash": "310382824889737597461733662198232335870",
-                  "length": 1655
+                  "length": 1655,
+                  "function_hash": "310382824889737597461733662198232335870"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-390b83ff",
+                "deprecated": true,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java",
+                  "function": "adjustWindowParamsLw"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
-                },
                 "deprecated": true,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-157929241-58b666ef",
                 "digest": {
                   "line_hashes": [
@@ -823,34 +820,29 @@
                   ],
                   "threshold": 0.9
                 },
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/DisplayPolicy.java"
+                },
                 "match_only_versions": [
                   "12"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateInputChannel",
-                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
-                },
-                "deprecated": true,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
-                "id": "ASB-A-157929241-6a4d2f27",
                 "digest": {
-                  "function_hash": "153347065348297576086272620388138362993",
-                  "length": 1156
+                  "length": 1156,
+                  "function_hash": "153347065348297576086272620388138362993"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-157929241-6a4d2f27",
+                "deprecated": true,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java",
+                  "function": "updateInputChannel"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
-                },
-                "deprecated": true,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
-                "id": "ASB-A-157929241-c80781de",
                 "digest": {
                   "line_hashes": [
                     "92301874802876879800300804264221710037",
@@ -864,6 +856,14 @@
                     "184624018484936216838273776084714878218"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/0657e199403da352ffc765a72913458809658114",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-c80781de",
+                "deprecated": true,
+                "target": {
+                  "file": "services/core/java/com/android/server/wm/WindowManagerService.java"
                 }
               }
             ]
@@ -894,7 +894,6 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -902,16 +901,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/81ff81227e26d08779f176ed40fc2bed1cb9a912"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "quickstep/src/com/android/launcher3/uioverrides/touchcontrollers/StatusBarTouchController.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/81ff81227e26d08779f176ed40fc2bed1cb9a912",
-                "id": "ASB-A-157929241-0434e004",
                 "digest": {
                   "line_hashes": [
                     "42474112996094868378602810021259273740",
@@ -927,6 +919,14 @@
                     "6330940361076397813707350478503492685"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/81ff81227e26d08779f176ed40fc2bed1cb9a912",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-157929241-0434e004",
+                "deprecated": false,
+                "target": {
+                  "file": "quickstep/src/com/android/launcher3/uioverrides/touchcontrollers/StatusBarTouchController.java"
                 }
               }
             ]
@@ -936,7 +936,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-179289753",
@@ -945,7 +945,7 @@
         "A-179289753",
         "CVE-2021-0692"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-09-01T00:00:00Z",
       "references": [
         {
@@ -980,61 +980,59 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037",
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/89299047d7d4760545d1269de69f581700abcdde"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sendBroadcastToInstaller",
-                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037",
+                "target": {
+                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java",
+                  "function": "sendBroadcastToInstaller"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-179289753-65adddd6",
                 "digest": {
-                  "function_hash": "308470978541057670615553267430717786121",
-                  "length": 1523
-                }
+                  "length": 1523,
+                  "function_hash": "308470978541057670615553267430717786121"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-179289753-6a71ee25",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "64218691201831824957998934362193549226",
                     "72101287542892239829598847874941774405",
                     "250917820842319857174928855853544470004",
                     "157549670108489957391182641662768380696",
                     "215765759519464149898409340185639421019"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/89299047d7d4760545d1269de69f581700abcdde",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-179289753-d6eae26b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "289431792269108550855782688154527960629",
                     "230997653134768548590088079968996658108",
@@ -1043,8 +1041,10 @@
                     "224747133250815276446175189229160239239",
                     "335596790613405093073366072620082111840",
                     "193131926168498708920826065808808705187"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
                 },
                 "match_only_versions": [
                   "9"
@@ -1078,61 +1078,59 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037",
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/89299047d7d4760545d1269de69f581700abcdde"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-179289753-490cd3aa",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "64218691201831824957998934362193549226",
                     "72101287542892239829598847874941774405",
                     "250917820842319857174928855853544470004",
                     "157549670108489957391182641662768380696",
                     "215765759519464149898409340185639421019"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sendBroadcastToInstaller",
-                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037",
+                "target": {
+                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java",
+                  "function": "sendBroadcastToInstaller"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-179289753-a133b673",
                 "digest": {
-                  "function_hash": "308470978541057670615553267430717786121",
-                  "length": 1523
-                }
+                  "length": 1523,
+                  "function_hash": "308470978541057670615553267430717786121"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6a7a7f6bad9ddb3b09620b5bd3e931e4a7f94037"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/89299047d7d4760545d1269de69f581700abcdde",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-179289753-ac13be8d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "289431792269108550855782688154527960629",
                     "230997653134768548590088079968996658108",
@@ -1141,8 +1139,10 @@
                     "224747133250815276446175189229160239239",
                     "335596790613405093073366072620082111840",
                     "193131926168498708920826065808808705187"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
                 },
                 "match_only_versions": [
                   "10"
@@ -1176,49 +1176,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b62fba0d0199d719ac63761846e09b4b28e1dc2c"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b62fba0d0199d719ac63761846e09b4b28e1dc2c",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-179289753-41ddf5b5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "312131370601399000384591629829028668315",
                     "72101287542892239829598847874941774405",
                     "250917820842319857174928855853544470004",
                     "157549670108489957391182641662768380696",
                     "215765759519464149898409340185639421019"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b62fba0d0199d719ac63761846e09b4b28e1dc2c"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sendBroadcastToInstaller",
-                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b62fba0d0199d719ac63761846e09b4b28e1dc2c",
+                "target": {
+                  "file": "src/com/android/launcher3/model/FirstScreenBroadcast.java",
+                  "function": "sendBroadcastToInstaller"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-179289753-4cb922aa",
                 "digest": {
-                  "function_hash": "308470978541057670615553267430717786121",
-                  "length": 1523
-                }
+                  "length": 1523,
+                  "function_hash": "308470978541057670615553267430717786121"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b62fba0d0199d719ac63761846e09b4b28e1dc2c"
               }
             ]
           },
@@ -1227,7 +1227,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-242704576",
@@ -1236,7 +1236,7 @@
         "A-242704576",
         "CVE-2023-21095"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -1271,7 +1271,6 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1279,33 +1278,31 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "canStartSystemGesture",
-                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-242704576-65f5d79e",
                 "digest": {
-                  "function_hash": "39520551394268165128259926749305286578",
-                  "length": 570
+                  "length": 570,
+                  "function_hash": "39520551394268165128259926749305286578"
                 },
                 "match_only_versions": [
                   "13-next"
-                ]
+                ],
+                "target": {
+                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java",
+                  "function": "canStartSystemGesture"
+                }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-242704576-979ac7ba",
                 "digest": {
                   "line_hashes": [
@@ -1322,7 +1319,10 @@
                 },
                 "match_only_versions": [
                   "13-next"
-                ]
+                ],
+                "target": {
+                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
+                }
               }
             ]
           },
@@ -1352,7 +1352,6 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1360,15 +1359,13 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-242704576-e24ee0ba",
                 "digest": {
                   "line_hashes": [
@@ -1385,25 +1382,28 @@
                 },
                 "match_only_versions": [
                   "12L"
-                ]
+                ],
+                "target": {
+                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
+                }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "canStartSystemGesture",
-                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-242704576-ef6a0f97",
                 "digest": {
-                  "function_hash": "39520551394268165128259926749305286578",
-                  "length": 570
+                  "length": 570,
+                  "function_hash": "39520551394268165128259926749305286578"
                 },
                 "match_only_versions": [
                   "12L"
-                ]
+                ],
+                "target": {
+                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java",
+                  "function": "canStartSystemGesture"
+                }
               }
             ]
           },
@@ -1433,7 +1433,6 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1441,15 +1440,13 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-242704576-2e904b19",
                 "digest": {
                   "line_hashes": [
@@ -1466,25 +1463,28 @@
                 },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "target": {
+                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
+                }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "canStartSystemGesture",
-                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/f6d75c98a94d173ae59afc9bd126d1e72d1b28fa",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-242704576-737f46f6",
                 "digest": {
-                  "function_hash": "39520551394268165128259926749305286578",
-                  "length": 570
+                  "length": 570,
+                  "function_hash": "39520551394268165128259926749305286578"
                 },
                 "match_only_versions": [
                   "13"
-                ]
+                ],
+                "target": {
+                  "file": "quickstep/src/com/android/quickstep/RecentsAnimationDeviceState.java",
+                  "function": "canStartSystemGesture"
+                }
               }
             ]
           },
@@ -1493,7 +1493,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-270152142",
@@ -1502,7 +1502,7 @@
         "A-270152142",
         "CVE-2023-35682"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-09-01T00:00:00Z",
       "references": [
         {
@@ -1537,47 +1537,47 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
-                "id": "ASB-A-270152142-2b13f694",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "16712015744838485042592019300562064227",
                     "31121227761605580680359732024722092718",
                     "262702927862700480734688122387108827107",
                     "124378739837206776677664547034741575928"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-270152142-2b13f694",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
+                "digest": {
+                  "length": 650,
+                  "function_hash": "45317721139558193179461422572059100534"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "id": "ASB-A-270152142-ed54c94d",
-                "digest": {
-                  "function_hash": "45317721139558193179461422572059100534",
-                  "length": 650
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -1608,47 +1608,47 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
-                "id": "ASB-A-270152142-849c9156",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "16712015744838485042592019300562064227",
                     "31121227761605580680359732024722092718",
                     "262702927862700480734688122387108827107",
                     "124378739837206776677664547034741575928"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-270152142-849c9156",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
+                "digest": {
+                  "length": 650,
+                  "function_hash": "45317721139558193179461422572059100534"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "id": "ASB-A-270152142-912e11fb",
-                "digest": {
-                  "function_hash": "45317721139558193179461422572059100534",
-                  "length": 650
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -1679,47 +1679,47 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
-                "id": "ASB-A-270152142-7838c1ba",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "16712015744838485042592019300562064227",
                     "31121227761605580680359732024722092718",
                     "262702927862700480734688122387108827107",
                     "124378739837206776677664547034741575928"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-270152142-7838c1ba",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
+                "digest": {
+                  "length": 650,
+                  "function_hash": "45317721139558193179461422572059100534"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "id": "ASB-A-270152142-828afd9b",
-                "digest": {
-                  "function_hash": "45317721139558193179461422572059100534",
-                  "length": 650
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -1750,47 +1750,47 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
-                "id": "ASB-A-270152142-25edf70f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "16712015744838485042592019300562064227",
                     "31121227761605580680359732024722092718",
                     "262702927862700480734688122387108827107",
                     "124378739837206776677664547034741575928"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-270152142-25edf70f",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
+                "digest": {
+                  "length": 650,
+                  "function_hash": "45317721139558193179461422572059100534"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/c53818a16b4322a823497726ac7e7a44501b4442",
                 "id": "ASB-A-270152142-89afff17",
-                "digest": {
-                  "function_hash": "45317721139558193179461422572059100534",
-                  "length": 650
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -1800,7 +1800,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-283006437",
@@ -1809,7 +1809,7 @@
         "A-283006437",
         "CVE-2023-21270"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -1844,7 +1844,6 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -1852,30 +1851,28 @@
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/75d59e2c837fe80573d005d614b5605f049d670b"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "restorePermissionState",
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/75d59e2c837fe80573d005d614b5605f049d670b",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-b41927e2",
                 "digest": {
-                  "function_hash": "142246288412129094408514203199238561948",
-                  "length": 8812
+                  "length": 8812,
+                  "function_hash": "142246288412129094408514203199238561948"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java",
+                  "function": "restorePermissionState"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/75d59e2c837fe80573d005d614b5605f049d670b",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-df1c9da6",
                 "digest": {
                   "line_hashes": [
@@ -1925,6 +1922,9 @@
                     "67881705992814538402892150868489171754"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
                 }
               }
             ]
@@ -1955,14 +1955,14 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/6f7a11861f9158061e90d0645c4d891f29cdfc59"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-283006437.json"
@@ -1990,7 +1990,6 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -1998,30 +1997,28 @@
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/0e1ebd84e27f5d4fa8bc6577705293251bcbac4f"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "restorePermissionState",
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/0e1ebd84e27f5d4fa8bc6577705293251bcbac4f",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-1ee35752",
                 "digest": {
-                  "function_hash": "245572871958414356327954138591672841843",
-                  "length": 8212
+                  "length": 8212,
+                  "function_hash": "245572871958414356327954138591672841843"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+                  "function": "restorePermissionState"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/0e1ebd84e27f5d4fa8bc6577705293251bcbac4f",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-444d16b0",
                 "digest": {
                   "line_hashes": [
@@ -2071,6 +2068,9 @@
                     "25424149211409059614636043450427951459"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
                 }
               }
             ]
@@ -2101,7 +2101,6 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -2109,15 +2108,13 @@
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/0e1ebd84e27f5d4fa8bc6577705293251bcbac4f"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/0e1ebd84e27f5d4fa8bc6577705293251bcbac4f",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-2df8e8a0",
                 "digest": {
                   "line_hashes": [
@@ -2167,21 +2164,24 @@
                     "25424149211409059614636043450427951459"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "restorePermissionState",
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/0e1ebd84e27f5d4fa8bc6577705293251bcbac4f",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-a3f25229",
                 "digest": {
-                  "function_hash": "245572871958414356327954138591672841843",
-                  "length": 8212
+                  "length": 8212,
+                  "function_hash": "245572871958414356327954138591672841843"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+                  "function": "restorePermissionState"
                 }
               }
             ]
@@ -2212,7 +2212,6 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -2220,30 +2219,28 @@
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/4ebd48959ce962b87c3468724ee4d7390714e3f3"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "restorePermissionState",
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/4ebd48959ce962b87c3468724ee4d7390714e3f3",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-11162f0b",
                 "digest": {
-                  "function_hash": "145104657252555869640414577518760746497",
-                  "length": 8661
+                  "length": 8661,
+                  "function_hash": "145104657252555869640414577518760746497"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java",
+                  "function": "restorePermissionState"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/4ebd48959ce962b87c3468724ee4d7390714e3f3",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-283006437-437192db",
                 "digest": {
                   "line_hashes": [
@@ -2293,6 +2290,9 @@
                     "25424149211409059614636043450427951459"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceImpl.java"
                 }
               }
             ]
@@ -2323,21 +2323,21 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/bdf75772ea2bfd60f004a5d326478bd83deda9a0"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-283006437.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-295334906",
@@ -2346,7 +2346,7 @@
         "A-295334906",
         "CVE-2023-40097"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-12-01T00:00:00Z",
       "references": [
         {
@@ -2381,7 +2381,6 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -2389,16 +2388,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-2679529f",
                 "digest": {
                   "line_hashes": [
                     "156920008884073903039287587172595704404",
@@ -2414,21 +2406,29 @@
                     "131301113796914304292314687315221071227"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-295334906-2679529f",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-463704e8",
                 "digest": {
-                  "function_hash": "153625017763408298640989451117780436694",
-                  "length": 897
+                  "length": 897,
+                  "function_hash": "153625017763408298640989451117780436694"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-295334906-463704e8",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -2459,7 +2459,6 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -2467,16 +2466,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-0aa32f27",
                 "digest": {
                   "line_hashes": [
                     "156920008884073903039287587172595704404",
@@ -2492,21 +2484,29 @@
                     "131301113796914304292314687315221071227"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-295334906-0aa32f27",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-8b6df6a8",
                 "digest": {
-                  "function_hash": "153625017763408298640989451117780436694",
-                  "length": 897
+                  "length": 897,
+                  "function_hash": "153625017763408298640989451117780436694"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-295334906-8b6df6a8",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -2537,7 +2537,6 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -2545,31 +2544,24 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-23189b51",
                 "digest": {
-                  "function_hash": "153625017763408298640989451117780436694",
-                  "length": 897
+                  "length": 897,
+                  "function_hash": "153625017763408298640989451117780436694"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-295334906-23189b51",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-6b059217",
                 "digest": {
                   "line_hashes": [
                     "156920008884073903039287587172595704404",
@@ -2585,6 +2577,14 @@
                     "131301113796914304292314687315221071227"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-295334906-6b059217",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               }
             ]
@@ -2615,7 +2615,6 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -2623,16 +2622,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-022f135e",
                 "digest": {
                   "line_hashes": [
                     "156920008884073903039287587172595704404",
@@ -2648,21 +2640,29 @@
                     "131301113796914304292314687315221071227"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-295334906-022f135e",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "hasPermissionForActivity",
-                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
-                "id": "ASB-A-295334906-442f28f7",
                 "digest": {
-                  "function_hash": "153625017763408298640989451117780436694",
-                  "length": 897
+                  "length": 897,
+                  "function_hash": "153625017763408298640989451117780436694"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Launcher3/+/b7b192bd7f24a2aa7d6881ee949657c9760c0305",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-295334906-442f28f7",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/launcher3/util/PackageManagerHelper.java",
+                  "function": "hasPermissionForActivity"
                 }
               }
             ]
@@ -2672,7 +2672,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

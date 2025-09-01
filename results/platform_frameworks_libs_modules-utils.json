@@ -7,7 +7,7 @@
         "A-307288067",
         "CVE-2024-34740"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-08-01T00:00:00Z",
       "references": [
         {
@@ -46,14 +46,14 @@
             "14-next"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/eebe3b8baf112082c3178ba7d17b5318c53b3b5f"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/eebe3b8baf112082c3178ba7d17b5318c53b3b5f"
-            ]
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
@@ -81,54 +81,45 @@
             "14-next"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 305,
+                  "function_hash": "276202928956936777865925272387699035005"
+                },
+                "id": "ASB-A-307288067-8c8c1bf6",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesHex",
                   "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
-                "id": "ASB-A-307288067-8c8c1bf6",
-                "digest": {
-                  "function_hash": "276202928956936777865925272387699035005",
-                  "length": 305
                 }
               },
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 308,
+                  "function_hash": "123285881540088161321404136447312297041"
+                },
+                "id": "ASB-A-307288067-97671524",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesBase64",
                   "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
-                "id": "ASB-A-307288067-97671524",
-                "digest": {
-                  "function_hash": "123285881540088161321404136447312297041",
-                  "length": 308
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
-                "id": "ASB-A-307288067-c0884d18",
                 "digest": {
                   "line_hashes": [
                     "283722049743732542501552246218868566890",
@@ -142,9 +133,18 @@
                     "185107612995023145594395780461092034037"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-307288067-c0884d18",
+                "deprecated": false,
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
+                "signature_type": "Line",
+                "target": {
+                  "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
                 }
               }
-            ]
+            ],
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
@@ -172,54 +172,45 @@
             "12"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 308,
+                  "function_hash": "123285881540088161321404136447312297041"
+                },
+                "id": "ASB-A-307288067-91dae152",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesBase64",
                   "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-91dae152",
-                "digest": {
-                  "function_hash": "123285881540088161321404136447312297041",
-                  "length": 308
                 }
               },
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 305,
+                  "function_hash": "276202928956936777865925272387699035005"
+                },
+                "id": "ASB-A-307288067-b4ba89ae",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesHex",
                   "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-b4ba89ae",
-                "digest": {
-                  "function_hash": "276202928956936777865925272387699035005",
-                  "length": 305
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-e213bdb3",
                 "digest": {
                   "line_hashes": [
                     "215027096968947984660538355209230953530",
@@ -235,9 +226,18 @@
                     "185107612995023145594395780461092034037"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-307288067-e213bdb3",
+                "deprecated": false,
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
                 }
               }
-            ]
+            ],
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
@@ -265,39 +265,30 @@
             "12L"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 308,
+                  "function_hash": "123285881540088161321404136447312297041"
+                },
+                "id": "ASB-A-307288067-2b5d7f9d",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesBase64",
                   "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-2b5d7f9d",
-                "digest": {
-                  "function_hash": "123285881540088161321404136447312297041",
-                  "length": 308
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-97756750",
                 "digest": {
                   "line_hashes": [
                     "215027096968947984660538355209230953530",
@@ -313,24 +304,33 @@
                     "185107612995023145594395780461092034037"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-307288067-97756750",
+                "deprecated": false,
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
                 }
               },
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 305,
+                  "function_hash": "276202928956936777865925272387699035005"
+                },
+                "id": "ASB-A-307288067-ae08b6e4",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesHex",
                   "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-ae08b6e4",
-                "digest": {
-                  "function_hash": "276202928956936777865925272387699035005",
-                  "length": 305
                 }
               }
-            ]
+            ],
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
@@ -358,39 +358,30 @@
             "13"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 305,
+                  "function_hash": "276202928956936777865925272387699035005"
+                },
+                "id": "ASB-A-307288067-549f8e22",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesHex",
                   "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-549f8e22",
-                "digest": {
-                  "function_hash": "276202928956936777865925272387699035005",
-                  "length": 305
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-ac8a12dc",
                 "digest": {
                   "line_hashes": [
                     "215027096968947984660538355209230953530",
@@ -406,24 +397,33 @@
                     "185107612995023145594395780461092034037"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-307288067-ac8a12dc",
+                "deprecated": false,
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
                 }
               },
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 308,
+                  "function_hash": "123285881540088161321404136447312297041"
+                },
+                "id": "ASB-A-307288067-caff5f0f",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesBase64",
                   "file": "core/java/com/android/internal/util/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/2f04963358987679cb4cbab085ec78c1b5e0ed0e",
-                "id": "ASB-A-307288067-caff5f0f",
-                "digest": {
-                  "function_hash": "123285881540088161321404136447312297041",
-                  "length": 308
                 }
               }
-            ]
+            ],
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
@@ -451,14 +451,14 @@
             "14"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/eebe3b8baf112082c3178ba7d17b5318c53b3b5f"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/eebe3b8baf112082c3178ba7d17b5318c53b3b5f"
-            ]
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
@@ -486,54 +486,45 @@
             "14"
           ],
           "ecosystem_specific": {
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890"
+            ],
             "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2024-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 305,
+                  "function_hash": "276202928956936777865925272387699035005"
+                },
+                "id": "ASB-A-307288067-879ac2af",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesHex",
                   "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
-                "id": "ASB-A-307288067-879ac2af",
-                "digest": {
-                  "function_hash": "276202928956936777865925272387699035005",
-                  "length": 305
                 }
               },
               {
-                "signature_type": "Function",
+                "digest": {
+                  "length": 308,
+                  "function_hash": "123285881540088161321404136447312297041"
+                },
+                "id": "ASB-A-307288067-a15c9166",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
+                "signature_type": "Function",
                 "target": {
                   "function": "attributeBytesBase64",
                   "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
-                "id": "ASB-A-307288067-a15c9166",
-                "digest": {
-                  "function_hash": "123285881540088161321404136447312297041",
-                  "length": 308
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
-                "id": "ASB-A-307288067-a83843b8",
                 "digest": {
                   "line_hashes": [
                     "283722049743732542501552246218868566890",
@@ -547,16 +538,25 @@
                     "185107612995023145594395780461092034037"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-307288067-a83843b8",
+                "deprecated": false,
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/libs/modules-utils/+/8207203d4ee4210032a5d4e94d3cbf4635d7a890",
+                "signature_type": "Line",
+                "target": {
+                  "file": "java/com/android/modules/utils/BinaryXmlSerializer.java"
                 }
               }
-            ]
+            ],
+            "spl": "2024-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-307288067.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

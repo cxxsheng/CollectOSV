@@ -7,7 +7,7 @@
         "A-159373687",
         "CVE-2020-0459"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -58,10 +58,10 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/4bd54c477c89d11cfe2d84ff20098aed01cf5de9"
@@ -93,55 +93,48 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "loadInternalData",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-1e62b27a",
                 "digest": {
-                  "function_hash": "103195495015999242399212259099055079161",
-                  "length": 306
-                }
+                  "length": 306,
+                  "function_hash": "103195495015999242399212259099055079161"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-1e62b27a"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "allowAutojoin",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-416e1598",
                 "digest": {
-                  "function_hash": "267688839577326829287882726964821466748",
-                  "length": 571
-                }
+                  "length": 571,
+                  "function_hash": "267688839577326829287882726964821466748"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-416e1598"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-59b07b05",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "167292345592568965786601266852227780478",
                     "45360706481580775755732784307119343581",
@@ -184,85 +177,92 @@
                     "215845552005121241417714365481910248905",
                     "227332497377375053596900492283879000735",
                     "283809130043982851772042168766487668198"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-59b07b05"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "addOrUpdateNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-c8988442",
                 "digest": {
-                  "function_hash": "88986085324390687268795550811889877450",
-                  "length": 1421
-                }
+                  "length": 1421,
+                  "function_hash": "88986085324390687268795550811889877450"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-c8988442"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworksChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-d02e96c5",
                 "digest": {
-                  "function_hash": "121744468601692994417441826574436404782",
-                  "length": 293
-                }
+                  "length": 293,
+                  "function_hash": "121744468601692994417441826574436404782"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-d02e96c5"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "removeNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-d5dfa1ed",
                 "digest": {
-                  "function_hash": "15421082718286604331719897529018788112",
-                  "length": 976
-                }
+                  "length": 976,
+                  "function_hash": "15421082718286604331719897529018788112"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-d5dfa1ed"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworkChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-da3e310f",
                 "digest": {
-                  "function_hash": "215074004498077605095773243776531014312",
-                  "length": 502
-                }
+                  "length": 502,
+                  "function_hash": "215074004498077605095773243776531014312"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-da3e310f"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "setNetworkStatus",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-e1d6c54a",
                 "digest": {
-                  "function_hash": "83508989374655977858457918271148274631",
-                  "length": 137
-                }
+                  "length": 137,
+                  "function_hash": "83508989374655977858457918271148274631"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-e1d6c54a"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
             ]
           },
           "database_specific": {
@@ -291,25 +291,18 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-164d51b3",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "290474425874899581969494515492241882698",
                     "65354706807239569518889809252083039994",
@@ -326,25 +319,32 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-164d51b3"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-71cc6a6c",
                 "digest": {
-                  "function_hash": "185944436862343131767023057548540077905",
-                  "length": 783
-                }
+                  "length": 783,
+                  "function_hash": "185944436862343131767023057548540077905"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-71cc6a6c"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
             ]
           },
           "database_specific": {
@@ -373,40 +373,33 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-80f91a69",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-80f91a69"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-e36d4501",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -423,10 +416,17 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-e36d4501"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
             ]
           },
           "database_specific": {
@@ -455,25 +455,18 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-1bc44405",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -490,25 +483,32 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-1bc44405"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "function": "onReceive",
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-fa801bcb",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-fa801bcb"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
             ]
           },
           "database_specific": {
@@ -537,10 +537,10 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/4bd54c477c89d11cfe2d84ff20098aed01cf5de9"
@@ -572,130 +572,123 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworkChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-173ed561",
                 "digest": {
-                  "function_hash": "215074004498077605095773243776531014312",
-                  "length": 502
-                }
+                  "length": 502,
+                  "function_hash": "215074004498077605095773243776531014312"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-173ed561"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "allowAutojoin",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-30e98e26",
                 "digest": {
-                  "function_hash": "267688839577326829287882726964821466748",
-                  "length": 571
-                }
+                  "length": 571,
+                  "function_hash": "267688839577326829287882726964821466748"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-30e98e26"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "addOrUpdateNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-49b7e3d2",
                 "digest": {
-                  "function_hash": "88986085324390687268795550811889877450",
-                  "length": 1421
-                }
+                  "length": 1421,
+                  "function_hash": "88986085324390687268795550811889877450"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-49b7e3d2"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworksChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-884f9b16",
                 "digest": {
-                  "function_hash": "121744468601692994417441826574436404782",
-                  "length": 293
-                }
+                  "length": 293,
+                  "function_hash": "121744468601692994417441826574436404782"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-884f9b16"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "removeNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-9e691a0a",
                 "digest": {
-                  "function_hash": "15421082718286604331719897529018788112",
-                  "length": 976
-                }
+                  "length": 976,
+                  "function_hash": "15421082718286604331719897529018788112"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-9e691a0a"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "loadInternalData",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-aa587122",
                 "digest": {
-                  "function_hash": "103195495015999242399212259099055079161",
-                  "length": 306
-                }
+                  "length": 306,
+                  "function_hash": "103195495015999242399212259099055079161"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-aa587122"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "setNetworkStatus",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-e274ca24",
                 "digest": {
-                  "function_hash": "83508989374655977858457918271148274631",
-                  "length": 137
-                }
+                  "length": 137,
+                  "function_hash": "83508989374655977858457918271148274631"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-e274ca24"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-e50c6ee8",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "167292345592568965786601266852227780478",
                     "45360706481580775755732784307119343581",
@@ -738,10 +731,17 @@
                     "215845552005121241417714365481910248905",
                     "227332497377375053596900492283879000735",
                     "283809130043982851772042168766487668198"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-e50c6ee8"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
             ]
           },
           "database_specific": {
@@ -770,25 +770,18 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-1296e1d5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "290474425874899581969494515492241882698",
                     "65354706807239569518889809252083039994",
@@ -805,25 +798,32 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-1296e1d5"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-4e69611b",
                 "digest": {
-                  "function_hash": "185944436862343131767023057548540077905",
-                  "length": 783
-                }
+                  "length": 783,
+                  "function_hash": "185944436862343131767023057548540077905"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-4e69611b"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
             ]
           },
           "database_specific": {
@@ -852,40 +852,33 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-d26cfc63",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-d26cfc63"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-e6965a07",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -902,10 +895,17 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-e6965a07"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
             ]
           },
           "database_specific": {
@@ -934,40 +934,33 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "function": "onReceive",
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-1ac9a8e3",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-1ac9a8e3"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-7430e87e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -984,10 +977,17 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-7430e87e"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
             ]
           },
           "database_specific": {
@@ -1016,10 +1016,10 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/4bd54c477c89d11cfe2d84ff20098aed01cf5de9"
@@ -1051,100 +1051,93 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "removeNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-1691a869",
                 "digest": {
-                  "function_hash": "15421082718286604331719897529018788112",
-                  "length": 976
-                }
+                  "length": 976,
+                  "function_hash": "15421082718286604331719897529018788112"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-1691a869"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "allowAutojoin",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-3a2de41e",
                 "digest": {
-                  "function_hash": "267688839577326829287882726964821466748",
-                  "length": 571
-                }
+                  "length": 571,
+                  "function_hash": "267688839577326829287882726964821466748"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-3a2de41e"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "setNetworkStatus",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-8690b786",
                 "digest": {
-                  "function_hash": "83508989374655977858457918271148274631",
-                  "length": 137
-                }
+                  "length": 137,
+                  "function_hash": "83508989374655977858457918271148274631"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-8690b786"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "loadInternalData",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-90e7fb16",
                 "digest": {
-                  "function_hash": "103195495015999242399212259099055079161",
-                  "length": 306
-                }
+                  "length": 306,
+                  "function_hash": "103195495015999242399212259099055079161"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-90e7fb16"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworkChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-9f1e8305",
                 "digest": {
-                  "function_hash": "215074004498077605095773243776531014312",
-                  "length": 502
-                }
+                  "length": 502,
+                  "function_hash": "215074004498077605095773243776531014312"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-9f1e8305"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-bf889472",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "167292345592568965786601266852227780478",
                     "45360706481580775755732784307119343581",
@@ -1187,40 +1180,47 @@
                     "215845552005121241417714365481910248905",
                     "227332497377375053596900492283879000735",
                     "283809130043982851772042168766487668198"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-bf889472"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworksChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-d75fdbc4",
                 "digest": {
-                  "function_hash": "121744468601692994417441826574436404782",
-                  "length": 293
-                }
+                  "length": 293,
+                  "function_hash": "121744468601692994417441826574436404782"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-d75fdbc4"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "addOrUpdateNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-f8c270d1",
                 "digest": {
-                  "function_hash": "88986085324390687268795550811889877450",
-                  "length": 1421
-                }
+                  "length": 1421,
+                  "function_hash": "88986085324390687268795550811889877450"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-f8c270d1"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
             ]
           },
           "database_specific": {
@@ -1249,40 +1249,33 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-5f2c4b6e",
                 "digest": {
-                  "function_hash": "185944436862343131767023057548540077905",
-                  "length": 783
-                }
+                  "length": 783,
+                  "function_hash": "185944436862343131767023057548540077905"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-5f2c4b6e"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-8530fa4b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "290474425874899581969494515492241882698",
                     "65354706807239569518889809252083039994",
@@ -1299,10 +1292,17 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-8530fa4b"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
             ]
           },
           "database_specific": {
@@ -1331,25 +1331,18 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-6d51ec3a",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -1366,25 +1359,32 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-6d51ec3a"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-e0a85d65",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-e0a85d65"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
             ]
           },
           "database_specific": {
@@ -1413,40 +1413,33 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "function": "onReceive",
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-bb9f1c8f",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-bb9f1c8f"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-c8972065",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -1463,10 +1456,17 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-c8972065"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
             ]
           },
           "database_specific": {
@@ -1495,10 +1495,10 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/4bd54c477c89d11cfe2d84ff20098aed01cf5de9"
@@ -1530,40 +1530,33 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworkChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-210ee43f",
                 "digest": {
-                  "function_hash": "215074004498077605095773243776531014312",
-                  "length": 502
-                }
+                  "length": 502,
+                  "function_hash": "215074004498077605095773243776531014312"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-210ee43f"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-5a31ea56",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "167292345592568965786601266852227780478",
                     "45360706481580775755732784307119343581",
@@ -1606,100 +1599,107 @@
                     "215845552005121241417714365481910248905",
                     "227332497377375053596900492283879000735",
                     "283809130043982851772042168766487668198"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-5a31ea56"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "allowAutojoin",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-66ffaf3b",
                 "digest": {
-                  "function_hash": "267688839577326829287882726964821466748",
-                  "length": 571
-                }
+                  "length": 571,
+                  "function_hash": "267688839577326829287882726964821466748"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-66ffaf3b"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "setNetworkStatus",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-70221acb",
                 "digest": {
-                  "function_hash": "83508989374655977858457918271148274631",
-                  "length": 137
-                }
+                  "length": 137,
+                  "function_hash": "83508989374655977858457918271148274631"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-70221acb"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "removeNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-83ab8114",
                 "digest": {
-                  "function_hash": "15421082718286604331719897529018788112",
-                  "length": 976
-                }
+                  "length": 976,
+                  "function_hash": "15421082718286604331719897529018788112"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-83ab8114"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "addOrUpdateNetwork",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-86290517",
                 "digest": {
-                  "function_hash": "88986085324390687268795550811889877450",
-                  "length": 1421
-                }
+                  "length": 1421,
+                  "function_hash": "88986085324390687268795550811889877450"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-86290517"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "sendConfiguredNetworksChangedBroadcast",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-f53dfad4",
                 "digest": {
-                  "function_hash": "121744468601692994417441826574436404782",
-                  "length": 293
-                }
+                  "length": 293,
+                  "function_hash": "121744468601692994417441826574436404782"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-f53dfad4"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
                 "target": {
                   "function": "loadInternalData",
                   "file": "service/java/com/android/server/wifi/WifiConfigManager.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61",
-                "id": "ASB-A-159373687-feceaa5c",
                 "digest": {
-                  "function_hash": "103195495015999242399212259099055079161",
-                  "length": 306
-                }
+                  "length": 306,
+                  "function_hash": "103195495015999242399212259099055079161"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-feceaa5c"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/db04b29f0f6a96b19850fc17e23818855f800d61"
             ]
           },
           "database_specific": {
@@ -1728,25 +1728,18 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-d2d5a6e4",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "290474425874899581969494515492241882698",
                     "65354706807239569518889809252083039994",
@@ -1763,25 +1756,32 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-d2d5a6e4"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863",
-                "id": "ASB-A-159373687-f47d4a69",
                 "digest": {
-                  "function_hash": "185944436862343131767023057548540077905",
-                  "length": 783
-                }
+                  "length": 783,
+                  "function_hash": "185944436862343131767023057548540077905"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-f47d4a69"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/dd7bed0670fbdf03d9097f2ba35967544467c863"
             ]
           },
           "database_specific": {
@@ -1810,25 +1810,18 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-6de0c375",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -1845,25 +1838,32 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-6de0c375"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
                 "target": {
                   "function": "onReceive",
                   "file": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3",
-                "id": "ASB-A-159373687-97c49300",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-97c49300"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/a9a7f65a10b7514a4070a93d419796498926b5b3"
             ]
           },
           "database_specific": {
@@ -1892,40 +1892,33 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "function": "onReceive",
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-794bc05a",
                 "digest": {
-                  "function_hash": "238336731283127491256127783757433855777",
-                  "length": 479
-                }
+                  "length": 479,
+                  "function_hash": "238336731283127491256127783757433855777"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-159373687-794bc05a"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
                 "target": {
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/wifi/details/WifiDetailPreferenceController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c",
-                "id": "ASB-A-159373687-a3b0a88e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "69353028963881466958137251329528708277",
                     "283315789991866607643373915431600330339",
@@ -1942,10 +1935,17 @@
                     "82617999644191526117578223483849847480",
                     "110589370115264057837560054499425192808",
                     "78832036941876356984474206356949216458"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-159373687-a3b0a88e"
               }
+            ],
+            "spl": "2020-12-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/services/Car/+/54cc1b21d5b1e75f8c1d92cac32beaa2cad6a88c"
             ]
           },
           "database_specific": {
@@ -1953,7 +1953,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-200164168",
@@ -1962,7 +1962,7 @@
         "A-200164168",
         "CVE-2021-39706"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-03-01T00:00:00Z",
       "references": [
         {
@@ -2001,25 +2001,22 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/35e3d0c1b0598b2032fc6c134c657255f1907594"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/35e3d0c1b0598b2032fc6c134c657255f1907594",
                 "target": {
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/35e3d0c1b0598b2032fc6c134c657255f1907594",
-                "id": "ASB-A-200164168-b96ef1b6",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "294847935106685419390405624134946482607",
                     "82906614265495310515570653317557617056",
@@ -2028,24 +2025,27 @@
                     "201542614339003240336485074705580277268",
                     "181950869077538877837885426374100210392",
                     "163365771531368183851379029453875709304"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-b96ef1b6"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/35e3d0c1b0598b2032fc6c134c657255f1907594",
                 "target": {
                   "function": "onResume",
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/35e3d0c1b0598b2032fc6c134c657255f1907594",
-                "id": "ASB-A-200164168-babd9d97",
                 "digest": {
-                  "function_hash": "152680907284903635233314357538861496727",
-                  "length": 460
-                }
+                  "length": 460,
+                  "function_hash": "152680907284903635233314357538861496727"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-babd9d97"
               }
             ]
           },
@@ -2075,25 +2075,22 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/6a6489935d203715a755b21b374e1e3b3085aa3f"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/6a6489935d203715a755b21b374e1e3b3085aa3f",
                 "target": {
                   "file": "src/com/android/car/settings/security/CredentialStorageActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/6a6489935d203715a755b21b374e1e3b3085aa3f",
-                "id": "ASB-A-200164168-21994fbf",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "227648426079284531361252755530448575297",
                     "319836403509873846234084515950353464245",
@@ -2102,24 +2099,27 @@
                     "273640597411792409689188349763575105779",
                     "219276427171578401975723808035356768581",
                     "324900859351151195652448818897023516213"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-21994fbf"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/6a6489935d203715a755b21b374e1e3b3085aa3f",
                 "target": {
                   "function": "onResume",
                   "file": "src/com/android/car/settings/security/CredentialStorageActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/6a6489935d203715a755b21b374e1e3b3085aa3f",
-                "id": "ASB-A-200164168-765af7bb",
                 "digest": {
-                  "function_hash": "113359261602367393554565238702160217651",
-                  "length": 461
-                }
+                  "length": 461,
+                  "function_hash": "113359261602367393554565238702160217651"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-765af7bb"
               }
             ]
           },
@@ -2149,40 +2149,37 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/f8a1a563c7c598db6fe5f902e35d968ea7dc0003"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f8a1a563c7c598db6fe5f902e35d968ea7dc0003",
                 "target": {
                   "function": "onResume",
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f8a1a563c7c598db6fe5f902e35d968ea7dc0003",
-                "id": "ASB-A-200164168-4f2d6cd4",
                 "digest": {
-                  "function_hash": "152680907284903635233314357538861496727",
-                  "length": 460
-                }
+                  "length": 460,
+                  "function_hash": "152680907284903635233314357538861496727"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-4f2d6cd4"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f8a1a563c7c598db6fe5f902e35d968ea7dc0003",
                 "target": {
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f8a1a563c7c598db6fe5f902e35d968ea7dc0003",
-                "id": "ASB-A-200164168-c04c1337",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "294847935106685419390405624134946482607",
                     "82906614265495310515570653317557617056",
@@ -2191,9 +2188,12 @@
                     "264447109541725377457525668426737859850",
                     "2489955176728554666695627062628097152",
                     "163365771531368183851379029453875709304"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-c04c1337"
               }
             ]
           },
@@ -2223,40 +2223,37 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/car/settings/security/CredentialStorageActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
-                "id": "ASB-A-200164168-0655a3c2",
                 "digest": {
-                  "function_hash": "328604024871667527238186183680934489091",
-                  "length": 599
-                }
+                  "length": 599,
+                  "function_hash": "328604024871667527238186183680934489091"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-0655a3c2"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
                 "target": {
                   "file": "src/com/android/car/settings/security/CredentialStorageActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
-                "id": "ASB-A-200164168-24386706",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "227648426079284531361252755530448575297",
                     "319836403509873846234084515950353464245",
@@ -2265,9 +2262,12 @@
                     "273640597411792409689188349763575105779",
                     "219276427171578401975723808035356768581",
                     "324900859351151195652448818897023516213"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-24386706"
               }
             ]
           },
@@ -2297,40 +2297,37 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
                 "target": {
                   "function": "onResume",
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
-                "id": "ASB-A-200164168-920fde37",
                 "digest": {
-                  "function_hash": "152680907284903635233314357538861496727",
-                  "length": 460
-                }
+                  "length": 460,
+                  "function_hash": "152680907284903635233314357538861496727"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-920fde37"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
                 "target": {
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
-                "id": "ASB-A-200164168-93218dff",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "294847935106685419390405624134946482607",
                     "82906614265495310515570653317557617056",
@@ -2339,9 +2336,12 @@
                     "264447109541725377457525668426737859850",
                     "2489955176728554666695627062628097152",
                     "163365771531368183851379029453875709304"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-93218dff"
               }
             ]
           },
@@ -2371,25 +2371,22 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
                 "target": {
                   "file": "src/com/android/car/settings/security/CredentialStorageActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
-                "id": "ASB-A-200164168-882999a5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "227648426079284531361252755530448575297",
                     "319836403509873846234084515950353464245",
@@ -2398,24 +2395,27 @@
                     "273640597411792409689188349763575105779",
                     "219276427171578401975723808035356768581",
                     "324900859351151195652448818897023516213"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-882999a5"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/car/settings/security/CredentialStorageActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/571f4c5b88c1e1ba3d7f04687d906cc89bfa6dc3",
-                "id": "ASB-A-200164168-bbfbb2d2",
                 "digest": {
-                  "function_hash": "328604024871667527238186183680934489091",
-                  "length": 599
-                }
+                  "length": 599,
+                  "function_hash": "328604024871667527238186183680934489091"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-bbfbb2d2"
               }
             ]
           },
@@ -2445,40 +2445,37 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
-            "spl": "2022-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4"
             ],
+            "spl": "2022-03-01",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
                 "target": {
                   "function": "onResume",
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
-                "id": "ASB-A-200164168-24f7eb5e",
                 "digest": {
-                  "function_hash": "152680907284903635233314357538861496727",
-                  "length": 460
-                }
+                  "length": 460,
+                  "function_hash": "152680907284903635233314357538861496727"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-200164168-24f7eb5e"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
                 "target": {
                   "file": "src/com/android/settings/security/CredentialStorage.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/6407b20ab3ab49318ba5cbfc0d6b59c675df67b4",
-                "id": "ASB-A-200164168-c4f6d901",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "294847935106685419390405624134946482607",
                     "82906614265495310515570653317557617056",
@@ -2487,9 +2484,12 @@
                     "264447109541725377457525668426737859850",
                     "2489955176728554666695627062628097152",
                     "163365771531368183851379029453875709304"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-200164168-c4f6d901"
               }
             ]
           },
@@ -2498,7 +2498,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-228178437",
@@ -2507,7 +2507,7 @@
         "A-228178437",
         "CVE-2022-20350"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-08-01T00:00:00Z",
       "references": [
         {
@@ -2558,25 +2558,20 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-7975ca6b",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "80609344193581741741032395567111507623",
                     "221214343136418471952104037801954597752",
@@ -2589,50 +2584,50 @@
                     "148896246980420649568624535070105812712",
                     "175526253511011811595665045095999441448",
                     "92932836250770146064571373043269978668"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
+                },
+                "id": "ASB-A-228178437-7975ca6b"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 721,
+                  "function_hash": "32270338182499705718192254672714509233"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "requestNotificationAccess",
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-9e77e310",
-                "digest": {
-                  "function_hash": "32270338182499705718192254672714509233",
-                  "length": 721
-                }
+                "id": "ASB-A-228178437-9e77e310"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 239,
+                  "function_hash": "233292737155684672997361064676069658641"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "launcherIntent",
                   "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-e23dd545",
-                "digest": {
-                  "function_hash": "233292737155684672997361064676069658641",
-                  "length": 239
-                }
+                "id": "ASB-A-228178437-e23dd545"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-f2f1ee9c",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "106553601090441029079099735588935842435",
                     "229613898163915182049719810454027282181",
@@ -2655,9 +2650,14 @@
                     "253864215508603404734918841746192737408",
                     "276000640306860874761228516969879583783",
                     "149018032081789853615746867080775570097"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "id": "ASB-A-228178437-f2f1ee9c"
               }
             ]
           },
@@ -2687,25 +2687,20 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
-                "id": "ASB-A-228178437-57c654ad",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265307999414716476505077824884575123349",
                     "147757842596363888857125226898105836726",
@@ -2730,24 +2725,29 @@
                     "196777852652567957638852471825271621650",
                     "83558460728554217985269961068112260817",
                     "303159197298837387430446046979196319996"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-57c654ad"
               },
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 1002,
+                  "function_hash": "165450173804999565299288611984899726007"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
-                "id": "ASB-A-228178437-73edf450",
-                "digest": {
-                  "function_hash": "165450173804999565299288611984899726007",
-                  "length": 1002
-                }
+                "id": "ASB-A-228178437-73edf450"
               }
             ]
           },
@@ -2777,40 +2777,35 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7"
             ],
             "vanir_signatures": [
               {
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 928,
+                  "function_hash": "145358671088144896228324099267018853571"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/notification/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7",
-                "id": "ASB-A-228178437-759fa683",
-                "digest": {
-                  "function_hash": "145358671088144896228324099267018853571",
-                  "length": 928
-                }
+                "id": "ASB-A-228178437-759fa683"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/notification/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7",
-                "id": "ASB-A-228178437-acc6498f",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "65825687493747869997513731218871613422",
                     "118321874559899801499125244869736333180",
@@ -2834,9 +2829,14 @@
                     "196777852652567957638852471825271621650",
                     "83558460728554217985269961068112260817",
                     "303159197298837387430446046979196319996"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/notification/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-acc6498f"
               }
             ]
           },
@@ -2866,25 +2866,20 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-176bba9c",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "106553601090441029079099735588935842435",
                     "229613898163915182049719810454027282181",
@@ -2907,20 +2902,20 @@
                     "253864215508603404734918841746192737408",
                     "276000640306860874761228516969879583783",
                     "149018032081789853615746867080775570097"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "id": "ASB-A-228178437-176bba9c"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-22c181c2",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "80609344193581741741032395567111507623",
                     "221214343136418471952104037801954597752",
@@ -2933,39 +2928,44 @@
                     "148896246980420649568624535070105812712",
                     "175526253511011811595665045095999441448",
                     "92932836250770146064571373043269978668"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
+                },
+                "id": "ASB-A-228178437-22c181c2"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 721,
+                  "function_hash": "32270338182499705718192254672714509233"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "requestNotificationAccess",
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-c77fe76e",
-                "digest": {
-                  "function_hash": "32270338182499705718192254672714509233",
-                  "length": 721
-                }
+                "id": "ASB-A-228178437-c77fe76e"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 239,
+                  "function_hash": "233292737155684672997361064676069658641"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "launcherIntent",
                   "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/51d47ec7c875cf964f46965a27a5d36343ea999d",
-                "id": "ASB-A-228178437-e9de86af",
-                "digest": {
-                  "function_hash": "233292737155684672997361064676069658641",
-                  "length": 239
-                }
+                "id": "ASB-A-228178437-e9de86af"
               }
             ]
           },
@@ -2995,40 +2995,35 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9"
             ],
             "vanir_signatures": [
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 1002,
+                  "function_hash": "165450173804999565299288611984899726007"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
-                "id": "ASB-A-228178437-787f24b0",
-                "digest": {
-                  "function_hash": "165450173804999565299288611984899726007",
-                  "length": 1002
-                }
+                "id": "ASB-A-228178437-787f24b0"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
-                "id": "ASB-A-228178437-facdde1e",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265307999414716476505077824884575123349",
                     "147757842596363888857125226898105836726",
@@ -3053,9 +3048,14 @@
                     "196777852652567957638852471825271621650",
                     "83558460728554217985269961068112260817",
                     "303159197298837387430446046979196319996"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-facdde1e"
               }
             ]
           },
@@ -3085,40 +3085,35 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7"
             ],
             "vanir_signatures": [
               {
+                "source": "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 928,
+                  "function_hash": "145358671088144896228324099267018853571"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/notification/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7",
-                "id": "ASB-A-228178437-2ca8e0b5",
-                "digest": {
-                  "function_hash": "145358671088144896228324099267018853571",
-                  "length": 928
-                }
+                "id": "ASB-A-228178437-2ca8e0b5"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/notification/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/services/Car/+/728fda8ca7eabc7b5ef93b7f3c572c9c1e80b6e7",
-                "id": "ASB-A-228178437-43c28b82",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "65825687493747869997513731218871613422",
                     "118321874559899801499125244869736333180",
@@ -3142,9 +3137,14 @@
                     "196777852652567957638852471825271621650",
                     "83558460728554217985269961068112260817",
                     "303159197298837387430446046979196319996"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "tests/CarDeveloperOptions/src/com/android/car/developeroptions/notification/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-43c28b82"
               }
             ]
           },
@@ -3174,25 +3174,20 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536",
-                "id": "ASB-A-228178437-18ec8e6b",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "201275654099818741261161912719825654608",
                     "229613898163915182049719810454027282181",
@@ -3215,50 +3210,50 @@
                     "253864215508603404734918841746192737408",
                     "135237352238598384866435477918664158437",
                     "306335329046844680978366627100353940610"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "id": "ASB-A-228178437-18ec8e6b"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 757,
+                  "function_hash": "179565603543118513641572594481044591805"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "requestNotificationAccess",
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536",
-                "id": "ASB-A-228178437-1f2ff78e",
-                "digest": {
-                  "function_hash": "179565603543118513641572594481044591805",
-                  "length": 757
-                }
+                "id": "ASB-A-228178437-1f2ff78e"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 239,
+                  "function_hash": "233292737155684672997361064676069658641"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "launcherIntent",
                   "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536",
-                "id": "ASB-A-228178437-3a8c8c36",
-                "digest": {
-                  "function_hash": "233292737155684672997361064676069658641",
-                  "length": 239
-                }
+                "id": "ASB-A-228178437-3a8c8c36"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/e86cdf4ba16c68d3fe361eec24c99059aeef8536",
-                "id": "ASB-A-228178437-c04723b0",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "80609344193581741741032395567111507623",
                     "221214343136418471952104037801954597752",
@@ -3271,9 +3266,14 @@
                     "148896246980420649568624535070105812712",
                     "175526253511011811595665045095999441448",
                     "92932836250770146064571373043269978668"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
+                },
+                "id": "ASB-A-228178437-c04723b0"
               }
             ]
           },
@@ -3303,25 +3303,20 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
-                "id": "ASB-A-228178437-291df329",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265307999414716476505077824884575123349",
                     "147757842596363888857125226898105836726",
@@ -3346,24 +3341,29 @@
                     "196777852652567957638852471825271621650",
                     "83558460728554217985269961068112260817",
                     "303159197298837387430446046979196319996"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-291df329"
               },
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 1002,
+                  "function_hash": "165450173804999565299288611984899726007"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8d749c55f4efd6b2e514d90204667ffa804eb0f9",
-                "id": "ASB-A-228178437-471a8f90",
-                "digest": {
-                  "function_hash": "165450173804999565299288611984899726007",
-                  "length": 1002
-                }
+                "id": "ASB-A-228178437-471a8f90"
               }
             ]
           },
@@ -3393,55 +3393,50 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743"
             ],
             "vanir_signatures": [
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 339,
+                  "function_hash": "296074412579880655915108428361640616834"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "launcherIntent",
                   "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743",
-                "id": "ASB-A-228178437-00453d43",
-                "digest": {
-                  "function_hash": "296074412579880655915108428361640616834",
-                  "length": 339
-                }
+                "id": "ASB-A-228178437-00453d43"
               },
               {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 772,
+                  "function_hash": "191932065244124777369727143747651704963"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "requestNotificationAccess",
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743",
-                "id": "ASB-A-228178437-550f8100",
-                "digest": {
-                  "function_hash": "191932065244124777369727143747651704963",
-                  "length": 772
-                }
+                "id": "ASB-A-228178437-550f8100"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743",
-                "id": "ASB-A-228178437-d4f4099c",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "62235604662159227067870828323314151802",
                     "248250063428640979644463562553844094780",
@@ -3454,20 +3449,20 @@
                     "94364410555205925209040909992948579771",
                     "175526253511011811595665045095999441448",
                     "92932836250770146064571373043269978668"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "core/java/com/android/internal/notification/NotificationAccessConfirmationActivityContract.java"
+                },
+                "id": "ASB-A-228178437-d4f4099c"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/51370d2f3f148a696943830c742a7acc73799743",
-                "id": "ASB-A-228178437-e16a0a2f",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "201275654099818741261161912719825654608",
                     "229613898163915182049719810454027282181",
@@ -3490,9 +3485,14 @@
                     "279922955895444997824157297578538472862",
                     "92420807421447417959361471603962439062",
                     "147966386830325275266998777460425281976"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "id": "ASB-A-228178437-e16a0a2f"
               }
             ]
           },
@@ -3522,40 +3522,35 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/c88bcf75ff1314aade09d3f78eb8e3b95c725ce0"
             ],
             "vanir_signatures": [
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/c88bcf75ff1314aade09d3f78eb8e3b95c725ce0",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 869,
+                  "function_hash": "17761023398800418159276013109970532435"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/car/settings/notifications/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/c88bcf75ff1314aade09d3f78eb8e3b95c725ce0",
-                "id": "ASB-A-228178437-0350c067",
-                "digest": {
-                  "function_hash": "17761023398800418159276013109970532435",
-                  "length": 869
-                }
+                "id": "ASB-A-228178437-0350c067"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/notifications/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/c88bcf75ff1314aade09d3f78eb8e3b95c725ce0",
-                "id": "ASB-A-228178437-f6f05c60",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "147825018279164368941544871154708911182",
                     "268449765268887637177497620623550616057",
@@ -3580,9 +3575,14 @@
                     "290931280998493774479297740922716560742",
                     "123882647864827193749479243939650419203",
                     "151639173467333436517349903950927371512"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/car/settings/notifications/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-f6f05c60"
               }
             ]
           },
@@ -3612,25 +3612,20 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2022-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/c548f102e5e06957ed6ed881e9f0bd12dc08f4b6"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c548f102e5e06957ed6ed881e9f0bd12dc08f4b6",
-                "id": "ASB-A-228178437-04887be7",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "265307999414716476505077824884575123349",
                     "147757842596363888857125226898105836726",
@@ -3655,24 +3650,29 @@
                     "196777852652567957638852471825271621650",
                     "83558460728554217985269961068112260817",
                     "303159197298837387430446046979196319996"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
+                },
+                "id": "ASB-A-228178437-04887be7"
               },
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c548f102e5e06957ed6ed881e9f0bd12dc08f4b6",
                 "signature_type": "Function",
+                "digest": {
+                  "length": 1002,
+                  "function_hash": "165450173804999565299288611984899726007"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "function": "onCreate",
                   "file": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c548f102e5e06957ed6ed881e9f0bd12dc08f4b6",
-                "id": "ASB-A-228178437-116d202b",
-                "digest": {
-                  "function_hash": "165450173804999565299288611984899726007",
-                  "length": 1002
-                }
+                "id": "ASB-A-228178437-116d202b"
               }
             ]
           },
@@ -3681,7 +3681,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-265798353",
@@ -3690,7 +3690,7 @@
         "A-265798353",
         "CVE-2023-21124"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -3737,50 +3737,50 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-5bd2c112",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-5bd2c112"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-aa370316",
                 "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-aa370316"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
             ]
           },
           "database_specific": {
@@ -3809,49 +3809,49 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-9b7bc35e",
                 "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-9b7bc35e"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-a249783e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-a249783e"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -3880,49 +3880,49 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-2189f257",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-2189f257"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-987ced80",
                 "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-987ced80"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -3951,49 +3951,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
                 "target": {
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
-                "id": "ASB-A-265798353-70e4b076",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "43294750304877026377862029492486449257",
                     "251126938681046611255731817510328416109",
                     "244691074510030445066901465912254156432"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-70e4b076"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
-                "id": "ASB-A-265798353-77c3dcc8",
                 "digest": {
-                  "function_hash": "64191880982502686027004913018334984051",
-                  "length": 739
-                }
+                  "length": 739,
+                  "function_hash": "64191880982502686027004913018334984051"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-77c3dcc8"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead"
             ]
           },
           "database_specific": {
@@ -4022,49 +4022,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-cfdf60a6",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-cfdf60a6"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-f451368a",
                 "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-f451368a"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -4093,49 +4093,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-50087dcf",
                 "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-50087dcf"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-8f1af3c2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-8f1af3c2"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -4164,72 +4164,72 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d",
                 "target": {
                   "file": "src/com/android/car/settings/accounts/AccountDetailsPreferenceController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d",
+                "signature_type": "Line",
                 "id": "ASB-A-265798353-4fb6b39b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "37925482270709113877040374718434309752",
                     "16148768349288441823921560095883828771",
                     "253759156597384137526184123745097181208",
                     "93653166422510990799240715653041397161"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "signature_version": "v1",
                 "match_only_versions": [
                   "12"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-637c845d",
                 "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-637c845d"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-bd6129cc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-bd6129cc"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d"
             ]
           },
           "database_specific": {
@@ -4258,49 +4258,49 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-8e37c290",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-8e37c290"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-c6e6003e",
                 "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-c6e6003e"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -4329,49 +4329,49 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-6adb5ac3",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-6adb5ac3"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-97a5a49a",
                 "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-97a5a49a"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -4400,50 +4400,50 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-7ae4a5a4",
                 "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-7ae4a5a4"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-e32ac6f3",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-e32ac6f3"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
             ]
           },
           "database_specific": {
@@ -4472,49 +4472,49 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-516e4df5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-516e4df5"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-d817a385",
                 "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-d817a385"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -4543,49 +4543,49 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-da03a063",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-da03a063"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-f9711eda",
                 "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-f9711eda"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -4614,50 +4614,50 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-1e6c7d05",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-1e6c7d05"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-b22c0efa",
                 "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-b22c0efa"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
             ]
           },
           "database_specific": {
@@ -4686,49 +4686,49 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-306f798b",
                 "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-306f798b"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-eee52e05",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-eee52e05"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -4757,49 +4757,49 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-a68d22a8",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Line",
+                "id": "ASB-A-265798353-a68d22a8"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-e6825942",
                 "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "signature_type": "Function",
+                "id": "ASB-A-265798353-e6825942"
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -4807,7 +4807,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

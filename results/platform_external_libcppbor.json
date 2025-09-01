@@ -7,7 +7,7 @@
         "A-192743373",
         "CVE-2022-20208"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -39,54 +39,54 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2"
             ],
+            "spl": "2022-06-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
                 "target": {
                   "file": "src/cppbor_parse.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
-                "id": "PUB-A-192743373-2b12aa34",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "214006676979829370022855787617958720337",
                     "46798976866392512249732004896809236455",
                     "87780555174337280066216474256317773261",
                     "237927448834004137610321113279073805263"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-192743373-2b12aa34"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
                 "target": {
-                  "function": "parseRecursively",
-                  "file": "src/cppbor_parse.cpp"
+                  "file": "src/cppbor_parse.cpp",
+                  "function": "parseRecursively"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
-                "id": "PUB-A-192743373-ac264d66",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
                   "function_hash": "260938830239941536222508966363509555935",
                   "length": 2335
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-192743373-ac264d66"
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -116,54 +116,54 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2"
             ],
+            "spl": "2022-06-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
                 "target": {
                   "file": "src/cppbor_parse.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
-                "id": "PUB-A-192743373-426b7de9",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "214006676979829370022855787617958720337",
                     "46798976866392512249732004896809236455",
                     "87780555174337280066216474256317773261",
                     "237927448834004137610321113279073805263"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-192743373-426b7de9"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
                 "target": {
-                  "function": "parseRecursively",
-                  "file": "src/cppbor_parse.cpp"
+                  "file": "src/cppbor_parse.cpp",
+                  "function": "parseRecursively"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/libcppbor/+/8f4908840cdd9cc2fe0442033516a273046598a2",
-                "id": "PUB-A-192743373-6e93dc1d",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
                   "function_hash": "260938830239941536222508966363509555935",
                   "length": 2335
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-192743373-6e93dc1d"
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -171,7 +171,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

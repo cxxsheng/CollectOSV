@@ -7,7 +7,7 @@
         "A-152874864",
         "CVE-2020-0256"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-08-01T00:00:00Z",
       "references": [
         {
@@ -42,7 +42,6 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -50,16 +49,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-5d787553",
                 "digest": {
                   "line_hashes": [
                     "41189207655891059859167090529817598632",
@@ -68,21 +60,29 @@
                     "189236150705486283594326498183963354117"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-152874864-5d787553",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "GPTData::LoadPartitionTable",
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-900c6f85",
                 "digest": {
-                  "function_hash": "86726952141382446110111110173821165684",
-                  "length": 1021
+                  "length": 1021,
+                  "function_hash": "86726952141382446110111110173821165684"
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-152874864-900c6f85",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc",
+                  "function": "GPTData::LoadPartitionTable"
                 }
               }
             ]
@@ -113,7 +113,6 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -121,16 +120,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-22bf3ac9",
                 "digest": {
                   "line_hashes": [
                     "41189207655891059859167090529817598632",
@@ -139,21 +131,29 @@
                     "189236150705486283594326498183963354117"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-152874864-22bf3ac9",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "GPTData::LoadPartitionTable",
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-8d3ebf93",
                 "digest": {
-                  "function_hash": "86726952141382446110111110173821165684",
-                  "length": 1021
+                  "length": 1021,
+                  "function_hash": "86726952141382446110111110173821165684"
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-152874864-8d3ebf93",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc",
+                  "function": "GPTData::LoadPartitionTable"
                 }
               }
             ]
@@ -184,7 +184,6 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -192,16 +191,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-b1b25098",
                 "digest": {
                   "line_hashes": [
                     "41189207655891059859167090529817598632",
@@ -210,21 +202,29 @@
                     "189236150705486283594326498183963354117"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-152874864-b1b25098",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "GPTData::LoadPartitionTable",
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-bf977b9e",
                 "digest": {
-                  "function_hash": "86726952141382446110111110173821165684",
-                  "length": 1021
+                  "length": 1021,
+                  "function_hash": "86726952141382446110111110173821165684"
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-152874864-bf977b9e",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc",
+                  "function": "GPTData::LoadPartitionTable"
                 }
               }
             ]
@@ -255,7 +255,6 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -263,16 +262,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-536aab85",
                 "digest": {
                   "line_hashes": [
                     "41189207655891059859167090529817598632",
@@ -281,21 +273,29 @@
                     "189236150705486283594326498183963354117"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-152874864-536aab85",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "GPTData::LoadPartitionTable",
-                  "file": "gpt.cc"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
-                "id": "ASB-A-152874864-789e6262",
                 "digest": {
-                  "function_hash": "86726952141382446110111110173821165684",
-                  "length": 1021
+                  "length": 1021,
+                  "function_hash": "86726952141382446110111110173821165684"
+                },
+                "source": "https://android.googlesource.com/platform/external/gptfdisk/+/7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-152874864-789e6262",
+                "deprecated": false,
+                "target": {
+                  "file": "gpt.cc",
+                  "function": "GPTData::LoadPartitionTable"
                 }
               }
             ]
@@ -305,7 +305,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-158063095",
@@ -314,7 +314,7 @@
         "A-158063095",
         "CVE-2021-0308"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -349,38 +349,35 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "BasicMBRData::ReadLogicalParts",
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-158063095-11339f55",
                 "digest": {
-                  "function_hash": "258593186599205374699246691488898125943",
-                  "length": 2133
+                  "length": 2133,
+                  "function_hash": "258593186599205374699246691488898125943"
+                },
+                "target": {
+                  "file": "basicmbr.cc",
+                  "function": "BasicMBRData::ReadLogicalParts"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-158063095-8a285ff6",
                 "digest": {
                   "line_hashes": [
@@ -390,6 +387,9 @@
                     "304657516902678543681832869878364972184"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "basicmbr.cc"
                 }
               }
             ]
@@ -420,23 +420,20 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-158063095-6a78b920",
                 "digest": {
                   "line_hashes": [
@@ -446,21 +443,24 @@
                     "304657516902678543681832869878364972184"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "basicmbr.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "BasicMBRData::ReadLogicalParts",
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-158063095-d6174cd8",
                 "digest": {
-                  "function_hash": "258593186599205374699246691488898125943",
-                  "length": 2133
+                  "length": 2133,
+                  "function_hash": "258593186599205374699246691488898125943"
+                },
+                "target": {
+                  "file": "basicmbr.cc",
+                  "function": "BasicMBRData::ReadLogicalParts"
                 }
               }
             ]
@@ -491,23 +491,20 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-158063095-379014a0",
                 "digest": {
                   "line_hashes": [
@@ -517,21 +514,24 @@
                     "304657516902678543681832869878364972184"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "basicmbr.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "BasicMBRData::ReadLogicalParts",
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-158063095-7cee4170",
                 "digest": {
-                  "function_hash": "258593186599205374699246691488898125943",
-                  "length": 2133
+                  "length": 2133,
+                  "function_hash": "258593186599205374699246691488898125943"
+                },
+                "target": {
+                  "file": "basicmbr.cc",
+                  "function": "BasicMBRData::ReadLogicalParts"
                 }
               }
             ]
@@ -562,23 +562,20 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-158063095-26cfa8e9",
                 "digest": {
                   "line_hashes": [
@@ -588,21 +585,24 @@
                     "304657516902678543681832869878364972184"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "basicmbr.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "BasicMBRData::ReadLogicalParts",
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-158063095-3f466518",
                 "digest": {
-                  "function_hash": "258593186599205374699246691488898125943",
-                  "length": 2133
+                  "length": 2133,
+                  "function_hash": "258593186599205374699246691488898125943"
+                },
+                "target": {
+                  "file": "basicmbr.cc",
+                  "function": "BasicMBRData::ReadLogicalParts"
                 }
               }
             ]
@@ -633,23 +633,20 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-158063095-2f90ec23",
                 "digest": {
                   "line_hashes": [
@@ -659,21 +656,24 @@
                     "304657516902678543681832869878364972184"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "basicmbr.cc"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "BasicMBRData::ReadLogicalParts",
-                  "file": "basicmbr.cc"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/external/gptfdisk/+/6d369451868ce71618144c4f4bd645ae48f0d1c5",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-158063095-4aaf3c0a",
                 "digest": {
-                  "function_hash": "258593186599205374699246691488898125943",
-                  "length": 2133
+                  "length": 2133,
+                  "function_hash": "258593186599205374699246691488898125943"
+                },
+                "target": {
+                  "file": "basicmbr.cc",
+                  "function": "BasicMBRData::ReadLogicalParts"
                 }
               }
             ]
@@ -683,7 +683,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

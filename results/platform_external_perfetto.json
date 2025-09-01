@@ -7,7 +7,7 @@
         "A-233338564",
         "CVE-2023-21018"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-03-01T00:00:00Z",
       "references": [
         {
@@ -42,24 +42,17 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-03-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/perfetto/+/7076286ad6373cdc79b989652929236f8e9841ef"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/profiling/memory/unwinding.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/perfetto/+/7076286ad6373cdc79b989652929236f8e9841ef",
                 "id": "PUB-A-233338564-560fbc0a",
+                "signature_version": "v1",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "line_hashes": [
                     "88545782820470722185258939600760124082",
@@ -71,19 +64,19 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/perfetto/+/7076286ad6373cdc79b989652929236f8e9841ef"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/profiling/memory/unwinding.cc"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/perfetto/+/7076286ad6373cdc79b989652929236f8e9841ef",
                 "id": "PUB-A-233338564-7e2cd29c",
+                "signature_version": "v1",
+                "match_only_versions": [
+                  "13"
+                ],
                 "digest": {
                   "line_hashes": [
                     "278109555857641491656739200814794431822",
@@ -92,18 +85,25 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/perfetto/+/7076286ad6373cdc79b989652929236f8e9841ef"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/perfetto/+/7076286ad6373cdc79b989652929236f8e9841ef"
+            ],
+            "spl": "2023-03-01",
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-233338564.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

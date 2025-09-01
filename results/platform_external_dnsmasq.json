@@ -7,7 +7,7 @@
         "A-158221622",
         "CVE-2017-14491"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-03-01T00:00:00Z",
       "references": [
         {
@@ -42,39 +42,38 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "RCE"
-            ],
             "spl": "2021-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3"
             ],
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-0344eb18",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
-                  "function": "do_options",
-                  "file": "src/rfc2131.c"
+                  "file": "src/rfc2131.c",
+                  "function": "do_options"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-0344eb18",
                 "digest": {
-                  "function_hash": "162458565224829946421372831959483740881",
-                  "length": 6861
-                }
+                  "length": 6861,
+                  "function_hash": "162458565224829946421372831959483740881"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-16ab25f8",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/rfc1035.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-16ab25f8",
                 "digest": {
                   "line_hashes": [
                     "217854428117377674532267996039918772013",
@@ -129,17 +128,17 @@
                     "160387967427261454983567205194816812459"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-60ba5241",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/util.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-60ba5241",
                 "digest": {
                   "line_hashes": [
                     "132042513747029753654950249268879540507",
@@ -155,17 +154,17 @@
                     "95969651691789652040695707777706086491"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-686df127",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/dnsmasq.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-686df127",
                 "digest": {
                   "line_hashes": [
                     "32536974151175546352236820138741518712",
@@ -174,17 +173,17 @@
                     "75013338563002493111625771299861669832"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-75524386",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/rfc2131.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-75524386",
                 "digest": {
                   "line_hashes": [
                     "133399028408336107379483603308129307468",
@@ -195,22 +194,23 @@
                     "313118125519799017854563810870969450547"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-e7f23bda",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
-                  "function": "do_rfc1035_name",
-                  "file": "src/util.c"
+                  "file": "src/util.c",
+                  "function": "do_rfc1035_name"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-e7f23bda",
                 "digest": {
-                  "function_hash": "301401926471252861698321039039331984585",
-                  "length": 295
-                }
+                  "length": 295,
+                  "function_hash": "301401926471252861698321039039331984585"
+                },
+                "signature_type": "Function"
               }
             ]
           },
@@ -240,54 +240,53 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "RCE"
-            ],
             "spl": "2021-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3"
             ],
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "do_rfc1035_name",
-                  "file": "src/util.c"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "id": "ASB-A-158221622-0de6b284",
-                "digest": {
-                  "function_hash": "301401926471252861698321039039331984585",
-                  "length": 295
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
-                  "function": "do_options",
-                  "file": "src/rfc2131.c"
+                  "file": "src/util.c",
+                  "function": "do_rfc1035_name"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
+                "digest": {
+                  "length": 295,
+                  "function_hash": "301401926471252861698321039039331984585"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "id": "ASB-A-158221622-55884840",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
+                "target": {
+                  "file": "src/rfc2131.c",
+                  "function": "do_options"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "162458565224829946421372831959483740881",
-                  "length": 6861
-                }
+                  "length": 6861,
+                  "function_hash": "162458565224829946421372831959483740881"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-62865ed4",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/rfc2131.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-62865ed4",
                 "digest": {
                   "line_hashes": [
                     "133399028408336107379483603308129307468",
@@ -298,17 +297,17 @@
                     "313118125519799017854563810870969450547"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-730f5eb1",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/rfc1035.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-730f5eb1",
                 "digest": {
                   "line_hashes": [
                     "217854428117377674532267996039918772013",
@@ -363,17 +362,17 @@
                     "160387967427261454983567205194816812459"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-89187252",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/dnsmasq.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-89187252",
                 "digest": {
                   "line_hashes": [
                     "32536974151175546352236820138741518712",
@@ -382,17 +381,17 @@
                     "75013338563002493111625771299861669832"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-cff2c227",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
                 "target": {
                   "file": "src/util.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/303ca2733ad5d3994cd728dc09f0cd2d2417b4f3",
-                "id": "ASB-A-158221622-cff2c227",
                 "digest": {
                   "line_hashes": [
                     "132042513747029753654950249268879540507",
@@ -408,7 +407,8 @@
                     "95969651691789652040695707777706086491"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
             ]
           },
@@ -438,24 +438,23 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "RCE"
-            ],
             "spl": "2021-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e"
             ],
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-20fb12c1",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/rfc2131.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-20fb12c1",
                 "digest": {
                   "line_hashes": [
                     "2393832294460207506455356201121214719",
@@ -465,17 +464,17 @@
                     "223327283728248363640070729941531384226"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-5593d378",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/dnsmasq.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-5593d378",
                 "digest": {
                   "line_hashes": [
                     "32536974151175546352236820138741518712",
@@ -484,17 +483,17 @@
                     "75013338563002493111625771299861669832"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-60561896",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/rfc1035.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-60561896",
                 "digest": {
                   "line_hashes": [
                     "217854428117377674532267996039918772013",
@@ -545,32 +544,32 @@
                     "44345470189972663709022213664900801471"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "do_rfc1035_name",
-                  "file": "src/util.c"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "id": "ASB-A-158221622-65c38db8",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
+                "target": {
+                  "file": "src/util.c",
+                  "function": "do_rfc1035_name"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "301401926471252861698321039039331984585",
-                  "length": 295
-                }
+                  "length": 295,
+                  "function_hash": "301401926471252861698321039039331984585"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-757d90d1",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/util.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-757d90d1",
                 "digest": {
                   "line_hashes": [
                     "66059968515983766595588356657807968741",
@@ -583,22 +582,23 @@
                     "258820809828615559735777116102843363751"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-ef2a47f8",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
-                  "function": "do_options",
-                  "file": "src/rfc2131.c"
+                  "file": "src/rfc2131.c",
+                  "function": "do_options"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-ef2a47f8",
                 "digest": {
-                  "function_hash": "162458565224829946421372831959483740881",
-                  "length": 6861
-                }
+                  "length": 6861,
+                  "function_hash": "162458565224829946421372831959483740881"
+                },
+                "signature_type": "Function"
               }
             ]
           },
@@ -628,39 +628,38 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "RCE"
-            ],
             "spl": "2021-03-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e"
             ],
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-027a97af",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
-                  "function": "do_options",
-                  "file": "src/rfc2131.c"
+                  "file": "src/rfc2131.c",
+                  "function": "do_options"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-027a97af",
                 "digest": {
-                  "function_hash": "162458565224829946421372831959483740881",
-                  "length": 6861
-                }
+                  "length": 6861,
+                  "function_hash": "162458565224829946421372831959483740881"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-0f5cf732",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/util.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-0f5cf732",
                 "digest": {
                   "line_hashes": [
                     "66059968515983766595588356657807968741",
@@ -673,17 +672,17 @@
                     "258820809828615559735777116102843363751"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-61694ac2",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/rfc1035.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-61694ac2",
                 "digest": {
                   "line_hashes": [
                     "217854428117377674532267996039918772013",
@@ -734,17 +733,17 @@
                     "44345470189972663709022213664900801471"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-76c8650e",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/dnsmasq.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-76c8650e",
                 "digest": {
                   "line_hashes": [
                     "32536974151175546352236820138741518712",
@@ -753,32 +752,32 @@
                     "75013338563002493111625771299861669832"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-7ae78c03",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
-                  "function": "do_rfc1035_name",
-                  "file": "src/util.c"
+                  "file": "src/util.c",
+                  "function": "do_rfc1035_name"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-7ae78c03",
                 "digest": {
-                  "function_hash": "301401926471252861698321039039331984585",
-                  "length": 295
-                }
+                  "length": 295,
+                  "function_hash": "301401926471252861698321039039331984585"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-158221622-9f01be69",
+                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
                 "target": {
                   "file": "src/rfc2131.c"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/dnsmasq/+/2c415e570aed0b955698238a274a50f3ffa4892e",
-                "id": "ASB-A-158221622-9f01be69",
                 "digest": {
                   "line_hashes": [
                     "2393832294460207506455356201121214719",
@@ -788,7 +787,8 @@
                     "223327283728248363640070729941531384226"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
             ]
           },
@@ -797,7 +797,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

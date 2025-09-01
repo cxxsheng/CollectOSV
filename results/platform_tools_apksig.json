@@ -7,7 +7,7 @@
         "A-266580022",
         "CVE-2023-21253"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-10-01T00:00:00Z",
       "references": [
         {
@@ -50,54 +50,46 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "readCertificates",
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-202659be",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "249915354582923191798266077908697072256",
                   "length": 345
+                },
+                "id": "ASB-A-266580022-202659be",
+                "signature_type": "Function",
+                "target": {
+                  "function": "readCertificates",
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-25e19998",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "76378410095532720956002145985191073570",
                   "length": 1375
+                },
+                "id": "ASB-A-266580022-25e19998",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-30e18f3b",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "127591183906428000100661990238153668826",
@@ -109,17 +101,17 @@
                     "311698033013677502681369731221858027212"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-30e18f3b",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-3fd3dd04",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "129744209502793915813260619052832012600",
@@ -134,8 +126,16 @@
                     "119046298690815096111332514719412588051"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-3fd3dd04",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
             ]
           },
           "database_specific": {
@@ -164,39 +164,31 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "generateApkSignatureSchemeV2Block",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-48a1aade",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "213318869695566115113803252493268411376",
                   "length": 726
+                },
+                "id": "ASB-A-266580022-48a1aade",
+                "signature_type": "Function",
+                "target": {
+                  "function": "generateApkSignatureSchemeV2Block",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-51c47a48",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "12618301161831551205318197541620737508",
@@ -206,17 +198,17 @@
                     "156083528888115917432528088227340568869"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-51c47a48",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-54b753dc",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "90172167375156212023865176702410805323",
@@ -229,17 +221,17 @@
                     "329054542011880781089773095494031838405"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-54b753dc",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-7f72a0a9",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "166308627250241798830278720308157210028",
@@ -249,17 +241,17 @@
                     "310355743575466778701922714034586285378"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-7f72a0a9",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/Constants.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-ac369905",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "318259293619017571817674845858708848436",
@@ -267,32 +259,32 @@
                     "139115357152174844383564699394576699834"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-ac369905",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/Constants.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sign",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-b1490b3a",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "22470244999601055631616563743597494561",
                   "length": 433
+                },
+                "id": "ASB-A-266580022-b1490b3a",
+                "signature_type": "Function",
+                "target": {
+                  "function": "sign",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-bc81e2f0",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "138091845747979162666087952714147299396",
@@ -302,32 +294,32 @@
                     "14955106898394308134487221076974122598"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-bc81e2f0",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "parseSigners",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-d4e4922e",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "222328988143613824287965131789779771686",
                   "length": 991
+                },
+                "id": "ASB-A-266580022-d4e4922e",
+                "signature_type": "Function",
+                "target": {
+                  "function": "parseSigners",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-d5c71974",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "195323898097579571440473038818311772522",
@@ -338,23 +330,31 @@
                     "213804718474314383533809336886931483632"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-d5c71974",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-f5a38546",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "262962228558343875874916341515667901288",
                   "length": 3495
+                },
+                "id": "ASB-A-266580022-f5a38546",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6"
             ]
           },
           "database_specific": {
@@ -383,24 +383,16 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-26d2a5b7",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "127591183906428000100661990238153668826",
@@ -412,17 +404,17 @@
                     "311698033013677502681369731221858027212"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-26d2a5b7",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-781cbf9d",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "129744209502793915813260619052832012600",
@@ -437,38 +429,46 @@
                     "119046298690815096111332514719412588051"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-781cbf9d",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "readCertificates",
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-d847131d",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "249915354582923191798266077908697072256",
                   "length": 345
+                },
+                "id": "ASB-A-266580022-d847131d",
+                "signature_type": "Function",
+                "target": {
+                  "function": "readCertificates",
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-e1982cab",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "76378410095532720956002145985191073570",
                   "length": 1375
+                },
+                "id": "ASB-A-266580022-e1982cab",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
             ]
           },
           "database_specific": {
@@ -497,24 +497,16 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-08d66403",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "166308627250241798830278720308157210028",
@@ -524,62 +516,62 @@
                     "310355743575466778701922714034586285378"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-08d66403",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "parseSigners",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-4ebe82aa",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "222328988143613824287965131789779771686",
                   "length": 991
+                },
+                "id": "ASB-A-266580022-4ebe82aa",
+                "signature_type": "Function",
+                "target": {
+                  "function": "parseSigners",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sign",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-5edc31c2",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "22470244999601055631616563743597494561",
                   "length": 433
+                },
+                "id": "ASB-A-266580022-5edc31c2",
+                "signature_type": "Function",
+                "target": {
+                  "function": "sign",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-76928673",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "333444367386528009047836502053223450042",
                   "length": 3475
+                },
+                "id": "ASB-A-266580022-76928673",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-947541b1",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "90172167375156212023865176702410805323",
@@ -592,17 +584,17 @@
                     "117245178116164655333834700469779125972"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-947541b1",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-bbcae137",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "37533447064962364212589698078441805597",
@@ -612,17 +604,17 @@
                     "156083528888115917432528088227340568869"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-bbcae137",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-cdd30be9",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "47428040235981702453145689256894068721",
@@ -637,32 +629,32 @@
                     "213804718474314383533809336886931483632"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-cdd30be9",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "generateApkSignatureSchemeV2Block",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-d45a768e",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "87843026847037016839933472380593091061",
                   "length": 612
+                },
+                "id": "ASB-A-266580022-d45a768e",
+                "signature_type": "Function",
+                "target": {
+                  "function": "generateApkSignatureSchemeV2Block",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-de1d0fc3",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "138091845747979162666087952714147299396",
@@ -672,23 +664,31 @@
                     "14955106898394308134487221076974122598"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-de1d0fc3",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mergeFrom",
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239",
-                "id": "ASB-A-266580022-fe6d3c49",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "220020544393900911384356231346521659494",
                   "length": 1169
+                },
+                "id": "ASB-A-266580022-fe6d3c49",
+                "signature_type": "Function",
+                "target": {
+                  "function": "mergeFrom",
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/tools/apksig/+/080e4039aeeca5d0ed55049dcfd3915e4d649239"
             ]
           },
           "database_specific": {
@@ -717,76 +717,68 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
+                "signature_version": "v1",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "127591183906428000100661990238153668826",
+                    "240609319350722928473919306482041019539",
+                    "291486844225277494726308172124066601464",
+                    "119807339177862674962200230646681423358",
+                    "9564776611380162473768305298920529708",
+                    "187258210791204064424156638109163959388",
+                    "311698033013677502681369731221858027212"
+                  ],
+                  "threshold": 0.9
+                },
                 "id": "ASB-A-266580022-2dffb6d8",
-                "digest": {
-                  "line_hashes": [
-                    "127591183906428000100661990238153668826",
-                    "240609319350722928473919306482041019539",
-                    "291486844225277494726308172124066601464",
-                    "119807339177862674962200230646681423358",
-                    "9564776611380162473768305298920529708",
-                    "187258210791204064424156638109163959388",
-                    "311698033013677502681369731221858027212"
-                  ],
-                  "threshold": 0.9
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "readCertificates",
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-62ba78f6",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "249915354582923191798266077908697072256",
                   "length": 345
+                },
+                "id": "ASB-A-266580022-62ba78f6",
+                "signature_type": "Function",
+                "target": {
+                  "function": "readCertificates",
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-7d3cb9ae",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "76378410095532720956002145985191073570",
                   "length": 1375
+                },
+                "id": "ASB-A-266580022-7d3cb9ae",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-939c829d",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "129744209502793915813260619052832012600",
@@ -801,8 +793,16 @@
                     "119046298690815096111332514719412588051"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-939c829d",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
             ]
           },
           "database_specific": {
@@ -831,44 +831,36 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
+                "signature_version": "v1",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "166308627250241798830278720308157210028",
+                    "204021523883075718267869134804624054837",
+                    "293949540968280903538352693917672011553",
+                    "125492843029688495070507629923640435993",
+                    "310355743575466778701922714034586285378"
+                  ],
+                  "threshold": 0.9
+                },
                 "id": "ASB-A-266580022-38ae67da",
-                "digest": {
-                  "line_hashes": [
-                    "166308627250241798830278720308157210028",
-                    "204021523883075718267869134804624054837",
-                    "293949540968280903538352693917672011553",
-                    "125492843029688495070507629923640435993",
-                    "310355743575466778701922714034586285378"
-                  ],
-                  "threshold": 0.9
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/Constants.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-413fe738",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "83835231554199575221028493457154853768",
@@ -876,17 +868,17 @@
                     "139115357152174844383564699394576699834"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-413fe738",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/Constants.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-57b1d910",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "138091845747979162666087952714147299396",
@@ -896,62 +888,62 @@
                     "14955106898394308134487221076974122598"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-57b1d910",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "generateApkSignatureSchemeV2Block",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-5b0e97b8",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "114059583829668587052886837139387282040",
                   "length": 632
+                },
+                "id": "ASB-A-266580022-5b0e97b8",
+                "signature_type": "Function",
+                "target": {
+                  "function": "generateApkSignatureSchemeV2Block",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "parseSigners",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-82e25833",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "222328988143613824287965131789779771686",
                   "length": 991
+                },
+                "id": "ASB-A-266580022-82e25833",
+                "signature_type": "Function",
+                "target": {
+                  "function": "parseSigners",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sign",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-99a609ef",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "22470244999601055631616563743597494561",
                   "length": 433
+                },
+                "id": "ASB-A-266580022-99a609ef",
+                "signature_type": "Function",
+                "target": {
+                  "function": "sign",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-ac1266e9",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "37533447064962364212589698078441805597",
@@ -961,32 +953,32 @@
                     "156083528888115917432528088227340568869"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-ac1266e9",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mergeFrom",
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-b17e6b25",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "59115683397571627065104435808932691233",
                   "length": 1075
+                },
+                "id": "ASB-A-266580022-b17e6b25",
+                "signature_type": "Function",
+                "target": {
+                  "function": "mergeFrom",
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-b4868a3c",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "166660708084919229288884510559300593615",
@@ -1001,17 +993,17 @@
                     "213804718474314383533809336886931483632"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-b4868a3c",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-ea78f0ff",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "90172167375156212023865176702410805323",
@@ -1024,183 +1016,183 @@
                     "117245178116164655333834700469779125972"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-ea78f0ff",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-f39328b0",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "262962228558343875874916341515667901288",
                   "length": 3495
-                }
-              }
-            ]
-          },
-          "database_specific": {
-            "source": "https://storage.googleapis.com/android-osv/ASB-A-266580022.json"
-          }
-        },
-        {
-          "package": {
-            "name": "platform/frameworks/base",
-            "ecosystem": "Android"
-          },
-          "ranges": [
-            {
-              "type": "ECOSYSTEM",
-              "events": [
-                {
-                  "introduced": "12L:0"
                 },
-                {
-                  "fixed": "12L:2023-10-01"
-                }
-              ]
-            }
-          ],
-          "versions": [
-            "12L"
-          ],
-          "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
-            ],
-            "vanir_signatures": [
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-41403806",
-                "digest": {
-                  "line_hashes": [
-                    "129744209502793915813260619052832012600",
-                    "264113637825344716206162844253084270500",
-                    "30215904757720273077659302057981667921",
-                    "299631063491229373266064701101652182332",
-                    "237790250428028202705881335151452949033",
-                    "39096619547947512736311842163264836793",
-                    "265640756765803956838572199192976623552",
-                    "267676677489576409428264675310911676797",
-                    "200840196954250196286453188352233489228",
-                    "119046298690815096111332514719412588051"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
+                "id": "ASB-A-266580022-f39328b0",
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "readCertificates",
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-52f0a788",
-                "digest": {
-                  "function_hash": "249915354582923191798266077908697072256",
-                  "length": 345
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-58a326c2",
-                "digest": {
-                  "line_hashes": [
-                    "127591183906428000100661990238153668826",
-                    "240609319350722928473919306482041019539",
-                    "291486844225277494726308172124066601464",
-                    "119807339177862674962200230646681423358",
-                    "9564776611380162473768305298920529708",
-                    "187258210791204064424156638109163959388",
-                    "311698033013677502681369731221858027212"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "verify",
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-5e42fe1a",
-                "digest": {
-                  "function_hash": "76378410095532720956002145985191073570",
-                  "length": 1375
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               }
-            ]
-          },
-          "database_specific": {
-            "source": "https://storage.googleapis.com/android-osv/ASB-A-266580022.json"
-          }
-        },
-        {
-          "package": {
-            "name": "platform/tools/apksig",
-            "ecosystem": "Android"
-          },
-          "ranges": [
-            {
-              "type": "ECOSYSTEM",
-              "events": [
-                {
-                  "introduced": "12L:0"
-                },
-                {
-                  "fixed": "12L:2023-10-01"
-                }
-              ]
-            }
-          ],
-          "versions": [
-            "12L"
-          ],
-          "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "DoS"
             ],
-            "spl": "2023-10-01",
             "fixes": [
               "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-266580022.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/frameworks/base",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "spl": "2023-10-01",
+            "types": [
+              "DoS"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
                 "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "129744209502793915813260619052832012600",
+                    "264113637825344716206162844253084270500",
+                    "30215904757720273077659302057981667921",
+                    "299631063491229373266064701101652182332",
+                    "237790250428028202705881335151452949033",
+                    "39096619547947512736311842163264836793",
+                    "265640756765803956838572199192976623552",
+                    "267676677489576409428264675310911676797",
+                    "200840196954250196286453188352233489228",
+                    "119046298690815096111332514719412588051"
+                  ],
+                  "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-41403806",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
+                }
+              },
+              {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
+                "signature_version": "v1",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "249915354582923191798266077908697072256",
+                  "length": 345
+                },
+                "id": "ASB-A-266580022-52f0a788",
+                "signature_type": "Function",
+                "target": {
+                  "function": "readCertificates",
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
+                }
+              },
+              {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
+                "signature_version": "v1",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "127591183906428000100661990238153668826",
+                    "240609319350722928473919306482041019539",
+                    "291486844225277494726308172124066601464",
+                    "119807339177862674962200230646681423358",
+                    "9564776611380162473768305298920529708",
+                    "187258210791204064424156638109163959388",
+                    "311698033013677502681369731221858027212"
+                  ],
+                  "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-58a326c2",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
+                }
+              },
+              {
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
+                "signature_version": "v1",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "76378410095532720956002145985191073570",
+                  "length": 1375
+                },
+                "id": "ASB-A-266580022-5e42fe1a",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
+                }
+              }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-266580022.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/tools/apksig",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "12L:0"
+                },
+                {
+                  "fixed": "12L:2023-10-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "12L"
+          ],
+          "ecosystem_specific": {
+            "spl": "2023-10-01",
+            "types": [
+              "DoS"
+            ],
+            "severity": "High",
+            "vanir_signatures": [
+              {
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-43be5085",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "37533447064962364212589698078441805597",
@@ -1210,47 +1202,47 @@
                     "156083528888115917432528088227340568869"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-43be5085",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sign",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-578205df",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "22470244999601055631616563743597494561",
                   "length": 433
+                },
+                "id": "ASB-A-266580022-578205df",
+                "signature_type": "Function",
+                "target": {
+                  "function": "sign",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "mergeFrom",
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-5f8b084b",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "59115683397571627065104435808932691233",
                   "length": 1075
+                },
+                "id": "ASB-A-266580022-5f8b084b",
+                "signature_type": "Function",
+                "target": {
+                  "function": "mergeFrom",
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-62e4fb30",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "138091845747979162666087952714147299396",
@@ -1260,17 +1252,17 @@
                     "14955106898394308134487221076974122598"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-62e4fb30",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-672f0d32",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "90172167375156212023865176702410805323",
@@ -1283,47 +1275,47 @@
                     "117245178116164655333834700469779125972"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-672f0d32",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-7984f14e",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "262962228558343875874916341515667901288",
                   "length": 3495
+                },
+                "id": "ASB-A-266580022-7984f14e",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "generateApkSignatureSchemeV2Block",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-7a25ca3b",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "114059583829668587052886837139387282040",
                   "length": 632
+                },
+                "id": "ASB-A-266580022-7a25ca3b",
+                "signature_type": "Function",
+                "target": {
+                  "function": "generateApkSignatureSchemeV2Block",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/Constants.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-94c22bc5",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "83835231554199575221028493457154853768",
@@ -1331,32 +1323,32 @@
                     "139115357152174844383564699394576699834"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-94c22bc5",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/Constants.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "parseSigners",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-a5aebea3",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "222328988143613824287965131789779771686",
                   "length": 991
+                },
+                "id": "ASB-A-266580022-a5aebea3",
+                "signature_type": "Function",
+                "target": {
+                  "function": "parseSigners",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-cf4326bc",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "166660708084919229288884510559300593615",
@@ -1371,17 +1363,17 @@
                     "213804718474314383533809336886931483632"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-cf4326bc",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac",
-                "id": "ASB-A-266580022-e9923eca",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "166308627250241798830278720308157210028",
@@ -1391,8 +1383,16 @@
                     "310355743575466778701922714034586285378"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-e9923eca",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/tools/apksig/+/dae412630054cc9ec19ec03e0e827585e619f6ac"
             ]
           },
           "database_specific": {
@@ -1421,24 +1421,16 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-15af2d2b",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "127591183906428000100661990238153668826",
@@ -1450,47 +1442,47 @@
                     "311698033013677502681369731221858027212"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-15af2d2b",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "readCertificates",
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-298ab3f0",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "249915354582923191798266077908697072256",
                   "length": 345
+                },
+                "id": "ASB-A-266580022-298ab3f0",
+                "signature_type": "Function",
+                "target": {
+                  "function": "readCertificates",
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-56ef6703",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "76378410095532720956002145985191073570",
                   "length": 1375
+                },
+                "id": "ASB-A-266580022-56ef6703",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "core/java/android/util/apk/ApkSignatureSchemeV2Verifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597",
-                "id": "ASB-A-266580022-aa02e7bf",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "129744209502793915813260619052832012600",
@@ -1505,8 +1497,16 @@
                     "119046298690815096111332514719412588051"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-aa02e7bf",
+                "signature_type": "Line",
+                "target": {
+                  "file": "core/java/android/util/jar/StrictJarVerifier.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/6f6ee8a55f37c2b8c0df041b2bd53ec928764597"
             ]
           },
           "database_specific": {
@@ -1535,40 +1535,31 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-10-01",
             "types": [
               "DoS"
             ],
-            "spl": "2023-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/tools/apksig/+/0b086bdc130e1e6216fcbc5436fe8e3cdc9ec011",
-              "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "parseSigners",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-00c5b830",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "222328988143613824287965131789779771686",
                   "length": 991
+                },
+                "id": "ASB-A-266580022-00c5b830",
+                "signature_type": "Function",
+                "target": {
+                  "function": "parseSigners",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-07a97c2a",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "195323898097579571440473038818311772522",
@@ -1579,17 +1570,17 @@
                     "213804718474314383533809336886931483632"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-07a97c2a",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/ApkVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-229c07d8",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "138091845747979162666087952714147299396",
@@ -1599,32 +1590,32 @@
                     "14955106898394308134487221076974122598"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-229c07d8",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "generateApkSignatureSchemeV2Block",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-233bef49",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "213318869695566115113803252493268411376",
                   "length": 726
+                },
+                "id": "ASB-A-266580022-233bef49",
+                "signature_type": "Function",
+                "target": {
+                  "function": "generateApkSignatureSchemeV2Block",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/Constants.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-373ced3e",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "318259293619017571817674845858708848436",
@@ -1632,47 +1623,47 @@
                     "139115357152174844383564699394576699834"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-373ced3e",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/Constants.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "verify",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-5069b810",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "262962228558343875874916341515667901288",
                   "length": 3495
+                },
+                "id": "ASB-A-266580022-5069b810",
+                "signature_type": "Function",
+                "target": {
+                  "function": "verify",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sign",
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-5868a7c5",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "function_hash": "22470244999601055631616563743597494561",
                   "length": 433
+                },
+                "id": "ASB-A-266580022-5868a7c5",
+                "signature_type": "Function",
+                "target": {
+                  "function": "sign",
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-99859c46",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "90172167375156212023865176702410805323",
@@ -1685,17 +1676,17 @@
                     "329054542011880781089773095494031838405"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-99859c46",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeSigner.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-d0743968",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "166308627250241798830278720308157210028",
@@ -1705,17 +1696,17 @@
                     "310355743575466778701922714034586285378"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-d0743968",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v2/V2SchemeVerifier.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6",
-                "id": "ASB-A-266580022-e94d13ba",
+                "signature_version": "v1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "12618301161831551205318197541620737508",
@@ -1725,8 +1716,17 @@
                     "156083528888115917432528088227340568869"
                   ],
                   "threshold": 0.9
+                },
+                "id": "ASB-A-266580022-e94d13ba",
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/main/java/com/android/apksig/internal/apk/v1/V1SchemeSigner.java"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/tools/apksig/+/0b086bdc130e1e6216fcbc5436fe8e3cdc9ec011",
+              "https://android.googlesource.com/platform/tools/apksig/+/6be64b9339c1dad28abf75b53d3866fd42f320d6"
             ]
           },
           "database_specific": {
@@ -1734,7 +1734,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

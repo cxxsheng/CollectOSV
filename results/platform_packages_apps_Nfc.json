@@ -7,7 +7,7 @@
         "A-159060474",
         "CVE-2020-0453"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-11-01T00:00:00Z",
       "references": [
         {
@@ -42,7 +42,6 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -50,16 +49,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
-                "id": "ASB-A-159060474-2381b6a2",
                 "digest": {
                   "line_hashes": [
                     "294762666298602941345102607898639832068",
@@ -68,21 +60,29 @@
                     "235669048761955605874087417140698701311"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-159060474-2381b6a2",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateNotification",
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
-                "id": "ASB-A-159060474-28429f23",
                 "digest": {
-                  "function_hash": "6232845117293639816541003409149669591",
-                  "length": 2598
+                  "length": 2598,
+                  "function_hash": "6232845117293639816541003409149669591"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-159060474-28429f23",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java",
+                  "function": "updateNotification"
                 }
               }
             ]
@@ -113,7 +113,6 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -121,31 +120,24 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateNotification",
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
-                "id": "ASB-A-159060474-1c72a8cb",
                 "digest": {
-                  "function_hash": "6232845117293639816541003409149669591",
-                  "length": 2598
+                  "length": 2598,
+                  "function_hash": "6232845117293639816541003409149669591"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-159060474-1c72a8cb",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java",
+                  "function": "updateNotification"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
-                "id": "ASB-A-159060474-bf44f8c8",
                 "digest": {
                   "line_hashes": [
                     "294762666298602941345102607898639832068",
@@ -154,6 +146,14 @@
                     "235669048761955605874087417140698701311"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-159060474-bf44f8c8",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
                 }
               }
             ]
@@ -184,7 +184,6 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -192,16 +191,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
-                "id": "ASB-A-159060474-0bbfc618",
                 "digest": {
                   "line_hashes": [
                     "294762666298602941345102607898639832068",
@@ -210,21 +202,29 @@
                     "235669048761955605874087417140698701311"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-159060474-0bbfc618",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "updateNotification",
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
-                "id": "ASB-A-159060474-2bd4ee57",
                 "digest": {
-                  "function_hash": "6232845117293639816541003409149669591",
-                  "length": 2598
+                  "length": 2598,
+                  "function_hash": "6232845117293639816541003409149669591"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/fc0910a24b2e724f4177008e0962b47a682263ce",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-159060474-2bd4ee57",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java",
+                  "function": "updateNotification"
                 }
               }
             ]
@@ -234,7 +234,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-176445224",
@@ -243,7 +243,7 @@
         "A-176445224",
         "CVE-2021-0594"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -278,7 +278,6 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -286,17 +285,16 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-48e9a922",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "40091479508753482757256274639819598751",
                     "202831181816815184799030650557254650708",
@@ -304,23 +302,25 @@
                     "69901982178580409085884145126976169152",
                     "242123018654011064478382392893260494122",
                     "99763509346192368468632133568933143433"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-f2143192",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               }
             ]
@@ -351,7 +351,6 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -359,17 +358,16 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-4b607ef9",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "40091479508753482757256274639819598751",
                     "202831181816815184799030650557254650708",
@@ -377,23 +375,25 @@
                     "69901982178580409085884145126976169152",
                     "242123018654011064478382392893260494122",
                     "99763509346192368468632133568933143433"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-d6e9cad9",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               }
             ]
@@ -424,7 +424,6 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -432,32 +431,31 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-330661db",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-cbac5482",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "40091479508753482757256274639819598751",
                     "202831181816815184799030650557254650708",
@@ -465,8 +463,10 @@
                     "69901982178580409085884145126976169152",
                     "242123018654011064478382392893260494122",
                     "99763509346192368468632133568933143433"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               }
             ]
@@ -497,7 +497,6 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -505,32 +504,31 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-6099e1b0",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "ASB-A-176445224-f1b442cc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "40091479508753482757256274639819598751",
                     "202831181816815184799030650557254650708",
@@ -538,8 +536,10 @@
                     "69901982178580409085884145126976169152",
                     "242123018654011064478382392893260494122",
                     "99763509346192368468632133568933143433"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               }
             ]
@@ -549,7 +549,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-180422108",
@@ -558,7 +558,7 @@
         "A-180422108",
         "CVE-2021-0598"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-09-01T00:00:00Z",
       "references": [
         {
@@ -597,24 +597,21 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/662f5b3fe7eba4ed70abebd53dcd4563089cf7dd",
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/9c56b01c5745252c13c05a2fe39faaef130813e5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/662f5b3fe7eba4ed70abebd53dcd4563089cf7dd",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-180422108-cecfb396",
                 "digest": {
                   "line_hashes": [
@@ -625,21 +622,24 @@
                     "278324471406019200716570849452251027803"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/662f5b3fe7eba4ed70abebd53dcd4563089cf7dd",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-180422108-e63a2584",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               }
             ]
@@ -670,24 +670,21 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/662f5b3fe7eba4ed70abebd53dcd4563089cf7dd",
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/9c56b01c5745252c13c05a2fe39faaef130813e5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/662f5b3fe7eba4ed70abebd53dcd4563089cf7dd",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-180422108-450716f4",
                 "digest": {
                   "line_hashes": [
@@ -698,21 +695,24 @@
                     "278324471406019200716570849452251027803"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/662f5b3fe7eba4ed70abebd53dcd4563089cf7dd",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-180422108-90423ed7",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               }
             ]
@@ -743,39 +743,36 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/8afc24e296743c5c294444a14da20bc4c44dec6a",
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/9c56b01c5745252c13c05a2fe39faaef130813e5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8afc24e296743c5c294444a14da20bc4c44dec6a",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-180422108-38cabd9d",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8afc24e296743c5c294444a14da20bc4c44dec6a",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-180422108-7bff64a5",
                 "digest": {
                   "line_hashes": [
@@ -786,6 +783,9 @@
                     "278324471406019200716570849452251027803"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               }
             ]
@@ -816,39 +816,36 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-09-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/8afc24e296743c5c294444a14da20bc4c44dec6a",
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/9c56b01c5745252c13c05a2fe39faaef130813e5"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8afc24e296743c5c294444a14da20bc4c44dec6a",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-180422108-5e113c84",
                 "digest": {
-                  "function_hash": "128962696814408615060862366236348820039",
-                  "length": 1613
+                  "length": 1613,
+                  "function_hash": "128962696814408615060862366236348820039"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+                  "function": "onCreate"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8afc24e296743c5c294444a14da20bc4c44dec6a",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-180422108-9c5fe78b",
                 "digest": {
                   "line_hashes": [
@@ -859,6 +856,9 @@
                     "278324471406019200716570849452251027803"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
                 }
               }
             ]
@@ -868,7 +868,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-181346550",
@@ -877,7 +877,7 @@
         "A-181346550",
         "CVE-2021-0596"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -912,25 +912,18 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/9732971aeda19c42e35355bbfacd81ade884ebe9"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.c"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/9732971aeda19c42e35355bbfacd81ade884ebe9",
-                "id": "ASB-A-181346550-8d3615b1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "2884847135485000758411603062137112485",
                     "211031454079573566250835353966381290903",
@@ -939,24 +932,31 @@
                     "173057411138899605570235583465545219128",
                     "52376486751754460832414206509296816762",
                     "11790136434654728879528561461751803502"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/9732971aeda19c42e35355bbfacd81ade884ebe9",
                 "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-181346550-8d3615b1",
                 "target": {
-                  "function": "phNciNfc_RecvMfResp",
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.c"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/9732971aeda19c42e35355bbfacd81ade884ebe9",
-                "id": "ASB-A-181346550-dc3e02c2",
+                "deprecated": false
+              },
+              {
                 "digest": {
-                  "function_hash": "262160023557380663008511136770307698610",
-                  "length": 2269
-                }
+                  "length": 2269,
+                  "function_hash": "262160023557380663008511136770307698610"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/9732971aeda19c42e35355bbfacd81ade884ebe9",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-181346550-dc3e02c2",
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.c",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "deprecated": false
               }
             ]
           },
@@ -986,40 +986,40 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "phNciNfc_RecvMfResp",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
-                "id": "ASB-A-181346550-773fd7db",
                 "digest": {
-                  "function_hash": "72945400507771723778522666653419942626",
-                  "length": 2276
-                }
+                  "length": 2276,
+                  "function_hash": "72945400507771723778522666653419942626"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-181346550-773fd7db",
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-181346550-e7adecfc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "285685263254089793825752808025112685745",
                     "105930852586253385270607355452609178681",
@@ -1028,12 +1028,12 @@
                     "205285000149594638731812375834924927748",
                     "52376486751754460832414206509296816762",
                     "11790136434654728879528561461751803502"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
                 "match_only_versions": [
                   "9"
-                ]
+                ],
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913"
               }
             ]
           },
@@ -1063,40 +1063,40 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "phNciNfc_RecvMfResp",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
-                "id": "ASB-A-181346550-2d8bb336",
                 "digest": {
-                  "function_hash": "72945400507771723778522666653419942626",
-                  "length": 2276
-                }
+                  "length": 2276,
+                  "function_hash": "72945400507771723778522666653419942626"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-181346550-2d8bb336",
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-181346550-2f182af9",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "285685263254089793825752808025112685745",
                     "105930852586253385270607355452609178681",
@@ -1105,12 +1105,12 @@
                     "205285000149594638731812375834924927748",
                     "52376486751754460832414206509296816762",
                     "11790136434654728879528561461751803502"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
                 "match_only_versions": [
                   "10"
-                ]
+                ],
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913"
               }
             ]
           },
@@ -1140,40 +1140,40 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "phNciNfc_RecvMfResp",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
-                "id": "ASB-A-181346550-b0805140",
                 "digest": {
-                  "function_hash": "72945400507771723778522666653419942626",
-                  "length": 2276
-                }
+                  "length": 2276,
+                  "function_hash": "72945400507771723778522666653419942626"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-181346550-b0805140",
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-181346550-d9b2325b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "285685263254089793825752808025112685745",
                     "105930852586253385270607355452609178681",
@@ -1182,12 +1182,12 @@
                     "205285000149594638731812375834924927748",
                     "52376486751754460832414206509296816762",
                     "11790136434654728879528561461751803502"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
                 "match_only_versions": [
                   "11"
-                ]
+                ],
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/c39c851616f674edb8d9fa98010768eef3ba1913"
               }
             ]
           },
@@ -1196,7 +1196,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-189942532",
@@ -1205,7 +1205,7 @@
         "A-189942532",
         "CVE-2021-0956"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -1236,25 +1236,18 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
+            "spl": "2021-12-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0"
             ],
+            "severity": "Critical",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/NfcTag.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
-                "id": "ASB-A-189942532-0cdbcd58",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "148383999050039299697949776434268375082",
                     "15232978209917973695074134890878487282",
@@ -1265,23 +1258,30 @@
                     "320179138657375371631415970276618416767",
                     "139669197528390015241156794766235983555",
                     "50682557065575578825218165840665105411"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-189942532-0cdbcd58",
+                "deprecated": false,
+                "target": {
+                  "file": "nci/jni/NfcTag.cpp"
                 }
               },
               {
+                "digest": {
+                  "length": 4656,
+                  "function_hash": "47086027144169610795673628513659128031"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "NfcTag::discoverTechnologies",
-                  "file": "nci/jni/NfcTag.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
                 "id": "ASB-A-189942532-a06c7065",
-                "digest": {
-                  "function_hash": "47086027144169610795673628513659128031",
-                  "length": 4656
+                "deprecated": false,
+                "target": {
+                  "file": "nci/jni/NfcTag.cpp",
+                  "function": "NfcTag::discoverTechnologies"
                 }
               }
             ]
@@ -1312,40 +1312,33 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
+            "spl": "2021-12-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0"
             ],
+            "severity": "Critical",
             "vanir_signatures": [
               {
+                "digest": {
+                  "length": 4656,
+                  "function_hash": "47086027144169610795673628513659128031"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "NfcTag::discoverTechnologies",
-                  "file": "nci/jni/NfcTag.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
                 "id": "ASB-A-189942532-0230fc70",
-                "digest": {
-                  "function_hash": "47086027144169610795673628513659128031",
-                  "length": 4656
+                "deprecated": false,
+                "target": {
+                  "file": "nci/jni/NfcTag.cpp",
+                  "function": "NfcTag::discoverTechnologies"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/NfcTag.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
-                "id": "ASB-A-189942532-6addc6cd",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "148383999050039299697949776434268375082",
                     "15232978209917973695074134890878487282",
@@ -1356,8 +1349,15 @@
                     "320179138657375371631415970276618416767",
                     "139669197528390015241156794766235983555",
                     "50682557065575578825218165840665105411"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/7d90cc6e0556057571f9fde9785dd0658c1a3eb0",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-189942532-6addc6cd",
+                "deprecated": false,
+                "target": {
+                  "file": "nci/jni/NfcTag.cpp"
                 }
               }
             ]
@@ -1367,7 +1367,107 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
+    },
+    {
+      "id": "ASB-A-212610736",
+      "details": "In verifyDefaults of CardEmulationManager.java, there is a possible way to set a third party app as the default contactless payment app without user consent due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-212610736",
+        "CVE-2021-39810"
+      ],
+      "modified": "2025-09-01T15:59:28.765568Z",
+      "published": "2025-09-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-09-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/Nfc",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Nfc/+/47d46119729be8e461cf61de51da3c8a259941a3"
+            ],
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/CardEmulationManager.java",
+                  "function": "verifyDefaults"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-212610736-12b2d733",
+                "digest": {
+                  "length": 1541,
+                  "function_hash": "114555253436938247442654722844860424902"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/47d46119729be8e461cf61de51da3c8a259941a3"
+              },
+              {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/CardEmulationManager.java"
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-212610736-98a74f8e",
+                "digest": {
+                  "line_hashes": [
+                    "295226570849169871908183095233029651519",
+                    "112541039568483635236602289802364385895",
+                    "315852062032627358066014619176170590841",
+                    "249128550112373829776150518890059810162",
+                    "281669263796947544548992269806752348521",
+                    "260653643456319798916093378723387081601",
+                    "267170763367918631264413204148772080392",
+                    "55585520962156346804601262619264182273",
+                    "99332722928603672887433464135966973869",
+                    "218587883112346944518312278284554342765",
+                    "215211100333251195161568310147972866731",
+                    "143594581367930046090564332823308720287",
+                    "18077831500770260774758371278474319423",
+                    "149607452231559639793439985874377337804"
+                  ],
+                  "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/47d46119729be8e461cf61de51da3c8a259941a3"
+              }
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-212610736.json"
+          }
+        }
+      ],
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-221852424",
@@ -1376,7 +1476,7 @@
         "A-221852424",
         "CVE-2022-20123"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -1411,7 +1511,6 @@
             "12L-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1419,16 +1518,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-acbcc21b",
                 "digest": {
                   "line_hashes": [
                     "159555514137919445434032378816236390660",
@@ -1453,22 +1545,30 @@
                     "122324430794582591371791886729791407918"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "phNciNfc_RecvMfResp",
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
-                "deprecated": false,
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-acbcc21b",
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-e3737e53",
+                "deprecated": false
+              },
+              {
                 "digest": {
-                  "function_hash": "232458924269275137896506429622176142069",
-                  "length": 2516
-                }
+                  "length": 2516,
+                  "function_hash": "232458924269275137896506429622176142069"
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-e3737e53",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               }
             ]
           },
@@ -1498,7 +1598,6 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1506,31 +1605,24 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
+                "digest": {
+                  "length": 2516,
+                  "function_hash": "232458924269275137896506429622176142069"
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "phNciNfc_RecvMfResp",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
                 "id": "ASB-A-221852424-3de6d412",
-                "digest": {
-                  "function_hash": "232458924269275137896506429622176142069",
-                  "length": 2516
-                }
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-f899791c",
                 "digest": {
                   "line_hashes": [
                     "159555514137919445434032378816236390660",
@@ -1555,7 +1647,15 @@
                     "122324430794582591371791886729791407918"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
+                },
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-f899791c",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               }
             ]
           },
@@ -1585,7 +1685,6 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1593,16 +1692,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-0b69342b",
                 "digest": {
                   "line_hashes": [
                     "159555514137919445434032378816236390660",
@@ -1627,22 +1719,30 @@
                     "122324430794582591371791886729791407918"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "phNciNfc_RecvMfResp",
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
-                "deprecated": false,
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-0b69342b",
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-ef2025ce",
+                "deprecated": false
+              },
+              {
                 "digest": {
-                  "function_hash": "232458924269275137896506429622176142069",
-                  "length": 2516
-                }
+                  "length": 2516,
+                  "function_hash": "232458924269275137896506429622176142069"
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-ef2025ce",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               }
             ]
           },
@@ -1672,7 +1772,6 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1680,16 +1779,9 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-1c720bd4",
                 "digest": {
                   "line_hashes": [
                     "159555514137919445434032378816236390660",
@@ -1714,22 +1806,30 @@
                     "122324430794582591371791886729791407918"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
                 "target": {
-                  "function": "phNciNfc_RecvMfResp",
                   "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
-                "deprecated": false,
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-1c720bd4",
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-4ae3f58a",
+                "deprecated": false
+              },
+              {
                 "digest": {
-                  "function_hash": "232458924269275137896506429622176142069",
-                  "length": 2516
-                }
+                  "length": 2516,
+                  "function_hash": "232458924269275137896506429622176142069"
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-4ae3f58a",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               }
             ]
           },
@@ -1759,7 +1859,6 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
@@ -1767,31 +1866,24 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
+                "digest": {
+                  "length": 2516,
+                  "function_hash": "232458924269275137896506429622176142069"
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_RecvMfResp"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "phNciNfc_RecvMfResp",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
                 "id": "ASB-A-221852424-8a5a321c",
-                "digest": {
-                  "function_hash": "232458924269275137896506429622176142069",
-                  "length": 2516
-                }
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
-                "id": "ASB-A-221852424-ed443ac0",
                 "digest": {
                   "line_hashes": [
                     "159555514137919445434032378816236390660",
@@ -1816,7 +1908,15 @@
                     "122324430794582591371791886729791407918"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
+                },
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "ASB-A-221852424-ed443ac0",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f0d86f7fe23499cd4c6631348618463fbc496436",
+                "deprecated": false
               }
             ]
           },
@@ -1825,7 +1925,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-241387741",
@@ -1834,7 +1934,7 @@
         "A-241387741",
         "CVE-2023-20905"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-01-01T00:00:00Z",
       "references": [
         {
@@ -1869,7 +1969,6 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
@@ -1877,45 +1976,46 @@
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/f5f24d0ea2bcc33f18915c4c7369f803c45e53b0"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "Mfc_Transceive",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f5f24d0ea2bcc33f18915c4c7369f803c45e53b0",
-                "id": "ASB-A-241387741-9c86bde8",
-                "digest": {
-                  "function_hash": "491234445431674369959365845299383756",
-                  "length": 2934
-                },
                 "match_only_versions": [
                   "10"
-                ]
+                ],
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "ASB-A-241387741-9c86bde8",
+                "digest": {
+                  "length": 2934,
+                  "function_hash": "491234445431674369959365845299383756"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f5f24d0ea2bcc33f18915c4c7369f803c45e53b0",
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "Mfc_Transceive"
+                }
               },
               {
+                "deprecated": false,
+                "match_only_versions": [
+                  "10"
+                ],
                 "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f5f24d0ea2bcc33f18915c4c7369f803c45e53b0",
                 "id": "ASB-A-241387741-fe146e78",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "321778718133220861691615052611595777015",
                     "10690049686860309665648263714545916169",
                     "255462703431065603926902241986586911324"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "10"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/f5f24d0ea2bcc33f18915c4c7369f803c45e53b0",
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
+                }
               }
             ]
           },
@@ -1924,7 +2024,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-246932269",
@@ -1933,7 +2033,7 @@
         "A-246932269",
         "CVE-2023-20945"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -1968,41 +2068,38 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-02-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/2e4dfa6c92de30907851914add6485f8b7920968"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "phNciNfc_MfCreateXchgDataHdr",
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/2e4dfa6c92de30907851914add6485f8b7920968",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-246932269-cf4ba7bf",
                 "digest": {
-                  "function_hash": "291295663468966505317516086465492132836",
-                  "length": 359
+                  "length": 359,
+                  "function_hash": "291295663468966505317516086465492132836"
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+                  "function": "phNciNfc_MfCreateXchgDataHdr"
                 },
                 "match_only_versions": [
                   "10"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/2e4dfa6c92de30907851914add6485f8b7920968",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-246932269-ea39f7cc",
                 "digest": {
                   "line_hashes": [
@@ -2011,6 +2108,9 @@
                     "261718335795557197149375020778461234828"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
                 },
                 "match_only_versions": [
                   "10"
@@ -2023,7 +2123,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-268038643",
@@ -2032,7 +2132,7 @@
         "A-268038643",
         "CVE-2023-35671"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-09-01T00:00:00Z",
       "references": [
         {
@@ -2067,65 +2167,65 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "ID"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
-                "id": "ASB-A-268038643-78ee6475",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "110866618968501505513047877639112891999",
                     "221764726489805107389971049563589762627",
                     "278520023814604683377314502770623374671",
                     "45428150385889769144377600164922333789"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-78ee6475",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
-                "id": "ASB-A-268038643-f00b2907",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287829365925445715483659298781676756817",
                     "93922054408343538861188962430576834619",
                     "199062318457883682300576972194368110861"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-f00b2907",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onHostEmulationData",
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
-                "id": "ASB-A-268038643-f84a981c",
                 "digest": {
-                  "function_hash": "282346893729420854136991953993589179214",
-                  "length": 3419
+                  "length": 3419,
+                  "function_hash": "282346893729420854136991953993589179214"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-268038643-f84a981c",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java",
+                  "function": "onHostEmulationData"
                 }
               }
             ]
@@ -2156,66 +2256,66 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "ID"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
-                "id": "ASB-A-268038643-2b17aca5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "271055080462231680351012234498051702355",
                     "111552660683889881621406641232615389006",
                     "268906614407820728310099806307650203101",
                     "296109978503100678768439480874051096449",
                     "202336758225234101879251178291874369964"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onHostEmulationData",
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
+                  ]
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
-                "id": "ASB-A-268038643-d608cf36",
-                "digest": {
-                  "function_hash": "38986059855720312268682811721479119787",
-                  "length": 2867
-                }
-              },
-              {
+                "signature_version": "v1",
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
+                "id": "ASB-A-268038643-2b17aca5",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
-                "id": "ASB-A-268038643-ee5c0865",
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
+                }
+              },
+              {
                 "digest": {
+                  "length": 2867,
+                  "function_hash": "38986059855720312268682811721479119787"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-268038643-d608cf36",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java",
+                  "function": "onHostEmulationData"
+                }
+              },
+              {
+                "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287829365925445715483659298781676756817",
                     "93922054408343538861188962430576834619",
                     "199062318457883682300576972194368110861"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-ee5c0865",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               }
             ]
@@ -2246,66 +2346,66 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "ID"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
-                "id": "ASB-A-268038643-24a45f01",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287829365925445715483659298781676756817",
                     "93922054408343538861188962430576834619",
                     "199062318457883682300576972194368110861"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-24a45f01",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
-                "id": "ASB-A-268038643-69c6ab67",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "271055080462231680351012234498051702355",
                     "111552660683889881621406641232615389006",
                     "268906614407820728310099806307650203101",
                     "296109978503100678768439480874051096449",
                     "202336758225234101879251178291874369964"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-69c6ab67",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onHostEmulationData",
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
-                "id": "ASB-A-268038643-9bd9d88f",
                 "digest": {
-                  "function_hash": "38986059855720312268682811721479119787",
-                  "length": 2867
+                  "length": 2867,
+                  "function_hash": "38986059855720312268682811721479119787"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d6d8f79fd8d605b3cb460895a8e3a11bcf0c22b0",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-268038643-9bd9d88f",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java",
+                  "function": "onHostEmulationData"
                 }
               }
             ]
@@ -2336,65 +2436,65 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "ID"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onHostEmulationData",
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c",
-                "id": "ASB-A-268038643-0d9e4128",
                 "digest": {
-                  "function_hash": "339381844574271533070577803431177444728",
-                  "length": 3210
+                  "length": 3210,
+                  "function_hash": "339381844574271533070577803431177444728"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-268038643-0d9e4128",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java",
+                  "function": "onHostEmulationData"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c",
-                "id": "ASB-A-268038643-366dfb0f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "110866618968501505513047877639112891999",
                     "221764726489805107389971049563589762627",
                     "278520023814604683377314502770623374671",
                     "45428150385889769144377600164922333789"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-366dfb0f",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c",
-                "id": "ASB-A-268038643-36a40dd0",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287829365925445715483659298781676756817",
                     "93922054408343538861188962430576834619",
                     "199062318457883682300576972194368110861"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/be02c1590cd11eb6c045bac7c30bd3ec8c22e80c",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-36a40dd0",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               }
             ]
@@ -2425,65 +2525,65 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-09-01",
             "types": [
               "ID"
             ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
-                "id": "ASB-A-268038643-404d49c5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "110866618968501505513047877639112891999",
                     "221764726489805107389971049563589762627",
                     "278520023814604683377314502770623374671",
                     "45428150385889769144377600164922333789"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onHostEmulationData",
-                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
+                  ]
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
-                "id": "ASB-A-268038643-6c98d179",
-                "digest": {
-                  "function_hash": "282346893729420854136991953993589179214",
-                  "length": 3419
-                }
-              },
-              {
+                "signature_version": "v1",
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
+                "id": "ASB-A-268038643-404d49c5",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
-                "id": "ASB-A-268038643-9258a251",
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java"
+                }
+              },
+              {
                 "digest": {
+                  "length": 3419,
+                  "function_hash": "282346893729420854136991953993589179214"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-268038643-6c98d179",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/HostEmulationManager.java",
+                  "function": "onHostEmulationData"
+                }
+              },
+              {
+                "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "287829365925445715483659298781676756817",
                     "93922054408343538861188962430576834619",
                     "199062318457883682300576972194368110861"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6cb53d963d376b97963120a4d2c7df961789e428",
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-268038643-9258a251",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               }
             ]
@@ -2493,7 +2593,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-168712890",
@@ -2502,7 +2602,7 @@
         "A-168712890",
         "CVE-2021-0542"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -2537,23 +2637,20 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2021-06-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/6d372148e7e907552cd9cc121afcf415c50f645a"
             ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6d372148e7e907552cd9cc121afcf415c50f645a",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "PUB-A-168712890-4ce839b4",
                 "digest": {
                   "line_hashes": [
@@ -2563,21 +2660,24 @@
                     "202190341104927962005410082613683753289"
                   ],
                   "threshold": 0.9
+                },
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "buildCancelIntent",
-                  "file": "src/com/android/nfc/beam/BeamTransferManager.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/6d372148e7e907552cd9cc121afcf415c50f645a",
+                "signature_type": "Function",
+                "signature_version": "v1",
                 "id": "PUB-A-168712890-dc2f4374",
                 "digest": {
-                  "function_hash": "74758063415640172838399745803873282125",
-                  "length": 444
+                  "length": 444,
+                  "function_hash": "74758063415640172838399745803873282125"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/beam/BeamTransferManager.java",
+                  "function": "buildCancelIntent"
                 }
               }
             ]
@@ -2587,7 +2687,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-181346545",
@@ -2596,7 +2696,7 @@
         "A-181346545",
         "CVE-2021-0996"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -2631,40 +2731,33 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2021-12-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/d0036c14c0a6da7f0567f90052ecbbd4657e42f5"
             ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "HciEventManager::nfaHciCallback",
-                  "file": "nci/jni/HciEventManager.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d0036c14c0a6da7f0567f90052ecbbd4657e42f5",
-                "id": "PUB-A-181346545-3dc4e98f",
                 "digest": {
-                  "function_hash": "172923655756302291063356266705277028508",
-                  "length": 1127
-                }
+                  "length": 1127,
+                  "function_hash": "172923655756302291063356266705277028508"
+                },
+                "target": {
+                  "file": "nci/jni/HciEventManager.cpp",
+                  "function": "HciEventManager::nfaHciCallback"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "PUB-A-181346545-3dc4e98f",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d0036c14c0a6da7f0567f90052ecbbd4657e42f5",
+                "deprecated": false
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "nci/jni/HciEventManager.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d0036c14c0a6da7f0567f90052ecbbd4657e42f5",
-                "id": "PUB-A-181346545-ac6d5093",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "318035084337290619674740155915310510867",
                     "86137731946867326805606705081369926130",
@@ -2684,9 +2777,16 @@
                     "283554715526979460669321300352238192783",
                     "306863464749530576741797108917293002611",
                     "243786863521775750259705421927072140392"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "nci/jni/HciEventManager.cpp"
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "PUB-A-181346545-ac6d5093",
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/d0036c14c0a6da7f0567f90052ecbbd4657e42f5",
+                "deprecated": false
               }
             ]
           },
@@ -2695,7 +2795,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-199291025",
@@ -2704,7 +2804,7 @@
         "A-199291025",
         "CVE-2022-20199"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -2743,76 +2843,76 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2022-12-01",
             "types": [
               "ID"
             ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705"
             ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "writeToParcel",
-                  "file": "core/java/android/nfc/Tag.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-44cce820",
                 "digest": {
-                  "function_hash": "228910055993601006408260322859620944637",
-                  "length": 370
+                  "length": 370,
+                  "function_hash": "228910055993601006408260322859620944637"
+                },
+                "target": {
+                  "file": "core/java/android/nfc/Tag.java",
+                  "function": "writeToParcel"
                 },
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "createMockTag",
-                  "file": "core/java/android/nfc/Tag.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-97262f16",
                 "digest": {
-                  "function_hash": "288723020152768491564380649144350048909",
-                  "length": 118
+                  "length": 118,
+                  "function_hash": "288723020152768491564380649144350048909"
+                },
+                "target": {
+                  "file": "core/java/android/nfc/Tag.java",
+                  "function": "createMockTag"
                 },
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "Tag",
-                  "file": "core/java/android/nfc/Tag.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705",
+                "target": {
+                  "file": "core/java/android/nfc/Tag.java",
+                  "function": "Tag"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-dca2ea42",
                 "digest": {
-                  "function_hash": "75574334044654999722375080134215737420",
-                  "length": 580
-                }
+                  "length": 580,
+                  "function_hash": "75574334044654999722375080134215737420"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "core/java/android/nfc/Tag.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "PUB-A-199291025-ea765a09",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "75826017547751689359906288168362579942",
                     "218527116716407971086642852943158250102",
@@ -2857,23 +2957,23 @@
                     "44489724610428113554830747374304792184",
                     "264084279298751113204370848310166624635",
                     "297008407134199780576098592359077813224"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "createFromParcel",
-                  "file": "core/java/android/nfc/Tag.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/90d2c04d988ea90138042d85f861a40afb76f705",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-f49eae44",
                 "digest": {
-                  "function_hash": "76521651657170629098724294348020444917",
-                  "length": 435
+                  "length": 435,
+                  "function_hash": "76521651657170629098724294348020444917"
+                },
+                "target": {
+                  "file": "core/java/android/nfc/Tag.java",
+                  "function": "createFromParcel"
                 },
                 "match_only_versions": [
                   "13"
@@ -2907,40 +3007,40 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2022-12-01",
             "types": [
               "ID"
             ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70"
             ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isTagUpToDate",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "isTagUpToDate"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-29b75807",
                 "digest": {
-                  "function_hash": "241957864946107177924050211226227948049",
-                  "length": 414
-                }
+                  "length": 414,
+                  "function_hash": "241957864946107177924050211226227948049"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/nfc/NfcService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "PUB-A-199291025-56eb18f1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "236523874113583041612037156495058417607",
                     "9488410708926967528297828831063981115",
@@ -2986,90 +3086,90 @@
                     "308631845498502147212906414349756619276",
                     "130763100322956340752847333220678107880",
                     "63938213896158703243768757032788788490"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "rediscover",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-5b3ddecd",
                 "digest": {
-                  "function_hash": "178183139950416214276513024474244395053",
-                  "length": 596
+                  "length": 596,
+                  "function_hash": "178183139950416214276513024474244395053"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "rediscover"
                 },
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "dispatchTagEndpoint",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "dispatchTagEndpoint"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-5ca28282",
                 "digest": {
-                  "function_hash": "225135728256752818609898632815053692446",
-                  "length": 2917
-                }
+                  "length": 2917,
+                  "function_hash": "225135728256752818609898632815053692446"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "handleMessage",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "handleMessage"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-950bb74f",
                 "digest": {
-                  "function_hash": "157350156200360997835188452343344244994",
-                  "length": 8575
-                }
+                  "length": 8575,
+                  "function_hash": "157350156200360997835188452343344244994"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onTagDisconnected",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
                 "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-cb5bde8e",
                 "digest": {
-                  "function_hash": "95946657837689939603111401885012982257",
-                  "length": 55
+                  "length": 55,
+                  "function_hash": "95946657837689939603111401885012982257"
+                },
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "onTagDisconnected"
                 },
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "setTagUpToDate",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70",
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "setTagUpToDate"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "PUB-A-199291025-d3759684",
                 "digest": {
-                  "function_hash": "42542488920067912225459150232632256623",
-                  "length": 184
-                }
+                  "length": 184,
+                  "function_hash": "42542488920067912225459150232632256623"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/701f997db75412ae1360e2290c7aac68a5105f70"
               }
             ]
           },
@@ -3078,7 +3178,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-235863754",
@@ -3087,7 +3187,7 @@
         "A-235863754",
         "CVE-2023-21183"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -3118,147 +3218,140 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2023-06-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c"
             ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/P2pLinkManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-0a19d503",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "113368717759628274477408347327049385499",
                     "106236305416753461708058851782728867857",
                     "123952664856933728363103700178935683844",
                     "38188645671126462879146263802154555363",
                     "66867937003104838469130127728366996005"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "NfcService",
-                  "file": "src/com/android/nfc/NfcService.java"
+                  ]
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-3a3d9bd4",
-                "digest": {
-                  "function_hash": "95551004231875802888955028014464940643",
-                  "length": 6413
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getForegroundUids",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-44e04203",
-                "digest": {
-                  "function_hash": "151596844345028927167209382184510404745",
-                  "length": 260
-                },
-                "match_only_versions": [
-                  "13-next"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onForegroundActivitiesChanged",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-4c397918",
-                "digest": {
-                  "function_hash": "269906288094771997997078629465090375353",
-                  "length": 1207
-                },
-                "match_only_versions": [
-                  "13-next"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "NfcDispatcher",
-                  "file": "src/com/android/nfc/NfcDispatcher.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-59790cc7",
-                "digest": {
-                  "function_hash": "148965707076149533274898962024070495598",
-                  "length": 962
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "EnabledNfcFServices",
-                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-5c573572",
-                "digest": {
-                  "function_hash": "251785830487760310581530692788314388116",
-                  "length": 228
-                },
-                "match_only_versions": [
-                  "13-next"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "P2pLinkManager",
-                  "file": "src/com/android/nfc/P2pLinkManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-629ac9ca",
-                "digest": {
-                  "function_hash": "153930257536859515901092612258230180703",
-                  "length": 921
-                },
-                "match_only_versions": [
-                  "13-next"
-                ]
-              },
-              {
                 "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcDispatcher.java"
-                },
+                "id": "PUB-A-235863754-0a19d503",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-67359f4d",
+                "target": {
+                  "file": "src/com/android/nfc/P2pLinkManager.java"
+                }
+              },
+              {
                 "digest": {
+                  "length": 6413,
+                  "function_hash": "95551004231875802888955028014464940643"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-3a3d9bd4",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "NfcService"
+                }
+              },
+              {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "getForegroundUids"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-44e04203",
+                "digest": {
+                  "length": 260,
+                  "function_hash": "151596844345028927167209382184510404745"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "match_only_versions": [
+                  "13-next"
+                ]
+              },
+              {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "onForegroundActivitiesChanged"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-4c397918",
+                "digest": {
+                  "length": 1207,
+                  "function_hash": "269906288094771997997078629465090375353"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "match_only_versions": [
+                  "13-next"
+                ]
+              },
+              {
+                "digest": {
+                  "length": 962,
+                  "function_hash": "148965707076149533274898962024070495598"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-59790cc7",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcDispatcher.java",
+                  "function": "NfcDispatcher"
+                }
+              },
+              {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java",
+                  "function": "EnabledNfcFServices"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-5c573572",
+                "digest": {
+                  "length": 228,
+                  "function_hash": "251785830487760310581530692788314388116"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "match_only_versions": [
+                  "13-next"
+                ]
+              },
+              {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/P2pLinkManager.java",
+                  "function": "P2pLinkManager"
+                },
+                "signature_type": "Function",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-629ac9ca",
+                "digest": {
+                  "length": 921,
+                  "function_hash": "153930257536859515901092612258230180703"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "match_only_versions": [
+                  "13-next"
+                ]
+              },
+              {
+                "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "210382596190231453337606575910378429006",
                     "51020232370656901331264890752182517429",
@@ -3286,20 +3379,27 @@
                     "4986412396634294708778054089070692382",
                     "99711005680037310866119821800818736443",
                     "153604852517654474602115004349604321806"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-67359f4d",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcDispatcher.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/nfc/cardemulation/PreferredServices.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "PUB-A-235863754-6d624ec1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "33277098378610753753574125478525365266",
                     "106206246771678479333480200358196409364",
@@ -3309,41 +3409,34 @@
                     "139824083821349149528410798838689598740",
                     "197049685357023789240623603921657373834",
                     "328830284262320936423291937817380222128"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "ForegroundUtils"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "ForegroundUtils",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-98355911",
                 "digest": {
-                  "function_hash": "46699237657416907649158421535587550500",
-                  "length": 233
+                  "length": 233,
+                  "function_hash": "46699237657416907649158421535587550500"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-9c4996de",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "141049546801717307847681922068922541697",
                     "56970147429017582244198714648678274608",
@@ -3354,20 +3447,27 @@
                     "195081792710810610799861562847493522497",
                     "199865999683196455789576721816343007740",
                     "217419274733756772061396744960172223795"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-9c4996de",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/nfc/ForegroundUtils.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "PUB-A-235863754-a5d5e909",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "206818311893447892725277503258120020257",
                     "138872056766741854602359000474839509716",
@@ -3469,23 +3569,16 @@
                     "258746052203952224224504567397747831641",
                     "55624969711793275362238144939346720168",
                     "85402613448957525940769670694010037105"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-b04ec37e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "116515123230020406264291184691781453251",
                     "338691078231962965822518594318811708058",
@@ -3501,93 +3594,100 @@
                     "151428888945119188542919567687632998671",
                     "254338628593764171373775168773021314319",
                     "272920679159327023947919623392645685958"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-b04ec37e",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "onProcessDied"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onProcessDied",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-c92c8e34",
                 "digest": {
-                  "function_hash": "86766545137959801990306582498579675298",
-                  "length": 239
+                  "length": 239,
+                  "function_hash": "86766545137959801990306582498579675298"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "getInstance"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "getInstance",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-dc86ede0",
                 "digest": {
-                  "function_hash": "114315904009849912722183282979987656879",
-                  "length": 52
+                  "length": 52,
+                  "function_hash": "114315904009849912722183282979987656879"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
               },
               {
+                "digest": {
+                  "length": 478,
+                  "function_hash": "312261398737595737790716776500494988536"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "PreferredServices",
-                  "file": "src/com/android/nfc/cardemulation/PreferredServices.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-fb4cc924",
-                "digest": {
-                  "function_hash": "312261398737595737790716776500494988536",
-                  "length": 478
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/PreferredServices.java",
+                  "function": "PreferredServices"
                 }
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcDispatcher.java",
+                  "function": "resumeAppSwitches"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "resumeAppSwitches",
-                  "file": "src/com/android/nfc/NfcDispatcher.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-fe662c3e",
                 "digest": {
-                  "function_hash": "150845043335634371036321878535780902454",
-                  "length": 97
+                  "length": 97,
+                  "function_hash": "150845043335634371036321878535780902454"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "isInForegroundLocked"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "isInForegroundLocked",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-ff546d83",
                 "digest": {
-                  "function_hash": "138216242949661086136514442893531237393",
-                  "length": 401
+                  "length": 401,
+                  "function_hash": "138216242949661086136514442893531237393"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13-next"
                 ]
@@ -3620,40 +3720,33 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2023-06-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c"
             ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
+                "digest": {
+                  "length": 478,
+                  "function_hash": "312261398737595737790716776500494988536"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "PreferredServices",
-                  "file": "src/com/android/nfc/cardemulation/PreferredServices.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-1024d1a6",
-                "digest": {
-                  "function_hash": "312261398737595737790716776500494988536",
-                  "length": 478
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/PreferredServices.java",
+                  "function": "PreferredServices"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-112319d7",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "116515123230020406264291184691781453251",
                     "338691078231962965822518594318811708058",
@@ -3669,74 +3762,81 @@
                     "151428888945119188542919567687632998671",
                     "254338628593764171373775168773021314319",
                     "272920679159327023947919623392645685958"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-112319d7",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java"
                 }
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "onProcessDied"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onProcessDied",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-19c19bdb",
                 "digest": {
-                  "function_hash": "86766545137959801990306582498579675298",
-                  "length": 239
+                  "length": 239,
+                  "function_hash": "86766545137959801990306582498579675298"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcDispatcher.java",
+                  "function": "resumeAppSwitches"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "resumeAppSwitches",
-                  "file": "src/com/android/nfc/NfcDispatcher.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-3d4758a1",
                 "digest": {
-                  "function_hash": "150845043335634371036321878535780902454",
-                  "length": 97
+                  "length": 97,
+                  "function_hash": "150845043335634371036321878535780902454"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "getForegroundUids"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "getForegroundUids",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-4232f9a3",
                 "digest": {
-                  "function_hash": "151596844345028927167209382184510404745",
-                  "length": 260
+                  "length": 260,
+                  "function_hash": "151596844345028927167209382184510404745"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/nfc/ForegroundUtils.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "PUB-A-235863754-4cb31b37",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "206818311893447892725277503258120020257",
                     "138872056766741854602359000474839509716",
@@ -3838,61 +3938,54 @@
                     "258746052203952224224504567397747831641",
                     "55624969711793275362238144939346720168",
                     "85402613448957525940769670694010037105"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/P2pLinkManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-5c4ccfd6",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "113368717759628274477408347327049385499",
                     "106236305416753461708058851782728867857",
                     "123952664856933728363103700178935683844",
                     "38188645671126462879146263802154555363",
                     "66867937003104838469130127728366996005"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-5c4ccfd6",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/P2pLinkManager.java"
                 }
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "isInForegroundLocked"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "isInForegroundLocked",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-5d4696e6",
                 "digest": {
-                  "function_hash": "138216242949661086136514442893531237393",
-                  "length": 401
+                  "length": 401,
+                  "function_hash": "138216242949661086136514442893531237393"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/NfcDispatcher.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-66050429",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "210382596190231453337606575910378429006",
                     "51020232370656901331264890752182517429",
@@ -3920,20 +4013,27 @@
                     "4986412396634294708778054089070692382",
                     "99711005680037310866119821800818736443",
                     "153604852517654474602115004349604321806"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-66050429",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcDispatcher.java"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "deprecated": false,
                 "target": {
                   "file": "src/com/android/nfc/cardemulation/PreferredServices.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
                 "id": "PUB-A-235863754-6d1b31ed",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "33277098378610753753574125478525365266",
                     "106206246771678479333480200358196409364",
@@ -3943,56 +4043,49 @@
                     "139824083821349149528410798838689598740",
                     "197049685357023789240623603921657373834",
                     "328830284262320936423291937817380222128"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/P2pLinkManager.java",
+                  "function": "P2pLinkManager"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "P2pLinkManager",
-                  "file": "src/com/android/nfc/P2pLinkManager.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-7c0c20e2",
                 "digest": {
-                  "function_hash": "153930257536859515901092612258230180703",
-                  "length": 921
+                  "length": 921,
+                  "function_hash": "153930257536859515901092612258230180703"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "digest": {
+                  "length": 962,
+                  "function_hash": "148965707076149533274898962024070495598"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "NfcDispatcher",
-                  "file": "src/com/android/nfc/NfcDispatcher.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-8d29c816",
-                "digest": {
-                  "function_hash": "148965707076149533274898962024070495598",
-                  "length": 962
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcDispatcher.java",
+                  "function": "NfcDispatcher"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
-                "id": "PUB-A-235863754-94c3dc11",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "141049546801717307847681922068922541697",
                     "56970147429017582244198714648678274608",
@@ -4003,95 +4096,102 @@
                     "195081792710810610799861562847493522497",
                     "199865999683196455789576721816343007740",
                     "217419274733756772061396744960172223795"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
+                "signature_type": "Line",
+                "signature_version": "v1",
+                "id": "PUB-A-235863754-94c3dc11",
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java"
                 }
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "ForegroundUtils"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "ForegroundUtils",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-a45c73c5",
                 "digest": {
-                  "function_hash": "46699237657416907649158421535587550500",
-                  "length": 233
+                  "length": 233,
+                  "function_hash": "46699237657416907649158421535587550500"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java",
+                  "function": "EnabledNfcFServices"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "EnabledNfcFServices",
-                  "file": "src/com/android/nfc/cardemulation/EnabledNfcFServices.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-a6f48ae6",
                 "digest": {
-                  "function_hash": "251785830487760310581530692788314388116",
-                  "length": 228
+                  "length": 228,
+                  "function_hash": "251785830487760310581530692788314388116"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "getInstance"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "getInstance",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-b993cc85",
                 "digest": {
-                  "function_hash": "114315904009849912722183282979987656879",
-                  "length": 52
+                  "length": 52,
+                  "function_hash": "114315904009849912722183282979987656879"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/ForegroundUtils.java",
+                  "function": "onForegroundActivitiesChanged"
+                },
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onForegroundActivitiesChanged",
-                  "file": "src/com/android/nfc/ForegroundUtils.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-e44fb1b3",
                 "digest": {
-                  "function_hash": "269906288094771997997078629465090375353",
-                  "length": 1207
+                  "length": 1207,
+                  "function_hash": "269906288094771997997078629465090375353"
                 },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "match_only_versions": [
                   "13"
                 ]
               },
               {
+                "digest": {
+                  "length": 6413,
+                  "function_hash": "95551004231875802888955028014464940643"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "NfcService",
-                  "file": "src/com/android/nfc/NfcService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Nfc/+/8edf64d5f3f1c5500cdb083e01764e957776b27c",
                 "id": "PUB-A-235863754-ef857b56",
-                "digest": {
-                  "function_hash": "95551004231875802888955028014464940643",
-                  "length": 6413
+                "deprecated": false,
+                "target": {
+                  "file": "src/com/android/nfc/NfcService.java",
+                  "function": "NfcService"
                 }
               }
             ]
@@ -4101,7 +4201,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

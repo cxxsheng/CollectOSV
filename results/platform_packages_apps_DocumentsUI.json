@@ -7,7 +7,7 @@
         "A-233605527",
         "CVE-2024-43765"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2025-01-01T00:00:00Z",
       "references": [
         {
@@ -43,23 +43,10 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2025-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
-                "id": "ASB-A-233605527-7bc0b080",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "271386596174838460193387806319468664293",
@@ -72,47 +59,47 @@
                     "260913852173745355656013809836594692834"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
+                "signature_type": "Line",
                 "target": {
-                  "function": "onCreateDialog",
                   "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
-                "id": "ASB-A-233605527-7de0e05e",
-                "digest": {
-                  "function_hash": "99751798087559639081598668288973230162",
-                  "length": 1314
-                }
+                "id": "ASB-A-233605527-7bc0b080",
+                "signature_version": "v1"
               },
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
+                "deprecated": false,
+                "digest": {
+                  "length": 1314,
+                  "function_hash": "99751798087559639081598668288973230162"
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/documentsui/BaseActivity.java"
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java",
+                  "function": "onCreateDialog"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
-                "id": "ASB-A-233605527-b2cb59af",
-                "digest": {
-                  "function_hash": "169336749586218159473139282774134854889",
-                  "length": 4243
-                }
+                "id": "ASB-A-233605527-7de0e05e",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/BaseActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
-                "id": "ASB-A-233605527-bd84f76c",
+                "deprecated": false,
+                "digest": {
+                  "length": 4243,
+                  "function_hash": "169336749586218159473139282774134854889"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/BaseActivity.java",
+                  "function": "onCreate"
+                },
+                "id": "ASB-A-233605527-b2cb59af",
+                "signature_version": "v1"
+              },
+              {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "139897962216699736742181233425162167032",
@@ -120,8 +107,21 @@
                     "77262789827853445517462766554704932148"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/documentsui/BaseActivity.java"
+                },
+                "id": "ASB-A-233605527-bd84f76c",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f19514065f9807f579d3cbb45feee96184f36411"
             ]
           },
           "database_specific": {
@@ -151,23 +151,10 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2025-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
-                "id": "ASB-A-233605527-0a4657b4",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "276381530802206527641111603323052654265",
@@ -180,32 +167,32 @@
                     "260913852173745355656013809836594692834"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
+                "signature_type": "Line",
                 "target": {
-                  "function": "onCreateDialog",
                   "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
-                "id": "ASB-A-233605527-615cedc0",
-                "digest": {
-                  "function_hash": "99751798087559639081598668288973230162",
-                  "length": 1314
-                }
+                "id": "ASB-A-233605527-0a4657b4",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/BaseActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
-                "id": "ASB-A-233605527-819591f4",
+                "deprecated": false,
+                "digest": {
+                  "length": 1314,
+                  "function_hash": "99751798087559639081598668288973230162"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java",
+                  "function": "onCreateDialog"
+                },
+                "id": "ASB-A-233605527-615cedc0",
+                "signature_version": "v1"
+              },
+              {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "139897962216699736742181233425162167032",
@@ -213,23 +200,36 @@
                     "77262789827853445517462766554704932148"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
+                "signature_type": "Line",
                 "target": {
-                  "function": "onCreate",
                   "file": "src/com/android/documentsui/BaseActivity.java"
                 },
-                "deprecated": false,
+                "id": "ASB-A-233605527-819591f4",
+                "signature_version": "v1"
+              },
+              {
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9",
-                "id": "ASB-A-233605527-ea35dca7",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "298408937990283233481199121595131026300",
-                  "length": 4127
-                }
+                  "length": 4127,
+                  "function_hash": "298408937990283233481199121595131026300"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/BaseActivity.java",
+                  "function": "onCreate"
+                },
+                "id": "ASB-A-233605527-ea35dca7",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/2de5d72a3cd83be5adafd00bfef50850784c21c9"
             ]
           },
           "database_specific": {
@@ -259,23 +259,10 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2025-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/BaseActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
-                "id": "ASB-A-233605527-1a673a0e",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "139897962216699736742181233425162167032",
@@ -283,47 +270,47 @@
                     "77262789827853445517462766554704932148"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreateDialog",
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
-                "id": "ASB-A-233605527-2e65bd43",
-                "digest": {
-                  "function_hash": "99751798087559639081598668288973230162",
-                  "length": 1314
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "signature_type": "Line",
                 "target": {
-                  "function": "onCreate",
                   "file": "src/com/android/documentsui/BaseActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
-                "id": "ASB-A-233605527-5d281394",
-                "digest": {
-                  "function_hash": "298408937990283233481199121595131026300",
-                  "length": 4127
-                }
+                "id": "ASB-A-233605527-1a673a0e",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
-                "id": "ASB-A-233605527-add44acb",
+                "deprecated": false,
+                "digest": {
+                  "length": 1314,
+                  "function_hash": "99751798087559639081598668288973230162"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java",
+                  "function": "onCreateDialog"
+                },
+                "id": "ASB-A-233605527-2e65bd43",
+                "signature_version": "v1"
+              },
+              {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
+                "deprecated": false,
+                "digest": {
+                  "length": 4127,
+                  "function_hash": "298408937990283233481199121595131026300"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/BaseActivity.java",
+                  "function": "onCreate"
+                },
+                "id": "ASB-A-233605527-5d281394",
+                "signature_version": "v1"
+              },
+              {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "276381530802206527641111603323052654265",
@@ -336,8 +323,21 @@
                     "260913852173745355656013809836594692834"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
+                },
+                "id": "ASB-A-233605527-add44acb",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/14c45fc9056f9841e51533fda4805e8ee5cdce51"
             ]
           },
           "database_specific": {
@@ -402,23 +402,10 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2025-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/BaseActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
-                "id": "ASB-A-233605527-195e02a4",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "140832134287710410728917235462454892895",
@@ -430,32 +417,32 @@
                     "77262789827853445517462766554704932148"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
+                "signature_type": "Line",
                 "target": {
-                  "function": "onCreate",
                   "file": "src/com/android/documentsui/BaseActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
-                "id": "ASB-A-233605527-38961b6b",
-                "digest": {
-                  "function_hash": "7399082904591817902057891077307787146",
-                  "length": 4028
-                }
+                "id": "ASB-A-233605527-195e02a4",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
-                "id": "ASB-A-233605527-4d7a7b44",
+                "deprecated": false,
+                "digest": {
+                  "length": 4028,
+                  "function_hash": "7399082904591817902057891077307787146"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/BaseActivity.java",
+                  "function": "onCreate"
+                },
+                "id": "ASB-A-233605527-38961b6b",
+                "signature_version": "v1"
+              },
+              {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "271386596174838460193387806319468664293",
@@ -468,23 +455,36 @@
                     "260913852173745355656013809836594692834"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
+                "signature_type": "Line",
                 "target": {
-                  "function": "onCreateDialog",
                   "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
                 },
-                "deprecated": false,
+                "id": "ASB-A-233605527-4d7a7b44",
+                "signature_version": "v1"
+              },
+              {
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
-                "id": "ASB-A-233605527-bb4d4a70",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "99751798087559639081598668288973230162",
-                  "length": 1314
-                }
+                  "length": 1314,
+                  "function_hash": "99751798087559639081598668288973230162"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java",
+                  "function": "onCreateDialog"
+                },
+                "id": "ASB-A-233605527-bb4d4a70",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c"
             ]
           },
           "database_specific": {
@@ -514,53 +514,40 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2025-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreateDialog",
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
+                "deprecated": false,
+                "digest": {
+                  "length": 1314,
+                  "function_hash": "99751798087559639081598668288973230162"
+                },
+                "signature_type": "Function",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java",
+                  "function": "onCreateDialog"
+                },
                 "id": "ASB-A-233605527-0334497b",
-                "digest": {
-                  "function_hash": "99751798087559639081598668288973230162",
-                  "length": 1314
-                }
+                "signature_version": "v1"
               },
               {
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
+                "deprecated": false,
+                "digest": {
+                  "length": 4028,
+                  "function_hash": "7399082904591817902057891077307787146"
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/documentsui/BaseActivity.java"
+                  "file": "src/com/android/documentsui/BaseActivity.java",
+                  "function": "onCreate"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
                 "id": "ASB-A-233605527-4d424a17",
-                "digest": {
-                  "function_hash": "7399082904591817902057891077307787146",
-                  "length": 4028
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/BaseActivity.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
-                "id": "ASB-A-233605527-771a40d2",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "140832134287710410728917235462454892895",
@@ -572,17 +559,17 @@
                     "77262789827853445517462766554704932148"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/documentsui/BaseActivity.java"
+                },
+                "id": "ASB-A-233605527-771a40d2",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c",
-                "id": "ASB-A-233605527-a9cfcd31",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "271386596174838460193387806319468664293",
@@ -595,8 +582,21 @@
                     "260913852173745355656013809836594692834"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ConfirmFragment.java"
+                },
+                "id": "ASB-A-233605527-a9cfcd31",
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-01-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f5f4b53ad43b891cc04ef8bd059e28fba1cc44c"
             ]
           },
           "database_specific": {
@@ -604,7 +604,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-352294617",
@@ -613,7 +613,7 @@
         "A-352294617",
         "CVE-2025-22439"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2025-04-01T00:00:00Z",
       "references": [
         {
@@ -648,42 +648,28 @@
             "15-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
-            ],
-            "spl": "2025-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/30596588b508f1e5e97631470af479214898064a"
             ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onLastAccessedStackLoaded",
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/30596588b508f1e5e97631470af479214898064a",
-                "id": "ASB-A-352294617-2f82ceaa",
                 "digest": {
-                  "function_hash": "235827959310678841809653468090094582977",
-                  "length": 185
+                  "length": 185,
+                  "function_hash": "235827959310678841809653468090094582977"
                 },
-                "match_only_versions": [
-                  "15-next"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/30596588b508f1e5e97631470af479214898064a",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java",
+                  "function": "onLastAccessedStackLoaded"
+                },
+                "id": "ASB-A-352294617-2f82ceaa",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/30596588b508f1e5e97631470af479214898064a",
-                "id": "ASB-A-352294617-7b550bbc",
                 "digest": {
                   "line_hashes": [
                     "171691179244059375517981645953710485989",
@@ -693,10 +679,18 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "15-next"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/30596588b508f1e5e97631470af479214898064a",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
+                },
+                "id": "ASB-A-352294617-7b550bbc",
+                "signature_version": "v1"
               }
+            ],
+            "severity": "High",
+            "spl": "2025-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/30596588b508f1e5e97631470af479214898064a"
             ]
           },
           "database_specific": {
@@ -725,42 +719,28 @@
             "15"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
-            ],
-            "spl": "2025-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f051c7b87a5150edb2b851eba15793ef9f0ae54"
             ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onLastAccessedStackLoaded",
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f051c7b87a5150edb2b851eba15793ef9f0ae54",
-                "id": "ASB-A-352294617-58d73c54",
                 "digest": {
-                  "function_hash": "235827959310678841809653468090094582977",
-                  "length": 185
+                  "length": 185,
+                  "function_hash": "235827959310678841809653468090094582977"
                 },
-                "match_only_versions": [
-                  "15"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f051c7b87a5150edb2b851eba15793ef9f0ae54",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java",
+                  "function": "onLastAccessedStackLoaded"
+                },
+                "id": "ASB-A-352294617-58d73c54",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f051c7b87a5150edb2b851eba15793ef9f0ae54",
-                "id": "ASB-A-352294617-ebcc2007",
                 "digest": {
                   "line_hashes": [
                     "171691179244059375517981645953710485989",
@@ -770,10 +750,18 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "15"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f051c7b87a5150edb2b851eba15793ef9f0ae54",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
+                },
+                "id": "ASB-A-352294617-ebcc2007",
+                "signature_version": "v1"
               }
+            ],
+            "severity": "High",
+            "spl": "2025-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/0f051c7b87a5150edb2b851eba15793ef9f0ae54"
             ]
           },
           "database_specific": {
@@ -802,25 +790,13 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
-            ],
-            "spl": "2025-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/3c94e70a1d0176dc86dd051630017676c09499fb"
             ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/3c94e70a1d0176dc86dd051630017676c09499fb",
-                "id": "ASB-A-352294617-1701e761",
                 "digest": {
                   "line_hashes": [
                     "171691179244059375517981645953710485989",
@@ -830,37 +806,31 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/3c94e70a1d0176dc86dd051630017676c09499fb",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
+                },
+                "id": "ASB-A-352294617-1701e761",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onStackLoaded",
-                  "file": "src/com/android/documentsui/AbstractActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
-                "id": "ASB-A-352294617-42782f08",
                 "digest": {
-                  "function_hash": "98852058868668271256027859289938661797",
-                  "length": 460
+                  "length": 460,
+                  "function_hash": "98852058868668271256027859289938661797"
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
+                "target": {
+                  "file": "src/com/android/documentsui/AbstractActionHandler.java",
+                  "function": "onStackLoaded"
+                },
+                "id": "ASB-A-352294617-42782f08",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/AbstractActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
-                "id": "ASB-A-352294617-63f1ced3",
                 "digest": {
                   "line_hashes": [
                     "142457914429796101033230524321505558904",
@@ -888,55 +858,46 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
                 "target": {
-                  "function": "launchToDocument",
                   "file": "src/com/android/documentsui/AbstractActionHandler.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
-                "id": "ASB-A-352294617-8eae6752",
-                "digest": {
-                  "function_hash": "220779301589136654623767168578623837325",
-                  "length": 176
-                },
-                "match_only_versions": [
-                  "13"
-                ]
+                "id": "ASB-A-352294617-63f1ced3",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "launchToInitialUri",
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
-                "id": "ASB-A-352294617-945e32c4",
                 "digest": {
-                  "function_hash": "290490423837355950130854104193132497137",
-                  "length": 353
+                  "length": 176,
+                  "function_hash": "220779301589136654623767168578623837325"
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
+                "target": {
+                  "file": "src/com/android/documentsui/AbstractActionHandler.java",
+                  "function": "launchToDocument"
+                },
+                "id": "ASB-A-352294617-8eae6752",
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 353,
+                  "function_hash": "290490423837355950130854104193132497137"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java",
+                  "function": "launchToInitialUri"
+                },
+                "id": "ASB-A-352294617-945e32c4",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
-                "id": "ASB-A-352294617-956c1542",
                 "digest": {
                   "line_hashes": [
                     "146900902099775877305517027233147741432",
@@ -975,28 +936,34 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
+                },
+                "id": "ASB-A-352294617-956c1542",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onLastAccessedStackLoaded",
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/3c94e70a1d0176dc86dd051630017676c09499fb",
-                "id": "ASB-A-352294617-df1f2b05",
                 "digest": {
-                  "function_hash": "235827959310678841809653468090094582977",
-                  "length": 185
+                  "length": 185,
+                  "function_hash": "235827959310678841809653468090094582977"
                 },
-                "match_only_versions": [
-                  "13"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/3c94e70a1d0176dc86dd051630017676c09499fb",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java",
+                  "function": "onLastAccessedStackLoaded"
+                },
+                "id": "ASB-A-352294617-df1f2b05",
+                "signature_version": "v1"
               }
+            ],
+            "severity": "High",
+            "spl": "2025-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/d560a29f2713717cf33960a1c0e115fdea448d70",
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/3c94e70a1d0176dc86dd051630017676c09499fb"
             ]
           },
           "database_specific": {
@@ -1025,40 +992,28 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
-            ],
-            "spl": "2025-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
-              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/b446bcc230b16a3171b70165521144e06b98bdfe"
             ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "launchToInitialUri",
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
-                "id": "ASB-A-352294617-58463ecf",
                 "digest": {
-                  "function_hash": "250495507411243623722516825665214863996",
-                  "length": 529
-                }
+                  "length": 529,
+                  "function_hash": "250495507411243623722516825665214863996"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java",
+                  "function": "launchToInitialUri"
+                },
+                "id": "ASB-A-352294617-58463ecf",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/b446bcc230b16a3171b70165521144e06b98bdfe",
-                "id": "ASB-A-352294617-90a29172",
                 "digest": {
                   "line_hashes": [
                     "171691179244059375517981645953710485989",
@@ -1068,37 +1023,31 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/b446bcc230b16a3171b70165521144e06b98bdfe",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
+                },
+                "id": "ASB-A-352294617-90a29172",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "launchToDocument",
-                  "file": "src/com/android/documentsui/AbstractActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
-                "id": "ASB-A-352294617-a888f100",
                 "digest": {
-                  "function_hash": "220779301589136654623767168578623837325",
-                  "length": 176
+                  "length": 176,
+                  "function_hash": "220779301589136654623767168578623837325"
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
+                "target": {
+                  "file": "src/com/android/documentsui/AbstractActionHandler.java",
+                  "function": "launchToDocument"
+                },
+                "id": "ASB-A-352294617-a888f100",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/AbstractActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
-                "id": "ASB-A-352294617-b05ac5b9",
                 "digest": {
                   "line_hashes": [
                     "142457914429796101033230524321505558904",
@@ -1126,19 +1075,16 @@
                   ],
                   "threshold": 0.9
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
+                "target": {
+                  "file": "src/com/android/documentsui/AbstractActionHandler.java"
+                },
+                "id": "ASB-A-352294617-b05ac5b9",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/documentsui/picker/ActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
-                "id": "ASB-A-352294617-b4cfa681",
                 "digest": {
                   "line_hashes": [
                     "146900902099775877305517027233147741432",
@@ -1190,44 +1136,50 @@
                     "19367891774165043615548572469023889720"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
                 "target": {
-                  "function": "onLastAccessedStackLoaded",
                   "file": "src/com/android/documentsui/picker/ActionHandler.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/b446bcc230b16a3171b70165521144e06b98bdfe",
-                "id": "ASB-A-352294617-c47970ff",
-                "digest": {
-                  "function_hash": "235827959310678841809653468090094582977",
-                  "length": 185
-                },
-                "match_only_versions": [
-                  "14"
-                ]
+                "id": "ASB-A-352294617-b4cfa681",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onStackLoaded",
-                  "file": "src/com/android/documentsui/AbstractActionHandler.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
-                "id": "ASB-A-352294617-e05a407a",
                 "digest": {
-                  "function_hash": "98852058868668271256027859289938661797",
-                  "length": 460
+                  "length": 185,
+                  "function_hash": "235827959310678841809653468090094582977"
                 },
-                "match_only_versions": [
-                  "14"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/b446bcc230b16a3171b70165521144e06b98bdfe",
+                "target": {
+                  "file": "src/com/android/documentsui/picker/ActionHandler.java",
+                  "function": "onLastAccessedStackLoaded"
+                },
+                "id": "ASB-A-352294617-c47970ff",
+                "signature_version": "v1"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 460,
+                  "function_hash": "98852058868668271256027859289938661797"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
+                "target": {
+                  "file": "src/com/android/documentsui/AbstractActionHandler.java",
+                  "function": "onStackLoaded"
+                },
+                "id": "ASB-A-352294617-e05a407a",
+                "signature_version": "v1"
               }
+            ],
+            "severity": "High",
+            "spl": "2025-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/ae840b1f17869f5592cb1957d2e0e2d0af1be96b",
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/b446bcc230b16a3171b70165521144e06b98bdfe"
             ]
           },
           "database_specific": {
@@ -1235,7 +1187,856 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
+    },
+    {
+      "id": "ASB-A-397216537",
+      "details": "In getCallingAppName of Shared.java, there is a possible way to trick users into granting file access via deceptive text in a permission popup due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-397216537",
+        "CVE-2025-32323"
+      ],
+      "modified": "2025-09-01T15:59:31.449906Z",
+      "published": "2025-09-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-09-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/packages/apps/DocumentsUI",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16-next:0"
+                },
+                {
+                  "fixed": "16-next:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16-next"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "37876277042882961774571832764351283716",
+                    "269458287287563012433905513959353935107",
+                    "104214980192024939577819818891578066066",
+                    "237475930497240201939556655798515482635",
+                    "255332656328781610514668830818884769674",
+                    "137139273315319569512436360191619240345",
+                    "30094808026787124630296350887046792166",
+                    "162757685645516588871294181607580211833",
+                    "251759438643673393520861235509435845431"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java"
+                },
+                "id": "ASB-A-397216537-1ac068b6",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 63,
+                  "function_hash": "194650644673830432688761763122559843523"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-4e6a8688",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "191796742205120856426560608536963393886",
+                    "248392357307326825488608007907906247569",
+                    "253664579616272120019020293042089869825",
+                    "119640721929178758864171116543777235448",
+                    "88614894248070539149749001153057611333",
+                    "192236331321682913283373241993408442795"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java"
+                },
+                "id": "ASB-A-397216537-50da8fbf",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 41,
+                  "function_hash": "178697288976910297250387690471494008398"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-51ee83b1",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "135733718630255411048675363695623840220",
+                    "318836206997742897580377676149031540748",
+                    "131622419250986092245848435957312969760",
+                    "230235986588592318493714804292173863471"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DocumentsAdapter.java"
+                },
+                "id": "ASB-A-397216537-69a92f25",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "171545660746234868457838934132160564399",
+                    "16620385211362110162349410932687275954",
+                    "155380109869855992816550928114507728332",
+                    "151033081719793388373943812935464634995",
+                    "222863958647210402686620657406730865541"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java"
+                },
+                "id": "ASB-A-397216537-e62ea1a5",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 465,
+                  "function_hash": "34987950939639189483444613650854068396"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-f617e44a",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+              }
+            ],
+            "severity": "High",
+            "spl": "2025-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/c8ef2db3bb4645704384226976e59583b9e8d3d3"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-397216537.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/DocumentsUI",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "15:0"
+                },
+                {
+                  "fixed": "15:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "15"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 63,
+                  "function_hash": "194650644673830432688761763122559843523"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-1c59e327",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "135733718630255411048675363695623840220",
+                    "318836206997742897580377676149031540748",
+                    "131622419250986092245848435957312969760",
+                    "230235986588592318493714804292173863471"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DocumentsAdapter.java"
+                },
+                "id": "ASB-A-397216537-4cdccad9",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 41,
+                  "function_hash": "178697288976910297250387690471494008398"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-84ec682c",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "191796742205120856426560608536963393886",
+                    "248392357307326825488608007907906247569",
+                    "253664579616272120019020293042089869825",
+                    "119640721929178758864171116543777235448",
+                    "88614894248070539149749001153057611333",
+                    "192236331321682913283373241993408442795"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java"
+                },
+                "id": "ASB-A-397216537-a68cfa3b",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 465,
+                  "function_hash": "34987950939639189483444613650854068396"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-ae3f90ae",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "171545660746234868457838934132160564399",
+                    "16620385211362110162349410932687275954",
+                    "155380109869855992816550928114507728332",
+                    "151033081719793388373943812935464634995",
+                    "222863958647210402686620657406730865541"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java"
+                },
+                "id": "ASB-A-397216537-daddfdb0",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "117381096027824942318502849749025878871",
+                    "269458287287563012433905513959353935107",
+                    "104214980192024939577819818891578066066",
+                    "237475930497240201939556655798515482635",
+                    "255332656328781610514668830818884769674",
+                    "137139273315319569512436360191619240345",
+                    "30094808026787124630296350887046792166",
+                    "162757685645516588871294181607580211833",
+                    "251759438643673393520861235509435845431"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java"
+                },
+                "id": "ASB-A-397216537-ffd8b5f4",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+              }
+            ],
+            "severity": "High",
+            "spl": "2025-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/4fe6c0b5fd87b83f3097e330a93eb28dbc9f7d32"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-397216537.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/DocumentsUI",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16:0"
+                },
+                {
+                  "fixed": "16:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "191796742205120856426560608536963393886",
+                    "248392357307326825488608007907906247569",
+                    "253664579616272120019020293042089869825",
+                    "119640721929178758864171116543777235448",
+                    "88614894248070539149749001153057611333",
+                    "192236331321682913283373241993408442795"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java"
+                },
+                "id": "ASB-A-397216537-1cad1c6c",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "135733718630255411048675363695623840220",
+                    "318836206997742897580377676149031540748",
+                    "131622419250986092245848435957312969760",
+                    "230235986588592318493714804292173863471"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DocumentsAdapter.java"
+                },
+                "id": "ASB-A-397216537-2d39c0b1",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 63,
+                  "function_hash": "194650644673830432688761763122559843523"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-2f64c38c",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 41,
+                  "function_hash": "178697288976910297250387690471494008398"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-3898f5df",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "37876277042882961774571832764351283716",
+                    "269458287287563012433905513959353935107",
+                    "104214980192024939577819818891578066066",
+                    "237475930497240201939556655798515482635",
+                    "255332656328781610514668830818884769674",
+                    "137139273315319569512436360191619240345",
+                    "30094808026787124630296350887046792166",
+                    "162757685645516588871294181607580211833",
+                    "251759438643673393520861235509435845431"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java"
+                },
+                "id": "ASB-A-397216537-94c79dcc",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 465,
+                  "function_hash": "34987950939639189483444613650854068396"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-9db69ac6",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "171545660746234868457838934132160564399",
+                    "16620385211362110162349410932687275954",
+                    "155380109869855992816550928114507728332",
+                    "151033081719793388373943812935464634995",
+                    "222863958647210402686620657406730865541"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java"
+                },
+                "id": "ASB-A-397216537-d01373ee",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+              }
+            ],
+            "severity": "High",
+            "spl": "2025-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a74695f75d269a0caf2885d52833489eb97e2f72"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-397216537.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/DocumentsUI",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "13:0"
+                },
+                {
+                  "fixed": "13:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "13"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 63,
+                  "function_hash": "194650644673830432688761763122559843523"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-0225bd83",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "135733718630255411048675363695623840220",
+                    "318836206997742897580377676149031540748",
+                    "131622419250986092245848435957312969760",
+                    "230235986588592318493714804292173863471"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DocumentsAdapter.java"
+                },
+                "id": "ASB-A-397216537-053292d0",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 465,
+                  "function_hash": "34987950939639189483444613650854068396"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-2a639903",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "191796742205120856426560608536963393886",
+                    "248392357307326825488608007907906247569",
+                    "253664579616272120019020293042089869825",
+                    "119640721929178758864171116543777235448",
+                    "88614894248070539149749001153057611333",
+                    "192236331321682913283373241993408442795"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java"
+                },
+                "id": "ASB-A-397216537-2c02dbc3",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 41,
+                  "function_hash": "178697288976910297250387690471494008398"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-45a3fb18",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "171545660746234868457838934132160564399",
+                    "16620385211362110162349410932687275954",
+                    "155380109869855992816550928114507728332",
+                    "151033081719793388373943812935464634995",
+                    "222863958647210402686620657406730865541"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java"
+                },
+                "id": "ASB-A-397216537-a8749d78",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "117381096027824942318502849749025878871",
+                    "269458287287563012433905513959353935107",
+                    "104214980192024939577819818891578066066",
+                    "237475930497240201939556655798515482635",
+                    "255332656328781610514668830818884769674",
+                    "137139273315319569512436360191619240345",
+                    "30094808026787124630296350887046792166",
+                    "162757685645516588871294181607580211833",
+                    "251759438643673393520861235509435845431"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java"
+                },
+                "id": "ASB-A-397216537-a87a27b4",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+              }
+            ],
+            "severity": "High",
+            "spl": "2025-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/560abd69ceb80de7ea1b2188015b2106e27363e6"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-397216537.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/packages/apps/DocumentsUI",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "14:0"
+                },
+                {
+                  "fixed": "14:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "14"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "vanir_signatures": [
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "135733718630255411048675363695623840220",
+                    "318836206997742897580377676149031540748",
+                    "131622419250986092245848435957312969760",
+                    "230235986588592318493714804292173863471"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DocumentsAdapter.java"
+                },
+                "id": "ASB-A-397216537-05b48beb",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 63,
+                  "function_hash": "194650644673830432688761763122559843523"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-2090736d",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 465,
+                  "function_hash": "34987950939639189483444613650854068396"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-47036df4",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "117381096027824942318502849749025878871",
+                    "269458287287563012433905513959353935107",
+                    "104214980192024939577819818891578066066",
+                    "237475930497240201939556655798515482635",
+                    "255332656328781610514668830818884769674",
+                    "137139273315319569512436360191619240345",
+                    "30094808026787124630296350887046792166",
+                    "162757685645516588871294181607580211833",
+                    "251759438643673393520861235509435845431"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/base/Shared.java"
+                },
+                "id": "ASB-A-397216537-864e3cfc",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              },
+              {
+                "signature_type": "Function",
+                "deprecated": false,
+                "digest": {
+                  "length": 41,
+                  "function_hash": "178697288976910297250387690471494008398"
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java",
+                  "function": "getCallingAppName"
+                },
+                "id": "ASB-A-397216537-895d0a5a",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "191796742205120856426560608536963393886",
+                    "248392357307326825488608007907906247569",
+                    "253664579616272120019020293042089869825",
+                    "119640721929178758864171116543777235448",
+                    "88614894248070539149749001153057611333",
+                    "192236331321682913283373241993408442795"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "src/com/android/documentsui/dirlist/DirectoryFragment.java"
+                },
+                "id": "ASB-A-397216537-b419be83",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              },
+              {
+                "signature_type": "Line",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "171545660746234868457838934132160564399",
+                    "16620385211362110162349410932687275954",
+                    "155380109869855992816550928114507728332",
+                    "151033081719793388373943812935464634995",
+                    "222863958647210402686620657406730865541"
+                  ],
+                  "threshold": 0.9
+                },
+                "signature_version": "v1",
+                "target": {
+                  "file": "tests/common/com/android/documentsui/dirlist/TestEnvironment.java"
+                },
+                "id": "ASB-A-397216537-cce5727f",
+                "source": "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+              }
+            ],
+            "severity": "High",
+            "spl": "2025-09-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/05839b7a4937885b16b6ce8450042b8fceee9421"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-397216537.json"
+          }
+        }
+      ],
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-394100452",
         "CVE-2025-21453"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2025-05-01T00:00:00Z",
       "references": [
         {
@@ -42,35 +42,35 @@
             "SoCVersion"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "Unknown"
             ],
             "spl": "2025-05-05",
-            "fixes": [
-              "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/-/commit/7551ccb1e1572029a084b9582629cfbe526d07e8"
-            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "utils/LocUnorderedSetMap.h"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/7551ccb1e1572029a084b9582629cfbe526d07e8",
-                "id": "ASB-A-394100452-7cc462f3",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "77604338801659839385862693034343651298",
                     "106880423725236962013612144890340336674",
                     "130426766697325238336672289698239576370",
                     "203066765174692246981499976589455215755",
                     "233238929457915069949089763870147328097"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/7551ccb1e1572029a084b9582629cfbe526d07e8",
+                "id": "ASB-A-394100452-7cc462f3",
+                "signature_type": "Line",
+                "target": {
+                  "file": "utils/LocUnorderedSetMap.h"
                 }
               }
+            ],
+            "fixes": [
+              "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/-/commit/7551ccb1e1572029a084b9582629cfbe526d07e8"
             ]
           },
           "database_specific": {
@@ -78,7 +78,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-170141832",
@@ -87,7 +87,7 @@
         "A-170141832",
         "CVE-2020-11231"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -122,25 +122,16 @@
             "SoCVersion"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
             "types": [
               "Unknown"
             ],
             "spl": "2021-04-05",
-            "fixes": [
-              "https://source.codeaurora.org/quic/le/platform/hardware/qcom/gps/commit/?id=a06bbe8aa633e00c195866a8416ac9181c1fb652"
-            ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gnss/GnssAdapter.h"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
-                "id": "PUB-A-170141832-08aacf0a",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "160290912628406514840411612695310822738",
                     "188526918129431542924495252718807324712",
@@ -160,20 +151,20 @@
                     "60615472312978346770065849697111439246",
                     "113287000598926562895419274382484710097",
                     "70551725210974395763020935681560818219"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
+                "id": "PUB-A-170141832-08aacf0a",
+                "signature_type": "Line",
+                "target": {
+                  "file": "gnss/GnssAdapter.h"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "location/location_interface.h"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
-                "id": "PUB-A-170141832-0bdac785",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "79698211147793931474532105722070336520",
                     "200756067239361816641263203361765629961",
@@ -182,20 +173,20 @@
                     "100124002360199832420810701826739434104",
                     "157583758080932533420556787614626109608",
                     "298854915515696810424809087620082309809"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
+                "id": "PUB-A-170141832-0bdac785",
+                "signature_type": "Line",
+                "target": {
+                  "file": "location/location_interface.h"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gnss/location_gnss.cpp"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
-                "id": "PUB-A-170141832-3b90e604",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "161464351088278372829712951627116570025",
                     "143315488343057016744774106649386247566",
@@ -205,50 +196,50 @@
                     "54384123085508748599525123753476745623",
                     "112072627365862482755175017951265426620",
                     "14737900574673397913199276023659685983"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
+                "id": "PUB-A-170141832-3b90e604",
+                "signature_type": "Line",
+                "target": {
+                  "file": "gnss/location_gnss.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getPowerStateChanges",
-                  "file": "gnss/location_gnss.cpp"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
-                "id": "PUB-A-170141832-3e9ee0d9",
                 "digest": {
                   "function_hash": "213530516406402443937979374198187476295",
                   "length": 131
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
+                "id": "PUB-A-170141832-3e9ee0d9",
+                "signature_type": "Function",
+                "target": {
+                  "function": "getPowerStateChanges",
+                  "file": "gnss/location_gnss.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "GnssAdapter::getPowerStateChangesCommand",
-                  "file": "gnss/GnssAdapter.cpp"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
-                "id": "PUB-A-170141832-57f8bca0",
                 "digest": {
                   "function_hash": "39197577418507260941629636014391998076",
                   "length": 502
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
+                "id": "PUB-A-170141832-57f8bca0",
+                "signature_type": "Function",
+                "target": {
+                  "function": "GnssAdapter::getPowerStateChangesCommand",
+                  "file": "gnss/GnssAdapter.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "gnss/GnssAdapter.cpp"
-                },
                 "deprecated": false,
-                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
-                "id": "PUB-A-170141832-a4a811f1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "78174185473933519528640960549010404461",
                     "45665505812871093424753502509239822081",
@@ -265,10 +256,19 @@
                     "122984080798261600880332167633748866172",
                     "218828905635153729127352801166812313997",
                     "205352398565395846827966575408841980403"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/gps/commit/a06bbe8aa633e00c195866a8416ac9181c1fb652",
+                "id": "PUB-A-170141832-a4a811f1",
+                "signature_type": "Line",
+                "target": {
+                  "file": "gnss/GnssAdapter.cpp"
                 }
               }
+            ],
+            "fixes": [
+              "https://source.codeaurora.org/quic/le/platform/hardware/qcom/gps/commit/?id=a06bbe8aa633e00c195866a8416ac9181c1fb652"
             ]
           },
           "database_specific": {
@@ -276,7 +276,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

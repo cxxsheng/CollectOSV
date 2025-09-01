@@ -7,7 +7,7 @@
         "A-285142084",
         "CVE-2024-0017"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-01-01T00:00:00Z",
       "references": [
         {
@@ -42,50 +42,50 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2024-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
+                "id": "ASB-A-285142084-0b5eb1c4",
+                "digest": {
+                  "length": 684,
+                  "function_hash": "260856475957109770958579557906056235137"
+                },
                 "target": {
                   "function": "shouldUseNoOpLocation",
                   "file": "src/com/android/camera/CameraActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
-                "id": "ASB-A-285142084-0b5eb1c4",
-                "digest": {
-                  "function_hash": "260856475957109770958579557906056235137",
-                  "length": 684
-                }
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/camera/CameraActivity.java"
-                },
                 "deprecated": false,
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
                 "id": "ASB-A-285142084-b84da33d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "50033702272400000213414472669668757629",
                     "194731602348603040708727133384045874715",
                     "234468443383410848259571365959312043955",
                     "315796560781321959294187818322747003859"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/camera/CameraActivity.java"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-01-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285142084.json"
@@ -113,50 +113,50 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2024-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
+                "id": "ASB-A-285142084-c606166e",
+                "digest": {
+                  "length": 684,
+                  "function_hash": "260856475957109770958579557906056235137"
+                },
                 "target": {
                   "function": "shouldUseNoOpLocation",
                   "file": "src/com/android/camera/CameraActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
-                "id": "ASB-A-285142084-c606166e",
-                "digest": {
-                  "function_hash": "260856475957109770958579557906056235137",
-                  "length": 684
-                }
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/camera/CameraActivity.java"
-                },
                 "deprecated": false,
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
                 "id": "ASB-A-285142084-db24295f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "50033702272400000213414472669668757629",
                     "194731602348603040708727133384045874715",
                     "234468443383410848259571365959312043955",
                     "315796560781321959294187818322747003859"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/camera/CameraActivity.java"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-01-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285142084.json"
@@ -184,50 +184,50 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2024-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/camera/CameraActivity.java"
-                },
                 "deprecated": false,
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
                 "id": "ASB-A-285142084-60f17bdc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "50033702272400000213414472669668757629",
                     "194731602348603040708727133384045874715",
                     "234468443383410848259571365959312043955",
                     "315796560781321959294187818322747003859"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/camera/CameraActivity.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
+                "id": "ASB-A-285142084-c2166a98",
+                "digest": {
+                  "length": 684,
+                  "function_hash": "260856475957109770958579557906056235137"
+                },
                 "target": {
                   "function": "shouldUseNoOpLocation",
                   "file": "src/com/android/camera/CameraActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
-                "id": "ASB-A-285142084-c2166a98",
-                "digest": {
-                  "function_hash": "260856475957109770958579557906056235137",
-                  "length": 684
-                }
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-01-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285142084.json"
@@ -255,50 +255,50 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2024-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
+                "id": "ASB-A-285142084-40e779c1",
+                "digest": {
+                  "length": 684,
+                  "function_hash": "260856475957109770958579557906056235137"
+                },
                 "target": {
                   "function": "shouldUseNoOpLocation",
                   "file": "src/com/android/camera/CameraActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
-                "id": "ASB-A-285142084-40e779c1",
-                "digest": {
-                  "function_hash": "260856475957109770958579557906056235137",
-                  "length": 684
-                }
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/camera/CameraActivity.java"
-                },
                 "deprecated": false,
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
                 "id": "ASB-A-285142084-b281a652",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "50033702272400000213414472669668757629",
                     "194731602348603040708727133384045874715",
                     "234468443383410848259571365959312043955",
                     "315796560781321959294187818322747003859"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/camera/CameraActivity.java"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2024-01-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285142084.json"
@@ -326,50 +326,50 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2024-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/camera/CameraActivity.java"
-                },
                 "deprecated": false,
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
                 "id": "ASB-A-285142084-c294508f",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "50033702272400000213414472669668757629",
                     "194731602348603040708727133384045874715",
                     "234468443383410848259571365959312043955",
                     "315796560781321959294187818322747003859"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/camera/CameraActivity.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
+                "id": "ASB-A-285142084-d253c216",
+                "digest": {
+                  "length": 684,
+                  "function_hash": "260856475957109770958579557906056235137"
+                },
                 "target": {
                   "function": "shouldUseNoOpLocation",
                   "file": "src/com/android/camera/CameraActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
-                "id": "ASB-A-285142084-d253c216",
-                "digest": {
-                  "function_hash": "260856475957109770958579557906056235137",
-                  "length": 684
-                }
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-01-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285142084.json"
@@ -397,57 +397,57 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2024-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/camera/CameraActivity.java"
-                },
                 "deprecated": false,
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
                 "id": "ASB-A-285142084-42b73276",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "50033702272400000213414472669668757629",
                     "194731602348603040708727133384045874715",
                     "234468443383410848259571365959312043955",
                     "315796560781321959294187818322747003859"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/camera/CameraActivity.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
+                "id": "ASB-A-285142084-fad3eaed",
+                "digest": {
+                  "length": 684,
+                  "function_hash": "260856475957109770958579557906056235137"
+                },
                 "target": {
                   "function": "shouldUseNoOpLocation",
                   "file": "src/com/android/camera/CameraActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Camera2/+/3c097bb0e516b1d071f00ac99a8f29f4a72579ff",
-                "id": "ASB-A-285142084-fad3eaed",
-                "digest": {
-                  "function_hash": "260856475957109770958579557906056235137",
-                  "length": 684
-                }
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2024-01-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-285142084.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

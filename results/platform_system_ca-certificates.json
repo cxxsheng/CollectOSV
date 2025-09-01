@@ -7,7 +7,7 @@
         "A-262521447",
         "CVE-2023-21265"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -42,14 +42,14 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cbc6bbaa091a1217001817023e8859315b8ecc33"
-            ]
+            ],
+            "severity": "High",
+            "spl": "2023-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262521447.json"
@@ -77,14 +77,14 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/7f21eeb5f64c78dde049b132c93dd7dce53d23e8"
-            ]
+            ],
+            "severity": "High",
+            "spl": "2023-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262521447.json"
@@ -112,14 +112,14 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/7f21eeb5f64c78dde049b132c93dd7dce53d23e8"
-            ]
+            ],
+            "severity": "High",
+            "spl": "2023-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262521447.json"
@@ -147,14 +147,14 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cbc6bbaa091a1217001817023e8859315b8ecc33"
-            ]
+            ],
+            "severity": "High",
+            "spl": "2023-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262521447.json"
@@ -182,21 +182,21 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cbc6bbaa091a1217001817023e8859315b8ecc33"
-            ]
+            ],
+            "severity": "High",
+            "spl": "2023-08-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262521447.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-284262845",
@@ -205,7 +205,7 @@
         "A-284262845",
         "CVE-2023-40104"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-11-01T00:00:00Z",
       "references": [
         {
@@ -240,13 +240,13 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/conscrypt/+/0bbed55a8a537217828a4a7031d9dc638d9ae9c2"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -275,13 +275,13 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cfe61c3ca788218b24753229ccacc3d59fab7eea"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -310,13 +310,13 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -345,13 +345,13 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -380,13 +380,13 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -415,13 +415,13 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-11-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/ca-certificates/+/cf6ceba661a1101099c286974e3eb933b2fefeed"
+            ],
+            "severity": "High",
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -429,7 +429,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

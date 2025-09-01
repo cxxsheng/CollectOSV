@@ -7,7 +7,7 @@
         "A-184564368",
         "CVE-2021-1967"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-10-01T00:00:00Z",
       "references": [
         {
@@ -43,48 +43,48 @@
           ],
           "ecosystem_specific": {
             "severity": "Moderate",
+            "spl": "2021-10-05",
             "types": [
               "Unknown"
             ],
-            "spl": "2021-10-05",
-            "fixes": [
-              "https://source.codeaurora.org/quic/le/platform/hardware/qcom/wlan/commit/?id=3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "NanCommand::getNanMatch",
-                  "file": "qcwcn/wifi_hal/nan_ind.cpp"
-                },
-                "deprecated": false,
                 "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/commit/3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a",
-                "id": "PUB-A-184564368-28761e50",
                 "digest": {
                   "function_hash": "190477274968498936228892042472815934114",
                   "length": 4731
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-184564368-28761e50",
+                "signature_type": "Function",
+                "target": {
+                  "file": "qcwcn/wifi_hal/nan_ind.cpp",
+                  "function": "NanCommand::getNanMatch"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "qcwcn/wifi_hal/nan_ind.cpp"
-                },
-                "deprecated": false,
                 "source": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/commit/3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a",
-                "id": "PUB-A-184564368-87706477",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "338425997839764367895403344546369164272",
                     "193914297778785760985776216088552860293",
                     "11298366178367397691047712906320592917",
                     "117472073205632112732400898690857591435"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-184564368-87706477",
+                "signature_type": "Line",
+                "target": {
+                  "file": "qcwcn/wifi_hal/nan_ind.cpp"
                 }
               }
+            ],
+            "fixes": [
+              "https://source.codeaurora.org/quic/le/platform/hardware/qcom/wlan/commit/?id=3ef1cfcd0cfcd9495e19b2b749104c9991f8e79a"
             ]
           },
           "database_specific": {
@@ -92,7 +92,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

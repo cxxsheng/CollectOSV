@@ -7,7 +7,7 @@
         "A-175124730",
         "CVE-2021-0392"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-03-01T00:00:00Z",
       "references": [
         {
@@ -43,39 +43,30 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037"
             ],
+            "spl": "2021-03-01",
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "main",
-                  "file": "main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
-                "id": "ASB-A-175124730-13a95a44",
                 "digest": {
                   "function_hash": "321445973770382076051953945369209705898",
                   "length": 1237
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
+                "target": {
+                  "file": "main.cpp",
+                  "function": "main"
+                },
+                "id": "ASB-A-175124730-13a95a44",
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
-                "id": "ASB-A-175124730-26bd34ce",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202563571635577544281548856947653693922",
                     "132245428272199039556118821467404209820",
@@ -87,10 +78,19 @@
                     "339969348761788042054944649164487550473",
                     "224040018922668897102853657779952903089",
                     "69853329612799504176306500526039141941"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
+                "target": {
+                  "file": "main.cpp"
+                },
+                "id": "ASB-A-175124730-26bd34ce",
+                "deprecated": false,
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -120,39 +120,30 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037"
             ],
+            "spl": "2021-03-01",
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "main",
-                  "file": "main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
-                "id": "ASB-A-175124730-4c6e5401",
                 "digest": {
                   "function_hash": "321445973770382076051953945369209705898",
                   "length": 1237
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
+                "target": {
+                  "file": "main.cpp",
+                  "function": "main"
+                },
+                "id": "ASB-A-175124730-4c6e5401",
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
-                "id": "ASB-A-175124730-7da3f124",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202563571635577544281548856947653693922",
                     "132245428272199039556118821467404209820",
@@ -164,10 +155,19 @@
                     "339969348761788042054944649164487550473",
                     "224040018922668897102853657779952903089",
                     "69853329612799504176306500526039141941"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
+                "target": {
+                  "file": "main.cpp"
+                },
+                "id": "ASB-A-175124730-7da3f124",
+                "deprecated": false,
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -197,24 +197,15 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-03-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037"
             ],
+            "spl": "2021-03-01",
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
-                "id": "ASB-A-175124730-1010404b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "202563571635577544281548856947653693922",
                     "132245428272199039556118821467404209820",
@@ -226,25 +217,34 @@
                     "339969348761788042054944649164487550473",
                     "224040018922668897102853657779952903089",
                     "69853329612799504176306500526039141941"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
+                "target": {
+                  "file": "main.cpp"
+                },
+                "id": "ASB-A-175124730-1010404b",
+                "deprecated": false,
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "main",
-                  "file": "main.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
-                "id": "ASB-A-175124730-f4a434b4",
                 "digest": {
                   "function_hash": "321445973770382076051953945369209705898",
                   "length": 1237
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/67d87a0e7e2213959f505e6a355c50079b062037",
+                "target": {
+                  "file": "main.cpp",
+                  "function": "main"
+                },
+                "id": "ASB-A-175124730-f4a434b4",
+                "deprecated": false,
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -252,7 +252,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-243362981",
@@ -261,7 +261,7 @@
         "A-243362981",
         "CVE-2023-20939"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -297,24 +297,15 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/connectivity/wificond/+/a9de1657e9915a2d47fb87a3f55ac97157ad53b6"
             ],
+            "spl": "2023-02-01",
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "looper_backed_event_loop.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/a9de1657e9915a2d47fb87a3f55ac97157ad53b6",
-                "id": "ASB-A-243362981-65513374",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "319327535018563556537300619132357203352",
                     "17999300148438267301587355388994997822",
@@ -332,10 +323,19 @@
                     "270715323998066927257979354458094253841",
                     "121768234032291930514744645347766483640",
                     "147316941013154811716422241642034045900"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/a9de1657e9915a2d47fb87a3f55ac97157ad53b6",
+                "target": {
+                  "file": "looper_backed_event_loop.cpp"
+                },
+                "id": "ASB-A-243362981-65513374",
+                "deprecated": false,
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -365,24 +365,15 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/connectivity/wificond/+/f43bf30eadb6c423e9748a69479fa146a196e8dc"
             ],
+            "spl": "2023-02-01",
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "looper_backed_event_loop.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/f43bf30eadb6c423e9748a69479fa146a196e8dc",
-                "id": "ASB-A-243362981-a40d2f7d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "319327535018563556537300619132357203352",
                     "17999300148438267301587355388994997822",
@@ -400,10 +391,19 @@
                     "270715323998066927257979354458094253841",
                     "121768234032291930514744645347766483640",
                     "147316941013154811716422241642034045900"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/f43bf30eadb6c423e9748a69479fa146a196e8dc",
+                "target": {
+                  "file": "looper_backed_event_loop.cpp"
+                },
+                "id": "ASB-A-243362981-a40d2f7d",
+                "deprecated": false,
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -433,24 +433,15 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/connectivity/wificond/+/73bb787e6e780a0dd15c0d3d03efaf5dfc270e26"
             ],
+            "spl": "2023-02-01",
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "looper_backed_event_loop.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/73bb787e6e780a0dd15c0d3d03efaf5dfc270e26",
-                "id": "ASB-A-243362981-a5f8b24e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "319327535018563556537300619132357203352",
                     "17999300148438267301587355388994997822",
@@ -468,10 +459,19 @@
                     "319444232589160658979659192150897816963",
                     "183696515813962808202524282340802979573",
                     "57237081120627105187066569127807783311"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/system/connectivity/wificond/+/73bb787e6e780a0dd15c0d3d03efaf5dfc270e26",
+                "target": {
+                  "file": "looper_backed_event_loop.cpp"
+                },
+                "id": "ASB-A-243362981-a5f8b24e",
+                "deprecated": false,
+                "signature_version": "v1"
               }
+            ],
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -479,7 +479,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

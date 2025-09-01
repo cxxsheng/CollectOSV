@@ -7,7 +7,7 @@
         "A-209438553",
         "CVE-2022-20128"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -38,35 +38,35 @@
             "12L-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/adb/+/f37fe345c4228613b469c60c38f20a70f872f5ee"
             ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "client/file_sync_client.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/adb/+/f37fe345c4228613b469c60c38f20a70f872f5ee",
-                "id": "ASB-A-209438553-21862090",
+                "signature_version": "v1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "43519373372291504482562303623277054671",
                     "42513674874629715087525008961002588244",
                     "84805982387859587886263524482656592733",
                     "239497260391627227463620907319770989128"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-209438553-21862090",
+                "source": "https://android.googlesource.com/platform/packages/modules/adb/+/f37fe345c4228613b469c60c38f20a70f872f5ee",
+                "target": {
+                  "file": "client/file_sync_client.cpp"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-209438553.json"
@@ -94,49 +94,49 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/core/+/a36a342ec9721240e5a48ca50e833b9a35bef256"
             ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "adb/client/file_sync_client.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/core/+/a36a342ec9721240e5a48ca50e833b9a35bef256",
-                "id": "ASB-A-209438553-6c17ddca",
+                "signature_version": "v1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "80711276962557826394725161866216873168",
                     "60157816196309642791138344526668250644",
                     "92840156897427934868406618536527873566"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-209438553-6c17ddca",
+                "source": "https://android.googlesource.com/platform/system/core/+/a36a342ec9721240e5a48ca50e833b9a35bef256",
+                "target": {
+                  "file": "adb/client/file_sync_client.cpp"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "digest": {
+                  "function_hash": "157008758856141494333839260213242044136",
+                  "length": 613
+                },
+                "id": "ASB-A-209438553-89adb8fb",
+                "source": "https://android.googlesource.com/platform/system/core/+/a36a342ec9721240e5a48ca50e833b9a35bef256",
                 "target": {
                   "function": "sync_ls",
                   "file": "adb/client/file_sync_client.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/core/+/a36a342ec9721240e5a48ca50e833b9a35bef256",
-                "id": "ASB-A-209438553-89adb8fb",
-                "digest": {
-                  "function_hash": "157008758856141494333839260213242044136",
-                  "length": 613
-                }
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-209438553.json"
@@ -164,34 +164,34 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/core/+/c3483e4c8a302e7852e0a334ffa90089337520ec"
             ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "adb/client/file_sync_client.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/core/+/c3483e4c8a302e7852e0a334ffa90089337520ec",
-                "id": "ASB-A-209438553-9f313bf4",
+                "signature_version": "v1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "311354455375036835439664639259146075983",
                     "320432990438448769653751063304718429671",
                     "193387877107222459009426779786812663766"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-209438553-9f313bf4",
+                "source": "https://android.googlesource.com/platform/system/core/+/c3483e4c8a302e7852e0a334ffa90089337520ec",
+                "target": {
+                  "file": "adb/client/file_sync_client.cpp"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-209438553.json"
@@ -219,34 +219,34 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/adb/+/b5ad48db08e2087310ffd31580020eb923fe12af"
             ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "client/file_sync_client.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/adb/+/b5ad48db08e2087310ffd31580020eb923fe12af",
-                "id": "ASB-A-209438553-d8133123",
+                "signature_version": "v1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "311354455375036835439664639259146075983",
                     "320432990438448769653751063304718429671",
                     "193387877107222459009426779786812663766"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-209438553-d8133123",
+                "source": "https://android.googlesource.com/platform/packages/modules/adb/+/b5ad48db08e2087310ffd31580020eb923fe12af",
+                "target": {
+                  "file": "client/file_sync_client.cpp"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-209438553.json"
@@ -274,41 +274,41 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/adb/+/9a5ee7d573e51f58153a857dac48eda4e285beda"
             ],
+            "types": [
+              "EoP"
+            ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "client/file_sync_client.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/adb/+/9a5ee7d573e51f58153a857dac48eda4e285beda",
-                "id": "ASB-A-209438553-af0223f9",
+                "signature_version": "v1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "311354455375036835439664639259146075983",
                     "320432990438448769653751063304718429671",
                     "193387877107222459009426779786812663766"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-209438553-af0223f9",
+                "source": "https://android.googlesource.com/platform/packages/modules/adb/+/9a5ee7d573e51f58153a857dac48eda4e285beda",
+                "target": {
+                  "file": "client/file_sync_client.cpp"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-209438553.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

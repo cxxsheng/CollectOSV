@@ -7,7 +7,7 @@
         "A-262892300",
         "CVE-2023-21084"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-04-01T00:00:00Z",
       "references": [
         {
@@ -46,14 +46,14 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-04-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-04-01",
             "fixes": [
               "https://android.googlesource.com/platform/build/soong/+/f3d1e8c24cba69b93d9fdd2f01d770927988eeb1"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262892300.json"
@@ -81,21 +81,21 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-04-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-04-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Virtualization/+/94d7faa228c828abbbfda212f2e4abfa27d00b25"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-262892300.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-290909089",
@@ -104,7 +104,7 @@
         "A-290909089",
         "CVE-2023-40082"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-12-01T00:00:00Z",
       "references": [
         {
@@ -139,14 +139,14 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-12-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Virtualization/+/077d9c9cfefeff650745ee9550d61f65b7f2958f"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-290909089.json"
@@ -174,21 +174,21 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2023-12-01",
             "types": [
               "EoP"
             ],
-            "spl": "2023-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/Virtualization/+/44d2d1ba48df0362a76824b441f56308de7fadbf"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-290909089.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

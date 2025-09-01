@@ -7,7 +7,7 @@
         "A-129476618",
         "CVE-2020-0227"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-07-01T00:00:00Z",
       "references": [
         {
@@ -62,16 +62,16 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2020-07-01",
             "types": [
               "EoP"
             ],
-            "spl": "2020-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
               "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
               "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -99,26 +99,14 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2020-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
-              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
-              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
                 "id": "ASB-A-129476618-217c27d0",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -126,17 +114,17 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                },
                 "target": {
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
                 "id": "ASB-A-129476618-3443ebf8",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -144,17 +132,17 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                },
                 "target": {
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
                 "id": "ASB-A-129476618-ea2fd65d",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -162,9 +150,21 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -192,16 +192,16 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2020-07-01",
             "types": [
               "EoP"
             ],
-            "spl": "2020-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
               "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
               "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -229,26 +229,14 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2020-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
-              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
-              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
                 "id": "ASB-A-129476618-1e92855e",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -256,17 +244,17 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                },
                 "target": {
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
                 "id": "ASB-A-129476618-5f20fe37",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -274,17 +262,17 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                },
                 "target": {
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
                 "id": "ASB-A-129476618-f0b72546",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -292,9 +280,21 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -322,16 +322,16 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2020-07-01",
             "types": [
               "EoP"
             ],
-            "spl": "2020-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
               "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
               "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -359,26 +359,14 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2020-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
-              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
-              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
                 "id": "ASB-A-129476618-1e421d4f",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -386,17 +374,17 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                },
                 "target": {
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
                 "id": "ASB-A-129476618-56eeb89b",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -404,17 +392,17 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                },
                 "target": {
                   "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
                 "id": "ASB-A-129476618-89c32a17",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "26708729099211957372007850238875196453",
@@ -422,9 +410,21 @@
                     "303296711729030685135651464016046123052"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+              "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+              "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -452,16 +452,16 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2020-07-01",
             "types": [
               "EoP"
             ],
-            "spl": "2020-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/4f7dc13067ab4aa4f0c3f5373ee0a28c0285eea1",
               "https://android.googlesource.com/platform/cts/+/7d87a0e0a7bcda698b30957bce3c21d64a965e89",
               "https://android.googlesource.com/platform/cts/+/8643636095dc9b3c70a62ef16f68df12dff67fe7"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
@@ -489,79 +489,79 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2020-07-01",
+            "vanir_signatures": [
+              {
+                "id": "ASB-A-129476618-1433fec6",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-129476618-bedcce21",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              },
+              {
+                "id": "ASB-A-129476618-c6c55255",
+                "deprecated": false,
+                "digest": {
+                  "line_hashes": [
+                    "26708729099211957372007850238875196453",
+                    "298307091307253877753515377986473208398",
+                    "303296711729030685135651464016046123052"
+                  ],
+                  "threshold": 0.9
+                },
+                "target": {
+                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
+                "signature_version": "v1",
+                "signature_type": "Line"
+              }
+            ],
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
               "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
               "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b"
             ],
-            "vanir_signatures": [
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
-                "id": "ASB-A-129476618-1433fec6",
-                "digest": {
-                  "line_hashes": [
-                    "26708729099211957372007850238875196453",
-                    "298307091307253877753515377986473208398",
-                    "303296711729030685135651464016046123052"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/98f45443e1cf397ab92b4cecd9200c2dcccf099b",
-                "id": "ASB-A-129476618-bedcce21",
-                "digest": {
-                  "line_hashes": [
-                    "26708729099211957372007850238875196453",
-                    "298307091307253877753515377986473208398",
-                    "303296711729030685135651464016046123052"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/84cccfe6cdbc57ee372ee1a0fea64c7a11c53766",
-                "id": "ASB-A-129476618-c6c55255",
-                "digest": {
-                  "line_hashes": [
-                    "26708729099211957372007850238875196453",
-                    "298307091307253877753515377986473208398",
-                    "303296711729030685135651464016046123052"
-                  ],
-                  "threshold": 0.9
-                }
-              }
-            ]
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-129476618.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-155648771",
@@ -570,7 +570,7 @@
         "A-155648771",
         "CVE-2021-0307"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -609,14 +609,14 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/a8a90255d43845e307b6d133c710b802dbece622"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
@@ -644,24 +644,14 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
                 "id": "ASB-A-155648771-4acbd12e",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "42944500549505635161036987220393129218",
@@ -670,24 +660,34 @@
                     "73133442436564090363183519967048906082"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
+                "signature_version": "v1",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-155648771-ea459bf9",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "260801340390853921484827258252259891230",
+                  "length": 1646
+                },
                 "target": {
                   "function": "updatePermissionSourcePackage",
                   "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
-                "id": "ASB-A-155648771-ea459bf9",
-                "digest": {
-                  "function_hash": "260801340390853921484827258252259891230",
-                  "length": 1646
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
@@ -715,14 +715,14 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-01-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-01-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/a8a90255d43845e307b6d133c710b802dbece622"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
@@ -750,39 +750,29 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
             "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-155648771-9979c947",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "260801340390853921484827258252259891230",
+                  "length": 1646
+                },
                 "target": {
                   "function": "updatePermissionSourcePackage",
                   "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
-                "id": "ASB-A-155648771-9979c947",
-                "digest": {
-                  "function_hash": "260801340390853921484827258252259891230",
-                  "length": 1646
-                }
+                "signature_version": "v1",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
                 "id": "ASB-A-155648771-dcfd25c1",
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "42944500549505635161036987220393129218",
@@ -791,16 +781,26 @@
                     "73133442436564090363183519967048906082"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9",
+                "signature_version": "v1",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/a9f825922e1870575aeab11a2035903c217233c9"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-155648771.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-279055389",
@@ -809,7 +809,7 @@
         "A-279055389",
         "CVE-2023-40093"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-02-01T00:00:00Z",
       "references": [
         {
@@ -848,14 +848,14 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/2da6166a42950cb9a94289472da846e2d6842c64"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -883,14 +883,14 @@
             "14-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/pdfium/+/0712eae5bb0bce5ae0027c680373a412fcbfeac1"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -918,14 +918,14 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/ba1ada191974e23642562437a167160f4baa2e94"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -953,14 +953,14 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/pdfium/+/3e2fb7d98efb4ba7b51fd84e9a0ae04f8c0f7805"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -988,14 +988,14 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/75bd8508b7040f33aed77945d5dfe2dfed4a071c"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1023,14 +1023,14 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/pdfium/+/9be8c8c38972f6dbca94e38e0ce1e8a816639126"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1058,14 +1058,14 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/61972504f83e3ffe089082cfe323bdd67c48d346"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1093,14 +1093,14 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/pdfium/+/00a8f89dd8fd35348675de637a841db43fb807e1"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1128,14 +1128,14 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/4a4e992e9f3af9ea5dc71d725abb599dadbdd5e1"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1163,14 +1163,14 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/pdfium/+/6edbc4e74a73f9cd4256ceb47b77a34ba87df890"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1198,14 +1198,14 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/cts/+/382f9d1045692f7bc6949d029827f070c21cf53c"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
@@ -1233,21 +1233,21 @@
             "14"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2024-02-01",
             "types": [
               "ID"
             ],
-            "spl": "2024-02-01",
             "fixes": [
               "https://android.googlesource.com/platform/external/pdfium/+/bd17c0b8cf8436f15500ecf027db133b666141d6"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-279055389.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

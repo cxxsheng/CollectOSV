@@ -7,7 +7,7 @@
         "A-166268541",
         "CVE-2020-0470"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -42,14 +42,14 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libaom/+/816f15265cb89a02d7ce4b657de277828e71a4b1"
+            ],
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/libaom/+/816f15265cb89a02d7ce4b657de277828e71a4b1"
-            ]
+            "severity": "High",
+            "spl": "2020-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-166268541.json"
@@ -77,21 +77,21 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/external/libaom/+/816f15265cb89a02d7ce4b657de277828e71a4b1"
+            ],
             "types": [
               "ID"
             ],
-            "spl": "2020-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/libaom/+/816f15265cb89a02d7ce4b657de277828e71a4b1"
-            ]
+            "severity": "High",
+            "spl": "2020-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-166268541.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

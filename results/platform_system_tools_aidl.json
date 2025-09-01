@@ -7,7 +7,7 @@
         "A-198346478",
         "CVE-2021-0966"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -38,24 +38,21 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-198346478-206c067d",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
                 "target": {
                   "file": "generate_cpp.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
-                "id": "ASB-A-198346478-206c067d",
                 "digest": {
                   "line_hashes": [
                     "312820962761557008148303880221382425359",
@@ -67,29 +64,29 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "BuildParcelHeader",
-                  "file": "generate_cpp.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
                 "id": "ASB-A-198346478-428f4e0b",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
+                "target": {
+                  "file": "generate_cpp.cpp",
+                  "function": "BuildParcelHeader"
+                },
                 "digest": {
                   "function_hash": "326601426788344758004763648233943715918",
                   "length": 2239
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-198346478-640953c0",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
                 "target": {
                   "file": "generate_ndk.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
-                "id": "ASB-A-198346478-640953c0",
                 "digest": {
                   "line_hashes": [
                     "129378056618984160971364387354311187123",
@@ -101,20 +98,23 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "GenerateParcelHeader",
-                  "file": "generate_ndk.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
                 "id": "ASB-A-198346478-741a9d9f",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030",
+                "target": {
+                  "file": "generate_ndk.cpp",
+                  "function": "GenerateParcelHeader"
+                },
                 "digest": {
                   "function_hash": "222524032315743326666284216788730707453",
                   "length": 992
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/tools/aidl/+/f2e752316b0d9d2708bc56d20c1649e704bca030"
             ]
           },
           "database_specific": {
@@ -143,24 +143,21 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "ID"
             ],
+            "severity": "High",
             "spl": "2021-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-198346478-05cb5868",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
                 "target": {
                   "file": "generate_cpp.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
-                "id": "ASB-A-198346478-05cb5868",
                 "digest": {
                   "line_hashes": [
                     "264802842146083026036916011199573792850",
@@ -172,14 +169,14 @@
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-198346478-578ddbc8",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
                 "target": {
                   "file": "generate_ndk.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
-                "id": "ASB-A-198346478-578ddbc8",
                 "digest": {
                   "line_hashes": [
                     "113279781244028926090189194923672148444",
@@ -191,14 +188,14 @@
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-198346478-5d639350",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
                 "target": {
                   "file": "tests/golden_output/aidl-test-interface-cpp-source/gen/include/android/aidl/tests/StructuredParcelable.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
-                "id": "ASB-A-198346478-5d639350",
                 "digest": {
                   "line_hashes": [
                     "250718133067864697922945017348274298643",
@@ -225,14 +222,14 @@
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-198346478-b1825f5b",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
                 "target": {
                   "file": "tests/golden_output/aidl-test-interface-ndk_platform-source/gen/include/aidl/android/aidl/tests/StructuredParcelable.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
-                "id": "ASB-A-198346478-b1825f5b",
                 "digest": {
                   "line_hashes": [
                     "66967101736838554154680316481538631836",
@@ -259,35 +256,38 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "BuildParcelFields",
-                  "file": "generate_cpp.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
                 "id": "ASB-A-198346478-dd304f6a",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
+                "target": {
+                  "file": "generate_cpp.cpp",
+                  "function": "BuildParcelFields"
+                },
                 "digest": {
                   "function_hash": "284803375110470307090192299003511583373",
                   "length": 755
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "GenerateParcelHeader",
-                  "file": "generate_ndk.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
                 "id": "ASB-A-198346478-f8e048a4",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088",
+                "target": {
+                  "file": "generate_ndk.cpp",
+                  "function": "GenerateParcelHeader"
+                },
                 "digest": {
                   "function_hash": "336089501090492204401183314771489846266",
                   "length": 2088
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/tools/aidl/+/8f9de735cc768434fe35e683d8140ccc6c70a088"
             ]
           },
           "database_specific": {
@@ -295,7 +295,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-206718630",
@@ -304,7 +304,7 @@
         "A-206718630",
         "CVE-2021-39671"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-02-01T00:00:00Z",
       "references": [
         {
@@ -343,25 +343,21 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
             "types": [
               "EoP"
             ],
+            "severity": "High",
             "spl": "2022-02-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
-              "https://android.googlesource.com/platform/system/tools/aidl/+/823f787a31bf7826add4104c31c76e39981a0369"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-206718630-22d714db",
+                "deprecated": false,
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
                 "target": {
                   "file": "aidl_language.h"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
-                "id": "ASB-A-206718630-22d714db",
                 "digest": {
                   "line_hashes": [
                     "52682189339011925055107093468470359683",
@@ -378,32 +374,32 @@
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isValidLiteralChar",
-                  "file": "aidl_const_expressions.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
                 "id": "ASB-A-206718630-845b89f5",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
+                "signature_version": "v1",
+                "deprecated": false,
+                "match_only_versions": [
+                  "12"
+                ],
+                "signature_type": "Function",
+                "target": {
+                  "file": "aidl_const_expressions.cpp",
+                  "function": "isValidLiteralChar"
+                },
                 "digest": {
                   "function_hash": "338633911347511692108095469515367765521",
                   "length": 104
-                },
-                "match_only_versions": [
-                  "12"
-                ]
+                }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-206718630-8dda7eb2",
+                "deprecated": false,
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
                 "target": {
                   "file": "aidl_const_expressions.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
-                "id": "ASB-A-206718630-8dda7eb2",
                 "digest": {
                   "line_hashes": [
                     "307217810864960581887163899891123762906",
@@ -452,59 +448,59 @@
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "AidlConstantValue::Character",
-                  "file": "aidl_const_expressions.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
                 "id": "ASB-A-206718630-ba4f0342",
+                "deprecated": false,
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
+                "target": {
+                  "file": "aidl_const_expressions.cpp",
+                  "function": "AidlConstantValue::Character"
+                },
                 "digest": {
                   "function_hash": "282162829013269395491391507033391609680",
                   "length": 319
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "AidlConstantValue::Default",
-                  "file": "aidl_const_expressions.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
                 "id": "ASB-A-206718630-bbaa9fc6",
+                "deprecated": false,
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
+                "target": {
+                  "file": "aidl_const_expressions.cpp",
+                  "function": "AidlConstantValue::Default"
+                },
                 "digest": {
                   "function_hash": "281423464067443248527311935324984184020",
                   "length": 469
                 }
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "AidlConstantValue::String",
-                  "file": "aidl_const_expressions.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
                 "id": "ASB-A-206718630-ceab2b11",
+                "deprecated": false,
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
+                "target": {
+                  "file": "aidl_const_expressions.cpp",
+                  "function": "AidlConstantValue::String"
+                },
                 "digest": {
                   "function_hash": "318325632392926229838755062928866060037",
                   "length": 392
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "id": "ASB-A-206718630-dd232b46",
+                "deprecated": false,
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/823f787a31bf7826add4104c31c76e39981a0369",
                 "target": {
                   "file": "aidl_unittest.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/tools/aidl/+/823f787a31bf7826add4104c31c76e39981a0369",
-                "id": "ASB-A-206718630-dd232b46",
                 "digest": {
                   "line_hashes": [
                     "28125850071617292702190363221028455369",
@@ -515,6 +511,10 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/tools/aidl/+/6466daabe5cadd58674ea2c96b7f92255834dc42",
+              "https://android.googlesource.com/platform/system/tools/aidl/+/823f787a31bf7826add4104c31c76e39981a0369"
             ]
           },
           "database_specific": {
@@ -522,7 +522,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

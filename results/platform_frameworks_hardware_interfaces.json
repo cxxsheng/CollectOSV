@@ -7,7 +7,7 @@
         "A-175074139",
         "CVE-2021-0429"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-04-01T00:00:00Z",
       "references": [
         {
@@ -46,41 +46,27 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a"
-            ],
             "vanir_signatures": [
               {
+                "id": "ASB-A-175074139-0a8254fc",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "186852355703105968249531837970760135890",
+                  "length": 112
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::invalidate",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
-                "id": "ASB-A-175074139-0a8254fc",
-                "digest": {
-                  "function_hash": "186852355703105968249531837970760135890",
-                  "length": 112
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-10fa176c",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "175338350376184407561575965550301864279",
                     "146770633911945992649970193126583715982",
@@ -99,20 +85,20 @@
                     "290831533718802031734328455405940862225",
                     "334228949003768332278296525993142464757",
                     "182489750176153327708079453001078492479"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-1c66e3af",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "330447537097675539252385082856762235096",
                     "282011660942983272463757724813184164592",
@@ -129,50 +115,50 @@
                     "225357105025320715574227170299473043759",
                     "173150515546834295693552080537098549161",
                     "319238317936927559161631749700328098406"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-4d7bc0c8",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "335260696262615486874176740433796637286",
+                  "length": 139
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::signalSensorEvents",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-4d7bc0c8",
-                "digest": {
-                  "function_hash": "335260696262615486874176740433796637286",
-                  "length": 139
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-53dd92c8",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "171840078558003582812907671098951028435",
+                  "length": 403
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::onEvent",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
-                "id": "ASB-A-175074139-53dd92c8",
-                "digest": {
-                  "function_hash": "171840078558003582812907671098951028435",
-                  "length": 403
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
                 "id": "ASB-A-175074139-58e91b0e",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "198405642499162274940852900100507791554",
                     "169717540790079582205546149850149923255",
@@ -198,73 +184,87 @@
                     "316636771253552696827445401395873018857",
                     "308367660609770809911958842953485257491",
                     "256943392463113684848680903006351033507"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-67990a3a",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "141950273662983222182307105608186187251",
+                  "length": 912
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::pollOnce",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-67990a3a",
-                "digest": {
-                  "function_hash": "141950273662983222182307105608186187251",
-                  "length": 912
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
                 "id": "ASB-A-175074139-715fd0ea",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "166355541968493489795323881535919462142",
                     "138266605509322098048874562973918929903",
                     "213438741058246753034642003598311226468"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-73a32dca",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "111653548151460901949576093783172643942",
+                  "length": 183
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::ASensorEventQueue",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a",
-                "id": "ASB-A-175074139-73a32dca",
-                "digest": {
-                  "function_hash": "111653548151460901949576093783172643942",
-                  "length": 183
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-c2f4729f",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "97390541015894019321014952537759814247",
+                  "length": 115
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::invalidateSensorQueue",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-c2f4729f",
-                "digest": {
-                  "function_hash": "97390541015894019321014952537759814247",
-                  "length": 115
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2021-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/49a35c4a228cad8f0f0bd5620293a39b86436a9a"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -293,71 +293,57 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/1b859a81ed4b16d879201bc66b2a949d05cba6bd"
-            ],
             "vanir_signatures": [
               {
+                "id": "ASB-A-175074139-10bc04f8",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "141950273662983222182307105608186187251",
+                  "length": 912
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::pollOnce",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-10bc04f8",
-                "digest": {
-                  "function_hash": "141950273662983222182307105608186187251",
-                  "length": 912
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-35db49bf",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "97390541015894019321014952537759814247",
+                  "length": 115
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::invalidateSensorQueue",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-35db49bf",
-                "digest": {
-                  "function_hash": "97390541015894019321014952537759814247",
-                  "length": 115
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-7310a28d",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "335260696262615486874176740433796637286",
+                  "length": 139
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::signalSensorEvents",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-7310a28d",
-                "digest": {
-                  "function_hash": "335260696262615486874176740433796637286",
-                  "length": 139
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-9b27a418",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "330447537097675539252385082856762235096",
                     "282011660942983272463757724813184164592",
@@ -374,20 +360,20 @@
                     "225357105025320715574227170299473043759",
                     "173150515546834295693552080537098549161",
                     "319238317936927559161631749700328098406"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-c399ad23",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "175338350376184407561575965550301864279",
                     "146770633911945992649970193126583715982",
@@ -406,10 +392,24 @@
                     "290831533718802031734328455405940862225",
                     "334228949003768332278296525993142464757",
                     "182489750176153327708079453001078492479"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2021-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/1b859a81ed4b16d879201bc66b2a949d05cba6bd"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -438,26 +438,12 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
                 "id": "ASB-A-175074139-08d50c1c",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "111751606459396987508306385696303910007",
                     "281364304863022303445757825753763141058",
@@ -479,20 +465,20 @@
                     "316636771253552696827445401395873018857",
                     "308367660609770809911958842953485257491",
                     "256943392463113684848680903006351033507"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-11a5fa69",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "330447537097675539252385082856762235096",
                     "282011660942983272463757724813184164592",
@@ -509,99 +495,99 @@
                     "225357105025320715574227170299473043759",
                     "173150515546834295693552080537098549161",
                     "319238317936927559161631749700328098406"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-20807917",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "334915140087764131799797843321049981657",
+                  "length": 528
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::onEvent",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
-                "id": "ASB-A-175074139-20807917",
-                "digest": {
-                  "function_hash": "334915140087764131799797843321049981657",
-                  "length": 528
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-2376bcf2",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "141950273662983222182307105608186187251",
+                  "length": 912
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::pollOnce",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-2376bcf2",
-                "digest": {
-                  "function_hash": "141950273662983222182307105608186187251",
-                  "length": 912
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-321b7d25",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "64524193049490776091598583930887454286",
+                  "length": 185
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::ASensorEventQueue",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
-                "id": "ASB-A-175074139-321b7d25",
-                "digest": {
-                  "function_hash": "64524193049490776091598583930887454286",
-                  "length": 185
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-363eec40",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "335260696262615486874176740433796637286",
+                  "length": 139
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::signalSensorEvents",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-363eec40",
-                "digest": {
-                  "function_hash": "335260696262615486874176740433796637286",
-                  "length": 139
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
                 "id": "ASB-A-175074139-58387ccc",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "276043382857204389303821965747802198932",
                     "208244344914470344033582674081873140751",
                     "222535376569494936955936827608216991619",
                     "192352801118087442726593066291317089900"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-65a715d9",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "175338350376184407561575965550301864279",
                     "146770633911945992649970193126583715982",
@@ -620,40 +606,54 @@
                     "290831533718802031734328455405940862225",
                     "334228949003768332278296525993142464757",
                     "182489750176153327708079453001078492479"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-9bf2ac2f",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "97390541015894019321014952537759814247",
+                  "length": 115
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::invalidateSensorQueue",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-9bf2ac2f",
-                "digest": {
-                  "function_hash": "97390541015894019321014952537759814247",
-                  "length": 115
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-a9246cce",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "186852355703105968249531837970760135890",
+                  "length": 112
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::invalidate",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
-                "id": "ASB-A-175074139-a9246cce",
-                "digest": {
-                  "function_hash": "186852355703105968249531837970760135890",
-                  "length": 112
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2021-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -682,75 +682,61 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771"
-            ],
             "vanir_signatures": [
               {
+                "id": "ASB-A-175074139-0a08d7f6",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "141950273662983222182307105608186187251",
+                  "length": 912
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::pollOnce",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-0a08d7f6",
-                "digest": {
-                  "function_hash": "141950273662983222182307105608186187251",
-                  "length": 912
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-1786d6eb",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "64524193049490776091598583930887454286",
+                  "length": 185
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::ASensorEventQueue",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
-                "id": "ASB-A-175074139-1786d6eb",
-                "digest": {
-                  "function_hash": "64524193049490776091598583930887454286",
-                  "length": 185
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
                 "id": "ASB-A-175074139-250f1e88",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "276043382857204389303821965747802198932",
                     "208244344914470344033582674081873140751",
                     "222535376569494936955936827608216991619",
                     "192352801118087442726593066291317089900"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
                 "id": "ASB-A-175074139-7c9112da",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "111751606459396987508306385696303910007",
                     "281364304863022303445757825753763141058",
@@ -772,35 +758,35 @@
                     "316636771253552696827445401395873018857",
                     "308367660609770809911958842953485257491",
                     "256943392463113684848680903006351033507"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-897dcd45",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "334915140087764131799797843321049981657",
+                  "length": 528
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::onEvent",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
-                "id": "ASB-A-175074139-897dcd45",
-                "digest": {
-                  "function_hash": "334915140087764131799797843321049981657",
-                  "length": 528
-                }
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-a387bc83",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "330447537097675539252385082856762235096",
                     "282011660942983272463757724813184164592",
@@ -817,20 +803,20 @@
                     "225357105025320715574227170299473043759",
                     "173150515546834295693552080537098549161",
                     "319238317936927559161631749700328098406"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.h"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
                 "id": "ASB-A-175074139-adeaa75a",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "175338350376184407561575965550301864279",
                     "146770633911945992649970193126583715982",
@@ -849,55 +835,69 @@
                     "290831533718802031734328455405940862225",
                     "334228949003768332278296525993142464757",
                     "182489750176153327708079453001078492479"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "signature_type": "Line",
+                "target": {
+                  "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-cf186363",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "97390541015894019321014952537759814247",
+                  "length": 115
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::invalidateSensorQueue",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-cf186363",
-                "digest": {
-                  "function_hash": "97390541015894019321014952537759814247",
-                  "length": 115
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-e7050f4b",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "186852355703105968249531837970760135890",
+                  "length": 112
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ASensorEventQueue::invalidate",
                   "file": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771",
-                "id": "ASB-A-175074139-e7050f4b",
-                "digest": {
-                  "function_hash": "186852355703105968249531837970760135890",
-                  "length": 112
-                }
+                "signature_version": "v1"
               },
               {
+                "id": "ASB-A-175074139-ef64c1e5",
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "335260696262615486874176740433796637286",
+                  "length": 139
+                },
                 "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
                   "function": "ALooper::signalSensorEvents",
                   "file": "sensorservice/libsensorndkbridge/ALooper.cpp"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
-                "id": "ASB-A-175074139-ef64c1e5",
-                "digest": {
-                  "function_hash": "335260696262615486874176740433796637286",
-                  "length": 139
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2021-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0",
+              "https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771"
+            ],
+            "severity": "High",
+            "types": [
+              "EoP"
             ]
           },
           "database_specific": {
@@ -905,7 +905,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

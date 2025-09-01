@@ -7,7 +7,7 @@
         "A-272020068",
         "CVE-2023-21289"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -42,84 +42,84 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-03f41490",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "154024289320809624274946460578804696757",
                     "151588659087965012770835819375748979376",
                     "280364402766476244468737029756931468904",
                     "11057617847484421365866785521485864046",
                     "308960376137552327290394868068852179052"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-4bb9dbd2",
+                "digest": {
+                  "length": 673,
+                  "function_hash": "81702766632057871562352111814049922870"
+                },
                 "target": {
                   "function": "onWalletCardsRetrieved",
                   "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-4bb9dbd2",
-                "digest": {
-                  "function_hash": "81702766632057871562352111814049922870",
-                  "length": 673
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-63eb63b2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "184641559218894618212227008777356932071",
                     "258488567682341411313240920445946856462",
                     "288065892403114452316990344918332207873",
                     "86684942475027882702316005456625254702"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-c7ef98a4",
+                "digest": {
+                  "length": 235,
+                  "function_hash": "321485103869401293967141542063908118035"
+                },
                 "target": {
                   "function": "QAWalletCardViewInfo",
                   "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-c7ef98a4",
-                "digest": {
-                  "function_hash": "321485103869401293967141542063908118035",
-                  "length": 235
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-08-01",
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
             ]
           },
           "database_specific": {
@@ -148,43 +148,32 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/QuickAccessWallet/+/36284852414f25d2977100fc98d1b1db4f7e6482"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
+                "match_only_versions": [
+                  "11"
+                ],
+                "digest": {
+                  "length": 239,
+                  "function_hash": "245266871400380683230443391127046152544"
+                },
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-141d9e90",
                 "target": {
                   "function": "QAWalletCardViewInfo",
                   "file": "src/com/android/systemui/plugin/globalactions/wallet/WalletPanelViewController.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickAccessWallet/+/36284852414f25d2977100fc98d1b1db4f7e6482",
-                "id": "ASB-A-272020068-141d9e90",
-                "digest": {
-                  "function_hash": "245266871400380683230443391127046152544",
-                  "length": 239
-                },
-                "match_only_versions": [
-                  "11"
-                ]
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickAccessWallet/+/36284852414f25d2977100fc98d1b1db4f7e6482"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/systemui/plugin/globalactions/wallet/WalletPanelViewController.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/QuickAccessWallet/+/36284852414f25d2977100fc98d1b1db4f7e6482",
-                "id": "ASB-A-272020068-d70b157c",
+                "match_only_versions": [
+                  "11"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "73742276252965827634920533043700763320",
                     "240890450615297895378835783092766574491",
@@ -194,13 +183,24 @@
                     "176061753774235849630070741735145956856",
                     "181051966795297764024482497327111189936",
                     "56247703958925250325187635788824166336"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "11"
-                ]
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-d70b157c",
+                "target": {
+                  "file": "src/com/android/systemui/plugin/globalactions/wallet/WalletPanelViewController.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/QuickAccessWallet/+/36284852414f25d2977100fc98d1b1db4f7e6482"
               }
+            ],
+            "spl": "2023-08-01",
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/QuickAccessWallet/+/36284852414f25d2977100fc98d1b1db4f7e6482"
             ]
           },
           "database_specific": {
@@ -229,84 +229,84 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-57912457",
+                "digest": {
+                  "length": 673,
+                  "function_hash": "81702766632057871562352111814049922870"
+                },
                 "target": {
                   "function": "onWalletCardsRetrieved",
                   "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-57912457",
-                "digest": {
-                  "function_hash": "81702766632057871562352111814049922870",
-                  "length": 673
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-8bd98fb8",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "154024289320809624274946460578804696757",
                     "151588659087965012770835819375748979376",
                     "280364402766476244468737029756931468904",
                     "11057617847484421365866785521485864046",
                     "308960376137552327290394868068852179052"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-bd6f8cd6",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "184641559218894618212227008777356932071",
                     "258488567682341411313240920445946856462",
                     "288065892403114452316990344918332207873",
                     "86684942475027882702316005456625254702"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-dbe5c40b",
+                "digest": {
+                  "length": 235,
+                  "function_hash": "321485103869401293967141542063908118035"
+                },
                 "target": {
                   "function": "QAWalletCardViewInfo",
                   "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-dbe5c40b",
-                "digest": {
-                  "function_hash": "321485103869401293967141542063908118035",
-                  "length": 235
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-08-01",
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
             ]
           },
           "database_specific": {
@@ -335,84 +335,84 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-07a8563b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "184641559218894618212227008777356932071",
                     "258488567682341411313240920445946856462",
                     "288065892403114452316990344918332207873",
                     "86684942475027882702316005456625254702"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-0bb643a7",
+                "digest": {
+                  "length": 673,
+                  "function_hash": "81702766632057871562352111814049922870"
+                },
                 "target": {
                   "function": "onWalletCardsRetrieved",
                   "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-0bb643a7",
-                "digest": {
-                  "function_hash": "81702766632057871562352111814049922870",
-                  "length": 673
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-bb06105e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "154024289320809624274946460578804696757",
                     "151588659087965012770835819375748979376",
                     "280364402766476244468737029756931468904",
                     "11057617847484421365866785521485864046",
                     "308960376137552327290394868068852179052"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-d039ff23",
+                "digest": {
+                  "length": 235,
+                  "function_hash": "321485103869401293967141542063908118035"
+                },
                 "target": {
                   "function": "QAWalletCardViewInfo",
                   "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-d039ff23",
-                "digest": {
-                  "function_hash": "321485103869401293967141542063908118035",
-                  "length": 235
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-08-01",
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
             ]
           },
           "database_specific": {
@@ -441,84 +441,84 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-9feddd9a",
+                "digest": {
+                  "length": 673,
+                  "function_hash": "81702766632057871562352111814049922870"
+                },
                 "target": {
                   "function": "onWalletCardsRetrieved",
                   "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-9feddd9a",
-                "digest": {
-                  "function_hash": "81702766632057871562352111814049922870",
-                  "length": 673
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-c8554155",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "154024289320809624274946460578804696757",
                     "151588659087965012770835819375748979376",
                     "280364402766476244468737029756931468904",
                     "11057617847484421365866785521485864046",
                     "308960376137552327290394868068852179052"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/qs/tiles/QuickAccessWalletTile.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-272020068-ef3b032e",
+                "digest": {
+                  "length": 235,
+                  "function_hash": "321485103869401293967141542063908118035"
+                },
                 "target": {
                   "function": "QAWalletCardViewInfo",
                   "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
                 },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
-                "id": "ASB-A-272020068-ef3b032e",
-                "digest": {
-                  "function_hash": "321485103869401293967141542063908118035",
-                  "length": 235
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
                 "id": "ASB-A-272020068-eff5af57",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "184641559218894618212227008777356932071",
                     "258488567682341411313240920445946856462",
                     "288065892403114452316990344918332207873",
                     "86684942475027882702316005456625254702"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "packages/SystemUI/src/com/android/systemui/wallet/ui/WalletScreenController.java"
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c",
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-08-01",
+            "severity": "High",
+            "types": [
+              "ID"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/ff753ae693065685d85bbda6af2953905fdf434c"
             ]
           },
           "database_specific": {
@@ -526,7 +526,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

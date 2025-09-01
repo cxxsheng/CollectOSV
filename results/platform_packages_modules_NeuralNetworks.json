@@ -7,7 +7,7 @@
         "A-256589724",
         "CVE-2023-20935"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-04-01T00:00:00Z",
       "references": [
         {
@@ -50,36 +50,25 @@
             "types": [
               "ID"
             ],
-            "spl": "2023-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e",
-                "id": "ASB-A-256589724-1ae403da",
                 "digest": {
-                  "function_hash": "146009898177792842256457245540887739563",
-                  "length": 1678
+                  "length": 1678,
+                  "function_hash": "146009898177792842256457245540887739563"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-1ae403da",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp",
+                  "function": "deserialize"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e",
-                "id": "ASB-A-256589724-a4c65a6b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258936240265842369001214474606389420851",
                     "67127141091905790440884439550195604632",
@@ -163,25 +152,36 @@
                     "154159896539246972839145486662927340852",
                     "133233508096510069040242780843032803114",
                     "139388882475840577622625391168661340180"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-a4c65a6b",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e",
-                "id": "ASB-A-256589724-e5878ce9",
                 "digest": {
-                  "function_hash": "71077937745876140453199012848175282855",
-                  "length": 3024
+                  "length": 3024,
+                  "function_hash": "71077937745876140453199012848175282855"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-e5878ce9",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp",
+                  "function": "deserialize"
                 }
               }
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/interfaces/+/611648f7a007b3b491e70123c1e2fdca54388a9e"
             ]
           },
           "database_specific": {
@@ -214,36 +214,25 @@
             "types": [
               "ID"
             ],
-            "spl": "2023-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
-                "id": "ASB-A-256589724-150ff29f",
                 "digest": {
-                  "function_hash": "201950178419631183605602934387619579487",
-                  "length": 3150
+                  "length": 3150,
+                  "function_hash": "201950178419631183605602934387619579487"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-150ff29f",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp",
+                  "function": "deserialize"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstController.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
-                "id": "ASB-A-256589724-2e226d73",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "271604990142106825508998291167308775543",
                     "320550076100077293380891899088846222134",
@@ -277,20 +266,20 @@
                     "95125090922067735898500418138156253357",
                     "133233508096510069040242780843032803114",
                     "77982913052076482664472099039165346803"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-2e226d73",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
-                "id": "ASB-A-256589724-3d9041ff",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258936240265842369001214474606389420851",
                     "330520845293037462675132192081797988477",
@@ -353,25 +342,36 @@
                     "53219983538766625383473780822328052595",
                     "325681485131475907850271671576195205457",
                     "170921127321533424389013043045771649742"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-3d9041ff",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstController.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
-                "id": "ASB-A-256589724-53466ee1",
                 "digest": {
-                  "function_hash": "295358130863967926135594061092512187055",
-                  "length": 1767
+                  "length": 1767,
+                  "function_hash": "295358130863967926135594061092512187055"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-53466ee1",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp",
+                  "function": "deserialize"
                 }
               }
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/74d74477682cc34df5be67e039a63686c03cfb06"
             ]
           },
           "database_specific": {
@@ -403,139 +403,139 @@
             "severity": "High",
             "types": [
               "ID"
+            ],
+            "vanir_signatures": [
+              {
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "258936240265842369001214474606389420851",
+                    "67127141091905790440884439550195604632",
+                    "220799470805788336983581415642306881004",
+                    "291864384393301778319638547021049498566",
+                    "88501738905842173846684335360288751108",
+                    "73307485366933303782063238234839980768",
+                    "295104442348894419986804659818916564601",
+                    "243962418303161964093048887675383940230",
+                    "97843886294034601290999489087190071211",
+                    "165386828937649914718428289980387390913",
+                    "11931511089446026182231308167994015880",
+                    "159496533902311688431160571868727599561",
+                    "242806910691919255461510001730253229287",
+                    "194143350651869087808192845356409604767",
+                    "188886943887709504598248209066591086791",
+                    "10733589751509687422890352659510036743",
+                    "251620115730709364097076202328257987823",
+                    "313983116626801778584339467598038568036",
+                    "197524300521455156710587030026044243549",
+                    "276965006152581251148300780323706224308",
+                    "34451886923698954237275570467611581297",
+                    "214563191510084356561108428258860590781",
+                    "57123143209303562324855574776734359406",
+                    "157993823631119413861206234886161691247",
+                    "83634131393511181787791231606204861205",
+                    "287976321819156104853842834446843307297",
+                    "311335840811775105865748123308111313337",
+                    "201570638034053653147017372302584819675",
+                    "311733019529437733337277084529928019805",
+                    "121869695089154575788628069842372423252",
+                    "203190232108357505711697514642622290887",
+                    "314284305837888217144972161334062082482",
+                    "114519671015069055957437212107648152616",
+                    "223432900803494282486432636819659718471",
+                    "335177553005012904337160466665082829506",
+                    "121572852740398778572825962382751733929",
+                    "48957858928072073890343428012894859643",
+                    "182016279549965653843536297199358328836",
+                    "316214269018922106147698358279277526275",
+                    "121988169288373218831862666656177472878",
+                    "82508725388695598161940682944519932956",
+                    "242769942935681994233252107541185265577",
+                    "123856231364614735281224031788297546877",
+                    "221981851201533590641987526090097737884",
+                    "201155161166816384549182492857742328078",
+                    "41937183409376880367064187929533574146",
+                    "100063248667933676695480353778777903484",
+                    "139952944465368576293610177642322462156",
+                    "102727477991495766181174728926691152068",
+                    "169542661602539972881732671535667371930",
+                    "15796261823598025438626598825366895432",
+                    "136431999255207745458720070954996962528",
+                    "131095087641504816478181466650184804886",
+                    "224926672149727652011889766093319571016",
+                    "253134918112805918767710652127474697218",
+                    "238755694775290659782278771374202491762",
+                    "190580181784732427588283963227240323260",
+                    "179120046003284067532781922116107501248",
+                    "177217503346535043732180621465994759688",
+                    "220303729453844545596139304257022688847",
+                    "20138157677370623459850106209425449491",
+                    "328526626325848901870193705462614269113",
+                    "58143182437780746059912324449327527458",
+                    "263789390756877295308414080642536302771",
+                    "7362210855214347300030019690658657531",
+                    "183321080146690896667456150078544040316",
+                    "272950140693522775968604985355662017836",
+                    "104943890989271120910640873129709994316",
+                    "222446422353135745604833918865696303700",
+                    "49353368941305368624468803225483570402",
+                    "215894702394124621170772009084972713483",
+                    "21935537315545032318905993324120958923",
+                    "274722427855370225165262775004896107747",
+                    "152525733464745549879680096020485132040",
+                    "191748231573479922509567226583542197561",
+                    "10143271909675517957333561266942616474",
+                    "149135551179689730360005796088368834070",
+                    "263579350189658086387057225594041156326",
+                    "110964488793273933454962195640332068971",
+                    "154159896539246972839145486662927340852",
+                    "133233508096510069040242780843032803114",
+                    "139388882475840577622625391168661340180"
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-0df9e6de",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
+                }
+              },
+              {
+                "digest": {
+                  "length": 1678,
+                  "function_hash": "146009898177792842256457245540887739563"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-20df44be",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp",
+                  "function": "deserialize"
+                }
+              },
+              {
+                "digest": {
+                  "length": 3024,
+                  "function_hash": "71077937745876140453199012848175282855"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-6fd6802b",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp",
+                  "function": "deserialize"
+                }
+              }
             ],
             "spl": "2023-04-01",
             "fixes": [
               "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099"
-            ],
-            "vanir_signatures": [
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099",
-                "id": "ASB-A-256589724-0df9e6de",
-                "digest": {
-                  "line_hashes": [
-                    "258936240265842369001214474606389420851",
-                    "67127141091905790440884439550195604632",
-                    "220799470805788336983581415642306881004",
-                    "291864384393301778319638547021049498566",
-                    "88501738905842173846684335360288751108",
-                    "73307485366933303782063238234839980768",
-                    "295104442348894419986804659818916564601",
-                    "243962418303161964093048887675383940230",
-                    "97843886294034601290999489087190071211",
-                    "165386828937649914718428289980387390913",
-                    "11931511089446026182231308167994015880",
-                    "159496533902311688431160571868727599561",
-                    "242806910691919255461510001730253229287",
-                    "194143350651869087808192845356409604767",
-                    "188886943887709504598248209066591086791",
-                    "10733589751509687422890352659510036743",
-                    "251620115730709364097076202328257987823",
-                    "313983116626801778584339467598038568036",
-                    "197524300521455156710587030026044243549",
-                    "276965006152581251148300780323706224308",
-                    "34451886923698954237275570467611581297",
-                    "214563191510084356561108428258860590781",
-                    "57123143209303562324855574776734359406",
-                    "157993823631119413861206234886161691247",
-                    "83634131393511181787791231606204861205",
-                    "287976321819156104853842834446843307297",
-                    "311335840811775105865748123308111313337",
-                    "201570638034053653147017372302584819675",
-                    "311733019529437733337277084529928019805",
-                    "121869695089154575788628069842372423252",
-                    "203190232108357505711697514642622290887",
-                    "314284305837888217144972161334062082482",
-                    "114519671015069055957437212107648152616",
-                    "223432900803494282486432636819659718471",
-                    "335177553005012904337160466665082829506",
-                    "121572852740398778572825962382751733929",
-                    "48957858928072073890343428012894859643",
-                    "182016279549965653843536297199358328836",
-                    "316214269018922106147698358279277526275",
-                    "121988169288373218831862666656177472878",
-                    "82508725388695598161940682944519932956",
-                    "242769942935681994233252107541185265577",
-                    "123856231364614735281224031788297546877",
-                    "221981851201533590641987526090097737884",
-                    "201155161166816384549182492857742328078",
-                    "41937183409376880367064187929533574146",
-                    "100063248667933676695480353778777903484",
-                    "139952944465368576293610177642322462156",
-                    "102727477991495766181174728926691152068",
-                    "169542661602539972881732671535667371930",
-                    "15796261823598025438626598825366895432",
-                    "136431999255207745458720070954996962528",
-                    "131095087641504816478181466650184804886",
-                    "224926672149727652011889766093319571016",
-                    "253134918112805918767710652127474697218",
-                    "238755694775290659782278771374202491762",
-                    "190580181784732427588283963227240323260",
-                    "179120046003284067532781922116107501248",
-                    "177217503346535043732180621465994759688",
-                    "220303729453844545596139304257022688847",
-                    "20138157677370623459850106209425449491",
-                    "328526626325848901870193705462614269113",
-                    "58143182437780746059912324449327527458",
-                    "263789390756877295308414080642536302771",
-                    "7362210855214347300030019690658657531",
-                    "183321080146690896667456150078544040316",
-                    "272950140693522775968604985355662017836",
-                    "104943890989271120910640873129709994316",
-                    "222446422353135745604833918865696303700",
-                    "49353368941305368624468803225483570402",
-                    "215894702394124621170772009084972713483",
-                    "21935537315545032318905993324120958923",
-                    "274722427855370225165262775004896107747",
-                    "152525733464745549879680096020485132040",
-                    "191748231573479922509567226583542197561",
-                    "10143271909675517957333561266942616474",
-                    "149135551179689730360005796088368834070",
-                    "263579350189658086387057225594041156326",
-                    "110964488793273933454962195640332068971",
-                    "154159896539246972839145486662927340852",
-                    "133233508096510069040242780843032803114",
-                    "139388882475840577622625391168661340180"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099",
-                "id": "ASB-A-256589724-20df44be",
-                "digest": {
-                  "function_hash": "146009898177792842256457245540887739563",
-                  "length": 1678
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/4668f30dcfdf418e7fcbc0d9c98b2eabbddb5099",
-                "id": "ASB-A-256589724-6fd6802b",
-                "digest": {
-                  "function_hash": "71077937745876140453199012848175282855",
-                  "length": 3024
-                }
-              }
             ]
           },
           "database_specific": {
@@ -568,21 +568,10 @@
             "types": [
               "ID"
             ],
-            "spl": "2023-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
-                "id": "ASB-A-256589724-2458871b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258936240265842369001214474606389420851",
                     "330520845293037462675132192081797988477",
@@ -645,35 +634,35 @@
                     "53219983538766625383473780822328052595",
                     "325681485131475907850271671576195205457",
                     "170921127321533424389013043045771649742"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstController.cpp"
+                  ]
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
-                "id": "ASB-A-256589724-2c044817",
-                "digest": {
-                  "function_hash": "295358130863967926135594061092512187055",
-                  "length": 1767
-                }
-              },
-              {
+                "signature_version": "v1",
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstController.cpp"
-                },
-                "deprecated": false,
+                "id": "ASB-A-256589724-2458871b",
                 "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
-                "id": "ASB-A-256589724-46a64f07",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp"
+                }
+              },
+              {
                 "digest": {
+                  "length": 1767,
+                  "function_hash": "295358130863967926135594061092512187055"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-2c044817",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp",
+                  "function": "deserialize"
+                }
+              },
+              {
+                "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "271604990142106825508998291167308775543",
                     "320550076100077293380891899088846222134",
@@ -707,25 +696,36 @@
                     "95125090922067735898500418138156253357",
                     "133233508096510069040242780843032803114",
                     "77982913052076482664472099039165346803"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-46a64f07",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
-                "id": "ASB-A-256589724-b5cb0fbb",
                 "digest": {
-                  "function_hash": "201950178419631183605602934387619579487",
-                  "length": 3150
+                  "length": 3150,
+                  "function_hash": "201950178419631183605602934387619579487"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-b5cb0fbb",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp",
+                  "function": "deserialize"
                 }
               }
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6d7c5d22ada585428b607105a8d4753a902306a6"
             ]
           },
           "database_specific": {
@@ -757,139 +757,139 @@
             "severity": "High",
             "types": [
               "ID"
+            ],
+            "vanir_signatures": [
+              {
+                "digest": {
+                  "length": 3024,
+                  "function_hash": "71077937745876140453199012848175282855"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-12908ac9",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp",
+                  "function": "deserialize"
+                }
+              },
+              {
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "258936240265842369001214474606389420851",
+                    "67127141091905790440884439550195604632",
+                    "220799470805788336983581415642306881004",
+                    "291864384393301778319638547021049498566",
+                    "88501738905842173846684335360288751108",
+                    "73307485366933303782063238234839980768",
+                    "295104442348894419986804659818916564601",
+                    "243962418303161964093048887675383940230",
+                    "97843886294034601290999489087190071211",
+                    "165386828937649914718428289980387390913",
+                    "11931511089446026182231308167994015880",
+                    "159496533902311688431160571868727599561",
+                    "242806910691919255461510001730253229287",
+                    "194143350651869087808192845356409604767",
+                    "188886943887709504598248209066591086791",
+                    "10733589751509687422890352659510036743",
+                    "251620115730709364097076202328257987823",
+                    "313983116626801778584339467598038568036",
+                    "197524300521455156710587030026044243549",
+                    "276965006152581251148300780323706224308",
+                    "34451886923698954237275570467611581297",
+                    "214563191510084356561108428258860590781",
+                    "57123143209303562324855574776734359406",
+                    "157993823631119413861206234886161691247",
+                    "83634131393511181787791231606204861205",
+                    "287976321819156104853842834446843307297",
+                    "311335840811775105865748123308111313337",
+                    "201570638034053653147017372302584819675",
+                    "311733019529437733337277084529928019805",
+                    "121869695089154575788628069842372423252",
+                    "203190232108357505711697514642622290887",
+                    "314284305837888217144972161334062082482",
+                    "114519671015069055957437212107648152616",
+                    "223432900803494282486432636819659718471",
+                    "335177553005012904337160466665082829506",
+                    "121572852740398778572825962382751733929",
+                    "48957858928072073890343428012894859643",
+                    "182016279549965653843536297199358328836",
+                    "316214269018922106147698358279277526275",
+                    "121988169288373218831862666656177472878",
+                    "82508725388695598161940682944519932956",
+                    "242769942935681994233252107541185265577",
+                    "123856231364614735281224031788297546877",
+                    "221981851201533590641987526090097737884",
+                    "201155161166816384549182492857742328078",
+                    "41937183409376880367064187929533574146",
+                    "100063248667933676695480353778777903484",
+                    "139952944465368576293610177642322462156",
+                    "102727477991495766181174728926691152068",
+                    "169542661602539972881732671535667371930",
+                    "15796261823598025438626598825366895432",
+                    "136431999255207745458720070954996962528",
+                    "131095087641504816478181466650184804886",
+                    "224926672149727652011889766093319571016",
+                    "253134918112805918767710652127474697218",
+                    "238755694775290659782278771374202491762",
+                    "190580181784732427588283963227240323260",
+                    "179120046003284067532781922116107501248",
+                    "177217503346535043732180621465994759688",
+                    "220303729453844545596139304257022688847",
+                    "20138157677370623459850106209425449491",
+                    "328526626325848901870193705462614269113",
+                    "58143182437780746059912324449327527458",
+                    "263789390756877295308414080642536302771",
+                    "7362210855214347300030019690658657531",
+                    "183321080146690896667456150078544040316",
+                    "272950140693522775968604985355662017836",
+                    "104943890989271120910640873129709994316",
+                    "222446422353135745604833918865696303700",
+                    "49353368941305368624468803225483570402",
+                    "215894702394124621170772009084972713483",
+                    "21935537315545032318905993324120958923",
+                    "274722427855370225165262775004896107747",
+                    "152525733464745549879680096020485132040",
+                    "191748231573479922509567226583542197561",
+                    "10143271909675517957333561266942616474",
+                    "149135551179689730360005796088368834070",
+                    "263579350189658086387057225594041156326",
+                    "110964488793273933454962195640332068971",
+                    "154159896539246972839145486662927340852",
+                    "133233508096510069040242780843032803114",
+                    "139388882475840577622625391168661340180"
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-1dc51771",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
+                }
+              },
+              {
+                "digest": {
+                  "length": 1678,
+                  "function_hash": "146009898177792842256457245540887739563"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-d2346787",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp",
+                  "function": "deserialize"
+                }
+              }
             ],
             "spl": "2023-04-01",
             "fixes": [
               "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c"
-            ],
-            "vanir_signatures": [
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c",
-                "id": "ASB-A-256589724-12908ac9",
-                "digest": {
-                  "function_hash": "71077937745876140453199012848175282855",
-                  "length": 3024
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c",
-                "id": "ASB-A-256589724-1dc51771",
-                "digest": {
-                  "line_hashes": [
-                    "258936240265842369001214474606389420851",
-                    "67127141091905790440884439550195604632",
-                    "220799470805788336983581415642306881004",
-                    "291864384393301778319638547021049498566",
-                    "88501738905842173846684335360288751108",
-                    "73307485366933303782063238234839980768",
-                    "295104442348894419986804659818916564601",
-                    "243962418303161964093048887675383940230",
-                    "97843886294034601290999489087190071211",
-                    "165386828937649914718428289980387390913",
-                    "11931511089446026182231308167994015880",
-                    "159496533902311688431160571868727599561",
-                    "242806910691919255461510001730253229287",
-                    "194143350651869087808192845356409604767",
-                    "188886943887709504598248209066591086791",
-                    "10733589751509687422890352659510036743",
-                    "251620115730709364097076202328257987823",
-                    "313983116626801778584339467598038568036",
-                    "197524300521455156710587030026044243549",
-                    "276965006152581251148300780323706224308",
-                    "34451886923698954237275570467611581297",
-                    "214563191510084356561108428258860590781",
-                    "57123143209303562324855574776734359406",
-                    "157993823631119413861206234886161691247",
-                    "83634131393511181787791231606204861205",
-                    "287976321819156104853842834446843307297",
-                    "311335840811775105865748123308111313337",
-                    "201570638034053653147017372302584819675",
-                    "311733019529437733337277084529928019805",
-                    "121869695089154575788628069842372423252",
-                    "203190232108357505711697514642622290887",
-                    "314284305837888217144972161334062082482",
-                    "114519671015069055957437212107648152616",
-                    "223432900803494282486432636819659718471",
-                    "335177553005012904337160466665082829506",
-                    "121572852740398778572825962382751733929",
-                    "48957858928072073890343428012894859643",
-                    "182016279549965653843536297199358328836",
-                    "316214269018922106147698358279277526275",
-                    "121988169288373218831862666656177472878",
-                    "82508725388695598161940682944519932956",
-                    "242769942935681994233252107541185265577",
-                    "123856231364614735281224031788297546877",
-                    "221981851201533590641987526090097737884",
-                    "201155161166816384549182492857742328078",
-                    "41937183409376880367064187929533574146",
-                    "100063248667933676695480353778777903484",
-                    "139952944465368576293610177642322462156",
-                    "102727477991495766181174728926691152068",
-                    "169542661602539972881732671535667371930",
-                    "15796261823598025438626598825366895432",
-                    "136431999255207745458720070954996962528",
-                    "131095087641504816478181466650184804886",
-                    "224926672149727652011889766093319571016",
-                    "253134918112805918767710652127474697218",
-                    "238755694775290659782278771374202491762",
-                    "190580181784732427588283963227240323260",
-                    "179120046003284067532781922116107501248",
-                    "177217503346535043732180621465994759688",
-                    "220303729453844545596139304257022688847",
-                    "20138157677370623459850106209425449491",
-                    "328526626325848901870193705462614269113",
-                    "58143182437780746059912324449327527458",
-                    "263789390756877295308414080642536302771",
-                    "7362210855214347300030019690658657531",
-                    "183321080146690896667456150078544040316",
-                    "272950140693522775968604985355662017836",
-                    "104943890989271120910640873129709994316",
-                    "222446422353135745604833918865696303700",
-                    "49353368941305368624468803225483570402",
-                    "215894702394124621170772009084972713483",
-                    "21935537315545032318905993324120958923",
-                    "274722427855370225165262775004896107747",
-                    "152525733464745549879680096020485132040",
-                    "191748231573479922509567226583542197561",
-                    "10143271909675517957333561266942616474",
-                    "149135551179689730360005796088368834070",
-                    "263579350189658086387057225594041156326",
-                    "110964488793273933454962195640332068971",
-                    "154159896539246972839145486662927340852",
-                    "133233508096510069040242780843032803114",
-                    "139388882475840577622625391168661340180"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/ExecutionBurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/082cefe34080b89e18868d8df5a97bd01f87b39c",
-                "id": "ASB-A-256589724-d2346787",
-                "digest": {
-                  "function_hash": "146009898177792842256457245540887739563",
-                  "length": 1678
-                }
-              }
             ]
           },
           "database_specific": {
@@ -922,36 +922,25 @@
             "types": [
               "ID"
             ],
-            "spl": "2023-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
-                "id": "ASB-A-256589724-04e4923c",
                 "digest": {
-                  "function_hash": "201950178419631183605602934387619579487",
-                  "length": 3150
+                  "length": 3150,
+                  "function_hash": "201950178419631183605602934387619579487"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-04e4923c",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp",
+                  "function": "deserialize"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
-                "id": "ASB-A-256589724-7785ca9c",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258936240265842369001214474606389420851",
                     "330520845293037462675132192081797988477",
@@ -1014,20 +1003,20 @@
                     "53219983538766625383473780822328052595",
                     "325681485131475907850271671576195205457",
                     "170921127321533424389013043045771649742"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-7785ca9c",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstController.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
-                "id": "ASB-A-256589724-aa0d0be4",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "271604990142106825508998291167308775543",
                     "320550076100077293380891899088846222134",
@@ -1061,25 +1050,36 @@
                     "95125090922067735898500418138156253357",
                     "133233508096510069040242780843032803114",
                     "77982913052076482664472099039165346803"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-aa0d0be4",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstController.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
-                "id": "ASB-A-256589724-d2d92f15",
                 "digest": {
-                  "function_hash": "295358130863967926135594061092512187055",
-                  "length": 1767
+                  "length": 1767,
+                  "function_hash": "295358130863967926135594061092512187055"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-d2d92f15",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp",
+                  "function": "deserialize"
                 }
               }
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eca075e4b139c25168d2e79d6f1edc6fef2264a9"
             ]
           },
           "database_specific": {
@@ -1112,21 +1112,10 @@
             "types": [
               "ID"
             ],
-            "spl": "2023-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37",
-                "id": "ASB-A-256589724-3c138ed9",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258936240265842369001214474606389420851",
                     "67127141091905790440884439550195604632",
@@ -1210,40 +1199,51 @@
                     "154159896539246972839145486662927340852",
                     "133233508096510069040242780843032803114",
                     "139388882475840577622625391168661340180"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-3c138ed9",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
+                "digest": {
+                  "length": 3024,
+                  "function_hash": "71077937745876140453199012848175282855"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-256589724-a8465f33",
-                "digest": {
-                  "function_hash": "71077937745876140453199012848175282855",
-                  "length": 3024
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp",
+                  "function": "deserialize"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37",
-                "id": "ASB-A-256589724-ad3671ff",
                 "digest": {
-                  "function_hash": "146009898177792842256457245540887739563",
-                  "length": 1678
+                  "length": 1678,
+                  "function_hash": "146009898177792842256457245540887739563"
+                },
+                "signature_version": "v1",
+                "signature_type": "Function",
+                "id": "ASB-A-256589724-ad3671ff",
+                "source": "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37",
+                "deprecated": false,
+                "target": {
+                  "file": "neuralnetworks/1.2/utils/src/BurstUtils.cpp",
+                  "function": "deserialize"
                 }
               }
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/hardware/interfaces/+/67d9ebe9e6f0b661978b86f561f36865abeb0c37"
             ]
           },
           "database_specific": {
@@ -1276,51 +1276,40 @@
             "types": [
               "ID"
             ],
-            "spl": "2023-04-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstController.cpp"
+                "digest": {
+                  "length": 1767,
+                  "function_hash": "295358130863967926135594061092512187055"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
+                "signature_version": "v1",
+                "signature_type": "Function",
                 "id": "ASB-A-256589724-1735c683",
-                "digest": {
-                  "function_hash": "295358130863967926135594061092512187055",
-                  "length": 1767
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp",
+                  "function": "deserialize"
                 }
               },
               {
+                "digest": {
+                  "length": 3150,
+                  "function_hash": "201950178419631183605602934387619579487"
+                },
+                "signature_version": "v1",
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "deserialize",
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
                 "id": "ASB-A-256589724-2f87d8e7",
-                "digest": {
-                  "function_hash": "201950178419631183605602934387619579487",
-                  "length": 3150
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp",
+                  "function": "deserialize"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstServer.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
-                "id": "ASB-A-256589724-372609f5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "258936240265842369001214474606389420851",
                     "330520845293037462675132192081797988477",
@@ -1383,20 +1372,20 @@
                     "53219983538766625383473780822328052595",
                     "325681485131475907850271671576195205457",
                     "170921127321533424389013043045771649742"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-372609f5",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstServer.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "common/ExecutionBurstController.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
-                "id": "ASB-A-256589724-74321ec0",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "271604990142106825508998291167308775543",
                     "320550076100077293380891899088846222134",
@@ -1430,10 +1419,21 @@
                     "95125090922067735898500418138156253357",
                     "133233508096510069040242780843032803114",
                     "77982913052076482664472099039165346803"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-256589724-74321ec0",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b",
+                "deprecated": false,
+                "target": {
+                  "file": "common/ExecutionBurstController.cpp"
                 }
               }
+            ],
+            "spl": "2023-04-01",
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e01280d59dde72217888780ff5dace2f8d70f37b"
             ]
           },
           "database_specific": {
@@ -1441,7 +1441,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-269270167",
@@ -1450,7 +1450,7 @@
         "A-269270167",
         "CVE-2023-35664"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-09-01T00:00:00Z",
       "references": [
         {
@@ -1486,33 +1486,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/4bf7bb6b50b412678a681d29f7ced70a4d737762"
             ],
+            "spl": "2023-09-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/4bf7bb6b50b412678a681d29f7ced70a4d737762",
-                "id": "ASB-A-269270167-82492551",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "87946936132308608384478622008411577909",
                     "305193397338573633694575358239379866069",
                     "293244330107898378830319066422829728152",
                     "238497066142682013770992329966452972159"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269270167-82492551",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/4bf7bb6b50b412678a681d29f7ced70a4d737762",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -1542,33 +1542,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6e1bbe89e08936a1cad152a59ae82a3773c51cca"
             ],
+            "spl": "2023-09-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6e1bbe89e08936a1cad152a59ae82a3773c51cca",
-                "id": "ASB-A-269270167-69d1db2d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "87946936132308608384478622008411577909",
                     "305193397338573633694575358239379866069",
                     "293244330107898378830319066422829728152",
                     "238497066142682013770992329966452972159"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269270167-69d1db2d",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6e1bbe89e08936a1cad152a59ae82a3773c51cca",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -1598,33 +1598,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e6e1ad6669075ccb70fc27eb67905d76993ed422"
             ],
+            "spl": "2023-09-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e6e1ad6669075ccb70fc27eb67905d76993ed422",
-                "id": "ASB-A-269270167-84bd284b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "87946936132308608384478622008411577909",
                     "305193397338573633694575358239379866069",
                     "293244330107898378830319066422829728152",
                     "238497066142682013770992329966452972159"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269270167-84bd284b",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e6e1ad6669075ccb70fc27eb67905d76993ed422",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -1654,33 +1654,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-09-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/244ac21307a785d49930d4c7e289b74856fa9647"
             ],
+            "spl": "2023-09-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/244ac21307a785d49930d4c7e289b74856fa9647",
-                "id": "ASB-A-269270167-9ee25742",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "87946936132308608384478622008411577909",
                     "305193397338573633694575358239379866069",
                     "293244330107898378830319066422829728152",
                     "238497066142682013770992329966452972159"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269270167-9ee25742",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/244ac21307a785d49930d4c7e289b74856fa9647",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -1688,7 +1688,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-269271098",
@@ -1697,7 +1697,7 @@
         "A-269271098",
         "CVE-2023-40085"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2024-01-01T00:00:00Z",
       "references": [
         {
@@ -1737,29 +1737,29 @@
               "ID"
             ],
             "spl": "2024-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/a80b30fff9550baead3ea7f6984053d90236dc9f"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/a80b30fff9550baead3ea7f6984053d90236dc9f",
-                "id": "ASB-A-269271098-10ccd010",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "89365170970992669584656027371400731194",
                     "53532013549472810034455140374389154140",
                     "147733096384270577092978024019724627330",
                     "2778514037793002499354008786167043654"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269271098-10ccd010",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/a80b30fff9550baead3ea7f6984053d90236dc9f",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/a80b30fff9550baead3ea7f6984053d90236dc9f"
             ]
           },
           "database_specific": {
@@ -1793,29 +1793,29 @@
               "ID"
             ],
             "spl": "2024-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf",
-                "id": "ASB-A-269271098-ce738a08",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "89365170970992669584656027371400731194",
                     "53532013549472810034455140374389154140",
                     "147733096384270577092978024019724627330",
                     "2778514037793002499354008786167043654"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269271098-ce738a08",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf"
             ]
           },
           "database_specific": {
@@ -1849,29 +1849,29 @@
               "ID"
             ],
             "spl": "2024-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimConverter.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf",
-                "id": "ASB-A-269271098-f9a3876e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "89365170970992669584656027371400731194",
                     "53532013549472810034455140374389154140",
                     "147733096384270577092978024019724627330",
                     "2778514037793002499354008786167043654"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269271098-f9a3876e",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimConverter.cpp"
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/22a20c01cc01dbb36ecbc68e664a070c4ffad2cf"
             ]
           },
           "database_specific": {
@@ -1879,7 +1879,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-269455813",
@@ -1888,7 +1888,7 @@
         "A-269455813",
         "CVE-2023-21271"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -1924,24 +1924,14 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/79024562d2cce3f2dc6a3340301d65251497dd83"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimPreparedModel.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/79024562d2cce3f2dc6a3340301d65251497dd83",
-                "id": "ASB-A-269455813-4684bbfc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "133517263624627152021180462775993243955",
                     "120118863474742087825896320033900196726",
@@ -1950,10 +1940,20 @@
                     "284844929156171403640195441884753635955",
                     "192812171998338839540696107886823633161",
                     "216976616578596516229817424449038290274"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269455813-4684bbfc",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/79024562d2cce3f2dc6a3340301d65251497dd83",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimPreparedModel.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -1983,24 +1983,14 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e7ce2bdba52a516aa41276f94447729d6412e082"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimPreparedModel.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e7ce2bdba52a516aa41276f94447729d6412e082",
-                "id": "ASB-A-269455813-bc85ca3e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "286461733144079132600206748818376505910",
                     "338048205177064937780261167548284088023",
@@ -2009,10 +1999,20 @@
                     "284844929156171403640195441884753635955",
                     "192812171998338839540696107886823633161",
                     "216976616578596516229817424449038290274"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269455813-bc85ca3e",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/e7ce2bdba52a516aa41276f94447729d6412e082",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimPreparedModel.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2042,24 +2042,14 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/3147c3ef6bcb6ee0fa8959726cb593e5d6ab17b8"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimPreparedModel.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/3147c3ef6bcb6ee0fa8959726cb593e5d6ab17b8",
-                "id": "ASB-A-269455813-6220c8ac",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "286461733144079132600206748818376505910",
                     "338048205177064937780261167548284088023",
@@ -2068,10 +2058,20 @@
                     "284844929156171403640195441884753635955",
                     "192812171998338839540696107886823633161",
                     "216976616578596516229817424449038290274"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269455813-6220c8ac",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/3147c3ef6bcb6ee0fa8959726cb593e5d6ab17b8",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimPreparedModel.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2101,24 +2101,14 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/553bc285b36b6312b24087bd085f12620028fac8"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "shim_and_sl/ShimPreparedModel.cpp"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/553bc285b36b6312b24087bd085f12620028fac8",
-                "id": "ASB-A-269455813-f16f9d4b",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "133517263624627152021180462775993243955",
                     "120118863474742087825896320033900196726",
@@ -2127,10 +2117,20 @@
                     "284844929156171403640195441884753635955",
                     "192812171998338839540696107886823633161",
                     "216976616578596516229817424449038290274"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "signature_type": "Line",
+                "id": "ASB-A-269455813-f16f9d4b",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/553bc285b36b6312b24087bd085f12620028fac8",
+                "deprecated": false,
+                "target": {
+                  "file": "shim_and_sl/ShimPreparedModel.cpp"
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2138,7 +2138,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-269456018",
@@ -2147,7 +2147,7 @@
         "A-269456018",
         "CVE-2023-21274"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-08-01T00:00:00Z",
       "references": [
         {
@@ -2183,33 +2183,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/da885e104c92c440b697834926ac4a772758d5c3"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "shim_and_sl/ShimConverter.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/da885e104c92c440b697834926ac4a772758d5c3",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-269456018-2278b777",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/da885e104c92c440b697834926ac4a772758d5c3",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "176601635788391476565524033691199382557",
                     "326614349900514728878898230718069872568",
                     "225124754959809905925752443612499307428",
                     "78697356797215910034281392899615031347"
-                  ],
-                  "threshold": 0.9
+                  ]
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2239,33 +2239,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/d7007e8569f71f10ccc454804d46a948a1b0b8a5"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "shim_and_sl/ShimConverter.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/d7007e8569f71f10ccc454804d46a948a1b0b8a5",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-269456018-b329623e",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/d7007e8569f71f10ccc454804d46a948a1b0b8a5",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "176601635788391476565524033691199382557",
                     "326614349900514728878898230718069872568",
                     "225124754959809905925752443612499307428",
                     "78697356797215910034281392899615031347"
-                  ],
-                  "threshold": 0.9
+                  ]
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2295,33 +2295,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/b108bc94105b1a12f0fcf21bf7e13ccdee6e4efa"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "shim_and_sl/ShimConverter.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/b108bc94105b1a12f0fcf21bf7e13ccdee6e4efa",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-269456018-881d7f30",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/b108bc94105b1a12f0fcf21bf7e13ccdee6e4efa",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "176601635788391476565524033691199382557",
                     "326614349900514728878898230718069872568",
                     "225124754959809905925752443612499307428",
                     "78697356797215910034281392899615031347"
-                  ],
-                  "threshold": 0.9
+                  ]
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2351,33 +2351,33 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2023-08-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/5d81dcf032155c2967f613629bb67f629f835636"
             ],
+            "spl": "2023-08-01",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "shim_and_sl/ShimConverter.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/5d81dcf032155c2967f613629bb67f629f835636",
+                "signature_version": "v1",
+                "signature_type": "Line",
                 "id": "ASB-A-269456018-33da6219",
+                "source": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/5d81dcf032155c2967f613629bb67f629f835636",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "176601635788391476565524033691199382557",
                     "326614349900514728878898230718069872568",
                     "225124754959809905925752443612499307428",
                     "78697356797215910034281392899615031347"
-                  ],
-                  "threshold": 0.9
+                  ]
                 }
               }
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -2385,7 +2385,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

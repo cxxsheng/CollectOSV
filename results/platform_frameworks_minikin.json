@@ -7,7 +7,7 @@
         "A-170968514",
         "CVE-2021-0313"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-01-01T00:00:00Z",
       "references": [
         {
@@ -42,50 +42,50 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isWordBreakAfter",
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-36cd12b7",
                 "digest": {
                   "function_hash": "77199152967563880133127078149246770736",
                   "length": 155
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-36cd12b7",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp",
+                  "function": "isWordBreakAfter"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-c7f65a2d",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "284235645884377277334911639850463629827",
                     "289554550184100760855821583177728481305",
                     "119258988697698457769296765622298402469",
                     "147242531554428115735251375970441656677"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-c7f65a2d",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2021-01-01",
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-170968514.json"
@@ -113,50 +113,50 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isWordBreakAfter",
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-41a8bdf1",
                 "digest": {
                   "function_hash": "77199152967563880133127078149246770736",
                   "length": 155
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-41a8bdf1",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp",
+                  "function": "isWordBreakAfter"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-657ac47e",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "284235645884377277334911639850463629827",
                     "289554550184100760855821583177728481305",
                     "119258988697698457769296765622298402469",
                     "147242531554428115735251375970441656677"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-657ac47e",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2021-01-01",
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-170968514.json"
@@ -184,50 +184,50 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isWordBreakAfter",
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-97529edb",
                 "digest": {
                   "function_hash": "77199152967563880133127078149246770736",
                   "length": 155
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-97529edb",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp",
+                  "function": "isWordBreakAfter"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-9a2032cc",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "284235645884377277334911639850463629827",
                     "289554550184100760855821583177728481305",
                     "119258988697698457769296765622298402469",
                     "147242531554428115735251375970441656677"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-9a2032cc",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2021-01-01",
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-170968514.json"
@@ -255,50 +255,50 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-41fab337",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "284235645884377277334911639850463629827",
                     "289554550184100760855821583177728481305",
                     "119258988697698457769296765622298402469",
                     "147242531554428115735251375970441656677"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-41fab337",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isWordBreakAfter",
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-ddc43c0b",
                 "digest": {
                   "function_hash": "77199152967563880133127078149246770736",
                   "length": 155
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-ddc43c0b",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp",
+                  "function": "isWordBreakAfter"
                 }
               }
-            ]
+            ],
+            "spl": "2021-01-01",
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-170968514.json"
@@ -326,57 +326,57 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "DoS"
-            ],
-            "spl": "2021-01-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isWordBreakAfter",
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-0c9c19e2",
                 "digest": {
                   "function_hash": "77199152967563880133127078149246770736",
                   "length": 155
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-0c9c19e2",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp",
+                  "function": "isWordBreakAfter"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LayoutUtils.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349",
-                "id": "ASB-A-170968514-f8c98187",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "284235645884377277334911639850463629827",
                     "289554550184100760855821583177728481305",
                     "119258988697698457769296765622298402469",
                     "147242531554428115735251375970441656677"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-170968514-f8c98187",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LayoutUtils.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2021-01-01",
+            "types": [
+              "DoS"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bcf2520208166cb29f47c60add9c0e37349"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-170968514.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-239210579",
@@ -385,7 +385,7 @@
         "A-239210579",
         "CVE-2022-20472"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -420,39 +420,32 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/minikin/+/d8a427cc9c8a722b0911af5139b10b0a6aeb0e03"
             ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d8a427cc9c8a722b0911af5139b10b0a6aeb0e03",
-                "id": "ASB-A-239210579-be0859dd",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "152948757818298646151844135874724150576",
                   "length": 1060
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d8a427cc9c8a722b0911af5139b10b0a6aeb0e03",
+                "id": "ASB-A-239210579-be0859dd",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d8a427cc9c8a722b0911af5139b10b0a6aeb0e03",
-                "id": "ASB-A-239210579-c3e08b40",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "311606954623645014405006219303463805465",
@@ -465,9 +458,16 @@
                     "100923073751965899328259216077403220810"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d8a427cc9c8a722b0911af5139b10b0a6aeb0e03",
+                "id": "ASB-A-239210579-c3e08b40",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               }
-            ]
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239210579.json"
@@ -495,24 +495,17 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/minikin/+/df1b59a77619ce831d8e5078c125cc2557a9ea35"
             ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/df1b59a77619ce831d8e5078c125cc2557a9ea35",
-                "id": "ASB-A-239210579-5e49c3b5",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "311606954623645014405006219303463805465",
@@ -525,24 +518,31 @@
                     "100923073751965899328259216077403220810"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/df1b59a77619ce831d8e5078c125cc2557a9ea35",
+                "id": "ASB-A-239210579-5e49c3b5",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/df1b59a77619ce831d8e5078c125cc2557a9ea35",
-                "id": "ASB-A-239210579-9604c377",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "44544224249926763090065890534562730262",
                   "length": 1148
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/df1b59a77619ce831d8e5078c125cc2557a9ea35",
+                "id": "ASB-A-239210579-9604c377",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               }
-            ]
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239210579.json"
@@ -570,24 +570,17 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/minikin/+/fde7f4a25ca4f1405bea3816c71cea64d80a9c81"
             ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/fde7f4a25ca4f1405bea3816c71cea64d80a9c81",
-                "id": "ASB-A-239210579-28e85dc8",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "311606954623645014405006219303463805465",
@@ -600,24 +593,31 @@
                     "100923073751965899328259216077403220810"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/fde7f4a25ca4f1405bea3816c71cea64d80a9c81",
+                "id": "ASB-A-239210579-28e85dc8",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/fde7f4a25ca4f1405bea3816c71cea64d80a9c81",
-                "id": "ASB-A-239210579-72f10ff2",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "44544224249926763090065890534562730262",
                   "length": 1148
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/fde7f4a25ca4f1405bea3816c71cea64d80a9c81",
+                "id": "ASB-A-239210579-72f10ff2",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               }
-            ]
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239210579.json"
@@ -645,39 +645,32 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/minikin/+/c2380d94c6ed84542dd201c039a079cbf927bd24"
             ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/c2380d94c6ed84542dd201c039a079cbf927bd24",
-                "id": "ASB-A-239210579-5f962a9b",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "44544224249926763090065890534562730262",
                   "length": 1148
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/c2380d94c6ed84542dd201c039a079cbf927bd24",
+                "id": "ASB-A-239210579-5f962a9b",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/c2380d94c6ed84542dd201c039a079cbf927bd24",
-                "id": "ASB-A-239210579-a1d5b13c",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "311606954623645014405006219303463805465",
@@ -690,9 +683,16 @@
                     "100923073751965899328259216077403220810"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/c2380d94c6ed84542dd201c039a079cbf927bd24",
+                "id": "ASB-A-239210579-a1d5b13c",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               }
-            ]
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239210579.json"
@@ -720,24 +720,17 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/minikin/+/d5d0c70c3c73167a6564dc3e8843ab1f567b4676"
             ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d5d0c70c3c73167a6564dc3e8843ab1f567b4676",
-                "id": "ASB-A-239210579-248e174e",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "311606954623645014405006219303463805465",
@@ -750,31 +743,38 @@
                     "100923073751965899328259216077403220810"
                   ],
                   "threshold": 0.9
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d5d0c70c3c73167a6564dc3e8843ab1f567b4676",
+                "id": "ASB-A-239210579-248e174e",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d5d0c70c3c73167a6564dc3e8843ab1f567b4676",
-                "id": "ASB-A-239210579-e3bb318f",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "44544224249926763090065890534562730262",
                   "length": 1148
+                },
+                "source": "https://android.googlesource.com/platform/frameworks/minikin/+/d5d0c70c3c73167a6564dc3e8843ab1f567b4676",
+                "id": "ASB-A-239210579-e3bb318f",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               }
-            ]
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239210579.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-239267173",
@@ -783,7 +783,7 @@
         "A-239267173",
         "CVE-2022-20473"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -818,50 +818,50 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-225cce11",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "164770276943141582052722884901448753939",
                     "226110374688780666042726420171495378549",
                     "37258808521350274540810683463877721557",
                     "201172805881024670900963815845901526338"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-225cce11",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-7ce2f1ff",
                 "digest": {
                   "function_hash": "198706616613895809767354008574302764265",
                   "length": 1152
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-7ce2f1ff",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               }
-            ]
+            ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239267173.json"
@@ -889,50 +889,50 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-08371c85",
                 "digest": {
                   "function_hash": "198706616613895809767354008574302764265",
                   "length": 1152
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-08371c85",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-85650455",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "164770276943141582052722884901448753939",
                     "226110374688780666042726420171495378549",
                     "37258808521350274540810683463877721557",
                     "201172805881024670900963815845901526338"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-85650455",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239267173.json"
@@ -960,50 +960,50 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-3c1f1bb7",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "164770276943141582052722884901448753939",
                     "226110374688780666042726420171495378549",
                     "37258808521350274540810683463877721557",
                     "201172805881024670900963815845901526338"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-3c1f1bb7",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-4526d730",
                 "digest": {
                   "function_hash": "198706616613895809767354008574302764265",
                   "length": 1152
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-4526d730",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               }
-            ]
+            ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239267173.json"
@@ -1031,50 +1031,50 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-59b0ed84",
                 "digest": {
                   "function_hash": "198706616613895809767354008574302764265",
                   "length": 1152
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-59b0ed84",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-d044e270",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "164770276943141582052722884901448753939",
                     "226110374688780666042726420171495378549",
                     "37258808521350274540810683463877721557",
                     "201172805881024670900963815845901526338"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-d044e270",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239267173.json"
@@ -1102,57 +1102,57 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
-            "types": [
-              "RCE"
-            ],
-            "spl": "2022-12-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "toLanguageTag",
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-6608846d",
                 "digest": {
                   "function_hash": "198706616613895809767354008574302764265",
                   "length": 1152
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-6608846d",
+                "signature_type": "Function",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp",
+                  "function": "toLanguageTag"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "libs/minikin/LocaleListCache.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d",
-                "id": "ASB-A-239267173-8ffe1fd8",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "164770276943141582052722884901448753939",
                     "226110374688780666042726420171495378549",
                     "37258808521350274540810683463877721557",
                     "201172805881024670900963815845901526338"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-239267173-8ffe1fd8",
+                "signature_type": "Line",
+                "target": {
+                  "file": "libs/minikin/LocaleListCache.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2022-12-01",
+            "types": [
+              "RCE"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/minikin/+/a8265407660edaa1006545a6401d6409c05acb5d"
+            ],
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-239267173.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

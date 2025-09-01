@@ -7,7 +7,7 @@
         "A-176756141",
         "CVE-2021-0537"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -42,24 +42,13 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/certinstaller/WiFiInstaller.java"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32",
-                "id": "PUB-A-176756141-216efe03",
                 "digest": {
                   "line_hashes": [
                     "270279214358048806381354856548171792577",
@@ -73,46 +62,57 @@
                     "181425343311949278082781996084193554648"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "id": "PUB-A-176756141-216efe03",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "createMainDialog",
-                  "file": "src/com/android/certinstaller/WiFiInstaller.java"
+                  "file": "src/com/android/certinstaller/WiFiInstaller.java",
+                  "function": "createMainDialog"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32",
+                "digest": {
+                  "length": 2450,
+                  "function_hash": "275249160081085277377365228771000529025"
+                },
                 "id": "PUB-A-176756141-a5a12fc4",
-                "digest": {
-                  "function_hash": "275249160081085277377365228771000529025",
-                  "length": 2450
-                }
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/certinstaller/WiFiInstaller.java"
+                  "file": "src/com/android/certinstaller/WiFiInstaller.java",
+                  "function": "onCreate"
                 },
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32",
-                "id": "PUB-A-176756141-d671a67a",
                 "digest": {
-                  "function_hash": "300006990579903506487970016036977579646",
-                  "length": 1391
-                }
+                  "length": 1391,
+                  "function_hash": "300006990579903506487970016036977579646"
+                },
+                "id": "PUB-A-176756141-d671a67a",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/f35b31232d180ec614c2392ea211bf9a0515fa32"
+            ],
+            "spl": "2021-06-01",
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-176756141.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-176756691",
@@ -121,7 +121,7 @@
         "A-176756691",
         "CVE-2021-0536"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -156,38 +156,27 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2021-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onClick",
-                  "file": "src/com/android/certinstaller/WiFiInstaller.java"
+                  "file": "src/com/android/certinstaller/WiFiInstaller.java",
+                  "function": "onClick"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e",
+                "signature_version": "v1",
                 "id": "PUB-A-176756691-0ff8c12c",
                 "digest": {
-                  "function_hash": "217356404813949619192597016952761966644",
-                  "length": 1158
-                }
+                  "length": 1158,
+                  "function_hash": "217356404813949619192597016952761966644"
+                },
+                "deprecated": false,
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
                   "file": "src/com/android/certinstaller/WiFiInstaller.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e",
+                "signature_version": "v1",
                 "id": "PUB-A-176756691-44679434",
                 "digest": {
                   "line_hashes": [
@@ -248,61 +237,72 @@
                     "47207791686508897801744191652235640138"
                   ],
                   "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "run",
-                  "file": "src/com/android/certinstaller/WiFiInstaller.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
+              },
+              {
+                "target": {
+                  "file": "src/com/android/certinstaller/WiFiInstaller.java",
+                  "function": "run"
+                },
+                "signature_version": "v1",
                 "id": "PUB-A-176756691-6ba53792",
                 "digest": {
-                  "function_hash": "203260181679921286245243708838292581669",
-                  "length": 737
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "onCreate",
-                  "file": "src/com/android/certinstaller/WiFiInstaller.java"
+                  "length": 737,
+                  "function_hash": "203260181679921286245243708838292581669"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
+              },
+              {
+                "target": {
+                  "file": "src/com/android/certinstaller/WiFiInstaller.java",
+                  "function": "onCreate"
+                },
+                "signature_version": "v1",
                 "id": "PUB-A-176756691-cde00719",
                 "digest": {
-                  "function_hash": "149512918836258587134286066261101636141",
-                  "length": 903
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "createMainDialog",
-                  "file": "src/com/android/certinstaller/WiFiInstaller.java"
+                  "length": 903,
+                  "function_hash": "149512918836258587134286066261101636141"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
+              },
+              {
+                "target": {
+                  "file": "src/com/android/certinstaller/WiFiInstaller.java",
+                  "function": "createMainDialog"
+                },
+                "signature_version": "v1",
                 "id": "PUB-A-176756691-f56210f3",
                 "digest": {
-                  "function_hash": "231043761990921581651513874173068478550",
-                  "length": 2411
-                }
+                  "length": 2411,
+                  "function_hash": "231043761990921581651513874173068478550"
+                },
+                "deprecated": false,
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/CertInstaller/+/2e6f670e6fd6ffa6065280e057b4a68dbc68a44e"
+            ],
+            "spl": "2021-06-01",
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-176756691.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

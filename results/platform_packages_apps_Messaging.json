@@ -7,7 +7,7 @@
         "A-197328178",
         "CVE-2021-0973"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-12-01T00:00:00Z",
       "references": [
         {
@@ -42,58 +42,58 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Messaging/+/58ee29c68e1914af680ef0658bdb7a94e4e5e3a3"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
+                "deprecated": false,
                 "signature_version": "v1",
+                "digest": {
+                  "function_hash": "215906812200237166193055551140352639749",
+                  "length": 144
+                },
+                "id": "PUB-A-197328178-42d4e8a5",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/58ee29c68e1914af680ef0658bdb7a94e4e5e3a3",
                 "target": {
                   "function": "isFileUri",
                   "file": "src/com/android/messaging/util/UriUtil.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/58ee29c68e1914af680ef0658bdb7a94e4e5e3a3",
-                "id": "PUB-A-197328178-42d4e8a5",
-                "digest": {
-                  "function_hash": "215906812200237166193055551140352639749",
-                  "length": 144
-                }
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/util/UriUtil.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/58ee29c68e1914af680ef0658bdb7a94e4e5e3a3",
-                "id": "PUB-A-197328178-6c72e01b",
+                "signature_version": "v1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "103653353624183390521670018533190571615",
                     "133813972390159506732618602924434228330",
                     "249063719175213754932534929031738680016",
                     "331358903205481392733917350499276060077",
                     "139158967101698425159438100258288722224"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "PUB-A-197328178-6c72e01b",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/58ee29c68e1914af680ef0658bdb7a94e4e5e3a3",
+                "target": {
+                  "file": "src/com/android/messaging/util/UriUtil.java"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2021-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-197328178.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "PUB-A-215212561",
@@ -102,7 +102,7 @@
         "A-215212561",
         "CVE-2022-20205"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-06-01T00:00:00Z",
       "references": [
         {
@@ -133,101 +133,98 @@
             "12L-next"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/util/ImageUtils.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-14b8f296",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "55151738822368162832341839954082388316",
                     "158532543148131802520662100669517338349",
                     "430341620960188749378931978653877775",
                     "257116361882594476370450298514782839007"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "PUB-A-215212561-14b8f296",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
                 "target": {
-                  "function": "resizeGifImage",
                   "file": "src/com/android/messaging/util/ImageUtils.java"
                 },
+                "signature_type": "Line"
+              },
+              {
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-542b68f1",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
                   "function_hash": "328102028242482894970860856334176688375",
                   "length": 1153
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-215212561-542b68f1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
+                "target": {
+                  "function": "resizeGifImage",
+                  "file": "src/com/android/messaging/util/ImageUtils.java"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "isInPrivateDir",
-                  "file": "src/com/android/messaging/util/FileUtil.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-7fcc2b73",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
                   "function_hash": "86737825198178567318258606714352033387",
                   "length": 202
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "PUB-A-215212561-7fcc2b73",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
                 "target": {
-                  "function": "isFileUri",
+                  "function": "isInPrivateDir",
                   "file": "src/com/android/messaging/util/FileUtil.java"
                 },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-971e8410",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
                   "function_hash": "279445365553651897327282062363648628144",
                   "length": 127
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-215212561-971e8410",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
+                "target": {
+                  "function": "isFileUri",
+                  "file": "src/com/android/messaging/util/FileUtil.java"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-b21c21a6",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "301304605707105986568318815528801431508",
                     "247194603926222060554680320145895243998",
@@ -238,23 +235,23 @@
                     "98211686701115947148831535440844800138",
                     "272619025638548499545829796009713234427",
                     "91950206126483064770472477229327269451"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-215212561-b21c21a6",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
+                "target": {
+                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/util/FileUtil.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-bccd8ddc",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "278221800015042108510720358144854156099",
                     "96926762268128381353059792894218726378",
@@ -264,32 +261,35 @@
                     "338473651741458288321596832034434836563",
                     "221349403753932766943465425292837114063",
                     "251803775468755073494165601775336491475"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-215212561-bccd8ddc",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
+                "target": {
+                  "file": "src/com/android/messaging/util/FileUtil.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "convertUriToPath",
-                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
-                "id": "PUB-A-215212561-c1ef1f80",
+                "match_only_versions": [
+                  "12L-next"
+                ],
                 "digest": {
                   "function_hash": "129045183642100473667765870766515312170",
                   "length": 1122
                 },
-                "match_only_versions": [
-                  "12L-next"
-                ]
+                "id": "PUB-A-215212561-c1ef1f80",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/ebc64c5bae620cb67808935b0fb61cf2cfce4a9c",
+                "target": {
+                  "function": "convertUriToPath",
+                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-215212561.json"
@@ -317,119 +317,116 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
-            "types": [
-              "ID"
-            ],
-            "spl": "2022-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508"
             ],
+            "types": [
+              "ID"
+            ],
+            "severity": "Moderate",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "convertUriToPath",
-                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-140999fa",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
                   "function_hash": "129045183642100473667765870766515312170",
                   "length": 1122
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-215212561-140999fa",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
+                "target": {
+                  "function": "convertUriToPath",
+                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/util/ImageUtils.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-33ce77ba",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "55151738822368162832341839954082388316",
                     "158532543148131802520662100669517338349",
                     "430341620960188749378931978653877775",
                     "257116361882594476370450298514782839007"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-215212561-33ce77ba",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
+                "target": {
+                  "file": "src/com/android/messaging/util/ImageUtils.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "isInPrivateDir",
-                  "file": "src/com/android/messaging/util/FileUtil.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-3d9c0bb9",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
                   "function_hash": "86737825198178567318258606714352033387",
                   "length": 202
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "PUB-A-215212561-3d9c0bb9",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
                 "target": {
-                  "function": "isFileUri",
+                  "function": "isInPrivateDir",
                   "file": "src/com/android/messaging/util/FileUtil.java"
                 },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-6b29dc16",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
                   "function_hash": "279445365553651897327282062363648628144",
                   "length": 127
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-215212561-6b29dc16",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
+                "target": {
+                  "function": "isFileUri",
+                  "file": "src/com/android/messaging/util/FileUtil.java"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "resizeGifImage",
-                  "file": "src/com/android/messaging/util/ImageUtils.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-cb77d132",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
                   "function_hash": "328102028242482894970860856334176688375",
                   "length": 1153
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-215212561-cb77d132",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
+                "target": {
+                  "function": "resizeGifImage",
+                  "file": "src/com/android/messaging/util/ImageUtils.java"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-cf8e7261",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "301304605707105986568318815528801431508",
                     "247194603926222060554680320145895243998",
@@ -440,23 +437,23 @@
                     "98211686701115947148831535440844800138",
                     "272619025638548499545829796009713234427",
                     "91950206126483064770472477229327269451"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-215212561-cf8e7261",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
+                "target": {
+                  "file": "src/com/android/messaging/mmslib/pdu/PduPersister.java"
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/messaging/util/FileUtil.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
-                "id": "PUB-A-215212561-fce40473",
+                "match_only_versions": [
+                  "12L"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "278221800015042108510720358144854156099",
                     "96926762268128381353059792894218726378",
@@ -466,21 +463,24 @@
                     "338473651741458288321596832034434836563",
                     "221349403753932766943465425292837114063",
                     "251803775468755073494165601775336491475"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12L"
-                ]
+                "id": "PUB-A-215212561-fce40473",
+                "source": "https://android.googlesource.com/platform/packages/apps/Messaging/+/27e27d944b4e923ca9b81e7fdd6744f94cebb508",
+                "target": {
+                  "file": "src/com/android/messaging/util/FileUtil.java"
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2022-06-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-215212561.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

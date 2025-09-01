@@ -7,7 +7,7 @@
         "A-265798353",
         "CVE-2023-21124"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-06-01T00:00:00Z",
       "references": [
         {
@@ -54,50 +54,50 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "id": "ASB-A-265798353-5bd2c112",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+                "target": {
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-aa370316",
+                "deprecated": false,
+                "digest": {
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-aa370316",
-                "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
             ]
           },
           "database_specific": {
@@ -126,49 +126,49 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-9b7bc35e",
+                "deprecated": false,
+                "digest": {
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-9b7bc35e",
-                "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "id": "ASB-A-265798353-a249783e",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
+                "target": {
+                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -197,49 +197,49 @@
             "13-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "id": "ASB-A-265798353-2189f257",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
+                "target": {
+                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-987ced80",
+                "deprecated": false,
+                "digest": {
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-987ced80",
-                "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -268,49 +268,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
                 "id": "ASB-A-265798353-70e4b076",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "43294750304877026377862029492486449257",
                     "251126938681046611255731817510328416109",
                     "244691074510030445066901465912254156432"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
+                "target": {
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-77c3dcc8",
+                "deprecated": false,
+                "digest": {
+                  "length": 739,
+                  "function_hash": "64191880982502686027004913018334984051"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead",
-                "id": "ASB-A-265798353-77c3dcc8",
-                "digest": {
-                  "function_hash": "64191880982502686027004913018334984051",
-                  "length": 739
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/3195c559667939b458445b7e133fb4a7c76aaead"
             ]
           },
           "database_specific": {
@@ -339,49 +339,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "id": "ASB-A-265798353-cfdf60a6",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
+                "target": {
+                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-f451368a",
+                "deprecated": false,
+                "digest": {
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-f451368a",
-                "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -410,49 +410,49 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-50087dcf",
+                "deprecated": false,
+                "digest": {
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-50087dcf",
-                "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "id": "ASB-A-265798353-8f1af3c2",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
+                "target": {
+                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -481,72 +481,72 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/accounts/AccountDetailsPreferenceController.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d",
-                "id": "ASB-A-265798353-4fb6b39b",
+                "match_only_versions": [
+                  "12"
+                ],
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "37925482270709113877040374718434309752",
                     "16148768349288441823921560095883828771",
                     "253759156597384137526184123745097181208",
                     "93653166422510990799240715653041397161"
-                  ],
-                  "threshold": 0.9
+                  ]
                 },
-                "match_only_versions": [
-                  "12"
-                ]
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-265798353-4fb6b39b",
+                "target": {
+                  "file": "src/com/android/car/settings/accounts/AccountDetailsPreferenceController.java"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "run",
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "id": "ASB-A-265798353-637c845d",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+                "target": {
+                  "function": "run",
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "id": "ASB-A-265798353-bd6129cc",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+                "target": {
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/a7a4b16b8ff00ced029c046786d295646e09ec2d"
             ]
           },
           "database_specific": {
@@ -575,49 +575,49 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "id": "ASB-A-265798353-8e37c290",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
+                "target": {
+                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-c6e6003e",
+                "deprecated": false,
+                "digest": {
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-c6e6003e",
-                "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -646,49 +646,49 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "id": "ASB-A-265798353-6adb5ac3",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
+                "target": {
+                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "run",
-                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "id": "ASB-A-265798353-97a5a49a",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
+                "target": {
+                  "function": "run",
+                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -717,50 +717,50 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "run",
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "id": "ASB-A-265798353-7ae4a5a4",
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+                "target": {
+                  "function": "run",
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "id": "ASB-A-265798353-e32ac6f3",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+                "target": {
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
             ]
           },
           "database_specific": {
@@ -789,49 +789,49 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "id": "ASB-A-265798353-516e4df5",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
+                "target": {
+                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-d817a385",
+                "deprecated": false,
+                "digest": {
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-d817a385",
-                "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -860,49 +860,49 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "id": "ASB-A-265798353-da03a063",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
+                "target": {
+                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-f9711eda",
+                "deprecated": false,
+                "digest": {
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-f9711eda",
-                "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -931,50 +931,50 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "id": "ASB-A-265798353-1e6c7d05",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "70899926430998658896223039418833217329",
                     "335255623053242152517541287350236963513",
                     "187350220801754615916483807619195442363",
                     "127737805436799936769581969457107061246"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+                "target": {
+                  "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-b22c0efa",
+                "deprecated": false,
+                "digest": {
+                  "length": 934,
+                  "function_hash": "25076624073472308672955855798830383651"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/car/settings/accounts/AddAccountActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
-                "id": "ASB-A-265798353-b22c0efa",
-                "digest": {
-                  "function_hash": "25076624073472308672955855798830383651",
-                  "length": 934
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/2825e3b674a36f4c34fd504f53501010a621fcff",
+              "https://android.googlesource.com/platform/packages/apps/Car/Settings/+/d1d98e8ab60f8152751f7f49301a8cfd14f89c77"
             ]
           },
           "database_specific": {
@@ -1003,49 +1003,49 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-306f798b",
+                "deprecated": false,
+                "digest": {
+                  "length": 1275,
+                  "function_hash": "255712753313215328696531488239715423496"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "target": {
                   "function": "run",
                   "file": "src/com/android/settings/accounts/AddAccountSettings.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
-                "id": "ASB-A-265798353-306f798b",
-                "digest": {
-                  "function_hash": "255712753313215328696531488239715423496",
-                  "length": 1275
-                }
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
                 "id": "ASB-A-265798353-eee52e05",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "205334258096281442173477982256479495678",
                     "42283977636786389998075228987653657829",
                     "237827551999236895162055272176748301549",
                     "179271050158907660843237045778954080856"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da",
+                "target": {
+                  "file": "src/com/android/settings/accounts/AddAccountSettings.java"
+                },
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/Settings/+/c7e8052b527434ed8660e3babdab718f7f3cd7da"
             ]
           },
           "database_specific": {
@@ -1074,49 +1074,49 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2023-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "id": "ASB-A-265798353-a68d22a8",
+                "deprecated": false,
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "223958564379286056848082923291196403429",
                     "251628202708190721431597868413746153947",
                     "157292728778077691786612898752081674734",
                     "247658216688022397789418466318369511606"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
+                "target": {
+                  "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
+                },
+                "signature_version": "v1"
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-265798353-e6825942",
+                "deprecated": false,
+                "digest": {
+                  "length": 527,
+                  "function_hash": "274503497703828548019366767996568111779"
+                },
+                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
                 "target": {
                   "function": "run",
                   "file": "Settings/src/com/android/tv/settings/accounts/AddAccountWithTypeActivity.java"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac",
-                "id": "ASB-A-265798353-e6825942",
-                "digest": {
-                  "function_hash": "274503497703828548019366767996568111779",
-                  "length": 527
-                }
+                "signature_version": "v1"
               }
+            ],
+            "spl": "2023-06-01",
+            "severity": "High",
+            "types": [
+              "EoP"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/apps/TvSettings/+/706edcb7532d74788f899968016b7a6273bfbcac"
             ]
           },
           "database_specific": {
@@ -1124,7 +1124,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

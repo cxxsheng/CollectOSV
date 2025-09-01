@@ -7,7 +7,7 @@
         "A-180419673",
         "CVE-2021-0539"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -42,11 +42,10 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
+            "spl": "2021-06-01",
             "types": [
               "EoP"
             ],
-            "spl": "2021-06-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/services/Mms/+/fc9b30346633e275faa7b44734c1718280407d5f"
             ],
@@ -54,11 +53,6 @@
               {
                 "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/mms/service/MmsService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Mms/+/fc9b30346633e275faa7b44734c1718280407d5f",
                 "id": "PUB-A-180419673-bcfc8c04",
                 "digest": {
                   "line_hashes": [
@@ -72,31 +66,37 @@
                     "325710945528148596877556527566916886115"
                   ],
                   "threshold": 0.9
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/services/Mms/+/fc9b30346633e275faa7b44734c1718280407d5f",
+                "target": {
+                  "file": "src/com/android/mms/service/MmsService.java"
                 }
               },
               {
                 "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "archiveStoredConversation",
-                  "file": "src/com/android/mms/service/MmsService.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/services/Mms/+/fc9b30346633e275faa7b44734c1718280407d5f",
                 "id": "PUB-A-180419673-eeb9a025",
                 "digest": {
                   "function_hash": "83129940140774098393147415840015853450",
                   "length": 308
+                },
+                "deprecated": false,
+                "source": "https://android.googlesource.com/platform/packages/services/Mms/+/fc9b30346633e275faa7b44734c1718280407d5f",
+                "target": {
+                  "function": "archiveStoredConversation",
+                  "file": "src/com/android/mms/service/MmsService.java"
                 }
               }
-            ]
+            ],
+            "severity": "Moderate"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/PUB-A-180419673.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-187702830",
         "CVE-2022-20144"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2022-12-01T00:00:00Z",
       "references": [
         {
@@ -46,56 +46,51 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-07df5b58",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-11358f46",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
+                "id": "ASB-A-187702830-29e634ed",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
-                "id": "ASB-A-187702830-29e634ed",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -139,47 +134,47 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-440ba066",
-                "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
                 "id": "ASB-A-187702830-6f41fcd7",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
+                "id": "ASB-A-187702830-705e9eb1",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
-                "id": "ASB-A-187702830-705e9eb1",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -224,17 +219,17 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
+                "id": "ASB-A-187702830-78fe82dd",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
-                "id": "ASB-A-187702830-78fe82dd",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -290,144 +285,149 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-7b403e57",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-83bea5ec",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-9b1ee736",
-                "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-a25cb59e",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-a34b08b9",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-be91c2b5",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-cfe30cad",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-e18f4b55",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-f82b3ed7",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -455,86 +455,81 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
               "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
               "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-1802159f",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-1feb3ac2",
-                "digest": {
-                  "function_hash": "237928276135847539112938468738532038631",
-                  "length": 431
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 431,
+                  "function_hash": "237928276135847539112938468738532038631"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
                 "id": "ASB-A-187702830-38f4c226",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
                 "id": "ASB-A-187702830-4eb4b3fa",
+                "target": {
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
+                "id": "ASB-A-187702830-5b8d68d3",
                 "target": {
                   "file": "src/com/android/settings/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
-                "id": "ASB-A-187702830-5b8d68d3",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -595,32 +590,32 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-5ceaafcc",
+                "target": {
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "281910725261825674448458987275710419065",
-                  "length": 750
-                }
+                  "length": 750,
+                  "function_hash": "281910725261825674448458987275710419065"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
+                "id": "ASB-A-187702830-825e7068",
                 "target": {
                   "file": "src/com/android/settings/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
-                "id": "ASB-A-187702830-825e7068",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -669,17 +664,17 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
+                "id": "ASB-A-187702830-947ee442",
                 "target": {
                   "file": "src/com/android/settings/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
-                "id": "ASB-A-187702830-947ee442",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -729,129 +724,134 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
                 "id": "ASB-A-187702830-9ea1c524",
-                "digest": {
-                  "function_hash": "237928276135847539112938468738532038631",
-                  "length": 431
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 431,
+                  "function_hash": "237928276135847539112938468738532038631"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
                 "id": "ASB-A-187702830-a9ce2c3c",
-                "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
                 "id": "ASB-A-187702830-ae2ff907",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-ae541364",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
                 "id": "ASB-A-187702830-c1e3dd4c",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-dbc70372",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-e00bbda8",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/8950a9002402de6e1218bab3da52868a51104a95",
                 "id": "ASB-A-187702830-e0662b18",
+                "target": {
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "281910725261825674448458987275710419065",
-                  "length": 750
-                }
+                  "length": 750,
+                  "function_hash": "281910725261825674448458987275710419065"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -879,86 +879,81 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-263ef490",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-33e4dc93",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-68880f91",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-6dd4fb1c",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
+                "id": "ASB-A-187702830-83f0cc22",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
-                "id": "ASB-A-187702830-83f0cc22",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -1002,47 +997,47 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-90b10013",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-a4ff085f",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
+                "id": "ASB-A-187702830-b0bd241b",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
-                "id": "ASB-A-187702830-b0bd241b",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -1098,122 +1093,122 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-b9d96c27",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
                 "id": "ASB-A-187702830-bfd99eb6",
-                "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-cc6a79a1",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-cce3e248",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-d3389537",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-da949369",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-e91672ae",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
+                "id": "ASB-A-187702830-f9028c01",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
-                "id": "ASB-A-187702830-f9028c01",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -1258,9 +1253,14 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -1288,25 +1288,20 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
               "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
+                "id": "ASB-A-187702830-28c035f7",
                 "target": {
                   "file": "src/com/android/settings/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
-                "id": "ASB-A-187702830-28c035f7",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -1356,62 +1351,62 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-6d67ab5a",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-926b60d7",
-                "digest": {
-                  "function_hash": "281910725261825674448458987275710419065",
-                  "length": 750
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 750,
+                  "function_hash": "281910725261825674448458987275710419065"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-a22d852d",
+                "target": {
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
+                "id": "ASB-A-187702830-d4b0aad1",
                 "target": {
                   "file": "src/com/android/settings/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
-                "id": "ASB-A-187702830-d4b0aad1",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -1472,69 +1467,74 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-d747cb14",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-d9f5e6d9",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/f70e351d1a3bc7765da1fa8f9e0bb52d425b27e4",
                 "id": "ASB-A-187702830-e1649fbe",
-                "digest": {
-                  "function_hash": "237928276135847539112938468738532038631",
-                  "length": 431
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/settings/users/EditUserPhotoController.java"
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 431,
+                  "function_hash": "237928276135847539112938468738532038631"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/Settings/+/c0742e745da55452a412b4bb7bd28c5ecf3a8cb2",
                 "id": "ASB-A-187702830-f37c58b8",
+                "target": {
+                  "file": "src/com/android/settings/users/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -1562,56 +1562,51 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
               "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
               "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "cropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-00375360",
-                "digest": {
-                  "function_hash": "249371594289830236579384986570904347879",
-                  "length": 431
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 431,
+                  "function_hash": "249371594289830236579384986570904347879"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-00e61139",
-                "digest": {
-                  "function_hash": "274163211323941794880684264034608999272",
-                  "length": 630
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 630,
+                  "function_hash": "274163211323941794880684264034608999272"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-15bcdd65",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                },
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -1663,17 +1658,17 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
-                "target": {
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-2fbab372",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                },
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -1725,77 +1720,77 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onActivityResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-3c100676",
-                "digest": {
-                  "function_hash": "130154964140630878956505880939217909871",
-                  "length": 828
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 828,
+                  "function_hash": "130154964140630878956505880939217909871"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-457c919f",
-                "digest": {
-                  "function_hash": "239501805622594057344761985209847696825",
-                  "length": 543
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 543,
+                  "function_hash": "239501805622594057344761985209847696825"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-5fd643b5",
-                "digest": {
-                  "function_hash": "239501805622594057344761985209847696825",
-                  "length": 543
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 543,
+                  "function_hash": "239501805622594057344761985209847696825"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-6ca54f9c",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "52691429834011938798881105335798454816",
-                  "length": 328
-                }
+                  "length": 328,
+                  "function_hash": "52691429834011938798881105335798454816"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
+                "id": "ASB-A-187702830-806cd88c",
                 "target": {
                   "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
-                "id": "ASB-A-187702830-806cd88c",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -1858,114 +1853,119 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-85c36ebc",
-                "digest": {
-                  "function_hash": "274163211323941794880684264034608999272",
-                  "length": 630
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 630,
+                  "function_hash": "274163211323941794880684264034608999272"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-a3447f7c",
-                "digest": {
-                  "function_hash": "171676371131218315416873278373381846207",
-                  "length": 117
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 117,
+                  "function_hash": "171676371131218315416873278373381846207"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-bec70837",
-                "digest": {
-                  "function_hash": "130154964140630878956505880939217909871",
-                  "length": 828
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 828,
+                  "function_hash": "130154964140630878956505880939217909871"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-d95723e9",
-                "digest": {
-                  "function_hash": "52691429834011938798881105335798454816",
-                  "length": 328
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 328,
+                  "function_hash": "52691429834011938798881105335798454816"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-e37d8846",
-                "digest": {
-                  "function_hash": "249371594289830236579384986570904347879",
-                  "length": 431
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 431,
+                  "function_hash": "249371594289830236579384986570904347879"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
                 "id": "ASB-A-187702830-ea55193a",
-                "digest": {
-                  "function_hash": "142479257595968210900146192361046616606",
-                  "length": 375
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 375,
+                  "function_hash": "142479257595968210900146192361046616606"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-f74c8f7e",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "171676371131218315416873278373381846207",
-                  "length": 117
-                }
+                  "length": 117,
+                  "function_hash": "171676371131218315416873278373381846207"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -1993,56 +1993,51 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-02955938",
-                "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-0fd00c9e",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
+                "id": "ASB-A-187702830-167de159",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
-                "id": "ASB-A-187702830-167de159",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -2086,62 +2081,62 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
                 "id": "ASB-A-187702830-381d431d",
-                "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-4b9894d4",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-5064f842",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
+                "id": "ASB-A-187702830-53a71a67",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
-                "id": "ASB-A-187702830-53a71a67",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -2197,107 +2192,107 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-629abd29",
-                "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-92d91f68",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-998aa2b5",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-9d591023",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-a0d2d7ba",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-b1518572",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
+                "id": "ASB-A-187702830-bd38d92f",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
-                "id": "ASB-A-187702830-bd38d92f",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -2342,39 +2337,44 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-c495bf86",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-fee68d16",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -2402,56 +2402,51 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
               "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
               "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onPostExecute",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-030fdcea",
-                "digest": {
-                  "function_hash": "171676371131218315416873278373381846207",
-                  "length": 117
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 117,
+                  "function_hash": "171676371131218315416873278373381846207"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-1f43344b",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onPostExecute"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "171676371131218315416873278373381846207",
-                  "length": 117
-                }
+                  "length": 117,
+                  "function_hash": "171676371131218315416873278373381846207"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
+                "id": "ASB-A-187702830-23656740",
                 "target": {
                   "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
-                "id": "ASB-A-187702830-23656740",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -2514,62 +2509,62 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-2d950f3d",
-                "digest": {
-                  "function_hash": "239501805622594057344761985209847696825",
-                  "length": 543
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 543,
+                  "function_hash": "239501805622594057344761985209847696825"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-30ca093a",
-                "digest": {
-                  "function_hash": "249371594289830236579384986570904347879",
-                  "length": 431
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 431,
+                  "function_hash": "249371594289830236579384986570904347879"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-3ea05cce",
-                "digest": {
-                  "function_hash": "130154964140630878956505880939217909871",
-                  "length": 828
-                }
-              },
-              {
-                "signature_type": "Line",
-                "signature_version": "v1",
                 "target": {
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 828,
+                  "function_hash": "130154964140630878956505880939217909871"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-4d69ec3e",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                },
+                "deprecated": false,
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -2621,92 +2616,92 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "doInBackground",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-4d919130",
-                "digest": {
-                  "function_hash": "52691429834011938798881105335798454816",
-                  "length": 328
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 328,
+                  "function_hash": "52691429834011938798881105335798454816"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-508c8b0f",
-                "digest": {
-                  "function_hash": "274163211323941794880684264034608999272",
-                  "length": 630
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 630,
+                  "function_hash": "274163211323941794880684264034608999272"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-55eb7d77",
-                "digest": {
-                  "function_hash": "239501805622594057344761985209847696825",
-                  "length": 543
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 543,
+                  "function_hash": "239501805622594057344761985209847696825"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-63e8670d",
-                "digest": {
-                  "function_hash": "274163211323941794880684264034608999272",
-                  "length": 630
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 630,
+                  "function_hash": "274163211323941794880684264034608999272"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/3cfba99d24bc04bc15edd49d1442bee8adb6c171",
                 "id": "ASB-A-187702830-705b5378",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "142479257595968210900146192361046616606",
-                  "length": 375
-                }
+                  "length": 375,
+                  "function_hash": "142479257595968210900146192361046616606"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
+                "id": "ASB-A-187702830-86b2bf36",
                 "target": {
                   "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
-                "id": "ASB-A-187702830-86b2bf36",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -2758,54 +2753,59 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onActivityResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-94c429b6",
-                "digest": {
-                  "function_hash": "130154964140630878956505880939217909871",
-                  "length": 828
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 828,
+                  "function_hash": "130154964140630878956505880939217909871"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/bfb1cd5fd27c8d854336163540bb5b014ad504d1",
                 "id": "ASB-A-187702830-c03f23ce",
-                "digest": {
-                  "function_hash": "52691429834011938798881105335798454816",
-                  "length": 328
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 328,
+                  "function_hash": "52691429834011938798881105335798454816"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/1b48ca6b7f44bacdb7b9469bfaf08fe4881ea0ae",
                 "id": "ASB-A-187702830-e8e744b5",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/EditUserPhotoController.java",
+                  "function": "cropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "249371594289830236579384986570904347879",
-                  "length": 431
-                }
+                  "length": 431,
+                  "function_hash": "249371594289830236579384986570904347879"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -2833,56 +2833,51 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-1061fcf0",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-137458a1",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
+                "id": "ASB-A-187702830-2a724f9d",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
-                "id": "ASB-A-187702830-2a724f9d",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -2938,77 +2933,77 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-4892236d",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-4c7218ec",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-5cd7e375",
-                "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-679136ae",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
+                "id": "ASB-A-187702830-971037e1",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
-                "id": "ASB-A-187702830-971037e1",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -3053,17 +3048,17 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
+                "id": "ASB-A-187702830-cdc90e06",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
-                "id": "ASB-A-187702830-cdc90e06",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -3107,114 +3102,119 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-d4d15684",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-d5e02a35",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-dd0365cd",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-e2b1b790",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
                 "id": "ASB-A-187702830-e49670e5",
-                "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-e9bd9703",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/fac28abbe64a1c3e430414f35139988ef96edb7c",
                 "id": "ASB-A-187702830-ecc5962e",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -3242,69 +3242,64 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "AvatarPhotoController",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
                 "id": "ASB-A-187702830-3a282b4c",
-                "digest": {
-                  "function_hash": "324906193203976292048343623869764518446",
-                  "length": 444
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java",
+                  "function": "AvatarPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 444,
+                  "function_hash": "324906193203976292048343623869764518446"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
                 "id": "ASB-A-187702830-5739dc58",
-                "digest": {
-                  "function_hash": "214091221998115473323611281616498928127",
-                  "length": 751
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 751,
+                  "function_hash": "214091221998115473323611281616498928127"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
                 "id": "ASB-A-187702830-852848a8",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java",
+                  "function": "cropPhoto"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "119889765377117627739206975311272291372",
-                  "length": 397
-                }
+                  "length": 397,
+                  "function_hash": "119889765377117627739206975311272291372"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
+                "id": "ASB-A-187702830-90e8ef6d",
                 "target": {
                   "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
-                "id": "ASB-A-187702830-90e8ef6d",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -3374,39 +3369,44 @@
                     "308656904985359571643673071218933146164"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "canCropPhoto",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
                 "id": "ASB-A-187702830-927631b5",
-                "digest": {
-                  "function_hash": "103624191892875459932453264322602720673",
-                  "length": 77
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java"
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java",
+                  "function": "canCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 77,
+                  "function_hash": "103624191892875459932453264322602720673"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/frameworks/base/+/b76141eb2bace631aabe4c6b55630e7b219044b1",
                 "id": "ASB-A-187702830-988209ce",
+                "target": {
+                  "file": "packages/SettingsLib/src/com/android/settingslib/users/AvatarPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "102687995413752331115825602043415426925",
-                  "length": 803
-                }
+                  "length": 803,
+                  "function_hash": "102687995413752331115825602043415426925"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
@@ -3434,55 +3434,50 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "EoP"
-            ],
-            "spl": "2022-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887"
             ],
+            "severity": "High",
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "doInBackground",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-1a432ac0",
-                "digest": {
-                  "function_hash": "290217397388873797831233336207663318052",
-                  "length": 327
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onActivityResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "doInBackground"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 327,
+                  "function_hash": "290217397388873797831233336207663318052"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-2e9b24f4",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onActivityResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "149681975055593938242602441892048841884",
-                  "length": 499
-                }
+                  "length": 499,
+                  "function_hash": "149681975055593938242602441892048841884"
+                },
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
+                "id": "ASB-A-187702830-309dbb0b",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
-                "id": "ASB-A-187702830-309dbb0b",
                 "digest": {
                   "line_hashes": [
                     "338921275839026643413126973091589399456",
@@ -3527,17 +3522,17 @@
                     "316254795233887484877542227565364968242"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
+                "id": "ASB-A-187702830-34cca8fd",
                 "target": {
                   "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
-                "id": "ASB-A-187702830-34cca8fd",
                 "digest": {
                   "line_hashes": [
                     "78228366528926457894798572006045475577",
@@ -3593,91 +3588,96 @@
                     "250196016552905576252371628216454669109"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "EditUserPhotoController",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-45fafef5",
-                "digest": {
-                  "function_hash": "317276936257098833747208548550541397313",
-                  "length": 534
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "copyAndCropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "EditUserPhotoController"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 534,
+                  "function_hash": "317276936257098833747208548550541397313"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-6bfad4d4",
-                "digest": {
-                  "function_hash": "112286498263825702738599497358680682725",
-                  "length": 597
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "cropPhoto",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "copyAndCropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 597,
+                  "function_hash": "112286498263825702738599497358680682725"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-8c422b33",
-                "digest": {
-                  "function_hash": "304724012572641533457793367622775689107",
-                  "length": 334
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "onPostExecute",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "cropPhoto"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 334,
+                  "function_hash": "304724012572641533457793367622775689107"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5981e18eb50c54088dc29f8a1e1dc8efdd4bb887",
                 "id": "ASB-A-187702830-aaca5a3e",
-                "digest": {
-                  "function_hash": "213096887623561246514027391649992879225",
-                  "length": 92
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
                 "target": {
-                  "function": "startSystemActivityForResult",
-                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java"
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "onPostExecute"
                 },
                 "deprecated": false,
+                "digest": {
+                  "length": 92,
+                  "function_hash": "213096887623561246514027391649992879225"
+                },
+                "signature_type": "Function"
+              },
+              {
+                "signature_version": "v1",
                 "source": "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/889b93dd4ec351889db69b528d81cdc3f63968fc",
                 "id": "ASB-A-187702830-f8436bce",
+                "target": {
+                  "file": "src/com/android/emergency/preferences/EditUserPhotoController.java",
+                  "function": "startSystemActivityForResult"
+                },
+                "deprecated": false,
                 "digest": {
-                  "function_hash": "129478049770125047709372810197383022338",
-                  "length": 367
-                }
+                  "length": 367,
+                  "function_hash": "129478049770125047709372810197383022338"
+                },
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "types": [
+              "EoP"
+            ],
+            "spl": "2022-12-01"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-187702830.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     },
     {
       "id": "ASB-A-248251018",
@@ -3686,7 +3686,7 @@
         "A-248251018",
         "CVE-2023-20932"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2023-02-01T00:00:00Z",
       "references": [
         {
@@ -3721,13 +3721,13 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-02-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/73120eb678baf8285cc69587fbc6da23bab4016a"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -3756,13 +3756,13 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-02-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/73120eb678baf8285cc69587fbc6da23bab4016a"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -3791,13 +3791,13 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-02-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/00dbb36b79cc7e611ac0c3387fa692225299c72b"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -3826,13 +3826,13 @@
             "12L"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-02-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/00dbb36b79cc7e611ac0c3387fa692225299c72b"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -3861,13 +3861,13 @@
             "13"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2023-02-01",
+            "severity": "High",
             "fixes": [
               "https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/00dbb36b79cc7e611ac0c3387fa692225299c72b"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -3875,7 +3875,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-179289794",
         "CVE-2021-0584"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-08-01T00:00:00Z",
       "references": [
         {
@@ -43,24 +43,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2021-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-1c731208",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "325599397596845452481809517798725619411",
                     "194656175227832530681856636993876822408",
@@ -77,40 +69,48 @@
                     "214503834139203736730554835181702466872",
                     "122863020909167860727369289454875192014",
                     "28055780445704371009197358973970645490"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-179289794-1c731208",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::readNullableNativeHandleNoDup",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-58fef250",
                 "digest": {
-                  "function_hash": "295105154607713976881775911547281139911",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "295105154607713976881775911547281139911"
+                },
+                "id": "ASB-A-179289794-58fef250",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::verifyBufferObject",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-e95d253c",
                 "digest": {
-                  "function_hash": "336706131709240202911794390429646936666",
-                  "length": 893
-                }
+                  "length": 893,
+                  "function_hash": "336706131709240202911794390429646936666"
+                },
+                "id": "ASB-A-179289794-e95d253c",
+                "signature_version": "v1",
+                "deprecated": false
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -140,54 +140,46 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2021-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::verifyBufferObject",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-10fdcbd1",
                 "digest": {
-                  "function_hash": "336706131709240202911794390429646936666",
-                  "length": 893
-                }
+                  "length": 893,
+                  "function_hash": "336706131709240202911794390429646936666"
+                },
+                "id": "ASB-A-179289794-10fdcbd1",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::readNullableNativeHandleNoDup",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-a0f87671",
                 "digest": {
-                  "function_hash": "295105154607713976881775911547281139911",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "295105154607713976881775911547281139911"
+                },
+                "id": "ASB-A-179289794-a0f87671",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-c549c0d4",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "325599397596845452481809517798725619411",
                     "194656175227832530681856636993876822408",
@@ -204,10 +196,18 @@
                     "214503834139203736730554835181702466872",
                     "122863020909167860727369289454875192014",
                     "28055780445704371009197358973970645490"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-179289794-c549c0d4",
+                "signature_version": "v1",
+                "deprecated": false
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -237,24 +237,16 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2021-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-36e3ccbe",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "325599397596845452481809517798725619411",
                     "194656175227832530681856636993876822408",
@@ -271,40 +263,48 @@
                     "214503834139203736730554835181702466872",
                     "122863020909167860727369289454875192014",
                     "28055780445704371009197358973970645490"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-179289794-36e3ccbe",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::verifyBufferObject",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-6e37e456",
                 "digest": {
-                  "function_hash": "336706131709240202911794390429646936666",
-                  "length": 893
-                }
+                  "length": 893,
+                  "function_hash": "336706131709240202911794390429646936666"
+                },
+                "id": "ASB-A-179289794-6e37e456",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::readNullableNativeHandleNoDup",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-c9d6c037",
                 "digest": {
-                  "function_hash": "295105154607713976881775911547281139911",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "295105154607713976881775911547281139911"
+                },
+                "id": "ASB-A-179289794-c9d6c037",
+                "signature_version": "v1",
+                "deprecated": false
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -334,54 +334,46 @@
           ],
           "ecosystem_specific": {
             "severity": "High",
-            "types": [
-              "ID"
-            ],
             "spl": "2021-08-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
-            ],
             "vanir_signatures": [
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::verifyBufferObject",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-97f0a065",
                 "digest": {
-                  "function_hash": "336706131709240202911794390429646936666",
-                  "length": 893
-                }
+                  "length": 893,
+                  "function_hash": "336706131709240202911794390429646936666"
+                },
+                "id": "ASB-A-179289794-97f0a065",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Function",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "function": "Parcel::readNullableNativeHandleNoDup",
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-b082a438",
                 "digest": {
-                  "function_hash": "295105154607713976881775911547281139911",
-                  "length": 1819
-                }
+                  "length": 1819,
+                  "function_hash": "295105154607713976881775911547281139911"
+                },
+                "id": "ASB-A-179289794-b082a438",
+                "signature_version": "v1",
+                "deprecated": false
               },
               {
                 "signature_type": "Line",
-                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
                 "target": {
                   "file": "Parcel.cpp"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727",
-                "id": "ASB-A-179289794-c33b693a",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "325599397596845452481809517798725619411",
                     "194656175227832530681856636993876822408",
@@ -398,10 +390,18 @@
                     "214503834139203736730554835181702466872",
                     "122863020909167860727369289454875192014",
                     "28055780445704371009197358973970645490"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "id": "ASB-A-179289794-c33b693a",
+                "signature_version": "v1",
+                "deprecated": false
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/libhwbinder/+/fcd86bd0d1b4cfea480a2682c354fb40039f0727"
+            ],
+            "types": [
+              "ID"
             ]
           },
           "database_specific": {
@@ -409,7 +409,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

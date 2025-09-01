@@ -7,7 +7,7 @@
         "A-175213041",
         "CVE-2021-0590"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-07-01T00:00:00Z",
       "references": [
         {
@@ -46,40 +46,31 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isCaptivePortal",
-                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51",
-                "id": "ASB-A-175213041-6348d280",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "165508312827839804167762173142521138558",
-                  "length": 945
-                }
+                  "length": 945,
+                  "function_hash": "165508312827839804167762173142521138558"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "isCaptivePortal"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-6348d280",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51",
-                "id": "ASB-A-175213041-eccab534",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "192091335874831379166521036876901787103",
                     "169197724653649282720509085289442417781",
@@ -189,26 +180,35 @@
                     "236581811040424500319328817149135643801",
                     "99306225805098596665013190223984061214",
                     "70641284307619532936371391836093321814"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                  ]
+                },
                 "target": {
-                  "function": "sendNetworkConditionsBroadcast",
                   "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
                 },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-eccab534",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51",
-                "id": "ASB-A-175213041-f2293515",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "334239069931811394713936510697991205122",
-                  "length": 2179
-                }
+                  "length": 2179,
+                  "function_hash": "334239069931811394713936510697991205122"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "sendNetworkConditionsBroadcast"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-f2293515",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/0684e7a64a2c449363b3a8f5f4a420acddf6bd51"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-175213041.json"
@@ -236,25 +236,16 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c",
-                "id": "ASB-A-175213041-0f30a511",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "192091335874831379166521036876901787103",
                     "169197724653649282720509085289442417781",
@@ -364,56 +355,65 @@
                     "8331157939997106407743799446496640594",
                     "228480441384833796888806675116095874278",
                     "146479654963852694182304395825660736809"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                  ]
+                },
                 "target": {
-                  "function": "isCaptivePortal",
                   "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
                 },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-0f30a511",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c",
+                "signature_type": "Function",
+                "digest": {
+                  "length": 945,
+                  "function_hash": "165508312827839804167762173142521138558"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "isCaptivePortal"
+                },
+                "signature_version": "v1",
                 "id": "ASB-A-175213041-1e03912f",
-                "digest": {
-                  "function_hash": "165508312827839804167762173142521138558",
-                  "length": 945
-                }
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "getWifiScansAlwaysAvailableDisabled",
-                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c",
+                "signature_type": "Function",
+                "digest": {
+                  "length": 123,
+                  "function_hash": "217258966775035245819698159421317002344"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "getWifiScansAlwaysAvailableDisabled"
+                },
+                "signature_version": "v1",
                 "id": "ASB-A-175213041-1f55b58d",
-                "digest": {
-                  "function_hash": "217258966775035245819698159421317002344",
-                  "length": 123
-                }
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sendNetworkConditionsBroadcast",
-                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c",
-                "id": "ASB-A-175213041-b60fc3e8",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "136814156978411865273025610000844043456",
-                  "length": 2410
-                }
+                  "length": 2410,
+                  "function_hash": "136814156978411865273025610000844043456"
+                },
+                "target": {
+                  "file": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "sendNetworkConditionsBroadcast"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-b60fc3e8",
+                "source": "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/frameworks/base/+/e97d1f548455e76e4faa7884a5b0fab48e47ca5c"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-175213041.json"
@@ -441,40 +441,31 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isCaptivePortal",
-                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986",
-                "id": "ASB-A-175213041-1c90e118",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "163363048998655280737148593168271331769",
-                  "length": 1260
-                }
+                  "length": 1260,
+                  "function_hash": "163363048998655280737148593168271331769"
+                },
+                "target": {
+                  "file": "src/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "isCaptivePortal"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-1c90e118",
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986",
-                "id": "ASB-A-175213041-2518c1e9",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "259460928253666909353614842504266805433",
                     "95546564076599476553034734875260874537",
@@ -554,26 +545,35 @@
                     "336533828879567546757892669107079071881",
                     "236927748766337799366715708282261194062",
                     "275510864232348118354515180570313067682"
-                  ],
-                  "threshold": 0.9
-                }
-              },
-              {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                  ]
+                },
                 "target": {
-                  "function": "sendNetworkConditionsBroadcast",
                   "file": "src/com/android/server/connectivity/NetworkMonitor.java"
                 },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-2518c1e9",
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986"
+              },
+              {
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986",
-                "id": "ASB-A-175213041-87bdde6f",
+                "signature_type": "Function",
                 "digest": {
-                  "function_hash": "7497907704312144196956409558618194917",
-                  "length": 1711
-                }
+                  "length": 1711,
+                  "function_hash": "7497907704312144196956409558618194917"
+                },
+                "target": {
+                  "file": "src/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "sendNetworkConditionsBroadcast"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-87bdde6f",
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/f5459e4d185c57a420c5e644fcaab956e1d23986"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-175213041.json"
@@ -601,14 +601,14 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
             "fixes": [
               "https://android.googlesource.com/platform/frameworks/base/+/c737926795a8cedab091cf01c30914a1bf844da1"
-            ]
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-175213041.json"
@@ -636,70 +636,61 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
+            "spl": "2021-07-01",
             "types": [
               "ID"
             ],
-            "spl": "2021-07-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sendNetworkConditionsBroadcast",
-                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055",
+                "signature_type": "Function",
+                "digest": {
+                  "length": 1643,
+                  "function_hash": "314477498811911948244415368060482511656"
+                },
+                "target": {
+                  "file": "src/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "sendNetworkConditionsBroadcast"
+                },
+                "signature_version": "v1",
                 "id": "ASB-A-175213041-2acc0890",
-                "digest": {
-                  "function_hash": "314477498811911948244415368060482511656",
-                  "length": 1643
-                }
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "isCaptivePortal",
-                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055",
+                "signature_type": "Function",
+                "digest": {
+                  "length": 1562,
+                  "function_hash": "119717714988036512191417221136349273590"
+                },
+                "target": {
+                  "file": "src/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "isCaptivePortal"
+                },
+                "signature_version": "v1",
                 "id": "ASB-A-175213041-338ac65b",
-                "digest": {
-                  "function_hash": "119717714988036512191417221136349273590",
-                  "length": 1562
-                }
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055"
               },
               {
+                "deprecated": false,
                 "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "sendNetworkConditionsBroadcast",
-                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
-                },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055",
-                "id": "ASB-A-175213041-7de23d3a",
                 "digest": {
-                  "function_hash": "104709707658299582423607066383556445549",
-                  "length": 181
-                }
+                  "length": 181,
+                  "function_hash": "104709707658299582423607066383556445549"
+                },
+                "target": {
+                  "file": "src/com/android/server/connectivity/NetworkMonitor.java",
+                  "function": "sendNetworkConditionsBroadcast"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-7de23d3a",
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055",
-                "id": "ASB-A-175213041-a4264982",
+                "signature_type": "Line",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "259460928253666909353614842504266805433",
                     "95546564076599476553034734875260874537",
@@ -791,18 +782,27 @@
                     "226097582765298261306446524434132256386",
                     "310269971780831826955884409750823598543",
                     "68995888095312493634032545461619899811"
-                  ],
-                  "threshold": 0.9
-                }
+                  ]
+                },
+                "target": {
+                  "file": "src/com/android/server/connectivity/NetworkMonitor.java"
+                },
+                "signature_version": "v1",
+                "id": "ASB-A-175213041-a4264982",
+                "source": "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055"
               }
-            ]
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/packages/modules/NetworkStack/+/0dc33442b74703f7700ba78b05d3c5ec30c07055"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-175213041.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-179161711",
         "CVE-2021-0555"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-06-01T00:00:00Z",
       "references": [
         {
@@ -42,39 +42,36 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "Moderate",
             "types": [
               "DoS"
             ],
+            "severity": "Moderate",
             "spl": "2021-06-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/external/protobuf/+/b866b6d10ac195e863e30c5bccfe3b4426435ca4"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
                 "signature_version": "v1",
-                "target": {
-                  "function": "ProtoStreamObjectSource::RenderStruct",
-                  "file": "src/google/protobuf/util/internal/protostream_objectsource.cc"
-                },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/protobuf/+/b866b6d10ac195e863e30c5bccfe3b4426435ca4",
                 "id": "PUB-A-179161711-7be37d8c",
+                "signature_type": "Function",
+                "source": "https://android.googlesource.com/platform/external/protobuf/+/b866b6d10ac195e863e30c5bccfe3b4426435ca4",
+                "target": {
+                  "file": "src/google/protobuf/util/internal/protostream_objectsource.cc",
+                  "function": "ProtoStreamObjectSource::RenderStruct"
+                },
                 "digest": {
                   "function_hash": "191761877795629199464799725875304065417",
                   "length": 467
                 }
               },
               {
-                "signature_type": "Line",
                 "signature_version": "v1",
+                "deprecated": false,
+                "id": "PUB-A-179161711-d3059fc1",
+                "signature_type": "Line",
+                "source": "https://android.googlesource.com/platform/external/protobuf/+/b866b6d10ac195e863e30c5bccfe3b4426435ca4",
                 "target": {
                   "file": "src/google/protobuf/util/internal/protostream_objectsource.cc"
                 },
-                "deprecated": false,
-                "source": "https://android.googlesource.com/platform/external/protobuf/+/b866b6d10ac195e863e30c5bccfe3b4426435ca4",
-                "id": "PUB-A-179161711-d3059fc1",
                 "digest": {
                   "line_hashes": [
                     "245034373857113780041875752129992714913",
@@ -85,6 +82,9 @@
                   "threshold": 0.9
                 }
               }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/external/protobuf/+/b866b6d10ac195e863e30c5bccfe3b4426435ca4"
             ]
           },
           "database_specific": {
@@ -92,7 +92,7 @@
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-193932765",
         "CVE-2021-0702"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2021-10-01T00:00:00Z",
       "references": [
         {
@@ -42,86 +42,71 @@
             "12-next"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID",
-              "Unknown"
-            ],
-            "spl": "2021-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "TEST_F",
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-121d5e3b",
                 "digest": {
                   "function_hash": "4225605585403834167859559494038422097",
                   "length": 759
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-121d5e3b",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp",
+                  "function": "TEST_F"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "MarkStagedSessionSuccessful",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-5d058dd5",
                 "digest": {
                   "function_hash": "221185430640167795994461514572675412671",
                   "length": 665
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-5d058dd5",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "MarkStagedSessionSuccessful"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "RevertActiveSessions",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-9a5b1882",
                 "digest": {
                   "function_hash": "125294212298402906571786902835556765207",
                   "length": 1444
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-9a5b1882",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "RevertActiveSessions"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "SnapshotOrRestoreDeIfNeeded",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-ace45464",
                 "digest": {
                   "function_hash": "65523335027097412076397067156421795660",
                   "length": 749
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-ace45464",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "SnapshotOrRestoreDeIfNeeded"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-c1a8cc34",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "320368934161097258373103801471081216922",
                     "68058988134707673697915681617187371683",
@@ -139,20 +124,20 @@
                     "169803609558657796400748083876021886080",
                     "247501076125039994361520846362667370995",
                     "212712315670096086582947605449973107822"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-c1a8cc34",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-cd46adf5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "71776072034085910789840484084957767367",
                     "223071834603685859378026100979384685739",
@@ -166,26 +151,41 @@
                     "137458747424579871892187066689315327895",
                     "199120534089681793160055609323705101069",
                     "79838552734418631238722252323307207190"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-cd46adf5",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "TEST_F",
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-d1cc1a26",
                 "digest": {
                   "function_hash": "271649168231923886021933417791823138535",
                   "length": 1111
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-d1cc1a26",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp",
+                  "function": "TEST_F"
                 }
               }
-            ]
+            ],
+            "spl": "2021-10-01",
+            "types": [
+              "ID",
+              "Unknown"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193932765.json"
@@ -213,70 +213,56 @@
             "11"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "ID"
-            ],
-            "spl": "2021-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "revertActiveSessions",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-334b723b",
                 "digest": {
                   "function_hash": "146021214116064396526111273784920474487",
                   "length": 1326
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-334b723b",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "revertActiveSessions"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "TEST_F",
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-44acc72a",
                 "digest": {
                   "function_hash": "4225605585403834167859559494038422097",
                   "length": 759
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-44acc72a",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp",
+                  "function": "TEST_F"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "TEST_F",
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-5bf132d7",
                 "digest": {
                   "function_hash": "271649168231923886021933417791823138535",
                   "length": 1111
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-5bf132d7",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp",
+                  "function": "TEST_F"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-6cc57ff2",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "71776072034085910789840484084957767367",
                     "223071834603685859378026100979384685739",
@@ -290,50 +276,50 @@
                     "137458747424579871892187066689315327895",
                     "199120534089681793160055609323705101069",
                     "79838552734418631238722252323307207190"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-6cc57ff2",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "markStagedSessionSuccessful",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-788eb10f",
                 "digest": {
                   "function_hash": "221185430640167795994461514572675412671",
                   "length": 665
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-788eb10f",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "markStagedSessionSuccessful"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "snapshotOrRestoreDeIfNeeded",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-a3356da4",
                 "digest": {
                   "function_hash": "230163486724358823151034931663723547050",
                   "length": 740
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-a3356da4",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "snapshotOrRestoreDeIfNeeded"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180",
-                "id": "ASB-A-193932765-af566fcd",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "169296400959577218533387579562021010949",
                     "128834976284114198796887800814090678366",
@@ -355,11 +341,25 @@
                     "169803609558657796400748083876021886080",
                     "247501076125039994361520846362667370995",
                     "212712315670096086582947605449973107822"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-af566fcd",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd.cpp"
                 }
               }
-            ]
+            ],
+            "spl": "2021-10-01",
+            "types": [
+              "ID"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/apex/+/f8365a8edcfd195562af485080d2a0462be8e180"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193932765.json"
@@ -387,25 +387,11 @@
             "12"
           ],
           "ecosystem_specific": {
-            "severity": "High",
-            "types": [
-              "Unknown"
-            ],
-            "spl": "2021-10-01",
-            "fixes": [
-              "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae"
-            ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-2b35a5b5",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "71776072034085910789840484084957767367",
                     "223071834603685859378026100979384685739",
@@ -419,20 +405,20 @@
                     "137458747424579871892187066689315327895",
                     "199120534089681793160055609323705101069",
                     "79838552734418631238722252323307207190"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-2b35a5b5",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp"
                 }
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
-                "target": {
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-40d7adb1",
                 "digest": {
+                  "threshold": 0.9,
                   "line_hashes": [
                     "320368934161097258373103801471081216922",
                     "68058988134707673697915681617187371683",
@@ -450,93 +436,492 @@
                     "169803609558657796400748083876021886080",
                     "247501076125039994361520846362667370995",
                     "212712315670096086582947605449973107822"
-                  ],
-                  "threshold": 0.9
+                  ]
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-40d7adb1",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd.cpp"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "RevertActiveSessions",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-749ddd16",
                 "digest": {
                   "function_hash": "125294212298402906571786902835556765207",
                   "length": 1444
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-749ddd16",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "RevertActiveSessions"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "TEST_F",
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-8cb50f85",
                 "digest": {
                   "function_hash": "4225605585403834167859559494038422097",
                   "length": 759
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-8cb50f85",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp",
+                  "function": "TEST_F"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "SnapshotOrRestoreDeIfNeeded",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-bc67d8fe",
                 "digest": {
                   "function_hash": "65523335027097412076397067156421795660",
                   "length": 749
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-bc67d8fe",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "SnapshotOrRestoreDeIfNeeded"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "MarkStagedSessionSuccessful",
-                  "file": "apexd/apexd.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-dd5e55c4",
                 "digest": {
                   "function_hash": "221185430640167795994461514572675412671",
                   "length": 665
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-dd5e55c4",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexd.cpp",
+                  "function": "MarkStagedSessionSuccessful"
                 }
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
-                "target": {
-                  "function": "TEST_F",
-                  "file": "apexd/apexservice_test.cpp"
-                },
-                "deprecated": false,
                 "source": "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae",
-                "id": "ASB-A-193932765-f1d647c1",
                 "digest": {
                   "function_hash": "271649168231923886021933417791823138535",
                   "length": 1111
+                },
+                "signature_version": "v1",
+                "deprecated": false,
+                "id": "ASB-A-193932765-f1d647c1",
+                "signature_type": "Function",
+                "target": {
+                  "file": "apexd/apexservice_test.cpp",
+                  "function": "TEST_F"
                 }
               }
-            ]
+            ],
+            "spl": "2021-10-01",
+            "types": [
+              "Unknown"
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/apex/+/85642155eecda9c895283e3050fdb376d92271ae"
+            ],
+            "severity": "High"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-193932765.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
+    },
+    {
+      "id": "ASB-A-428945391",
+      "details": "In VerifyNoOverlapInSessions of apexd.cpp, there is a possible way to block security updates through mainline installations due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "aliases": [
+        "A-428945391",
+        "CVE-2025-48581"
+      ],
+      "modified": "2025-09-01T15:59:33.418187Z",
+      "published": "2025-09-01T00:00:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://source.android.com/security/bulletin/2025-09-01"
+        }
+      ],
+      "affected": [
+        {
+          "package": {
+            "name": "platform/build",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16-next:0"
+                },
+                {
+                  "fixed": "16-next:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16-next"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-09-01",
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/build/+/a89e1ec183c96413380b5e2db37581b7031d04ea"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-428945391.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/apex",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16-next:0"
+                },
+                {
+                  "fixed": "16-next:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16-next"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-09-01",
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "deprecated": false,
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "175917095348843160700424818166486520653",
+                    "30425094193163543155963132339065551264",
+                    "299251075908848645897139723645939297160",
+                    "275730233787607256365024819872528287055",
+                    "205824012699372239740774163840791275833",
+                    "148118273040957037683679203715463304634",
+                    "52108119062793506449817648475710431310",
+                    "89436116488515070387007099259755383256",
+                    "183696079466424190639803743696520507841",
+                    "114477007463711046531956477069194721748",
+                    "4020812786432045008653458036011727943",
+                    "295481725748347345290013375034056990375"
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/e8474ce3f0a27b9781b6eaf518520941a3820111",
+                "id": "ASB-A-428945391-007f5cb7",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "121278165439356723875710429288290633327",
+                  "length": 312
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/e8474ce3f0a27b9781b6eaf518520941a3820111",
+                "id": "ASB-A-428945391-06ed9e81",
+                "signature_type": "Function",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "apexd/apexd_test.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "166277273963399411157087798512642315690",
+                  "length": 596
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/e8474ce3f0a27b9781b6eaf518520941a3820111",
+                "id": "ASB-A-428945391-300dfe9c",
+                "signature_type": "Function",
+                "target": {
+                  "function": "VerifyNoOverlapInSessions",
+                  "file": "apexd/apexd.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "52157845959511572691352331476719520445",
+                    "217789726687832973363975091640464677103",
+                    "226259752552317461791458198722527628200",
+                    "234005877175019193026504174551496243218",
+                    "234660702027869820818331263267980610251",
+                    "154070696187209746810672341621860282179",
+                    "29358273819798901044955327876350372115",
+                    "303395101341504222598207390591217822317",
+                    "313454767841376224634286675241210428431",
+                    "287061343837500287771387032489256023353",
+                    "142103851895818989805276152044261276839",
+                    "102243921965501156304027347410701275629",
+                    "162610883514293771637610730148472690826",
+                    "114975212925962633791762223934937599880",
+                    "272879143918057264466504474331999430965",
+                    "113527164020389351472254726476464797231",
+                    "196266306533798557804225872360412629272",
+                    "282745649002026583143270617724075631605",
+                    "219415052305547252475768502827317305082",
+                    "337759656446115835035328561982834845054",
+                    "6174480674815779188630459385428239866",
+                    "278774742762054142479654539375391260310",
+                    "164589572204029079691621865732970429974"
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/e8474ce3f0a27b9781b6eaf518520941a3820111",
+                "id": "ASB-A-428945391-c5faf4e8",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd_test.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "255213190898107091193437316625706956132",
+                  "length": 383
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/e8474ce3f0a27b9781b6eaf518520941a3820111",
+                "id": "ASB-A-428945391-f7008c37",
+                "signature_type": "Function",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "apexd/apexd_test.cpp"
+                }
+              }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/apex/+/e8474ce3f0a27b9781b6eaf518520941a3820111",
+              "https://android.googlesource.com/platform/system/apex/+/fa11a4437b6a5d41d503fac3763ed0d17e5adeff"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-428945391.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/build",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16:0"
+                },
+                {
+                  "fixed": "16:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-09-01",
+            "severity": "High",
+            "fixes": [
+              "https://android.googlesource.com/platform/build/+/de6947a70e8aaa521f9bcb4718eb53f7161d7bfc"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-428945391.json"
+          }
+        },
+        {
+          "package": {
+            "name": "platform/system/apex",
+            "ecosystem": "Android"
+          },
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": [
+                {
+                  "introduced": "16:0"
+                },
+                {
+                  "fixed": "16:2025-09-01"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            "16"
+          ],
+          "ecosystem_specific": {
+            "types": [
+              "EoP"
+            ],
+            "spl": "2025-09-01",
+            "severity": "High",
+            "vanir_signatures": [
+              {
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "166277273963399411157087798512642315690",
+                  "length": 596
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/b9c9fb3d71291fee7be9bd77b96f38c05dca3398",
+                "id": "ASB-A-428945391-2529a41f",
+                "signature_type": "Function",
+                "target": {
+                  "function": "VerifyNoOverlapInSessions",
+                  "file": "apexd/apexd.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "52157845959511572691352331476719520445",
+                    "217789726687832973363975091640464677103",
+                    "226259752552317461791458198722527628200",
+                    "234005877175019193026504174551496243218",
+                    "234660702027869820818331263267980610251",
+                    "154070696187209746810672341621860282179",
+                    "29358273819798901044955327876350372115",
+                    "303395101341504222598207390591217822317",
+                    "313454767841376224634286675241210428431",
+                    "287061343837500287771387032489256023353",
+                    "142103851895818989805276152044261276839",
+                    "102243921965501156304027347410701275629",
+                    "162610883514293771637610730148472690826",
+                    "114975212925962633791762223934937599880",
+                    "272879143918057264466504474331999430965",
+                    "113527164020389351472254726476464797231",
+                    "196266306533798557804225872360412629272",
+                    "282745649002026583143270617724075631605",
+                    "219415052305547252475768502827317305082",
+                    "337759656446115835035328561982834845054",
+                    "6174480674815779188630459385428239866",
+                    "278774742762054142479654539375391260310",
+                    "164589572204029079691621865732970429974"
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/b9c9fb3d71291fee7be9bd77b96f38c05dca3398",
+                "id": "ASB-A-428945391-2af8eca0",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd_test.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "255213190898107091193437316625706956132",
+                  "length": 383
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/b9c9fb3d71291fee7be9bd77b96f38c05dca3398",
+                "id": "ASB-A-428945391-48066754",
+                "signature_type": "Function",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "apexd/apexd_test.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "threshold": 0.9,
+                  "line_hashes": [
+                    "175917095348843160700424818166486520653",
+                    "30425094193163543155963132339065551264",
+                    "299251075908848645897139723645939297160",
+                    "275730233787607256365024819872528287055",
+                    "205824012699372239740774163840791275833",
+                    "148118273040957037683679203715463304634",
+                    "52108119062793506449817648475710431310",
+                    "89436116488515070387007099259755383256",
+                    "183696079466424190639803743696520507841",
+                    "114477007463711046531956477069194721748",
+                    "4020812786432045008653458036011727943",
+                    "295481725748347345290013375034056990375"
+                  ]
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/b9c9fb3d71291fee7be9bd77b96f38c05dca3398",
+                "id": "ASB-A-428945391-4c5359f6",
+                "signature_type": "Line",
+                "target": {
+                  "file": "apexd/apexd.cpp"
+                }
+              },
+              {
+                "deprecated": false,
+                "digest": {
+                  "function_hash": "121278165439356723875710429288290633327",
+                  "length": 312
+                },
+                "signature_version": "v1",
+                "source": "https://android.googlesource.com/platform/system/apex/+/b9c9fb3d71291fee7be9bd77b96f38c05dca3398",
+                "id": "ASB-A-428945391-c90a6a54",
+                "signature_type": "Function",
+                "target": {
+                  "function": "TEST_F",
+                  "file": "apexd/apexd_test.cpp"
+                }
+              }
+            ],
+            "fixes": [
+              "https://android.googlesource.com/platform/system/apex/+/43dd1249f40c5f4cbe06e236ed376b34ba418f2f",
+              "https://android.googlesource.com/platform/system/apex/+/b9c9fb3d71291fee7be9bd77b96f38c05dca3398"
+            ]
+          },
+          "database_specific": {
+            "source": "https://storage.googleapis.com/android-osv/ASB-A-428945391.json"
+          }
+        }
+      ],
+      "schema_version": "1.7.3"
     }
   ]
 }

@@ -7,7 +7,7 @@
         "A-160265164",
         "CVE-2020-0458"
       ],
-      "modified": "2025-06-26T14:51:18.212593Z",
+      "modified": "2025-09-01T15:03:59.638214Z",
       "published": "2020-12-01T00:00:00Z",
       "references": [
         {
@@ -46,55 +46,51 @@
             "8.0"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "RCE"
             ],
-            "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/media/+/4523a5863f7d8f449600e85e946cfdc9cff408b2",
               "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-022a8b9e",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferBytes",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferBytes"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-022a8b9e",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "40283338500318352106057796562783840058",
                   "length": 558
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-028efb4f",
                 "target": {
-                  "function": "FrameScanner::FrameScanner",
-                  "file": "audio_utils/spdif/FrameScanner.cpp"
+                  "file": "audio_utils/spdif/FrameScanner.cpp",
+                  "function": "FrameScanner::FrameScanner"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-028efb4f",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "152344411935269315469663959082721260705",
                   "length": 346
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-5e9e8a01",
                 "target": {
                   "file": "audio_utils/spdif/AC3FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-5e9e8a01",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "315301970555212661788859622139306500805",
@@ -103,17 +99,17 @@
                     "146924628090277811717398141731488444775"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-6a005e59",
                 "target": {
                   "file": "audio_utils/spdif/FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-6a005e59",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "259647612143021780756864891114490422070",
@@ -122,32 +118,32 @@
                     "72542598289547325216051972627738719884"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-6b82cf4d",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferShorts",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferShorts"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-6b82cf4d",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "198867948338260688667640693224304378116",
                   "length": 463
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-79cd6c81",
                 "target": {
                   "file": "audio_utils/include/audio_utils/spdif/SPDIFEncoder.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-79cd6c81",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "187679534532922003488298009691619337962",
@@ -156,17 +152,17 @@
                     "243491401206640026402001190439209616008"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-92410e9f",
                 "target": {
                   "file": "audio_utils/spdif/SPDIFEncoder.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-92410e9f",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "116260180557445152731375372260927407938",
@@ -198,39 +194,43 @@
                     "180635944635502272924575681960554159984"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-98ef9734",
                 "target": {
-                  "function": "AC3FrameScanner::parseHeader",
-                  "file": "audio_utils/spdif/AC3FrameScanner.cpp"
+                  "file": "audio_utils/spdif/AC3FrameScanner.cpp",
+                  "function": "AC3FrameScanner::parseHeader"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-98ef9734",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "278303449840606457413695327977492702142",
                   "length": 2369
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-a8848c21",
                 "target": {
-                  "function": "SPDIFEncoder::startSyncFrame",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::startSyncFrame"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-a8848c21",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "117908441538651017328085137480633857167",
                   "length": 193
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2020-12-01",
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-160265164.json"
@@ -258,25 +258,21 @@
             "8.1"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "RCE"
             ],
-            "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/media/+/4523a5863f7d8f449600e85e946cfdc9cff408b2",
               "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-19f1a923",
                 "target": {
                   "file": "audio_utils/include/audio_utils/spdif/SPDIFEncoder.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-19f1a923",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "187679534532922003488298009691619337962",
@@ -285,32 +281,32 @@
                     "243491401206640026402001190439209616008"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-1b30b3ee",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferShorts",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferShorts"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-1b30b3ee",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "198867948338260688667640693224304378116",
                   "length": 463
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-2fbe9097",
                 "target": {
                   "file": "audio_utils/spdif/SPDIFEncoder.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-2fbe9097",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "116260180557445152731375372260927407938",
@@ -342,32 +338,32 @@
                     "180635944635502272924575681960554159984"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-2fdcc2b6",
                 "target": {
-                  "function": "SPDIFEncoder::startSyncFrame",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::startSyncFrame"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-2fdcc2b6",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "117908441538651017328085137480633857167",
                   "length": 193
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-3191c5b0",
                 "target": {
                   "file": "audio_utils/spdif/FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-3191c5b0",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "259647612143021780756864891114490422070",
@@ -376,62 +372,62 @@
                     "72542598289547325216051972627738719884"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-460eba28",
                 "target": {
-                  "function": "FrameScanner::FrameScanner",
-                  "file": "audio_utils/spdif/FrameScanner.cpp"
+                  "file": "audio_utils/spdif/FrameScanner.cpp",
+                  "function": "FrameScanner::FrameScanner"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-460eba28",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "152344411935269315469663959082721260705",
                   "length": 346
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-4f9f1649",
                 "target": {
-                  "function": "AC3FrameScanner::parseHeader",
-                  "file": "audio_utils/spdif/AC3FrameScanner.cpp"
+                  "file": "audio_utils/spdif/AC3FrameScanner.cpp",
+                  "function": "AC3FrameScanner::parseHeader"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-4f9f1649",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "278303449840606457413695327977492702142",
                   "length": 2369
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-b9b7da6b",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferBytes",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferBytes"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-b9b7da6b",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "40283338500318352106057796562783840058",
                   "length": 558
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-da49bae2",
                 "target": {
                   "file": "audio_utils/spdif/AC3FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-da49bae2",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "315301970555212661788859622139306500805",
@@ -440,9 +436,13 @@
                     "146924628090277811717398141731488444775"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2020-12-01",
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-160265164.json"
@@ -470,70 +470,66 @@
             "9"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "RCE"
             ],
-            "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/media/+/4523a5863f7d8f449600e85e946cfdc9cff408b2",
               "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-3ab285cb",
                 "target": {
-                  "function": "AC3FrameScanner::parseHeader",
-                  "file": "audio_utils/spdif/AC3FrameScanner.cpp"
+                  "file": "audio_utils/spdif/AC3FrameScanner.cpp",
+                  "function": "AC3FrameScanner::parseHeader"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-3ab285cb",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "278303449840606457413695327977492702142",
                   "length": 2369
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-3ac51b11",
                 "target": {
-                  "function": "SPDIFEncoder::startSyncFrame",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::startSyncFrame"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-3ac51b11",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "117908441538651017328085137480633857167",
                   "length": 193
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-3ce32501",
                 "target": {
-                  "function": "FrameScanner::FrameScanner",
-                  "file": "audio_utils/spdif/FrameScanner.cpp"
+                  "file": "audio_utils/spdif/FrameScanner.cpp",
+                  "function": "FrameScanner::FrameScanner"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-3ce32501",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "152344411935269315469663959082721260705",
                   "length": 346
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-6d0f41ba",
                 "target": {
                   "file": "audio_utils/include/audio_utils/spdif/SPDIFEncoder.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-6d0f41ba",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "187679534532922003488298009691619337962",
@@ -542,17 +538,17 @@
                     "243491401206640026402001190439209616008"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-91d55c6e",
                 "target": {
                   "file": "audio_utils/spdif/SPDIFEncoder.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-91d55c6e",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "116260180557445152731375372260927407938",
@@ -584,32 +580,32 @@
                     "180635944635502272924575681960554159984"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-a6f74f32",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferBytes",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferBytes"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-a6f74f32",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "40283338500318352106057796562783840058",
                   "length": 558
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-c4b267e7",
                 "target": {
                   "file": "audio_utils/spdif/FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-c4b267e7",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "259647612143021780756864891114490422070",
@@ -618,32 +614,32 @@
                     "72542598289547325216051972627738719884"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-ecbab205",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferShorts",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferShorts"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-ecbab205",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "198867948338260688667640693224304378116",
                   "length": 463
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-ffd8b14a",
                 "target": {
                   "file": "audio_utils/spdif/AC3FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-ffd8b14a",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "315301970555212661788859622139306500805",
@@ -652,9 +648,13 @@
                     "146924628090277811717398141731488444775"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               }
-            ]
+            ],
+            "spl": "2020-12-01",
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-160265164.json"
@@ -682,25 +682,21 @@
             "10"
           ],
           "ecosystem_specific": {
-            "severity": "Critical",
             "types": [
               "RCE"
             ],
-            "spl": "2020-12-01",
             "fixes": [
               "https://android.googlesource.com/platform/system/media/+/4523a5863f7d8f449600e85e946cfdc9cff408b2",
               "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be"
             ],
             "vanir_signatures": [
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-00608e33",
                 "target": {
                   "file": "audio_utils/spdif/SPDIFEncoder.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-00608e33",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "116260180557445152731375372260927407938",
@@ -732,32 +728,32 @@
                     "180635944635502272924575681960554159984"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-07acacec",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferBytes",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferBytes"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-07acacec",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "40283338500318352106057796562783840058",
                   "length": 558
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-0c39ec8e",
                 "target": {
                   "file": "audio_utils/include/audio_utils/spdif/SPDIFEncoder.h"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-0c39ec8e",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "187679534532922003488298009691619337962",
@@ -766,47 +762,47 @@
                     "243491401206640026402001190439209616008"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-1f34c90d",
                 "target": {
-                  "function": "AC3FrameScanner::parseHeader",
-                  "file": "audio_utils/spdif/AC3FrameScanner.cpp"
+                  "file": "audio_utils/spdif/AC3FrameScanner.cpp",
+                  "function": "AC3FrameScanner::parseHeader"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-1f34c90d",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "278303449840606457413695327977492702142",
                   "length": 2369
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-3ad9c279",
                 "target": {
-                  "function": "SPDIFEncoder::startSyncFrame",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::startSyncFrame"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-3ad9c279",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "117908441538651017328085137480633857167",
                   "length": 193
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-6ea51a29",
                 "target": {
                   "file": "audio_utils/spdif/AC3FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-6ea51a29",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "315301970555212661788859622139306500805",
@@ -815,32 +811,32 @@
                     "146924628090277811717398141731488444775"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-71a98843",
                 "target": {
-                  "function": "SPDIFEncoder::writeBurstBufferShorts",
-                  "file": "audio_utils/spdif/SPDIFEncoder.cpp"
+                  "file": "audio_utils/spdif/SPDIFEncoder.cpp",
+                  "function": "SPDIFEncoder::writeBurstBufferShorts"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-71a98843",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "198867948338260688667640693224304378116",
                   "length": 463
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               },
               {
-                "signature_type": "Line",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-bc914504",
                 "target": {
                   "file": "audio_utils/spdif/FrameScanner.cpp"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-bc914504",
+                "signature_version": "v1",
                 "digest": {
                   "line_hashes": [
                     "259647612143021780756864891114490422070",
@@ -849,31 +845,35 @@
                     "72542598289547325216051972627738719884"
                   ],
                   "threshold": 0.9
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Line"
               },
               {
-                "signature_type": "Function",
-                "signature_version": "v1",
+                "id": "ASB-A-160265164-d24acb85",
                 "target": {
-                  "function": "FrameScanner::FrameScanner",
-                  "file": "audio_utils/spdif/FrameScanner.cpp"
+                  "file": "audio_utils/spdif/FrameScanner.cpp",
+                  "function": "FrameScanner::FrameScanner"
                 },
                 "deprecated": false,
-                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
-                "id": "ASB-A-160265164-d24acb85",
+                "signature_version": "v1",
                 "digest": {
                   "function_hash": "152344411935269315469663959082721260705",
                   "length": 346
-                }
+                },
+                "source": "https://android.googlesource.com/platform/system/media/+/1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+                "signature_type": "Function"
               }
-            ]
+            ],
+            "spl": "2020-12-01",
+            "severity": "Critical"
           },
           "database_specific": {
             "source": "https://storage.googleapis.com/android-osv/ASB-A-160265164.json"
           }
         }
       ],
-      "schema_version": "1.6.0"
+      "schema_version": "1.7.3"
     }
   ]
 }
